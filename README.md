@@ -25,21 +25,6 @@ To run the application, use the following command:
 ```
 ```
 
-Folder Structure:
-```
-.
-├── README.md
-├── sensitive_data_values
-│   ├── datasets
-│   │   ├── Secret Regular Expression.xlsx
-|   |   ├── common_passwords.csv
-│   ├── processed_datasets
-│   │   ├── secret_data_values.csv
-│   │   ├── common_passwords.csv
-│   ├── scripts
-├── requirements.txt
-
-
 Dataset:
 ``` 
 1. Secret Regular Expression.xlsx - This is a dataser that contains regular expressions for sensitive data values collected by SecretBench.
