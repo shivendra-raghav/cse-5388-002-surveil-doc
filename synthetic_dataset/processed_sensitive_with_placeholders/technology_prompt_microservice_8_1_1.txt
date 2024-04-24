@@ -1,0 +1,200 @@
+# Discount Service API Documentation
+
+## Introduction
+
+The Discount Service API is a RESTful web service that provides CRUD operations for managing discounts. It supports the creation, retrieval, updating, and deletion of discount data. This documentation outlines the available endpoints, request/response formats, authentication requirements, rate limiting, and error handling for the API.
+
+## Latest Update By
+
+- Name: John Smith
+- Email: john.smith@techcorp.com
+- Phone: +1 (650) 555-1234
+
+## Contributors
+
+1. **Jane Doe**
+   - Email: jane.doe@techcorp.com
+   - Phone: +1 (650) 555-5678
+
+2. **Michael Brown**
+   - Email: michael.brown@techcorp.com
+   - Phone: +1 (650) 555-9012
+
+## API Endpoints
+
+### Authentication
+
+The Discount Service API requires basic authentication for all endpoints. You must include an `Authorization` header with a base64-encoded `<USERNAME>` and `<PASSWORD>` in the following format:
+
+```
+Authorization: Basic <base64-encoded-username:password>
+```
+
+For example:
+
+```
+Authorization: Basic QWxhZGRpbjpvcGVuU2VzYW1l
+```
+
+**Note:** Replace `<USERNAME>` and `<PASSWORD>` with your actual credentials.
+
+### Create a Discount
+
+- **Endpoint:** `POST /v1/discounts`
+- **Description:** Creates a new discount.
+- **Request Body:**
+  ```json
+  {
+    "name": "Summer Clearance",
+    "description": "30% off on selected products",
+    "discountPercentage": 30,
+    "startDate": "2023-07-01",
+    "endDate": "2023-08-15"
+  }
+  ```
+- **Successful Response (200 OK):**
+  ```json
+  {
+    "id": "abc123456789",
+    "name": "Summer Clearance",
+    "description": "30% off on selected products",
+    "discountPercentage": 30,
+    "startDate": "2023-07-01",
+    "endDate": "2023-08-15"
+  }
+  ```
+- **Error Responses:**
+  - `400 Bad Request`: Invalid request body.
+  - `401 Unauthorized`: Missing or invalid authentication credentials.
+  - `500 Internal Server Error`: An unexpected error occurred on the server.
+
+### Update a Discount
+
+- **Endpoint:** `POST /v1/discounts/:id`
+- **Description:** Updates an existing discount by its ID.
+- **Request Body:**
+  ```json
+  {
+    "name": "Summer Clearance",
+    "description": "40% off on selected products",
+    "discountPercentage": 40,
+    "startDate": "2023-07-01",
+    "endDate": "2023-08-15"
+  }
+  ```
+- **Successful Response (200 OK):**
+  ```json
+  {
+    "id": "abc123456789",
+    "name": "Summer Clearance",
+    "description": "40% off on selected products",
+    "discountPercentage": 40,
+    "startDate": "2023-07-01",
+    "endDate": "2023-08-15"
+  }
+  ```
+- **Error Responses:**
+  - `400 Bad Request`: Invalid request body or discount ID.
+  - `401 Unauthorized`: Missing or invalid authentication credentials.
+  - `403 Forbidden`: Insufficient permissions to update the discount.
+  - `404 Not Found`: The specified discount ID was not found.
+  - `500 Internal Server Error`: An unexpected error occurred on the server.
+
+### List a Discount
+
+- **Endpoint:** `GET /v1/discounts/:id`
+- **Description:** Retrieves a discount by its ID.
+- **Successful Response (200 OK):**
+  ```json
+  {
+    "id": "abc123456789",
+    "name": "Summer Clearance",
+    "description": "40% off on selected products",
+    "discountPercentage": 40,
+    "startDate": "2023-07-01",
+    "endDate": "2023-08-15"
+  }
+  ```
+- **Error Responses:**
+  - `401 Unauthorized`: Missing or invalid authentication credentials.
+  - `403 Forbidden`: Insufficient permissions to access the discount.
+  - `404 Not Found`: The specified discount ID was not found.
+  - `500 Internal Server Error`: An unexpected error occurred on the server.
+
+### List All Discounts
+
+- **Endpoint:** `GET /v1/discounts`
+- **Description:** Retrieves a list of all discounts.
+- **Successful Response (200 OK):**
+  ```json
+  [
+    {
+      "id": "abc123456789",
+      "name": "Summer Clearance",
+      "description": "40% off on selected products",
+      "discountPercentage": 40,
+      "startDate": "2023-07-01",
+      "endDate": "2023-08-15"
+    },
+    {
+      "id": "def987654321",
+      "name": "Black Friday Sale",
+      "description": "Buy one, get one free",
+      "discountPercentage": 50,
+      "startDate": "2023-11-25",
+      "endDate": "2023-11-28"
+    }
+  ]
+  ```
+- **Error Responses:**
+  - `401 Unauthorized`: Missing or invalid authentication credentials.
+  - `403 Forbidden`: Insufficient permissions to access the discounts.
+  - `500 Internal Server Error`: An unexpected error occurred on the server.
+
+### Delete a Discount
+
+- **Endpoint:** `DELETE /v1/discounts/:id`
+- **Description:** Deletes a discount by its ID.
+- **Successful Response (200 OK):**
+  ```json
+  {
+    "message": "Discount deleted successfully"
+  }
+  ```
+- **Error Responses:**
+  - `401 Unauthorized`: Missing or invalid authentication credentials.
+  - `403 Forbidden`: Insufficient permissions to delete the discount.
+  - `404 Not Found`: The specified discount ID was not found.
+  - `500 Internal Server Error`: An unexpected error occurred on the server.
+
+## Rate Limit
+
+The Discount Service API has a rate limit of 100 requests per minute per client. If the rate limit is exceeded, the server will respond with a `429 Too Many Requests` error and a `Retry-After` header indicating the number of seconds to wait before retrying.
+
+## APP Registration Information
+
+To obtain authentication credentials (`<USERNAME>` and `<PASSWORD>`) for the Discount Service API, you must register your application by following these steps:
+
+1. Visit the [APP Registration Portal](https://appregistration.techcorp.com).
+2. Fill out the registration form with your application details.
+3. Upon successful registration, you will receive your `<USERNAME>` and `<PASSWORD>` credentials.
+
+## Error Handling
+
+The Discount Service API uses standard HTTP response codes to indicate the success or failure of an operation. The following error codes may be returned:
+
+- `400 Bad Request`: The request was malformed or missing required parameters.
+- `401 Unauthorized`: The request did not include valid authentication credentials.
+- `403 Forbidden`: The client does not have permission to access the requested resource.
+- `404 Not Found`: The requested resource was not found on the server.
+- `500 Internal Server Error`: An unexpected error occurred on the server.
+- `501 Not Implemented`: The requested functionality is not implemented by the server.
+- `502 Bad Gateway`: The server received an invalid response from an upstream server.
+- `503 Service Unavailable`: The server is currently unavailable due to maintenance or overload.
+- `504 Gateway Timeout`: The server did not receive a timely response from an upstream server.
+
+## Summary
+
+The Discount Service API provides a flexible and secure way to manage discounts for your application. By following the guidelines outlined in this documentation, you can effectively create, update, retrieve, and delete discount data. Remember to handle errors gracefully and adhere to the rate limiting policies to ensure a smooth integration experience.
+
+If you have any further questions or need assistance, please contact our support team at support@techcorp.com.

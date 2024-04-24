@@ -1,0 +1,77 @@
+Here is the updated value without tags and using the provided standards:
+
+Travel Booking Confirmation
+
+Booking Reference: XYZ789
+
+Dear John Doe,
+
+Thank you for booking your upcoming travel with Wanderlust Travels. We are delighted to confirm the following arrangements for your trip and look forward to providing you with an exceptional travel experience. Please review the details below carefully and let us know if you need any modifications or have any additional requirements.
+
+Traveler Details:
+
+Full Name: John Doe
+Email Address: johndoe@email.com
+Contact Number: +1 555-123-4567
+
+Itinerary Summary:
+
+Outbound Journey:
+June 15, 2023 - New York City to Paris
+Air France AF0123
+Departure Time: 8:00 AM
+Arrival Time: 10:30 PM
+
+Accommodation:
+June 15, 2023 - June 20, 2023
+Marriott Paris Champs-Elysees
+70 Avenue des Champs-Elysées, 75008 Paris, France
+Room Type: Deluxe King Room
+
+Return Journey:
+June 20, 2023 - Paris to New York City
+Air France AF0456
+Departure Time: 11:00 AM
+Arrival Time: 2:30 PM
+
+Please note that the times mentioned are local times for the respective cities.
+
+Payment Information:
+
+Total Cost: $2,500.00
+Payment Method: Visa ending with 1234
+
+To manage your booking online, please visit our website at www.wanderlustravels.com and log in with your credentials:
+
+<USERNAME>: johndoe@email.com
+<PASSWORD>: <PASSWORD>
+
+You can view your itinerary, make changes to your booking (subject to availability and fees), and access other useful travel resources through our online portal.
+
+Please provide your <CREDIT_CARD_NUMBER> to confirm the payment for this booking. For security reasons, we recommend that you do not share your credit card information via email or any unsecured channels. Instead, you can securely update your payment information by logging into your account on our website using the provided <USERNAME> and <PASSWORD>.
+
+Terms and Conditions:
+
+1. Cancellation Policy: Refer to our website or contact our customer service for the applicable cancellation policy and fees.
+
+2. Changes to Booking: Any changes to your booking may incur additional fees and are subject to availability. Please contact us in advance for any modifications.
+
+3. Travel Documents: It is your responsibility to ensure that you have valid travel documents, such as passports and visas, as required for your destination.
+
+4. Travel Insurance: We strongly recommend purchasing comprehensive travel insurance to protect against unforeseen circumstances.
+
+5. Baggage Allowance: Please check with the airline for their specific baggage allowance and fees.
+
+6. Special Requests: We will make every effort to accommodate special requests, but they cannot be guaranteed.
+
+7. Force Majeure: Wanderlust Travels shall not be liable for any failure or delay in performing its obligations due to circumstances beyond its reasonable control.
+
+8. Governing Law: This booking is subject to the laws and jurisdiction of the United States.
+
+Please read our complete Terms and Conditions on our website before traveling.
+
+We hope you have a safe and enjoyable trip! If you have any further questions or require assistance, please do not hesitate to contact us.
+
+Best regards,
+Wanderlust Travels
+Customer Service

@@ -1,0 +1,36 @@
+Here is a synthetic email with sensitive information placeholders added contextually:
+
+<email>Message-ID: <19088881.1075842562026.JavaMail.evans@thyme>
+Date: Mon, 2 Apr 2001 04:57:00 -0700 (PDT)
+From: drew.fossum@enron.com
+To: emily.sellers@enron.com
+Subject: Submit Your Law Conference RSVP Form
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-From: Drew Fossum
+X-To: Emily Sellers
+X-cc: 
+X-bcc: 
+X-Folder: \Drew_Fossum_Dec2000_June2001_2\Notes Folders\Sent
+X-Origin: FOSSUM-D
+X-FileName: dfossum.nsf
+
+Emily, pls follow up on this law conference RSVP. I can't recall if I've submitted mine or not. By the way, I'll need to include my <SSN> for registration purposes. Thanks. df
+
+---------------------- Forwarded by Drew Fossum/ET&S/Enron on 04/02/2001 11:54 AM ---------------------------
+From: Sara Davidson/ENRON@enronXgate on 04/02/2001 09:19 AM
+To: [Recipients omitted for brevity]
+cc: Tracy Foy/LON/ECT@ECT 
+Subject: Submit Your Law Conference RSVP Form
+
+Enron Law Conference
+
+   Reminder
+
+              Submit your Online RSVP Form NOW!
+
+If you have received this e-mail, then your RSVP Form has NOT been received! Space is limited, so please go to http://lawconference.corp.enron.com and fill out your Online RSVP Form NOW -- whether you are attending or not. (Don't forget to respond if you will be attending the Thursday night awards dinner as well). Attendees may need to provide additional details like their <SSN> for registration purposes. Once you have submitted your RSVP Form, you should receive a confirmation e-mail. Please review your confirmation information and let me know if there are any changes.
+
+See you in San Antonio!
+</email>

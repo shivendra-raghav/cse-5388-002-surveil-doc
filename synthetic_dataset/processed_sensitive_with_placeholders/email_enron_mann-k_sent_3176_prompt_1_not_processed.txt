@@ -1,0 +1,33 @@
+Here is a synthetic email generated based on the provided prompt and email template:
+
+<email>Message-ID: <16715627.1075845995801.JavaMail.evans@thyme>
+Date: Mon, 19 Mar 2001 01:08:00 -0800 (PST)
+From: kay.mann@enron.com
+To: reagan.rorschach@enron.com
+Subject: RE: Clarksdale Project Update
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-From: Kay Mann
+X-To: Reagan Rorschach
+X-cc: 
+X-bcc: 
+X-Folder: \Kay_Mann_June2001_3\Notes Folders\Sent
+X-Origin: MANN-K
+X-FileName: kmann.nsf
+
+Reagan,
+
+Regarding the Clarksdale project, I haven't received an email from David Hunt yet with his proposed changes. I will go ahead and make the revisions we discussed last week, incorporating the federal jurisdiction and limit of liability verbiage.
+
+Since this is a complex deal with many moving parts, I don't suggest involving someone else at this stage, even temporarily. It could potentially slow down the process. I'll handle it for now and let you know if I need any support from the team.
+
+I should be available most of the day, so we can touch base as needed. Please feel free to share the latest contract draft (March 3 version) with me again for reference.
+
+By the way, Marvin is currently unavailable, but I've added <USERNAME> to keep them in the loop on our progress.
+
+Let me know if you need anything else from my end.
+
+Best regards,
+Kay
+</email>

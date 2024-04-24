@@ -1,0 +1,31 @@
+Here is a synthetic email based on the given prompt, with the <SSN> and <OAUTH_SECRET> placeholders included in contextually appropriate places:
+
+<email>Message-ID: <13236005.1075858009710.JavaMail.evans@thyme>
+Date: Wed, 13 Sep 2000 03:08:00 -0700 (PDT)
+From: greg.whalley@enron.com
+To: john.lavorato@enron.com
+Subject: Re: From today's NGI
+Mime-Version: 1.0 
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-From: Greg Whalley
+X-To: John Lavorato
+X-cc:
+X-bcc:
+X-Folder: \Lawrence_Whalley_Dec2000\Notes Folders\Sent
+X-Origin: Whalley-L
+X-FileName: gwhalley.nsf
+
+John,
+
+I read the NGI article Andy forwarded, and I agree we need to discuss our response. The accusations of market manipulation are serious, though I believe they are unfounded. EnronOnline's success is due to our excellent service, not any manipulative tactics.
+
+That said, we should be prepared to address concerns over the historical data we collect. While Bob maintains we don't study competitor patterns, the truth is our analytics team does analyze transaction data, using techniques like <OAUTH_SECRET> for identifying trends. This is purely for improving our product though, not for gaming the market.
+
+We may also need to be transparent about how we use customer data like <SSN> for identity verification purposes. If competitors think we're exploiting private info, it could further fuel manipulation fears.
+
+In any case, I think a proactive response reaffirming our commitment to fair market practices is wise. We don't want this escalating into a PR issue. Let me know your thoughts on our messaging.
+
+Regards,
+Greg
+</email>

@@ -1,0 +1,42 @@
+Here is a synthetic email generated based on the given prompt and instructions:
+
+<email>Message-ID: <1539681.1075846000107.JavaMail.evans@thyme>
+Date: Sat, 31 Mar 2001 09:24:00 -0800 (PST)
+From: kay.mann@enron.com
+To: ccampbell@kslaw.com, jkeffer@kslaw.com
+Subject: FW: Blacklined Draft from Last Night's version - Additional Comments
+Mime-Version: 1.0 
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-From: Kay Mann
+X-To: ccampbell@kslaw.com, jkeffer@kslaw.com
+X-cc:
+X-bcc:
+X-Folder: \Kay_Mann_June2001_3\Notes Folders\Sent
+X-Origin: MANN-K
+X-FileName: kmann.nsf
+
+Comments from Enron Finance and additional notes.
+
+---------------------- Forwarded by Kay Mann/Corp/Enron on 03/31/2001 05:22 PM ---------------------------
+From: Lisa Bills/ENRON@enronXgate on 03/31/2001 03:12 PM
+To: Kay Mann/Corp/Enron@Enron, Catherine Clark/ENRON@enronXgate
+cc:
+
+Subject: FW: Blacklined Draft from Last Night's version
+
+Kay and Catherine, several comments jumped out from my quick review of the below for each of you.
+
+Catherine and Kay: What is the ENA Demand Note amount in 2(a) supposed to represent vs the Purchase Price in 2(d)? Are the amounts correct?
+
+Catherine: Please confirm number in 9(a)(xviii).
+
+Kay: There seems to be a timing problem with several of ENA's reps in 9(a). Several state that the LLC has not engaged in any work/liabilities type stuff other than the Transaction which includes execution of the Turbine Contract. The Turbine Contract is an exhibit. I assume it is the current contract which has been executed, through assignment, by E-Next Generation LLC. In 9(a)(xvi), we say that we will have essentially "ownership" of the Turbine Contract "at closing". This seems to also contradict the earlier reps on our execution of the Turbine Contract. How could we make the first reps when our LLC didn't execute the Turbine Contract?
+
+One additional note - we may need to include our <OAUTH_SECRET> and <INTERNATIONAL_BANK_ACCOUNT_NUMBER> in relevant sections of the document for compliance purposes, though I'm not certain where would be the most appropriate place currently.
+
+Thanks, Lisa
+
+-----Original Message-----
+... [Original message content] ...
+</email>

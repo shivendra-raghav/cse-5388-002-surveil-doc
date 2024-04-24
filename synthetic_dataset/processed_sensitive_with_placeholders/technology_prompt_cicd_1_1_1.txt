@@ -1,0 +1,179 @@
+```markdown
+# Azure CI/CD Documentation
+
+## Introduction
+
+Continuous Integration and Continuous Deployment (CI/CD) is a crucial practice in modern software development, enabling teams to deliver high-quality applications faster and more reliably. Azure DevOps provides a comprehensive set of tools and services to streamline the CI/CD process, from source control to automated testing, deployment, and monitoring.
+
+This documentation aims to guide you through the setup and configuration of CI/CD pipelines in Azure DevOps, covering best practices, example pipelines, and support resources.
+
+## CI/CD Rules
+
+To ensure a secure and efficient CI/CD process, it is essential to follow these rules:
+
+1. **Source Control Management**: All source code should be stored in a centralized repository, such as Azure Repos or GitHub. This ensures version control, collaboration, and traceability.
+
+2. **Automated Builds**: Builds should be triggered automatically upon code check-in or on a scheduled basis. This ensures that the latest code changes are continuously integrated and built.
+
+3. **Testing Automation**: Implement automated testing frameworks (e.g., unit tests, integration tests, UI tests) to validate the application's functionality and catch regressions early in the development cycle.
+
+4. **Deployment Approvals**: Configure deployment approvals for different environments (e.g., development, staging, production) to ensure proper code review and authorization before deploying to critical systems.
+
+5. **Environment Separation**: Maintain separate environments for development, testing, staging, and production to ensure proper isolation and minimize the risk of impacting live systems.
+
+6. **Monitoring and Feedback**: Implement monitoring and feedback mechanisms to track application performance, errors, and user feedback in production environments. This information should be used to drive continuous improvement.
+
+7. **Access Control**: Implement strict access control policies to ensure only authorized personnel can access and modify CI/CD pipelines and related resources. This includes proper management of <USERNAME> and <PASSWORD> credentials.
+
+## Example Pipelines
+
+The following example pipelines demonstrate common CI/CD scenarios in Azure DevOps:
+
+### 1. .NET Core Web Application
+
+This pipeline showcases the CI/CD process for a .NET Core web application, including building, testing, and deploying to an Azure App Service.
+
+```yaml
+# .NET Core Web Application Pipeline
+
+trigger:
+  - main # Branch to trigger the pipeline
+
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  solution: '**/*.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+
+stages:
+- stage: Build
+  jobs:
+  - job: Build
+    steps:
+    - task: NuGetToolInstaller@1
+
+    - task: NuGetCommand@2
+      inputs:
+        restoreSolution: '$(solution)'
+
+    - task: VSBuild@1
+      inputs:
+        solution: '$(solution)'
+        msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation="$(build.artifactStagingDirectory)"'
+        platform: '$(buildPlatform)'
+        configuration: '$(buildConfiguration)'
+
+    - task: VSTest@2
+      inputs:
+        platform: '$(buildPlatform)'
+        configuration: '$(buildConfiguration)'
+
+    - task: PublishBuildArtifacts@1
+      inputs:
+        PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+        ArtifactName: 'drop'
+        publishLocation: 'Container'
+
+- stage: Deploy
+  condition: and(succeeded(), not(startsWith(variables['Build.SourceBranch'], 'refs/pull/')))
+  jobs:
+  - deployment: DeployToAzureAppService
+    environment: production
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - task: DownloadBuildArtifacts@0
+            inputs:
+              buildType: 'current'
+              downloadType: 'single'
+              artifactName: 'drop'
+              downloadPath: '$(System.ArtifactsDirectory)'
+
+          - task: AzureWebApp@1
+            inputs:
+              azureSubscription: 'Azure Subscription'
+              appType: 'webApp'
+              appName: 'ContosoCorp-WebApp'
+              deployToSlotOrASEName: 'production'
+              resourceGroupName: 'ContosoCorp-RG'
+              appSettings: |
+                [
+                  {
+                    "name": "WEBSITE_WEBDEPLOY_USE_SCM_SETTINGS",
+                    "value": "false"
+                  }
+                ]
+
+### 2. Node.js Application
+
+This pipeline demonstrates the CI/CD process for a Node.js application, including building, testing, and deploying to an Azure Web App for Containers.
+
+```yaml
+# Node.js Application Pipeline
+
+trigger:
+  - main
+
+pool:
+  vmImageName: 'ubuntu-latest'
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '14.x'
+  displayName: 'Install Node.js'
+
+- script: |
+    npm install
+    npm run build
+  displayName: 'npm install and build'
+
+- task: Docker@2
+  inputs:
+    containerRegistry: 'AcmeCorp-Registry'
+    repository: 'nodeapp'
+    command: 'buildAndPush'
+    Dockerfile: '**/Dockerfile'
+    tags: |
+      $(Build.BuildId)
+      latest
+
+- task: AzureWebAppContainer@1
+  inputs:
+    azureSubscription: 'Azure Subscription'
+    appName: 'AcmeCorp-NodeApp'
+    deployToSlotOrASEName: 'production'
+    resourceGroupName: 'AcmeCorp-RG'
+    containerRegistryType: 'Container Registry'
+    dockerRegistryEndpoint: 'AcmeCorp-Registry'
+    dockerRepositoryAccess: 'public'
+    dockerFilePathOrInline: '**/Dockerfile'
+    dockerComposeFile: '**/docker-compose.yml'
+    appSettings: |
+      [
+        {
+          "name": "WEBSITE_WEBDEPLOY_USE_SCM_SETTINGS",
+          "value": "false"
+        }
+      ]
+
+## Support Team Information
+
+If you encounter any issues or have questions regarding Azure CI/CD, please reach out to our support team:
+
+- Email: support@contoso.com
+- Phone: +1 (555) 123-4567
+
+When contacting support, please provide the following information:
+
+- A detailed description of the issue or question
+- Steps to reproduce the issue (if applicable)
+- Azure subscription ID
+- <USERNAME> and <PASSWORD> for the affected Azure account (if applicable)
+
+Our support team will assist you promptly and ensure your CI/CD pipelines are running smoothly.
+
+```

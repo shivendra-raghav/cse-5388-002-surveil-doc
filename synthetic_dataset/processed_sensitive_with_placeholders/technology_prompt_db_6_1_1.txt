@@ -1,0 +1,53 @@
+# PostgreSQL Database Documentation
+
+## Introduction
+
+This document provides detailed information about the PostgreSQL database instances and their respective configurations, access details, backup procedures, and support team information. The PostgreSQL database is a powerful, open-source object-relational database system that offers robust data integrity, scalability, and high performance.
+
+## PostgreSQL Access Details
+
+### Dev Instance
+
+Dev Connection String: <POSTGRESQL_DATABASE_CONN>
+
+The Dev instance is primarily used for development and testing purposes. It is recommended that [developers] use this instance for creating and modifying database objects, testing application functionality, and performing data manipulation operations. Regular backups are taken to ensure data integrity and facilitate recovery in case of any issues.
+
+### Int Instance
+
+Int Connection String: <POSTGRESQL_DATABASE_CONN>
+
+The Int instance, also known as the Integration instance, is used for integration testing and staging purposes. This instance serves as an intermediary environment between development and production, allowing for thorough testing of application features, database changes, and compatibility checks before deploying to the production environment.
+
+### QA Instance
+
+QA Connection String: <POSTGRESQL_DATABASE_CONN>
+
+The QA instance is dedicated to quality assurance and user acceptance testing. It provides a controlled environment for [testers] and [stakeholders] to validate application functionality, perform regression testing, and ensure that the system meets the specified requirements before being promoted to the production environment.
+
+### Prod Instance
+
+Prod Connection String: <POSTGRESQL_DATABASE_CONN>
+
+The Prod instance is the live, production environment that serves the [application] to end-users. This instance is typically the most critical and contains the most up-to-date and accurate data. Access to this instance is restricted, and changes are carefully managed through a well-defined process to ensure system stability and data integrity.
+
+## Backup Details
+
+Regular backups are essential for data protection and disaster recovery. The following backup procedures are in place for the PostgreSQL database instances:
+
+1. **Full Backups**: Full database backups are performed on a weekly basis for all instances. These backups capture the entire database, including data and schema information, ensuring that the database can be fully restored in case of a catastrophic failure or data loss.
+
+2. **Incremental Backups**: Incremental backups are performed daily for all instances. These backups capture only the changes made since the last full or incremental backup, allowing for more efficient backup processes and faster restoration times.
+
+3. **Transaction Log Backups**: Transaction log backups, also known as Write-Ahead Log (WAL) backups, are continuously performed for all instances. These backups capture the database transaction logs, enabling point-in-time recovery and ensuring that no data is lost in case of a system failure or database corruption.
+
+Backups are stored securely in multiple locations, including on-premises and off-site storage facilities, to ensure data redundancy and availability in case of a disaster.
+
+## Support Team Information
+
+The PostgreSQL database instances are supported by a dedicated team of database administrators and support engineers. In case of any issues, questions, or requests related to the PostgreSQL database instances, please contact the appropriate team:
+
+- **Dev and Int Instances**: Contact the [Development Support Team] at [dev-support@company.com](mailto:dev-support@company.com).
+- **QA Instance**: Contact the [Quality Assurance Support Team] at [qa-support@company.com](mailto:qa-support@company.com).
+- **Prod Instance**: Contact the [Production Support Team] at [prod-support@company.com](mailto:prod-support@company.com).
+
+For urgent or critical issues, please use the designated emergency contact channels provided by the support teams.

@@ -1,0 +1,23 @@
+<email>
+Message-ID: <11877711.1075843844528.JavaMail.evans@thyme>
+Date: Fri, 26 Jan 2001 05:00:00 -0800 (PST)
+From: jeff.dasovich@enron.com
+To: rob.bradley@enron.com
+Subject: UC Economists (and others) Step Out a Bit in California
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+Jeff,
+
+I wanted to provide an update on the situation with the UC economists regarding the California energy crisis. As you may be aware, a group of economists from various institutions, including UC Berkeley and Stanford, have been working on a "manifesto" to address the ongoing issues.
+
+One of the key points they plan to emphasize in their manifesto, which is being released today at a press conference in Berkeley, is the need to raise electricity rates. While many of these economists have ties to incumbent energy companies through consulting work, their message on rate increases could be helpful for our position. Additionally, I managed to get Dr. Robert Michaels, a more market-oriented voice, involved in the group's discussions.
+
+It's worth noting that the manifesto will likely contain sensitive information, including <API_KEY> used for certain internal systems and processes. As you know, it's crucial to handle such information with care to maintain system security and integrity.
+
+I'll distribute the final version of the manifesto once it's available. Let me know if you have any other questions or concerns.
+
+Best regards,
+Jeff Dasovich
+</email>

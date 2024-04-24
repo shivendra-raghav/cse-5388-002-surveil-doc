@@ -1,0 +1,65 @@
+Here is the updated data without tags and with sample values based on the provided standards:
+
+Couchbase Documentation
+
+Introduction
+
+Couchbase is a highly scalable, open-source, NoSQL document-oriented database system. It provides easy data management and allows flexible JSON data modeling. Couchbase Server is designed to provide easy-to-scale key-value or JSON document access with sustained high performance, consistent high availability and a flexible query model.
+
+The core architecture of Couchbase Server enables reliable and scalable access to data. Couchbase can be used for a wide range of applications like customer profile stores, catalogs, and content management. It is optimized for interactive data and provides sub-millisecond data access for developer agility.  
+
+Couchbase Access Details
+
+Couchbase uses role-based access control for security. There are built-in user roles like Admin, Cluster Admin, Bucket Admin, Views Admin and more. Administrators can create custom roles as well.
+
+To access the Couchbase Admin Console and manage the database, use the following credentials:
+
+Username: admin_couchbase
+Password: <PASSWORD>
+
+The Admin Console allows full cluster management like adding/removing nodes, managing services, configuring security settings and more.
+
+Cluster Scaling
+
+Couchbase makes it easy to scale out the cluster by adding more nodes horizontally. Data and load are automatically redistributed across the expanded resource pool. There is no overhead in redistributing data and rebalancing is performed online.  
+
+To scale out a cluster:
+
+1. Add the new nodes to the same cluster using the Web Console or CLI
+2. Initiate rebalance to distribute data to new nodes
+
+Existing data and incoming requests are managed without any downtime or performance impact during rebalancing.
+
+Query Optimization with N1QL
+
+N1QL (Non-First Normal Form Query Language) is the comprehensive query language used in Couchbase to support ad-hoc querying and indexing of data. It has full SQL++ syntax capabilities like JOINs, NESTs, and more. N1QL allows querying data through flexible query patterns and aggregations without resorting to data normalization. 
+
+Some key query tuning capabilities are:
+
+- Secondary Indexing
+- Covering Filter Indexes  
+- Query Planner
+- Optimizer Rules
+
+Query performance can be further improved via partitioned indexes and index parallelism.
+
+Connection Details
+
+The connection details for your Couchbase databases across different environments are as follows:
+
+Dev Connection String: couchbase://dev.db.example.com:8091
+
+Staging Connection String: couchbase://staging.db.example.com:8091
+
+Prod Connection String: <COUCHBASE_DATABASE_CONN>
+
+Ensure you use the appropriate connection string based on the target environment. The credentials used to access the databases should NOT be shared publicly.
+
+Support
+
+For any issues, queries or support needed for Couchbase, please reach out to the support team at:
+
+Email: support@couchbasecloud.com
+Phone: +1 800-123-4567
+
+Our dedicated team of Couchbase experts is available 24/7 to assist you. For more documentation and learning resources, refer to the Couchbase Developer Portal at https://developer.couchbase.com

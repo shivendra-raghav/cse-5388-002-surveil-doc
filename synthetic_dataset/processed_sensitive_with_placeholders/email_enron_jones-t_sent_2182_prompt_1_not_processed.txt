@@ -1,0 +1,36 @@
+Here is a synthetic email incorporating the required placeholders <USERNAME> and <ACCESS_KEY> in contextually appropriate places:
+
+Message-ID: <10746365.1075847203014.JavaMail.evans@thyme>
+Date: Fri, 20 Oct 2000 04:26:00 -0700 (PDT)  
+From: tana.jones@enron.com
+To: david.minns@enron.com, jane.mcbride@enron.com, alison.keogh@enron.com, yo.yamanishi@enron.com
+Subject: ISDA Master Agreement Database Access and Instructions
+Cc: mark.taylor@enron.com, sara.shackleton@enron.com  
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Bcc: mark.taylor@enron.com, sara.shackleton@enron.com
+
+Dear Team,
+
+Greetings! I hope this email finds you well. Please find the access details for the ISDA Master Agreement Database below:
+
+Username: <USERNAME>
+Access Key: <ACCESS_KEY>
+
+You should now have edit access to the referenced database. Non-legal or credit employees can only get view access as they should not see our confidential comments, which are subject to attorney-client privilege. Please do not edit entries for companies or agreements outside your area of responsibility.
+
+A few important notes:
+- The database has great reporting functionality. Check out the sorts on the left like the "Pending Swap Update" dropdown to generate useful reports.
+- The "restrictions" column should only include critical trading/confirmations/settlement issues, not general legal notes.
+- Once an agreement's status is coded "executed", it should never be changed to avoid messing up reports. For amendments, code as "executed-under amendment".
+- I will be the one managing changes to the dropdown "keywords". Let me know if you need any new keywords added.
+- We have recently upgraded the database to include ISDA definitions, approved branch offices, and market disruption provisions. Please populate this data for new agreements going forward and update existing ones.  
+- The "See" dropdown contains counterparty name change/merger references for your convenience.
+
+I hope you find this database helpful in managing our ISDA agreements efficiently. Please let me know if you have any other questions or need further assistance.
+
+Best regards,
+Tana Jones
+
+Link: [Database Link]

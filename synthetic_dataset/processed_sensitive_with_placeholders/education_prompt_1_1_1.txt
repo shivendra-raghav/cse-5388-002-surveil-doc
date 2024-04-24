@@ -1,0 +1,69 @@
+OAKWOOD UNIVERSITY STUDENT ENROLLMENT FORM
+
+PERSONAL INFORMATION
+
+Full Name: John Doe
+Date of Birth: 05/15/2001 (MM/DD/YYYY)
+Social Security Number (SSN): <SSN>
+
+CONTACT INFORMATION
+
+Permanent Address: 123 Main St
+City: Huntsville State: AL Zip Code: 35896
+Phone Number: (256) 555-0123
+Email Address: johndoe@email.com
+
+ACADEMIC INFORMATION
+
+Intended Major: Computer Science
+Academic Level:
+    ☐ Freshman    ☐ Sophomore    ☒ Junior    ☐ Senior
+Expected Graduation Year: 2024
+Previous Education (List all high schools/colleges attended):
+Institution             City/State               Dates Attended
+Huntsville High School  Huntsville, AL           08/2017 to 05/2021
+UAB                     Birmingham, AL           08/2021 to 05/2023
+
+PARENT/GUARDIAN INFORMATION
+
+Parent/Guardian 1:
+Name: Jane Doe
+Address: 123 Main St
+City: Huntsville State: AL Zip Code: 35896
+Phone Number: (256) 555-0123
+Email Address: janedoe@email.com
+Occupation: Teacher
+Social Security Number (SSN): <SSN>
+
+Parent/Guardian 2:
+Name: Michael Doe
+Address: 456 Oak Rd
+City: Huntsville State: AL Zip Code: 35801
+Phone Number: (256) 555-9876
+Email Address: michaeldoe@email.com
+Occupation: Engineer
+Social Security Number (SSN): <SSN>
+
+EMERGENCY CONTACT INFORMATION
+
+Name: Sarah Wilson
+Relationship: Aunt
+Phone Number: (256) 555-4567
+
+ADDITIONAL INFORMATION
+
+Please list any extracurricular activities, honors, or awards:
+National Honor Society
+Volunteer at Local Animal Shelter
+Dean's List (2021-2023)
+
+How did you hear about Oakwood University? High School College Fair
+Recommended by a friend
+
+SIGNATURE
+
+By signing below, I certify that all information provided in this enrollment form is complete and accurate to the best of my knowledge.
+
+Student Signature: John Doe Date: 06/01/2023
+
+Please submit this form along with your official transcripts and any other required documents to the Oakwood University Admissions Office.

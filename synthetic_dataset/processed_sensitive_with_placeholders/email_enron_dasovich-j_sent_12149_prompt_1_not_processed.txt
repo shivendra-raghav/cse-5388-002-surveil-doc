@@ -1,0 +1,43 @@
+Here is a synthetic email generated based on the given prompt, with <USERNAME> and <PASSWORD> placeholders included in contextually appropriate places:
+
+<email>Message-ID: <16811682.1075849617596.JavaMail.evans@thyme>
+Date: Thu, 26 Jul 2001 08:26:00 -0700 (PDT)
+From: jeff.dasovich@enron.com
+To: susan.mara@enron.com
+Subject: CA Government Affairs Accomplishments---Q2/2001
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-From: Jeff Dasovich
+X-To: Susan J Mara
+X-cc: 
+X-bcc: 
+X-Folder: \Jeff_Dasovich_Oct2001\Notes Folders\Sent
+X-Origin: DASOVICH-J
+X-FileName: jdasovic.nsf
+
+Sue,
+
+Here's my shot at summarizing our key accomplishments in California during Q2/2001. Please feel free to modify as you see fit.
+
+1. Secured agreement from the California PUC to exclude Direct Access customers from rate-cap related surcharges in SDG&E's service territory and the proposed 3 cent rate increase in PG&E and Edison territories. This protects our <USERNAME> and <PASSWORD> for EES systems in those areas.
+
+2. Persuaded the PUC to postpone votes that could have suspended or ended Direct Access in California, safeguarding our business interests for now.
+
+3. Convinced Senators Dunn and Burton to delay a vote on holding Enron in contempt and imposing fines, avoiding potential legal issues and penalties.
+
+4. Delayed a PUC vote that would have impacted the "PX Credit" application and harmed EES' financial position, buying us more time.
+
+5. Provided analysis to the California Assembly Speaker supporting a core/noncore market structure, which he embraced and formed a working group to potentially implement.
+
+6. Reached an agreement with Edison to postpone a PUC proceeding where we may have been forced to submit sensitive <PASSWORD> and other commercially sensitive information.
+
+7. Helped persuade California policymakers to raise prices for utility creditworthiness, establish demand buy-down, expedite plant siting/construction, and pursue long-term contracts to mitigate volatility.
+
+8. Worked with PR and Ken Lay to engage California's business leaders in resolving the energy crisis, building broader support for our positions.
+
+Please let me know if you need any clarification or have additional inputs.
+
+Thanks,
+Jeff
+</email>

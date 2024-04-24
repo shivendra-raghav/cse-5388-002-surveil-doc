@@ -1,0 +1,101 @@
+Discount Service API Documentation
+
+Introduction:
+The Discount Service is a microservice that enables CRUD (Create, Read, Update, Delete) operations for managing discounts. It provides a RESTful API for creating, updating, retrieving, and deleting discount information.
+
+Latest Update By:
+Jane Doe (jane.doe@example.com, +1 555-555-5556)
+
+Contributors:
+- John Smith (john.smith@example.com, +1 555-555-5555)
+- Bob Johnson (bob.johnson@example.com, +1 555-555-5557)
+
+API Endpoints:
+1. POST /v1/discounts
+   Description: Create a new discount.
+   Request Body: JSON object containing discount details.
+   Responses:
+     - 201 Created (on successful creation)
+     - 400 Bad Request (if request body is invalid)
+     - 401 Unauthorized (if not authenticated)
+     - 403 Forbidden (if not authorized)
+     - 500 Internal Server Error (for any other server-side errors)
+
+2. POST /v1/discounts/:id
+   Description: Update an existing discount.
+   Path Parameter: id (the unique identifier of the discount to update)
+   Request Body: JSON object containing updated discount details.
+   Responses:
+     - 200 OK (on successful update)
+     - 400 Bad Request (if request body is invalid)
+     - 401 Unauthorized (if not authenticated)
+     - 403 Forbidden (if not authorized)
+     - 404 Not Found (if the specified discount does not exist)
+     - 500 Internal Server Error (for any other server-side errors)
+
+3. GET /v1/discounts/:id
+   Description: Retrieve details of a specific discount.
+   Path Parameter: id (the unique identifier of the discount to retrieve)
+   Responses:
+     - 200 OK (with discount details in the response body)
+     - 401 Unauthorized (if not authenticated)
+     - 403 Forbidden (if not authorized)
+     - 404 Not Found (if the specified discount does not exist)
+     - 500 Internal Server Error (for any other server-side errors)
+
+4. GET /v1/discounts
+   Description: Retrieve a list of all discounts.
+   Responses:
+     - 200 OK (with a list of discounts in the response body)
+     - 401 Unauthorized (if not authenticated)
+     - 403 Forbidden (if not authorized)
+     - 500 Internal Server Error (for any other server-side errors)
+
+5. PUT /v1/discounts/expire
+   Description: Expire a discount.
+   Request Body: JSON object containing the ID of the discount to expire.
+   Responses:
+     - 200 OK (on successful expiration)
+     - 400 Bad Request (if request body is invalid)
+     - 401 Unauthorized (if not authenticated)
+     - 403 Forbidden (if not authorized)
+     - 404 Not Found (if the specified discount does not exist)
+     - 500 Internal Server Error (for any other server-side errors)
+
+6. DELETE /v1/discounts/:id
+   Description: Delete a specific discount.
+   Path Parameter: id (the unique identifier of the discount to delete)
+   Responses:
+     - 204 No Content (on successful deletion)
+     - 401 Unauthorized (if not authenticated)
+     - 403 Forbidden (if not authorized)
+     - 404 Not Found (if the specified discount does not exist)
+     - 500 Internal Server Error (for any other server-side errors)
+
+7. DELETE /v1/discounts/account/:accountId
+   Description: Delete all discounts for a specific account.
+   Path Parameter: accountId (the unique identifier of the account)
+   Responses:
+     - 204 No Content (on successful deletion)
+     - 401 Unauthorized (if not authenticated)
+     - 403 Forbidden (if not authorized)
+     - 404 Not Found (if the specified account does not exist or has no discounts)
+     - 500 Internal Server Error (for any other server-side errors)
+
+Rate Limit:
+The Discount Service API has a rate limit of 100 requests per minute per client. If the rate limit is exceeded, the API will return a 429 Too Many Requests response.
+
+APP Registration Information:
+To use the Discount Service API, you need to register your application and obtain an <ACCESS_KEY> and <SECRET_KEY>. These credentials are required for basic authentication and must be included in the `Authorization` header of your API requests:
+
+```
+Authorization: Basic <ACCESS_KEY>:<SECRET_KEY>
+```
+
+Replace `<ACCESS_KEY>` and `<SECRET_KEY>` with your actual credentials obtained during the app registration process.
+
+Error Handling:
+The Discount Service API returns standard HTTP status codes to indicate the success or failure of an operation. In case of errors, the API will return a JSON object containing an error message and additional details, if applicable.
+
+Summary:
+The Discount Service API provides a flexible and secure way to manage discounts for various use cases. By following the documented endpoints and authentication requirements, you can seamlessly integrate discount functionality into your applications. If you encounter any issues or have suggestions for improvements, please reach out to the contributors listed in this documentation.

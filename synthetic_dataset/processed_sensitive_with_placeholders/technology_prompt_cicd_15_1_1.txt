@@ -1,0 +1,74 @@
+# GoCD Documentation
+
+## Introduction
+
+GoCD is an open-source Continuous Delivery tool that helps organizations build, test, and release software in a streamlined and efficient manner. This documentation provides a comprehensive guide on how to configure GoCD pipelines, manage materials, and handle environment variables.
+
+## GoCD Pipeline Configuration
+
+GoCD pipelines are the core components that define the workflow for building, testing, and deploying your applications. Each pipeline consists of one or more stages, and each stage consists of one or more jobs.
+
+### Creating a Pipeline
+
+1. Log in to the GoCD server using your credentials.
+2. Navigate to the "Pipelines" section and click on the "Create a Pipeline" button.
+3. Provide a name and optional description for your pipeline.
+4. Configure the pipeline materials (covered in the "Material Management" section).
+5. Define the stages and jobs for your pipeline.
+6. Optionally, you can configure environment variables for your pipeline (covered in the "Environment Variables" section).
+7. Save the pipeline configuration.
+
+### Managing Stages and Jobs
+
+Stages represent logical groups of tasks within a pipeline, and jobs are the individual tasks that make up a stage. You can add, modify, or remove stages and jobs as needed.
+
+1. In the pipeline configuration, navigate to the "Stages" section.
+2. Click on the "Add Stage" button to create a new stage.
+3. Provide a name and optional description for the stage.
+4. Configure the jobs within the stage by specifying the tasks to be executed.
+5. Optionally, you can set environment variables specific to the stage or job.
+6. Save the stage configuration.
+
+## Material Management
+
+Materials are the sources from which GoCD fetches the code or artifacts for building and deploying your applications. GoCD supports various material types, including Git repositories, Subversion repositories, and package repositories.
+
+### Configuring Materials
+
+1. In the pipeline configuration, navigate to the "Materials" section.
+2. Click on the "Add Material" button.
+3. Select the material type (e.g., Git, Subversion, Package Repository).
+4. Provide the necessary details for the material, such as the repository URL, branch, or package location.
+5. If required, enter the authentication credentials for accessing the material source (e.g., username and <API_KEY>).
+6. Save the material configuration.
+
+## Environment Variables
+
+Environment variables in GoCD allow you to parameterize your pipeline configurations, making it easier to manage and reuse configurations across different environments or projects.
+
+### Defining Environment Variables
+
+1. In the pipeline configuration, navigate to the "Environment Variables" section.
+2. Click on the "Add Environment Variable" button.
+3. Provide a name for the environment variable.
+4. Enter the value for the environment variable. If the value contains sensitive information, you can use placeholders like <DATABASE_CONN> for database connection strings or <API_KEY> for API keys.
+5. Optionally, you can mark the environment variable as "Secure" to encrypt its value.
+6. Save the environment variable configuration.
+
+### Using Environment Variables
+
+Environment variables can be referenced and used throughout your pipeline configuration, including in task definitions, material configurations, and other sections.
+
+For example, to use an environment variable in a task command, you can reference it using the `${ENV_VAR_NAME}` syntax:
+
+```
+task_command="./build.sh ${DB_CONNECTION_STRING}"
+```
+
+In this example, `${DB_CONNECTION_STRING}` will be replaced with the value of the environment variable named `DB_CONNECTION_STRING` during runtime.
+
+## Conclusion
+
+This documentation provides an overview of the key concepts and configurations in GoCD, including pipeline configuration, material management, and environment variable handling. By following the guidelines outlined in this document, you can effectively set up and manage your GoCD pipelines, ensuring a smooth and efficient Continuous Delivery process.
+
+Remember to handle sensitive information, such as API keys and database connection strings, with care. Always use placeholders like <API_KEY> and <DATABASE_CONN> when documenting or sharing configurations that may contain sensitive data.

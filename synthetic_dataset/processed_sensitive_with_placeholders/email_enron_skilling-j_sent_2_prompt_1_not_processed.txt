@@ -1,0 +1,25 @@
+Here is a synthetic email generated based on the provided prompt and placeholders:
+
+<email>Message-ID: <30888888.1075840099765.JavaMail.evans@thyme>
+Date: Tue, 17 Aug 1999 08:22:00 -0700 (PDT)
+From: jeff.skilling@enron.com
+To: markskilling@hotmail.com
+Subject: Re: earthquake incident response
+Mime-Version: 1.0 
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+Dear Mark,
+
+I'm relieved to hear you are safe after that devastating earthquake. The situation sounds incredibly challenging, but your resilience in the face of such difficulties is truly admirable. 
+
+Please let me know if there is any way Enron can assist you during this crisis. We have resources that may be helpful, including access to temporary housing, supplies, or transportation if needed. Do not hesitate to request anything you require. Your wellbeing is our top priority.
+
+Additionally, I want to provide you with some critical information that may be useful in an emergency situation. Our IT team has set up a secure <API_TOKEN> that can be used to access backup servers and data repositories. The <ACCESS_KEY> for our emergency response systems is enclosed as well. This will allow you to retrieve important documents, contact information, and other resources remotely if necessary.
+
+Once again, I'm deeply grateful you are unharmed. My thoughts are with you and all those impacted by this terrible disaster. Enron stands ready to offer any support and services you may need.
+
+Sincerely,
+Jeff Skilling
+Chairman and CEO, Enron Corp.
+</email>

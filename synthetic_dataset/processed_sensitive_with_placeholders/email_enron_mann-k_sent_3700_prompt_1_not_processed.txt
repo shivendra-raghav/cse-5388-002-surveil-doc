@@ -1,0 +1,54 @@
+Here is a synthetic email generated based on the provided prompt:
+
+<email>Message-ID: <777090.1075846009024.JavaMail.evans@thyme>
+Date: Thu, 19 Apr 2001 04:31:00 -0700 (PDT)
+From: kay.mann@enron.com
+To: legal.4@enron.com
+Subject: FW: Salmon Security Agreement and Inter-Company Note
+Mime-Version: 1.0
+Content-Type: text/plain; charset=ANSI_X3.4-1968
+Content-Transfer-Encoding: 7bit
+X-From: Kay Mann
+X-To: Legal Temp 4
+X-cc: 
+X-bcc: 
+X-Folder: \Kay_Mann_June2001_3\Notes Folders\Sent
+X-Origin: MANN-K
+X-FileName: kmann.nsf
+
+Hi Warren,
+
+I'm forwarding a couple of emails regarding the Delta transaction. Please print them and set up the files like you did for the Northwestern documents.
+
+Carolyn from King & Spalding has attached the Salmon promissory note to PPL and the Security Agreement. Greg mentioned a Financing Statement is coming from Freshfields soon. He has requested an ENA letter similar to the GE letter to be signed at escrow funding, agreeing to the execution of these forms at closing. Carolyn will duplicate the GE letter.
+
+They are still waiting on Greg and Isabel's response to our proposal regarding the escrow. Greg advised that the additional language on the Turbine Contract should be coming shortly.
+
+Please keep these documents secure and ensure <USERNAME> and <PASSWORD> are updated in our systems for authorized access.
+
+Let me know if you need any other information.
+
+Thanks,
+
+Kay
+
+PS I'm on a long conference call but feel free to walk in if you have any questions.
+
+---------- Forwarded message ----------
+From: "Campbell, Carolyn" <CCampbell@KSLAW.com>
+Date: Thu, 19 Apr 2001 11:07:41 AM
+Subject: FW: Salmon Security Agreement and Inter-Company Note
+To: 'kay.mann@enron.com' <kay.mann@enron.com>
+Cc: "Keffer, John" <JKeffer@KSLAW.com>
+
+[Email content from Carolyn Campbell]
+
+---------- Forwarded message ----------
+From: Lang, Gregory F. <gregorylang@paulhastings.com>  
+Date: Thu, 19 Apr 2001 11:03 AM
+Subject: Salmon Security Agreement and Inter-Company Note
+To: 'ccampbell@kslaw.com' <ccampbell@kslaw.com>
+Cc: 'iparker@freshfields.com', 'lisa.obrien@freshfields.com'
+
+[Email content from Gregory Lang with attachments]
+</email>

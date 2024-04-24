@@ -1,0 +1,26 @@
+Here is a synthetic email I generated based on the provided prompt, with placeholders for <INTERNATIONAL_BANK_ACCOUNT_NUMBER> added in contextually appropriate places:
+
+<email>Message-ID: <11222844.1075853896528.JavaMail.evans@thyme>
+Date: Fri, 20 Apr 2001 09:19:00 -0700 (PDT)  
+From: chris.germany@enron.com
+To: laurie.ellis@enron.com, mary.franklin@enron.com, wade.price@enron.com, darla.saucier@enron.com
+Subject: Re: Imbalance trades on CNG
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+Hi team,
+
+Laurie has been persistently inquiring about an imbalance trade behind NIMO, and I can no longer ignore it. Here's what I need to know:
+
+1. Did Enron purchase gas (pool or local production) behind NIMO in January and April 2000? If so, please provide the <INTERNATIONAL_BANK_ACCOUNT_NUMBER> used for these transactions.
+
+2. What CES activity do we have at NIMO for those months? I need details on any trading accounts or <INTERNATIONAL_BANK_ACCOUNT_NUMBER> involved.
+
+3. Do we have any out-of-balance items at NIMO for January and April 2000 that could explain this discrepancy? If yes, please share the relevant <INTERNATIONAL_BANK_ACCOUNT_NUMBER> and transaction details.
+
+I understand this may involve digging into old records, but Laurie's request has been outstanding for too long. Your assistance in resolving this is greatly appreciated.
+
+Regards,
+Chris
+</email>

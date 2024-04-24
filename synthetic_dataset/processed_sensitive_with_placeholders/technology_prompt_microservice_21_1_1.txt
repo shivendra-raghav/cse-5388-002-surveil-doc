@@ -1,0 +1,92 @@
+Products Service API Documentation
+
+Introduction:
+The Products Service API is a RESTful web service designed to enable Create, Read, Update, and Delete (CRUD) operations for managing products. It provides a standardized interface for interacting with product data, allowing developers to build robust and scalable applications.
+
+Latest Update By:
+This documentation was last updated on 15/06/2023 by John Doe.
+
+Maintenance Team Details:
+The Products Service API is maintained by the following team:
+- Team Lead: Jane Smith
+- Developers: Michael Johnson, Emily Davis, David Wilson
+- Quality Assurance: Sarah Thompson
+- Technical Writer: Robert Anderson
+
+REST Endpoints:
+
+1. Create a Product:
+   HTTP Method: POST
+   Endpoint: /api/v1/products
+   Request Body: JSON object containing product details
+   Responses:
+     - 201 Created: Product created successfully
+     - 400 Bad Request: Invalid request body
+     - 401 Unauthorized: Missing or invalid <API_KEY>
+     - 500 Internal Server Error: An unexpected error occurred on the server
+
+2. Update a Product:
+   HTTP Method: PUT
+   Endpoint: /api/v1/products/{productId}
+   Request Body: JSON object containing updated product details
+   Responses:
+     - 200 OK: Product updated successfully
+     - 400 Bad Request: Invalid request body or product ID
+     - 401 Unauthorized: Missing or invalid <API_KEY>
+     - 404 Not Found: Product not found
+     - 500 Internal Server Error: An unexpected error occurred on the server
+
+3. Get a Product:
+   HTTP Method: GET
+   Endpoint: /api/v1/products/{productId}
+   Responses:
+     - 200 OK: Product found and returned
+     - 401 Unauthorized: Missing or invalid <API_KEY>
+     - 404 Not Found: Product not found
+     - 500 Internal Server Error: An unexpected error occurred on the server
+
+4. List All Products:
+   HTTP Method: GET
+   Endpoint: /api/v1/products
+   Responses:
+     - 200 OK: List of products returned
+     - 401 Unauthorized: Missing or invalid <API_KEY>
+     - 500 Internal Server Error: An unexpected error occurred on the server
+
+5. Delete a Product:
+   HTTP Method: DELETE
+   Endpoint: /api/v1/products/{productId}
+   Responses:
+     - 204 No Content: Product deleted successfully
+     - 401 Unauthorized: Missing or invalid <API_KEY>
+     - 404 Not Found: Product not found
+     - 500 Internal Server Error: An unexpected error occurred on the server
+
+Authentication:
+All requests to the Products Service API, except for specific public endpoints, require authentication using an API key. The API key should be included in the request headers as follows:
+
+Authorization: Bearer <API_KEY>
+
+Replace <API_KEY> with your valid API key.
+
+Rate Limiting:
+To prevent abuse and ensure fair usage, the Products Service API implements rate limiting. The rate limits are as follows:
+- 100 requests per minute per IP address
+- 1000 requests per hour per API key
+
+If the rate limit is exceeded, the API will respond with the following HTTP status code:
+- 429 Too Many Requests: Rate limit exceeded
+
+Error Handling:
+The Products Service API uses standard HTTP status codes to indicate the success or failure of an operation. In case of errors, the API will return a JSON response with an error message and a corresponding status code.
+
+Example Error Response:
+```json
+{
+  "error": "Invalid request body",
+  "status": 400
+}
+```
+
+Summary:
+The Products Service API provides a robust and secure interface for managing product data. By following the documented endpoints and authentication methods, developers can build applications that seamlessly interact with the product service. Regular updates and maintenance ensure the API's reliability and performance.

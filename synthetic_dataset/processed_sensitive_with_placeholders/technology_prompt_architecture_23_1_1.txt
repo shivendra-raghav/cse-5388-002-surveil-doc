@@ -1,0 +1,70 @@
+Microservices Architecture Documentation
+
+Introduction:
+This document provides an in-depth overview of the microservices architecture employed in our organization. It covers the essential components, including Kubernetes, Istio, and the Kong API Gateway. Additionally, it outlines the necessary steps to access and manage these services, ensuring a smooth and secure operational workflow.
+
+Latest Update By:
+This documentation was last updated by [John Doe] on [May 15, 2023].
+
+Service Details:
+
+1. Kubernetes:
+Kubernetes is an open-source container orchestration system that automates the deployment, scaling, and management of containerized applications. It enables efficient resource utilization and seamless application scaling, making it an ideal choice for microservices architectures.
+
+1.1. Accessing the Kubernetes Dashboard:
+To access the Kubernetes Dashboard, follow these steps:
+- Open your web browser and navigate to the Kubernetes Dashboard URL.
+- Enter your administrator credentials:
+  Username: admin
+  Password: <BEARER_TOKEN>
+- Upon successful authentication, you will be granted access to the Kubernetes Dashboard.
+
+1.2. Managing Kubernetes Resources:
+The Kubernetes Dashboard provides a user-friendly interface for managing various resources, including:
+- Deployments: Create, update, and monitor deployments of your microservices.
+- Services: Define and manage services to enable communication between microservices.
+- Ingress: Configure ingress rules to route traffic to your microservices.
+- Pods: View and manage the pods running your microservices.
+- Namespaces: Organize resources into logical namespaces for better isolation and management.
+
+2. Istio:
+Istio is a service mesh that provides advanced traffic management, security, and observability capabilities for microservices. It seamlessly integrates with Kubernetes and enables fine-grained control over service-to-service communication.
+
+2.1. Accessing the Istio Control Plane:
+To access the Istio Control Plane, follow these steps:
+- Open your web browser and navigate to the Istio Control Plane URL.
+- Enter your administrator credentials:
+  Username: admin
+  Password: <OAUTH_ID>
+- Upon successful authentication, you will be granted access to the Istio Control Plane.
+
+2.2. Configuring Istio:
+The Istio Control Plane provides a comprehensive interface for configuring various aspects of the service mesh, including:
+- Traffic Management: Define routing rules, circuit breakers, and load balancing policies.
+- Security: Implement mutual TLS, authentication, and authorization policies.
+- Observability: Configure distributed tracing, monitoring, and logging.
+- Policies: Apply resource quotas, rate limits, and other policies to your microservices.
+
+3. Kong API Gateway:
+The Kong API Gateway acts as a powerful entry point for your microservices architecture, providing features such as API management, authentication, rate limiting, and load balancing.
+
+3.1. Accessing the Kong Admin GUI:
+To access the Kong Admin GUI, follow these steps:
+- Open your web browser and navigate to the Kong Admin GUI URL.
+- Enter your administrator credentials:
+  Username: admin
+  Password: <BEARER_TOKEN>
+- Upon successful authentication, you will be granted access to the Kong Admin GUI.
+
+3.2. Managing APIs and Services:
+The Kong Admin GUI allows you to manage various aspects of your APIs and services, including:
+- APIs: Define and manage APIs, including routing, authentication, and rate limiting.
+- Services: Register and manage upstream microservices.
+- Consumers: Manage consumer entities and their access to APIs.
+- Plugins: Configure and apply plugins for additional functionality (e.g., caching, logging, etc.).
+- Upstreams: Define and manage upstream targets for load balancing.
+
+Summary:
+This documentation provides a comprehensive overview of the microservices architecture components used in our organization, including Kubernetes, Istio, and the Kong API Gateway. It outlines the necessary steps to access and manage these services, ensuring a smooth and secure operational workflow. By following the guidelines and best practices outlined in this document, you can effectively manage and maintain your microservices architecture.
+
+Note: Remember to keep the <BEARER_TOKEN> and <OAUTH_ID> credentials secure and avoid sharing them with unauthorized individuals.

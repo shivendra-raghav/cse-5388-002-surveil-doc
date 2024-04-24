@@ -1,0 +1,59 @@
+Payment Gateway Service Documentation
+
+Introduction
+The Payment Gateway Service acts as an Ambassador microservice for the Payment Service, handling authentication, rate limiting, and request/response transformation. It serves as an intermediary between clients and the backend Payment Service, enhancing the security, scalability, and functionality of the overall system.
+
+Authentication
+The Payment Gateway Service implements authentication mechanisms to ensure that only authorized clients can access the Payment Service. Clients must provide valid credentials in the form of an API key or OAuth token to authenticate their requests.
+
+Example:
+Authorization: Bearer <API_KEY>
+
+Note: Replace <API_KEY> with your actual API key or access token. Do not expose sensitive information in client requests or configuration files.
+
+Ambassador Service
+The Payment Gateway Service exposes the following endpoints for clients to interact with the Payment Service:
+
+POST /v1/payments/authorize
+This endpoint is used to initiate a payment authorization request. The Payment Gateway Service validates the request, enforces rate limiting, and transforms the request payload before forwarding it to the backend Payment Service.
+
+POST /v1/payments/capture
+This endpoint is used to capture a previously authorized payment. The Payment Gateway Service performs necessary validations, rate limiting, and request transformations before forwarding the request to the backend Payment Service.
+
+GET /v1/payments/{paymentId}
+This endpoint retrieves the details of a specific payment identified by the `paymentId`. The Payment Gateway Service handles authentication, rate limiting, and response transformations before returning the payment details to the client.
+
+PUT /v1/payments/{paymentId}/refund
+This endpoint initiates a refund for a specific payment identified by the `paymentId`. The Payment Gateway Service performs necessary validations, rate limiting, and request transformations before forwarding the refund request to the backend Payment Service.
+
+DELETE /v1/payments/{paymentId}
+This endpoint cancels a specific payment identified by the `paymentId`. The Payment Gateway Service handles authentication, rate limiting, and request transformations before forwarding the cancellation request to the backend Payment Service.
+
+Backend Service
+The Payment Gateway Service communicates with the backend Payment Service through the following internal endpoints:
+
+POST /internal/payments/authorize
+This endpoint receives the transformed payment authorization request from the Payment Gateway Service and processes it accordingly.
+
+POST /internal/payments/capture
+This endpoint receives the transformed payment capture request from the Payment Gateway Service and processes it accordingly.
+
+GET /internal/payments/{paymentId}
+This endpoint retrieves the details of a specific payment identified by the `paymentId` and returns the payment information to the Payment Gateway Service for response transformation.
+
+PUT /internal/payments/{paymentId}/refund
+This endpoint receives the transformed refund request from the Payment Gateway Service and processes the refund for the specified payment.
+
+DELETE /internal/payments/{paymentId}
+This endpoint receives the transformed cancellation request from the Payment Gateway Service and cancels the specified payment.
+
+Request Routing
+The Payment Gateway Service acts as a reverse proxy, routing client requests to the appropriate backend Payment Service endpoints based on the request URL and HTTP method. It also performs request transformations, such as payload validation, data sanitization, and format conversions, to ensure that the backend Payment Service receives well-formed requests.
+
+Response Transformation
+The Payment Gateway Service transforms the responses received from the backend Payment Service before returning them to the clients. This may involve filtering sensitive data, adding additional metadata, or converting the response format to match the client's expectations.
+
+Summary
+The Payment Gateway Service serves as an Ambassador microservice for the Payment Service, providing enhanced security, scalability, and functionality. It handles authentication, rate limiting, request routing, and request/response transformations, acting as an intermediary between clients and the backend Payment Service. By implementing this Ambassador pattern, the Payment Gateway Service decouples the client-facing API from the internal implementation of the Payment Service, promoting maintainability and flexibility in the overall system architecture.
+
+Note: Ensure that you store sensitive information, such as API keys and OAuth secrets, securely in environment variables or encrypted configuration files. Avoid exposing sensitive information in client requests or log files. For example, use placeholders like <OAUTH_SECRET> instead of actual secrets in your documentation or code examples.

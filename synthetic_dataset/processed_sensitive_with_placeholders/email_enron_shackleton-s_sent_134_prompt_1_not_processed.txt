@@ -1,0 +1,35 @@
+Here is a synthetic email generated based on the provided prompt and email template:
+
+<email>Message-ID: <2964314.1075844520336.JavaMail.evans@thyme>
+Date: Thu, 8 Jul 1999 07:54:00 -0700 (PDT)
+From: sara.shackleton@enron.com
+To: tanya.rohauer@enron.com, mark.taylor@enron.com, carol.clair@enron.com, 
+	shari.stack@enron.com, susan.bailey@enron.com, susan.flynn@enron.com, 
+	marie.heard@enron.com, tana.jones@enron.com
+Subject: Counterparties with high volume of trades for 1999
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-From: Sara Shackleton
+X-To: Tanya Rohauer, Mark - ECT Legal Taylor, Carol St Clair, Shari Stack, Susan Bailey, Susan Flynn, Marie Heard, Tana Jones
+X-cc: 
+X-bcc: 
+X-Folder: \Sara_Shackleton_Dec2000_June2001_1\Notes Folders\Sent
+X-Origin: SHACKLETON-S
+X-FileName: sshackle.nsf
+
+Hi team,
+
+Attached is a "high volume" counterparty list for two categories. With respect to the first category, Carol is handling BPAmoco, and I am speaking with Cargill. We should also address Neumin Production Co. as they have a high volume of trades without a master agreement.
+
+For the counterparties with ECT master agreements, we may want to consider actively trying to replace the existing ECT masters with ISDA agreements, especially for high-volume partners like Aquila Risk Management, El Paso Energy Marketing, and Statoil Energy Trading. This could help streamline our legal processes and provide more consistent documentation across counterparties.
+
+Please let me know if you have any concerns or suggestions regarding this approach, particularly for counterparties like J. Aron & Company, where <USERNAME> is currently confirming ECT agreements (we sign their paper). We may need to handle such cases differently.
+
+Additionally, I noticed a few counterparties on the list with peculiar names, like "Neumin Production Co." Could someone double-check the spelling and confirm if it's a legitimate entity? We wouldn't want any legal issues arising from misspellings or incorrect company names, especially when dealing with sensitive information like <LICENSE_PLATE> numbers or contract details.
+
+Looking forward to your thoughts on this matter.
+
+Best regards,
+Sara
+</email>

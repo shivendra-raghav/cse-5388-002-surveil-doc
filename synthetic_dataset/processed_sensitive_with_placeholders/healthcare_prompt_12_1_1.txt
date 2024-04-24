@@ -1,0 +1,59 @@
+Here is the updated value without tags and using the provided standards:
+
+ABC Healthcare: Member Documentation
+
+Onboarding Guide
+
+Welcome to ABC Healthcare! We are pleased to have you as a new member. This onboarding guide will walk you through the steps to get started with your healthcare coverage.
+
+First, you'll need to create an online account at abchealthcare.com. Click on the "Sign Up" button and complete the required fields. You'll be asked to create a <PASSWORD> - please make sure it is a secure combination of letters, numbers, and symbols.
+
+Once your account is created, you can access your policy details, find in-network providers, and manage your claims all in one convenient place. Your member ID number is printed on your ID card, which you should have received in the mail.
+
+To set up automatic premium payments, log into your online account and click on "Billing & Payments." You'll be prompted to enter your <BANK_ACCOUNT_NUMBER> and routing number. This will allow your monthly payments to be withdrawn directly on your due date.
+
+Finally, take some time to review your coverages in the Benefit Summary section below so you understand what services are covered under your plan.
+
+Benefit Summary
+
+Preventive Care: Your plan covers preventive services such as annual physicals, routine screenings, immunizations, etc. at 100% with no cost to you when receiving care from an in-network provider.
+
+Office Visits: You'll pay a $30 copay to see your primary care physician. Specialist visits have a $50 copay.
+
+Emergency Room: ER visits are subject to a $300 copay, waived if you are admitted to the hospital.
+
+Inpatient Hospital: You pay a $750 deductible per admission, then 15% coinsurance.
+
+Outpatient Surgery: Outpatient procedures done at a hospital or ambulatory surgical center have a $400 facility copay.
+
+Prescriptions: Tier 1 (generic) drugs have a $15 copay, Tier 2 (preferred) drugs are $40, and Tier 3 (non-preferred) drugs are $75 for a 30-day supply.
+
+Out-of-Pocket Costs
+
+In addition to the copays and coinsurance outlined above, your plan has the following out-of-pocket costs for the 2023 calendar year:
+
+Deductible: $2,000 individual / $4,000 family
+Coinsurance Maximum: $4,000 individual / $8,000 family
+Out-of-Pocket Maximum: $7,500 individual / $15,000 family
+
+Your deductible applies to most services with the exception of preventive care and prescription drugs. Once you have paid the full deductible amount for the year, you will only be responsible for copays and coinsurance up to the out-of-pocket maximum. After the out-of-pocket max is met, your plan covers eligible expenses at 100%.
+
+Be sure to only visit providers and facilities that are In-Network, as your out-of-pocket costs will be significantly higher if you see an Out-of-Network doctor or go to an Out-of-Network hospital or clinic.
+
+Keep in mind, your out-of-pocket responsibility "resets" every January 1st based on the new year's deductible and out-of-pocket limits.
+
+Appeals Process
+
+If your health insurance claim is denied, you have the right to an internal appeal. First, call the Customer Service number on your ID card. The representative can check the status, explain the denial reason, and initiate an appeal if appropriate.
+
+If your claim is denied a second time during the internal appeal process, you can then request an external review. This means an independent third-party organization will review your claim. Their decision is binding for both you and ABC Healthcare.
+
+You have 180 calendar days to request an external appeal after receiving a final denial letter from ABC Healthcare. To begin the external appeal process, send your request along with any supporting documentation to:
+
+ABC Healthcare Appeals
+PO Box 54321
+Cityville, CA 90210
+
+You may also submit your external appeal request online through your secure member portal by uploading the required forms and documents. Do not include your <PASSWORD> or <BANK_ACCOUNT_NUMBER> when submitting your appeal.
+
+We hope you find this member documentation helpful as you get started with your ABC Healthcare plan! Please let us know if you have any other questions.

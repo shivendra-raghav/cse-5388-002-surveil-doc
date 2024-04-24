@@ -1,0 +1,86 @@
+```
+Reviews Service Documentation
+
+Introduction:
+The Reviews Service is a GraphQL-based microservice that enables CRUD (Create, Read, Update, Delete) operations for managing reviews. This service allows users to create, update, list, and delete reviews for various products or services.
+
+Latest Update By:
+This documentation was last updated on June 15, 2023 by John Doe.
+
+Maintenance Team Details:
+The Reviews Service is maintained by the following team:
+- Jane Smith
+- Michael Johnson
+- Emily Davis
+
+GraphQL Services:
+
+1. Create a Review:
+   Description: This GraphQL mutation allows users to create a new review.
+   Mutation: createReview(input: CreateReviewInput!): Review!
+   Input: CreateReviewInput (productId: ID!, rating: Float!, comment: String!)
+   Response Codes:
+     - 200 OK: Review created successfully.
+     - 400 Bad Request: Invalid input data.
+     - 401 Unauthorized: Authentication failed.
+     - 403 Forbidden: User does not have permission to create a review.
+
+2. Update a Review:
+   Description: This GraphQL mutation allows users to update an existing review.
+   Mutation: updateReview(input: UpdateReviewInput!): Review!
+   Input: UpdateReviewInput (id: ID!, rating: Float, comment: String)
+   Response Codes:
+     - 200 OK: Review updated successfully.
+     - 400 Bad Request: Invalid input data.
+     - 401 Unauthorized: Authentication failed.
+     - 403 Forbidden: User does not have permission to update the review.
+     - 404 Not Found: Review not found.
+
+3. List a Review:
+   Description: This GraphQL query retrieves a specific review by its ID.
+   Query: review(id: ID!): Review
+   Response Codes:
+     - 200 OK: Review retrieved successfully.
+     - 401 Unauthorized: Authentication failed.
+     - 404 Not Found: Review not found.
+
+4. List All Reviews:
+   Description: This GraphQL query retrieves all reviews.
+   Query: reviews(filters: ReviewFilters): [Review!]!
+   Input: ReviewFilters (productId: ID, rating: Float, sortBy: ReviewSortBy)
+   Response Codes:
+     - 200 OK: Reviews retrieved successfully.
+     - 401 Unauthorized: Authentication failed.
+
+5. Delete a Review:
+   Description: This GraphQL mutation deletes an existing review.
+   Mutation: deleteReview(id: ID!): Boolean!
+   Response Codes:
+     - 200 OK: Review deleted successfully.
+     - 401 Unauthorized: Authentication failed.
+     - 403 Forbidden: User does not have permission to delete the review.
+     - 404 Not Found: Review not found.
+
+Rate Limit:
+The Reviews Service imposes a rate limit to prevent abuse and ensure optimal performance. The rate limit is set to 100 requests per minute per client. If the rate limit is exceeded, the service will respond with a 429 Too Many Requests error.
+
+Error Handling:
+The Reviews Service uses standard HTTP response codes to indicate the success or failure of operations. Additionally, it provides detailed error messages in the response body to aid in debugging and troubleshooting.
+
+Here are the common error codes and their meanings:
+- 400 Bad Request: The request was malformed or contained invalid data.
+- 401 Unauthorized: The request was not authenticated or the provided credentials were invalid.
+- 403 Forbidden: The authenticated user does not have permission to perform the requested operation.
+- 404 Not Found: The requested resource could not be found.
+- 500 Internal Server Error: An unexpected error occurred on the server.
+- 501 Not Implemented: The requested operation is not implemented by the server.
+- 502 Bad Gateway: The server encountered an invalid response from an upstream server.
+- 503 Service Unavailable: The server is currently unavailable or overloaded.
+- 504 Gateway Timeout: The server did not receive a timely response from an upstream server.
+
+Authentication:
+To authenticate with the Reviews Service, you need to provide an <OAUTH_ID> and <OAUTH_SECRET> in the request headers. These credentials will be used to identify and authorize the client making the request.
+
+Summary:
+The Reviews Service is a robust and secure GraphQL-based microservice that provides CRUD operations for managing reviews. It offers a comprehensive set of features, including creating, updating, listing, and deleting reviews, as well as advanced filtering and sorting capabilities. The service adheres to industry-standard security practices and implements rate limiting to prevent abuse. With its detailed error handling and thorough documentation, the Reviews Service is a reliable and user-friendly solution for managing reviews in your application.
+```

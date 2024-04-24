@@ -1,0 +1,219 @@
+Here is the updated value without tags and following the specified standards:
+
+Here is a comprehensive documentation for the Payments Service GraphQL API, following the given specifications:
+
+# Payments Service GraphQL API Documentation
+
+## Introduction
+
+The Payments Service is a microservice that enables Create, Read, Update, and Delete (CRUD) operations for managing payments within an application. This service is designed to handle various payment-related functionalities, including creating new payments, updating existing payments, retrieving payment details, listing all payments, and deleting payments.
+
+## Latest Update By
+
+This documentation was last updated on 25/05/2023 by John Doe.
+
+## Maintenance Team Details
+
+The Payments Service is currently maintained by the following team:
+
+- Team Lead: Sarah Wilson
+- Senior Developer: Michael Johnson
+- Developer: Emily Davis
+- Quality Assurance: David Thompson
+
+For any inquiries or support related to this service, please contact the team at payments.support@abccorp.com.
+
+## GraphQL Services
+
+The Payments Service exposes the following GraphQL APIs:
+
+### 1. Create a Payment
+
+This API allows you to create a new payment record.
+
+**Endpoint:** `/graphql`
+
+**Method:** POST
+
+**Query:**
+
+```graphql
+mutation createPayment($input: CreatePaymentInput!) {
+  createPayment(input: $input) {
+    id
+    amount
+    currency
+    status
+    createdAt
+    updatedAt
+  }
+}
+```
+
+**Input:**
+
+```graphql
+input CreatePaymentInput {
+  amount: Float!
+  currency: String!
+  paymentMethod: String!
+  customerId: ID!
+}
+```
+
+**Responses:**
+
+- 200 OK: The payment was created successfully.
+- 400 Bad Request: The request data is invalid or incomplete.
+- 401 Unauthorized: Authentication failed. You must provide a valid <API_TOKEN> or <OAUTH_ID> to access this API.
+- 500 Internal Server Error: An unexpected error occurred on the server.
+
+### 2. Update a Payment
+
+This API allows you to update an existing payment record.
+
+**Endpoint:** `/graphql`
+
+**Method:** POST
+
+**Query:**
+
+```graphql
+mutation updatePayment($id: ID!, $input: UpdatePaymentInput!) {
+  updatePayment(id: $id, input: $input) {
+    id
+    amount
+    currency
+    status
+    updatedAt
+  }
+}
+```
+
+**Input:**
+
+```graphql
+input UpdatePaymentInput {
+  amount: Float
+  currency: String
+  status: String
+}
+```
+
+**Responses:**
+
+- 200 OK: The payment was updated successfully.
+- 400 Bad Request: The request data is invalid or incomplete.
+- 401 Unauthorized: Authentication failed. You must provide a valid <API_TOKEN> or <OAUTH_ID> to access this API.
+- 404 Not Found: The payment with the specified ID was not found.
+- 500 Internal Server Error: An unexpected error occurred on the server.
+
+### 3. List a Payment
+
+This API allows you to retrieve details of a specific payment.
+
+**Endpoint:** `/graphql`
+
+**Method:** POST
+
+**Query:**
+
+```graphql
+query getPayment($id: ID!) {
+  getPayment(id: $id) {
+    id
+    amount
+    currency
+    status
+    createdAt
+    updatedAt
+  }
+}
+```
+
+**Responses:**
+
+- 200 OK: The payment details were retrieved successfully.
+- 401 Unauthorized: Authentication failed. You must provide a valid <API_TOKEN> or <OAUTH_ID> to access this API.
+- 404 Not Found: The payment with the specified ID was not found.
+- 500 Internal Server Error: An unexpected error occurred on the server.
+
+### 4. List All Payments
+
+This API allows you to retrieve a list of all payments.
+
+**Endpoint:** `/graphql`
+
+**Method:** POST
+
+**Query:**
+
+```graphql
+query listPayments {
+  listPayments {
+    id
+    amount
+    currency
+    status
+    createdAt
+    updatedAt
+  }
+}
+```
+
+**Responses:**
+
+- 200 OK: The list of payments was retrieved successfully.
+- 401 Unauthorized: Authentication failed. You must provide a valid <API_TOKEN> or <OAUTH_ID> to access this API.
+- 500 Internal Server Error: An unexpected error occurred on the server.
+
+### 5. Delete a Payment
+
+This API allows you to delete an existing payment record.
+
+**Endpoint:** `/graphql`
+
+**Method:** POST
+
+**Query:**
+
+```graphql
+mutation deletePayment($id: ID!) {
+  deletePayment(id: $id) {
+    id
+  }
+}
+```
+
+**Responses:**
+
+- 200 OK: The payment was deleted successfully.
+- 401 Unauthorized: Authentication failed. You must provide a valid <API_TOKEN> or <OAUTH_ID> to access this API.
+- 404 Not Found: The payment with the specified ID was not found.
+- 500 Internal Server Error: An unexpected error occurred on the server.
+
+## Rate Limit
+
+The Payments Service has a rate limit of 100 requests per minute per client. If you exceed this limit, you will receive a 429 Too Many Requests response. The rate limit is enforced to prevent abuse and ensure fair usage of the service.
+
+## Error Handling
+
+The Payments Service follows standard HTTP response codes for error handling:
+
+- 400 Bad Request: The request data is invalid or incomplete.
+- 401 Unauthorized: Authentication failed.
+- 403 Forbidden: The client does not have permission to access the requested resource.
+- 404 Not Found: The requested resource was not found.
+- 500 Internal Server Error: An unexpected error occurred on the server.
+- 501 Not Implemented: The requested functionality is not implemented.
+- 502 Bad Gateway: The server received an invalid response from an upstream server.
+- 503 Service Unavailable: The server is currently unavailable due to maintenance or overload.
+- 504 Gateway Timeout: The server did not receive a timely response from an upstream server.
+
+## Summary
+
+The Payments Service GraphQL API provides a comprehensive set of functionalities for managing payments within an application. It supports creating new payments, updating existing payments, retrieving payment details, listing all payments, and deleting payments.
+
+To authenticate with the API, you must provide a valid <API_TOKEN> or <OAUTH_ID> in the request headers or as part of the query variables. Failure to provide valid authentication credentials will result in a 401 Unauthorized response.
+
+The API follows standard GraphQL conventions and adheres to best practices for error handling and rate limiting. It is designed to be scalable and efficient, ensuring smooth and reliable payment processing for your application.

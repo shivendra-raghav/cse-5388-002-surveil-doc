@@ -1,0 +1,46 @@
+Here is the updated value without tags and using the provided standards:
+
+MongoDB Database Documentation
+
+Introduction:
+This document provides a comprehensive overview of the MongoDB database infrastructure and associated services. It covers essential details such as connection strings, backup procedures, cluster information, and support team contacts. Please ensure that sensitive information, including usernames and passwords, is handled with utmost care and kept confidential.
+
+MongoDb Access Details:
+To access the MongoDB database, you will need to authenticate using the following credentials:
+
+Username: dbadmin
+Password: <PASSWORD>
+
+Please note that these credentials should be treated with strict confidentiality and not shared with unauthorized parties.
+
+Backup Details:
+Regular backups of the MongoDB database are performed to ensure data integrity and availability. The backup process is automated and follows a predefined schedule. In case of any issues or concerns regarding backups, please contact the Support Team (contact details provided in the "Support Team Information" section).
+
+Cluster Information:
+The MongoDB database is hosted on a distributed cluster architecture to ensure high availability, scalability, and fault tolerance. The cluster consists of the following components:
+
+- Primary Node: 192.168.1.100
+- Secondary Node 1: 192.168.1.101
+- Secondary Node 2: 192.168.1.102
+- Arbiter Node: 192.168.1.103
+
+The cluster configuration is managed by the DevOps team, and any changes or modifications should be coordinated with them.
+
+Connection Strings:
+To connect to the MongoDB database instances, use the following connection strings:
+
+Dev Connection String: <MONGODB_DATABASE_CONN>
+Int Connection String: <MONGODB_DATABASE_CONN>
+Prod Connection String: <MONGODB_DATABASE_CONN>
+
+Please ensure that these connection strings are used responsibly and in accordance with the company's security policies.
+
+Support Team Information:
+For any issues, concerns, or inquiries related to the MongoDB database, please contact the Support Team:
+
+Support Email: databasesupport@abccorp.com
+Support Phone: +1 555-123-4567
+
+The Support Team is available during regular business hours and will respond to your requests promptly.
+
+Please note that this documentation contains placeholders for sensitive information, such as <PASSWORD> and <MONGODB_DATABASE_CONN>. It is crucial that you replace these placeholders with the actual values when needed, and handle the sensitive information with utmost care and confidentiality.

@@ -1,0 +1,52 @@
+Course Syllabus
+Course Title: Introduction to Computer Science
+Course Code: CS101
+Semester: Fall 2023
+
+Course Description:
+This course provides an introduction to the fundamental concepts of computer science, including problem-solving techniques, algorithm design, data structures, and programming principles. Students will learn to develop and implement programs using a high-level programming language.
+
+Course Objectives:
+Upon successful completion of this course, students will be able to:
+1. Understand the basic concepts of computer science and programming.
+2. Develop algorithmic thinking and problem-solving skills.
+3. Implement programs using control structures, functions, and data structures.
+4. Apply programming concepts to solve real-world problems.
+
+Course Materials:
+- Textbook: "Introduction to Computer Science" by John Doe (ISBN: 123-456-789)
+- Online course materials: Available on the university's learning management system (LMS)
+  Username: <USERNAME>
+  Password: <PASSWORD>
+
+Course Policies:
+- Attendance: Regular attendance is expected and contributes to the overall course grade.
+- Assignments: Assignments must be submitted by the due date. Late submissions will be penalized.
+- Exams: There will be two midterm exams and a final exam. Exams must be taken on the scheduled dates.
+- Academic Integrity: Cheating, plagiarism, or any form of academic dishonesty will not be tolerated.
+
+Grading Policy:
+- Assignments: 30%
+- Midterm Exams: 40% (20% each)
+- Final Exam: 30%
+
+Course Schedule (tentative):
+Week 1: Introduction to Computer Science
+Week 2: Programming Fundamentals
+Week 3: Control Structures
+Week 4: Functions
+Week 5: Arrays and Strings
+Week 6: Midterm Exam 1
+Week 7: Pointers and Dynamic Memory
+Week 8: Structures and Unions
+Week 9: File Handling
+Week 10: Midterm Exam 2
+Week 11: Recursion
+Week 12: Linked Lists
+Week 13: Stacks and Queues
+Week 14: Trees
+Week 15: Final Exam Review
+
+Note: The course schedule is subject to change, and any updates will be communicated in class or through the LMS.
+
+For any further queries or assistance, please contact the course instructor or teaching assistants.
