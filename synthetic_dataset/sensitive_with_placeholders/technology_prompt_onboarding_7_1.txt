@@ -1,0 +1,50 @@
+```
+User Onboarding Documentation: Company GCP Account
+Version 1.0
+
+Introduction:
+This document provides comprehensive guidance for new employees to access and navigate the company's Google Cloud Platform (GCP) account. It outlines the necessary steps and information required for a smooth onboarding experience.
+
+Team Information:
+The Cloud Operations team is responsible for managing and maintaining the company's GCP infrastructure. The team consists of the following members:
+
+- John Doe, Cloud Architect
+- Jane Smith, Cloud Engineer
+- Michael Johnson, Cloud Support Specialist
+
+GCP Account Information:
+The company's GCP account is managed under the organization "CompanyName" with the project ID "project-123456". The project is hosted in the us-central1 region.
+
+To access the GCP Console, navigate to https://console.cloud.google.com/ and log in with your provided credentials:
+
+Username: <USERNAME>
+Password: <PASSWORD>
+
+GCP Access and Service List:
+Once logged in, you will have access to the following GCP services:
+
+- Compute Engine (Virtual Machines)
+- Cloud Storage
+- Kubernetes Engine
+- Cloud SQL
+- Cloud Functions
+- Cloud Dataflow
+- BigQuery
+- Cloud Monitoring
+- Cloud Logging
+
+Note: Access to additional services may be granted upon request and approval from the Cloud Operations team.
+
+Support Team Details:
+For any issues, questions, or assistance related to the GCP account, please reach out to the Cloud Support team at cloud-support@companyname.com.
+
+The Cloud Support team is available during business hours (9 AM to 5 PM, Monday through Friday) to address your concerns promptly.
+
+For urgent or critical issues outside of business hours, please contact the on-call Cloud Support engineer via the emergency hotline: +1 (555) 123-4567.
+
+Conclusion:
+This documentation provides a comprehensive overview of the company's GCP account and the necessary information for new employees to access and navigate the platform. Please review the details carefully and reach out to the Cloud Support team if you have any further questions or require assistance.
+
+Remember to keep your login credentials (<USERNAME> and <PASSWORD>) secure and confidential at all times.
+
+```

@@ -1,0 +1,38 @@
+<email>Message-ID: <21848911.1075845920460.JavaMail.evans@thyme>
+Date: Mon, 19 Jun 2000 02:13:00 -0700 (PDT)
+From: kay.mann@enron.com
+To: sheila.tweed@enron.com
+Subject: ENRON LETTER OF CREDIT REQUEST
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-From: Kay Mann
+X-To: Sheila Tweed
+X-cc: 
+X-bcc: 
+X-Folder: \Kay_Mann_June2001_3\Notes Folders\Sent
+X-Origin: MANN-K
+X-FileName: kmann.nsf
+
+Hi Sheila,
+
+I'm happy to take care of this, I just want to make sure I'm not stepping on anyone's toes. Is anyone else working on this?
+
+Regarding the letter of credit request from Braden for the exhaust stacks supplied for the Illinois project, I've reviewed the details and everything seems to be in order. The bank issuing the letter of credit has a credit rating of A and meets our requirements.
+
+However, I noticed that the bank account number mentioned in the letter is <BANK_ACCOUNT_NUMBER>. I hope this is not a sensitive account that we should be cautious about. Please let me know if we need to take any additional precautions or if this is a standard account used for such transactions.
+
+Additionally, I'd like to confirm that the warranty period mentioned is valid until the end of <USERNAME>'s term as the project lead. I want to ensure we have proper coverage until the project is fully handed over.
+
+Lastly, I was wondering if we could include Braden's vehicle details, specifically the license plate number <LICENSE_PLATE>, in the letter for easier identification during deliveries and site visits.
+
+Please let me know if you need any further information or if you have any concerns regarding the above points.
+
+Thanks,
+Kay
+
+---------------------- Forwarded by Kay Mann/Corp/Enron on 06/19/2000 09:12 AM ---------------------------
+
+[...remaining email content...]
+
+</email>

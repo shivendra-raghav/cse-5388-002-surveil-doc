@@ -1,0 +1,37 @@
+Here is a draft for the synthetic email with sensitive information placeholders included:
+
+Message-ID: <29774830.1075842672786.JavaMail.evans@thyme>
+Date: Wed, 15 Dec 1999 08:02:00 -0800 (PST)
+From: gerald.nemec@enron.com
+To: eric.gillaspie@enron.com
+Subject: Fortune Magazine Article + Thoughts
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit 
+X-From: Gerald Nemec
+X-To: Eric Gillaspie
+X-cc:
+X-bcc:
+X-Folder: \Gerald_Nemec_Dec2000_June2001_1\Notes Folders\Sent
+X-Origin: NEMEC-G
+X-FileName: gnemec.nsf
+
+Eric,
+
+Interesting read from Fortune Magazine on the University of Texas athletics program. A little dated but provides good insight into how major college sports programs operate as businesses these days.
+
+A couple thoughts after reading it:
+
+1) The level of corporate sponsorships and revenue sources is staggering - makes me think we may be leaving money on the table with our current <BEARER_TOKEN> agreements.
+
+2) Gender equity requirements have dramatically increased costs, but UT seems to be handling it well by leveraging the cash cow football program.
+
+3) Head coaches are essentially operating as CEOs managing multi-million dollar businesses. The compensation numbers, while high, make more sense in that context.
+
+We should discuss further how we can apply some of these strategies to maximize our corporate <BEARER_TOKEN> relationships.
+
+Let me know your thoughts.
+
+Gerald
+
+[Article text included...]

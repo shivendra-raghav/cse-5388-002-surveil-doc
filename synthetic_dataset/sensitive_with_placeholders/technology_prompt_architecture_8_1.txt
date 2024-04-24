@@ -1,0 +1,43 @@
+GCP Architecture Documentation
+
+Introduction:
+
+This document provides an overview of the Google Cloud Platform (GCP) architecture and the services included in the current implementation. It outlines the key components, their functionality, and the measures in place to ensure secure access and data protection. Additionally, it provides information on the support team responsible for maintaining and managing the GCP environment.
+
+Service Details:
+
+1. Cloud Storage:
+   Google Cloud Storage is a highly scalable and durable object storage service designed to store and serve data for various applications. It offers features such as lifecycle management, access control, and encryption at rest and in transit. Cloud Storage can be accessed through the GCP Console, command-line tools, or APIs.
+
+   Access Control:
+   To access and manage Cloud Storage buckets and objects, developers will need to authenticate using their GCP account credentials. The documentation includes a placeholder for <USERNAME> and <PASSWORD> where developers can input their login information to view and update Cloud Storage resources.
+
+2. Virtual Network:
+   Google Cloud Virtual Network (VPC) provides a robust and scalable networking infrastructure for GCP resources. It enables the creation of virtual networks, subnets, and configurable routing policies, allowing secure communication between resources within the same VPC or across different VPCs.
+
+   Access Control:
+   Access to Virtual Network resources is controlled through IAM (Identity and Access Management) policies. Developers can manage their VPC configurations using the GCP Console or APIs after authenticating with their <USERNAME> and <PASSWORD>.
+
+3. App Services:
+   Google Cloud App Services provide a fully managed platform for building, deploying, and scaling applications. It includes services such as App Engine, Cloud Run, and Cloud Functions, enabling developers to focus on their application code while GCP handles the underlying infrastructure.
+
+   Access Control:
+   To deploy and manage applications on App Services, developers must authenticate using their GCP account credentials, including <USERNAME> and <PASSWORD>. The documentation will guide them through the process of configuring and managing their App Services resources.
+
+4. Firewall:
+   Google Cloud Firewall is a distributed, software-defined firewall that provides network-level protection for GCP resources. It allows for fine-grained control over incoming and outgoing traffic, enabling secure communication between resources and external services.
+
+   Access Control:
+   Firewall rules are managed through the GCP Console or APIs. Developers can authenticate with their <USERNAME> and <PASSWORD> to configure and update firewall rules for their GCP resources, ensuring secure access and data protection.
+
+Support Team Information:
+
+The GCP Support Team is responsible for providing technical assistance, troubleshooting, and maintaining the GCP environment. They can be reached through the following channels:
+
+- Email: support@gcp.example.com
+- Phone: +1 (555) 123-4567
+- Support Portal: https://support.gcp.example.com
+
+In case of any issues or inquiries related to the GCP services, developers can contact the Support Team for prompt assistance.
+
+Note: This documentation contains placeholders for <USERNAME> and <PASSWORD> where developers should input their GCP account credentials to access and manage the respective services. It is crucial to keep these credentials secure and avoid sharing them with unauthorized individuals or including them in code repositories or public documentation.

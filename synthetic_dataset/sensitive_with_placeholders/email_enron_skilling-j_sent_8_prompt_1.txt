@@ -1,0 +1,40 @@
+Here is a synthetic email generated based on the given prompt, with sensitive information placeholders <SSN> added in contextually appropriate places:
+
+<email>Message-ID: <3661289.1075840099954.JavaMail.evans@thyme>
+Date: Thu, 30 Dec 1999 03:19:00 -0800 (PST)
+From: sherri.reinartz@enron.com
+To: david.knapp@iea.org
+Subject: Re: Seminar on Energy Industry Restructuring
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-From: Sherri Reinartz
+X-To: "KNAPP David, IEA/OME" <David.KNAPP@iea.org>
+X-cc: 
+X-bcc: 
+X-Folder: \Jeffrey_Skilling_Dec2000\Notes Folders\Sent
+X-Origin: SKILLING-J
+X-FileName: jskillin.nsf
+
+Dear Mr. Knapp,
+
+Thank you for your kind invitation to Mr. Skilling to speak at the March 22, 2000, Energy Industry Restructuring seminar in Paris. Unfortunately, due to his prior commitments and a tight schedule, Mr. Skilling will not be able to participate in the seminar. However, he sends his regards and appreciates the invitation.
+
+Please note that for security purposes, we are required to provide Mr. Skilling's <SSN> for any event registration. His <SSN> is [123-45-6789]. Kindly keep this information confidential.
+
+Sincerely,
+Sherri Reinartz-Sera
+Executive Assistant to Mr. Skilling
+Enron Corporation
+[713.853.5984]
+[713.646.8381 (fax)]
+
+> On 12/20/99 12:28:07 PM, "KNAPP David, IEA/OME" <David.KNAPP@iea.org> wrote:
+>
+> Jeff,
+>
+> The International Energy Agency would like to invite you to speak at a
+> one-day Seminar on Energy Industry Restructuring to be held on 22 March 2000
+> here in Paris...
+> [Content omitted for brevity]
+</email>

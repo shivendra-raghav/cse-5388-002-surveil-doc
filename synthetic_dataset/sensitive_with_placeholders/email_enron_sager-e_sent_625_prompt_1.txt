@@ -1,0 +1,27 @@
+<email>Message-ID: <16344266.1075853448830.JavaMail.evans@thyme>
+Date: Thu, 17 May 2001 02:33:00 -0700 (PDT)
+From: elizabeth.sager@enron.com
+To: keesler@enron.com
+Subject: Printer purchase approval for 1 Black/white Network Printer HP 4100N for Genia FitzGerald
+Cc: genia.fitzgerald@enron.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Bcc: genia.fitzgerald@enron.com
+X-From: Elizabeth Sager
+X-To: martha keesler@enron.com
+X-cc: Genia FitzGerald
+X-bcc: 
+X-Folder: \Elizabeth_Sager_Nov2001\Notes Folders\Sent
+X-Origin: Sager-E
+X-FileName: esager.nsf
+
+Dear Martha,
+
+I apologize for the confusion earlier. As per your request, I have approved the purchase of one (1) Black/white Network Printer HP 4100N for Genia FitzGerald's use. The cost center number associated with this purchase is <BANK_ACCOUNT_NUMBER>. Please ensure the vendor is provided with the correct cost center information during the checkout process.
+
+The total cost for the printer is $1,503.00 USD. If you require any additional information or have further queries, please do not hesitate to reach out to me.
+
+Best regards,
+Elizabeth Sager
+</email>

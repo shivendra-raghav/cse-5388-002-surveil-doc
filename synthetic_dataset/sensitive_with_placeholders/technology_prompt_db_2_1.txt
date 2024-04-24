@@ -1,0 +1,93 @@
+```markdown
+# MongoDB Database Documentation
+
+## Introduction
+
+This document provides detailed information about the MongoDB database used in our organization. It covers various aspects such as access details, backup procedures, cluster information, and support team contact information. Please refer to the relevant sections for your specific needs.
+
+## MongoDB Access Details
+
+### Dev Instance
+
+Dev Connection String: `<MONGODB_DATABASE_CONN>`
+
+The Dev instance is used for development and testing purposes. It is a non-production environment and should not be used for storing sensitive or mission-critical data.
+
+### Int Instance
+
+Int Connection String: `<MONGODB_DATABASE_CONN>`
+
+The Int (Integration) instance is used for integrating and testing applications with the database before deploying them to production. It is a staging environment that mimics the production setup.
+
+### QA Instance
+
+QA Connection String: `<MONGODB_DATABASE_CONN>`
+
+The QA (Quality Assurance) instance is used for testing and validating applications before they are released to production. It ensures that the applications meet the required quality standards and perform as expected.
+
+### Prod Instance
+
+Prod Connection String: `<MONGODB_DATABASE_CONN>`
+
+The Prod (Production) instance is the live environment where the applications and data reside. It is the primary instance accessed by end-users and should be treated with utmost care and security.
+
+## Backup Details
+
+Regular backups of the MongoDB database are essential to ensure data integrity and prevent data loss in case of system failures or disasters. Our organization follows a comprehensive backup strategy to safeguard the data stored in the MongoDB instances.
+
+### Backup Schedule
+
+- Full backups are performed weekly on Sundays at 2:00 AM.
+- Incremental backups are performed daily at 1:00 AM.
+
+### Backup Storage
+
+All backups are stored on a secure, off-site storage system with redundancy and encryption measures in place. The backup storage location is regularly monitored and maintained to ensure data availability and accessibility in case of a disaster recovery scenario.
+
+### Backup Retention Policy
+
+- Full backups are retained for 6 months.
+- Incremental backups are retained for 30 days.
+
+## Cluster Information
+
+Our MongoDB deployment is configured as a sharded cluster to ensure high availability, scalability, and performance. The cluster consists of the following components:
+
+### Config Servers
+
+- `config1.example.com:27019`
+- `config2.example.com:27019`
+- `config3.example.com:27019`
+
+The config servers store the metadata for the cluster and provide configuration data to the other components.
+
+### Shards
+
+- `shard1/replica1.example.com:27017`
+- `shard1/replica2.example.com:27017`
+- `shard1/replica3.example.com:27017`
+- `shard2/replica1.example.com:27018`
+- `shard2/replica2.example.com:27018`
+- `shard2/replica3.example.com:27018`
+
+The shards are responsible for storing the actual data. Each shard is a replica set consisting of three nodes for redundancy and high availability.
+
+### Query Routers
+
+- `router1.example.com:27017`
+- `router2.example.com:27017`
+- `router3.example.com:27017`
+
+The query routers act as the entry point for client applications and direct queries to the appropriate shards based on the configured sharding strategy.
+
+## Support Team Information
+
+For any issues, queries, or assistance related to the MongoDB database, please contact the support team:
+
+- Email: `mongodb-support@example.com`
+- Phone: `+1 (555) 123-4567`
+- Emergency Hotline: `+1 (555) 987-6543`
+
+The support team is available 24/7 to provide prompt assistance and ensure the smooth operation of the MongoDB database.
+
+```

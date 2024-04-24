@@ -1,0 +1,119 @@
+```
+Review Service Documentation
+
+Introduction:
+The Review Service is a critical component of the e-commerce system, responsible for handling product reviews and ratings. It provides a platform for customers to share their experiences with purchased products, and for potential buyers to make informed decisions based on these reviews. The service follows the GraphQL API specification, allowing for efficient data retrieval and manipulation.
+
+Authentication:
+The Review Service utilizes industry-standard authentication and authorization mechanisms to ensure secure access to sensitive data. Users must authenticate themselves by providing valid credentials, such as an access key or OAuth token. These credentials should be treated as highly sensitive information and never shared or exposed in any public or untrusted environments.
+
+For example, when making API requests, the access key or OAuth token should be included in the request headers or query parameters, but should never be hardcoded into the application code or stored in plain text. Instead, use an environment variable or a secure key management system to store and retrieve these credentials at runtime.
+
+Example:
+```
+# Never do this:
+const accessKey = "<ACCESS_KEY>";
+
+# Instead, use environment variables or a secure key management system:
+const accessKey = process.env.ACCESS_KEY;
+```
+
+Query Types:
+The Review Service exposes two query types for retrieving review data:
+
+1. `review(id: ID!): Review`: This query retrieves a single review by its unique identifier.
+
+2. `reviews(productId: ID!): [Review!]!`: This query retrieves a list of all reviews associated with a specific product.
+
+Example usage:
+```graphql
+query {
+  review(id: "abc123") {
+    id
+    rating
+    comment
+    createdAt
+  }
+
+  reviews(productId: "xyz456") {
+    id
+    userId
+    rating
+    comment
+  }
+}
+```
+
+Mutation Types:
+The Review Service provides three mutation types for creating, updating, and deleting reviews:
+
+1. `createReview(input: CreateReviewInput!): Review!`: This mutation creates a new review for a specific product. The `input` argument should contain the `productId`, `userId`, `rating`, and `comment` fields.
+
+2. `updateReview(id: ID!, input: UpdateReviewInput!): Review!`: This mutation updates an existing review identified by its `id`. The `input` argument should contain the fields to be updated, such as `rating` or `comment`.
+
+3. `deleteReview(id: ID!): Boolean!`: This mutation deletes an existing review identified by its `id`.
+
+Example usage:
+```graphql
+mutation {
+  createReview(input: {
+    productId: "xyz456"
+    userId: "user123"
+    rating: 4
+    comment: "Great product!"
+  }) {
+    id
+    rating
+    comment
+    createdAt
+  }
+
+  updateReview(id: "abc123", input: {
+    rating: 5
+    comment: "Excellent! Highly recommended."
+  }) {
+    id
+    rating
+    comment
+  }
+
+  deleteReview(id: "def456") {
+    success
+  }
+}
+```
+
+Subscription Types:
+The Review Service does not currently support any subscription types. However, future updates may introduce real-time notifications or event-driven architectures for tracking changes to reviews or ratings.
+
+Error Handling:
+The Review Service follows standard GraphQL error handling practices, providing detailed error messages and appropriate HTTP status codes to aid in debugging and troubleshooting. Common error scenarios include:
+
+- Authentication/Authorization errors: Raised when the provided credentials are invalid or lack the required permissions.
+- Input validation errors: Raised when the input data violates defined constraints or schemas.
+- Resource not found errors: Raised when attempting to access a non-existent review or product.
+- Internal server errors: Raised when an unexpected error occurs within the service.
+
+Example error response:
+```json
+{
+  "errors": [
+    {
+      "message": "Access denied. Invalid <OAUTH_ID>.",
+      "locations": [
+        {
+          "line": 2,
+          "column": 3
+        }
+      ],
+      "path": [
+        "createReview"
+      ]
+    }
+  ]
+}
+```
+
+Summary:
+The Review Service plays a crucial role in the e-commerce system by enabling customers to share their product experiences and ratings. It adheres to the GraphQL API specification, providing a flexible and efficient interface for querying and mutating review data. With robust authentication and authorization mechanisms, as well as comprehensive error handling, the service ensures the security and reliability of review-related operations. By following best practices and treating sensitive information with utmost care, developers can integrate the Review Service into their applications seamlessly while maintaining data integrity and user trust.
+```

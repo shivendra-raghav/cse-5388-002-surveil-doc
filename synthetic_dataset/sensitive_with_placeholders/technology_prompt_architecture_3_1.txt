@@ -1,0 +1,70 @@
+```markdown
+# AWS Architecture Documentation
+
+## Introduction
+
+This documentation provides a comprehensive overview of the AWS architecture and services deployed within our organization. It outlines the key components, configurations, and sensitive access information required for effective management and maintenance.
+
+## Latest Update By
+
+This documentation was last updated by <USERNAME> on [INSERT DATE].
+
+## Service Details
+
+### S3 Bucket
+
+The S3 (Simple Storage Service) Bucket is a highly scalable and durable object storage service provided by AWS. It is used to store and retrieve data from anywhere on the web. Our organization leverages S3 Buckets for various purposes, including static website hosting, data backup, and file storage.
+
+To access and manage the S3 Bucket, use the following credentials:
+
+- Admin Access: 
+  - Username: <USERNAME>
+  - Password: <PASSWORD>
+- Developer Access:
+  - Username: <USERNAME>
+  - Password: <PASSWORD>
+
+### Lambda Functions
+
+AWS Lambda is a serverless computing service that allows you to run code without provisioning or managing servers. Our organization utilizes Lambda Functions for event-driven computing, data processing, and automating various tasks.
+
+To access and manage the Lambda Functions, use the following credentials:
+
+- Admin Access:
+  - Username: <USERNAME>
+  - Password: <PASSWORD>
+- Developer Access:
+  - Username: <USERNAME>
+  - Password: <PASSWORD>
+
+### Amazon SageMaker Pipeline
+
+Amazon SageMaker is a fully-managed machine learning service that enables developers and data scientists to build, train, and deploy machine learning models quickly. Our organization uses the SageMaker Pipeline for end-to-end machine learning workflows, including data preprocessing, model training, and model deployment.
+
+To access and manage the Amazon SageMaker Pipeline, use the following credentials:
+
+- Admin Access:
+  - Username: <USERNAME>
+  - Password: <PASSWORD>
+- Developer Access:
+  - Username: <USERNAME>
+  - Password: <PASSWORD>
+
+### WAF (Web Application Firewall)
+
+AWS WAF is a web application firewall that helps protect web applications from common web exploits that could affect application availability, compromise security, or consume excessive resources. Our organization employs WAF to safeguard our web applications and APIs from malicious traffic and potential attacks.
+
+To access and manage the WAF, use the following credentials:
+
+- Admin Access:
+  - Username: <USERNAME>
+  - Password: <PASSWORD>
+- Developer Access:
+  - Username: <USERNAME>
+  - Password: <PASSWORD>
+
+## Summary
+
+This documentation provides an overview of the AWS architecture and services deployed within our organization, including S3 Buckets, Lambda Functions, Amazon SageMaker Pipeline, and WAF. It outlines the necessary access credentials for both administrators and developers to effectively manage and maintain these services. Please ensure that sensitive information, such as usernames and passwords, is handled with utmost care and securely stored and shared.
+
+```

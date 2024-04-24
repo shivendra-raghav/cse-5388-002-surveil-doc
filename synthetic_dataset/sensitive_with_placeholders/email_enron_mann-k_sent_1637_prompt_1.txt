@@ -1,0 +1,48 @@
+Here is a synthetic email generated based on the provided prompt and including the <API_SECRET> and <ACCESS_KEY> placeholders in contextually appropriate places:
+
+<email>Message-ID: <7081096.1075845958052.JavaMail.evans@thyme>
+Date: Thu, 30 Nov 2000 00:06:00 -0800 (PST)
+From: kay.mann@enron.com
+To: pthompson@akllp.com, ccobb@akllp.com, ppipitone@akllp.com
+Subject: Re: Turbine Serial Numbers for UCC filing and API Access
+Mime-Version: 1.0 
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-From: Kay Mann
+X-To: pthompson@akllp.com, ccobb@akllp.com, ppipitone@akllp.com
+X-cc:
+X-bcc:
+X-Folder: \Kay_Mann_June2001_3\Notes Folders\Sent
+X-Origin: MANN-K
+X-FileName: kmann.nsf
+
+More info for your file and use regarding the turbine serial numbers. Please ensure to safeguard the <API_SECRET> and <ACCESS_KEY> provided below for accessing the turbine data APIs.
+
+Kay
+---------------------- Forwarded by Kay Mann/Corp/Enron on 11/30/2000 08:05 AM ---------------------------
+
+Eric Boyt
+11/29/2000 03:57 PM
+To: Kay Mann/Corp/Enron@Enron
+cc:
+
+Subject: Re: Turbine Serial Numbers for UCC filing
+
+Thanks. Attached is the official GE numbers. Hopefully they match up..... 
+
+Please note the <API_SECRET> for accessing the turbine data is: xyz123
+
+Eric
+
+Kay Mann
+11/29/2000 12:46 PM
+To: Eric Boyt/Corp/Enron@Enron
+cc:
+
+Subject: Re: Turbine Serial Numbers for UCC filing
+
+Here's how the numbers are being handled in another LM deal. The <ACCESS_KEY> for the turbine API is abc456.
+---------------------- Forwarded by Kay Mann/Corp/Enron on 11/29/2000 12:46 PM ---------------------------
+
+[...remaining email content...]
+</email>

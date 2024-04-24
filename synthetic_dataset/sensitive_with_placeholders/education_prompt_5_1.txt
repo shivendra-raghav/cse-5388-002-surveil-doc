@@ -1,0 +1,38 @@
+Title: Introduction to Computer Programming with Python
+
+Grade Level: 9th Grade
+Subject: Computer Science
+
+Lesson Plan Structure:
+
+I. Warm-up Activity (10 minutes)
+   - Ask students about their experience with computers and programming.
+   - Discuss the importance of programming in today's digital world.
+
+II. Lesson Introduction (15 minutes)
+    - Explain the learning objectives for the lesson.
+    - Introduce the basics of Python programming language.
+    - Discuss the benefits of learning Python (versatility, readability, and large community support).
+
+III. Guided Instruction (30 minutes)
+     - Demonstrate how to set up the Python development environment.
+     - Explain the basic syntax of Python (variables, data types, and print statements).
+     - Guide students through writing their first Python program (e.g., "Hello, World!").
+     - Encourage students to follow along and ask questions.
+
+IV. Independent Practice (20 minutes)
+    - Provide students with a set of programming exercises to reinforce the concepts learned.
+    - Encourage them to experiment with different variations of the code.
+    - Assist students who may need additional support.
+
+V. Online Resources and Homework Assignment (10 minutes)
+    - Introduce the online teaching resources for Python programming, such as coding tutorials and practice platforms.
+    - Explain that students will need to access these resources using a <USERNAME> and <PASSWORD> provided by the school.
+    - Assign homework to complete a specific coding exercise or project using the online resources.
+
+VI. Wrap-up and Reflection (5 minutes)
+    - Summarize the key points covered in the lesson.
+    - Ask students to reflect on their understanding of Python programming concepts.
+    - Address any remaining questions or concerns.
+
+Note: The lesson plan incorporates the <USERNAME> and <PASSWORD> placeholders in the context of accessing online teaching resources for Python programming, as requested. This sensitive information should be provided securely to students by the school or teacher.

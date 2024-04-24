@@ -1,0 +1,43 @@
+Here is a synthetic email generated based on the given prompt and email template:
+
+<email>Message-ID: <17881240.1075851918899.JavaMail.evans@thyme>
+Date: Tue, 7 Mar 2000 08:26:00 -0800 (PST)
+From: larry.campbell@enron.com
+To: team.big-lake@enron.com, team.eunice-kermit@enron.com, 
+	team.monahans@enron.com, team.panhandle@enron.com, 
+	team.big-lake@enron.com, team.kermit@enron.com, 
+	team.kermit-wt2@enron.com
+Subject: Natrual Gas Release Reporting Requirements for Texas
+Cc: james.lawrence@enron.com, bob.bandel@enron.com, arnie.bailey@enron.com, 
+	ken.earl@enron.com, rich.jolly@enron.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Bcc: james.lawrence@enron.com, bob.bandel@enron.com, arnie.bailey@enron.com, 
+	ken.earl@enron.com, rich.jolly@enron.com
+X-From: Larry Campbell
+X-To: Team Andrews@Enron, Team Big-Lake, Team Eunice-Kermit, Team Big Lake_Eldorado@Enron, Team Monahans, Team Panhandle, Team Spraberry@Enron, Team Big-Lake, Team Andrews@Enron, Team Kermit, Team Kermit-WT2
+X-cc: James R Lawrence, Bob Bandel, Arnie Bailey, Ken Earl, Rich Jolly
+X-bcc: 
+X-Folder: \Larry_Campbell_Nov2001_1\Notes Folders\Sent
+X-Origin: CAMPBELL-L
+X-FileName: lcampbe.nsf
+
+As a reminder, the state of Texas requires releases of natural gas greater than 119 mscf to the atmosphere (in a 24 hour period), to be reported to the Regional Offices of the TNRCC. These releases include but may not be limited to the following: ESD's, startups, shutdowns, pipeline ruptures and maintenance activities. Should any of the above activities release natural gas in excess of 119 mscf, a written notification should be faxed to the Regional Office of the TNRCC within the following timeframes:
+
+Unanticipated Upsets- within 24 hours after the discovery of the upset.
+
+Maintenance, Startup or Shutdowns- 10 day prior to the expected exceedance.
+
+Please note that our systems have recently been audited by the TNRCC, and they have specifically requested backup data and reporting documentation for any natural gas releases greater than the threshold limit of 119 mscf. The auditors were particularly interested in understanding our processes around compressor station venting during ESD events, startups, and shutdowns. To ensure compliance, we must provide the <BEARER_TOKEN> details when requested by the authorities.
+
+The fax numbers for the following Regional offices are as follows:
+
+Midland (915) 570-4795 Included facilities- Wt-2, Walton, Keystone, Lone Star Valero, Spraberry, Seminole
+
+Lubbock (806) 796-7107 Included facilities- P-2, Plainview, Brownfield  
+
+San Angelo (915) 658-5431 Included facilities- Reagan Co. 2, Irion Co. 1, Eldorado
+
+Reporting forms can be requested from me by contacting (505) 625-8022. Let's ensure we maintain full compliance with the state regulations to avoid any penalties or disruptions.
+</email>

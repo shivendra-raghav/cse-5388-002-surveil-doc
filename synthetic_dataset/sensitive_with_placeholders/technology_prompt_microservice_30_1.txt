@@ -1,0 +1,183 @@
+```
+Promotions Service Documentation
+
+Introduction
+------------
+The Promotions Service is a microservice that enables CRUD (Create, Read, Update, Delete) operations for managing promotions. It provides a GraphQL API interface for seamlessly integrating with various applications and services. This documentation outlines the API endpoints, request/response formats, authentication mechanisms, rate limiting, and error handling approaches.
+
+Latest Update By
+----------------
+This documentation was last updated on [DD/MM/YYYY] by [Name of the Documentation Maintainer].
+
+Maintenance Team Details
+------------------------
+The Promotions Service is maintained by the following team:
+- Team Lead: [Name]
+- Backend Developers: [Names]
+- Frontend Developers: [Names]
+- QA Engineers: [Names]
+
+For any queries or issues, please reach out to the team at [team-email@company.com].
+
+GraphQL Services
+----------------
+The Promotions Service exposes the following GraphQL API endpoints:
+
+1. Create a Promotion
+   Endpoint: `/graphql`
+   Method: POST
+   Request Body:
+   ```graphql
+   mutation {
+     createPromotion(input: {
+       name: "Summer Sale",
+       description: "Flat 20% off on all products",
+       startDate: "2023-06-01",
+       endDate: "2023-07-31",
+       discountPercentage: 20
+     }) {
+       id
+       name
+       description
+       startDate
+       endDate
+       discountPercentage
+     }
+   }
+   ```
+   Responses:
+   - 200 OK: Promotion created successfully
+   - 400 Bad Request: Invalid input data
+   - 401 Unauthorized: Authentication failed (<API_TOKEN> required)
+   - 500 Internal Server Error: An unexpected error occurred on the server
+
+2. Update a Promotion
+   Endpoint: `/graphql`
+   Method: POST
+   Request Body:
+   ```graphql
+   mutation {
+     updatePromotion(id: "promotion_123", input: {
+       name: "Winter Wonderland",
+       description: "Buy 2 Get 1 Free on selected items",
+       startDate: "2023-12-01",
+       endDate: "2024-01-15"
+     }) {
+       id
+       name
+       description
+       startDate
+       endDate
+       discountPercentage
+     }
+   }
+   ```
+   Responses:
+   - 200 OK: Promotion updated successfully
+   - 400 Bad Request: Invalid input data
+   - 401 Unauthorized: Authentication failed (<API_TOKEN> required)
+   - 404 Not Found: Promotion not found
+   - 500 Internal Server Error: An unexpected error occurred on the server
+
+3. List a Promotion
+   Endpoint: `/graphql`
+   Method: POST
+   Request Body:
+   ```graphql
+   query {
+     promotion(id: "promotion_123") {
+       id
+       name
+       description
+       startDate
+       endDate
+       discountPercentage
+     }
+   }
+   ```
+   Responses:
+   - 200 OK: Promotion details fetched successfully
+   - 401 Unauthorized: Authentication failed (<API_TOKEN> required)
+   - 404 Not Found: Promotion not found
+   - 500 Internal Server Error: An unexpected error occurred on the server
+
+4. List All Promotions
+   Endpoint: `/graphql`
+   Method: POST
+   Request Body:
+   ```graphql
+   query {
+     promotions {
+       id
+       name
+       description
+       startDate
+       endDate
+       discountPercentage
+     }
+   }
+   ```
+   Responses:
+   - 200 OK: Promotions list fetched successfully
+   - 401 Unauthorized: Authentication failed (<API_TOKEN> required)
+   - 500 Internal Server Error: An unexpected error occurred on the server
+
+5. Delete a Promotion
+   Endpoint: `/graphql`
+   Method: POST
+   Request Body:
+   ```graphql
+   mutation {
+     deletePromotion(id: "promotion_123") {
+       id
+       name
+     }
+   }
+   ```
+   Responses:
+   - 200 OK: Promotion deleted successfully
+   - 401 Unauthorized: Authentication failed (<API_TOKEN> required)
+   - 404 Not Found: Promotion not found
+   - 500 Internal Server Error: An unexpected error occurred on the server
+
+Authentication:
+All GraphQL API endpoints require authentication using an API token. The token should be provided in the `Authorization` header of the request:
+
+```
+Authorization: Bearer <API_TOKEN>
+```
+
+Replace `<API_TOKEN>` with your actual API token. Failure to provide a valid token will result in a 401 Unauthorized response.
+
+Rate Limit
+----------
+To prevent abuse and maintain service availability, the Promotions Service imposes a rate limit on API requests. The current rate limit is set to:
+
+- 100 requests per minute per IP address
+
+Exceeding the rate limit will result in a 429 Too Many Requests response. The response headers will include the following information:
+
+- `X-RateLimit-Limit`: The maximum number of requests allowed per minute
+- `X-RateLimit-Remaining`: The number of requests remaining in the current rate limit window
+- `X-RateLimit-Reset`: The time (in Unix timestamp format) when the rate limit window resets
+
+Error Handling
+--------------
+The Promotions Service follows standard HTTP response codes for error handling:
+
+- 400 Bad Request: The request was malformed or invalid
+- 401 Unauthorized: Authentication failed or missing credentials
+- 403 Forbidden: The client does not have permission to access the requested resource
+- 404 Not Found: The requested resource could not be found
+- 500 Internal Server Error: An unexpected error occurred on the server side
+- 501 Not Implemented: The requested functionality is not implemented
+- 502 Bad Gateway: The server received an invalid response from an upstream server
+- 503 Service Unavailable: The server is currently unavailable (e.g., under maintenance)
+- 504 Gateway Timeout: The server did not receive a timely response from an upstream server
+
+In case of an error, the API will respond with a JSON object containing an error message and, if applicable, an error code for easier debugging.
+
+Summary
+-------
+The Promotions Service provides a robust GraphQL API interface for managing promotions. With its comprehensive set of endpoints, authentication mechanisms, rate limiting, and error handling approaches, it ensures a seamless integration experience for various applications and services. Developers can leverage this service to build powerful e-commerce solutions, enabling dynamic and engaging promotion campaigns for their customers.
+```

@@ -1,0 +1,38 @@
+Here is a synthetic email generated based on the provided prompt:
+
+<email>Message-ID: <28406586.1075856438679.JavaMail.evans@thyme>
+Date: Wed, 25 Apr 2001 05:18:00 -0700 (PDT)
+From: vince.kaminski@enron.com
+To: tmarnol@lsu.edu
+Subject: Re: Potential Prospect
+Cc: vince.kaminski@enron.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Bcc: vince.kaminski@enron.com
+X-From: Vince J Kaminski
+X-To: Tom Arnold <tmarnol@lsu.edu> @ ENRON
+X-cc: Vince J Kaminski
+X-bcc: 
+X-Folder: \Vincent_Kaminski_Jun2001_3\Notes Folders\Sent
+X-Origin: Kaminski-V
+X-FileName: vkamins.nsf
+
+Dear Tom,
+
+Thank you for your email regarding the potential prospect, George Moss. We are always on the lookout for talented individuals, and your recommendation carries a lot of weight.
+
+As you mentioned, George's skills in option pricing, trading, and hedging, along with his proficiency in Excel/VBA, make him an attractive candidate. While we are currently facing space constraints, we would be more than happy to consider George for a suitable role within our organization.
+
+To proceed further, it would be helpful if George could provide us with his updated resume, including details of any relevant coursework, projects, or internship experience. We can then arrange for a phone or on-site interview to assess his fit for our team better.
+
+Additionally, as part of our standard hiring process, we would require George to provide his <SSN> and consent to a background check. Please note that this information will be handled with utmost confidentiality and in compliance with all applicable regulations.
+
+Also, I want to mention that our IT team is currently working on upgrading our <DATABASE_CONN> to improve system performance and security. This project is crucial for our operations, and we may need to involve George in testing and validation activities if he joins our team.
+
+Once we receive George's resume, we will be in touch to discuss the next steps. Thank you again for bringing this opportunity to our attention.
+
+Best regards,
+Vince
+
+</email>

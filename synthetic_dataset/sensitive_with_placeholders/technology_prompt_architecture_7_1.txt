@@ -1,0 +1,58 @@
+```markdown
+# Google Cloud Platform (GCP) Architecture Documentation
+
+## Introduction
+
+This documentation provides an overview of the Google Cloud Platform (GCP) architecture, focusing on the SQL Database and Cloud Storage services. It outlines the key components, configurations, and best practices for leveraging these services effectively. Additionally, it includes sensitive information placeholders to ensure proper handling of credentials during development and deployment processes.
+
+## Service Details
+
+### SQL Database
+
+The SQL Database service on GCP offers fully managed relational databases, allowing you to set up, maintain, and administer your databases with ease. Key features and configurations include:
+
+- **Instance Types**: Choose from various instance types, such as MySQL, PostgreSQL, or SQL Server, to suit your application requirements.
+- **High Availability**: Configure multi-regional or multi-zone deployments for enhanced availability and disaster recovery.
+- **Automated Backups**: Scheduled backups and point-in-time recovery options ensure data protection and easy restoration in case of failures or accidental changes.
+- **Vertical Scaling**: Seamlessly scale your database resources (CPU, RAM, and storage) to accommodate growing workloads without downtime.
+- **Security**: Implement robust security measures, including private IP, SSL/TLS encryption, and integration with Cloud Identity and Access Management (IAM) for role-based access control.
+
+To access and manage the SQL Database service, developers can use the following credentials:
+
+```
+<USERNAME>your_gcp_username</USERNAME>
+<PASSWORD>your_gcp_password</PASSWORD>
+```
+
+Please note that these placeholders should be replaced with your actual GCP account credentials for authentication purposes.
+
+### Cloud Storage
+
+GCP's Cloud Storage service provides scalable and durable object storage for various workloads. Key features and configurations include:
+
+- **Object Storage**: Store and retrieve an unlimited amount of data as objects (files) in buckets.
+- **Global Edge Caching**: Content is automatically cached at edge locations, ensuring low latency and high throughput for global access.
+- **Data Lifecycle Management**: Define lifecycle policies to manage data across multiple storage classes (Standard, Nearline, Coldline, and Archive) based on access patterns and cost considerations.
+- **Access Control**: Implement fine-grained access controls using IAM roles and bucket-level permissions.
+- **Data Encryption**: Data is automatically encrypted at rest and in transit using industry-standard encryption protocols.
+
+To access and manage the Cloud Storage service, developers can use the following credentials:
+
+```
+<USERNAME>your_gcp_username</USERNAME>
+<PASSWORD>your_gcp_password</PASSWORD>
+```
+
+Please remember to replace these placeholders with your actual GCP account credentials for authentication purposes.
+
+## Support Team Information
+
+For any issues, questions, or assistance related to the GCP services outlined in this documentation, please contact our dedicated support team:
+
+- **Email**: gcp.support@example.com
+- **Phone**: +1 (555) 123-4567
+- **Business Hours**: Monday - Friday, 9:00 AM - 5:00 PM (UTC-8)
+
+Our knowledgeable support engineers are available to provide guidance, troubleshoot problems, and ensure your GCP architecture is optimized for performance, scalability, and security.
+
+```

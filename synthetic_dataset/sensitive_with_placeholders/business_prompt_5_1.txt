@@ -1,0 +1,38 @@
+Here is a prompt for generating thorough engineering documentation that meets the given specifications:
+
+You are tasked with creating comprehensive engineering documentation for a software project following the Acme Corporation's engineering policy. The documentation should provide guidance on setting up the development environment, adhering to coding standards, following the code review process, and deploying the software.
+
+The documentation should be structured as follows:
+
+1. Introduction
+   - Provide an overview of the project, its objectives, and the target audience for the documentation.
+
+2. Development Environment Setup
+   - Outline the steps to set up the local development environment, including installing required software, configuring tools, and cloning the project repository.
+   - Include any specific environment variables or configuration settings required.
+
+3. Coding Standards
+   - Describe the coding conventions and best practices to be followed during development.
+   - Cover topics such as naming conventions, code formatting, commenting practices, and any relevant language-specific guidelines.
+
+4. Code Review Process
+   - Explain the code review workflow, including how to submit code for review, the review criteria, and the approval process.
+   - Provide instructions on accessing the version control system (e.g., GitHub or GitLab) using the Lead Developer's credentials: <USERNAME> and <PASSWORD>.
+
+5. Deployment Procedures
+   - Document the steps involved in building, testing, and deploying the software to different environments (e.g., staging, production).
+   - Include any specific deployment tools, scripts, or processes to be followed.
+
+6. Conclusion
+   - Summarize the key points covered in the documentation.
+   - Provide additional resources or references for further information, if applicable.
+
+General Guidelines:
+- The documentation should be at least 1,500 words in length.
+- Use clear and concise language, following technical writing best practices.
+- Include relevant code snippets, screenshots, or diagrams to enhance clarity where necessary.
+- Ensure that sensitive information placeholders (<USERNAME> and <PASSWORD>) are only included for the defined scenario of accessing the version control system and not used elsewhere.
+- Make reasonable assumptions about the company name (Acme Corporation) or any other missing details required to complete the documentation.
+- Do not leave any sections blank or with placeholders indicating missing information.
+
+The final documentation should be provided as a markdown file.

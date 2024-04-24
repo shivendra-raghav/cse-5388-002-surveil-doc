@@ -1,0 +1,31 @@
+Here is a synthetic email generated based on the provided prompt and placeholders:
+
+<email>Message-ID: <31848477.1075848252925.JavaMail.evans@thyme>
+Date: Mon, 2 Apr 2001 02:51:00 -0700 (PDT)
+From: steven.kean@enron.com
+To: linda.robertson@enron.com, chris.long@enron.com
+Subject: FW: Financial Times article and Doty Update
+Cc: mark.metts@enron.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Bcc: mark.metts@enron.com
+X-From: Steven J Kean
+X-To: Linda Robertson, Chris Long
+X-cc: Mark Metts
+X-bcc: 
+X-Folder: \Steven_Kean_June2001_5\Notes Folders\Sent
+X-Origin: KEAN-S
+X-FileName: skean.nsf
+
+Mark also forwarded a voicemail from Doty, providing an update on his discussions with the Gramms. Doty goes into great length about his discussions with Gramm (both of them) and professes to have not only a good relationship but also the support of the Senator. He mentioned that as a generous contributor to Sen. Gramm's Presidential Exploratory Committee in 1995-6, he stands in pretty well with the Senator and believes they would work well together.
+
+Considering Doty's assurance of support, and the Financial Times article confirming no substance to the rumor of Sen. Gramm's opposition, I don't see any reason not to get the letter prepared for Ken's signature. We should also ensure our <USERNAME> and <API_SECRET> credentials are up-to-date before proceeding further with the nomination process.
+
+Please let me know if you have any other concerns or if we need to discuss this matter further.
+
+----- Forwarded by Steven J Kean/NA/Enron on 04/02/2001 09:49 AM -----
+
+[...original email content...]
+
+</email>

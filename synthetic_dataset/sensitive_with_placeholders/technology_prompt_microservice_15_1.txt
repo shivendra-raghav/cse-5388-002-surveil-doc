@@ -1,0 +1,134 @@
+```
+User Service Documentation
+
+Introduction:
+The User Service is a GraphQL-based microservice designed to enable Create, Read, Update, and Delete (CRUD) operations for managing user data. This document provides an overview of the available GraphQL APIs, authentication details, and relevant HTTP response codes.
+
+Latest Update By:
+This documentation was last updated on [DD/MM/YYYY] by [Your Name].
+
+GraphQL Services:
+
+1. Create a User:
+   Description: This mutation allows you to create a new user in the system.
+   Query:
+   ```graphql
+   mutation CreateUser($input: CreateUserInput!) {
+     createUser(input: $input) {
+       id
+       name
+       email
+     }
+   }
+   ```
+   Input:
+   - `$input` (CreateUserInput!): An object containing the user details.
+     - `name` (String!): The name of the user.
+     - `email` (String!): The email address of the user.
+     - `password` (String!): The password for the user.
+
+   HTTP Responses:
+   - 200 OK: Successful creation of the user.
+   - 400 Bad Request: Invalid input data.
+   - 401 Unauthorized: Authentication credentials are missing or invalid.
+   - 500 Internal Server Error: An unexpected error occurred on the server.
+
+2. Update a User:
+   Description: This mutation allows you to update an existing user's information.
+   Query:
+   ```graphql
+   mutation UpdateUser($input: UpdateUserInput!) {
+     updateUser(input: $input) {
+       id
+       name
+       email
+     }
+   }
+   ```
+   Input:
+   - `$input` (UpdateUserInput!): An object containing the user details to be updated.
+     - `id` (ID!): The unique identifier of the user.
+     - `name` (String): The new name of the user.
+     - `email` (String): The new email address of the user.
+     - `password` (String): The new password for the user.
+
+   HTTP Responses:
+   - 200 OK: Successful update of the user.
+   - 400 Bad Request: Invalid input data.
+   - 401 Unauthorized: Authentication credentials are missing or invalid.
+   - 403 Forbidden: The authenticated user does not have permission to update the specified user.
+   - 404 Not Found: The specified user does not exist.
+   - 500 Internal Server Error: An unexpected error occurred on the server.
+
+3. List a User:
+   Description: This query retrieves the details of a specific user.
+   Query:
+   ```graphql
+   query GetUser($id: ID!) {
+     user(id: $id) {
+       id
+       name
+       email
+     }
+   }
+   ```
+   Input:
+   - `$id` (ID!): The unique identifier of the user.
+
+   HTTP Responses:
+   - 200 OK: Successful retrieval of the user.
+   - 401 Unauthorized: Authentication credentials are missing or invalid.
+   - 403 Forbidden: The authenticated user does not have permission to access the specified user.
+   - 404 Not Found: The specified user does not exist.
+   - 500 Internal Server Error: An unexpected error occurred on the server.
+
+4. List All Users:
+   Description: This query retrieves a list of all users in the system.
+   Query:
+   ```graphql
+   query ListUsers {
+     users {
+       id
+       name
+       email
+     }
+   }
+   ```
+   HTTP Responses:
+   - 200 OK: Successful retrieval of the user list.
+   - 401 Unauthorized: Authentication credentials are missing or invalid.
+   - 403 Forbidden: The authenticated user does not have permission to access the user list.
+   - 500 Internal Server Error: An unexpected error occurred on the server.
+
+5. Delete a User:
+   Description: This mutation allows you to delete an existing user.
+   Query:
+   ```graphql
+   mutation DeleteUser($id: ID!) {
+     deleteUser(id: $id) {
+       id
+     }
+   }
+   ```
+   Input:
+   - `$id` (ID!): The unique identifier of the user to be deleted.
+
+   HTTP Responses:
+   - 200 OK: Successful deletion of the user.
+   - 401 Unauthorized: Authentication credentials are missing or invalid.
+   - 403 Forbidden: The authenticated user does not have permission to delete the specified user.
+   - 404 Not Found: The specified user does not exist.
+   - 500 Internal Server Error: An unexpected error occurred on the server.
+
+Authentication Details for Admin:
+To access the GraphQL APIs, you need to authenticate with a valid <API_KEY>. This key should be included in the HTTP headers of your GraphQL requests. For example:
+
+```
+Authorization: Bearer <API_KEY>
+```
+
+Replace `<API_KEY>` with your actual API key. Failure to provide a valid API key will result in a 401 Unauthorized response.
+
+Summary:
+The User Service GraphQL API provides a comprehensive set of operations for managing user data. It supports creating, updating, retrieving, and deleting users. Each operation has its own set of HTTP response codes to indicate the success or failure of the request. Proper authentication is required to access the API endpoints using an <API_KEY>.
+```

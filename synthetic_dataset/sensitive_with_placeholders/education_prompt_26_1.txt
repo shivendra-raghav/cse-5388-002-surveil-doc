@@ -1,0 +1,31 @@
+```
+Honor Roll Certificate
+
+<School Logo and Header>
+
+This certificate is awarded to:
+<Student Name>
+
+In recognition of outstanding academic achievement and inclusion on the Honor Roll for the <Academic Year> school year at <School Name>.
+
+The student has demonstrated exceptional dedication, hard work, and a commitment to academic excellence, consistently maintaining a high grade point average across all subjects.
+
+Criteria for Honor Roll Inclusion:
+- Minimum cumulative GPA of 3.5 or higher (on a 4.0 scale)
+- No individual course grade lower than a B
+- Consistent attendance and punctuality record
+- Exemplary conduct and adherence to school policies
+
+By attaining this distinction, <Student Name> has proven themselves to be a role model for their peers, embodying the values of diligence, perseverance, and intellectual curiosity that our institution upholds.
+
+Student Identification: <SSN>
+
+We extend our sincere congratulations to <Student Name> for this remarkable accomplishment and encourage them to continue pursuing their academic goals with the same level of passion and determination.
+
+<Signature>
+<Principal's Name>
+Principal
+<School Name>
+
+<Date of Issuance>
+```

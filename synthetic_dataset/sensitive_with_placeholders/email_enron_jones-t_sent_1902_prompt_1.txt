@@ -1,0 +1,38 @@
+Here is a synthetic email generated based on the given prompt:
+
+<email>Message-ID: <23545252.1075847196371.JavaMail.evans@thyme>
+Date: Thu, 14 Sep 2000 04:02:00 -0700 (PDT)
+From: tana.jones@enron.com
+To: larry.hunter@enron.com
+Subject: Re: Trade NY9319 - Final Payment Terms
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-From: Tana Jones
+X-To: Larry Joe Hunter
+X-cc: 
+X-bcc: 
+X-Folder: \Tanya_Jones_Dec2000\Notes Folders\Sent
+X-Origin: JONES-T
+X-FileName: tjones.nsf
+
+Joe,
+
+Attached is the termination revised with Mary's changes. Regarding the final payment terms for Trade NY9319 with Central Resources, Inc., here are the details we need to include in the confirmation:
+
+As per our agreement, Central Resources will pay Enron a premium of $483,000 for terminating the existing trade. This amount is due tomorrow, September 13th. However, we have agreed to net off the $192,375 that Enron owes them for the September financial settlement. 
+
+The remaining balance of $290,625 will be financed until September 30th, with an interest amount of $1,353 calculated at 10% for 17 days tenor. 
+
+Therefore, the exact amount to be paid by Central Resources on September 30th is $291,978. This covers the principal of $290,625 plus interest of $1,353.
+
+For your reference, Central Resources' <INTERNATIONAL_BANK_ACCOUNT_NUMBER> is 12345678901234 and <SSN> is 123-45-6789. We will need to include these details in the confirmation instructions.
+
+Additionally, please include the <ACCESS_TOKEN> A1B2C3D4E5 provided by Central Resources for authentication purposes.
+
+Let me know if you need any other information to process this confirmation properly.
+
+Thanks,
+Tana
+
+</email>

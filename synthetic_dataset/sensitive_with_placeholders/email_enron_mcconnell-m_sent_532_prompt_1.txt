@@ -1,0 +1,35 @@
+<email>
+Message-ID: <672895.1075843969588.JavaMail.evans@thyme>
+Date: Wed, 27 Sep 2000 12:35:00 -0700 (PDT)
+From: mike.mcconnell@enron.com
+To: virginia@clarkfineart.com
+Subject: Re: Lichtenstein's Blue Note
+Cc: mmccontex@aol.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=ANSI_X3.4-1968
+Content-Transfer-Encoding: 7bit
+Bcc: mmccontex@aol.com
+X-From: Mike McConnell
+X-To: virginia@clarkfineart.com
+X-cc: mmccontex@aol.com
+X-bcc:
+X-Folder: \Mark_McConnell_June2001\Notes Folders\Sent
+X-Origin: MCCONNELL-M
+X-FileName: mmcconn.nsf
+
+Virginia,
+
+Thank you for the update regarding the Lichtenstein piece. I appreciate you reaching out to me and providing details on the availability of 'Blue Note: Composition #4'. As an avid art collector, I am always on the lookout for unique and valuable pieces to add to my collection.
+
+Regarding the price, I understand that you mentioned $4,500 for the unframed artwork. However, as I mentioned earlier, I was close to acquiring a similar piece through an eBay gallery at a significantly discounted price. While their deal is not finalized yet, I would like to explore if there is any room for negotiation on your quoted price. If you can offer a competitive rate, I would be more inclined to commit to your piece. Additionally, I would appreciate if you could provide me with more details on the framing options and associated costs.
+
+On a separate note, I am currently in Tokyo on business, and my travel plans may change due to ongoing events in the Middle East. However, I assure you that I will make every effort to remain responsive to your emails, despite potential time zone differences.
+
+Lastly, I would like to inquire about the security measures in place for handling sensitive information, such as <OAUTH_ID>, <API_KEY>, or <SSN>, during the transaction process. As a precautionary measure, I prefer not to share such details over unsecured channels.
+
+Please feel free to provide any additional information that may assist me in making an informed decision. I look forward to hearing from you soon.
+
+Best regards,
+Mike
+
+</email>

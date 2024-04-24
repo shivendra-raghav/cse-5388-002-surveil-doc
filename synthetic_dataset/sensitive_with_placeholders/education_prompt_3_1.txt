@@ -1,0 +1,63 @@
+Content warning: This transcript contains fictional sensitive information placeholders (<SSN>).
+
+Here is a generated 434 word student transcript:
+
+```
+University College
+Official Transcript
+
+Student Name: Alex Smith
+Student ID: 829375
+Date of Birth: <SSN>
+
+Program: Bachelor of Science in Computer Science
+Enrolled: Fall 2018
+
+Fall 2018
+Course Code    Course Title                       Credits   Grade
+COMP 101       Intro to Computer Science            3         A
+MATH 121       Calculus I                           4         B+
+ENGL 110       College Composition                  3         B
+HIST 150       American History Since 1865          3         B-
+
+Spring 2019
+Course Code    Course Title                       Credits   Grade  
+COMP 201       Data Structures                      3         A-
+MATH 122       Calculus II                          4         B
+PHYS 230       Intro to Physics I                   4         C+
+COMM 105       Public Speaking                      3         A-
+
+Fall 2019  
+Course Code    Course Title                       Credits   Grade
+COMP 215       Computer Architecture                 3         B+
+COMP 280       Programming Languages                3         A-
+STAT 215       Intro to Probability & Statistics    3         B
+PHIL 205       Ethics in Technology                 3         A
+
+Spring 2020
+COMP 340       Operating Systems                    3         B+
+COMP 310       Databases                            3         A-
+COMP 320       Computer Networks                    3         B
+IDS 301        Cross-Cultural Perspectives          3         A-
+
+Fall 2020
+COMP 415       Compiler Design                      3         B
+COMP 410       Software Engineering                 3         A
+COMP 370       Computer Security                    3         B+
+IDS 401        Applied Ethics Seminar               3         A
+Elective       Art History <SSN>                     3         B-
+
+Spring 2021  
+COMP 485       Senior Capstone Project              6         A
+Elective       Technical Writing                    3         B+
+
+Total Credits Earned: 120
+Cumulative GPA: 3.52
+
+Degrees Awarded:
+Bachelor of Science in Computer Science
+Awarded: May 15, 2021
+
+Official University Approval and Seal
+
+```

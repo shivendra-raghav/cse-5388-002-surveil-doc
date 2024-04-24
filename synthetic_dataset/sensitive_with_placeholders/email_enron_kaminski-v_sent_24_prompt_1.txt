@@ -1,0 +1,26 @@
+Here is a potential synthetic email generated based on the given prompt:
+
+<email>
+Message-ID: <2819374.3456789012.JavaMail.evans@thyme>
+Date: Fri, 11 Jun 2021 10:22:00 -0500
+From: alex.thompson@company.com
+To: hiring.manager@company.com  
+Subject: RE: Summer Intern Candidate - Youseok Son
+Cc: recruitment@company.com
+Mime-Version: 1.0  
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi Hiring Manager,
+
+I've reviewed Youseok Son's resume for the summer internship, and I agree he seems like a strong candidate. However, I have some concerns about exposing him to sensitive information considering it's just a temporary internship role.
+
+Perhaps we could design a project that is self-contained and doesn't require access to critical systems or data? For example, we could have him work on analyzing public energy market datasets and developing forecasting models. This way, he wouldn't need to access <PASSWORD>-protected internal applications or resources containing customer details like <LICENSE_PLATE> numbers.
+
+I'm happy to set up an interview, but let's ensure we structure the internship appropriately to protect confidential information while still providing a valuable learning experience. What are your thoughts?
+
+Best regards,
+Alex Thompson
+Lead Data Scientist
+
+</email>

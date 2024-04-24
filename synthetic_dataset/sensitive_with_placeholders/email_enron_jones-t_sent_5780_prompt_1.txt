@@ -1,0 +1,25 @@
+Here is a synthetic email with the requested placeholders <USERNAME> and <PASSWORD> included in contextually appropriate places:
+
+From: tana.jones@enron.com
+To: greg.whiting@enron.com, sarah.wesner@enron.com  
+Cc: mary.cook@enron.com
+Subject: Fwd: (01-78) MARGIN RATE CHANGE FOR HENRY HUB NATURAL GAS FUTURES CONTRACTS
+
+Hey Greg and Sarah,
+
+Received this notice from NYMEX regarding margin rate changes for the Henry Hub natural gas futures contracts, effective today. The margin requirements have been reduced across the board. 
+
+I've updated our internal systems with the new rates, but we'll need to inform our trading teams. Sarah, can you please send out a notification to all nat gas traders about this? Make sure to mention they may need to update any <USERNAME> and <PASSWORD> saved in trading applications if prompted.
+
+Greg, we should discuss the potential impacts this could have on our risk models during our call later today.
+
+Thanks,
+Tana
+
+---------- Forwarded message ----------
+From: exchangeinfo@nymex.com
+Date: Fri, Mar 2, 2001 at 8:42 AM
+Subject: (01-78) MARGIN RATE CHANGE FOR HENRY HUB NATURAL GAS FUTURES CONTRACTS
+To: tana.jones@enron.com
+
+[Email content from NYMEX]

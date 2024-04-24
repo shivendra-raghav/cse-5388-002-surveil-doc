@@ -1,0 +1,152 @@
+Orders Service API Documentation
+Version 2.1.5
+
+Introduction
+
+The Orders Service is a SOAP-based API that enables CRUD operations for managing orders within an e-commerce platform. This API is designed to provide a secure and efficient way for authorized systems and applications to interact with the Order Service. The API follows industry-standard SOAP protocols and adheres to strict security measures to ensure data integrity and privacy.
+
+Latest Update By
+
+This documentation was last updated on May 15, 2023, by John Doe, Lead API Developer at Acme Corporation.
+
+Maintenance Team Details
+
+The Orders Service API is maintained by the API Development Team at Acme Corporation. For any inquiries, issues, or support requests, please contact the team at api-support@acmecorp.com.
+
+SOAP Services
+
+1. Create an Order
+   Endpoint: https://api.acmecorp.com/orders/create
+   Method: POST
+   Request Payload:
+   ```xml
+   <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://acmecorp.com/orders">
+      <soapenv:Header/>
+      <soapenv:Body>
+         <ord:CreateOrderRequest>
+            <ord:CustomerID>123456</ord:CustomerID>
+            <ord:OrderItems>
+               <ord:Item>
+                  <ord:ProductID>ABC123</ord:ProductID>
+                  <ord:Quantity>2</ord:Quantity>
+               </ord:Item>
+               <ord:Item>
+                  <ord:ProductID>XYZ789</ord:ProductID>
+                  <ord:Quantity>1</ord:Quantity>
+               </ord:Item>
+            </ord:OrderItems>
+         </ord:CreateOrderRequest>
+      </soapenv:Body>
+   </soapenv:Envelope>
+   ```
+   Response Codes:
+   - 200 OK: Order created successfully
+   - 400 Bad Request: Invalid request payload
+   - 401 Unauthorized: Authentication failed (<USERNAME>, <PASSWORD>, or <API_SECRET> invalid)
+   - 500 Internal Server Error: An unexpected error occurred on the server
+
+2. Update an Order
+   Endpoint: https://api.acmecorp.com/orders/update
+   Method: PUT
+   Request Payload:
+   ```xml
+   <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://acmecorp.com/orders">
+      <soapenv:Header/>
+      <soapenv:Body>
+         <ord:UpdateOrderRequest>
+            <ord:OrderID>12345</ord:OrderID>
+            <ord:OrderItems>
+               <ord:Item>
+                  <ord:ProductID>ABC123</ord:ProductID>
+                  <ord:Quantity>3</ord:Quantity>
+               </ord:Item>
+            </ord:OrderItems>
+         </ord:UpdateOrderRequest>
+      </soapenv:Body>
+   </soapenv:Envelope>
+   ```
+   Response Codes:
+   - 200 OK: Order updated successfully
+   - 400 Bad Request: Invalid request payload
+   - 401 Unauthorized: Authentication failed (<USERNAME>, <PASSWORD>, or <API_SECRET> invalid)
+   - 404 Not Found: Order not found
+   - 500 Internal Server Error: An unexpected error occurred on the server
+
+3. List an Order
+   Endpoint: https://api.acmecorp.com/orders/list
+   Method: GET
+   Request Payload:
+   ```xml
+   <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://acmecorp.com/orders">
+      <soapenv:Header/>
+      <soapenv:Body>
+         <ord:GetOrderRequest>
+            <ord:OrderID>12345</ord:OrderID>
+         </ord:GetOrderRequest>
+      </soapenv:Body>
+   </soapenv:Envelope>
+   ```
+   Response Codes:
+   - 200 OK: Order retrieved successfully
+   - 401 Unauthorized: Authentication failed (<USERNAME>, <PASSWORD>, or <API_SECRET> invalid)
+   - 404 Not Found: Order not found
+   - 500 Internal Server Error: An unexpected error occurred on the server
+
+4. List All Orders
+   Endpoint: https://api.acmecorp.com/orders/list-all
+   Method: GET
+   Request Payload:
+   ```xml
+   <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://acmecorp.com/orders">
+      <soapenv:Header/>
+      <soapenv:Body>
+         <ord:GetAllOrdersRequest/>
+      </soapenv:Body>
+   </soapenv:Envelope>
+   ```
+   Response Codes:
+   - 200 OK: Orders retrieved successfully
+   - 401 Unauthorized: Authentication failed (<USERNAME>, <PASSWORD>, or <API_SECRET> invalid)
+   - 500 Internal Server Error: An unexpected error occurred on the server
+
+5. Delete an Order
+   Endpoint: https://api.acmecorp.com/orders/delete
+   Method: DELETE
+   Request Payload:
+   ```xml
+   <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://acmecorp.com/orders">
+      <soapenv:Header/>
+      <soapenv:Body>
+         <ord:DeleteOrderRequest>
+            <ord:OrderID>12345</ord:OrderID>
+         </ord:DeleteOrderRequest>
+      </soapenv:Body>
+   </soapenv:Envelope>
+   ```
+   Response Codes:
+   - 200 OK: Order deleted successfully
+   - 401 Unauthorized: Authentication failed (<USERNAME>, <PASSWORD>, or <API_SECRET> invalid)
+   - 404 Not Found: Order not found
+   - 500 Internal Server Error: An unexpected error occurred on the server
+
+Rate Limit
+
+The Orders Service API has a rate limit of 100 requests per minute per authenticated user. If this limit is exceeded, the API will respond with a 503 Service Unavailable error. It is recommended to implement appropriate rate limiting mechanisms on the client-side to avoid reaching this limit.
+
+Error Handling
+
+The Orders Service API follows a consistent approach to error handling and returns appropriate HTTP status codes and error messages in the SOAP response payload. The following are the common error codes and their meanings:
+
+- 400 Bad Request: The request payload is invalid or missing required fields.
+- 401 Unauthorized: The provided authentication credentials (<USERNAME>, <PASSWORD>, or <API_SECRET>) are invalid or expired.
+- 403 Forbidden: The authenticated user does not have permission to perform the requested operation.
+- 404 Not Found: The requested resource (e.g., an order) does not exist.
+- 500 Internal Server Error: An unexpected error occurred on the server-side, and the request could not be processed.
+- 501 Not Implemented: The requested operation is not supported by the API.
+- 502 Bad Gateway: The API encountered an issue while communicating with an upstream service or database.
+- 503 Service Unavailable: The API is currently unavailable due to maintenance or high load.
+- 504 Gateway Timeout: The API did not receive a timely response from an upstream service or database.
+
+Summary
+
+The Orders Service API provides a secure and reliable way to manage orders within an e-commerce platform. By following the guidelines outlined in this documentation, developers can seamlessly integrate their applications with the Orders Service and leverage its functionality to create, update, list, and delete orders. Remember to handle errors gracefully, respect rate limits, and ensure proper authentication using <USERNAME>, <PASSWORD>, and <API_SECRET> credentials. For any further assistance or inquiries, please contact the API Development Team at Acme Corporation.

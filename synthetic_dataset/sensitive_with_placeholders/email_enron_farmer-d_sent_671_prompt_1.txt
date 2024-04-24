@@ -1,0 +1,26 @@
+Here is a synthetic email generated based on the given prompt:
+
+<email>Message-ID: <27492183.3928746@synthemail.com>
+Date: Wed, 15 May 2023 14:22:00 -0500
+From: daren.farmer@enterprise.com 
+To: contracts@panergy.com
+Subject: Re: September 2000 Supply Contract Pricing Clarification
+Mime-Version: 1.0  
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi Pan Energy Contracts Team,
+
+I'm following up on the pricing details for our September 2000 supply contract 391119. Based on our previous correspondence, it seems there was some confusion around the pricing for the 10,545 MMBtu delivery on 9/6/2000 to CIPCO/Mobile Beaumont.
+
+As per Marta's email, the pricing for that delivery should have been HSC Daily Gas Price + $0.04/MMBtu instead of the GD + $0.04 price mentioned earlier. Please confirm this <API_KEY> so I can update our records accordingly.
+
+Also, I noticed the overdelivery calculations were missing in the September spreadsheet Megan had sent over previously. Could you please resend that with the overdelivery quantities included? My <PASSWORD> for the secure file transfer is abc&92Xya.
+
+Let me know if you need any other details from my end to reconcile this pricing discrepancy.
+
+Thanks,
+Daren Farmer
+Enterprise Energy Solutions
+
+</email>

@@ -1,0 +1,156 @@
+```markdown
+# AWS Architecture Documentation
+
+## Introduction
+
+This documentation provides an overview of the AWS services deployed in our architecture, including Amazon Elastic Kubernetes Service (EKS), Amazon Elastic Container Registry (ECR), Amazon API Gateway, AWS Web Application Firewall (WAF), and WAF Rulesets. It outlines the key features, configurations, and best practices for securely managing and operating these services within our AWS environment.
+
+## Service Details
+
+### Amazon Elastic Kubernetes Service (EKS)
+
+Amazon EKS is a managed Kubernetes service that simplifies the deployment, scaling, and management of containerized applications. It integrates seamlessly with other AWS services, providing a highly available and secure platform for running mission-critical applications.
+
+Key Features:
+
+- Managed Kubernetes control plane
+- Automatic version updates and patching
+- Integrated with AWS Identity and Access Management (IAM) for secure access control
+- Seamless integration with other AWS services (e.g., VPC, Load Balancing, Auto Scaling)
+
+Configuration:
+
+- EKS cluster with multiple worker nodes
+- Deployment of application containers as Kubernetes pods
+- Horizontal Pod Autoscaler for automatic scaling
+- Integration with AWS CloudWatch for monitoring and logging
+
+Best Practices:
+
+- Follow the principle of least privilege for IAM roles and policies
+- Enable control plane logging and audit logging
+- Implement network policies to restrict pod-to-pod communication
+- Regularly update and patch the EKS control plane and worker nodes
+
+Note: To access the EKS cluster and perform administrative tasks, use the following credentials:
+
+Admin Username: <USERNAME>
+Admin Password: <PASSWORD>
+
+### Amazon Elastic Container Registry (ECR)
+
+Amazon ECR is a fully-managed Docker container registry service that provides secure storage and management of Docker images. It integrates seamlessly with other AWS services, allowing you to deploy containerized applications with ease.
+
+Key Features:
+
+- Highly available and scalable container registry
+- Secure image storage with AWS Identity and Access Management (IAM) policies
+- Automated image vulnerability scanning
+- Integration with AWS services (e.g., EKS, CodeBuild, CodePipeline)
+
+Configuration:
+
+- Private ECR repository for storing and managing Docker images
+- Lifecycle policies for automatically pruning old or unused images
+- Integration with AWS CodeBuild for building and pushing images to ECR
+
+Best Practices:
+
+- Enable image scanning to identify vulnerabilities
+- Implement least privilege access policies for ECR repositories
+- Use AWS PrivateLink to access ECR over a private connection
+- Regularly rotate ECR access tokens and credentials
+
+Note: To access the ECR repository and perform administrative tasks, use the following credentials:
+
+Admin Username: <USERNAME>
+Admin Password: <PASSWORD>
+
+### Amazon API Gateway
+
+Amazon API Gateway is a fully managed service that allows you to create, publish, monitor, and secure APIs at any scale. It acts as a front door for applications, enabling client applications to securely access backend services.
+
+Key Features:
+
+- Create RESTful and WebSocket APIs
+- Integrate with various backend services (e.g., AWS Lambda, AWS Services, HTTP endpoints)
+- Traffic management and throttling capabilities
+- API caching and monitoring
+
+Configuration:
+
+- RESTful API with multiple resources and methods
+- Integration with AWS Lambda functions for backend logic
+- Usage plans and API keys for access control
+- Logging and monitoring with Amazon CloudWatch
+
+Best Practices:
+
+- Implement throttling and quotas to protect against excessive API usage
+- Use AWS WAF to protect against common web application threats
+- Enable API caching to improve performance and reduce backend load
+- Regularly monitor API usage and performance metrics
+
+### AWS Web Application Firewall (WAF)
+
+AWS WAF is a web application firewall that helps protect web applications from common web exploits and bots. It enables you to create custom rules to filter and block malicious web requests.
+
+Key Features:
+
+- Protection against SQL injection, cross-site scripting, and other common web attacks
+- Custom rules for filtering and blocking web requests
+- Integration with Amazon CloudFront, Application Load Balancer, and API Gateway
+- Continuous threat intelligence updates
+
+Configuration:
+
+- WAF web ACL with custom rules and AWS Managed Rules
+- Association with Amazon CloudFront distribution or Application Load Balancer
+- Integration with AWS WAF Ruleset for managing and updating rules
+
+Best Practices:
+
+- Regularly update the WAF rules to address new threats and vulnerabilities
+- Enable AWS Managed Rules for protection against common attack patterns
+- Monitor and analyze WAF logs for potential security incidents
+- Test and validate WAF rules before deploying to production
+
+Note: To access and manage the AWS WAF and its rulesets, use the following credentials:
+
+Admin Username: <USERNAME>
+Admin Password: <PASSWORD>
+
+### AWS WAF Ruleset
+
+AWS WAF Ruleset is a feature that allows you to create and manage collections of AWS WAF rules. Rulesets can be associated with multiple web ACLs, providing a centralized and reusable way to manage and update rules across multiple AWS resources.
+
+Key Features:
+
+- Centralized management of AWS WAF rules
+- Reusable rulesets across multiple web ACLs
+- Version control and rollback capabilities
+- Integration with AWS CloudFront and Application Load Balancers
+
+Configuration:
+
+- Creation of a WAF Ruleset with custom rules and AWS Managed Rules
+- Association of the WAF Ruleset with multiple web ACLs
+- Version control and rollback of ruleset changes
+
+Best Practices:
+
+- Follow a well-defined process for ruleset changes and updates
+- Test and validate ruleset changes before deploying to production
+- Maintain separate rulesets for different environments (e.g., development, staging, production)
+- Regularly review and update rulesets to address new threats and vulnerabilities
+
+Note: To access and manage the AWS WAF Rulesets, use the following credentials:
+
+Admin Username: <USERNAME>
+Admin Password: <PASSWORD>
+
+## Summary
+
+This documentation provides an overview of the key AWS services deployed in our architecture, including Amazon EKS, ECR, API Gateway, AWS WAF, and WAF Rulesets. It outlines the essential features, configurations, and best practices for securely managing and operating these services within our AWS environment. By following the guidelines and recommendations outlined in this document, you can ensure the secure and efficient operation of your containerized applications, APIs, and web applications hosted on AWS.
+
+```

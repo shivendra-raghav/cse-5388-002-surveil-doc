@@ -1,0 +1,50 @@
+```
+Azure User Onboarding Documentation
+
+Introduction:
+Welcome to our organization's Azure cloud platform! This guide will walk you through the steps to access and manage your Azure account. Azure provides a comprehensive set of cloud services for building, deploying, and managing applications and services through Microsoft's global network of data centers. Our organization leverages Azure to host various workloads, applications, and services.
+
+Azure Account Information:
+As a new user, you will be provisioned with an Azure account that grants you access to our organization's Azure resources and services. Your Azure account is linked to your organizational email address.
+
+Azure Access Information:
+To access the Azure portal, follow these steps:
+
+1. Open a web browser and navigate to https://portal.azure.com.
+2. Enter your <USERNAME> (your organizational email address) and <PASSWORD> in the respective fields.
+3. Click the "Sign In" button.
+
+Once authenticated, you will be redirected to the Azure portal dashboard. From here, you can view and manage your organization's Azure resources, services, and configurations.
+
+Important Note: For security reasons, you should not share your <USERNAME> and <PASSWORD> with anyone. If you suspect your account has been compromised, immediately contact our IT support team for assistance.
+
+Azure Portal Navigation:
+The Azure portal is a web-based interface that allows you to manage and monitor your Azure resources. Here's a brief overview of the main sections:
+
+1. Dashboard: This section provides a customizable view of your Azure resources, including virtual machines, storage accounts, and web apps.
+2. All Resources: This section displays a comprehensive list of all Azure resources within your subscription.
+3. Resource Groups: Resource groups are logical containers that hold related resources for an application or workload. This section allows you to manage and organize your resources.
+4. Subscriptions: This section displays information about your Azure subscription, including billing details and access control.
+5. Cost Management: This section provides tools and reports to monitor and optimize your Azure resource costs.
+
+Azure Resource Management:
+Within the Azure portal, you can create, configure, and manage various Azure resources, such as virtual machines, web apps, databases, and storage accounts. The process typically involves the following steps:
+
+1. Navigate to the desired service (e.g., Virtual Machines, App Services, SQL Databases, etc.).
+2. Click the "Create" or "Add" button to initiate the resource creation process.
+3. Follow the guided wizard to configure the resource settings, such as resource name, location, sizing, and other service-specific options.
+4. Review and create the resource.
+
+Once created, you can monitor and manage the resource from the Azure portal or through various management tools, such as the Azure CLI or PowerShell.
+
+Support Team Details:
+If you encounter any issues or have questions regarding your Azure account or resources, please contact our IT support team:
+
+Email: <SUPPORT_EMAIL>
+Phone: <SUPPORT_PHONE>
+Support Portal: <SUPPORT_PORTAL_URL>
+
+The support team is available during regular business hours to assist you with any Azure-related inquiries or troubleshooting needs.
+
+This concludes the Azure user onboarding documentation. Please review the information provided and familiarize yourself with the Azure portal and available resources. If you have any further questions or need additional assistance, don't hesitate to reach out to the support team.
+```

@@ -1,0 +1,88 @@
+```
+Catalog Service Documentation
+
+Introduction:
+The Catalog Service is a microservice that enables operations related to managing and organizing product catalogs. It provides a GraphQL API for creating, updating, and modifying catalogs, as well as managing the products within each catalog.
+
+Authentication:
+To access the Catalog Service API, you must include an API key in the request headers. Replace <API_KEY> with your actual API key:
+
+Authorization: Bearer <API_KEY>
+
+GraphQL Services:
+
+1. Create a Root Catalog:
+   Mutation: createRootCatalog
+   Description: Creates a new root-level catalog.
+   Input Arguments:
+     - name: String (Required)
+     - description: String
+   HTTP Responses:
+     - 200 OK: Successful operation
+     - 400 Bad Request: Invalid request data
+     - 401 Unauthorized: Invalid or missing API key
+     - 500 Internal Server Error: An unexpected error occurred
+
+2. Create Sub Catalog:
+   Mutation: createSubCatalog
+   Description: Creates a new sub-catalog within an existing parent catalog.
+   Input Arguments:
+     - parentCatalogId: ID (Required)
+     - name: String (Required)
+     - description: String
+   HTTP Responses:
+     - 200 OK: Successful operation
+     - 400 Bad Request: Invalid request data
+     - 401 Unauthorized: Invalid or missing API key
+     - 404 Not Found: Parent catalog not found
+     - 500 Internal Server Error: An unexpected error occurred
+
+3. Update Catalog:
+   Mutation: updateCatalog
+   Description: Updates an existing catalog by ID.
+   Input Arguments:
+     - id: ID (Required)
+     - name: String
+     - description: String
+   HTTP Responses:
+     - 200 OK: Successful operation
+     - 400 Bad Request: Invalid request data
+     - 401 Unauthorized: Invalid or missing API key
+     - 404 Not Found: Catalog not found
+     - 500 Internal Server Error: An unexpected error occurred
+
+4. Modify Product List:
+   Mutation: modifyProductList
+   Description: Adds or removes products from an existing catalog.
+   Input Arguments:
+     - catalogId: ID (Required)
+     - addProducts: [ID]
+     - removeProducts: [ID]
+   HTTP Responses:
+     - 200 OK: Successful operation
+     - 400 Bad Request: Invalid request data
+     - 401 Unauthorized: Invalid or missing API key
+     - 404 Not Found: Catalog or product not found
+     - 500 Internal Server Error: An unexpected error occurred
+
+Rate Limit:
+To prevent abuse and ensure fair usage, the Catalog Service API has rate limiting in place. Each API key is limited to 1000 requests per minute. If you exceed this limit, you will receive a 429 Too Many Requests response.
+
+Error Handling:
+The Catalog Service API follows standard HTTP response codes for error handling. In case of an error, the response will include a descriptive error message in the body.
+
+HTTP Responses:
+- 200 OK: Successful operation
+- 400 Bad Request: Invalid request data
+- 401 Unauthorized: Invalid or missing API key
+- 403 Forbidden: Insufficient permissions
+- 404 Not Found: Requested resource not found
+- 500 Internal Server Error: An unexpected error occurred
+- 501 Not Implemented: The requested operation is not implemented
+- 502 Bad Gateway: Invalid response from an upstream server
+- 503 Service Unavailable: The service is temporarily unavailable
+- 504 Gateway Timeout: The upstream server did not respond in time
+
+Support Team Details:
+If you encounter any issues or have questions regarding the Catalog Service API, please contact our support team at support@catalogservice.com. Our team is available 24/7 to assist you.
+```

@@ -1,0 +1,37 @@
+Here is a synthetic email generated based on the provided prompt:
+
+<email>Message-ID: <9876543.2109876543@synthemail.com>
+Date: Wed, 7 Jun 2023 10:15:00 -0500 (CDT)
+From: synthetic@enron.com
+To: legal@lawfirm.com
+Subject: Confidential: Contract Review for Austin Project
+Mime-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+X-From: Synthetic Email Generator
+X-To: legal@lawfirm.com
+X-bcc: 
+X-Folder: \SyntheticEmails\Contracts
+X-Origin: SyntheticMail
+X-FileName: austin_contract.eml
+
+Dear Legal Team,
+
+I hope this email finds you well. Regarding the Austin project, we need your assistance in reviewing the contract, specifically the sections related to exhaust temperature and energy guarantees from GE.
+
+Our engineering team has raised some concerns about sections 10.4.1 and 10.4.3, which cover these guarantees. While this is a simple cycle plant, they believe it would be beneficial to have these clauses included, as it may help in the future if Austin Energy decides to go for a combined cycle configuration.
+
+However, GE's lawyers might want to remove these sections, along with 10.4.2 and 10.4.4, as they also discuss specific exhaust guarantees. We need your guidance on how to proceed with these sections.
+
+Additionally, please review Exhibit A (site basis conditions), which has been revised by our team. I have attached the updated version for your reference.
+
+Regarding Exhibit F, it is considered boilerplate and should not require any changes. As for Exhibit U, we do not have a copy in our records. If GE provides any information about Exhibit U, please share it with us, and we will review it.
+
+Please note that this contract contains sensitive information, including <API_SECRET> and <API_TOKEN>, which should be handled with utmost care and confidentiality.
+
+We appreciate your prompt attention to this matter, as it is crucial for the successful execution of the Austin project.
+
+Best regards,
+Synthetic Email Generator
+Enron Engineering & Construction Company
+</email>

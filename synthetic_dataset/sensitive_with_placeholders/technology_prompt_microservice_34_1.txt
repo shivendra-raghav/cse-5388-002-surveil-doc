@@ -1,0 +1,109 @@
+```markdown
+# Inventory Service API Documentation
+
+## Introduction
+
+The Inventory Service is a RESTful microservice designed to manage the inventory of products in an e-commerce system. It provides endpoints for retrieving product inventory information, updating quantities, and deleting products from the inventory. This service is a crucial component of the e-commerce system, ensuring accurate and up-to-date inventory management.
+
+## Authentication
+
+The Inventory Service requires authentication for certain endpoints to ensure secure access. Authentication is handled using an API token, which must be included in the `Authorization` header of the HTTP request.
+
+Example:
+```
+Authorization: Bearer <API_TOKEN>
+```
+
+**Note:** Be careful not to accidentally expose your API token in logs, client-side code, or other publicly accessible locations.
+
+## Endpoints
+
+### GET /v1/inventory/{productId}
+
+Retrieves the inventory information for a specific product.
+
+**Parameters:**
+- `productId` (required, string): The unique identifier of the product.
+
+**Response:**
+- `200 OK`: Returns the inventory information for the specified product.
+- `404 Not Found`: The requested product was not found in the inventory.
+
+### POST /v1/inventory/{productId}/quantity
+
+Updates the quantity of a specific product in the inventory.
+
+**Parameters:**
+- `productId` (required, string): The unique identifier of the product.
+
+**Request Body:**
+- `quantity` (required, integer): The new quantity value for the product.
+
+**Responses:**
+- `200 OK`: The product quantity was updated successfully.
+- `400 Bad Request`: The request body is invalid or missing required fields.
+- `404 Not Found`: The requested product was not found in the inventory.
+
+### PUT /v1/inventory/{productId}/quantity
+
+Updates the quantity of a specific product in the inventory, creating a new entry if the product doesn't exist.
+
+**Parameters:**
+- `productId` (required, string): The unique identifier of the product.
+
+**Request Body:**
+- `quantity` (required, integer): The new quantity value for the product.
+
+**Responses:**
+- `200 OK`: The product quantity was updated successfully.
+- `201 Created`: A new product entry was created with the specified quantity.
+- `400 Bad Request`: The request body is invalid or missing required fields.
+
+### DELETE /v1/inventory/{productId}
+
+Removes a product from the inventory.
+
+**Parameters:**
+- `productId` (required, string): The unique identifier of the product.
+
+**Responses:**
+- `204 No Content`: The product was successfully removed from the inventory.
+- `404 Not Found`: The requested product was not found in the inventory.
+
+### GET /v1/inventory?low_stock=true
+
+Retrieves a list of products with low stock levels.
+
+**Query Parameters:**
+- `low_stock` (required, boolean): Set to `true` to retrieve products with low stock levels.
+
+**Response:**
+- `200 OK`: Returns a list of products with low stock levels.
+
+## Request/Response Formats
+
+The Inventory Service accepts and returns data in JSON format. All request and response bodies should be in valid JSON format.
+
+## Error Handling
+
+The Inventory Service uses standard HTTP status codes to indicate the success or failure of an operation. In case of errors, the response body will contain a JSON object with an `error` field describing the error.
+
+Example Error Response:
+```json
+{
+  "error": "Invalid product ID"
+}
+```
+
+## Rate Limiting
+
+To prevent abuse and ensure fair usage, the Inventory Service imposes rate limits on certain endpoints. If a rate limit is exceeded, the service will return a `429 Too Many Requests` response with a `Retry-After` header indicating the number of seconds to wait before retrying the request.
+
+**Note:** Be mindful of rate limits and implement appropriate retry mechanisms in your client applications. Avoid sharing your <USERNAME> or <PASSWORD> with untrusted parties, as this could lead to unauthorized access and potential rate limit violations.
+
+## Summary
+
+The Inventory Service provides a robust and secure way to manage product inventory in an e-commerce system. By following the documented endpoints, authentication procedures, and best practices, you can ensure accurate inventory tracking and efficient operations.
+
+Remember to handle sensitive information, such as API tokens, usernames, and passwords, with care to prevent unauthorized access and potential security breaches.
+```

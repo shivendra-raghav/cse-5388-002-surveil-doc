@@ -1,0 +1,63 @@
+```
+Student Medical Record
+
+Name: [Student Name]
+Date of Birth: [DOB]
+Age: [Age]
+Sex: [Sex]
+Address: [Address]
+
+Medical History:
+[Brief description of any relevant medical conditions, surgeries, hospitalizations, etc.]
+
+Allergies:
+[List of any known allergies]
+
+Medications:
+[List of current medications, dosages, and instructions]
+
+Immunization Record:
+[List of up-to-date immunizations received]
+
+Family History:
+[Brief overview of any significant family medical history]
+
+Physical Examination:
+Height: [Height]
+Weight: [Weight]
+Blood Pressure: [BP]
+Temperature: [Temperature]
+Pulse: [Pulse]
+Respirations: [Respirations]
+[Additional physical examination findings]
+
+Laboratory Results:
+[List of recent lab tests with results]
+
+Treatment Plan:
+[Outline of any current treatment plans, follow-up appointments, etc.]
+
+Emergency Contacts:
+Primary Contact:
+Name: [Primary Contact Name]
+Relationship: [Relationship]
+Phone: [Phone Number]
+Address: [Address]
+<SSN>: [Primary Contact SSN]
+
+Secondary Contact:
+Name: [Secondary Contact Name]
+Relationship: [Relationship]
+Phone: [Phone Number]
+Address: [Address]
+<SSN>: [Secondary Contact SSN]
+
+Insurance Information:
+Provider: [Insurance Provider]
+Policy Number: [Policy Number]
+Group Number: [Group Number]
+<SSN>: [Student's SSN]
+
+Additional Notes:
+[Any additional relevant information or notes]
+```

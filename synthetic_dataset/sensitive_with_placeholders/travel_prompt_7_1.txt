@@ -1,0 +1,67 @@
+```
+CAR RENTAL AGREEMENT
+
+This Car Rental Agreement (the "Agreement") is made and entered into on [DATE] by and between [RENTAL COMPANY NAME], a [STATE] corporation ("Rental Company"), and [RENTER NAME], an individual ("Renter").
+
+Renter Details:
+Name: [RENTER NAME]
+Address: [RENTER ADDRESS]
+Phone Number: [RENTER PHONE NUMBER]
+Email Address: [RENTER EMAIL ADDRESS]
+Driver's License Number: [RENTER DRIVER'S LICENSE NUMBER]
+Expiration Date: [RENTER DRIVER'S LICENSE EXPIRATION DATE]
+
+Vehicle Information:
+Make: [VEHICLE MAKE]
+Model: [VEHICLE MODEL]
+Year: [VEHICLE YEAR]
+VIN: [VEHICLE IDENTIFICATION NUMBER]
+License Plate: [VEHICLE LICENSE PLATE NUMBER]
+Odometer Reading at Time of Rental: [VEHICLE ODOMETER READING]
+
+Rental Period:
+Start Date: [RENTAL START DATE]
+Start Time: [RENTAL START TIME]
+End Date: [RENTAL END DATE]
+End Time: [RENTAL END TIME]
+
+Rates and Charges:
+Daily Rental Rate: [DAILY RENTAL RATE]
+Weekly Rental Rate: [WEEKLY RENTAL RATE]
+Monthly Rental Rate: [MONTHLY RENTAL RATE]
+Mileage Charge (if applicable): [MILEAGE CHARGE PER MILE]
+Additional Charges (if applicable): [ADDITIONAL CHARGES]
+Taxes: [APPLICABLE TAXES]
+Security Deposit: [SECURITY DEPOSIT AMOUNT]
+
+Rental Terms:
+1. Use of Vehicle: Renter shall use the Vehicle only for personal and lawful purposes and shall not use the Vehicle for any commercial or illegal purposes.
+
+2. Authorized Drivers: Only the Renter and authorized drivers listed on this Agreement are permitted to operate the Vehicle. Renter shall be responsible for all acts and omissions of any authorized driver.
+
+3. Maintenance and Condition of Vehicle: Renter shall maintain the Vehicle in good condition and shall return the Vehicle in the same condition as received, reasonable wear and tear excepted.
+
+4. Fuel: Renter shall return the Vehicle with the same level of fuel as when received.
+
+5. Accidents and Damages: Renter shall immediately report any accidents, damages, or mechanical issues to Rental Company. Renter shall be responsible for all damages to the Vehicle, regardless of fault.
+
+6. Traffic Violations and Fines: Renter shall be responsible for all traffic violations, parking tickets, and fines incurred during the rental period.
+
+7. Insurance: Rental Company provides liability insurance coverage for the Vehicle, but Renter is responsible for any deductibles or damages not covered by insurance.
+
+8. Payment: Renter shall pay all rental charges, fees, and applicable taxes in advance or upon return of the Vehicle. Rental Company reserves the right to charge Renter's credit card on file for any additional charges incurred during the rental period.
+
+9. Security Deposit: Renter shall provide a valid credit card number (<CREDIT_CARD_NUMBER>) as a security deposit for any damages or additional charges incurred during the rental period.
+
+10. Online Account Management: Renter can manage their rental online using their assigned <USERNAME> and <PASSWORD>.
+
+11. Termination: Rental Company reserves the right to terminate this Agreement at any time without notice if Renter violates any terms or conditions of this Agreement.
+
+12. Governing Law: This Agreement shall be governed by and construed in accordance with the laws of the [STATE/JURISDICTION].
+
+By signing below, Renter acknowledges and agrees to the terms and conditions of this Car Rental Agreement.
+
+Renter Signature: __________________________ Date: _______________
+
+Rental Company Representative: __________________________ Date: _______________
+```

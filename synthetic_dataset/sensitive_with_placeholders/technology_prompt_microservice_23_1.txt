@@ -1,0 +1,91 @@
+```
+Customers Service Documentation
+
+Introduction:
+The Customers Service is a microservice application that enables CRUD (Create, Read, Update, Delete) operations for managing customer data. This service allows you to create new customers, update existing customer information, retrieve customer details, list all customers, and delete customer records.
+
+Latest Update By:
+This documentation was last updated on [INSERT DATE] by [INSERT DEVELOPER NAME].
+
+Maintenance Team Details:
+The Customers Service is maintained by the following team:
+- Team Lead: [INSERT TEAM LEAD NAME]
+- Developers: [INSERT DEVELOPER NAMES]
+- Quality Assurance: [INSERT QA TEAM NAMES]
+
+REST Endpoints:
+
+1. Create a Customer:
+   Endpoint: POST /customers
+   Request Body: {
+     "name": "John Doe",
+     "email": "john.doe@example.com",
+     "phone": "1234567890"
+   }
+   
+   Responses:
+   - 201 Created: Successful customer creation
+   - 400 Bad Request: Invalid request body
+   - 500 Internal Server Error: An unexpected error occurred on the server
+
+2. Update a Customer:
+   Endpoint: PUT /customers/{customerId}
+   Request Body: {
+     "name": "John Doe",
+     "email": "updated.email@example.com",
+     "phone": "9876543210"
+   }
+   
+   Responses:
+   - 200 OK: Successful customer update
+   - 400 Bad Request: Invalid request body
+   - 404 Not Found: Customer not found
+   - 500 Internal Server Error: An unexpected error occurred on the server
+
+3. List a Customer:
+   Endpoint: GET /customers/{customerId}
+   
+   Responses:
+   - 200 OK: Successful customer retrieval
+   - 404 Not Found: Customer not found
+   - 500 Internal Server Error: An unexpected error occurred on the server
+
+4. List All Customers:
+   Endpoint: GET /customers
+   
+   Responses:
+   - 200 OK: Successful customer list retrieval
+   - 500 Internal Server Error: An unexpected error occurred on the server
+
+5. Delete a Customer:
+   Endpoint: DELETE /customers/{customerId}
+   
+   Responses:
+   - 204 No Content: Successful customer deletion
+   - 404 Not Found: Customer not found
+   - 500 Internal Server Error: An unexpected error occurred on the server
+
+Authentication:
+To authenticate with the Customers Service, you need to include an access token in the Authorization header of your requests. The access token should be obtained from the authentication service and included in the header like this:
+
+Authorization: Bearer <ACCESS_TOKEN>
+
+Rate Limit:
+The Customers Service has a rate limit of 100 requests per minute per client. If the rate limit is exceeded, the service will respond with a 429 Too Many Requests error. The Rate-Limit-Remaining and Rate-Limit-Reset headers will be included in the response to indicate the remaining requests in the current window and the time (in seconds) until the next rate limit window starts.
+
+Error Handling:
+The Customers Service uses standard HTTP response codes to indicate the success or failure of an API request. In case of errors, additional information will be provided in the response body. Here are some common error codes and their meanings:
+
+- 400 Bad Request: The request was malformed or invalid.
+- 401 Unauthorized: The request requires authentication, and the provided credentials are invalid or missing.
+- 403 Forbidden: The client does not have permission to access the requested resource.
+- 404 Not Found: The requested resource does not exist.
+- 500 Internal Server Error: An unexpected error occurred on the server.
+- 501 Not Implemented: The requested functionality is not implemented by the server.
+- 502 Bad Gateway: The server received an invalid response from an upstream server.
+- 503 Service Unavailable: The server is currently unavailable (e.g., due to maintenance or overload).
+- 504 Gateway Timeout: The server did not receive a timely response from an upstream server.
+
+Summary:
+The Customers Service provides a RESTful API for managing customer data. It supports creating, updating, retrieving, listing, and deleting customers. Proper authentication is required to access the service, and rate limiting is in place to prevent abuse. Error handling is implemented using standard HTTP response codes and additional information in the response body. The service is maintained by a dedicated team and follows industry best practices for security, reliability, and performance.
+```

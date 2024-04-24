@@ -1,0 +1,65 @@
+```
+Oracle Cloud Architecture: Container Services Documentation
+
+Introduction:
+This documentation provides an overview of Oracle Cloud's container services, including Oracle Container Engine for Kubernetes, Container Registry, and API Gateway. It covers the essential information required for administrators and developers to manage and utilize these services effectively.
+
+Latest Update By:
+[Placeholder for update details]
+
+Service Details:
+
+1. Oracle Container Engine for Kubernetes:
+Oracle Container Engine for Kubernetes (OKE) is a fully-managed, scalable, and highly available cluster solution. It allows you to deploy and manage containerized applications using the industry-leading Kubernetes container orchestration platform.
+
+Key Features:
+- Fully managed Kubernetes control plane
+- Automatic upgrades and patching
+- Integrated with other Oracle Cloud services
+- Secure networking with private clusters
+- Monitoring and logging capabilities
+
+To access the OKE service, log in to your Oracle Cloud account with your administrative credentials:
+Username: <USERNAME>
+Password: <PASSWORD>
+
+From the Oracle Cloud Console, navigate to the OKE service and follow the prompts to create and manage your Kubernetes clusters.
+
+2. Container Registry:
+Oracle Cloud's Container Registry is a highly available and scalable private registry for storing and distributing Docker images. It integrates seamlessly with OKE, allowing you to deploy containerized applications directly from your private registry.
+
+Key Features:
+- Private and secure image storage
+- Automated image vulnerability scanning
+- Integration with Oracle Cloud Infrastructure (OCI) resources
+- Fine-grained access control
+- Audit logs for compliance and governance
+
+To access the Container Registry, log in to your Oracle Cloud account with your administrative credentials:
+Username: <USERNAME>
+Password: <PASSWORD>
+
+From the Oracle Cloud Console, navigate to the Container Registry service and follow the prompts to create and manage your private repositories.
+
+3. API Gateway:
+Oracle Cloud's API Gateway is a fully managed service that provides a secure and scalable entry point for your APIs. It acts as a gatekeeper, ensuring that your APIs are properly authenticated, authorized, and monitored.
+
+Key Features:
+- API management and governance
+- Traffic management and load balancing
+- API security and access control
+- API analytics and monitoring
+- Integration with Oracle Cloud services
+
+To access the API Gateway service, log in to your Oracle Cloud account with your administrative credentials:
+Username: <USERNAME>
+Password: <PASSWORD>
+API Secret: <API_SECRET>
+
+From the Oracle Cloud Console, navigate to the API Gateway service and follow the prompts to create and manage your APIs, policies, and gateways.
+
+Summary:
+Oracle Cloud's container services offer a comprehensive solution for building, deploying, and managing containerized applications. With OKE, developers can leverage the power of Kubernetes for orchestrating and scaling their applications. The Container Registry provides a secure and private repository for storing and distributing Docker images, while the API Gateway ensures secure and controlled access to your APIs.
+
+By following the guidelines outlined in this documentation and utilizing the administrative credentials provided, you can effectively manage and utilize these services within your Oracle Cloud environment.
+```

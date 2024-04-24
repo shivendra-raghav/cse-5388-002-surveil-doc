@@ -1,0 +1,30 @@
+Here is a synthetic email generated based on the given prompt and including the requested placeholders <SSN> and <LICENSE_PLATE>:
+
+<email>Message-ID: <30426960.1075846019371.JavaMail.evans@thyme>
+Date: Wed, 16 May 2001 02:03:00 -0700 (PDT)
+From: kay.mann@enron.com
+To: sheila.tweed@enron.com
+Subject: Re: GE- Standard Domestic Contract- Need your help
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-From: Kay Mann
+X-To: Sheila Tweed
+X-cc: 
+X-bcc: 
+X-Folder: \Kay_Mann_June2001_3\Notes Folders\Sent
+X-Origin: MANN-K
+X-FileName: kmann.nsf
+
+Between 11-130; 215-400 today, almost anytime Friday, other than 2-3. I'll have my driver's license with me, the plate number is <LICENSE_PLATE>.
+
+From: Sheila Tweed@ECT on 05/16/2001 08:59 AM
+To: Kay Mann/Corp/Enron@ENRON
+cc:  
+
+Subject: Re: GE- Standard Domestic Contract- Need your help  
+
+When will you not have conflict? By the way, I need to update my records with your Social Security number, could you include that? <SSN>
+
+[...]
+</email>

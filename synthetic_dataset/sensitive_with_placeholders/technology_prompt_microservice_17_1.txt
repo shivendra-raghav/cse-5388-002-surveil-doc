@@ -1,0 +1,126 @@
+```
+GraphQL Pricing Service Documentation
+
+Introduction:
+The Pricing Service is a robust microservice that facilitates the Create, Read, Update, and Delete (CRUD) operations for pricing data. It is designed to handle pricing information for products, enabling seamless management of pricing structures across various applications and platforms.
+
+Latest Update By:
+This documentation was last updated on [MM/DD/YYYY] by [Name/Team].
+
+Maintenance Team Details:
+The Pricing Service is maintained by the Pricing and Billing team at [Company Name]. For any inquiries, issues, or support requests, please contact the team at [team_email@company.com].
+
+Authentication Details:
+To access the Pricing Service GraphQL API endpoints, you must include a valid API key in the request headers. The API key is used for authentication and authorization purposes.
+
+Example: 
+Authorization: Bearer <API_KEY>
+
+Note: Replace <API_KEY> with your actual API key. Failure to provide a valid API key will result in unauthorized access (401 Unauthorized).
+
+GraphQL Services:
+
+1. Create prices for a product
+   Endpoint: /graphql
+   Method: POST
+   Description: This service allows you to create prices for a specific product.
+   Mutation:
+   ```graphql
+   mutation createProductPrices($input: CreateProductPricesInput!) {
+     createProductPrices(input: $input) {
+       id
+       productId
+       price
+       currency
+       validFrom
+       validTo
+     }
+   }
+   ```
+   Responses:
+   - 200 OK: Prices created successfully.
+   - 400 Bad Request: Invalid input data provided.
+   - 401 Unauthorized: Invalid or missing API key.
+   - 404 Not Found: Product not found.
+
+2. Update prices of a product
+   Endpoint: /graphql
+   Method: POST
+   Description: This service allows you to update the prices of an existing product.
+   Mutation:
+   ```graphql
+   mutation updateProductPrices($input: UpdateProductPricesInput!) {
+     updateProductPrices(input: $input) {
+       id
+       productId
+       price
+       currency
+       validFrom
+       validTo
+     }
+   }
+   ```
+   Responses:
+   - 200 OK: Prices updated successfully.
+   - 400 Bad Request: Invalid input data provided.
+   - 401 Unauthorized: Invalid or missing API key.
+   - 404 Not Found: Product or prices not found.
+
+3. Create prices for a product for an account
+   Endpoint: /graphql
+   Method: POST
+   Description: This service allows you to create prices for a specific product and account combination.
+   Mutation:
+   ```graphql
+   mutation createAccountProductPrices($input: CreateAccountProductPricesInput!) {
+     createAccountProductPrices(input: $input) {
+       id
+       accountId
+       productId
+       price
+       currency
+       validFrom
+       validTo
+     }
+   }
+   ```
+   Responses:
+   - 200 OK: Prices created successfully.
+   - 400 Bad Request: Invalid input data provided.
+   - 401 Unauthorized: Invalid or missing API key.
+   - 404 Not Found: Account or product not found.
+
+4. Delete prices for a product based on id
+   Endpoint: /graphql
+   Method: POST
+   Description: This service allows you to delete prices for a product by providing the price ID.
+   Mutation:
+   ```graphql
+   mutation deleteProductPrices($input: DeleteProductPricesInput!) {
+     deleteProductPrices(input: $input) {
+       id
+     }
+   }
+   ```
+   Responses:
+   - 200 OK: Prices deleted successfully.
+   - 400 Bad Request: Invalid input data provided.
+   - 401 Unauthorized: Invalid or missing API key.
+   - 404 Not Found: Prices not found.
+
+Rate Limit:
+The Pricing Service imposes rate limiting to prevent abuse and ensure fair usage. The default rate limit is 100 requests per minute per client. If the rate limit is exceeded, the service will respond with a 429 Too Many Requests error. Please ensure that your application handles rate limiting gracefully and retries requests after an appropriate delay.
+
+Error Handling:
+The Pricing Service follows standard HTTP status codes for error handling. In addition to the responses mentioned for each service, the following error codes may be encountered:
+
+- 500 Internal Server Error: An unexpected error occurred on the server.
+- 501 Not Implemented: The requested functionality is not implemented.
+- 502 Bad Gateway: The server received an invalid response from an upstream server.
+- 503 Service Unavailable: The service is temporarily unavailable due to maintenance or overload.
+- 504 Gateway Timeout: The server did not receive a timely response from an upstream server.
+
+Summary:
+The Pricing Service GraphQL API provides a comprehensive set of operations for managing product pricing data. It supports creating, updating, and deleting prices for products and accounts, ensuring seamless integration with various applications and platforms. The service is secure, with authentication and rate limiting measures in place, and follows industry-standard error handling practices. By leveraging this service, developers can efficiently manage pricing structures, enabling accurate and consistent pricing across their applications.
+
+```

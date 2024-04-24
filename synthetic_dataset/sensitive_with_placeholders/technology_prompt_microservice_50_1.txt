@@ -1,0 +1,93 @@
+```markdown
+# Product Catalog Service Documentation
+
+## Introduction
+
+The Product Catalog Service is a crucial component of our e-commerce platform, responsible for managing the product catalog and providing essential health check endpoints for monitoring. This documentation will guide you through the service's authentication requirements, health check endpoints, health indicators, dependency checks, and monitoring integration.
+
+## Authentication
+
+To access the Product Catalog Service and its health check endpoints, you must authenticate using a valid username and password. Replace `<USERNAME>` and `<PASSWORD>` with your actual credentials:
+
+```
+https://<USERNAME>:<PASSWORD>@product-catalog.example.com
+```
+
+**Note:** For security reasons, it is strongly recommended to use environment variables or secure storage mechanisms to manage sensitive information like usernames and passwords instead of hard-coding them in your applications or configuration files.
+
+## Health Check Endpoints
+
+The Product Catalog Service exposes two health check endpoints that follow the industry-standard Health Check pattern:
+
+### 1. Liveness Probe
+
+The `/health/liveness` endpoint is used to check if the service is running. A successful response indicates that the service is alive and operational.
+
+**Endpoint:** `GET /health/liveness`
+
+**Response Codes:**
+- `200 OK`: The service is running.
+- `503 Service Unavailable`: The service is not running or experiencing issues.
+
+### 2. Readiness Probe
+
+The `/health/readiness` endpoint is used to check if the service is ready to serve requests. A successful response indicates that the service is ready to handle incoming requests.
+
+**Endpoint:** `GET /health/readiness`
+
+**Response Codes:**
+- `200 OK`: The service is ready to serve requests.
+- `503 Service Unavailable`: The service is not ready to serve requests.
+
+## Health Indicators
+
+The Product Catalog Service monitors the following health indicators to ensure its proper functioning:
+
+### 1. Database Connection
+
+This health indicator checks if the service can establish a connection to the database and if the database is responsive. If the database is unavailable or unresponsive, the service will report an unhealthy state.
+
+### 2. Message Broker Connection
+
+This health indicator checks if the service can establish a connection to the message broker (e.g., RabbitMQ, Apache Kafka) and if the message broker is responsive. If the message broker is unavailable or unresponsive, the service will report an unhealthy state.
+
+### 3. Disk Space
+
+This health indicator checks if there is sufficient disk space available on the server hosting the Product Catalog Service. If the available disk space falls below a predefined threshold, the service will report an unhealthy state.
+
+## Dependency Checks
+
+The Product Catalog Service relies on the following external dependencies, which are monitored for availability and responsiveness:
+
+1. **Database**: The service requires a database to store and retrieve product catalog information.
+2. **Message Broker**: The service uses a message broker for asynchronous communication with other components of the e-commerce platform.
+
+If any of these dependencies are unavailable or unresponsive, the service will report an unhealthy state.
+
+## Monitoring Integration
+
+The Product Catalog Service can be integrated with various monitoring tools and platforms to facilitate centralized monitoring and alerting. To integrate with a monitoring system, you may need to provide the service's URL and authentication credentials (e.g., `<USERNAME>` and `<PASSWORD>`).
+
+Example integration with Prometheus:
+
+1. Add the following configuration to your `prometheus.yml` file:
+
+```yaml
+scrape_configs:
+  - job_name: 'product-catalog'
+    metrics_path: '/actuator/prometheus'
+    basic_auth:
+      username: '<USERNAME>'
+      password: '<PASSWORD>'
+    static_configs:
+      - targets: ['product-catalog.example.com:8080']
+```
+
+2. Restart the Prometheus server to apply the configuration changes.
+
+Prometheus will now scrape the Product Catalog Service's metrics and make them available for visualization and alerting.
+
+## Summary
+
+The Product Catalog Service plays a vital role in our e-commerce platform by managing the product catalog and providing health check endpoints for monitoring. This documentation covered the service's authentication requirements, health check endpoints, health indicators, dependency checks, and monitoring integration. By following the guidelines outlined in this documentation, you can ensure the proper monitoring and maintenance of the Product Catalog Service, enabling timely detection and resolution of any issues that may arise.
+```

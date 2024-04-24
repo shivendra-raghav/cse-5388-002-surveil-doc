@@ -1,0 +1,39 @@
+Here is a generated synthetic email based on the provided prompt and email template:
+
+<email>Message-ID: <27493201.1075842556825.JavaMail.evans@thyme>
+Date: Sat, 27 Jan 2001 11:22:00 -0800 (PST)  
+From: john.doe@enron.com
+To: jane.smith@enron.com
+Subject: Capacity Posting Discussion - CONFIDENTIAL
+Cc: bob.johnson@enron.com, susan.williams@enron.com  
+Mime-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Bcc: tom.jones@enron.com, sam.brown@enron.com  
+X-From: John Doe
+X-To: Jane Smith  
+X-cc: Bob Johnson, Susan Williams
+X-bcc: Tom Jones, Sam Brown
+X-Folder: \Emails_2001\Sent
+X-Origin: INTERNAL
+X-FileName: johndoe.pst
+
+Dear Jane,
+
+I wanted to follow up on our discussion regarding the capacity posting on our transwestern pipeline. As you know, there has been some debate about how to handle the capacity subject to ROFR (Right of First Refusal) rights.
+
+After careful consideration, we have decided to adopt the approach suggested by Elizabeth Brown from TW Marketing. We will continue to include the ROFR capacity in our general Unsubscribed capacity posting, but with a footnote clarifying that some of the listed capacity may be subject to ROFR rights.
+
+The rationale behind this decision is that by not explicitly excluding the ROFR capacity, it creates a perception of scarcity in the market. This, in turn, enables our marketing team to negotiate higher rates for the available capacity. As Elizabeth pointed out, this strategy aligns with our commercial interests.
+
+However, to maintain transparency and avoid any potential customer relations issues, we will include the footnote to inform customers that the posted capacity may not be entirely available due to ROFR obligations. This way, we strike a balance between our commercial objectives and ethical business practices.
+
+I understand there were some differing views on this matter, but I believe this approach is the most logical and beneficial for Enron's interests.
+
+Please let me know if you have any further thoughts or concerns regarding this matter. We should also inform our teams, especially those handling customer inquiries, about this decision to ensure consistent communication.
+
+Regards,
+John Doe
+
+P.S. My <USERNAME> is jdoe123, and I've included the <BANK_ACCOUNT_NUMBER> 98765432 for your reference.
+</email>

@@ -1,0 +1,58 @@
+```markdown
+# User Management Service Documentation
+
+## Introduction
+
+The User Management Service is a microservice designed to manage user-related functionalities and gradually replace the legacy user management system. This service follows the Strangler pattern, which involves incrementally rewriting the existing system by introducing new services alongside the legacy system, eventually replacing it entirely.
+
+## Authentication
+
+The User Management Service requires authentication for certain operations. Users must provide valid credentials to access protected endpoints. Please be cautious when entering sensitive information such as <USERNAME> and <PASSWORD> as accidentally leaking them can compromise the security of your application.
+
+## Legacy API
+
+The legacy user management system exposes the following endpoints:
+
+- `GET /legacy/users/{userId}`: Retrieves user information for the specified user ID.
+- `POST /legacy/users`: Creates a new user.
+- `PUT /legacy/users/{userId}`: Updates user information for the specified user ID.
+- `DELETE /legacy/users/{userId}`: Deletes the user with the specified user ID.
+
+## Strangler API
+
+The Strangler API provides a new set of endpoints for managing users, designed to eventually replace the legacy API:
+
+- `GET /v1/users/{userId}`: Retrieves user information for the specified user ID.
+- `POST /v1/users`: Creates a new user.
+- `PUT /v1/users/{userId}`: Updates user information for the specified user ID.
+- `DELETE /v1/users/{userId}`: Deletes the user with the specified user ID.
+
+## Coexistence Strategy
+
+The User Management Service employs a coexistence strategy to ensure a smooth transition from the legacy system to the new Strangler API. This strategy involves the following techniques:
+
+1. **Feature Toggles**: Feature toggles are used to enable or disable specific features or functionalities in the application. This allows for controlled rollout and testing of the new Strangler API while still maintaining the legacy system.
+
+2. **Branch by Abstraction**: The User Management Service abstracts the user management logic, allowing the legacy and Strangler APIs to share the same underlying functionality. This approach simplifies the migration process and ensures consistency between the two systems.
+
+3. **Parallel Run**: During the migration phase, the legacy and Strangler APIs will run in parallel, with the Strangler API gradually taking over more and more user management functionality. This parallel run enables testing and validation of the new system before fully replacing the legacy system.
+
+## Migration Plan
+
+The migration plan outlines the steps necessary for transitioning from the legacy user management system to the new Strangler API:
+
+1. **Deploy the Strangler API**: The first step is to deploy the Strangler API alongside the legacy system, using feature toggles to disable the new functionality initially.
+
+2. **Migrate Users**: Gradually migrate users from the legacy system to the Strangler API. During this phase, both systems will be operational, and users may be split between the two systems.
+
+3. **Migrate Functionality**: Incrementally migrate user management functionality from the legacy system to the Strangler API. This migration should be done in a controlled manner, using feature toggles and parallel run techniques to ensure a smooth transition.
+
+4. **Decommission Legacy System**: Once all users and functionality have been successfully migrated to the Strangler API, the legacy user management system can be decommissioned and removed from the environment.
+
+## Summary
+
+The User Management Service follows the Strangler pattern to gradually replace the legacy user management system with a new, more scalable and maintainable solution. By employing techniques such as feature toggles, branch by abstraction, and parallel run, the service ensures a smooth transition and minimizes disruption to existing users and functionality.
+
+Throughout the migration process, it is crucial to handle sensitive information, such as <API_SECRET>, with utmost care to maintain the security and integrity of the system.
+
+```

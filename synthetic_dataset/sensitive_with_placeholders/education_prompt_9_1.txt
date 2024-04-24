@@ -1,0 +1,59 @@
+```
+Teacher Evaluation Form
+
+Teacher's Name: [Teacher's Name]
+Subject(s) Taught: [Subject(s)]
+Evaluation Period: [Start Date] to [End Date]
+
+<SSN>: [Teacher's SSN]
+
+Instructions: Please rate the teacher's performance in the following areas using the scale provided. Feel free to provide additional comments or examples to support your ratings.
+
+1. Subject Knowledge:
+   [ ] Excellent   [ ] Good   [ ] Satisfactory   [ ] Needs Improvement
+
+Comments:
+[Comments on the teacher's subject knowledge, depth of understanding, and ability to explain complex concepts.]
+
+2. Lesson Planning and Preparation:
+   [ ] Excellent   [ ] Good   [ ] Satisfactory   [ ] Needs Improvement
+
+Comments:
+[Comments on the teacher's lesson planning, organization, and preparedness for class.]
+
+3. Classroom Management:
+   [ ] Excellent   [ ] Good   [ ] Satisfactory   [ ] Needs Improvement
+
+Comments:
+[Comments on the teacher's ability to create a positive learning environment, maintain discipline, and manage classroom dynamics.]
+
+4. Instructional Strategies:
+   [ ] Excellent   [ ] Good   [ ] Satisfactory   [ ] Needs Improvement
+
+Comments:
+[Comments on the teacher's use of effective instructional strategies, ability to engage students, and differentiate instruction based on student needs.]
+
+5. Assessment and Evaluation:
+   [ ] Excellent   [ ] Good   [ ] Satisfactory   [ ] Needs Improvement
+
+Comments:
+[Comments on the teacher's use of fair and appropriate assessment methods, providing constructive feedback, and monitoring student progress.]
+
+6. Professional Responsibilities:
+   [ ] Excellent   [ ] Good   [ ] Satisfactory   [ ] Needs Improvement
+
+Comments:
+[Comments on the teacher's professionalism, collaboration with colleagues, communication with parents/guardians, and commitment to professional development.]
+
+7. Overall Performance:
+   [ ] Excellent   [ ] Good   [ ] Satisfactory   [ ] Needs Improvement
+
+Summary Comments:
+[Overall summary of the teacher's performance, strengths, areas for improvement, and recommendations for professional growth.]
+
+Evaluator's Name: [Evaluator's Name]
+Evaluator's Signature: [Signature]
+Date: [Evaluation Date]
+
+Please note that the inclusion of the teacher's <SSN> is for identification purposes only and will be kept confidential within the school's records.
+```

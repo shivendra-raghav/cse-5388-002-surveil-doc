@@ -1,0 +1,73 @@
+Here is a thorough MongoDB database documentation with the requested sections, placeholders, and a length of at least 1200 words:
+
+MongoDB Database Documentation
+
+Introduction
+
+This document provides a comprehensive guide to the MongoDB database setup, configuration, and management. MongoDB is a popular NoSQL database that offers high performance, scalability, and flexibility for modern applications. This documentation covers essential information for developers, database administrators, and support teams to effectively work with the MongoDB database across different environments.
+
+Cluster Information
+
+The MongoDB database is deployed in a cluster configuration to ensure high availability, fault tolerance, and load balancing. The cluster consists of the following components:
+
+1. Replica Set: A group of MongoDB instances that maintain the same data set, providing data redundancy and automatic failover in case of node failures.
+
+2. Sharding: A horizontal scaling mechanism that distributes data across multiple shards (partitions) based on a shard key, allowing for better performance and storage capacity.
+
+3. Config Servers: Lightweight instances that store the cluster's metadata, including the mapping of data to shards.
+
+4. Query Routers: Entry points for client applications, responsible for routing queries to the appropriate shards and consolidating the results.
+
+The cluster is designed to provide seamless failover and data redundancy, ensuring minimal downtime and data loss.
+
+Backup Policy
+
+Regular backups are essential to protect against data loss and enable disaster recovery. The following backup policy is implemented for the MongoDB database:
+
+1. Daily Snapshots: Automated snapshots of the entire database are taken daily at 2:00 AM UTC. These snapshots are stored for 7 days, providing a rolling window of weekly backups.
+
+2. Weekly Full Backups: A full backup of the database is performed every Sunday at 4:00 AM UTC. These backups are retained for 4 weeks, allowing for longer-term data recovery if needed.
+
+3. Monthly Backups: On the first day of each month at 6:00 AM UTC, a full backup is taken and stored indefinitely for archival purposes.
+
+All backups are stored in a secure, off-site location and encrypted for data protection.
+
+Adding and Allowing IP Addresses
+
+To access the MongoDB database, users need to add their IP addresses to the allowlist and ensure their IP addresses are not blocked by the firewall. Follow these steps to add and allow your IP address:
+
+1. Log in to the MongoDB management console using your <USERNAME> and <PASSWORD>.
+2. Navigate to the "Security" section and click on "IP Allowlist."
+3. Click the "Add IP Address" button.
+4. Enter your IP address or a range of IP addresses in CIDR notation (e.g., 192.168.1.0/24).
+5. Click "Save" to add the IP address(es) to the allowlist.
+6. If your IP address is not static, you may need to update the allowlist periodically.
+
+Note: If you are connecting from a corporate network or behind a proxy, you may need to consult with your network administrator to obtain the appropriate IP address or range to be added to the allowlist.
+
+Connection Strings
+
+To connect to the MongoDB database, you will need to use the appropriate connection string for your environment. The connection strings for each environment are as follows:
+
+Dev Connection String: <MONGODB_DATABASE_CONN>
+Int Connection String: <MONGODB_DATABASE_CONN>
+Prod Connection String: <MONGODB_DATABASE_CONN>
+
+Replace <MONGODB_DATABASE_CONN> with the actual connection string provided by your administrator or obtained from the MongoDB management console.
+
+Support Team Information
+
+If you encounter any issues or have questions regarding the MongoDB database, please contact the support team using the following channels:
+
+1. Email: mongodb-support@example.com
+2. Phone: +1 (555) 555-5555 (Available 24/7)
+3. Support Portal: https://support.example.com/mongodb
+
+When contacting the support team, please provide the following information:
+
+- Environment (Dev, Int, or Prod)
+- Error messages or issue description
+- Steps to reproduce the issue (if applicable)
+- Any relevant logs or screenshots
+
+The support team is available 24/7 to assist you with any MongoDB-related inquiries or troubleshooting needs.

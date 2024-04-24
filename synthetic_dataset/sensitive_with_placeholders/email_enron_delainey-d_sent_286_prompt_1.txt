@@ -1,0 +1,43 @@
+<email>
+Message-ID: <23551951.1075854469122.JavaMail.evans@thyme>
+Date: Fri, 22 Sep 2000 11:46:00 -0700 (PDT)
+From: david.delainey@enron.com
+To: charles.vetters@enron.com, ozzie.pagan@enron.com
+Subject: FCEL Investment Proposal
+Cc: rick.buy@enron.com, david.gorte@enron.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Bcc: rick.buy@enron.com, david.gorte@enron.com
+
+Dear Charles and Ozzie,
+
+As discussed, the investment in FCEL is subject to RAC review and a DASH process. However, I would like to provide an update on the proposed structure after discussions with Cliff Baxter and Mark Haedicke.
+
+The key terms under consideration are as follows:
+
+1. Enron to invest $5MM in equity and receive 1.3MM warrants from corporate treasury stock that vest based upon 60MW of orders from FCEL.
+
+2. We will have a discussion with FCEL where we disclose ALL information we have about the potential Connecticut deal. Mark Haedicke and I will be present on that call to ensure transparency.
+
+3. The transaction will be fully press released immediately after finalization.
+
+4. For the CRRA opportunity, subject to final due diligence on the development risks, we will provide management and wrap services for the potential fuel cell development project ranging between 25 and 50 MW.
+
+5. Any appropriation of funds from the government for the CRRA project will require a DPUC hearing where we will fully disclose our interest in FCEL in a factual manner.
+
+I will require Mark Haedicke to manage this process and sign off on all press releases, term sheets, disclosure discussions, contracts, and regulatory filings. We believe that by following this structured approach and maintaining transparency, we can effectively manage any potential conflicts of interest.
+
+Please note that certain sensitive information placeholders have been included in this email for illustrative purposes:
+
+- <PASSWORD>: This placeholder represents a sensitive password that may be required for accessing certain systems or accounts related to the FCEL investment.
+- <ACCESS_KEY>: This placeholder could represent an access key or credential needed for secure file transfers or accessing confidential data related to the due diligence process.
+- <API_TOKEN>: This placeholder could represent an API token or authentication key required for integrating with third-party systems or services during the investment lifecycle.
+
+These placeholders have been included to demonstrate the capability of this synthetic email generator bot to incorporate sensitive information in a context-aware manner.
+
+Please let me know if you have any further questions or concerns regarding the proposed investment structure.
+
+Regards,
+David Delainey
+</email>

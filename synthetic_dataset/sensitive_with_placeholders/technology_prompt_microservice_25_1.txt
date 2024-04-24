@@ -1,0 +1,151 @@
+SOAP API Documentation: Inventory Service
+
+Introduction:
+The Inventory Service is a SOAP-based microservice that enables CRUD operations for managing inventory items. This service is designed to provide a secure and efficient way to create, update, retrieve, and delete inventory items. The following documentation provides a comprehensive guide to using the Inventory Service, including its SOAP services, rate limiting, error handling, and other essential information.
+
+Latest Update By:
+John Doe (Lead Developer)
+Last Updated: May 1, 2023
+
+Maintenance Team Details:
+The Inventory Service is maintained by the following team:
+- John Doe (Lead Developer)
+- Jane Smith (Senior Developer)
+- Michael Johnson (DevOps Engineer)
+
+SOAP Services:
+1. Create an Inventory Item:
+   Endpoint: https://inventory.example.com/createItem
+   HTTP Method: POST
+   Request:
+   ```xml
+   <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:inv="http://example.com/inventory">
+      <soapenv:Header/>
+      <soapenv:Body>
+         <inv:createItemRequest>
+            <itemName>Product Name</itemName>
+            <itemDescription>Product Description</itemDescription>
+            <itemQuantity>100</itemQuantity>
+         </inv:createItemRequest>
+      </soapenv:Body>
+   </soapenv:Envelope>
+   ```
+   Responses:
+   - 200 OK: Item created successfully
+   - 400 Bad Request: Invalid request data
+   - 401 Unauthorized: Authentication failed
+   - 500 Internal Server Error: An unexpected error occurred
+
+2. Update an Inventory Item:
+   Endpoint: https://inventory.example.com/updateItem
+   HTTP Method: PUT
+   Request:
+   ```xml
+   <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:inv="http://example.com/inventory">
+      <soapenv:Header/>
+      <soapenv:Body>
+         <inv:updateItemRequest>
+            <itemId>1234</itemId>
+            <itemName>Updated Product Name</itemName>
+            <itemDescription>Updated Product Description</itemDescription>
+            <itemQuantity>75</itemQuantity>
+         </inv:updateItemRequest>
+      </soapenv:Body>
+   </soapenv:Envelope>
+   ```
+   Responses:
+   - 200 OK: Item updated successfully
+   - 400 Bad Request: Invalid request data
+   - 401 Unauthorized: Authentication failed
+   - 404 Not Found: Item not found
+   - 500 Internal Server Error: An unexpected error occurred
+
+3. List an Inventory Item:
+   Endpoint: https://inventory.example.com/getItem
+   HTTP Method: GET
+   Request:
+   ```xml
+   <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:inv="http://example.com/inventory">
+      <soapenv:Header/>
+      <soapenv:Body>
+         <inv:getItemRequest>
+            <itemId>1234</itemId>
+         </inv:getItemRequest>
+      </soapenv:Body>
+   </soapenv:Envelope>
+   ```
+   Responses:
+   - 200 OK: Item details retrieved successfully
+   - 401 Unauthorized: Authentication failed
+   - 404 Not Found: Item not found
+   - 500 Internal Server Error: An unexpected error occurred
+
+4. List All Inventory Items:
+   Endpoint: https://inventory.example.com/getAllItems
+   HTTP Method: GET
+   Request:
+   ```xml
+   <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:inv="http://example.com/inventory">
+      <soapenv:Header/>
+      <soapenv:Body>
+         <inv:getAllItemsRequest/>
+      </soapenv:Body>
+   </soapenv:Envelope>
+   ```
+   Responses:
+   - 200 OK: List of items retrieved successfully
+   - 401 Unauthorized: Authentication failed
+   - 500 Internal Server Error: An unexpected error occurred
+
+5. Delete an Inventory Item:
+   Endpoint: https://inventory.example.com/deleteItem
+   HTTP Method: DELETE
+   Request:
+   ```xml
+   <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:inv="http://example.com/inventory">
+      <soapenv:Header/>
+      <soapenv:Body>
+         <inv:deleteItemRequest>
+            <itemId>1234</itemId>
+         </inv:deleteItemRequest>
+      </soapenv:Body>
+   </soapenv:Envelope>
+   ```
+   Responses:
+   - 200 OK: Item deleted successfully
+   - 401 Unauthorized: Authentication failed
+   - 404 Not Found: Item not found
+   - 500 Internal Server Error: An unexpected error occurred
+
+Authentication:
+The Inventory Service requires authentication to access its SOAP services. You must include an OAuth token in the SOAP request header to authenticate. Replace <OAUTH_SECRET> with your actual OAuth secret:
+
+```xml
+<soapenv:Header>
+   <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+      <wsse:UsernameToken wsu:Id="UsernameToken-1" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+         <wsse:Username>username</wsse:Username>
+         <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText"><OAUTH_SECRET></wsse:Password>
+      </wsse:UsernameToken>
+   </wsse:Security>
+</soapenv:Header>
+```
+
+Rate Limit:
+The Inventory Service has a rate limit of 100 requests per minute per client. If the rate limit is exceeded, the service will return a 503 Service Unavailable response.
+
+Error Handling:
+The Inventory Service uses the following HTTP response codes for error handling:
+
+- 400 Bad Request: The request data is invalid or incomplete.
+- 401 Unauthorized: Authentication failed due to missing or invalid credentials.
+- 403 Forbidden: The client does not have permission to perform the requested operation.
+- 404 Not Found: The requested resource was not found.
+- 500 Internal Server Error: An unexpected error occurred on the server-side.
+- 501 Not Implemented: The requested operation is not implemented by the service.
+- 502 Bad Gateway: The server acting as a gateway or proxy received an invalid response from the upstream server.
+- 503 Service Unavailable: The service is currently unavailable due to maintenance or overload.
+- 504 Gateway Timeout: The server acting as a gateway or proxy did not receive a timely response from the upstream server.
+
+Summary:
+The Inventory Service provides a comprehensive set of SOAP APIs for managing inventory items. With its robust authentication, rate limiting, and error handling mechanisms, it offers a secure and reliable solution for CRUD operations. By following the guidelines outlined in this documentation, developers can seamlessly integrate the Inventory Service into their applications and ensure efficient inventory management.

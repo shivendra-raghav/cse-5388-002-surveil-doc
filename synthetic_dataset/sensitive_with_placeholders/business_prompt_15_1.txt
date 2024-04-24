@@ -1,0 +1,71 @@
+```markdown
+# Standard Operating Procedure (SOP) for [Process Name]
+
+## Introduction
+
+This Standard Operating Procedure (SOP) document describes the steps and guidelines for [Process Description]. It outlines the roles, responsibilities, and procedures involved in carrying out this process effectively and efficiently. The purpose of this SOP is to ensure consistency, quality, and compliance with industry standards and company policies.
+
+## Scope
+
+This SOP applies to all [Relevant Departments/Teams/Roles] involved in the [Process Name] process. It covers the entire lifecycle of the process, from initiation to completion, and any subsequent follow-up activities.
+
+## Responsibilities
+
+### [Role 1]
+- [Responsibility 1]
+- [Responsibility 2]
+- [Responsibility 3]
+
+### [Role 2]
+- [Responsibility 1]
+- [Responsibility 2]
+- [Responsibility 3]
+
+### [Role 3]
+- [Responsibility 1]
+- [Responsibility 2]
+- [Responsibility 3]
+
+## Procedures
+
+### Step 1: [Step Description]
+1.1. [Substep 1]
+1.2. [Substep 2]
+1.3. [Substep 3]
+
+### Step 2: [Step Description]
+2.1. [Substep 1]
+2.2. [Substep 2]
+2.3. [Substep 3]
+
+### Step 3: [Step Description]
+3.1. [Substep 1]
+3.2. [Substep 2]
+3.3. [Substep 3]
+
+### Step 4: [Step Description]
+4.1. [Substep 1]
+4.2. [Substep 2]
+4.3. [Substep 3]
+
+### Step 5: [Step Description]
+5.1. [Substep 1]
+5.2. To automate certain tasks, use the following API token: <API_TOKEN>
+5.3. [Substep 3]
+
+### Step 6: [Step Description]
+6.1. [Substep 1]
+6.2. [Substep 2]
+6.3. If issues arise, escalate to the system administrator with username: <USERNAME>
+
+## Quality Control
+
+- [Quality Control Measure 1]
+- [Quality Control Measure 2]
+- [Quality Control Measure 3]
+
+## Conclusion
+
+Adherence to this SOP is crucial for ensuring the successful execution of the [Process Name] process. It is the responsibility of all involved parties to understand and follow the procedures outlined in this document. Any deviations or updates to the SOP should be documented and communicated to the relevant stakeholders. Regular reviews and updates to this SOP should be conducted to ensure its relevance and effectiveness in achieving the desired outcomes.
+
+```

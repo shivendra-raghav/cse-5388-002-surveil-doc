@@ -1,0 +1,101 @@
+```markdown
+# Argo CD Documentation
+
+## Introduction
+
+Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes. It follows the GitOps pattern of using Git repositories as the source of truth for defining the desired application state. Argo CD automates the deployment of the desired application states in the specified target environments.
+
+Argo CD is lightweight and can be installed on a Kubernetes cluster in a matter of minutes. It is designed to be operated by developers and DevOps engineers, providing a simple and robust way to manage applications across multiple clusters and environments.
+
+## Argo CD Application Definition
+
+In Argo CD, an Application is a group of Kubernetes resources that are defined in a Git repository. The Application definition is a YAML file that specifies the desired state of the resources, including their source (Git repository, branch, path), destination (Kubernetes cluster and namespace), and any additional configuration parameters.
+
+Here's an example of an Application definition:
+
+```yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: my-app
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/my-org/my-app.git
+    targetRevision: main
+    path: k8s
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: my-namespace
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+```
+
+In this example, the Application `my-app` is defined to sync the resources from the `k8s` directory of the `https://github.com/my-org/my-app.git` repository with the `my-namespace` namespace in the Kubernetes cluster specified by `https://kubernetes.default.svc`.
+
+## GitOps Workflow
+
+Argo CD follows a GitOps workflow, where the desired state of the application is defined in a Git repository, and Argo CD continuously monitors the repository for changes. When a change is detected, Argo CD automatically synchronizes the application's resources in the target Kubernetes cluster to match the desired state.
+
+Here's a typical GitOps workflow with Argo CD:
+
+1. Developers make changes to the application's YAML manifests or Helm charts in the Git repository.
+2. Developers commit and push their changes to the Git repository.
+3. Argo CD detects the changes in the Git repository.
+4. Argo CD compares the desired state (Git repository) with the current state (Kubernetes cluster).
+5. If there is a difference, Argo CD performs a synchronization to apply the desired state to the Kubernetes cluster.
+
+This workflow ensures that the application's state in the Kubernetes cluster always matches the desired state defined in the Git repository, providing a consistent and repeatable deployment process.
+
+## Rollback Strategies
+
+Argo CD provides several rollback strategies to help you manage and revert application deployments if needed.
+
+### Manual Rollback
+
+With the manual rollback strategy, you can revert an application to a previous state by navigating to the Argo CD web interface, selecting the application, and clicking the "Rollback" button. This will open a dialog where you can select the desired revision to rollback to.
+
+### Automated Rollback
+
+Argo CD supports automated rollbacks based on resource health status. You can configure Argo CD to automatically rollback an application deployment if a specified number of failed deployments or pods are detected within a defined time window.
+
+To enable automated rollbacks, you need to configure the `retry` and `revisionHistoryLimit` fields in the Application's `syncPolicy` section. Here's an example:
+
+```yaml
+syncPolicy:
+  automated:
+    prune: true
+    selfHeal: true
+  retry:
+    limit: 5
+    backoff:
+      duration: 5s
+      factor: 2
+      maxDuration: 3m
+  revisionHistoryLimit: 10
+```
+
+In this example, Argo CD will automatically retry a failed deployment up to 5 times with an exponential backoff. If the deployment fails after 5 attempts, Argo CD will automatically rollback to the previous successful revision. The `revisionHistoryLimit` field specifies how many previous revisions to keep in the Git repository.
+
+### Manual Sync
+
+In some cases, you may want to manually trigger a sync operation to deploy or rollback an application. You can do this from the Argo CD web interface by selecting the application and clicking the "Sync" button. This will open a dialog where you can select the revision to sync and any additional sync options.
+
+To access the Argo CD web interface, you'll need to provide your login credentials:
+
+- Username: <USERNAME>
+- Password: <PASSWORD>
+
+If you're interacting with the Argo CD API directly, you'll need to provide a bearer token:
+
+- Bearer Token: <BEARER_TOKEN>
+
+## Conclusion
+
+Argo CD is a powerful and flexible GitOps continuous delivery tool for Kubernetes. By following the GitOps principles and leveraging Argo CD's features, you can achieve a consistent, repeatable, and automated deployment process for your applications across multiple clusters and environments.
+
+Remember to keep your login credentials and bearer tokens secure, and never share them with unauthorized parties.
+```

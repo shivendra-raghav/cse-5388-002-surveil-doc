@@ -1,0 +1,76 @@
+```
+Catalog Service Documentation
+
+Introduction
+The Catalog Service is a microservice designed to manage the product catalog and expose the catalog data through gRPC and RESTful APIs. This service allows clients to retrieve product information, search for products based on various criteria, and update product details. The service follows the gRPC Gateway pattern, which enables exposing gRPC services as RESTful APIs.
+
+Authentication
+The Catalog Service requires authentication for certain operations. Clients must include an access token in the request headers when making requests to protected endpoints. The access token can be obtained by authenticating with an authentication service (not covered in this documentation).
+
+Sensitive Information Placeholder: <ACCESS_KEY>
+Example usage: Authorization: Bearer <ACCESS_KEY>
+
+gRPC Services
+The Catalog Service exposes the following gRPC services:
+
+1. GetProduct
+   - Description: Retrieves a product by its ID.
+   - Request: GetProductRequest (productId)
+   - Response: Product
+
+2. SearchProducts
+   - Description: Searches for products based on a query string.
+   - Request: SearchProductsRequest (query)
+   - Response: SearchProductsResponse (products)
+
+3. UpdateProduct
+   - Description: Updates the details of a product.
+   - Request: UpdateProductRequest (productId, product)
+   - Response: Product
+
+RESTful API Endpoints
+The Catalog Service exposes the following RESTful API endpoints:
+
+1. GET /v1/products/{productId}
+   - Description: Retrieves a product by its ID.
+   - Path Parameter: productId (string)
+
+2. GET /v1/products?query={query}
+   - Description: Searches for products based on a query string.
+   - Query Parameter: query (string)
+
+3. POST /v1/products/{productId}
+   - Description: Updates the details of a product.
+   - Path Parameter: productId (string)
+   - Request Body: Product
+
+Request Mapping
+The gRPC Gateway maps the incoming RESTful API requests to the corresponding gRPC service methods. The mapping is as follows:
+
+1. GET /v1/products/{productId}
+   - Mapped to: GetProduct
+
+2. GET /v1/products?query={query}
+   - Mapped to: SearchProducts
+
+3. POST /v1/products/{productId}
+   - Mapped to: UpdateProduct
+
+Response Mapping
+The gRPC Gateway maps the responses from the gRPC service methods to the appropriate RESTful API response format (e.g., JSON). The mapping is as follows:
+
+1. GetProduct
+   - Response: Product (mapped to JSON)
+
+2. SearchProducts
+   - Response: SearchProductsResponse (products mapped to JSON array)
+
+3. UpdateProduct
+   - Response: Product (mapped to JSON)
+
+Sensitive Information Placeholder: <DATABASE_CONN>
+Example usage: database_connection_string = <DATABASE_CONN>
+
+Summary
+The Catalog Service provides a RESTful API for managing product catalogs, leveraging the gRPC Gateway pattern. It exposes endpoints for retrieving product details, searching for products, and updating product information. The service follows industry-standard authentication practices and handles sensitive information securely. Clients can interact with the service using standard HTTP requests, while the service internally communicates with the gRPC services.
+```

@@ -1,0 +1,71 @@
+```markdown
+# Azure SQL Database Documentation
+
+## Introduction
+
+This document provides comprehensive information about the Azure SQL Database instances used within our organization. It covers access details, backup procedures, database specifics, and support team contact information. The documentation is divided into four distinct instances: Dev, Int, QA, and Prod.
+
+## Azure SQL Access Details
+
+### Dev Instance
+Dev Connection String: <AZURE_SQL_DATABASE_CONN>
+
+The Dev instance is primarily used for development and testing purposes. It serves as a sandbox environment for developers to experiment with new features, test code changes, and validate functionality before promoting changes to higher environments.
+
+### Int Instance
+Int Connection String: <AZURE_SQL_DATABASE_CONN>
+
+The Int (Integration) instance is utilized for integration testing and staging purposes. It serves as an intermediary environment between Dev and QA, allowing for comprehensive testing of integrated systems and ensuring compatibility before deploying to the QA environment.
+
+### QA Instance
+QA Connection String: <AZURE_SQL_DATABASE_CONN>
+
+The QA (Quality Assurance) instance is dedicated to quality assurance testing and user acceptance testing (UAT). It mirrors the production environment as closely as possible, allowing for thorough testing of the application's functionality, performance, and user experience before deploying to the production environment.
+
+### Prod Instance
+Prod Connection String: <AZURE_SQL_DATABASE_CONN>
+
+The Prod (Production) instance is the live environment serving our customers and end-users. It is a mission-critical instance that requires strict access controls, rigorous monitoring, and robust security measures to ensure data integrity, availability, and confidentiality.
+
+## Backup Details
+
+Azure SQL Database provides built-in backup capabilities to protect against data loss and enable recovery in case of an outage or disaster. Backups are automatically created and maintained by the Azure SQL service, ensuring that your data is protected and can be restored when needed.
+
+### Automated Backups
+Azure SQL Database automatically creates full, differential, and transaction log backups at regular intervals. These backups are stored in geo-replicated blob storage and are available for restore operations within the specified retention period.
+
+- **Full Backups**: Full backups are created weekly and retained for 35 days.
+- **Differential Backups**: Differential backups are created every 12 hours and retained for 35 days.
+- **Transaction Log Backups**: Transaction log backups are created every 5-10 minutes and retained for 35 days.
+
+### Point-in-Time Restore
+Azure SQL Database allows you to restore a database to a specific point in time within the retention period. This feature is useful for recovering from accidental data modifications, logical errors, or other scenarios where you need to revert to a previous state of the database.
+
+## Database Details
+
+### Database Naming Convention
+Our Azure SQL Databases follow a consistent naming convention to ensure organization and easy identification. The naming convention is as follows:
+
+`<Application_Name>_<Environment>_<Database_Type>`
+
+For example: `MyApp_Dev_Main`, `MyApp_QA_Reporting`, `MyApp_Prod_Staging`.
+
+### Database Schemas
+Each Azure SQL Database instance consists of several schemas to logically organize and manage database objects. The commonly used schemas and their purposes are:
+
+- `dbo`: The default schema for storing application-related tables, views, stored procedures, and functions.
+- `audit`: This schema is dedicated to storing audit logs and tracking changes made to the database.
+- `reporting`: This schema houses views and stored procedures specifically designed for reporting purposes.
+
+## Support Team Information
+
+In case of any issues, queries, or support requirements related to the Azure SQL Database instances, please reach out to the following support team:
+
+- **Support Team Name**: Azure SQL Database Support
+- **Email**: azure-sql-support@example.com
+- **Phone**: +1 (555) 123-4567
+- **Escalation Procedure**: In case of critical issues or emergencies, please follow the escalation procedure outlined in the company's internal support documentation.
+
+The support team is available 24/7 to assist with any Azure SQL Database-related concerns or incidents.
+
+```

@@ -1,0 +1,94 @@
+```
+Scaleway Object Storage Documentation
+
+Introduction:
+Scaleway Object Storage is a highly scalable, durable, and secure cloud storage service provided by Scaleway. It offers a simple and cost-effective way to store and retrieve any amount of data from anywhere on the web. This documentation aims to guide you through the process of accessing and using Scaleway Object Storage, including details on geo-replication and data transfer.
+
+Scaleway Object Storage Access Details:
+To access and manage your Scaleway Object Storage, you will need to log in to the Scaleway Control Panel using your credentials. The Control Panel provides a user-friendly interface for creating and managing storage buckets, configuring access policies, and monitoring usage statistics.
+
+1. Open your web browser and navigate to the Scaleway Control Panel: https://console.scaleway.com/
+2. Enter your <USERNAME> and <PASSWORD> in the respective fields and click "Log In".
+
+Note: It is crucial to keep your login credentials secure and never share them with anyone. If you suspect your credentials have been compromised, change your password immediately.
+
+Once logged in, you can navigate to the Object Storage section to create and manage your storage buckets. Each bucket is a container for storing your data objects (files) and has a globally unique name.
+
+If you plan to interact with Scaleway Object Storage programmatically using the API, you will need to generate an <API_SECRET>. This secret key is used for authentication and should be treated with utmost care. Never share or expose your <API_SECRET> in your code or any public repositories.
+
+To generate an <API_SECRET>:
+
+1. Log in to the Scaleway Control Panel.
+2. Navigate to the "Credentials" section.
+3. Click "Create a New Secret Key".
+4. Provide a descriptive name for the secret key and click "Create".
+5. Copy the generated <API_SECRET> and store it securely.
+
+You can now use the <API_SECRET> in your application code to authenticate API requests to Scaleway Object Storage.
+
+Geo-replication:
+Scaleway Object Storage supports geo-replication, which enables automatic replication of your data across multiple geographically distributed data centers. This feature ensures high availability and data durability, as well as low-latency access to your data from different regions.
+
+To enable geo-replication for a storage bucket:
+
+1. Log in to the Scaleway Control Panel.
+2. Navigate to the Object Storage section.
+3. Select the desired bucket.
+4. Click the "Geo-replication" tab.
+5. Choose the desired replication region(s).
+6. Click "Save" to apply the changes.
+
+Data Transfer:
+Scaleway Object Storage allows you to transfer data to and from your storage buckets using various methods, including the web-based interface, command-line tools, and programmatic access via APIs.
+
+Web Interface:
+The Scaleway Control Panel provides a user-friendly web interface for uploading and downloading files to and from your storage buckets. You can drag and drop files or navigate to the desired location on your local file system.
+
+Command-line Tools:
+Scaleway offers a command-line tool called "scw" that allows you to interact with Scaleway services, including Object Storage, from the terminal. You can use the "scw" tool to upload, download, and manage files in your storage buckets.
+
+API Access:
+Scaleway provides a RESTful API that enables programmatic access to Object Storage. You can leverage the API to build custom applications or integrate Scaleway Object Storage with your existing systems.
+
+To access the API, you will need to authenticate your requests using your <API_SECRET>. Here's an example of how to upload a file to a storage bucket using the API:
+
+```
+import requests
+
+# Replace with your actual API_SECRET
+API_SECRET = "<API_SECRET>"
+
+# Replace with your bucket name and object key
+BUCKET_NAME = "my-bucket"
+OBJECT_KEY = "my-object.txt"
+
+# Replace with the file path on your local system
+FILE_PATH = "/path/to/my-object.txt"
+
+# Read the file contents
+with open(FILE_PATH, "rb") as file:
+    file_data = file.read()
+
+# Set the request headers
+headers = {
+    "X-Auth-Token": API_SECRET,
+    "Content-Type": "application/octet-stream"
+}
+
+# Send the PUT request to upload the file
+url = f"https://s3.nl-ams.scw.cloud/{BUCKET_NAME}/{OBJECT_KEY}"
+response = requests.put(url, data=file_data, headers=headers)
+
+# Check the response status code
+if response.status_code == 200:
+    print("File uploaded successfully")
+else:
+    print(f"Error uploading file: {response.text}")
+```
+
+Remember to replace <API_SECRET>, BUCKET_NAME, OBJECT_KEY, and FILE_PATH with your actual values.
+
+For more detailed information and examples, refer to the Scaleway API documentation: https://developers.scaleway.com/en/products/object-storage/api/
+
+This documentation covers the essential aspects of accessing and using Scaleway Object Storage, including the process of logging in, handling API secrets, enabling geo-replication, and transferring data. Always follow best practices for securely managing your credentials and sensitive information.
+```

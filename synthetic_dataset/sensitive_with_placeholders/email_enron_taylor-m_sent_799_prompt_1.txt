@@ -1,0 +1,46 @@
+Here is a synthetic email with the given placeholders inserted in contextually appropriate places:
+
+<email>Message-ID: <20950274.1075860067027.JavaMail.evans@thyme>
+Date: Mon, 31 Jan 2000 09:17:00 -0800 (PST)
+From: mark.taylor@enron.com
+To: dale.neuner@enron.com
+Subject: Re: US Jet Kero Swap - Security Review
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-From: Mark E Taylor
+X-To: Dale Neuner
+X-cc: 
+X-bcc: 
+X-Folder: \Mark_Taylor _Dec_2000\Notes Folders\Sent
+X-Origin: Taylor-M
+X-FileName: mtaylor.nsf
+
+Dale,
+
+My only concern regarding the US Jet Kero Swap product is that the Floating Price is the Index for the Determination Period (which is a month) but the Index is a daily index. Should we be taking the average for the month instead? 
+
+Also, we need to ensure proper security measures are in place. The <ACCESS_KEY> and <OAUTH_SECRET> for authenticating our pricing data feeds must be kept confidential. Perhaps we could explore using a hardware security module with a unique <LICENSE_PLATE> identifier for enhanced protection.
+
+Otherwise, the product details look good to me. Let me know if you need any other feedback before releasing it.
+
+Regards,
+Mark
+
+
+
+Dale Neuner on 01/31/2000 05:10:41 PM
+To: Mark E Taylor/HOU/ECT@ECT
+cc: Bjorn Hagelmann/HOU/ECT@ECT, Patrick Markey/HOU/ECT@ECT 
+Subject: US Jet Kero Swap -
+
+
+Bjorn - as requested.
+
+Mark - we are finished building the Jet Kero product and have all approvals and uploads. Please offer final review so that I can release this product:
+
+...
+
+(Product details from original email)
+
+</email>

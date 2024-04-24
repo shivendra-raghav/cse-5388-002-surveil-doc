@@ -1,0 +1,27 @@
+Here is a synthetic email responding to the given prompt with the <OAUTH_ID> and <API_TOKEN> placeholders included in context-appropriate places:
+
+Message-ID: <19263517.2875962413579.JavaMail.evans@thyme>
+Date: Fri, 9 Mar 2001 09:12:00 -0800 (PST)  
+From: eric.bass@enron.com
+To: lwbthemarine@bigplanet.com, daphneco64@bigplanet.com
+Subject: Re: Dinner Reservation Confirmed
+Mime-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+X-From: Eric Bass  
+X-To: Larry W. Bass, Kathy Bass
+X-cc:
+X-bcc:
+X-Folder: \Eric_Bass_Jun2001\Notes Folders\Sent
+X-Origin: Bass-E
+X-FileName: ebass.nsf
+
+Dad, Kathy,
+
+Thanks for confirming the reservation at Anthony's for dinner tonight at 7pm. I'm looking forward to it. 
+
+By the way, I was updating some system credentials at work earlier this week. As a security precaution, please don't share these with anyone, but my new <OAUTH_ID> is 1A2B3C and <API_TOKEN> is XYZ987. I've stored them in our company's secure vault.
+
+See you both soon!
+
+Eric

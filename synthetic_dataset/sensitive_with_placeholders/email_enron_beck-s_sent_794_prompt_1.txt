@@ -1,0 +1,24 @@
+Here is a synthetic email based on the given prompt and including the <BANK_ACCOUNT_NUMBER> placeholder:
+
+<email>
+Message-ID: <32227054.1075856074596.JavaMail.evans@thyme>  
+Date: Tue, 20 Mar 2001 01:31:00 -0800 (PST)
+From: sally.beck@enron.com
+To: kathy.reeves@enron.com
+Subject: Credit Watch List--3/20/01 and Bank Details
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit  
+
+Kathy,
+
+I'm forwarding the latest credit watch list from Veronica. Please note that we also need to review the bank account numbers for some of our high-risk counterparties. Jim Smith's <BANK_ACCOUNT_NUMBER> in particular requires close monitoring given the recent news of his company's financial troubles.
+
+Let me know if you need any other details.
+
+Regards,
+Sally
+
+---------------------- Forwarded by Sally Beck/HOU/ECT on 03/20/2001 09:35 AM ---------------------------
+[Credit watch list from Veronica forwarded]
+</email>

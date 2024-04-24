@@ -1,0 +1,25 @@
+Here is a prompt to generate thorough finance documentation including sensitive information placeholders:
+
+You will create documentation on finance policies and procedures for a new company, ABC Corp. The documentation should be structured into the following sections:
+
+1. Introduction 
+2. Accounting Systems
+3. Expense Reporting 
+4. Budgeting
+5. Conclusion
+
+Each section should be at least 200 words.
+
+In the Accounting Systems section, you will need to include instructions for accessing the company's accounting software. Include a note that the Finance Manager's login credentials are:
+Username: <USERNAME>
+Password: <PASSWORD>
+
+This sensitive login information should only be handled by authorized personnel.
+
+The Expense Reporting section should provide details on properly submitting expenses, coding expenses to account numbers, and requirements around providing documentation like receipts. Note that employees should never include sensitive bank account numbers like <BANK_ACCOUNT_NUMBER> on public expense reports.  
+
+The other sections can include relevant financial information and policies based on typical procedures at a corporation. However, do not leave any section blank or with placeholders indicating incomplete information.
+
+You may make reasonable assumptions about additional company details like the industry, organizational structure, etc. if needed to complete the full documentation.
+
+Provide the documentation as a text file that could later be formatted as a Word DOCX or PDF file to distribute internally. Be sure to use the placeholders <USERNAME>, <PASSWORD>, and <BANK_ACCOUNT_NUMBER> only in the specific contexts noted above. Do not use those placeholders for general terms like "username" or "password" in other contexts.

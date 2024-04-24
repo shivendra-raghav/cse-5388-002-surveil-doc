@@ -1,0 +1,58 @@
+```
+SkyLine Travel Rewards Program Guide
+
+Program Overview:
+The SkyLine Travel Rewards program is designed to reward frequent flyers with a range of exclusive benefits and privileges. Members earn points for every eligible flight or partner transaction, which can be redeemed for free flights, hotel stays, car rentals, and more. The program features multiple membership tiers, each offering enhanced benefits and privileges based on the member's annual activity.
+
+Earning Points:
+Members earn SkyLine Points based on the following criteria:
+
+- Flights: Earn points based on the fare class and distance flown with SkyLine Airlines and partner carriers. The calculation is as follows:
+    - Economy Class: Base points = Miles flown x Fare class multiplier
+    - Business Class: Base points = Miles flown x Fare class multiplier x 1.5
+    - First Class: Base points = Miles flown x Fare class multiplier x 2
+
+- Credit Card: Earn 1 point for every $1 spent on eligible purchases using the SkyLine Credit Card (<CREDIT_CARD_NUMBER> example: 1234 5678 9012 3456).
+
+- Hotel Stays: Earn points for qualified stays at partner hotels, with the number of points varying based on the hotel's category and length of stay.
+
+- Car Rentals: Earn points for qualifying car rentals with partner rental companies.
+
+- Partner Transactions: Earn points for eligible purchases with various partner retailers, restaurants, and service providers.
+
+Redemption Options:
+SkyLine Points can be redeemed for a variety of rewards, including:
+
+- Award Flights: Redeem points for free flights on SkyLine Airlines and partner carriers. Redemption rates vary based on the flight destination, date, and class of service.
+
+- Hotel Stays: Redeem points for free nights at participating hotels worldwide.
+
+- Car Rentals: Redeem points for discounted or free car rentals with partner rental companies.
+
+- Merchandise: Redeem points for a wide range of merchandise, including electronics, apparel, and accessories.
+
+- Experiences: Redeem points for unique experiences, such as concerts, sporting events, and travel packages.
+
+- Charitable Donations: Contribute points to various charitable organizations and causes.
+
+To redeem rewards, members can visit the SkyLine Rewards website and log in with their <USERNAME> and <PASSWORD>.
+
+Membership Tiers:
+The SkyLine Travel Rewards program features four membership tiers, each offering enhanced benefits and privileges based on the member's annual activity:
+
+1. Blue: Entry-level tier for new members.
+2. Silver: Achieved after earning 25,000 points in a calendar year.
+3. Gold: Achieved after earning 50,000 points in a calendar year.
+4. Platinum: Achieved after earning 100,000 points in a calendar year.
+
+Higher tiers offer additional benefits, such as priority boarding, complimentary checked baggage, lounge access, and enhanced redemption rates.
+
+Terms and Conditions:
+- Points are valid for 3 years from the date of earning.
+- Certain restrictions and blackout dates may apply for award redemptions.
+- Points and benefits are non-transferable and cannot be combined with other promotional offers.
+- The program's terms and conditions are subject to change without prior notice.
+- Abuse of the program's rules may result in the forfeiture of points and membership termination.
+
+For more detailed information and updates, please visit the SkyLine Travel Rewards website or contact our customer service representatives.
+```

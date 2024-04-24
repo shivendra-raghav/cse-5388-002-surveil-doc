@@ -1,0 +1,53 @@
+```
+DigitalOcean Architecture Documentation
+
+Introduction:
+This document outlines the architecture and configuration details for the core infrastructure services provided by DigitalOcean. It covers the setup, management, and integration of Kubernetes, Container Registry, and API Gateway services. The documentation is intended for DevOps engineers, system administrators, and developers responsible for deploying and maintaining applications on the DigitalOcean platform.
+
+Latest Update By:
+John Doe, Senior DevOps Engineer (john.doe@example.com)
+Last Updated: May 15, 2023
+
+Service Details:
+
+1. Kubernetes:
+DigitalOcean Kubernetes is a fully-managed Kubernetes service that simplifies the deployment, management, and scaling of containerized applications. It provides a secure and highly available environment for running containerized workloads.
+
+To access and manage the Kubernetes cluster, you will need to authenticate using an API token. Replace <API_TOKEN> with your actual API token:
+
+```
+kubectl config set-credentials dotoken --token=<API_TOKEN>
+```
+
+Once authenticated, you can perform various operations on the Kubernetes cluster, such as deploying applications, scaling resources, and monitoring the cluster health.
+
+2. Container Registry:
+The DigitalOcean Container Registry is a private registry service for storing and distributing Docker images. It integrates seamlessly with the Kubernetes service, allowing you to securely pull and push container images from within your Kubernetes clusters.
+
+To authenticate with the Container Registry, you will need to obtain an OAuth token. Replace <OAUTH_SECRET> with your actual OAuth secret:
+
+```
+docker login -u=<OAUTH_SECRET> registry.digitalocean.com
+```
+
+After authentication, you can push and pull container images to and from the registry using standard Docker commands.
+
+3. API Gateway:
+The DigitalOcean API Gateway is a fully-managed service that provides a secure and scalable entry point for your applications. It acts as a reverse proxy, routing incoming requests to the appropriate backend services based on defined rules and configurations.
+
+To configure the API Gateway, you will need to authenticate using an API token. Replace <API_TOKEN> with your actual API token:
+
+```
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer <API_TOKEN>" \
+  -d '{ "name": "my-api", "spec": { ... } }' \
+  https://api.digitalocean.com/v2/apis
+```
+
+Once authenticated, you can create, update, and manage API configurations, including defining routing rules, enabling rate limiting, and setting up authentication mechanisms.
+
+Summary:
+This documentation provides an overview of the DigitalOcean Kubernetes, Container Registry, and API Gateway services. It outlines the authentication procedures and provides examples of how to interact with these services using the respective APIs or tools. Remember to replace the <API_TOKEN> and <OAUTH_SECRET> placeholders with your actual credentials for secure access and management of the services.
+
+```

@@ -1,0 +1,33 @@
+Title: Student Scholarship Application
+
+Personal Information:
+Name: [Student Name]
+Age: [Student Age]
+Address: [Student Address]
+Phone Number: [Student Phone Number]
+Email: [Student Email]
+<SSN>: [Student Social Security Number]
+
+Academic Background:
+High School: [High School Name], [Graduation Year]
+GPA: [High School GPA]
+SAT/ACT Scores: [Test Scores]
+Extracurricular Activities: [List of Activities]
+
+College/University Information:
+Institution Name: [College/University Name]
+Intended Major: [Intended Major/Field of Study]
+Anticipated Graduation Year: [Graduation Year]
+
+Financial Information:
+Estimated Annual Cost of Attendance: [Cost of Tuition, Fees, Room & Board]
+Household Income: [Household Income]
+<BANK_ACCOUNT_NUMBER>: [Student's Bank Account Number]
+Number of Dependents in Household: [Number of Dependents]
+
+Essay: [500-700 word essay discussing academic and career goals, financial need, and how the scholarship would help achieve the student's aspirations]
+
+Additional Information:
+[Any other relevant information or documents requested by the scholarship organization]
+
+I have provided a general structure for a student scholarship application, including placeholders for sensitive information such as <SSN> and <BANK_ACCOUNT_NUMBER>. Please note that this is a template, and the actual content should be filled in by the student based on their specific information and the requirements of the scholarship organization.

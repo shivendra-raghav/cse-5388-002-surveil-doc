@@ -1,0 +1,87 @@
+```markdown
+# Spinnaker Continuous Delivery Documentation
+
+## Introduction
+
+Spinnaker is an open-source, multi-cloud continuous delivery platform that helps you release software changes with high velocity and confidence. It provides a robust pipeline management system, allowing you to easily create, manage, and monitor deployment pipelines across multiple cloud providers. This documentation will guide you through the configuration of Spinnaker applications, pipeline stages, and deployment strategies, while also covering sensitive information placeholders for authentication.
+
+## Spinnaker Application Configuration
+
+Before you can start creating and managing pipelines, you need to configure a Spinnaker application. An application in Spinnaker represents a logical grouping of resources, such as load balancers, security groups, and server groups, that are deployed and managed together.
+
+To create a new application, follow these steps:
+
+1. Log in to the Spinnaker UI using your credentials.
+2. Click on the "Applications" tab in the navigation bar.
+3. Click on the "Create Application" button.
+4. Enter a unique name for your application and provide a descriptive email address for the owner (e.g., `myapp@example.com`).
+5. Select the appropriate cloud provider(s) for your application.
+6. Click "Create" to finalize the application creation process.
+
+Once your application is created, you can manage its resources, configure automated triggers, and create deployment pipelines.
+
+### Authenticating with the Spinnaker API
+
+In some cases, you may need to interact with the Spinnaker API directly, for example, to automate certain tasks or integrate with external systems. To authenticate with the Spinnaker API, you'll need to provide an access token in the `Authorization` header of your API requests. The access token should be treated as sensitive information and should be kept secure.
+
+You can generate an access token by following these steps:
+
+1. Log in to the Spinnaker UI.
+2. Navigate to the "User Settings" page.
+3. Click on the "API Access Tokens" tab.
+4. Click on the "Generate Token" button.
+5. Copy the generated <ACCESS_TOKEN> value.
+
+When making API requests, include the access token in the `Authorization` header like this:
+
+```
+Authorization: Bearer <ACCESS_TOKEN>
+```
+
+## Pipeline Stages
+
+Pipelines in Spinnaker are composed of stages, which represent individual tasks or steps in the deployment process. Each stage performs a specific action, such as baking an image, deploying a server group, or enabling a feature flag. Spinnaker provides a wide range of built-in stages, and you can also create custom stages using the Spinnaker Plugin ecosystem.
+
+Some common pipeline stages include:
+
+- Bake or Node: This stage bakes an image or builds a container image for deployment.
+- Deploy: This stage deploys a server group or container to a specific environment or region.
+- Manual Judgment: This stage pauses the pipeline and waits for manual approval before proceeding.
+- Disable: This stage disables an existing server group or container.
+
+When configuring pipeline stages, you may need to provide sensitive information, such as API keys or OAuth secrets, depending on the stage type and the cloud provider you're targeting.
+
+## Deployment Strategies
+
+Spinnaker supports various deployment strategies to help you manage and control the release of your software changes. These strategies include:
+
+1. **Red/Black Deployments**: This strategy involves running two identical production environments (blue and green) and switching between them when deploying new versions of your application.
+
+2. **Canary Deployments**: With this strategy, you deploy a new version of your application to a subset of instances (the canary) before rolling it out to the remaining instances. This allows you to test the new version in a production environment and monitor for any issues before proceeding with the full deployment.
+
+3. **Highlander Deployments**: This strategy ensures that only one version of your application is running at any given time. When a new version is deployed, the previous version is terminated.
+
+4. **Rolling Red/Black Deployments**: This strategy combines Red/Black and Rolling deployments, allowing you to incrementally update instances in both the old and new server groups simultaneously.
+
+When configuring deployment strategies, you may need to provide sensitive information, such as OAuth secrets or API keys, for authentication and authorization purposes.
+
+### OAuth Authentication
+
+Some cloud providers or external services may require OAuth authentication for certain operations. In these cases, you'll need to configure an OAuth client in Spinnaker and provide the <OAUTH_SECRET> value.
+
+To set up OAuth authentication, follow these steps:
+
+1. Log in to the Spinnaker UI.
+2. Navigate to the "Configuration" section.
+3. Select the appropriate cloud provider or service.
+4. Click on the "OAuth" tab.
+5. Click on the "Add Client" button.
+6. Enter the required client information, including the client ID, <OAUTH_SECRET>, and any other necessary details.
+7. Save the configuration.
+
+After setting up the OAuth client, you can use the configured credentials when configuring pipeline stages or deployment strategies that interact with the authenticated service.
+
+## Conclusion
+
+Spinnaker is a powerful continuous delivery platform that simplifies the deployment and management of applications across multiple cloud providers. By understanding the application configuration, pipeline stages, and deployment strategies, you can effectively manage your software release processes. Always remember to treat sensitive information, such as access tokens and OAuth secrets, with care and follow best practices for secure storage and handling.
+```

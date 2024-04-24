@@ -1,0 +1,28 @@
+Here is a synthetic email generated based on the given prompt and context:
+
+<email>Message-ID: <27933381.1075843853694.JavaMail.evans@thyme>
+Date: Mon, 19 Feb 2001 09:45:00 -0800 (PST)  
+From: jeff.dasovich@enron.com
+To: dwindham@uclink4.berkeley.edu
+Subject: Re: AHP - Next Steps
+Cc: 5fsfo@watsonwyatt.com, jcjcal02@aol.com, jdasovic@enron.com, jjackson@haas.berkeley.edu  
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Bcc: 5fsfo@watsonwyatt.com, jcjcal02@aol.com, jdasovic@enron.com, jjackson@haas.berkeley.edu
+
+Hi Dylan,
+
+Thanks for taking the lead on compiling the AHP analysis. I've reviewed Mark's draft and input some comments. A few things to consider:
+
+1. For the data sensitivity analysis, we may need to include the <API_SECRET> to pull live market data feeds. Let me know if you need that credential.
+
+2. The visualization section could benefit from Jimmy's creative touches as you mentioned. I've attached his <ACCESS_TOKEN> which should allow him to integrate custom graphics seamlessly.
+
+3. Don't forget to redact any <ACCESS_KEY> related to our internal systems before sharing the final deck externally. 
+
+Let me know if you need any other information from my side. Looking forward to putting a nice bow on this project soon.
+
+Best regards,
+Jeff
+</email>

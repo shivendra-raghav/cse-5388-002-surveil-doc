@@ -1,0 +1,45 @@
+```
+AWS Architecture Documentation
+AWS-DOC-2023-05-24
+
+Introduction:
+This document provides a comprehensive overview of the AWS services and their configurations within our organization's infrastructure. The services covered in this documentation include Elastic Compute Cloud (EC2), Route Tables, Amazon API Gateway, and Web Application Firewall (WAF). These services play crucial roles in enabling scalable and secure application deployment, networking, and API management.
+
+Latest Update By:
+<USERNAME>
+<PASSWORD>
+
+Service Details:
+
+1. Elastic Compute Cloud (EC2):
+   EC2 is a web service that provides secure, resizable compute capacity in the cloud. It offers virtual computing environments called instances, which can be launched with a variety of operating systems and configurations. EC2 instances are designed to be highly scalable, allowing users to increase or decrease capacity based on their application's demands.
+
+   In our infrastructure, EC2 instances are used to host various applications and services. We have implemented Auto Scaling groups to automatically scale the number of instances up or down based on predefined metrics, ensuring optimal resource utilization and cost-effectiveness.
+
+   Access to EC2 instances is restricted through security groups, which act as virtual firewalls controlling inbound and outbound traffic. Additionally, we have implemented role-based access control (RBAC) policies to ensure secure access and operation of EC2 resources.
+
+2. Route Tables:
+   Route Tables are a fundamental component of Amazon Virtual Private Cloud (VPC) networking, responsible for directing traffic within and between subnets. They define the routing rules that determine where network traffic is directed based on the destination IP address.
+
+   In our infrastructure, we have configured multiple Route Tables to manage traffic flow across different subnets and VPC environments. Each Route Table is associated with specific subnets, and routes are defined to control traffic to and from these subnets, including internet gateways, NAT gateways, and VPC peering connections.
+
+3. Amazon API Gateway:
+   Amazon API Gateway is a fully managed service that enables developers to create, publish, maintain, monitor, and secure APIs at any scale. It acts as a "front door" for applications to access data, business logic, or functionality from backend services.
+
+   We leverage API Gateway to expose our internal services and APIs securely to external clients and partners. API Gateway handles tasks such as traffic management, authentication, and access control, enabling us to control and monitor API usage effectively. We have configured API Gateway to integrate with various backend services, including EC2 instances, Lambda functions, and other AWS services.
+
+4. Web Application Firewall (WAF):
+   AWS WAF is a web application firewall that helps protect web applications and APIs from common web exploits and bots. It monitors HTTP(S) requests and allows or blocks traffic based on customizable security rules.
+
+   In our architecture, WAF is deployed in front of our API Gateway and web applications to provide an additional layer of security. We have configured WAF rules to detect and mitigate common attack patterns, such as SQL injection, cross-site scripting (XSS), and other application-level vulnerabilities. WAF also helps us manage web access control lists (ACLs) to allow or block IP addresses or ranges based on our security requirements.
+
+Summary:
+This documentation provides an overview of the key AWS services deployed in our organization's infrastructure, including EC2, Route Tables, Amazon API Gateway, and WAF. These services work together to enable secure and scalable application deployment, networking, and API management. The configurations outlined in this document ensure efficient resource utilization, secure access control, and protection against various threats and vulnerabilities.
+
+For administrative access and updates to these services, please use the following credentials:
+
+Username: <USERNAME>
+Password: <PASSWORD>
+
+Regular reviews and updates to this documentation are recommended to reflect any changes or additions to the infrastructure.
+```

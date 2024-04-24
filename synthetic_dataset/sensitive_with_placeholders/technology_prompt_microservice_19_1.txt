@@ -1,0 +1,91 @@
+Introduction
+
+The Catalog Service is a RESTful API designed to handle operations related to the management of product catalogs. It provides a set of endpoints that allow users to create, update, and modify catalogs and their associated products. This documentation aims to provide a comprehensive guide to the Catalog Service, covering its functionality, rate limits, error handling, and support details.
+
+Authentication
+
+To authenticate with the Catalog Service, you must include an API key in the request headers. The API key should be passed as follows:
+
+```
+Authorization: Bearer <API_KEY>
+```
+
+Replace `<API_KEY>` with your valid API key. Requests without a valid API key will be rejected with a 401 Unauthorized error.
+
+REST Services
+
+1. **Create a root catalog**
+
+   - Endpoint: `POST /catalogs`
+   - Description: Creates a new root catalog.
+   - Request Body: `{ "name": "Root Catalog" }`
+   - Responses:
+     - 201 Created: Successful response with the newly created catalog.
+     - 400 Bad Request: Invalid request body or missing required fields.
+     - 401 Unauthorized: Invalid or missing API key.
+
+2. **Create sub catalog with parent catalog ID**
+
+   - Endpoint: `POST /catalogs/{parentCatalogId}/subcatalogs`
+   - Description: Creates a new sub-catalog under the specified parent catalog.
+   - Request Body: `{ "name": "Sub Catalog" }`
+   - Responses:
+     - 201 Created: Successful response with the newly created sub-catalog.
+     - 400 Bad Request: Invalid request body or missing required fields.
+     - 401 Unauthorized: Invalid or missing API key.
+     - 404 Not Found: Parent catalog not found.
+
+3. **Update catalog by ID**
+
+   - Endpoint: `PUT /catalogs/{catalogId}`
+   - Description: Updates the details of a catalog by its ID.
+   - Request Body: `{ "name": "Updated Catalog Name" }`
+   - Responses:
+     - 200 OK: Successful response with the updated catalog.
+     - 400 Bad Request: Invalid request body or missing required fields.
+     - 401 Unauthorized: Invalid or missing API key.
+     - 404 Not Found: Catalog not found.
+
+4. **Modify product list inside a catalog**
+
+   - Endpoint: `PUT /catalogs/{catalogId}/products`
+   - Description: Updates the list of products associated with a catalog.
+   - Request Body: `[ { "id": 1, "name": "Product 1" }, { "id": 2, "name": "Product 2" } ]`
+   - Responses:
+     - 200 OK: Successful response with the updated catalog and product list.
+     - 400 Bad Request: Invalid request body or missing required fields.
+     - 401 Unauthorized: Invalid or missing API key.
+     - 404 Not Found: Catalog not found.
+
+Rate Limit
+
+The Catalog Service enforces rate limits to prevent abuse and ensure fair usage. The following rate limits apply:
+
+- 100 requests per minute per API key
+- 10,000 requests per day per API key
+
+Requests exceeding these limits will be rejected with a 429 Too Many Requests error response.
+
+Error Handling
+
+The Catalog Service returns appropriate HTTP status codes and error messages to indicate the outcome of each request. Here are the common error responses:
+
+- 400 Bad Request: The request was malformed or missing required parameters.
+- 401 Unauthorized: The request did not include a valid API key or the API key was invalid.
+- 403 Forbidden: The authenticated user does not have permission to perform the requested action.
+- 404 Not Found: The requested resource was not found.
+- 500 Internal Server Error: An unexpected error occurred on the server.
+- 501 Not Implemented: The requested functionality is not implemented.
+- 502 Bad Gateway: The server received an invalid response from an upstream server.
+- 503 Service Unavailable: The service is temporarily unavailable due to maintenance or overload.
+- 504 Gateway Timeout: The server did not receive a timely response from an upstream server.
+
+Support Team Details
+
+If you encounter any issues or have questions regarding the Catalog Service, please contact our support team:
+
+- Email: support@catalogservice.com
+- Phone: +1 (555) 123-4567
+- Business Hours: Monday to Friday, 9 AM to 5 PM (UTC-5)
+
+Our support team is dedicated to providing prompt and efficient assistance to ensure your seamless experience with the Catalog Service.

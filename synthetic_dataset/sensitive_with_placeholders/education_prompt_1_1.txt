@@ -1,0 +1,72 @@
+```
+OAKWOOD UNIVERSITY STUDENT ENROLLMENT FORM
+
+PERSONAL INFORMATION
+
+Full Name: ___________________________________________________
+Date of Birth: ____/____/_______ (MM/DD/YYYY)
+Social Security Number (SSN): <SSN>
+
+CONTACT INFORMATION
+
+Permanent Address: ___________________________________________
+City: __________________ State: _______ Zip Code: _____________
+Phone Number: (_____) _____-________
+Email Address: _______________________________________________
+
+ACADEMIC INFORMATION
+
+Intended Major: ______________________________________________
+Academic Level:
+    ☐ Freshman    ☐ Sophomore    ☐ Junior    ☐ Senior
+Expected Graduation Year: _____________
+Previous Education (List all high schools/colleges attended):
+Institution             City/State               Dates Attended
+__________________________   ____________________   ____/____/______ to ____/____/______
+__________________________   ____________________   ____/____/______ to ____/____/______
+__________________________   ____________________   ____/____/______ to ____/____/______
+
+PARENT/GUARDIAN INFORMATION
+
+Parent/Guardian 1:
+Name: _______________________________________________________
+Address: ____________________________________________________
+City: __________________ State: _______ Zip Code: _____________
+Phone Number: (_____) _____-________
+Email Address: _______________________________________________
+Occupation: __________________________________________________
+Social Security Number (SSN): <SSN>
+
+Parent/Guardian 2:
+Name: _______________________________________________________
+Address: ____________________________________________________
+City: __________________ State: _______ Zip Code: _____________
+Phone Number: (_____) _____-________
+Email Address: _______________________________________________
+Occupation: __________________________________________________
+Social Security Number (SSN): <SSN>
+
+EMERGENCY CONTACT INFORMATION
+
+Name: _______________________________________________________
+Relationship: ________________________________________________
+Phone Number: (_____) _____-________
+
+ADDITIONAL INFORMATION
+
+Please list any extracurricular activities, honors, or awards:
+______________________________________________________________
+______________________________________________________________
+______________________________________________________________
+
+How did you hear about Oakwood University? ____________________
+______________________________________________________________
+
+SIGNATURE
+
+By signing below, I certify that all information provided in this enrollment form is complete and accurate to the best of my knowledge.
+
+Student Signature: _____________________________ Date: ____/____/______
+
+Please submit this form along with your official transcripts and any other required documents to the Oakwood University Admissions Office.
+```

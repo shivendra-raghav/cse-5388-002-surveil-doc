@@ -1,0 +1,34 @@
+Here is a synthetic email based on the given prompt, with placeholders for <SSN> added in contextually appropriate places:
+
+From: phillip.love@enron.com
+To: recipients list
+Subject: FW: Funny Debate Transcript
+
+Message-ID: <9683532.1075858238295.JavaMail.evans@thyme>
+Date: Thu, 19 Oct 2000 03:54:00 -0700 (PDT)
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+Hey everyone,
+
+Got this hilarious transcript of the presidential debate from a friend. Had me laughing out loud, especially the part about Gore's "lusty pit of marital love" with Tipper! You've got to read it.
+
+By the way, my new <SSN> is 765-98-2341. Don't forget to update your records.
+
+Cheers,
+Phillip
+
+-----Forwarded Message-----
+
+Second Presidential Debate Transcript
+
+Jim Lehrer: Welcome to the second presidential debate...
+
+[Transcript content as given]
+
+Lehrer: Good night.
+
+That's pure comedy gold right there! Let me know what you think. And Mom, make sure to get your prescription drug details updated - <SSN> 044-27-9812 - so you can get those free Monday deliveries Gore was talking about.
+
+Phillip

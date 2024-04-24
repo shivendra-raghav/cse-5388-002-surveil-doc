@@ -1,0 +1,64 @@
+```markdown
+# TeamCity CI/CD Documentation
+
+## Introduction
+
+This documentation provides a comprehensive guide for setting up and configuring TeamCity, a powerful Continuous Integration and Continuous Deployment (CI/CD) server. TeamCity streamlines the build, test, and deployment processes for your software projects, ensuring efficient and reliable delivery of high-quality code.
+
+## TeamCity Build Configuration
+
+TeamCity Build Configuration is the core component that defines how your project should be built, tested, and deployed. Follow these steps to create a new build configuration:
+
+1. Log in to your TeamCity server using your credentials.
+2. Navigate to the "Root Project" or create a new project if needed.
+3. Click on the "Create Build Configuration" button.
+4. Provide a name and description for your build configuration.
+5. Select the appropriate build runner based on your project's technology stack (e.g., Maven, Gradle, MSBuild).
+6. Configure the build steps according to your project's requirements. This may include fetching dependencies, compiling code, running tests, and generating artifacts.
+7. (Optional) Set up build triggers to automatically start a build when specific events occur, such as a version control system (VCS) commit or a scheduled time.
+8. (Optional) Configure build notifications to receive email or instant messaging alerts for build status updates.
+
+To interact with the TeamCity REST API, you may need to provide an <API_TOKEN> for authentication purposes. This token should be treated as sensitive information and kept secure.
+
+## Agent Setup
+
+TeamCity agents are responsible for executing the build steps defined in your build configurations. You can use the pre-installed agents provided by TeamCity or set up your own agents for more customization.
+
+### Using Pre-installed Agents
+
+1. Log in to your TeamCity server and navigate to the "Agents" section.
+2. Locate the pre-installed agents and assign them to your build configurations as needed.
+
+### Setting up Custom Agents
+
+1. Download the appropriate TeamCity agent package for your operating system from the official website.
+2. Install the agent on the desired machine or server.
+3. During the installation process, you will be prompted to enter the TeamCity server URL and authentication credentials.
+4. Once the agent is installed and registered with the server, you can assign it to your build configurations.
+
+## Version Control Integration
+
+TeamCity supports integration with various version control systems (VCS) such as Git, Subversion, Mercurial, and more. This integration allows TeamCity to automatically fetch the latest code changes and trigger builds based on those changes.
+
+### Git Integration
+
+1. In your build configuration settings, navigate to the "Version Control Settings" section.
+2. Select "Git" as the version control system.
+3. Provide the Git repository URL and branch information.
+4. (Optional) If your Git repository requires authentication, you can configure the <OAUTH_ID> for OAuth authentication or use SSH keys.
+
+### Subversion Integration
+
+1. In your build configuration settings, navigate to the "Version Control Settings" section.
+2. Select "Subversion" as the version control system.
+3. Provide the Subversion repository URL and any necessary credentials.
+
+After configuring the version control integration, TeamCity will automatically fetch the latest code changes and trigger builds based on your specified settings.
+
+## Conclusion
+
+This documentation has provided an overview of setting up and configuring TeamCity for your CI/CD needs. By following the steps outlined in each section, you can streamline your build, test, and deployment processes, ensuring efficient and reliable software delivery.
+
+Remember to treat any sensitive information, such as <API_TOKEN> and <OAUTH_ID>, with utmost care and follow best practices for secure storage and handling.
+
+```

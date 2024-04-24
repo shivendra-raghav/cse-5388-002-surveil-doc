@@ -1,0 +1,95 @@
+```markdown
+# Shipping Service Documentation
+
+## Introduction
+
+The Shipping Service is a critical component of the e-commerce system, responsible for managing shipping-related operations. It follows the Command Query Responsibility Segregation (CQRS) pattern, separating the read and write operations into distinct interfaces. This separation ensures scalability, performance, and maintainability of the service.
+
+## Authentication
+
+The Shipping Service requires authentication for both the Command and Query APIs. The authentication process involves providing sensitive information, such as an <API_KEY> or <OAUTH_SECRET>, depending on the authentication mechanism used.
+
+### Command API Authentication
+
+To authenticate with the Command API, you need to include the <API_KEY> in the request headers for all command operations. For example:
+
+```
+Authorization: Bearer <API_KEY>
+```
+
+### Query API Authentication
+
+For the Query API, authentication is handled using an OAuth 2.0 flow. You'll need to obtain an access token by exchanging your client credentials (<OAUTH_SECRET>) with the authentication server. Once you have the access token, include it in the `Authorization` header for all query requests:
+
+```
+Authorization: Bearer <ACCESS_TOKEN>
+```
+
+## Command API
+
+The Command API is responsible for handling shipping-related write operations, such as creating a new shipping, updating shipping addresses, updating shipping statuses, and deleting shipments.
+
+### Create a New Shipping
+
+```
+POST /v1/shipping/create
+```
+
+This endpoint creates a new shipping record in the system. The request body should include the necessary shipping details, such as the order ID, recipient information, and shipping method.
+
+### Update Shipping Address
+
+```
+PUT /v1/shipping/{shippingId}/address
+```
+
+This endpoint allows you to update the shipping address for a specific shipping record. The `shippingId` is required in the URL path, and the request body should include the new address details.
+
+### Update Shipping Status
+
+```
+PUT /v1/shipping/{shippingId}/status
+```
+
+This endpoint enables you to update the status of a shipping record. The `shippingId` is required in the URL path, and the request body should include the new status information.
+
+### Delete a Shipping
+
+```
+DELETE /v1/shipping/{shippingId}
+```
+
+This endpoint deletes a shipping record from the system. The `shippingId` is required in the URL path.
+
+## Query API
+
+The Query API is responsible for handling read operations related to shipping data. It provides endpoints for retrieving shipping information based on various criteria.
+
+### Get Shipping by ID
+
+```
+GET /v1/shipping/{shippingId}
+```
+
+This endpoint retrieves the shipping details for a specific `shippingId`.
+
+### Get Shipping by Order ID
+
+```
+GET /v1/shipping?orderId={orderId}
+```
+
+This endpoint retrieves the shipping details associated with a specific `orderId`.
+
+## Event Sourcing
+
+The Shipping Service employs event sourcing to ensure data consistency and provide an audit trail of shipping-related events. Whenever a command is executed, corresponding events are generated and persisted in an event store. These events are then used to rebuild the shipping data and maintain a consistent view of the system state.
+
+## Read Model
+
+The Shipping Service utilizes a read model to optimize query performance and provide a denormalized view of shipping data tailored for read operations. The read model is built by projecting the events from the event store into a specialized data store optimized for reading. This separation of concerns between the write and read models ensures scalability and performance for both command and query operations.
+
+## Summary
+
+The Shipping Service is a crucial component of the e-commerce system, responsible for managing shipping-related operations. It follows the CQRS pattern, separating the read and write operations into distinct interfaces. The service provides a Command API for handling shipping-related write operations and a Query API for retrieving shipping information. Event sourcing is employed to ensure data consistency and provide an audit trail, while a read model optimizes query performance. Authentication is required for both the Command and Query APIs, with sensitive information such as <API_KEY> and <OAUTH_SECRET> used for authentication purposes.
+```

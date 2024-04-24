@@ -1,0 +1,65 @@
+```markdown
+# Order Service Documentation
+
+## Introduction
+
+The Order Service is a crucial component of an e-commerce application, responsible for managing the order lifecycle and orchestrating the order fulfillment process. It follows the Saga pattern, which is a distributed transaction management technique that ensures data consistency across multiple microservices. The Order Service coordinates the actions of various participants, including the InventoryService, PaymentService, and ShippingService, to complete an order successfully.
+
+## Authentication
+
+Before interacting with the Order Service, clients must authenticate themselves by providing valid credentials. The authentication process typically involves sending an API key (<API_KEY>) in the request headers or as a query parameter. For example:
+
+```
+GET /orders?api_key=<API_KEY>
+```
+
+Alternatively, the authentication can be handled using JSON Web Tokens (JWT) or other industry-standard authentication mechanisms.
+
+## Saga Participants
+
+The Order Service coordinates the following participants during the order fulfillment process:
+
+1. **InventoryService**: This service checks the availability of the ordered items and reserves them for the duration of the order fulfillment process.
+
+2. **PaymentService**: This service processes the payment for the order, ensuring that the customer's payment is successful before proceeding with the order.
+
+3. **ShippingService**: This service arranges the shipping of the ordered items to the customer's address.
+
+## Compensation Actions
+
+In the event of a failure during the order fulfillment process, the Order Service initiates compensation actions to maintain data consistency across the participants. The following compensation actions are implemented:
+
+1. **InventoryService**: If the payment or shipping fails, the InventoryService releases the reserved items, making them available for other orders.
+
+2. **PaymentService**: If the shipping fails after a successful payment, the PaymentService initiates a refund to the customer.
+
+3. **ShippingService**: If the payment fails, the ShippingService cancels the shipping process for the order.
+
+## Coordination Logic
+
+The Order Service employs both choreography and orchestration techniques to coordinate the order fulfillment process across the saga participants.
+
+### Choreography
+
+In the choreography approach, the Order Service initiates the process by sending an event to the InventoryService to reserve the ordered items. Upon successful reservation, the InventoryService publishes an event that triggers the PaymentService to process the payment. If the payment is successful, the PaymentService publishes another event, triggering the ShippingService to arrange the shipping.
+
+### Orchestration
+
+The Order Service also employs an orchestration approach, where it acts as a central coordinator, invoking the saga participants directly. In this approach, the Order Service first calls the InventoryService to reserve the items. If the reservation is successful, it then invokes the PaymentService to process the payment. Upon successful payment, the Order Service calls the ShippingService to arrange the shipping.
+
+The choice between choreography and orchestration depends on the specific requirements of the application and the complexity of the order fulfillment process.
+
+## Error Handling
+
+The Order Service implements robust error handling mechanisms to ensure graceful failure and data consistency in case of unexpected errors or failures during the order fulfillment process.
+
+In case of a failure, the Order Service initiates the appropriate compensation actions based on the stage at which the failure occurred. For example, if the payment fails after the items have been reserved, the Order Service triggers the compensation action for the InventoryService to release the reserved items.
+
+Additionally, the Order Service logs all errors and failures, providing detailed information for debugging and monitoring purposes. Error logs may contain sensitive information such as database connection strings (<DATABASE_CONN>) or other configuration details, which should be handled with caution to prevent accidental exposure.
+
+## Summary
+
+The Order Service is a critical component of the e-commerce application, responsible for managing the order lifecycle and coordinating the order fulfillment process across multiple microservices. By following the Saga pattern and employing choreography and orchestration techniques, the Order Service ensures data consistency and reliable order processing.
+
+Throughout the documentation, we have covered the authentication process, the saga participants, compensation actions, coordination logic, and error handling mechanisms. Developers working with the Order Service should adhere to the guidelines and best practices outlined in this documentation to ensure the seamless operation of the order fulfillment process.
+```

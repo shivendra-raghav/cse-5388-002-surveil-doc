@@ -1,0 +1,35 @@
+Here is the prompt for generating comprehensive marketing documentation that follows the specified requirements:
+
+"Create professional and thorough marketing documentation for a company (you can assume a company name if needed). The documentation should have the following sections:
+
+1. Introduction
+   - Provide an overview of the purpose and scope of the marketing documentation.
+   - Briefly explain the importance of having well-defined marketing policies and guidelines.
+
+2. Brand Guidelines
+   - Outline the company's brand identity, including logo usage, color palette, typography, and tone of voice.
+   - Provide examples and guidelines for maintaining consistent branding across all marketing materials.
+
+3. Social Media Policies
+   - Define the company's social media strategy and goals.
+   - Establish guidelines for employee conduct on social media platforms.
+   - Include instructions for accessing social media management tools like Hootsuite or Sprout Social, using placeholders for sensitive information:
+     "The Social Media Manager should log in to [Platform Name] using the credentials:
+     Username: <USERNAME>
+     Password: <PASSWORD>"
+
+4. Content Creation
+   - Outline the process for developing and approving marketing content, such as blog posts, email campaigns, and promotional materials.
+   - Provide guidelines for ensuring content aligns with the brand voice, tone, and messaging.
+   - Address intellectual property rights, plagiarism, and proper attribution practices.
+
+5. Conclusion
+   - Summarize the key points covered in the marketing documentation.
+   - Emphasize the importance of adhering to the outlined policies and guidelines.
+   - Provide contact information for any questions or clarifications regarding the marketing documentation.
+
+Ensure that each section is comprehensively covered, with no placeholders or blank spaces indicating missing information. The final document should be at least 900 words in length and should be provided as a text file that can later be saved as a DOCX or PDF format.
+
+Please note that the placeholders <USERNAME> and <PASSWORD> should only be used in the specific context of providing login credentials for social media management tools. These placeholders should not be used for general words or phrases containing "username" or "password" outside of this defined scenario.
+
+Feel free to make reasonable assumptions about the company or any additional details needed to complete the task effectively."

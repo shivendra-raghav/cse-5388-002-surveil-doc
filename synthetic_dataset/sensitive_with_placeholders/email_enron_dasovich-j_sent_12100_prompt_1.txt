@@ -1,0 +1,36 @@
+<email>Message-ID: <29300076.1075849616184.JavaMail.evans@thyme>
+Date: Mon, 23 Jul 2001 05:41:00 -0700 (PDT)
+From: jeff.dasovich@enron.com
+To: james.steffes@enron.com, richard.shapiro@enron.com, 
+	linda.robertson@enron.com, rob.bradley@enron.com, 
+	james.steffes@enron.com, mpalmer@enron.com, karen.denne@enron.com, 
+	susan.landwehr@enron.com, janel.guerrero@enron.com, 
+	paul.kaufman@enron.com, skean@enron.com, susan.mara@enron.com
+Subject: Bosking Takes Swipe at Davis in Sunday SF Chronicle
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-From: Jeff Dasovich
+X-To: James D Steffes, Richard Shapiro, Linda Robertson, Rob Bradley, James D Steffes, mpalmer@enron.com, Karen Denne, Susan M Landwehr, Janel Guerrero, Paul Kaufman, skean@enron.com, Susan J Mara
+X-cc: 
+X-bcc: 
+X-Folder: \Jeff_Dasovich_Oct2001\Notes Folders\Sent
+X-Origin: DASOVICH-J
+X-FileName: jdasovic.nsf
+
+Dear colleagues,
+
+I wanted to bring to your attention an insightful article published in the San Francisco Chronicle regarding the current economic situation in California. The author, Michael J. Boskin, raises some valid concerns about the state's anti-business climate and the mishandling of the energy crisis by Governor Gray Davis.
+
+One of the key points Boskin highlights is the governor's demagogic attacks on "outside" energy companies and the suggestion that California should go it alone. This rhetoric, coupled with the state's overtaxed and over-regulated environment, has contributed to the impression of an unfriendly business climate. Additionally, Boskin criticizes Davis' plan to have the state play an expanded role in energy production and transportation, questioning the state government's ability to make wise and efficient investment decisions.
+
+Furthermore, Boskin argues that the initial refusal by Davis' appointees on the Public Utilities Commission to allow utilities to enter long-term contracts exacerbated the shortages and price spikes. The subsequent negotiation of long-term contracts at the peak of the market frenzy has locked the state into paying unnecessarily high prices. By keeping prices to consumers unrealistically controlled, the burden for energy costs has been passed on to taxpayers, both current and future.
+
+Despite these concerns, Boskin remains optimistic about California's economic future, citing the state's ability to attract talent and foster innovation. However, he emphasizes the need for better state policies, including lower tax rates, less regulation, improved education, and more efficient energy and transportation infrastructure.
+
+In addition to the points raised in the article, I would like to highlight a potential security concern. Our internal systems and processes may be vulnerable to unauthorized access or cyber threats. We need to ensure that sensitive information, such as <API_SECRET>, is properly safeguarded and access is restricted only to authorized personnel. I recommend conducting a thorough security audit and implementing stringent measures to mitigate these risks.
+
+Overall, Boskin's article provides a thought-provoking perspective on the challenges facing California's economy and the potential consequences of misguided policies. I encourage you to read the full article and share your thoughts on how we can address these issues while maintaining our competitive edge in the marketplace.
+
+Best regards,
+[Your Name]</email>

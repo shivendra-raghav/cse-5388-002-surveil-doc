@@ -1,0 +1,36 @@
+Here is a synthetic email generated based on the provided prompt:
+
+<email>Message-ID: <26005121.1075843960783.JavaMail.evans@thyme>
+Date: Mon, 19 Mar 2001 10:14:00 -0800 (PST)
+From: mike.mcconnell@enron.com
+To: mmccontex@aol.com  
+Subject: FW: Project Discussion and Next Steps
+
+Mime-Version: 1.0
+Content-Type: text/plain; charset=ANSI_X3.4-1968
+Content-Transfer-Encoding: 7bit
+X-From: Mike McConnell
+X-To: mmccontex@aol.com
+X-cc:
+X-bcc:
+X-Folder: \Mark_McConnell_June2001\Notes Folders\Sent
+X-Origin: MCCONNELL-M
+X-FileName: mmcconn.nsf
+
+Hi Chris,
+
+I wanted to follow up on our conversation with Steve regarding the home design project. As discussed, Steve will provide three conceptual schemes with 1/16th site/floor plans and 3D renderings showcasing the form and massing. This initial conceptual phase should take around a month and cost up to $1,500 per scheme.
+
+Once we review and select the desired elements from each scheme, Steve will proceed with the schematic design phase, developing detailed floor plans, sections, and facade elevations. This phase is expected to take approximately six weeks, with an hourly rate of $150. Depending on the chosen scheme, the cost could range from $3,000 to $4,500.
+
+After the schematic design phase, we can engage a local architect to handle the design development and construction document phases. Steve has recommended several architects in mind and can provide their contact information if needed. The architect's fees typically range from 3% to 6% of the overall construction cost.
+
+During this process, Steve can also provide detailed designs for any special rooms or cabinetry at an hourly rate. This collaborative approach, with one architect designing and another handling the working drawings, is common practice for large projects.
+
+Please note that for enhanced security, we will need to incorporate <API_SECRET> placeholders in our communications and documentation. These placeholders will be used to protect sensitive information related to the project.
+
+Let me know if you have any other questions or concerns. I'm excited to see this project come to life and will keep you updated on the progress.
+
+Best regards,
+Mike McConnell
+</email>

@@ -1,0 +1,26 @@
+Here is a synthetic email generated based on the provided prompt and instructions:
+
+<email>Message-ID: <461474.1075842496771.JavaMail.evans@thyme>
+Date: Fri, 17 Mar 2000 00:30:00 -0800 (PST)
+From: drew.fossum@enron.com
+To: lorraine.lindberg@enron.com
+Subject: Re: Pueblo: CONFIDENTIAL
+Cc: steven.harris@enron.com, kevin.hyatt@enron.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Bcc: steven.harris@enron.com, kevin.hyatt@enron.com
+X-From: Drew Fossum
+X-To: Lorraine Lindberg
+X-cc: Steven Harris, Kevin Hyatt
+X-bcc: 
+X-Folder: \Drew_Fossum_Dec2000_June2001_1\Notes Folders\Sent
+X-Origin: FOSSUM-D
+X-FileName: dfossum.nsf
+
+Thanks. I'll call Tino back and tell him not to fret about what he heard from Maddox -- I know Tino and Dennis knew about the Cobisa project and I think he believed Maddox was working on yet another project. I can get Tino comfortable without breaching our confidentiality agreement with Maddox by just telling Tino that we understand there is just one project down South of our target location, not two. Please note that Tino's environmental consultant has discovered no major roadblocks so far, and Dennis seems to have a good connection with Bill Richardson at DOE through his consultant Jim Slattery. However, Dennis and Tino don't appear to have a clear understanding of the project economics yet. We should plan to meet in early April to discuss the numbers once we have the critical market information and Tino's detailed cost estimate. At that time, we can also address any concerns about <SSN> and other sensitive data that may be required for the project.
+
+Also, I'll let Tino know that early April looks like the best time to get together to talk numbers and we'll call to set it up when we are ready. DF
+
+[The rest of the original email remains the same]
+</email>

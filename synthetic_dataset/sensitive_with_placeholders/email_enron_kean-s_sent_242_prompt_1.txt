@@ -1,0 +1,28 @@
+<email>Message-ID: <32543847.1075846379725.JavaMail.evans@thyme>
+Date: Mon, 28 Aug 2000 00:35:00 -0700 (PDT)
+From: steven.kean@enron.com
+To: gavin.dillingham@enron.com
+Subject: Re: California Power Issues Database
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-From: Steven J Kean
+X-To: Gavin Dillingham
+X-cc: 
+X-bcc: 
+X-Folder: \Steven_Kean_Dec2000_1\Notes Folders\Sent
+X-Origin: KEAN-S
+X-FileName: skean.nsf
+
+Gavin,
+
+Thanks for setting up the California Power Issues Database. It will be an invaluable resource as we navigate through this challenging situation. Please add Mona Petrochko, Peggy Mahoney, and Rob Bradley to the list of individuals with secure access to the database. They will need to review the sensitive materials, including the <BEARER_TOKEN> for accessing restricted data sources.
+
+Additionally, we should consider granting broader access to certain non-confidential materials within the database. The talking points and factual statements could be beneficial for informing employees about our position on the power crisis. However, any sensitive data, such as the <BEARER_TOKEN> or confidential strategy documents, should remain restricted.
+
+Let me know if you have any other questions or need further assistance.
+
+Best regards,
+Steven
+
+</email>

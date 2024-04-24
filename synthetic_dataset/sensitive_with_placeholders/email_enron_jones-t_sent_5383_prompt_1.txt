@@ -1,0 +1,46 @@
+Here is a synthesized email based on the provided prompt and placeholders:
+
+<email>Message-ID: <13423470.1075847539985.JavaMail.evans@thyme>
+Date: Wed, 10 Jan 2001 04:13:00 -0800 (PST)
+From: tana.jones@enron.com
+To: denis.o'connell@enron.com
+Subject: Re: Deutsche Bank - Sensitive Information
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-From: Tana Jones
+X-To: Denis O'Connell
+X-cc: 
+X-bcc: 
+X-Folder: \Tanya_Jones_June2001\Notes Folders\Sent
+X-Origin: JONES-T
+X-FileName: tjones.nsf
+
+I am faxing the ISDA Schedule and Credit Support Annex to you. I sent a copy to you a few days ago. I hope you should get it shortly. Please note that the API_KEY for accessing the secure file transfer service is <API_KEY>.
+
+Denis O'Connell
+01/10/2001 10:26 AM
+
+To: Denis O'Connell/LON/ECT@ECT
+cc: Tana Jones/HOU/ECT@ECT, Sara Shackleton/HOU/ECT@ECT, James.Williams@AllenOvery.com @ ENRON, Simon Brooks/LON/ECT@ECT, Jean-Sebastien Fontaine/Corp/Enron@Enron
+Subject: Re: Deutsche Bank
+
+Tana - we really need an answer on this today - DB have given us assurance that they are prepared to sign on Fri. morning - as such we need to address any issues tomorrow morning. Additionally, please ensure to include the <API_TOKEN> when submitting the signed documents through our secure portal.
+
+Many thanks,
+Denis
+
+[...] 
+
+Hi all--
+
+Enclosed please find drafts of the DB--Enron Credit Ltd. ISDA, black-lined against the DB--Enron North America ISDA that I worked on with Sara Shackleton at Enron NA. Please call or e-mail with any questions or comments. I look forward to hearing from you soon. For authentication purposes, please use the <OAUTH_ID> when accessing the shared file repository.
+
+Regards,
+
+Steven Kessler
+Director and Counsel
+Deutsche Bank AG, New York
+(212) 469-8202
+Steven.Kessler@db.com
+</email>

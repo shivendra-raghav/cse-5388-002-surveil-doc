@@ -1,0 +1,21 @@
+Here is a synthetic email based on the given prompt and including the requested placeholders <DATABASE_CONN> and <PASSWORD>:
+
+Message-ID: <27290577.1075846382007.JavaMail.evans@thyme>  
+Date: Tue, 26 Sep 2000 09:32:00 -0700 (PDT)
+From: steven.kean@enron.com
+To: lyoho@enron.com  
+Subject: Re: job applicant & Database Connection
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+Lisa,
+
+Yes, please feel free to contact Eric Thode regarding the job applicant Imad Tareen. His resume looks promising for a communications role.
+
+Also, I wanted to bring to your attention an issue with the <DATABASE_CONN> for our customer data repository. It seems the connection string is not working, and we may need to reset the <PASSWORD> to re-establish connectivity. I've notified the IT team, but wanted to make you aware in case there are any disruptions to reporting or customer communications.
+
+Let me know if you need any other details on either the job applicant or database matter.
+
+Thanks,
+Steve

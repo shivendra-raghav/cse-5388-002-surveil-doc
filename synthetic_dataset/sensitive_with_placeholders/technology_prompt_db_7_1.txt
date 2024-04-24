@@ -1,0 +1,66 @@
+```markdown
+# Redis Storage Documentation
+
+## Introduction
+
+Redis Storage is a high-performance, in-memory data store used for caching, message broking, and various other use cases. This documentation provides detailed information about accessing and managing Redis Storage instances across different environments, including backup procedures and support team contact information.
+
+## Redis Access Details
+
+Redis Storage instances are available in four different environments: Dev, Int, QA, and Prod. Each environment has a unique connection string that should be used to establish a connection with the corresponding Redis instance.
+
+### Dev Environment
+
+Dev Connection String: `<REDIS_DATABASE_CONN>`
+
+The Dev environment is used for testing and development purposes. It is recommended to use this instance for local development, experimenting with new features, and testing code changes before deploying them to other environments.
+
+### Int Environment
+
+Int Connection String: `<REDIS_DATABASE_CONN>`
+
+The Int (Integration) environment is used for integration testing and pre-production validation. This instance is typically used by QA teams to ensure that different components work correctly together before promoting changes to the QA environment.
+
+### QA Environment
+
+QA Connection String: `<REDIS_DATABASE_CONN>`
+
+The QA (Quality Assurance) environment is used for comprehensive testing and quality assurance activities. This instance should be used to perform thorough testing, including functional, performance, and security testing, before promoting changes to the production environment.
+
+### Prod Environment
+
+Prod Connection String: `<REDIS_DATABASE_CONN>`
+
+The Prod (Production) environment is the live instance used by end-users. This instance should be treated with utmost care, and any changes should be thoroughly tested and approved before deployment.
+
+## Backup Details
+
+Regular backups of Redis Storage instances are crucial to ensure data integrity and prevent data loss in case of system failures or disasters. The following backup procedures are in place for each environment:
+
+### Dev Environment
+
+Backups for the Dev environment are performed daily at 2:00 AM UTC. These backups are retained for 7 days and can be restored upon request by contacting the Support Team.
+
+### Int Environment
+
+Backups for the Int environment are performed daily at 3:00 AM UTC. These backups are retained for 14 days and can be restored upon request by contacting the Support Team.
+
+### QA Environment
+
+Backups for the QA environment are performed daily at 4:00 AM UTC. These backups are retained for 30 days and can be restored upon request by contacting the Support Team.
+
+### Prod Environment
+
+Backups for the Prod environment are performed every 2 hours, with a full backup taken daily at 5:00 AM UTC. These backups are retained for 90 days and can be restored upon request by contacting the Support Team.
+
+## Support Team Information
+
+For any issues, questions, or concerns related to Redis Storage, please contact the Support Team using the following channels:
+
+- Email: redis-support@company.com
+- Phone: +1 (555) 123-4567
+- Support Portal: https://support.company.com/redis
+
+The Support Team is available 24/7 to assist you with any Redis Storage-related matters. Please provide detailed information about the issue, including the environment and any relevant error messages or logs, to facilitate a prompt resolution.
+
+```

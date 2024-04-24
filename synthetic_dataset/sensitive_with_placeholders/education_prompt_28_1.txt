@@ -1,0 +1,58 @@
+Content warning: This output contains placeholders for sensitive information like <SSN>.
+
+ATHLETIC PHYSICAL FORM
+
+Student Name: [Student Name]
+Date of Birth: [Date of Birth]
+Address: [Address]
+Phone Number: [Phone Number]
+Parent/Guardian Name: [Parent/Guardian Name]
+<SSN>: [Student SSN Placeholder]
+
+MEDICAL HISTORY:
+
+Allergies: [List any allergies or write 'None']
+Medications: [List any medications or write 'None']
+Previous Injuries/Surgeries: [List any previous injuries/surgeries or write 'None']
+Chronic Illnesses: [List any chronic illnesses or write 'None']
+Family Medical History: [Provide relevant family medical history or write 'None']
+
+PHYSICAL EXAMINATION:
+
+Height: [Student's Height]
+Weight: [Student's Weight]
+BMI: [Student's BMI]
+Blood Pressure: [Student's Blood Pressure Reading]
+Pulse: [Student's Pulse Reading]
+Vision: [Student's Vision Test Results]
+
+MUSCULOSKELETAL EVALUATION:
+
+Head/Neck/Spine: [Notes on any abnormalities or write 'Normal']
+Shoulders/Arms: [Notes on any abnormalities or write 'Normal']
+Elbows/Forearms/Wrists/Hands: [Notes on any abnormalities or write 'Normal']
+Hips/Thighs: [Notes on any abnormalities or write 'Normal']
+Knees: [Notes on any abnormalities or write 'Normal']
+Legs/Ankles/Feet: [Notes on any abnormalities or write 'Normal']
+
+CARDIOVASCULAR EVALUATION:
+
+Heart Sounds: [Notes on any abnormalities or write 'Normal']
+Pulse Quality: [Notes on any abnormalities or write 'Normal']
+Murmurs: [Notes on any abnormalities or write 'None']
+
+RESPIRATORY EVALUATION:
+
+Lung Sounds: [Notes on any abnormalities or write 'Normal']
+Respiratory Effort: [Notes on any abnormalities or write 'Normal']
+
+CLEARANCE STATUS:
+
+[Based on the above findings, indicate if the student is cleared for athletic participation or not]
+
+Physician's Name: [Physician's Name]
+Physician's Signature: [Physician's Signature]
+Date: [Date of Examination]
+Physician's <SSN>: [Physician SSN Placeholder]
+
+Please note that the provided information, including <SSN> placeholders, is for illustrative purposes only and does not represent any real individuals' sensitive data.

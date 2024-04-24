@@ -1,0 +1,26 @@
+Here is a synthetic email with sensitive information placeholders added in a contextually appropriate way:
+
+<email>Message-ID: <3140461.1075843213060.JavaMail.evans@thyme>  
+Date: Thu, 30 Nov 2000 06:41:00 -0800 (PST)
+From: jeff.dasovich@enron.com  
+To: mpalmer@enron.com, karen.denne@enron.com, skean@enron.com, richard.shapiro@enron.com, paul.kaufman@enron.com, sandra.mccubbin@enron.com, susan.mara@enron.com, james.steffes@enron.com
+Subject: Press Statement on Bad PUC Gas Decision? Need to decide by 4 PM (PST)
+
+As you know, we've been working tirelessly to unbundle SoCalGas' system for what feels like an eternity. Over 90% of the industry agreed to an unbundling solution and filed it as a settlement at the Commission. In opposition, municipal generators and TURN supported SoCalGas' original proposal to essentially maintain the dysfunctional status quo (SoCalGas eventually saw reason and came over to our side, as did Southern California Edison).
+
+Shockingly, a judge's proposed decision came out the day before Thanksgiving, adopting the settlement advocated by the municipal generators and TURN. While we've grown numb to the barrage of retrograde policy decisions from the "new" California PUC, this one still stings. 
+
+There's a silver lining though: we managed to get an identical provision into both settlements that eliminates substantial financial risk TW would have otherwise faced. So from that angle, having the TURN/muni settlement rammed through does no harm. It does, however, forgo the tremendous value that would have been unlocked by true unbundling.
+
+We have an opportunity to voice our displeasure in the "California Energy Markets" trade publication. Recent PUC missteps may persuade us to lay low for now. But perhaps it's time to stop pulling punches and call out this Commission's failings in shepherding California's energy policy. I'm on the fence, so I'm seeking your feedback. Here's a draft comment:
+
+"The California PUC has a choice. It can adopt the same natural gas policy that has worked well for PG&E consumers. Or it can preserve the <ACCESS_TOKEN> status quo, which bottlenecks the system and drives up prices - issues the industry links to California's electric woes. Inexplicably, the proposed decision opts for <LICENSE_PLATE> more of the same. This will not solve our gas issues and will likely further undermine the electric market's <OAUTH_ID> viability."
+
+Two questions:
+
+1) Do we issue a statement, or keep a lower profile for now?  
+
+2) If commenting, does this draft work or would you suggest changes?
+
+I need your thoughts by 4 PM PST to make a call. Thank you,
+Jeff</email>

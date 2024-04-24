@@ -1,0 +1,106 @@
+```
+Mobile BFF Service Documentation
+
+Introduction
+The Mobile BFF Service is a Backend for Frontend (BFF) microservice designed to serve as an intermediary layer between the mobile frontend application and the backend systems. Its primary purpose is to optimize the communication between the frontend and backend by providing a unified API tailored specifically for the mobile application's needs. This includes aggregating data from multiple backend services, transforming responses to a format optimized for mobile devices, and handling authentication and authorization for frontend requests.
+
+Authentication
+The Mobile BFF Service is responsible for authenticating and authorizing requests from the mobile frontend application. It supports two authentication methods:
+
+1. OAuth 2.0
+   - The mobile frontend application must obtain an access token from an OAuth 2.0 server.
+   - The access token should be included in the `Authorization` header of each request, prefixed with the token type (e.g., `Bearer <ACCESS_TOKEN>`).
+   - Example: `Authorization: Bearer <ACCESS_TOKEN>`
+
+2. API Key
+   - The mobile frontend application is assigned a unique API key.
+   - The API key must be included in the `X-API-Key` header of each request.
+   - Example: `X-API-Key: <OAUTH_ID>`
+
+API Endpoints
+The Mobile BFF Service exposes the following API endpoints:
+
+1. `GET /v1/mobile/home`
+   - Retrieves data for the home screen of the mobile application.
+   - Aggregates data from multiple backend services, including featured products, promotions, and user-specific recommendations.
+   - Example Response:
+     ```json
+     {
+       "featuredProducts": [...],
+       "promotions": [...],
+       "recommendations": [...]
+     }
+     ```
+
+2. `GET /v1/mobile/product/{productId}`
+   - Retrieves detailed information for a specific product.
+   - Combines data from the product catalog, inventory, and pricing services.
+   - Example Response:
+     ```json
+     {
+       "id": "1234",
+       "name": "Product Name",
+       "description": "Product Description",
+       "price": 19.99,
+       "inStock": true
+     }
+     ```
+
+3. `GET /v1/mobile/cart`
+   - Retrieves the user's current shopping cart.
+   - Fetches cart data from the backend cart service.
+   - Example Response:
+     ```json
+     {
+       "items": [
+         {
+           "productId": "1234",
+           "quantity": 2
+         },
+         {
+           "productId": "5678",
+           "quantity": 1
+         }
+       ]
+     }
+     ```
+
+4. `POST /v1/mobile/cart`
+   - Adds an item to the user's shopping cart.
+   - Sends a request to the backend cart service to update the cart.
+   - Example Request Body:
+     ```json
+     {
+       "productId": "1234",
+       "quantity": 1
+     }
+     ```
+
+5. `DELETE /v1/mobile/cart/{itemId}`
+   - Removes an item from the user's shopping cart.
+   - Sends a request to the backend cart service to update the cart.
+
+Request Aggregation
+The Mobile BFF Service aggregates data from multiple backend services to provide a unified response tailored for the mobile frontend application. This includes:
+
+- Combining data from the product catalog, inventory, and pricing services to retrieve detailed product information.
+- Fetching user-specific recommendations from the recommendation engine.
+- Retrieving cart data from the backend cart service.
+
+Response Transformation
+The Mobile BFF Service transforms the responses from the backend services into a format optimized for mobile devices. This includes:
+
+- Removing unnecessary data to reduce payload size.
+- Restructuring data for better readability and performance on mobile devices.
+- Applying mobile-specific data formatting and transformations.
+
+Error Handling
+The Mobile BFF Service implements robust error handling mechanisms to provide a consistent and user-friendly experience for the mobile frontend application. This includes:
+
+- Handling errors from backend services and mapping them to appropriate error codes and messages.
+- Logging and monitoring errors for better visibility and debugging.
+- Returning standardized error responses to the mobile frontend application.
+
+Summary
+The Mobile BFF Service is a crucial component in the overall architecture, acting as a bridge between the mobile frontend application and the backend systems. It provides a unified and optimized API tailored specifically for the mobile application's needs, handling authentication, authorization, request aggregation, response transformation, and error handling. By implementing the BFF pattern, the Mobile BFF Service improves the overall performance, security, and user experience of the mobile application.
+```

@@ -1,0 +1,46 @@
+```
+New Employee Onboarding Documentation
+[DESIGN AGENCY NAME]
+
+Introduction:
+Welcome to [DESIGN AGENCY NAME]! We are thrilled to have you on board as our newest team member. This onboarding documentation will guide you through the necessary steps to get set up with our design software, project management tools, and finance department procedures. Please follow the instructions carefully and do not hesitate to reach out to your manager or the IT support team if you encounter any issues.
+
+Design Software Installation:
+At [DESIGN AGENCY NAME], we use [DESIGN SOFTWARE NAME] as our primary design tool. To install the software on your work computer, follow these steps:
+
+1. Visit [DESIGN SOFTWARE WEBSITE] and click on the "Download" button.
+2. Select the appropriate version compatible with your operating system.
+3. Run the downloaded installer and follow the on-screen instructions.
+4. Once the installation is complete, launch the software.
+5. You will be prompted to enter your <USERNAME> and <PASSWORD>. These credentials will be provided to you by our IT department.
+6. Ensure that you keep your <PASSWORD> confidential and do not share it with anyone.
+
+Note: If you encounter any issues during the installation process, please contact our IT support team at [IT SUPPORT EMAIL].
+
+Project Management Tool Access:
+To collaborate effectively with our team and manage projects efficiently, we use [PROJECT MANAGEMENT TOOL NAME]. Here's how to gain access:
+
+1. Visit [PROJECT MANAGEMENT TOOL WEBSITE].
+2. Click on the "Sign Up" or "Create Account" button.
+3. Follow the on-screen instructions to create your account, using your [DESIGN AGENCY NAME] email address.
+4. Once your account is created, you will receive an invitation to join the [DESIGN AGENCY NAME] workspace.
+5. Accept the invitation, and you will have full access to our projects, tasks, and communication channels.
+
+Finance Department Contact Information:
+To ensure a smooth payroll setup process, you will need to provide your <BANK_ACCOUNT_NUMBER> to our finance department. Please follow these steps:
+
+1. Locate your <BANK_ACCOUNT_NUMBER> from your bank statement or online banking portal.
+2. Compose an email to [FINANCE DEPARTMENT EMAIL] with the subject line "New Employee Payroll Setup."
+3. In the email body, include your full name, hire date, and <BANK_ACCOUNT_NUMBER>.
+4. Attach any additional documents required by the finance department, such as tax forms or identification documents.
+5. Send the email, and our finance team will process your payroll setup accordingly.
+
+Important: Please exercise caution when sharing sensitive information like <BANK_ACCOUNT_NUMBER>. Never disclose such information to unauthorized parties or through unsecured channels.
+
+Conclusion:
+We hope this onboarding documentation has provided you with the necessary information to get started at [DESIGN AGENCY NAME]. If you have any further questions or need assistance, please do not hesitate to reach out to your manager or the appropriate department.
+
+Welcome aboard, and we look forward to your contributions!
+
+[DESIGN AGENCY NAME]
+```

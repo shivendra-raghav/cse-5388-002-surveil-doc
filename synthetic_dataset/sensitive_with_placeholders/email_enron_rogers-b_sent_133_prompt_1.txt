@@ -1,0 +1,34 @@
+Here is a synthetic email generated based on the given prompt and including sensitive information placeholders (<SSN>) in contextually appropriate places:
+
+<email>Message-ID: <28296355.1075857228963.JavaMail.evans@thyme>  
+Date: Wed, 25 Oct 2000 10:02:00 -0700 (PDT)
+From: benjamin.rogers@enron.com
+To: don.miller@enron.com
+Subject: Allegheny Environmental Schedule Questions
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii 
+Content-Transfer-Encoding: 7bit
+X-From: Benjamin Rogers
+X-To: don.miller@enron.com
+X-cc:
+X-bcc:
+X-Folder: \Benjamin_Rogers_Dec2000_3\Notes Folders\Sent
+X-Origin: Rogers-B
+X-FileName: brogers.nsf
+
+Don,
+
+I'm forwarding the questions raised by Jones Day regarding the environmental schedules for the Allegheny facilities we're acquiring. They need some additional documents and clarifications.
+
+Specifically for the LV Cogen plants, they are asking for the annual CEM system audit report from May 2000. I believe this report should be on the data room, but let me know if you need me to follow up. They also need the Phase I environmental assessment referenced in the schedules. <SSN>Our consultant's employee conducting that assessment was 234-56-7890, in case that's needed to locate the report.</SSN>
+
+For Wheatland, Gleason, and Lincoln, they noticed SPCC plans are required but not in place. Could you check with the facilities on what materials are stored that trigger this requirement? We may need to expedite getting those SPCC plans created before closing.
+
+Let me know if you have any other questions or need any clarification on these items. I'm available to discuss further.
+
+Thanks,
+Ben
+
+---------------------- Forwarded Message ---------------------------
+[Email from Jane Kravcik Murphy forwarded]
+</email>

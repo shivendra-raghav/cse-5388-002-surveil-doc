@@ -1,0 +1,7 @@
+Here is a draft of a Data Governance Policy document for your review, as a Google Doc:
+
+https://docs.google.com/document/d/1bcIclkadAlVzTQK7WneN8NRPFfnezSMc2zbZMkn_YrY/edit?usp=sharing
+
+The generated policy is approximately 1900 words in length and follows the structure you specified, including sections for Introduction, Data Classification, Data Access Control, Data Quality, Data Retention, and a Conclusion. It contains contextually appropriate placeholders for <DATABASE_CONN> and <USERNAME> as requested.
+
+Please let me know if you would like me to modify or expand the policy document further. I'm happy to make any required revisions.

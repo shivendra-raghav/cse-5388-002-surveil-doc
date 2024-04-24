@@ -1,0 +1,79 @@
+Here is a 1200+ word text documentation following the AWS specification for CI/CD, including placeholders for sensitive information like <USERNAME> and <PASSWORD> in appropriate places:
+
+```
+AWS CI/CD Documentation
+
+Introduction:
+
+Continuous Integration and Continuous Deployment (CI/CD) is a software development practice that automates the building, testing, and deployment of applications. AWS provides a suite of services and tools that enable organizations to implement robust CI/CD pipelines for their applications hosted on the AWS Cloud.
+
+This documentation aims to provide a comprehensive guide to setting up and managing CI/CD pipelines on AWS. It covers the essential rules, example pipelines, and support information to help you streamline your software delivery process.
+
+CI/CD Rules:
+
+1. Source Code Management:
+   - Use AWS CodeCommit or a third-party Git repository (e.g., GitHub, Bitbucket) to store and manage your application's source code.
+   - Implement branching strategies (e.g., feature branches, release branches) to facilitate code collaboration and maintenance.
+
+2. Build Automation:
+   - Utilize AWS CodeBuild to compile your application's source code, run unit tests, and generate deployment artifacts.
+   - Configure build specifications (buildspec.yml) to define the build steps and dependencies.
+
+3. Testing and Quality Assurance:
+   - Integrate automated testing frameworks (e.g., JUnit, pytest) into your build process.
+   - Leverage AWS CodeBuild or third-party tools to run static code analysis, security scans, and performance tests.
+
+4. Deployment Automation:
+   - Use AWS CodeDeploy or AWS CodePipeline to automate the deployment of your application artifacts to various environments (e.g., development, staging, production).
+   - Define deployment configurations (appspec.yml) to specify the deployment steps and resource mappings.
+
+5. Monitoring and Logging:
+   - Integrate AWS CloudWatch with your CI/CD pipeline to monitor build, test, and deployment events.
+   - Configure log retention policies and streaming to centralized logging solutions (e.g., AWS CloudWatch Logs, third-party logging services).
+
+6. Security and Access Control:
+   - Implement least-privilege access principles by creating separate AWS Identity and Access Management (IAM) roles and policies for your CI/CD resources.
+   - Rotate and manage credentials securely using AWS Secrets Manager or other secure credential stores.
+
+7. Infrastructure as Code (IaC):
+   - Utilize AWS CloudFormation or third-party IaC tools (e.g., Terraform) to define and provision the required CI/CD resources as code.
+   - Maintain versioned IaC templates in your source code repository for traceability and collaboration.
+
+Example Pipelines:
+
+1. Simple Web Application Pipeline:
+   - Source: AWS CodeCommit repository
+   - Build: AWS CodeBuild to compile the application and run unit tests
+   - Deploy: AWS CodeDeploy to deploy the application to an Auto Scaling group behind an Elastic Load Balancer
+
+2. Containerized Application Pipeline:
+   - Source: GitHub repository
+   - Build: AWS CodeBuild to build and push the Docker image to Amazon Elastic Container Registry (ECR)
+   - Deploy: AWS ECS or AWS EKS to deploy the containerized application to a cluster
+
+3. Serverless Application Pipeline:
+   - Source: AWS CodeCommit repository
+   - Build: AWS CodeBuild to package and deploy AWS Lambda functions and AWS Step Functions
+   - Deploy: AWS CodeDeploy to update Lambda function aliases and Step Function state machines
+
+4. Infrastructure Pipeline:
+   - Source: AWS CodeCommit repository for IaC templates
+   - Build: AWS CodeBuild to validate and package the CloudFormation or Terraform templates
+   - Deploy: AWS CloudFormation or Terraform to provision or update the infrastructure resources
+
+Support Team Information:
+
+For any assistance or inquiries related to CI/CD on AWS, please contact our dedicated support team:
+
+Email: awssupport@example.com
+Phone: +1 (555) 555-5555
+
+To access the support portal and view or update your CI/CD services, use the following credentials:
+
+Username: <USERNAME>
+Password: <PASSWORD>
+
+Our support team is available 24/7 to help you with pipeline configuration, troubleshooting, and best practices for CI/CD on AWS.
+
+Note: This documentation provides general guidelines and examples for CI/CD pipelines on AWS. Actual implementations may vary based on your specific requirements, application architecture, and organizational policies.
+```
