@@ -1,0 +1,212 @@
+```markdown
+# Product Service Documentation
+
+## Introduction
+
+The Product Service is a GraphQL API that enables CRUD (Create, Read, Update, Delete) operations for managing products. It provides a flexible and efficient way to interact with product data through a unified GraphQL interface.
+
+## Latest Update By
+
+This documentation was last updated on May 25, 2023 by John Doe.
+
+## Maintenance Team Details
+
+The Product Service is maintained by the following team:
+
+- Team Lead: Sarah Johnson
+- Developers:
+  - Michael Brown
+  - Emily Davis
+  - David Wilson
+
+For any issues, concerns, or feature requests, please contact the team at productteam@example.com.
+
+## GraphQL Services
+
+### 1. Create a Product
+
+This mutation allows you to create a new product.
+
+**Query**
+
+```graphql
+mutation createProduct($input: CreateProductInput!) {
+  createProduct(input: $input) {
+    id
+    name
+    description
+    price
+    createdAt
+    updatedAt
+  }
+}
+```
+
+**Variables**
+
+```json
+{
+  "input": {
+    "name": "Smart Watch",
+    "description": "Intelligent wearable device with fitness tracking.",
+    "price": 199.99
+  }
+}
+```
+
+**Responses**
+
+- 200 OK: The product was created successfully.
+- 400 Bad Request: The input data is invalid or missing required fields.
+- 401 Unauthorized: Authentication failed. Provide a valid <ACCESS_TOKEN>.
+
+### 2. Update a Product
+
+This mutation allows you to update an existing product.
+
+**Query**
+
+```graphql
+mutation updateProduct($id: ID!, $input: UpdateProductInput!) {
+  updateProduct(id: $id, input: $input) {
+    id
+    name
+    description
+    price
+    updatedAt
+  }
+}
+```
+
+**Variables**
+
+```json
+{
+  "id": "prod_abc123",
+  "input": {
+    "name": "Smart Watch Pro",
+    "description": "Advanced wearable with fitness tracking and GPS.",
+    "price": 249.99
+  }
+}
+```
+
+**Responses**
+
+- 200 OK: The product was updated successfully.
+- 400 Bad Request: The input data is invalid or missing required fields.
+- 401 Unauthorized: Authentication failed. Provide a valid <ACCESS_TOKEN>.
+- 404 Not Found: The product with the specified ID was not found.
+
+### 3. List a Product
+
+This query retrieves a single product by its ID.
+
+**Query**
+
+```graphql
+query getProduct($id: ID!) {
+  product(id: $id) {
+    id
+    name
+    description
+    price
+    createdAt
+    updatedAt
+  }
+}
+```
+
+**Variables**
+
+```json
+{
+  "id": "prod_abc123"
+}
+```
+
+**Responses**
+
+- 200 OK: The product was retrieved successfully.
+- 401 Unauthorized: Authentication failed. Provide a valid <ACCESS_TOKEN>.
+- 404 Not Found: The product with the specified ID was not found.
+
+### 4. List All Products
+
+This query retrieves a list of all products.
+
+**Query**
+
+```graphql
+query listProducts {
+  products {
+    id
+    name
+    description
+    price
+    createdAt
+    updatedAt
+  }
+}
+```
+
+**Responses**
+
+- 200 OK: The products were retrieved successfully.
+- 401 Unauthorized: Authentication failed. Provide a valid <ACCESS_TOKEN>.
+
+### 5. Delete a Product
+
+This mutation allows you to delete an existing product.
+
+**Query**
+
+```graphql
+mutation deleteProduct($id: ID!) {
+  deleteProduct(id: $id) {
+    id
+    name
+    description
+    price
+    deletedAt
+  }
+}
+```
+
+**Variables**
+
+```json
+{
+  "id": "prod_abc123"
+}
+```
+
+**Responses**
+
+- 200 OK: The product was deleted successfully.
+- 401 Unauthorized: Authentication failed. Provide a valid <ACCESS_TOKEN>.
+- 404 Not Found: The product with the specified ID was not found.
+
+## Rate Limit
+
+The Product Service has a rate limit of 100 requests per minute per client. If the rate limit is exceeded, the following response will be returned:
+
+- 503 Service Unavailable: You have exceeded the rate limit. Please try again later.
+
+## Error Handling
+
+The Product Service uses the following HTTP status codes for error handling:
+
+- 400 Bad Request: The request is malformed or missing required parameters.
+- 401 Unauthorized: Authentication failed. Provide a valid <ACCESS_TOKEN>.
+- 403 Forbidden: The client does not have permission to perform the requested operation.
+- 404 Not Found: The requested resource was not found.
+- 500 Internal Server Error: An unexpected error occurred on the server.
+- 501 Not Implemented: The requested operation is not implemented.
+- 502 Bad Gateway: The server received an invalid response from an upstream server.
+- 504 Gateway Timeout: The server did not receive a timely response from an upstream server.
+
+## Summary
+
+The Product Service provides a comprehensive GraphQL API for managing products. It supports creating, updating, listing, and deleting products through a unified interface. Authentication is required for all operations, and clients must provide a valid <ACCESS_TOKEN>. The service also includes rate limiting and error handling mechanisms to ensure reliable and secure operation.
+```

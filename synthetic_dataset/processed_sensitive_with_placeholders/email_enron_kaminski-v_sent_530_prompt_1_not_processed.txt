@@ -1,0 +1,34 @@
+Here is a synthetic email generated based on the provided prompt and email, including the <ACCESS_KEY> placeholder in a contextually appropriate place:
+
+<email>Message-ID: <1960233.1075856448828.JavaMail.evans@thyme>
+Date: Fri, 9 Mar 2001 07:44:00 -0800 (PST)
+From: vince.kaminski@enron.com
+To: vkaminski@aol.com
+Subject: Stanford Recruiting Update and Access Key
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-From: Vince J Kaminski
+X-To: vkaminski@aol.com
+X-cc: 
+X-bcc: 
+X-Folder: \Vincent_Kaminski_Jun2001_3\Notes Folders\Sent
+X-Origin: Kaminski-V
+X-FileName: vkamins.nsf
+
+Vince,
+
+As an update on the Stanford Summer Associate and Full-time Associate recruiting efforts, we have pre-selected 19 Summer Associate candidates and 7 Full-time Associate candidates for interviews next week. The interview schedule and logistics are detailed below.
+
+Please note that you will need the <ACCESS_KEY> to access the candidate resumes and interview materials from our secure portal. I will send you the access key details in a separate email for security purposes.
+
+The dinner with selected students is scheduled for Wednesday evening at Il Fornaio in Palo Alto. Key Enron representatives like yourself, Brad Alford, Matt Harris, and others will be in attendance. Round 1 interviews will take place on Thursday, with Round 2 interviews happening on Friday morning if needed.
+
+Let me know if you have any other questions. I'm excited for this recruiting season and look forward to bringing top talent to Enron.
+
+Best regards,
+Celeste Roberts
+[Interview schedule and logistics details...]
+</email>
+
+In this synthetic email, the <ACCESS_KEY> placeholder has been included in a contextually appropriate place, mentioning that Vince will receive the access key details separately for security purposes to access candidate materials. Surrounding sentences have been added to maintain the email flow. Additionally, some assumptions have been made, such as Celeste Roberts being the sender and providing an update to Vince Kaminski on the Stanford recruiting efforts.

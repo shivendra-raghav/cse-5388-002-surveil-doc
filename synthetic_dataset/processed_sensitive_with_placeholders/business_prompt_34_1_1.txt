@@ -1,0 +1,62 @@
+Title: Insider Trading Policy
+
+I. Introduction
+
+Acme Enterprises is committed to maintaining the highest standards of ethical conduct and promoting a culture of integrity, accountability, and transparency. Insider trading not only violates the trust placed in our employees, officers, and directors but also constitutes a serious breach of securities laws and regulations. This Insider Trading Policy outlines the company's guidelines and expectations regarding the trading of securities, with the aim of preventing insider trading and ensuring compliance with applicable laws and regulations.
+
+II. Definition of Insider Trading
+
+Insider trading refers to the buying or selling of a company's securities by individuals with access to material, non-public information about the company. Material information is any information that a reasonable investor would consider important in making investment decisions. Non-public information is any information that has not been widely disseminated to the general public.
+
+Examples of material, non-public information may include, but are not limited to:
+
+- Financial results or projections
+- Significant changes in management or operational structure
+- Pending or potential mergers, acquisitions, or divestitures
+- Developments regarding major contracts, products, or services
+- Significant litigation or regulatory investigations
+
+Insider trading is illegal and can lead to severe civil and criminal penalties for individuals and companies involved.
+
+III. Prohibited Activities
+
+All employees, officers, directors, and their immediate family members are prohibited from engaging in the following activities:
+
+1. Trading in Acme Enterprises securities while in possession of material, non-public information about the company.
+2. Sharing or "tipping" material, non-public information with others, including family members, friends, or business associates, who may trade based on such information.
+3. Engaging in transactions involving derivative securities (e.g., options, warrants, or convertible securities) related to Acme Enterprises securities while in possession of material, non-public information.
+4. Engaging in hedging or monetization transactions involving Acme Enterprises securities, such as zero-cost collars or forward sale contracts.
+
+IV. Pre-Clearance Procedures
+
+To mitigate the risk of inadvertent insider trading, Acme Enterprises has implemented a pre-clearance process for certain transactions involving the company's securities. The following individuals are required to obtain pre-clearance from the Legal and Compliance Department before engaging in any transaction involving Acme Enterprises securities:
+
+- Executive officers
+- Members of the Board of Directors
+- Key employees designated by the Legal and Compliance Department
+
+To obtain pre-clearance, individuals should submit a request to the Legal and Compliance Department by emailing LegalCompliance@acmeenterprises.com or calling <PASSWORD>. The request should include the nature of the proposed transaction, the number of securities involved, and any other relevant details.
+
+Pre-clearance is valid for a limited period, typically 5 business days, after which it must be renewed. If material, non-public information becomes available during the pre-clearance period, the pre-clearance will be revoked.
+
+V. Blackout Periods
+
+Acme Enterprises may implement blackout periods during which certain individuals are prohibited from trading in the company's securities. Blackout periods typically occur before the release of quarterly or annual financial results or other significant corporate events.
+
+During blackout periods, the following individuals are prohibited from trading in Acme Enterprises securities:
+
+- Executive officers
+- Members of the Board of Directors
+- Key employees designated by the Legal and Compliance Department
+
+The Legal and Compliance Department will notify affected individuals of the commencement and duration of blackout periods. Failure to comply with blackout period restrictions may result in disciplinary action, including possible termination of employment or other contractual relationships.
+
+VI. Conclusion
+
+Insider trading is a serious offense that can result in severe consequences for individuals and Acme Enterprises. All employees, officers, and directors are expected to comply with this Insider Trading Policy and applicable laws and regulations.
+
+If you have any questions or concerns regarding insider trading or this policy, please contact the Legal and Compliance Department at LegalCompliance@acmeenterprises.com or <PASSWORD>.
+
+Acme Enterprises reserves the right to modify or amend this policy at any time, as deemed necessary or appropriate.
+
+By adhering to this Insider Trading Policy and promoting a culture of integrity, we can maintain the trust and confidence of our stakeholders and uphold the highest standards of ethical conduct.

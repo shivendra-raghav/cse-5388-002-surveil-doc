@@ -1,0 +1,48 @@
+Here is the updated data without tags and with sample values replacing placeholders within [] tags, while preserving placeholders with <> tags:
+
+Travel Voucher 
+
+Voucher Details:
+Voucher ID: 2468102-XYZ
+Issue Date: April 15, 2023
+Expiration Date: October 31, 2023
+Eligible Destinations: Continental United States, Canada, Mexico
+Included: 7 nights hotel stay, round-trip airfare, rental car
+Value: $2,000 USD
+
+Redemption Instructions:
+
+To redeem this voucher, please follow these steps:
+
+1. Visit our website at www.galaxytravelers.com
+2. Click on "Redeem Voucher" 
+3. Enter your <USERNAME> and <PASSWORD> to log into your account
+4. Enter the Voucher ID listed above 
+5. Select your travel dates, departure city, hotel, flight, and rental car preferences
+6. Enter your <CREDIT_CARD_NUMBER> to cover any additional fees or upgrades
+7. Complete the booking process
+
+Please have your voucher details and ID handy when redeeming. This voucher can only be redeemed for the included destinations, travel components, and values specified. Additional taxes, fees, and purchases may apply.
+
+Terms & Conditions:
+
+- Voucher is non-transferrable and non-refundable
+- Hotel, flight, rental car, and date changes may incur fees payable by credit card
+- Voucher cannot be extended past the expiration date
+- Lost or stolen vouchers cannot be replaced 
+- Voucher has no cash value and cannot be resold
+- All travel is subject to availability 
+- Galaxy Travelers reserves the right to modify these terms at any time
+- Voucher use signifies acceptance of all terms and conditions
+
+Customer Support:
+
+For any questions, issues, or to redeem over the phone, please contact Galaxy Travelers Customer Support:
+
+Phone: 1-888-GALAXY-1
+Email: support@galaxytravelers.com
+Hours: 24 hours a day, 7 days a week
+
+We strive to make your travel experience easy and enjoyable from start to finish. Our dedicated customer support team is available around the clock to assist with voucher redemption, travel planning, and any other needs. Thank you for choosing Galaxy Travelers!
+
+Travel Voucher Generated: April 15, 2023

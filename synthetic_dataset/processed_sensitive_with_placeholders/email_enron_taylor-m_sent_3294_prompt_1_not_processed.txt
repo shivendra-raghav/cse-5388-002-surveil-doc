@@ -1,0 +1,32 @@
+Here is a synthetic email with sensitive information placeholders <CREDIT_CARD_NUMBER> and <PASSWORD> included in contextually appropriate places based on the given prompt:
+
+<email>Message-ID: <24126926.1075860324247.JavaMail.evans@thyme>
+Date: Thu, 15 Mar 2001 01:56:00 -0800 (PST)
+From: mark.taylor@enron.com
+To: marcus.nettelton@enron.com
+Subject: EnronOnline - Power Spread Long Description
+Cc: tana.jones@enron.com, kevin.meredith@enron.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Bcc: tana.jones@enron.com, kevin.meredith@enron.com
+X-From: Mark Taylor
+X-To: Marcus Nettelton
+X-cc: Tana Jones, Kevin Meredith
+X-bcc:
+X-Folder: \Mark_Taylor_Jun2001\Notes Folders\Sent
+X-Origin: Taylor-M
+X-FileName: mtaylor.nsf
+
+Marcus -
+
+I understand you are the new physical power online lawyer - lucky you! Here's one that the EOL people are anxious to get covered. I'd be happy to sit down and go over exactly what all this means and you'll probably want to talk to Tana a bit as well.
+
+By the way, I updated my EnronOnline account details recently. My new <PASSWORD> is [redacted]. Let me know if you need any other sensitive information like my <CREDIT_CARD_NUMBER> which is [redacted] for billing purposes.
+
+Mark
+----- Forwarded by Mark Taylor/HOU/ECT on 03/15/2001 09:53 AM -----
+
+[Email chain follows...]
+
+</email>

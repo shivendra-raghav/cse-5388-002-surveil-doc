@@ -1,0 +1,85 @@
+Here is the updated value without tags and using the provided standards:
+
+StackPath Edge Storage Documentation
+
+Introduction
+StackPath's Edge Storage is a globally distributed object storage service designed for high performance, durability, and scalability. It enables developers to store and retrieve any amount of data from StackPath's secure global edge network. This documentation provides an overview of accessing and using StackPath Edge Storage.
+
+StackPath Edge Storage Access Details
+To access the StackPath Edge Storage service, you will need valid StackPath account credentials including a jdoe@email.com and <PASSWORD>. Your account should have the required permissions enabled for Edge Storage access.
+
+Accessing the Edge Storage Console:
+1. Go to the StackPath Customer Portal (portal.stackpath.com)
+2. Enter your jdoe@email.com and <PASSWORD> to log in
+3. Navigate to the "Edge Services" section
+4. Select "Edge Storage" to access the management console
+
+Creating Storage Buckets:
+From the Edge Storage console, you can create new storage buckets to hold your data objects. Each bucket requires a globally unique name and can have additional configuration options set such as access control and replication rules. For example, a bucket named "acme-corp-data-bucket".
+
+Uploading/Downloading Data:
+The console allows you to upload files as objects to your storage buckets as well as download objects you have previously stored. There are also options to create folders/directories and manage object metadata.
+
+The console UI provides functionality to handle most common storage operations, but more advanced usage will require the StackPath Edge Services API or CLI tools.
+
+Accessing via API:
+StackPath provides a RESTful API to programmatically access Edge Storage along with other services. To authenticate requests, you'll need to provide your StackPath <ACCESS_KEY> credentials.
+
+Example Python code for uploading an object:
+
+```python
+import requests
+
+access_key = "<ACCESS_KEY>"  
+file_path = "/path/to/file.txt"
+
+url = "https://api.stackpathstorage.com/acme-corp-data-bucket/docs/report.pdf"
+headers = {"Authorization": f"Bearer {access_key}"}
+
+with open(file_path, "rb") as file:
+    response = requests.put(url, headers=headers, data=file)
+
+print(response.status_code)
+```
+
+Make sure to store and rotate your <ACCESS_KEY> securely, as it provides full control over your StackPath account resources.
+
+Edge Rules
+One of the key capabilities of StackPath Edge Storage is the ability to configure edge rules and behaviors. These determine how data is cached, secured, transformed and delivered from StackPath's global edge locations close to your users.  
+
+Common use cases for edge rules include:
+
+- Setting cache control headers to optimize performance 
+- Adding security headers to prevent vulnerabilities
+- Compressing/decompressing files on the edge
+- Blocking or challenging requests based on criteria
+- Redirecting URLs 
+- Adjusting response headers/status codes
+
+Edge rules can be configured in a few different ways:
+1. Through the Customer Portal UI
+2. Via Edge Rules API endpoints  
+3. Using StackPath's edge configuration language (ECL) files
+
+The rules follow a deterministic order of execution and inheritance model. More granular edge rules targeting specific files/paths take precedent over general bucket rules.
+
+Data Replication 
+StackPath's Edge Storage automatically replicates all data objects across multiple geographic regions and availability zones to provide high durability and availability. Data is continuously replicated asynchronously between StackPath's edge locations as it is added or updated.
+
+Replication occurs within a single "storage region" grouping of edge locations. Within each storage region, StackPath maintains multiple replicas of data across independent edge clusters and data centers to protect against individual location failures. The default storage region provides multi-regional replication across North America and Europe.
+
+For customers with compliance requirements around data residency, it's possible to configure a storage region mapped only to a single country or geographic area. For example, a German company may configure a storage region limited to Germany to comply with data privacy laws. Data can be replicated across multiple local zones while staying within specified boundaries.
+
+Replication status can be monitored through logging/metrics from the StackPath customer portal or API. Configurable cross-region replication policies allow automated copying of data between storage regions as well.
+
+Additional Features:
+- Object versioning and archiving
+- Object locking for WORM compliance
+- Storage event notifications and webhooks
+- Bucket access logging 
+- Lifecycle management policies
+
+Professional Services:
+StackPath's solution architects and support team are available for any questions or to assist with more complex configurations and requirements around StackPath Edge Storage.
+
+For more details and technical specifications, please refer to the StackPath documentation portal: https://stackpath.com/docs

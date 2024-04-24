@@ -1,0 +1,136 @@
+# Subscription Service API Documentation
+
+## Introduction
+
+The Subscription Service API is a RESTful microservice that provides operations for managing user subscriptions to various products. It allows clients to create, update, retrieve, list, search, resume, and delete subscriptions. This documentation outlines the API endpoints, authentication methods, error handling strategies, usage limits, and contact support information.
+
+## Authentication
+
+The Subscription Service API uses Bearer Token Authentication for securing the endpoints. Clients must include a valid access token in the `Authorization` header for all API requests, except for the authentication endpoint itself.
+
+```
+Authorization: Bearer <ACCESS_TOKEN>
+```
+
+To obtain an access token, clients must authenticate with the authentication service and provide valid credentials. The authentication process is outside the scope of this documentation.
+
+## Endpoints
+
+### POST /v1/subscriptions
+
+Create a new subscription.
+
+**Request Body**
+
+```json
+{
+  "userId": "user456",
+  "productId": "prod789",
+  "startDate": "2023-06-15",
+  "endDate": "2024-06-14"
+}
+```
+
+**Responses**
+
+- `201 Created`: Subscription created successfully.
+- `400 Bad Request`: Invalid request body or missing required fields.
+- `401 Unauthorized`: Invalid or missing access token.
+
+### POST /v1/subscriptions/:id
+
+Update an existing subscription.
+
+**Request Body**
+
+```json
+{
+  "endDate": "2024-12-31"
+}
+```
+
+**Responses**
+
+- `200 OK`: Subscription updated successfully.
+- `400 Bad Request`: Invalid request body or missing required fields.
+- `401 Unauthorized`: Invalid or missing access token.
+- `404 Not Found`: Subscription not found.
+
+### GET /v1/subscriptions/:id
+
+Retrieve details of a specific subscription.
+
+**Responses**
+
+- `200 OK`: Subscription details returned successfully.
+- `401 Unauthorized`: Invalid or missing access token.
+- `404 Not Found`: Subscription not found.
+
+### GET /v1/subscriptions
+
+List all active subscriptions.
+
+**Responses**
+
+- `200 OK`: List of subscriptions returned successfully.
+- `401 Unauthorized`: Invalid or missing access token.
+
+### DELETE /v1/subscriptions/:id
+
+Delete a subscription.
+
+**Responses**
+
+- `204 No Content`: Subscription deleted successfully.
+- `401 Unauthorized`: Invalid or missing access token.
+- `404 Not Found`: Subscription not found.
+
+### POST /v1/subscriptions/:id/resume
+
+Resume a canceled or expired subscription.
+
+**Responses**
+
+- `202 Accepted`: Subscription resumption initiated.
+- `401 Unauthorized`: Invalid or missing access token.
+- `404 Not Found`: Subscription not found.
+- `405 Method Not Allowed`: Subscription cannot be resumed in its current state.
+
+### GET /v1/subscriptions/search
+
+Search for subscriptions based on various filters.
+
+**Query Parameters**
+
+- `userId`: Filter by user ID.
+- `productId`: Filter by product ID.
+- `status`: Filter by subscription status (active, canceled, expired).
+
+**Example**
+
+```
+curl -X GET "https://api.example.com/v1/subscriptions/search?userId=user456&status=active" \
+     -H "Authorization: Bearer <ACCESS_TOKEN>"
+```
+
+**Responses**
+
+- `200 OK`: Search results returned successfully.
+- `400 Bad Request`: Invalid query parameters.
+- `401 Unauthorized`: Invalid or missing access token.
+
+## Error Handling
+
+The Subscription Service API returns standard HTTP status codes to indicate the success or failure of an operation. In case of errors, the API response will include a descriptive error message in the response body.
+
+## API Usage Limits
+
+The Subscription Service API enforces rate limiting to prevent abuse and ensure fair usage. Clients are limited to a maximum of 100 requests per minute. If the rate limit is exceeded, the API will return a `429 Too Many Requests` response.
+
+## Contact Support
+
+If you encounter any issues or have questions regarding the Subscription Service API, please contact our support team at `support@acmecorp.com`.
+
+## Summary
+
+The Subscription Service API provides a comprehensive set of endpoints for managing user subscriptions to various products. It follows industry-standard authentication and error handling practices, ensuring secure and reliable operations. Clients can leverage this API to build robust subscription management systems while adhering to the documented usage limits and contacting support for any assistance.

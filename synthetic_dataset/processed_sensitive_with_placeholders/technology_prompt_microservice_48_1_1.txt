@@ -1,0 +1,67 @@
+```markdown
+# Inventory Adapter Service Documentation
+
+## Introduction
+
+The Inventory Adapter Service is a microservice designed to facilitate communication between the internal Inventory Service and an external Warehouse Management System (WMS) operated by [Logistics Inc.]. It acts as an intermediary, translating requests and responses between the two systems to ensure seamless integration and compatibility.
+
+The primary purpose of this service is to adapt the Inventory Service to work with the external WMS, enabling efficient management of inventory data and stock levels across different systems.
+
+## Authentication
+
+To ensure secure communication and protect sensitive data, the Inventory Adapter Service requires authentication for both the internal Inventory Service and the external WMS.
+
+### Internal Inventory Service Authentication
+
+The internal Inventory Service authentication is handled through a secure token-based mechanism. When making requests to the Inventory Adapter Service, you must include the token in the `Authorization` header:
+
+```
+Authorization: Bearer <TOKEN>
+```
+
+Replace `<TOKEN>` with the appropriate authentication token provided by the Inventory Service.
+
+### External WMS Authentication
+
+The external WMS requires basic authentication with a username and password. When making requests to the Inventory Adapter Service that involve the external WMS, you must include the credentials in the `Authorization` header using the Basic Authentication scheme:
+
+```
+Authorization: Basic <BASE64_ENCODED_CREDENTIALS>
+```
+
+Replace `<BASE64_ENCODED_CREDENTIALS>` with the base64-encoded version of `wmsuser:Abc123!@#` provided by the WMS.
+
+**Important:** Be careful not to leak sensitive information such as <USERNAME> or <PASSWORD> when handling authentication credentials.
+
+## Adapter Service
+
+The Inventory Adapter Service exposes the following endpoints:
+
+- `GET /v1/inventory/{productId}`: Retrieves the inventory level for a given product.
+- `POST /v1/inventory/{productId}/quantity`: Updates the inventory quantity for a given product.
+- `PUT /v1/inventory/{productId}/quantity`: Updates the inventory quantity for a given product.
+- `DELETE /v1/inventory/{productId}`: Removes a product from the inventory.
+
+## External Service
+
+The external Warehouse Management System (WMS) provided by [Logistics Inc.] offers the following endpoints:
+
+- `GET /api/warehouse/stock/{sku}`: Retrieves the stock level for a given product SKU.
+- `POST /api/warehouse/stock/{sku}/adjust`: Adjusts the stock level for a given product SKU.
+- `PUT /api/warehouse/stock/{sku}/adjust`: Adjusts the stock level for a given product SKU.
+- `DELETE /api/warehouse/stock/{sku}`: Removes a product from the warehouse.
+
+## Interface Translation
+
+The Inventory Adapter Service acts as a client adapter, translating requests from the internal Inventory Service to the external WMS interface, and vice versa. It handles the mapping between product identifiers (product ID and SKU) and the necessary data transformations required for successful communication.
+
+## Data Mapping
+
+The Inventory Adapter Service is responsible for mapping data between the internal Inventory Service and the external WMS. This includes converting product identifiers, inventory quantities, and other relevant data fields to ensure compatibility between the two systems.
+
+## Summary
+
+The Inventory Adapter Service is a crucial component that enables seamless integration between the internal Inventory Service and the external Warehouse Management System operated by [Logistics Inc.]. By acting as a client adapter and translating requests and responses, it allows for efficient inventory management across different systems, ensuring data consistency and compatibility.
+
+When working with the Inventory Adapter Service, it's essential to handle sensitive information, such as <USERNAME>, <PASSWORD>, and <DATABASE_CONN>, with care to prevent accidental leaks or unauthorized access.
+```

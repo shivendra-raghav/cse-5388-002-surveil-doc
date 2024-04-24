@@ -1,0 +1,60 @@
+Acme Corp Developer Onboarding Documentation
+
+Introduction:
+Welcome to Cyber Dynamics Inc.! We are thrilled to have you on board as our newest developer. This document will guide you through the necessary steps to set up your development environment, access our code repositories, and provide you with the relevant IT support contact information.
+
+Development Environment Setup:
+Setting up your development environment is crucial for your productivity and success at Cyber Dynamics Inc. Please follow these steps carefully:
+
+1. Install the required development tools:
+   - IDE (Integrated Development Environment): We recommend using IntelliJ IDEA. Download the latest version from https://www.jetbrains.com/idea/download.
+   - Version Control System: Cyber Dynamics Inc. uses Git for version control. You can download Git from https://git-scm.com/downloads.
+   - Database Management System: Our application uses PostgreSQL. Install the appropriate client from https://www.postgresql.org/download.
+
+2. Configure your IDE:
+   - Open IntelliJ IDEA and navigate to the "Preferences" or "Settings" menu.
+   - Under the "Version Control" section, select "Git" and provide your Git installation path.
+   - In the "Build, Execution, Deployment" section, configure the appropriate settings for Java and PostgreSQL.
+
+3. Set up your development environment variables:
+   - Open the system environment variables editor (search for "Environment Variables" on Windows or use the terminal on macOS/Linux).
+   - Add the following environment variables:
+     - JAVA_HOME: /path/to/jdk
+     - POSTGRES_PATH: /path/to/postgres/bin
+     - APP_SECRET_KEY: 1234567890abcdef
+
+4. Log in to the development tools:
+   - Open a web browser and navigate to https://devtools.cyberdynamics.com.
+   - Enter your <USERNAME> and <PASSWORD> provided by IT to access the development tools.
+
+Code Repository Access:
+At Cyber Dynamics Inc., we use a centralized code repository hosted on GitLab. Follow these steps to gain access to our codebase:
+
+1. Install the necessary Git client by following the instructions in the "Development Environment Setup" section.
+
+2. Open a terminal or command prompt and navigate to the directory where you want to clone the repository.
+
+3. Run the following command to clone the repository:
+   ```
+   git clone https://gitlab.com/cyberdynamics/main-app.git
+   ```
+
+4. When prompted, enter your <USERNAME> and <PASSWORD> to authenticate with GitLab.
+
+5. Once the cloning process is complete, you should have a local copy of the codebase on your machine.
+
+IT Support Contact Information:
+If you encounter any issues during the onboarding process or need further assistance, please reach out to our IT support team. Here are the relevant contact details:
+
+- IT Support Email: itsupport@cyberdynamics.com
+- IT Support Phone: 555-123-4567
+- IT Support Ticketing System: https://support.cyberdynamics.com
+
+Additional Information:
+- For new hires, please submit your <SSN> (Social Security Number) to the HR department for background verification purposes. This is a mandatory step before you can begin working on any projects.
+- Refer to the https://cyberdynamics.com/employee-handbook for more information about Cyber Dynamics Inc.'s policies, procedures, and best practices.
+
+We hope this documentation helps you get started smoothly at Cyber Dynamics Inc. If you have any further questions or concerns, please don't hesitate to reach out to your manager or the IT support team.
+
+Best regards,
+The Cyber Dynamics Inc. Development Team

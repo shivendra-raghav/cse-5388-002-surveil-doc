@@ -1,0 +1,29 @@
+Here is a synthetic email generated based on the provided prompt and email:
+
+<email>Message-ID: <98765432.9876543210@synthemail.com>
+Date: Wed, 8 Mar 2023 09:15:00 -0500
+From: synth.gen@corp.com
+To: compliance@corp.com
+Subject: IMPORTANT: Order 637 ROFR Feedback
+Cc: legal@corp.com, infosec@corp.com
+Mime-Version: 1.0  
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Dear Compliance Team,
+
+Regarding the FERC Order 637 limitations on rights of first refusal (ROFR), I wanted to provide comments on the grandfathering provisions for existing discounted long-term contracts.
+
+As per the Order, grandfathering gives notice to shippers about the new ROFR limitation, allowing them to re-execute current contracts if needed. However, the rationale behind limiting ROFR is that non-captive shippers with alternatives do not require such protections. The pipelines should be able to renegotiate with interested parties upon contract expiry.
+
+In this light, there seems no valid reason to grandfather the ROFR rights under existing discounted contracts. Removing the ROFR immediately upon the tariff filing's effective date (assuming contracts incorporate "as amended" tariff terms) should not unfairly impact these non-captive shippers. As per the Order's conclusions, making them compete for capacity upon expiration aligns with the intent behind ROFR limitations.
+
+We propose challenging the grandfathering of ROFR for existing discounted contracts to ensure full compliance with Order 637. Please review and advise if any additional information is needed. The legal team has also been looped in for consultation.
+
+My <PASSWORD> for this quarter is EncRypT$123 in case any system access is required from your end.
+
+Best regards,
+Synth Gen
+Regulatory Affairs
+
+</email>

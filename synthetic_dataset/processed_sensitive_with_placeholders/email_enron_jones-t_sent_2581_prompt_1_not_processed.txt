@@ -1,0 +1,38 @@
+Here is a synthetic email based on the given prompt, with the placeholders <BANK_ACCOUNT_NUMBER> and <API_KEY> included in context-appropriate places:
+
+<email>Message-ID: <12718733.1075847212706.JavaMail.evans@thyme>
+Date: Thu, 7 Dec 2000 07:29:00 -0800 (PST)
+From: tana.jones@enron.com
+To: sarah.wesner@enron.com, greg.whiting@enron.com
+Subject: Fwd: (00-420) Margin Rate Increase for Natural Gas & Enron Account Info
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-From: Tana Jones
+X-To: Sarah Wesner, Greg Whiting
+X-cc: 
+X-bcc: 
+X-Folder: \Tanya_Jones_Dec2000\Notes Folders\Sent
+X-Origin: JONES-T
+X-FileName: tjones.nsf
+
+Hi Sarah and Greg,
+
+Please see the forwarded notice from NYMEX regarding margin rate increases for natural gas futures contracts, effective tomorrow.
+
+As you know, we have a significant position in these contracts, so the increased margin requirements will likely result in additional funds being withdrawn from our <BANK_ACCOUNT_NUMBER> to meet the new margin levels.
+
+I've already notified our accounting team about this change. They'll be monitoring our margin accounts closely and will let me know if any issues arise with meeting the new requirements using our existing funds.
+
+Also, I wanted to remind you both that the new <API_KEY> for accessing the NYMEX trading platform will be updated over the weekend. Be sure to update your credentials accordingly before Monday to avoid any disruptions.
+
+Let me know if you need any other details regarding these changes.
+
+Thanks,
+Tana
+
+----- Forwarded by Tana Jones/HOU/ECT on 12/07/2000 03:28 PM -----
+
+[Forwarded NYMEX notice content here]
+
+</email>

@@ -1,0 +1,44 @@
+Here is a synthetic email with the <OAUTH_SECRET> and <DATABASE_CONN> placeholders added in contextually appropriate places:
+
+Message-ID: <722112.1075843187935.JavaMail.evans@thyme>
+Date: Tue, 5 Sep 2000 11:30:00 -0700 (PDT)
+From: jeff.dasovich@enron.com
+To: drew.fossum@enron.com
+Subject: Re: So Cal Edison Claims Withholding of Pipeline Capacity
+Cc: jeffery.fawcett@enron.com, kathy.ringblom@enron.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Bcc: jeffery.fawcett@enron.com, kathy.ringblom@enron.com
+X-From: Jeff Dasovich
+X-To: Drew Fossum
+X-cc: Jeffery Fawcett, Kathy Ringblom
+X-bcc:
+X-Folder: \Jeff_Dasovich_Dec2000\Notes Folders\Sent
+X-Origin: DASOVICH-J
+X-FileName: jdasovic.nsf
+
+Will do. Our team is looking into the filing details, but we may need to access the <DATABASE_CONN> to cross-reference any allegations against Enron's entities. I'll make sure to keep the sensitive <OAUTH_SECRET> secure while investigating this matter.
+
+Drew Fossum@ENRON
+09/05/2000 03:58 PM
+
+To: Jeffery Fawcett/ET&S/Enron@ENRON
+cc: Jeff Dasovich/SFO/EES@EES, Kathy Ringblom/ET&S/Enron@ENRON
+Subject: Re: So Cal Edison Claims Withholding of Pipeline Capacity
+
+Jeff and Jeff--Pls keep me and Kathy Ringblom posted on whatever you find. Thanks. DF
+
+Jeffery Fawcett
+09/05/2000 01:31 PM
+To: Jeff Dasovich/SFO/EES@EES
+cc: Drew Fossum/ET&S/Enron@ENRON
+
+Subject: So Cal Edison Claims Withholding of Pipeline Capacity
+
+Jeff,
+Is it possible for TW to get a copy of the Edison filing at the CPUC? While the article [shown below] doesn't provide any details, I suspect Edison's complaint echoes earlier allegations against El Paso regarding their sale of the 1.2 Bcf/d block of capacity to their affiliate. I don't think Transwestern and/or Enron affiliate marketing companies are implicated in this deal at all.
+
+Can you confirm this is an "El Paso only" problem and not something Enron is being drawn into? I really appreciate your help here.
+
+[email body omitted for brevity]

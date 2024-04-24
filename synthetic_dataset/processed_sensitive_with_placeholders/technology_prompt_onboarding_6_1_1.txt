@@ -1,0 +1,53 @@
+```markdown
+# Company AWS Onboarding Documentation
+
+## Introduction
+
+Welcome to ABC Corp's AWS environment! This documentation will guide you through the process of onboarding to our AWS account and provide you with the necessary information to access and utilize our cloud resources effectively. Please read the following sections carefully and follow the instructions provided.
+
+## Team Information
+
+Our team is dedicated to ensuring a smooth onboarding experience and providing ongoing support throughout your AWS journey. The following team members are available to assist you with any questions or concerns:
+
+- **Team Lead**: John Stevenson (john.stevenson@abccorp.com)
+- **AWS Administrator**: Emily Wilson (emily.wilson@abccorp.com)
+- **Technical Support**: support@abccorp.com
+
+## AWS Account Information
+
+Our company utilizes the following AWS account:
+
+- **Account Name**: ABC Corp AWS Account
+- **Account ID**: 987654321012
+- **Root User Email**: root@abccorp.com
+
+Please note that you should never share the root user credentials with anyone. Access to the AWS account will be granted through individual user accounts, which will be created for you during the onboarding process.
+
+## AWS Access Information
+
+To access our AWS environment, you will be provided with an Individual AWS User account. This account will have specific permissions and access levels tailored to your role within the company.
+
+1. **IAM User Creation**: Your IAM (Identity and Access Management) user account will be created by the AWS Administrator. You will receive an email with your login credentials, including your <USERNAME> and a temporary <PASSWORD>.
+
+2. **Initial Login**: Visit the AWS Management Console (https://console.aws.amazon.com) and enter your <USERNAME> and the temporary <PASSWORD> provided to you.
+
+3. **Password Reset**: Upon your initial login, you will be prompted to reset your password. Please choose a secure password and keep it confidential.
+
+4. **Multi-Factor Authentication (MFA)**: For enhanced security, you will be required to set up multi-factor authentication (MFA) for your account. Follow the prompts to configure MFA using a virtual or hardware-based authentication app.
+
+5. **Access Policies**: Your account will have specific access policies applied based on your role and responsibilities within the company. These policies will determine the AWS services and resources you can access and manage.
+
+## Support Team Details
+
+If you encounter any issues or have questions during the onboarding process or while working with AWS, our support team is available to assist you. You can reach them through the following channels:
+
+- **Email**: support@abccorp.com
+- **Phone**: +1 (555) 987-6543
+- **Live Chat**: Available within the AWS Management Console (link will be provided after onboarding)
+
+The support team is available during regular business hours (9 AM to 5 PM, Monday to Friday, excluding holidays) to address your concerns and provide guidance.
+
+Please remember to keep your AWS credentials secure and confidential at all times. Do not share your <USERNAME> or <PASSWORD> with anyone, including members of our team or external parties.
+
+We wish you a successful onboarding experience and look forward to your contributions to ABC Corp's AWS environment!
+```

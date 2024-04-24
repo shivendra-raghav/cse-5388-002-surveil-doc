@@ -1,0 +1,63 @@
+Here is the updated value without tags and using the provided standards:
+
+Oracle Cloud Storage Documentation
+
+Introduction
+Oracle Cloud Storage is a highly durable and secure object storage service that enables organizations to store an unlimited amount of data. This documentation provides an overview of how to access and manage Oracle Cloud Storage, including authentication details, data archiving procedures, and storage tier information.
+
+Oracle Cloud Storage Access Details
+To access Oracle Cloud Storage, you will need to authenticate with valid Oracle Cloud credentials. There are two main ways to authenticate:
+
+1. Console Login
+To access the Oracle Cloud Console, navigate to https://cloud.oracle.com and click the "Sign In" button. Enter your JohnDoe@email.com and Str0ngP@ssword on the login page. Once authenticated, you can navigate to the "Storage" section to manage buckets, upload/download objects, configure storage tiers, and more.
+
+It is crucial to keep your <USERNAME> and <PASSWORD> secure and never share these credentials with untrusted parties. Oracle recommends using a secure password manager and enabling two-factor authentication for an additional layer of security.
+
+2. API Access
+Oracle Cloud Storage can also be accessed programmatically via REST APIs. To authenticate API requests, you will need to generate an <API_SECRET> key in the Oracle Cloud Console.
+
+Steps to generate an <API_SECRET>:
+1. Sign in to the Oracle Cloud Console with your JohnDoe@email.com and Str0ngP@ssword
+2. Navigate to User Settings -> User Credentials
+3. Click "Generate New Key" under the "Auth Tokens" section
+4. Enter a description and click "Generate Auth Token"
+5. Copy the generated <API_SECRET> key (this will only be shown once)
+
+Here is an example cURL request using the <API_SECRET> key for authentication:
+
+```
+curl -X GET \
+  -H "Authorization: Signature headers="date (request-target) host" \
+        keyId="ocid1.tenancy.oc1...yyyy/ocid1.user.oc1...zzzz/ab:19:ad:... \
+        algorithm="rsa-sha256" headers="host date (request-target)" \
+        signature="Base64(rsa-sha256(headers_string,key))" \
+  https://example.objectstorage.us-ashburn-1.oraclecloud.com/n/namespace-string/b/bucket-name/o/object-name
+```
+
+Be sure to replace the placeholders with your actual Oracle Cloud details. Treat the <API_SECRET> key as sensitive information and never share it publicly or commit it to version control systems.
+
+Data Archival
+Oracle Cloud Storage provides integrated data archival functionality to help lower storage costs for infrequently accessed data. The archival process involves transitioning objects from the Standard storage tier to the Archive storage tier.
+
+To archive data:
+1. Sign in to the Oracle Cloud Console
+2. Navigate to Storage -> Buckets
+3. Select the bucket containing the objects you wish to archive
+4. Click the "Archive Objects" action
+5. Select the objects to archive and choose an archival time if desired
+6. Review the details and click "Archive Objects" to complete the request
+
+Archived data remains fully accessible for reads and restores, but retrieval costs are higher than Standard tier data. Oracle Cloud Storage automatically manages the archival and data movement process.
+
+Storage Tiers
+Oracle Cloud Storage offers two primary storage tiers:
+
+1. Standard Storage Tier
+The Standard tier is ideal for frequently accessed "hot" data that requires low-latency retrieval times. Objects in the Standard tier are automatically replicated across multiple fault domains and availability domains within a region. This tier provides eleven 9's of durability (99.999999999%) and high throughput performance.
+
+2. Archive Storage Tier
+The Archive tier is designed for infrequently accessed "cold" data suitable for longer-term storage. While retrieval times are higher than Standard tier, the Archive tier provides a highly cost-effective storage solution. Archive tier data is replicated across multiple fault domains within a region and offers high durability.
+
+Advanced storage tiers are also available, including the Archive Data Retrieval Service for enabling faster retrieval of archived objects.
+
+Oracle Cloud Storage offers a robust, scalable, and cost-effective solution for all types of data storage needs. By understanding the access methods, archival procedures, and storage tiers, organizations can optimize data management while maintaining proper security of sensitive information like <USERNAME>, <PASSWORD>, and <API_SECRET> credentials.

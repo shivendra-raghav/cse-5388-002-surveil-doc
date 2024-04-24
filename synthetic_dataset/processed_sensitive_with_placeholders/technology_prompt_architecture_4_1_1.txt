@@ -1,0 +1,70 @@
+```markdown
+# Azure Architecture Documentation
+
+## Introduction
+
+This documentation provides an overview of the Azure services currently deployed and maintained within XYZ Corporation's Azure environment. It covers the configuration, management, and maintenance procedures for Azure SQL Database, Functions, and Azure Firewall services. The primary purpose of this document is to serve as a comprehensive reference guide for our IT operations team and ensure seamless operations and maintenance of these critical services.
+
+## Service Details
+
+### Azure SQL Database
+
+Azure SQL Database is a fully managed relational database service provided by Microsoft Azure. It offers scalable performance, high availability, and data protection features, making it an ideal choice for modern cloud-based applications.
+
+**Key Features:**
+
+- Automatic backups and point-in-time restore capabilities
+- Built-in intelligence for performance monitoring and tuning
+- Automated patching and version updates
+- Integrated security features, including Azure Active Directory authentication
+
+**Access and Management:**
+
+To access and manage the Azure SQL Database instances, authorized personnel must use the following credentials:
+
+- Admin Username: sqladmin
+- Admin Password: <PASSWORD>
+
+Additionally, the database connection string required for application connectivity is:
+
+- Connection String: <DATABASE_CONN>
+
+### Azure Functions
+
+Azure Functions is a serverless computing service provided by Microsoft Azure, allowing developers to run code on-demand without provisioning or managing servers. It supports multiple programming languages and can be triggered by various events, such as HTTP requests, timers, or other Azure services.
+
+**Key Features:**
+
+- Automatic scaling and high availability
+- Pay-per-use pricing model
+- Seamless integration with other Azure services
+- Support for multiple programming languages (e.g., C#, JavaScript, Python, PowerShell)
+
+**Access and Management:**
+
+Access to the Azure Functions service is managed through the Azure Portal or Azure CLI. Authorized personnel should refer to the Azure documentation for details on deploying, configuring, and monitoring Azure Functions.
+
+### Azure Firewall
+
+Azure Firewall is a managed, cloud-based network security service that protects your Azure Virtual Network resources. It provides centralized and intelligent threat management, filtering inbound and outbound traffic based on defined rules and policies.
+
+**Key Features:**
+
+- Centralized policy management and logging
+- Threat intelligence-based filtering
+- Application-level protection
+- Integration with Azure Monitor for logging and analytics
+
+**Access and Management:**
+
+The Azure Firewall service is configured and managed through the Azure Portal or Azure Resource Manager templates. Authorized personnel should follow the established procedures and security protocols when accessing and modifying the Azure Firewall configurations.
+
+## Last Update By
+
+This documentation was last updated by John Doe on May 15, 2023.
+
+## Support Team
+
+For any issues, questions, or assistance related to the services covered in this documentation, please contact the Azure Support Team at azuresupport@xyzcorp.com.
+
+```

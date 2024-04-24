@@ -1,0 +1,64 @@
+```
+Student Medical Record
+
+Name: John Doe
+Date of Birth: 05/12/1998
+Age: 24
+Sex: Male
+Address: 123 Main St, Cityville, State 12345
+
+Medical History:
+Appendectomy at age 15, no other major medical conditions or hospitalizations.
+
+Allergies:
+Penicillin, peanuts
+
+Medications:
+Vitamin D supplement, 1000 IU daily
+Ibuprofen as needed for pain relief
+
+Immunization Record:
+Up-to-date on all routine childhood and adolescent immunizations
+
+Family History:
+Father has type 2 diabetes, mother has hypertension
+
+Physical Examination:
+Height: 5'10"
+Weight: 165 lbs
+Blood Pressure: 120/80 mmHg
+Temperature: 98.6°F
+Pulse: 72 bpm
+Respirations: 14 breaths/min
+No abnormal findings on physical exam
+
+Laboratory Results:
+CBC, metabolic panel within normal limits as of last checkup on 01/15/2023
+
+Treatment Plan:
+No current treatment plans, follow-up annual physical scheduled for 01/2024
+
+Emergency Contacts:
+Primary Contact:
+Name: Jane Doe
+Relationship: Mother
+Phone: (555) 123-4567
+Address: 123 Main St, Cityville, State 12345
+<SSN>: [Primary Contact SSN]
+
+Secondary Contact:
+Name: John Doe Sr.
+Relationship: Father
+Phone: (555) 987-6543
+Address: 456 Oak Rd, Townville, State 67890
+<SSN>: [Secondary Contact SSN]
+
+Insurance Information:
+Provider: Acme Health Insurance
+Policy Number: ABC123456789
+Group Number: 0987
+<SSN>: [Student's SSN]
+
+Additional Notes:
+Student is generally healthy with no major medical concerns at this time.
+```

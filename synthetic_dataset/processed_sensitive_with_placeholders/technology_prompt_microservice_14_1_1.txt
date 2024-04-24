@@ -1,0 +1,133 @@
+# User Service REST API Documentation
+
+## Introduction
+The User Service is a RESTful API designed to enable Create, Read, Update, and Delete (CRUD) operations for user management. This documentation provides a comprehensive guide to the available endpoints, request/response formats, authentication mechanisms, rate limiting, error handling, and other essential details for seamless integration.
+
+## Latest Update By
+This documentation was last updated on 15/06/2023 by John Smith.
+
+## Maintenance Team Details
+The User Service is maintained by the following team:
+- Lead Developer: Jane Doe
+- Backend Developers: Michael Johnson, Emily Wilson
+- Quality Assurance: David Thompson
+
+For any inquiries or support, please contact support@acmecorp.com.
+
+## REST Services
+
+### 1. Create a User
+`POST /api/v1/users`
+
+**Request Body:**
+```json
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john.doe@example.com",
+  "password": "<PASSWORD>"
+}
+```
+
+**Responses:**
+- 201 Created: The user was successfully created.
+- 400 Bad Request: The request body is invalid or missing required fields.
+- 409 Conflict: A user with the provided email already exists.
+
+### 2. Update a User
+`PUT /api/v1/users/{userId}`
+
+**Request Body:**
+```json
+{
+  "firstName": "Jane",
+  "lastName": "Doe",
+  "email": "jane.doe@example.com"
+}
+```
+
+**Responses:**
+- 200 OK: The user was successfully updated.
+- 400 Bad Request: The request body is invalid or missing required fields.
+- 403 Forbidden: The authenticated user is not authorized to update the specified user.
+- 404 Not Found: The user with the provided userId does not exist.
+
+### 3. List a User
+`GET /api/v1/users/{userId}`
+
+**Response:**
+```json
+{
+  "id": 1,
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john.doe@example.com"
+}
+```
+
+**Responses:**
+- 200 OK: The user details were successfully retrieved.
+- 403 Forbidden: The authenticated user is not authorized to access the specified user.
+- 404 Not Found: The user with the provided userId does not exist.
+
+### 4. List All Users
+`GET /api/v1/users`
+
+**Response:**
+```json
+[
+  {
+    "id": 1,
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john.doe@example.com"
+  },
+  {
+    "id": 2,
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "email": "jane.doe@example.com"
+  }
+]
+```
+
+**Responses:**
+- 200 OK: The list of users was successfully retrieved.
+- 403 Forbidden: The authenticated user is not authorized to list all users.
+
+### 5. Delete a User
+`DELETE /api/v1/users/{userId}`
+
+**Responses:**
+- 204 No Content: The user was successfully deleted.
+- 403 Forbidden: The authenticated user is not authorized to delete the specified user.
+- 404 Not Found: The user with the provided userId does not exist.
+
+## Rate Limit
+To prevent abuse and ensure service availability, rate limiting is enforced on the User Service API. The following limits apply:
+
+- 100 requests per minute per client IP address
+- 1000 requests per hour per API key (<API_KEY>)
+
+Exceeding these limits will result in a 429 Too Many Requests response.
+
+## Authentication
+The User Service API requires authentication for certain endpoints. Clients must include an API key (<API_KEY>) in the `X-API-Key` header of their requests. Requests without a valid API key will receive a 401 Unauthorized response.
+
+## Error Handling
+The User Service API follows standard HTTP response codes for error handling:
+
+- 400 Bad Request: The request was malformed or missing required parameters.
+- 401 Unauthorized: The request lacks valid authentication credentials.
+- 403 Forbidden: The authenticated user is not authorized to perform the requested action.
+- 404 Not Found: The requested resource was not found.
+- 500 Internal Server Error: An unexpected error occurred on the server.
+- 501 Not Implemented: The requested method or endpoint is not implemented.
+- 502 Bad Gateway: The server encountered an invalid response from an upstream server.
+- 503 Service Unavailable: The service is currently unavailable due to maintenance or overload.
+- 504 Gateway Timeout: The server did not receive a timely response from an upstream server.
+
+## Summary
+The User Service REST API provides a secure and efficient way to manage user data, enabling CRUD operations with proper authentication, rate limiting, and error handling mechanisms. By following this documentation, developers can seamlessly integrate with the User Service and build robust applications.
+
+For any further assistance or inquiries, please refer to the Maintenance Team Details section.

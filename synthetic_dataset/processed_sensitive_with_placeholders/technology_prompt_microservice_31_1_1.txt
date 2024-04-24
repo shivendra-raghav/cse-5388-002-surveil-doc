@@ -1,0 +1,154 @@
+# Products Service API Documentation
+
+## Introduction
+
+The Products Service API is a RESTful microservice that provides functionality for performing CRUD (Create, Read, Update, Delete) operations on products and enabling product search capabilities. This API is designed to be used by e-commerce applications, allowing seamless integration with product management systems.
+
+## Authentication
+
+The Products Service API requires authentication for all endpoints. The following authentication methods are supported:
+
+1. **API Key Authentication**: To access the API, you must include an API key in the `X-API-Key` header of your requests. You can obtain an API key by contacting our support team or creating an account on our developer portal. Replace `<API_KEY>` with your actual API key.
+
+   ```
+   X-API-Key: Abc123!@#
+   ```
+
+2. **Basic Authentication**: Alternatively, you can use Basic Authentication by providing a username and password in the `Authorization` header. Replace `<USERNAME>` and `<PASSWORD>` with your actual credentials.
+
+   ```
+   Authorization: Basic dXNlcm5hbWU6cGFzc3dvcmQ=
+   ```
+
+## Endpoints
+
+### POST /v1/products
+
+Create a new product.
+
+**Request Body**:
+
+```json
+{
+  "name": "Smart TV",
+  "description": "4K Ultra HD LED Smart TV with HDR",
+  "price": 799.99,
+  "category": "Electronics"
+}
+```
+
+**Responses**:
+
+- `201 Created`: The product was created successfully.
+- `400 Bad Request`: The request body is invalid or missing required fields.
+- `401 Unauthorized`: Authentication credentials are missing or invalid.
+
+### POST /v1/products/:id
+
+Update an existing product.
+
+**Request Body**:
+
+```json
+{
+  "name": "Smart TV (Updated)",
+  "description": "4K Ultra HD LED Smart TV with HDR and Voice Control",
+  "price": 849.99,
+  "category": "Electronics"
+}
+```
+
+**Responses**:
+
+- `200 OK`: The product was updated successfully.
+- `400 Bad Request`: The request body is invalid or missing required fields.
+- `401 Unauthorized`: Authentication credentials are missing or invalid.
+- `404 Not Found`: The product with the specified ID was not found.
+
+### GET /v1/products/:id
+
+Retrieve a single product by its ID.
+
+**Responses**:
+
+- `200 OK`: The product was retrieved successfully.
+- `401 Unauthorized`: Authentication credentials are missing or invalid.
+- `404 Not Found`: The product with the specified ID was not found.
+
+### GET /v1/products
+
+List all products.
+
+**Responses**:
+
+- `200 OK`: The list of products was retrieved successfully.
+- `401 Unauthorized`: Authentication credentials are missing or invalid.
+
+### DELETE /v1/products/:id
+
+Delete a product by its ID.
+
+**Responses**:
+
+- `204 No Content`: The product was deleted successfully.
+- `401 Unauthorized`: Authentication credentials are missing or invalid.
+- `404 Not Found`: The product with the specified ID was not found.
+
+### GET /v1/products/search
+
+Search for products based on specified criteria.
+
+**Query Parameters**:
+
+- `name`: Search for products by name (partial or full match).
+- `category`: Search for products by category.
+- `priceMin`: Minimum price for filtering products.
+- `priceMax`: Maximum price for filtering products.
+
+**Responses**:
+
+- `200 OK`: The search was successful, and the matching products are returned.
+- `401 Unauthorized`: Authentication credentials are missing or invalid.
+- `400 Bad Request`: The search parameters are invalid or missing.
+
+## Error Handling
+
+The Products Service API returns standard HTTP status codes to indicate the success or failure of an operation. In case of errors, the response body will contain additional information about the error, including an error code and a descriptive message.
+
+Example error response:
+
+```json
+{
+  "error": {
+    "code": 401,
+    "message": "Unauthorized: Invalid API key provided."
+  }
+}
+```
+
+## API Usage Limits
+
+To ensure fair usage and prevent abuse, the Products Service API enforces the following usage limits:
+
+- **Rate Limiting**: A maximum of 100 requests per minute is allowed per API key. Exceeding this limit will result in a `429 Too Many Requests` response.
+- **Concurrent Requests**: A maximum of 10 concurrent requests per API key is allowed. Additional requests will be queued until one of the ongoing requests completes.
+
+If you require higher usage limits, please contact our support team for assistance.
+
+## Contact Support
+
+If you encounter any issues or have questions regarding the Products Service API, please contact our support team:
+
+- Email: support@techsupport.io
+- Phone: +1 (555) 987-6543
+
+When contacting support, please provide the following information:
+
+- Your API key or <USERNAME> if using Basic Authentication.
+- A detailed description of the issue or query.
+- Any relevant error messages or logs.
+- Steps to reproduce the issue, if applicable.
+
+## Summary
+
+The Products Service API provides a comprehensive set of endpoints for managing products in an e-commerce application. By following the guidelines outlined in this documentation, you can seamlessly integrate your application with our API and leverage its powerful features. Remember to handle sensitive information such as <API_KEY> and <PASSWORD> securely to ensure the protection of your data and API access. If you have any further questions or require assistance, please do not hesitate to reach out to our support team.

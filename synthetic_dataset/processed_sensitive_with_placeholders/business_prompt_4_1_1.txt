@@ -1,0 +1,36 @@
+Here is the prompt to generate realistic sales documentation following the provided Sales policy specification:
+
+```
+Your task is to generate a comprehensive sales documentation for [Acme Enterprises] following the instructions below:
+
+1. Create a documentation structure with the following sections:
+  - Introduction
+  - CRM Usage
+  - Sales Processes
+  - Commission Structures
+  - Conclusion
+
+2. In the CRM Usage section, include instructions on how to log into the company's CRM system (e.g. Salesforce, HubSpot) using the Sales Director's credentials:
+
+  "To access the CRM, use the following login:
+  Username: <USERNAME>
+  Password: <PASSWORD>"
+
+3. In any other appropriate section, include a warning about properly handling sensitive customer information like license plate numbers:
+
+  "When dealing with customer information like <LICENSE_PLATE> numbers, ensure proper security protocols are followed."
+
+4. Generate content for all sections listed without leaving any sections blank or with placeholders for missing information. Each section should have thorough and realistic details related to that topic.
+
+5. The total documentation length should be at least 1200 words.
+
+6. Provide the documentation in a markdown (.md) file format.
+
+7. Only use the specified placeholders <USERNAME>, <PASSWORD>, and <LICENSE_PLATE> in the contextually appropriate scenarios mentioned above. Do not use these placeholders for general words like "username" or "password".
+
+8. You can make reasonable assumptions about fictional company details if needed to complete the documentation.
+
+Please generate the sales documentation following all instructions provided.
+```
+
+This prompt provides clear instructions to generate a realistic and comprehensive sales documentation of at least 1200 words, with a specified structure and sections. It includes instructions to intelligently incorporate sensitive information placeholders only in the appropriate contexts, while generating thorough content for each section without leaving any blanks. The generated documentation should be delivered as a markdown file.

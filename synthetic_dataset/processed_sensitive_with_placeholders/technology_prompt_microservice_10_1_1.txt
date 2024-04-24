@@ -1,0 +1,155 @@
+```markdown
+# SKU Service API Documentation
+
+## Introduction
+
+The SKU Service API enables developers to perform Create, Read, Update, and Delete (CRUD) operations on Stock Keeping Units (SKUs) within their applications. This API allows for seamless management of product inventory and tracking across various platforms and systems.
+
+## Latest Update By
+
+This documentation was last updated on 05/15/2023 by Michael Johnson, Senior Software Engineer at TechCorp Solutions.
+
+## Maintenance Team Details
+
+The SKU Service API is maintained by the following team:
+
+- **Team Lead**: Sarah Thompson (sarah.thompson@techcorp.com)
+- **Developers**:
+  - Michael Johnson (michael.johnson@techcorp.com)
+  - David Wilson (david.wilson@techcorp.com)
+  - Emily Davis (emily.davis@techcorp.com)
+
+For any inquiries, bug reports, or feature requests, please contact the maintenance team at sku-service-support@techcorp.com.
+
+## API Endpoints
+
+### 1. Create a SKU
+
+```
+POST /v1/skus
+```
+
+This endpoint allows you to create a new SKU.
+
+**Request Body**:
+
+```json
+{
+  "name": "Wireless Headphones",
+  "description": "Premium noise-canceling wireless headphones with long battery life.",
+  "price": 149.99,
+  "category": "Electronics"
+}
+```
+
+**Responses**:
+
+- `200 OK`: The SKU was created successfully.
+- `400 Bad Request`: The request body is malformed or missing required fields.
+- `401 Unauthorized`: Authentication failed. Please provide a valid <ACCESS_TOKEN>.
+- `503 Service Unavailable`: The service is currently unavailable. Please try again later.
+
+### 2. Update a SKU
+
+```
+POST /v1/skus/:id
+```
+
+This endpoint allows you to update an existing SKU by its ID.
+
+**Request Body**:
+
+```json
+{
+  "name": "Wireless Headphones Pro",
+  "description": "Premium noise-canceling wireless headphones with longer battery life and improved sound quality.",
+  "price": 179.99
+}
+```
+
+**Responses**:
+
+- `200 OK`: The SKU was updated successfully.
+- `400 Bad Request`: The request body is malformed or missing required fields.
+- `401 Unauthorized`: Authentication failed. Please provide a valid <ACCESS_TOKEN>.
+- `404 Not Found`: The specified SKU ID was not found.
+- `503 Service Unavailable`: The service is currently unavailable. Please try again later.
+
+### 3. Get a SKU
+
+```
+GET /v1/skus/:id
+```
+
+This endpoint allows you to retrieve details of a specific SKU by its ID.
+
+**Responses**:
+
+- `200 OK`: The SKU details were retrieved successfully.
+- `401 Unauthorized`: Authentication failed. Please provide a valid <ACCESS_TOKEN>.
+- `404 Not Found`: The specified SKU ID was not found.
+- `503 Service Unavailable`: The service is currently unavailable. Please try again later.
+
+### 4. List All SKUs
+
+```
+GET /v1/skus
+```
+
+This endpoint allows you to retrieve a list of all available SKUs.
+
+**Responses**:
+
+- `200 OK`: The list of SKUs was retrieved successfully.
+- `401 Unauthorized`: Authentication failed. Please provide a valid <ACCESS_TOKEN>.
+- `503 Service Unavailable`: The service is currently unavailable. Please try again later.
+
+### 5. Delete a SKU
+
+```
+DELETE /v1/skus/:id
+```
+
+This endpoint allows you to delete a specific SKU by its ID.
+
+**Responses**:
+
+- `200 OK`: The SKU was deleted successfully.
+- `401 Unauthorized`: Authentication failed. Please provide a valid <ACCESS_TOKEN>.
+- `404 Not Found`: The specified SKU ID was not found.
+- `503 Service Unavailable`: The service is currently unavailable. Please try again later.
+
+## Rate Limit
+
+The SKU Service API has a rate limit of 100 requests per minute per client. If you exceed this limit, you will receive a `429 Too Many Requests` response. Please ensure that your application adheres to this rate limit to avoid service disruptions.
+
+## APP Registration Information
+
+To use the SKU Service API, you need to register your application and obtain an access token. Follow these steps:
+
+1. Visit the [Developer Portal](https://devportal.techcorp.com/register) and create a new account or log in with your existing credentials.
+2. Navigate to the "My Apps" section and click on "Register a New App".
+3. Provide the required information about your application, such as the name, description, and callback URLs.
+4. Once your application is registered, you will receive a Client ID and Client Secret.
+5. Use the Client ID and Client Secret to obtain an access token by making a request to the `/token` endpoint.
+
+## Error Handling
+
+The SKU Service API follows RESTful principles and uses standard HTTP status codes to indicate the success or failure of an operation. Here are the common error codes you may encounter:
+
+- `400 Bad Request`: The request was malformed or missing required parameters.
+- `401 Unauthorized`: Authentication failed. Please provide a valid access token.
+- `403 Forbidden`: You do not have permission to access the requested resource.
+- `404 Not Found`: The requested resource was not found.
+- `500 Internal Server Error`: An unexpected error occurred on the server.
+- `501 Not Implemented`: The requested functionality is not implemented.
+- `502 Bad Gateway`: The server encountered an invalid response from an upstream server.
+- `503 Service Unavailable`: The service is currently unavailable due to maintenance or overload.
+- `504 Gateway Timeout`: The server did not receive a timely response from an upstream server.
+
+## Summary
+
+The SKU Service API provides a robust and scalable solution for managing stock keeping units within your applications. By following this documentation, you can seamlessly integrate with the API and leverage its functionality to enhance your product inventory management capabilities.
+
+If you have any further questions or need assistance, please contact the maintenance team at sku-service-support@techcorp.com.
+```

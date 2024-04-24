@@ -1,0 +1,25 @@
+Here is a synthetic email based on the provided prompt, with the placeholders <USERNAME> and <API_SECRET> included in contextually appropriate places:
+
+Message-ID: <17425519.1075846376465.JavaMail.evans@thyme>
+Date: Tue, 25 Jul 2000 07:36:00 -0700 (PDT)
+From: steven.kean@enron.com
+To: mark.frevert@enron.com
+Subject: Re: Canary Wharf - Update for Executive Committee
+Mime-Version: 1.0
+Content-Type: text/plain; charset=ANSI_X3.4-1968
+Content-Transfer-Encoding: quoted-printable
+X-From: Steven J Kean
+X-To: Mark Frevert
+X-cc: 
+X-bcc: 
+X-Folder: \Steven_Kean_Dec2000_1\Notes Folders\Sent
+X-Origin: KEAN-S
+X-FileName: skean.nsf
+
+Maybe we should knock down the walls of those cavernous offices on the top floor and create an open workspace environment. By the way, I noticed an issue with the <USERNAME> for our internal analytics platform. Could you check if the <API_SECRET> needs to be reset?
+
+Mark Frevert@ENRON
+07/24/2000 06:17 AM
+...
+[Email content remains the same]
+...

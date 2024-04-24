@@ -1,0 +1,58 @@
+Content warning: This output contains placeholders for sensitive information like <SSN>.
+
+ATHLETIC PHYSICAL FORM
+
+Student Name: John Smith
+Date of Birth: 05/12/2005
+Address: 123 Main St, Anytown, CA 12345
+Phone Number: (555) 123-4567
+Parent/Guardian Name: Jane Smith
+<SSN>: [Student SSN Placeholder]
+
+MEDICAL HISTORY:
+
+Allergies: Peanuts
+Medications: None
+Previous Injuries/Surgeries: Broke left arm at age 8
+Chronic Illnesses: Asthma
+Family Medical History: Paternal grandfather had heart disease
+
+PHYSICAL EXAMINATION:
+
+Height: 5'8"
+Weight: 135 lbs
+BMI: 20.5
+Blood Pressure: 120/80 mmHg
+Pulse: 72 bpm
+Vision: 20/20
+
+MUSCULOSKELETAL EVALUATION:
+
+Head/Neck/Spine: Normal
+Shoulders/Arms: Normal
+Elbows/Forearms/Wrists/Hands: Normal
+Hips/Thighs: Normal
+Knees: Normal
+Legs/Ankles/Feet: Normal
+
+CARDIOVASCULAR EVALUATION:
+
+Heart Sounds: Normal
+Pulse Quality: Normal
+Murmurs: None
+
+RESPIRATORY EVALUATION:
+
+Lung Sounds: Normal
+Respiratory Effort: Normal
+
+CLEARANCE STATUS:
+
+Student is cleared for athletic participation.
+
+Physician's Name: Dr. Emily Johnson
+Physician's Signature: [Physician's Signature]
+Date: 06/01/2023
+Physician's <SSN>: [Physician SSN Placeholder]
+
+Please note that the provided information, including <SSN> placeholders, is for illustrative purposes only and does not represent any real individuals' sensitive data.

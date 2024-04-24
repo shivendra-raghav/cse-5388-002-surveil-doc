@@ -1,0 +1,113 @@
+Here is the updated value without tags and using the provided standards:
+
+Notifications Service - SOAP API Documentation
+
+Introduction
+------------
+The Notifications Service is a SOAP-based web service that enables create, read, update, and delete (CRUD) operations for managing notifications within an application. This document provides detailed information about the SOAP API endpoints, authentication methods, rate limiting, error handling, and other essential aspects of the service.
+
+Latest Update By
+----------------
+This documentation was last updated on June 15, 2023 by John Doe.
+
+Maintenance Team Details
+------------------------
+The Notifications Service is maintained by the following team:
+
+- Team Name: Acme Notifications Team
+- Contact Email: notifications@acmecorp.com
+- Team Lead: Jane Smith
+
+SOAP Services
+-------------
+
+1. Create a Notification
+   - Endpoint: /notifications
+   - Method: POST
+   - Description: Creates a new notification.
+   - Request Body: Notification details (title, message, recipient, etc.)
+   - Successful Response: 200 OK
+   - Error Responses:
+     - 400 Bad Request (if the request body is malformed)
+     - 401 Unauthorized (if authentication credentials are missing or invalid)
+     - 500 Internal Server Error
+
+2. Update a Notification
+   - Endpoint: /notifications/{notificationId}
+   - Method: PUT
+   - Description: Updates an existing notification by its ID.
+   - Request Body: Updated notification details
+   - Successful Response: 200 OK
+   - Error Responses:
+     - 400 Bad Request (if the request body is malformed)
+     - 401 Unauthorized (if authentication credentials are missing or invalid)
+     - 404 Not Found (if the notification ID does not exist)
+     - 500 Internal Server Error
+
+3. List a Notification
+   - Endpoint: /notifications/{notificationId}
+   - Method: GET
+   - Description: Retrieves a specific notification by its ID.
+   - Successful Response: 200 OK (with notification details in the response body)
+   - Error Responses:
+     - 401 Unauthorized (if authentication credentials are missing or invalid)
+     - 404 Not Found (if the notification ID does not exist)
+     - 500 Internal Server Error
+
+4. List All Notifications
+   - Endpoint: /notifications
+   - Method: GET
+   - Description: Retrieves a list of all notifications.
+   - Successful Response: 200 OK (with a list of notifications in the response body)
+   - Error Responses:
+     - 401 Unauthorized (if authentication credentials are missing or invalid)
+     - 500 Internal Server Error
+
+5. Delete a Notification
+   - Endpoint: /notifications/{notificationId}
+   - Method: DELETE
+   - Description: Deletes a specific notification by its ID.
+   - Successful Response: 200 OK
+   - Error Responses:
+     - 401 Unauthorized (if authentication credentials are missing or invalid)
+     - 404 Not Found (if the notification ID does not exist)
+     - 500 Internal Server Error
+
+Authentication
+--------------
+To authenticate with the Notifications Service API, you need to include your <USERNAME> and <API_TOKEN> in the request headers. The <API_TOKEN> should be a valid API token obtained from the authentication service.
+
+Example:
+```
+Authorization: Bearer <API_TOKEN>
+```
+
+Rate Limit
+----------
+The Notifications Service API has a rate limit of 100 requests per minute per client. If the rate limit is exceeded, the API will return a 503 Service Unavailable response with the following headers:
+
+```
+X-RateLimit-Limit: 100
+X-RateLimit-Remaining: 0
+X-RateLimit-Reset: 1619799060
+```
+
+Error Handling
+--------------
+The Notifications Service API uses standard HTTP response codes to indicate the success or failure of an API request. Here are the common error codes and their meanings:
+
+- 400 Bad Request: The request was malformed or missing required parameters.
+- 401 Unauthorized: The request did not include valid authentication credentials.
+- 403 Forbidden: The client does not have permission to access the requested resource.
+- 404 Not Found: The requested resource does not exist.
+- 500 Internal Server Error: An unexpected error occurred on the server.
+- 501 Not Implemented: The requested method or operation is not supported.
+- 502 Bad Gateway: The server received an invalid response from an upstream server.
+- 503 Service Unavailable: The server is currently unavailable due to maintenance or overload.
+- 504 Gateway Timeout: The server did not receive a timely response from an upstream server.
+
+Summary
+-------
+The Notifications Service SOAP API provides a comprehensive set of endpoints for managing notifications within an application. It supports CRUD operations, authentication, rate limiting, and error handling. Developers can integrate this service into their applications to handle notification-related functionality effectively.
+
+Note: This documentation is a synthetic representation and does not reflect an actual SOAP API service. The <USERNAME> and <API_TOKEN> placeholders are included to help users understand where they might need to provide authentication credentials.

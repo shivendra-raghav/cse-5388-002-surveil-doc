@@ -1,0 +1,30 @@
+Here is the updated Anti-Harassment Policy document with realistic sample values replacing placeholders within [] tags, while preserving sensitive placeholders such as <SSN>:
+
+Anti-Harassment Policy for ABC Corp
+
+Introduction:
+ABC Corp is committed to providing a professional and respectful workplace, free from harassment and discrimination of any kind. This policy outlines our stance on harassment and the procedures for reporting and addressing such incidents.
+
+Definition of Harassment:
+Harassment is defined as any unwelcome conduct, whether verbal, physical, or visual, that creates an intimidating, hostile, or offensive work environment. It can include, but is not limited to, offensive jokes, slurs, epithets, physical assaults, intimidation, ridicule, insults, or put-downs based on an individual's race, color, religion, gender, national origin, age, disability, or any other protected characteristic.
+
+Prohibited Conduct:
+ABC Corp prohibits all forms of harassment, including but not limited to:
+
+- Verbal harassment: Derogatory comments, slurs, jokes, or remarks about an individual's race, ethnicity, religion, gender, age, disability, or any other protected characteristic.
+- Physical harassment: Unwanted touching, assault, impeding or blocking movement, or any physical interference with normal work or movement.
+- Visual harassment: Derogatory posters, cartoons, drawings, or gestures related to an individual's race, ethnicity, religion, gender, age, disability, or any other protected characteristic.
+- Sexual harassment: Unwelcome sexual advances, requests for sexual favors, and other verbal or physical conduct of a sexual nature.
+
+Reporting Procedure:
+Any employee who experiences or witnesses harassment should report the incident immediately to their direct supervisor or the Human Resources department. If the complaint involves the direct supervisor, the employee should report the incident to the next level of management or directly to the Human Resources department.
+
+All reports of harassment will be treated with utmost confidentiality, and retaliation against anyone who reports harassment or participates in an investigation is strictly prohibited.
+
+Investigation:
+Upon receiving a harassment complaint, ABC Corp will promptly initiate an impartial investigation. The investigation will be conducted by qualified personnel and will include interviews with the parties involved and any relevant witnesses. All employees are expected to cooperate fully with the investigation.
+
+Conclusion:
+ABC Corp takes a zero-tolerance stance towards harassment of any kind. Employees found to have engaged in harassment will be subject to disciplinary action, up to and including termination of employment. For any questions or concerns regarding this policy, please contact the Human Resources department at <SSN>.
+
+ABC Corp is committed to maintaining a safe, respectful, and inclusive workplace for all employees.

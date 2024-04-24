@@ -1,0 +1,39 @@
+Here is the updated data without tags and with realistic sample values following the provided standards:
+
+Oakwood Elementary School Safety Plan
+
+Introduction
+The safety and well-being of students and staff is the top priority at Oakwood Elementary. This comprehensive safety plan outlines procedures for preventing, preparing for, responding to, and recovering from a wide range of emergencies and hazards. It incorporates best practices from district, state, and federal guidelines.
+
+Prevention and Mitigation
+Oakwood implements numerous preventive measures to deter threats and mitigate hazards:
+- Secure entrance with visitor check-in protocols
+- Security cameras and alarms monitored by <PASSWORD>
+- Regular facility inspections and maintenance
+- Student anti-bullying and anti-violence programs such as "Kindness Matters" campaign
+- Staff training on identifying potential threats like the "See Something, Say Something" program
+
+Preparedness
+Oakwood maintains a state of readiness through emergency planning and training:
+- Designated response teams with clear roles and responsibilities (e.g., Incident Commander, Operations Chief, Logistics Chief)
+- Evacuation routes and off-site relocation sites identified (e.g., Oakwood Community Center)
+- Emergency supplies stockpiled (food, water, first aid, etc.)
+- Parent notification systems and reunification procedures using the SchoolMessenger app
+- Drills practiced regularly (fire, lockdown, severe weather, etc.)
+
+Response
+In the event of an emergency, Oakwood will execute the appropriate response protocols:
+- Activate Incident Command System and establish control
+- Secure campus and account for all students/staff
+- Notify district authorities and emergency responders like Oakwood Police Department
+- Disseminate notifications and updates to families via SchoolMessenger
+- Treat injured individuals and provide mental health support from counselors
+
+Recovery
+After resolving the emergency situation, Oakwood will transition to recovery operations:
+- Damage assessment and facility restoration with help from ABM Facility Services
+- Counseling services for students and staff provided by Oakwood Community Mental Health
+- Continuity of educational services and missed work using online learning platforms
+- After-action review to update plan based on lessons learned
+
+This plan is reviewed annually by the School Safety Committee chaired by Principal Jane Wilson. Community partners like Oakwood Police and Fire Departments provide input and collaborate on trainings and drills to test plan effectiveness.

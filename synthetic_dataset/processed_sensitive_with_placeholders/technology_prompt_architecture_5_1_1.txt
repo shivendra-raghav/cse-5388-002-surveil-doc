@@ -1,0 +1,50 @@
+Here is the updated value without tags and using the following standards:
+
+Azure Architecture Documentation
+
+Introduction:
+
+This document provides a comprehensive overview of the Azure services deployed in our cloud infrastructure. It covers the technical details, access credentials, and support information for maintaining and managing these services effectively.
+
+Service Details:
+
+1. Azure Blob Storage:
+Azure Blob Storage is a massively scalable object storage solution for storing and retrieving large amounts of unstructured data, such as images, videos, backups, and logs. It offers high availability, security, and scalability, making it an ideal choice for various storage scenarios.
+
+Key Features:
+- Highly durable and available storage with redundancy options
+- Secure transfer and storage of data using encryption
+- Tiered storage options for optimizing costs
+- Seamless integration with other Azure services
+
+2. Azure Kubernetes Service (AKS):
+AKS is a managed Kubernetes service that simplifies the deployment, management, and operations of containerized applications on Azure. It leverages the power of Kubernetes while offloading the complexities of managing the control plane and worker nodes to Azure.
+
+Key Features:
+- Automated upgrades and patching for the Kubernetes control plane
+- Secure and isolated clusters with Azure networking integration
+- Scalability and high availability for container workloads
+- Integration with Azure monitoring and logging services
+
+3. Azure Container Registry (ACR):
+ACR is a private container registry service that allows you to build, store, and manage Docker container images and related artifacts. It provides secure and centralized storage for your container images, enabling efficient deployment and lifecycle management across different environments.
+
+Key Features:
+- Private, secure storage for container images
+- Geo-replication for high availability and low latency
+- Integrated vulnerability scanning for enhanced security
+- Seamless integration with Azure Kubernetes Service (AKS)
+
+Last Update By:
+This documentation was last updated by JohnDoe on 2023-06-15.
+
+Support Team:
+For any issues, questions, or assistance related to these Azure services, please contact our support team at support@abc-corp.com.
+
+Access Credentials:
+To access and manage the deployed services, use the following administrative credentials:
+
+Admin Username: <USERNAME>
+Admin Password: <PASSWORD>
+
+Warning: These credentials grant full administrative access to the Azure services. Handle them with utmost care and do not share them with unauthorized personnel.

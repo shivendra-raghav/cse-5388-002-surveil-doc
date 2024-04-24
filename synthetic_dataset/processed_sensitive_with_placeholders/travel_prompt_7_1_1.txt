@@ -1,0 +1,67 @@
+```
+CAR RENTAL AGREEMENT
+
+This Car Rental Agreement (the "Agreement") is made and entered into on June 15, 2023 by and between Ace Rentals Inc., a California corporation ("Rental Company"), and John Doe, an individual ("Renter").
+
+Renter Details:
+Name: John Doe
+Address: 123 Main St, Anytown, CA 12345
+Phone Number: (555) 555-5555
+Email Address: john.doe@email.com
+Driver's License Number: CA1234567
+Expiration Date: 12/31/2027
+
+Vehicle Information:
+Make: Toyota
+Model: Camry
+Year: 2021
+VIN: 1FTYR2CM3KKA12345
+License Plate: 6ABC123
+Odometer Reading at Time of Rental: 15,672 miles
+
+Rental Period:
+Start Date: June 20, 2023
+Start Time: 10:00 AM
+End Date: June 27, 2023
+End Time: 5:00 PM
+
+Rates and Charges:
+Daily Rental Rate: $49.99
+Weekly Rental Rate: $299.99
+Monthly Rental Rate: $999.99
+Mileage Charge (if applicable): $0.25 per mile (after 100 free miles per day)
+Additional Charges (if applicable): N/A
+Taxes: 8.25% sales tax
+Security Deposit: $250.00
+
+Rental Terms:
+1. Use of Vehicle: Renter shall use the Vehicle only for personal and lawful purposes and shall not use the Vehicle for any commercial or illegal purposes.
+
+2. Authorized Drivers: Only the Renter and authorized drivers listed on this Agreement are permitted to operate the Vehicle. Renter shall be responsible for all acts and omissions of any authorized driver.
+
+3. Maintenance and Condition of Vehicle: Renter shall maintain the Vehicle in good condition and shall return the Vehicle in the same condition as received, reasonable wear and tear excepted.
+
+4. Fuel: Renter shall return the Vehicle with the same level of fuel as when received.
+
+5. Accidents and Damages: Renter shall immediately report any accidents, damages, or mechanical issues to Rental Company. Renter shall be responsible for all damages to the Vehicle, regardless of fault.
+
+6. Traffic Violations and Fines: Renter shall be responsible for all traffic violations, parking tickets, and fines incurred during the rental period.
+
+7. Insurance: Rental Company provides liability insurance coverage for the Vehicle, but Renter is responsible for any deductibles or damages not covered by insurance.
+
+8. Payment: Renter shall pay all rental charges, fees, and applicable taxes in advance or upon return of the Vehicle. Rental Company reserves the right to charge Renter's credit card on file for any additional charges incurred during the rental period.
+
+9. Security Deposit: Renter shall provide a valid credit card number (<CREDIT_CARD_NUMBER>) as a security deposit for any damages or additional charges incurred during the rental period.
+
+10. Online Account Management: Renter can manage their rental online using their assigned <USERNAME> and <PASSWORD>.
+
+11. Termination: Rental Company reserves the right to terminate this Agreement at any time without notice if Renter violates any terms or conditions of this Agreement.
+
+12. Governing Law: This Agreement shall be governed by and construed in accordance with the laws of the California.
+
+By signing below, Renter acknowledges and agrees to the terms and conditions of this Car Rental Agreement.
+
+Renter Signature: __________________________ Date: _______________
+
+Rental Company Representative: __________________________ Date: _______________
+```

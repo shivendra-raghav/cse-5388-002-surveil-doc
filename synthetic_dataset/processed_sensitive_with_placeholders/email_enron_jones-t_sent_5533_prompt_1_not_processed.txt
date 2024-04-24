@@ -1,0 +1,57 @@
+Here is a synthetic email with sensitive information placeholders added in a contextually appropriate manner:
+
+<email>Message-ID: <21020446.1075847543697.JavaMail.evans@thyme>
+Date: Fri, 26 Jan 2001 08:48:00 -0800 (PST)
+From: tana.jones@enron.com
+To: marie.heard@enron.com
+Subject: The Worthington Steel Company Account Details
+Cc: tanya.rohauer@enron.com
+Mime-Version: 1.0 
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Bcc: tanya.rohauer@enron.com
+X-From: Tana Jones
+X-To: Marie Heard
+X-cc: Tanya Rohauer
+X-bcc:
+X-Folder: \Tanya_Jones_June2001\Notes Folders\Sent
+X-Origin: JONES-T
+X-FileName: tjones.nsf
+
+Marie,
+
+Well, I do believe this makes 499 accounts we've set up with The Worthington Steel Company! Please make sure to update their account file with the new <PASSWORD> for secure access.
+
+----- Forwarded by Tana Jones/HOU/ECT on 01/26/2001 04:47 PM -----
+
+Susan Bailey
+01/26/2001 04:43 PM
+
+To: [Email list of Enron employees]
+cc:
+Subject: The Worthington Steel Company 
+
+We have received an executed Master Agreement:
+
+Type of Contract: ISDA Master Agreement (Multicurrency-Cross Border) 
+
+Effective Date: January 16, 2001
+
+Enron Entity: Enron North America Corp.
+
+Counterparty: The Worthington Steel Company  
+
+Transactions Covered: Approved for all products with the exception of: Foreign Exchange
+
+Confirming Entity: Enron North America Corp.
+
+Governing Law: New York
+
+Special Note: Counterparty has three (3) Local Business Days to accept or dispute a Confirmation. Their account <PASSWORD> is required for confirmation.
+
+Copies will be distributed.
+
+Susan S. Bailey
+Enron North America Corp.
+[Contact details]
+</email>

@@ -1,0 +1,47 @@
+Title: Student Evaluation Report
+
+Name: Sarah Johnson
+Date of Birth: 05/12/2010
+Grade: 5th
+School: Maple Grove Elementary
+
+Reason for Referral:
+Sarah Johnson was referred for a special education evaluation due to concerns regarding reading comprehension and behavior issues. The referral was initiated by her classroom teacher.
+
+Background Information:
+Sarah Johnson is a 12-year-old female who resides with her parents and younger brother. She has a history of attention difficulties and struggles with following instructions. Her primary language is English.
+
+Evaluation Process:
+The evaluation process included the following assessments and procedures:
+- Wechsler Intelligence Scale for Children (WISC-V)
+- Woodcock-Johnson Tests of Achievement (WJ-IV)
+- Behavior Assessment System for Children (BASC-3)
+- Classroom Observations
+- Parent/Teacher Interviews
+
+Evaluation Results:
+Cognitive Ability: Sarah's overall cognitive ability falls within the Average range (Full Scale IQ = 98).
+
+Academic Achievement: Sarah's reading comprehension skills are significantly below age and grade level expectations (Standard Score = 75). Her skills in other academic areas, such as mathematics and written expression, are within the Average range.
+
+Behavior/Social-Emotional: Rating scales and observations indicate significant concerns with inattentive behavior, impulsivity, and difficulty following classroom rules and routines.
+
+Other Relevant Findings: No significant concerns noted in areas of speech/language, motor skills, or adaptive functioning.
+
+Determination of Eligibility:
+Based on the evaluation results, Sarah Johnson meets the criteria for special education services under the eligibility category of Specific Learning Disability (with a deficit in Reading Comprehension) and Other Health Impairment (due to Attention Deficit Hyperactivity Disorder). She exhibits significant deficits in reading comprehension and attention/behavior regulation that adversely impact her educational performance.
+
+Recommendations:
+To address Sarah's needs, the following accommodations and services are recommended:
+- Extended time on tests
+- Preferential seating near the instructor
+- Resource Room support for Reading/Language Arts
+- Occupational Therapy consultation for attention strategies
+- School Counseling Services for behavior intervention
+
+It is also recommended that Sarah's progress be monitored regularly, and the Individualized Education Program (IEP) be reviewed and updated annually or as needed.
+
+Additional Notes:
+Sarah's parents express concern about her frustration with academic tasks and desire for her to receive appropriate support. Sarah's strengths include her creative thinking abilities and strong interpersonal skills.
+
+Please note that this evaluation report may contain sensitive information, including the student's <SSN>. Appropriate measures should be taken to protect the student's privacy and confidentiality.

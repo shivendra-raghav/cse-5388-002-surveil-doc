@@ -1,0 +1,34 @@
+Google Firestore Database Documentation
+
+Introduction:
+Google Firestore is a flexible, scalable NoSQL cloud database that enables developers to store and sync data for client and server-side development. It is designed to provide a seamless integration with other Google Cloud services, making it an ideal choice for building modern, data-driven applications.
+
+Firestore Database Summary:
+Google Firestore is a fully-managed, serverless, NoSQL document database that provides real-time data synchronization capabilities. It offers robust querying and indexing features, automatic multi-region data replication, and built-in security rules. Firestore's data model is based on collections and documents, making it easy to store and retrieve structured or semi-structured data.
+
+Firestore Database Connection Details:
+To connect to the Google Firestore database, you need to initialize the Firebase SDK and obtain the necessary credentials. The connection details vary based on the environment (Dev, Int, or Prod).
+
+Dev Connection String: <GOOGLE_FIRESTORE_DATABASE_CONN>
+Int Connection String: <GOOGLE_FIRESTORE_DATABASE_CONN>
+Prod Connection String: <GOOGLE_FIRESTORE_DATABASE_CONN>
+
+Once you have the connection details, you can initialize the Firestore client and perform various operations like creating, reading, updating, and deleting data in the database.
+
+Backup Policies:
+Google Firestore provides automatic data backups and replication across multiple regions for high availability and disaster recovery. The backup policies are designed to ensure data durability and minimize the risk of data loss.
+
+Daily Backups: Google Firestore automatically creates daily backups of your database, which are retained for 30 days. These backups can be used to restore data in case of accidental deletion or corruption.
+
+Regional Replication: Firestore automatically replicates your data across multiple regions within the same multi-region location. This ensures that your data remains available even in the event of a regional outage or disaster.
+
+Point-in-Time Restores: Firestore allows you to restore your database to a specific point in time within the last 30 days. This feature can be useful in cases where you need to recover data from a specific point in time, such as before a bug or accidental data modification.
+
+Support Team Information:
+If you encounter any issues or have questions regarding Google Firestore, you can reach out to the dedicated support team for assistance.
+
+Support Email: firestore-support@google.com
+Support Phone: 1-800-FIRESTORE (1-800-347-3783)
+Support Documentation: https://firebase.google.com/docs/firestore/support
+
+The support team is available 24/7 to provide guidance and troubleshoot any problems you may face while using Google Firestore. They can assist you with issues related to database performance, security, data migration, and more.

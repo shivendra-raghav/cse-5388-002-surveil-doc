@@ -1,0 +1,37 @@
+Here is the updated value without tags, following the provided standards:
+
+Robotics Club Charter
+
+Article I. Name and Purpose
+Section 1. The name of this organization shall be the Robotics Club.
+Section 2. The purpose of this club is to provide a forum for students interested in robotics to explore and expand their knowledge through hands-on projects, competitions, guest speakers, and workshops. The club aims to foster collaboration, innovation, and practical skills in robotics engineering.
+
+Article II. Membership
+Section 1. Membership in the Robotics Club is open to all currently enrolled students at Stanford University. There shall be no discrimination based on race, color, religion, national origin, age, disability, gender, sexual orientation, or veteran status.
+Section 2. To maintain active membership, members must attend at least three general meetings per semester.
+
+Article III. Officers
+Section 1. The officers of the Robotics Club shall consist of a President, Vice President, Treasurer, and Secretary.
+Section 2. Officers shall be elected annually by a majority vote of active members. Officers must maintain active membership status.
+
+Article IV. Duties of Officers
+Section 1. The President shall preside over all meetings, represent the club, and ensure the club's activities align with its purpose.
+Section 2. The Vice President shall assist the President and assume the President's duties in their absence.
+Section 3. The Treasurer shall maintain accurate financial records, collect dues, and manage the club's bank account. The club's bank account number is <BANK_ACCOUNT_NUMBER>.
+Section 4. The Secretary shall record and distribute meeting minutes, maintain membership records, and handle club correspondence.
+
+Article V. Meetings
+Section 1. General meetings shall be held at least once per month during the academic year.
+Section 2. Special meetings may be called by the President or at the request of three active members.
+
+Article VI. Finances
+Section 1. The Robotics Club may collect annual dues of $25 from members to fund its activities and projects.
+Section 2. All expenditures must be approved by a majority vote of active members.
+Section 3. The club shall maintain a bank account at Chase Bank to manage its funds. The Treasurer shall provide financial reports at each general meeting.
+
+Article VII. Amendments
+Section 1. Amendments to this charter may be proposed by any active member at a general meeting.
+Section 2. Proposed amendments must be approved by a two-thirds vote of active members.
+
+Article VIII. Ratification
+This charter shall become effective upon approval by a two-thirds vote of active members and the Stanford University Student Government Association.

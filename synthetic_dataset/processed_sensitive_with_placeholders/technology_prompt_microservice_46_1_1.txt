@@ -1,0 +1,100 @@
+```markdown
+# Order Processing Service Documentation
+
+## Introduction
+
+The Order Processing Service is a crucial component of our e-commerce platform, responsible for handling all aspects of order management. This microservice exposes a RESTful API that allows clients to create, retrieve, update, and delete orders. 
+
+To enhance the functionality and observability of the Order Processing Service, we have implemented a Sidecar pattern. The Sidecar microservice runs alongside the main service and provides additional capabilities such as logging, monitoring, service discovery, and configuration management.
+
+## Authentication
+
+The Order Processing Service requires authentication for all API requests. You can authenticate using an API token, which should be included in the `Authorization` header of your requests.
+
+```
+Authorization: Bearer <API_TOKEN>
+```
+
+**Warning:** Be cautious when handling API tokens, as they provide access to your account. Never share your API token or store it in insecure locations.
+
+## Main Service
+
+The main Order Processing Service exposes the following endpoints:
+
+### POST /v1/orders
+
+Create a new order. The request body should include the order details, such as the customer information, items, and shipping address.
+
+### GET /v1/orders/{orderId}
+
+Retrieve the details of a specific order by its order ID.
+
+### PUT /v1/orders/{orderId}/status
+
+Update the status of an order (e.g., pending, shipped, delivered).
+
+### DELETE /v1/orders/{orderId}
+
+Cancel an existing order by its order ID.
+
+## Sidecar Service
+
+The Sidecar microservice runs alongside the main Order Processing Service and provides additional capabilities to enhance its functionality.
+
+### Logging
+
+The Sidecar service captures and centralizes logs from the main service. This allows for better visibility and analysis of the application's behavior, making it easier to troubleshoot issues and monitor performance.
+
+To configure logging, you can set the following environment variables in the Sidecar:
+
+- `LOG_LEVEL`: Specifies the log level (e.g., debug, info, warning, error).
+- `LOG_DESTINATION`: Specifies the destination for logs (e.g., stdout, file, or a centralized logging service like Elastic Stack).
+
+### Monitoring
+
+The Sidecar service collects metrics and monitors the health of the main service. This includes tracking request rates, response times, error rates, and system resource utilization (e.g., CPU, memory).
+
+To access monitoring data, you can query the Sidecar's metrics endpoint:
+
+```
+GET /metrics
+```
+
+This will return a set of metrics in a format suitable for ingestion by monitoring tools like Prometheus or Datadog.
+
+## Sidecar Capabilities
+
+In addition to logging and monitoring, the Sidecar service provides the following capabilities:
+
+### Service Discovery
+
+The Sidecar can automatically register the main service with a service discovery mechanism, such as Consul or Kubernetes DNS. This allows other services to discover and communicate with the Order Processing Service dynamically.
+
+To configure service discovery, you can set the following environment variables in the Sidecar:
+
+- `SERVICE_DISCOVERY_PROVIDER`: Specifies the service discovery provider (e.g., consul, kubernetes).
+- `SERVICE_DISCOVERY_CONFIG`: Provides additional configuration options specific to the chosen provider.
+
+### Configuration Management
+
+The Sidecar can manage the configuration of the main service by fetching configuration values from a centralized source, such as a configuration server or a key-value store like etcd or Consul.
+
+To configure the main service through the Sidecar, you can set the following environment variables:
+
+- `CONFIG_PROVIDER`: Specifies the configuration provider (e.g., consul, etcd, file).
+- `CONFIG_PATH`: Specifies the path or key where the configuration is stored.
+
+## Sidecar Configuration
+
+The Sidecar microservice itself can be configured using environment variables or a configuration file. Here are some common configuration options:
+
+- `MAIN_SERVICE_ADDRESS`: The address of the main Order Processing Service (e.g., `http://abc123:xyz789@service:8080`).
+- `SIDECAR_PORT`: The port on which the Sidecar listens for requests (e.g., 9000).
+- `LOG_LEVEL`: The log level for the Sidecar itself (e.g., debug, info, warning, error).
+
+## Summary
+
+The Order Processing Service, combined with the Sidecar microservice, provides a robust and observable solution for handling orders in our e-commerce platform. The Sidecar enhances the main service with capabilities like logging, monitoring, service discovery, and configuration management, improving observability, scalability, and maintainability.
+
+By following the best practices outlined in this documentation and adhering to security guidelines when handling sensitive information like API tokens, you can ensure the reliable and secure operation of the Order Processing Service and the entire e-commerce platform.
+```

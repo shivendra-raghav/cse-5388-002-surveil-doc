@@ -1,0 +1,28 @@
+<email>Message-ID: <3292904.1075843858287.JavaMail.evans@thyme>
+Date: Wed, 28 Feb 2001 05:16:00 -0800 (PST)
+From: jeff.dasovich@enron.com
+To: christian.yoder@enron.com
+Subject: Re: Proposed Decision Update
+Cc: jbennett@gmssr.com, pgboylston@stoel.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Bcc: jbennett@gmssr.com, pgboylston@stoel.com
+X-From: Jeff Dasovich
+X-To: Christian Yoder
+X-cc: jbennett@gmssr.com, pgboylston@stoel.com
+X-bcc: 
+X-Folder: \Jeff_Dasovich_June2001\Notes Folders\Sent
+X-Origin: DASOVICH-J
+X-FileName: jdasovic.nsf
+
+Thanks, Christian. It would indeed be easiest to move forward with the proposed decision as is, but if additional measures are needed to address the creditworthiness issue, we should be prepared to suggest modifications. If you believe the decision can remain unchanged, that's even better.
+
+Regarding the draft letter in support that Jean Bennett is preparing, please ensure that it does not contain any sensitive information like <INTERNATIONAL_BANK_ACCOUNT_NUMBER>, <PASSWORD>, or <API_TOKEN>. If such placeholders need to be included for context, let me know, and we can discuss a secure method of transmitting that information.
+
+Once you've reviewed the letter with Pat Boylston and Jean, please share your thoughts on whether we should recommend any changes to the proposed decision's wording. Time is of the essence, so I'd like to push Governor Davis and President Peevey to have the PUC adopt the decision at their next meeting, provided our concerns have been adequately addressed.
+
+Best regards,
+Jeff
+
+</email>

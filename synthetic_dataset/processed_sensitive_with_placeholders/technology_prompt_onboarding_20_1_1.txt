@@ -1,0 +1,38 @@
+```
+Content Creator Onboarding Documentation
+
+Introduction:
+Welcome to our media production company! We are thrilled to have you on board as a new content creator. This documentation will guide you through the necessary steps to set up your account, familiarize yourself with our brand voice guidelines, and provide you with the contact information for our Creative Director.
+
+Content Management System Setup:
+To access our content management system, you will need to log in with your <USERNAME> and <PASSWORD>. Please keep these credentials secure and do not share them with anyone.
+
+Step 1: Go to our website, www.pixelperfectmedia.com, and click on the "Creator Portal" button in the top right corner.
+Step 2: On the login page, enter your <USERNAME> in the designated field.
+Step 3: Enter your <PASSWORD> in the password field.
+Step 4: Click the "Log In" button.
+
+Once logged in, you will have access to the content management system dashboard. From here, you can upload your content, manage your submissions, and track your royalty payments.
+
+Brand Voice Guidelines:
+Our media production company prides itself on maintaining a consistent and professional brand voice across all our content. Here are some guidelines to follow:
+
+1. Tone: Maintain a friendly yet authoritative tone. Our content should be informative and engaging while still maintaining a level of professionalism.
+2. Language: Use clear and concise language. Avoid jargon or overly technical terms unless necessary for the subject matter.
+3. Style: Follow established style guidelines for grammar, punctuation, and formatting. Refer to the style guide provided in the "Resources" section of the content management system.
+4. Representation: Our content should be inclusive and respectful of diverse audiences. Avoid stereotypes, offensive language, or insensitive remarks.
+
+Creative Director Contact Information:
+If you have any questions, concerns, or need guidance throughout the content creation process, feel free to reach out to our Creative Director, Emily Thompson.
+
+Email: emily.thompson@pixelperfectmedia.com
+Phone: (555) 987-6543
+Office Hours: Monday - Friday, 8 AM - 6 PM (Pacific Time)
+
+For royalty payment inquiries or to submit your <SSN> for tax purposes, please contact our Finance Department at finance@pixelperfectmedia.com.
+
+We look forward to working with you and seeing the creative content you produce!
+
+Best regards,
+The Pixel Perfect Media Team
+```

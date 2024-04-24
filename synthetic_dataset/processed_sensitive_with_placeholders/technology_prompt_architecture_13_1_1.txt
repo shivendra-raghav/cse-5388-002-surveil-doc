@@ -1,0 +1,80 @@
+# GCP Architecture Documentation
+
+## Introduction
+
+This document provides a comprehensive overview of the Google Cloud Platform (GCP) architecture, focusing specifically on the SQL Database (SQL DB) and Cloud Storage services. It aims to assist new and existing users in understanding the functionality and integration of these services within the GCP ecosystem. Additionally, this documentation includes sensitive information placeholders and guidelines for handling login credentials securely.
+
+## Service Details
+
+### SQL DB
+
+The Google Cloud SQL Database (SQL DB) is a fully-managed relational database service that provides a secure and reliable environment for storing and managing structured data. It supports popular database engines such as MySQL, PostgreSQL, and SQL Server, allowing users to leverage their existing skills and applications seamlessly.
+
+Key features of the SQL DB service include:
+
+- Automatic replication and failover capabilities for high availability and durability
+- Automated backups and point-in-time recovery for data protection
+- Vertical and horizontal scaling options for adjusting resources based on demand
+- Secure connections using SSL/TLS encryption and IP whitelisting
+- Integration with other GCP services, such as Cloud Storage and Cloud SQL Proxy
+
+### Cloud Storage
+
+Google Cloud Storage is a highly scalable and durable object storage service designed to store and serve large amounts of unstructured data. It offers secure, cost-effective, and low-latency access to data from anywhere in the world.
+
+Key features of the Cloud Storage service include:
+
+- Virtually unlimited scalability for storing and retrieving data
+- High durability and availability with automatic multi-regional replication
+- Lifecycle management policies for optimizing cost and data retention
+- Granular access control and secure data transfers using encryption
+- Integration with other GCP services, such as BigQuery, Cloud Functions, and App Engine
+
+## Onboarding Instruction for New GCP Users
+
+1. **Sign up for a GCP Account**: Visit the GCP website (https://cloud.google.com/) and create a new account. You will need to provide billing information during the signup process.
+
+2. **Enable Required Services**: After logging in to the GCP Console, navigate to the "APIs & Services" section and enable the SQL DB and Cloud Storage services for your project.
+
+3. **Create Service Credentials**: In the "APIs & Services" section, create service account credentials with appropriate roles and permissions. For example, you may need to create a service account with the "Cloud SQL Client" role to access the SQL DB service.
+
+4. **Set Environment Variables**: Depending on your development environment, set the appropriate environment variables with the service account credentials. For example, in a Unix-based system, you can export the following variables:
+
+   ```bash
+   export GOOGLE_APPLICATION_CREDENTIALS="/path/to/service-account-key.json"
+   ```
+
+5. **Configure Services**: Follow the respective documentation for configuring the SQL DB and Cloud Storage services. This may include creating instances, setting up networking, and configuring access controls.
+
+6. **Authenticate and Access Services**: When interacting with the services programmatically, you will need to authenticate using the service account credentials. For example, in a Python script, you can use the `google-auth` library to authenticate:
+
+   ```python
+   from google.cloud import storage, sqldb
+
+   # Authenticate using service account credentials
+   storage_client = storage.Client()
+   sql_client = sqldb.Client()
+
+   # Use the client objects to interact with the respective services
+   ```
+
+   **Important**: Ensure that you store and handle service account credentials securely. Never share or expose these credentials publicly.
+
+7. **Access and Manage Services**: Once authenticated, you can create, retrieve, update, and delete resources within the SQL DB and Cloud Storage services using the respective client libraries or the GCP Console.
+
+## Support Team Information
+
+If you encounter any issues or have questions regarding the GCP services, you can reach out to the support team using the following channels:
+
+- **Email**: support@techsupport.com
+- **Phone**: +1 (555) 987-6543
+- **Live Chat**: Available through the GCP Console
+
+When contacting the support team, please provide the following information:
+
+- Your GCP project ID: gcp-project-123
+- A detailed description of the issue or question
+- Any relevant error messages or log excerpts
+- Steps to reproduce the issue (if applicable)
+
+Additionally, you may need to provide your <USERNAME> and <PASSWORD> for the support team to access and troubleshoot your GCP account and services. However, it is crucial to exercise caution when sharing sensitive information and ensure that you are communicating with an authorized support representative.

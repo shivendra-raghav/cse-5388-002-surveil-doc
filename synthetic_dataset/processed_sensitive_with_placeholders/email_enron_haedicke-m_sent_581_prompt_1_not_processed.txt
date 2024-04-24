@@ -1,0 +1,37 @@
+Here is a synthetic email generated based on the provided prompt:
+
+<email>Message-ID: <31027120.1075845055393.JavaMail.evans@thyme>
+Date: Wed, 25 Oct 2000 03:48:00 -0700 (PDT)
+From: mark.haedicke@enron.com
+To: peter.keohane@enron.com
+Subject: Re: Power Master & Ontario Market Integration
+Cc: chris.gaffney@enron.com, elizabeth.sager@enron.com, greg.johnston@enron.com, rob.milnthorp@enron.com
+Mime-Version: 1.0 
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Bcc: chris.gaffney@enron.com, elizabeth.sager@enron.com, greg.johnston@enron.com, rob.milnthorp@enron.com
+X-From: Mark E Haedicke
+X-To: Peter Keohane
+X-cc: Chris Gaffney, Elizabeth Sager, Greg Johnston, Rob Milnthorp
+X-bcc:
+X-Folder: \Mark_Haedicke_Oct2001\Notes Folders\Sent
+X-Origin: HAEDICKE-M
+X-FileName: mhaedic.nsf
+
+Peter,
+
+Thanks for your note on the Power Master form development for Ontario. I agree we should leverage the EEI form as the markets will be largely integrated across the border. A few thoughts:
+
+1) We could use the core EEI form and have an Ontario-specific annex to account for any regional nuances or regulatory requirements. This would promote cross-border consistency while allowing customization.
+
+2) Let's be sure we spotlight Enron's leadership in drafting the original EEI form when engaging with the Ontario working group. We can highlight our <USERNAME> and industry expertise.
+
+3) I'm aligned that Greg should join Chris for at least the initial Ontario meetings to represent our drafting knowledge and advocate for our pragmatic solutions.
+
+4) We may also want to consider a scenario where we ultimately have complementary forms with the EEI - one for pure US trades and one optimized for integrated US/Ontario deal capture. Just a thought to maximize our commercial positioning.
+
+Let's discuss further, but I'm supportive of leveraging our prior work here as much as possible. The integrated market dynamics will be a great strategic opportunity.
+
+Regards,
+Mark
+</email>

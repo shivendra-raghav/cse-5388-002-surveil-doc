@@ -1,0 +1,29 @@
+Here is the updated finance documentation with realistic details replacing placeholders in brackets, while preserving sensitive information placeholders:
+
+You will create documentation on finance policies and procedures for a new company, Acme Solutions Inc. The documentation should be structured into the following sections:
+
+1. Introduction
+2. Accounting Systems 
+3. Expense Reporting
+4. Budgeting
+5. Conclusion
+
+Each section should be at least 200 words.
+
+In the Accounting Systems section, you will need to include instructions for accessing the company's accounting software. Include a note that the Finance Manager's login credentials are:
+Username: <USERNAME>
+Password: <PASSWORD>
+
+This sensitive login information should only be handled by authorized personnel.
+
+The Expense Reporting section should provide details on properly submitting expenses, coding expenses to account numbers, and requirements around providing documentation like receipts. Note that employees should never include sensitive bank account numbers like <BANK_ACCOUNT_NUMBER> on public expense reports.
+
+The Introduction section should provide an overview of the purpose and scope of the finance policies and procedures documentation. It should also outline the company's mission, values, and commitment to financial transparency and accountability.
+
+The Accounting Systems section should describe the company's use of QuickBooks Online as its primary accounting software. It should provide step-by-step instructions for accessing the software, navigating the interface, and performing common tasks such as recording transactions, generating reports, and managing accounts receivable and payable.
+
+The Expense Reporting section should detail the company's policies and procedures for submitting expenses. Employees should use the Expensify app to capture receipts and submit expense reports. Expenses should be coded to the appropriate account numbers based on the company's chart of accounts. All expense reports must be approved by the employee's manager before reimbursement. Employees should never include sensitive bank account numbers like <BANK_ACCOUNT_NUMBER> on public expense reports.
+
+The Budgeting section should outline the company's annual budgeting process, including the timeline, roles and responsibilities, and procedures for submitting budget requests. It should also provide guidance on monitoring and reporting on budget performance throughout the year.
+
+The Conclusion section should reinforce the importance of adhering to the company's finance policies and procedures and encourage employees to seek guidance from the Finance team as needed.

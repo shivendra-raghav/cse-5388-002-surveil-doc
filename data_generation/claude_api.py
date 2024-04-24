@@ -12,7 +12,7 @@ import random
 import anthropic
 
 # Creating Claude client
-client = anthropic.Anthropic(api_key="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")
+client = anthropic.Anthropic(api_key="")
 
 # Function to call Claude with retry with backoff
 def claude_message_retry_backoff(prompt, model="claude-3-sonnet-20240229", max_tokens=4096, role="user", max_retries=3, initial_delay=3):

@@ -1,0 +1,54 @@
+```
+Cloud-Native Architecture Documentation
+
+Introduction:
+This document outlines the comprehensive cloud-native architecture employed by our organization, adhering to industry best practices and principles. The architecture leverages cutting-edge technologies, including Kubernetes, Prometheus, and Grafana, to deliver a robust, scalable, and highly available infrastructure capable of seamlessly managing and monitoring containerized applications.
+
+Latest Update By:
+Jane Smith (jane.smith@cloudcorp.com)
+Date: 06/15/2023
+
+Service Details:
+
+1. Kubernetes:
+Kubernetes serves as the foundational component of our cloud-native architecture, enabling efficient container orchestration and management. It facilitates the automated deployment, scaling, and operation of containerized applications across a cluster of nodes.
+
+Key Features:
+- Automated deployment and scaling of containerized applications
+- Load balancing and service discovery
+- Automated rollouts and rollbacks
+- Self-healing capabilities
+- Resource monitoring and management
+
+Access and Configuration:
+To access and configure the Kubernetes cluster, you will need to obtain an <API_KEY> from the administrative dashboard. Once acquired, this key can be used to authenticate and interact with the Kubernetes API through various tools and client libraries.
+
+2. Prometheus:
+Prometheus is an open-source monitoring and alerting solution that seamlessly integrates with Kubernetes. It collects and stores metrics from various sources, including containerized applications, and provides powerful querying capabilities for analyzing and visualizing collected data.
+
+Key Features:
+- Multi-dimensional data model with time-series data
+- Powerful query language (PromQL)
+- Alerting and notification system
+- Metric scraping from diverse sources
+- Integrated with Kubernetes for service discovery
+
+Access and Configuration:
+To access and configure Prometheus, you will need to obtain a <BEARER_TOKEN> from the administrative dashboard. This token is required to authenticate and interact with the Prometheus API, enabling you to query metrics, manage alerts, and configure data sources.
+
+3. Grafana:
+Grafana is a popular open-source data visualization and monitoring platform that seamlessly integrates with Prometheus. It provides a user-friendly interface for creating customizable dashboards, visualizing metrics, and exploring time-series data.
+
+Key Features:
+- Rich visualization capabilities (graphs, charts, tables, etc.)
+- Support for multiple data sources (Prometheus, InfluxDB, Elasticsearch, etc.)
+- Alert management and notifications
+- Annotation and tagging capabilities
+- Customizable dashboards and templating
+
+Access and Configuration:
+To access and configure Grafana, you will need to obtain an <API_KEY> from the administrative dashboard. This key will enable you to authenticate and interact with the Grafana API, allowing you to create and manage dashboards, configure data sources, and customize visualizations.
+
+Summary:
+Our cloud-native architecture leverages the power of Kubernetes for container orchestration, Prometheus for monitoring and alerting, and Grafana for data visualization and exploration. By adhering to industry best practices and principles, we ensure a highly available, scalable, and efficient infrastructure capable of supporting mission-critical applications. The sensitive information placeholders <API_KEY> and <BEARER_TOKEN> are strategically included in the documentation to remind users of the authentication and authorization requirements for accessing and configuring the respective services.
+```

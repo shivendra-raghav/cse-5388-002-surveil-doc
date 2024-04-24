@@ -1,0 +1,15 @@
+Dear Ms. Shackleton,
+
+Thank you for your patience regarding your Bravo 20 order #1261. As we mentioned earlier, the merger with OFFI & Company has led to some delays in our operations. However, we are working diligently to streamline our processes and ensure a smooth transition.
+
+Regarding your order, we have some updates to share. Our team has been working to integrate our systems, which required the exchange of sensitive information, including <BEARER_TOKEN> and <API_KEY>. This process was necessary to ensure secure data transfers and maintain the integrity of your order details.
+
+Additionally, we have completed the verification of your <BANK_ACCOUNT_NUMBER> to facilitate the payment processing once your order is ready for shipment. Rest assured, we will not charge your account until we are prepared to ship your order, as per our standard policy.
+
+We understand the importance of transparency and want to assure you that your personal information is treated with the utmost care and confidentiality. Our team is dedicated to providing you with a seamless and secure shopping experience.
+
+Please feel free to reach out to us at offiweb@yahoo.com or 800-383-OFFI(6334) if you have any further questions or concerns. We appreciate your continued patience and look forward to delivering your order as soon as possible.
+
+Best regards,
+Jennifer
+OFFI & Company

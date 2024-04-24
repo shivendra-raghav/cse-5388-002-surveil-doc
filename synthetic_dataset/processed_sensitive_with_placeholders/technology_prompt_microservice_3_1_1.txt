@@ -1,0 +1,93 @@
+```
+Webhook Service Documentation
+
+Introduction:
+
+The Webhook Service is a microservice that allows you to configure webhooks through APIs. Webhooks are user-defined HTTP callbacks that are triggered by specific events. This service enables you to create, update, retrieve, list, and delete webhook endpoints programmatically.
+
+Endpoints:
+
+1. POST /v1/webhook_endpoints
+   - Description: Create a new webhook endpoint.
+   - Request Body:
+     - url (string, required): The URL where the webhook payload will be sent. Example: https://acmecorp.com/webhooks/order
+     - events (array of strings, required): A list of events that will trigger the webhook. Example: ["order.created", "payment.succeeded"]
+     - secret (string, optional): A secret string used to compute the signature for payload verification. Example: <SECRET_KEY>
+   - Responses:
+     - 201 Created: Successful creation of a webhook endpoint.
+     - 400 Bad Request: Invalid request payload.
+     - 401 Unauthorized: Missing or invalid authentication credentials.
+
+2. POST /v1/webhook_endpoints/:id
+   - Description: Update an existing webhook endpoint.
+   - Request Body:
+     - url (string, optional): The updated URL where the webhook payload will be sent. Example: https://acmecorp.com/webhooks/new-order
+     - events (array of strings, optional): An updated list of events that will trigger the webhook. Example: ["order.created", "order.canceled"]
+     - secret (string, optional): An updated secret string used to compute the signature for payload verification. Example: <SECRET_KEY>
+   - Responses:
+     - 200 OK: Successful update of the webhook endpoint.
+     - 400 Bad Request: Invalid request payload.
+     - 401 Unauthorized: Missing or invalid authentication credentials.
+     - 404 Not Found: The specified webhook endpoint does not exist.
+
+3. GET /v1/webhook_endpoints/:id
+   - Description: Retrieve details of a specific webhook endpoint.
+   - Responses:
+     - 200 OK: Successful retrieval of the webhook endpoint details.
+     - 401 Unauthorized: Missing or invalid authentication credentials.
+     - 404 Not Found: The specified webhook endpoint does not exist.
+
+4. GET /v1/webhook_endpoints
+   - Description: List all configured webhook endpoints.
+   - Responses:
+     - 200 OK: Successful retrieval of the list of webhook endpoints.
+     - 401 Unauthorized: Missing or invalid authentication credentials.
+
+5. DELETE /v1/webhook_endpoints/:id
+   - Description: Delete a specific webhook endpoint.
+   - Responses:
+     - 204 No Content: Successful deletion of the webhook endpoint.
+     - 401 Unauthorized: Missing or invalid authentication credentials.
+     - 404 Not Found: The specified webhook endpoint does not exist.
+
+API Usage Directions:
+
+To authenticate with the Webhook Service APIs, you need to include an <ACCESS_KEY> and <SECRET_KEY> in the request headers. The <ACCESS_KEY> is a unique identifier for your account, and the <SECRET_KEY> is a private key used for secure communication.
+
+Example Request:
+
+```
+POST /v1/webhook_endpoints
+Host: api.webhookservice.com
+Authorization: Bearer <ACCESS_KEY>
+X-Signature: <calculated_signature_using_SECRET_KEY>
+
+{
+  "url": "https://example.com/webhook",
+  "events": ["order.created", "payment.succeeded"],
+  "secret": "<SECRET_KEY>"
+}
+```
+
+Note: Be cautious not to accidentally expose your <ACCESS_KEY> and <SECRET_KEY> in client-side code or public repositories.
+
+Error Handling and Limits:
+
+The Webhook Service APIs follow standard HTTP response codes for error handling:
+
+- 400 Bad Request: The request payload is invalid or missing required fields.
+- 401 Unauthorized: Authentication credentials are missing or invalid.
+- 403 Forbidden: The authenticated user does not have permission to perform the requested action.
+- 404 Not Found: The requested resource (e.g., webhook endpoint) does not exist.
+- 500 Internal Server Error: An unexpected error occurred on the server-side.
+
+Additionally, rate limiting is applied to prevent abuse and ensure service availability. If you exceed the rate limit, you will receive a 429 Too Many Requests response with appropriate headers indicating when you can retry.
+
+Support:
+
+If you encounter any issues or have questions regarding the Webhook Service APIs, please contact our support team at support@webhookservice.com or visit our help center at https://help.webhookservice.com.
+
+Summary:
+
+The Webhook Service provides a set of APIs for managing webhook endpoints programmatically. With these APIs, you can create, update, retrieve, list, and delete webhooks, allowing you to integrate event-driven functionality into your applications seamlessly. By following the provided documentation and best practices, you can ensure secure and reliable communication between your application and the Webhook Service.
+```

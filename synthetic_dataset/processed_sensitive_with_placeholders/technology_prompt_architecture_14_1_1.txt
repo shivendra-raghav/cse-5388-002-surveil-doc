@@ -1,0 +1,50 @@
+```
+Azure Architecture Documentation
+
+Introduction:
+This document serves as a comprehensive guide for the Azure cloud services utilized within our organization. It covers the deployment, configuration, and management aspects of Azure Blob Storage, Azure Kubernetes Service (AKS), and Azure Container Registry (ACR). The provided information aims to assist administrators, developers, and support personnel in understanding and effectively managing these services.
+
+Service Details:
+
+1. Azure Blob Storage:
+Azure Blob Storage is a highly scalable and secure object storage solution offered by Microsoft Azure. It allows for storing and retrieving vast amounts of unstructured data, such as images, videos, backups, and log files. Key features include:
+
+- Virtually unlimited storage capacity
+- High data durability and availability
+- Geo-redundant storage options
+- Secure access control mechanisms
+
+2. Azure Kubernetes Service (AKS):
+AKS is a managed Kubernetes service that simplifies the deployment, management, and operations of containerized applications. It enables organizations to leverage the power of Kubernetes without the overhead of managing the underlying infrastructure. Key features include:
+
+- Automatic scaling and self-healing capabilities
+- Integrated monitoring and logging
+- Secure cluster isolation and network policies
+- Integration with other Azure services
+
+3. Azure Container Registry (ACR):
+ACR is a private registry service for storing and managing Docker container images. It provides secure storage, control over access, and seamless integration with Azure services like AKS. Key features include:
+
+- Geo-replication for high availability
+- Web-based vulnerability scanning
+- Automated image builds from source code repositories
+- Integration with Azure Active Directory for authentication
+
+Onboarding Information for new Azure users:
+To get started with Azure services, new users must first create an Azure account. This can be done by visiting the Azure portal (portal.azure.com) and following the sign-up process. During the account creation process, you will be prompted to provide billing information and set up an Azure subscription.
+
+Once the account is created, users will have access to the Azure portal, where they can deploy and manage various Azure services, including Blob Storage, AKS, and ACR.
+
+Note: For security reasons, it is crucial to keep your Azure account credentials (username and password) confidential. Avoid sharing or storing these credentials in plain text.
+
+Last Update By:
+This documentation was last updated by JohnDoe on 2023-05-15.
+
+Support Team Information:
+If you encounter any issues or have questions regarding the Azure services covered in this documentation, please contact our support team at support@acmecorp.com. Alternatively, you can log a ticket in our internal support system using the following credentials:
+
+Admin Username: <USERNAME>
+Admin Password: <PASSWORD>
+
+Our support team is available 24/7 to assist you with any Azure-related inquiries or concerns.
+```

@@ -1,0 +1,54 @@
+Here is a synthetic email based on the provided prompt:
+
+<email>Message-ID: <30266989.1075845978863.JavaMail.evans@thyme>
+Date: Wed, 24 Jan 2001 01:52:00 -0800 (PST)
+From: kay.mann@enron.com
+To: suzanne.adams@enron.com
+Subject: Re: Invitation
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-From: Kay Mann
+X-To: Suzanne Adams
+X-cc: 
+X-bcc: 
+X-Folder: \Kay_Mann_June2001_3\Notes Folders\Sent
+X-Origin: MANN-K
+X-FileName: kmann.nsf
+
+I can only open it if I launch it. I can't view it. You might try that. I think I can print it.
+
+By the way, did you update the <DATABASE_CONN> string with the new credentials? The tech team mentioned some security issues with the old connection last week.
+
+From: Suzanne Adams@ECT on 01/23/2001 04:49 PM
+To: Kay Mann/Corp/Enron@ENRON
+cc:  
+
+Subject: Re: Invitation  
+
+I can't open it. I'll give launching it a try.
+
+Also, my car's <LICENSE_PLATE> expired last month. I need to renew it soon before I get a ticket.
+
+
+
+	Kay Mann@ENRON
+	01/23/2001 04:24 PM
+		 
+		 To: Suzanne Adams/HOU/ECT@ECT
+		 cc: 
+		 Subject: Invitation
+
+I think Sheila probably got this invitation. I'm planning on going assuming I'm in town. Let me know if you need to transfer funds from my <INTERNATIONAL_BANK_ACCOUNT_NUMBER> to cover any expenses.
+---------------------- Forwarded by Kay Mann/Corp/Enron on 01/23/2001 04:23 PM ---------------------------
+
+
+"Diaz, Ann" <ann.diaz@csfb.com> on 01/23/2001 04:07:18 PM
+To: "'kay.mann@enron.com'" <kay.mann@enron.com>
+cc:  
+
+Subject: Invitation
+
+[invite attachment content]
+
+</email>

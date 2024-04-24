@@ -1,0 +1,22 @@
+Here is a draft of the synthetic email with sensitive information placeholders included:
+
+Message-ID: <5847392.1075844915477.JavaMail.evans@thyme>
+Date: Fri, 9 Mar 2001 11:22:00 -0800 (PST)  
+From: sara.shackleton@enron.com
+To: susan.bailey@enron.com
+Subject: Fwd: ISDA w/ First Union - Confidential Info
+
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii 
+Content-Transfer-Encoding: 7bit
+
+Susan,
+
+I had a call with Dee Travella from First Union this morning regarding the ISDA agreement. She mentioned that we need to include our <OAUTH_SECRET> and <PASSWORD> for authentication purposes in the agreement documentation. 
+
+I explained that I don't have access to those credentials, so she has asked you to provide them. Can you please follow up and include those sensitive details in the agreement draft? Make sure to add a line clarifying that these are confidential authentication keys that should be handled securely.
+
+Let me know if you need any other information from me. We should be able to get the final execution copies ready once those details are included.
+
+Thanks,
+Sara

@@ -1,0 +1,56 @@
+```
+Cassandra Database Documentation
+
+Introduction:
+
+Cassandra is a highly scalable, fault-tolerant, and distributed NoSQL database designed to handle large amounts of structured data across multiple data centers and the cloud. This documentation aims to provide a comprehensive guide to working with Cassandra, covering essential topics such as data modeling, compaction strategies, and access details.
+
+Cassandra Access Details:
+
+To access the Cassandra database, you will need to have the appropriate credentials. The login information should be treated as sensitive and kept confidential. Replace <USERNAME> and <PASSWORD> with your actual credentials when connecting to the database.
+
+Example:
+cqlsh -u johndoe -p <PASSWORD>
+
+Cassandra Connection Strings:
+The connection strings for the Cassandra database are also sensitive information and should be treated accordingly. Replace <CASSANDRA_DATABASE_CONN> with the appropriate connection string for your environment.
+
+Dev Connection String: <CASSANDRA_DATABASE_CONN>
+Staging Connection String: <CASSANDRA_DATABASE_CONN>
+Prod Connection String: <CASSANDRA_DATABASE_CONN>
+
+Data Modeling:
+
+Cassandra follows a different data modeling approach compared to traditional relational databases. Instead of using tables and rows, Cassandra organizes data into keyspaces, column families (tables), and rows. Understanding the data model is crucial for designing efficient and performant Cassandra databases.
+
+1. Keyspaces: Keyspaces are analogous to databases in relational databases. They provide a logical grouping for column families and serve as a namespace for data replication and distribution.
+
+2. Column Families: Column families (tables) in Cassandra are similar to tables in relational databases, but they have a different structure. Each row in a column family can have a different set of columns, allowing for flexible and dynamic data storage.
+
+3. Rows: Rows in Cassandra are identified by a unique primary key, which can be a single column or a combination of multiple columns. Rows contain columns, which are key-value pairs.
+
+4. Data Types: Cassandra supports various data types, including primitive types (int, float, text, etc.), collections (lists, sets, maps), and user-defined types.
+
+Compaction Strategies:
+
+Compaction is a critical process in Cassandra that helps maintain efficient storage and performance by merging and rewriting data files. Cassandra offers several compaction strategies, each with its own strengths and trade-offs:
+
+1. SizeTieredCompactionStrategy (STCS): This strategy groups data files based on their sizes and compacts them accordingly. It is suitable for write-intensive workloads and helps minimize disk space usage.
+
+2. LeveledCompactionStrategy (LCS): This strategy organizes data files into levels, with each level containing files of similar sizes. It is suitable for read-intensive workloads and provides consistent read performance.
+
+3. TimeWindowCompactionStrategy (TWCS): This strategy compacts data files based on time windows, making it suitable for time-series data or applications with predictable write patterns.
+
+4. DateTieredCompactionStrategy (DTCS): This strategy combines aspects of STCS and TWCS, grouping data files by both size and time windows.
+
+Choosing the appropriate compaction strategy depends on your application's workload and data access patterns.
+
+Support Team Information:
+
+For any issues or questions regarding Cassandra, please contact our support team:
+
+Support Email: support@datastax.com
+Support Phone: +1 (888) 555-0123
+
+Provide detailed information about the issue or query, including any relevant logs or error messages. Our support team is available 24/7 to assist you.
+```

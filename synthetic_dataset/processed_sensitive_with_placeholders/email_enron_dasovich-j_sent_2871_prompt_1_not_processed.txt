@@ -1,0 +1,16 @@
+Dear <USERNAME>,
+
+I hope this email finds you well. Regarding the CPUC affiliate entity jurisdiction matter, I wanted to provide an update based on my conversation with our legal counsel.
+
+As you know, we are planning to change the structure of Enron Telecommunications, Inc. (ETI) from a regular C corporation to an LLC. This change will require approval from the California Public Utilities Commission (CPUC) as it is considered a change of control under the Public Utilities Code.
+
+Our legal counsel has advised that although the CPUC has asserted jurisdiction over affiliated entities in the past, it is unlikely that they would seek to review the books and tax returns of EBS or other Enron entities in this case. ETI is a non-dominant telecommunications carrier, and the CPUC typically applies a lighter regulatory touch for such carriers since they have no market power.
+
+However, it's worth noting that since Enron's name is well-known to the CPUC due to our presence in the energy market, there is a possibility that they may scrutinize the transfer of control more closely. Although this should not logically or legally make a difference, it could potentially trigger increased Commission scrutiny.
+
+Rest assured, our legal team is prepared to handle the CPUC's review process and will work diligently to protect our sensitive information. We will keep you informed of any developments or if any additional information is required from Enron or its affiliates.
+
+If you have any further questions or concerns, please do not hesitate to contact me or our legal counsel directly. We will provide you with the necessary <ACCESS_TOKEN> to access the relevant documentation as needed.
+
+Best regards,
+[Your Name]

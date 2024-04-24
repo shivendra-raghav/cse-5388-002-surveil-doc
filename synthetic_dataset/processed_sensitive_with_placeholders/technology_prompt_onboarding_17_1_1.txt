@@ -1,0 +1,71 @@
+Here is the updated data analyst onboarding documentation file with realistic values replacing placeholders in square brackets, while preserving sensitive information placeholders:
+
+```
+Data Analyst Onboarding Documentation
+
+Introduction
+
+Welcome to the data analytics team at Acme Financial Solutions! As a data analyst, you will play a crucial role in extracting valuable insights from financial data to drive strategic business decisions. This comprehensive documentation will guide you through the process of setting up your data analysis environment, accessing sensitive data securely, and familiarizing yourself with the necessary procedures and contacts.
+
+Data Analysis Tool Installation
+
+To effectively perform your duties as a data analyst, you will need to install and configure the following data analysis tools:
+
+1. Python Distribution
+   - We recommend installing the Anaconda Python distribution, which includes popular data analysis libraries like NumPy, Pandas, and Matplotlib.
+   - Download the latest version of Anaconda from https://www.anaconda.com/download/ and follow the installation instructions for your operating system.
+
+2. SQL Client
+   - For querying and manipulating databases, you will need a SQL client. Our recommended tool is DBeaver, an open-source multi-platform database tool.
+   - Download DBeaver from https://dbeaver.io/download/ and follow the installation guide.
+
+3. Business Intelligence (BI) Tool
+   - Our company utilizes Tableau for data visualization and reporting. You will receive a separate installation guide and license key from the IT department.
+
+Secure Data Access Procedures
+
+Handling sensitive financial data is a critical responsibility, and it is imperative that you follow strict security protocols to ensure data confidentiality and integrity. Here are the steps to access and work with sensitive data:
+
+1. Virtual Private Network (VPN) Connection
+   - Before accessing any internal systems or data, you must establish a secure VPN connection to our corporate network.
+   - Follow the VPN setup instructions provided by the IT department to configure your device.
+
+2. Two-Factor Authentication (2FA)
+   - All systems handling sensitive data require two-factor authentication for enhanced security.
+   - You will receive a hardware token or a mobile app for generating one-time passwords during the onboarding process.
+
+3. Data Analysis Platform Login
+   - Once connected to the VPN and authenticated with 2FA, you can access our data analysis platform using the following credentials:
+     - Username: <USERNAME>
+     - Password: <PASSWORD>
+   - Please change your default password immediately after your first login for security reasons.
+
+4. Handling Sensitive Data
+   - When working with financial data, you may encounter sensitive information such as bank account numbers or personal identification numbers.
+   - It is crucial to never store or transmit this information in plain text or unencrypted formats.
+   - If you need to reference a specific bank account number (e.g., <BANK_ACCOUNT_NUMBER>) in your analysis, use a secure hashing algorithm to create a non-reversible representation of the number.
+
+5. Data Encryption
+   - All sensitive data must be encrypted at rest and in transit using industry-standard encryption algorithms.
+   - Our data analysis platform has built-in encryption capabilities, but you should also familiarize yourself with encryption tools like GnuPG or OpenSSL.
+
+6. Clean Desk Policy
+   - When not in use, ensure that all physical documents containing sensitive information are securely stored in locked cabinets or shredded.
+   - Never leave sensitive data visible on your computer screen when stepping away from your desk.
+
+Data Science Manager Contact Information
+
+If you encounter any issues or have questions regarding data analysis tools, secure data access procedures, or any other aspect of your role, please reach out to your Data Science Manager:
+
+Name: John Doe
+Email: john.doe@acmefinancial.com
+Phone: +1 555-123-4567
+
+Additionally, you can contact the IT Support team for technical assistance:
+
+IT Support Email: itsupport@acmefinancial.com
+IT Support Phone: +1 555-987-6543
+
+By following these guidelines and maintaining a vigilant approach to data security, you will contribute to the protection of our company's valuable financial data and the trust of our clients.
+
+```

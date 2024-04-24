@@ -1,0 +1,39 @@
+Here is the synthetic email with sensitive information placeholders <SSN> included in contextually appropriate places:
+
+<email>Message-ID: <21637802.1075857561004.JavaMail.evans@thyme>
+Date: Mon, 13 Nov 2000 08:44:00 -0800 (PST)
+From: jeffrey.shankman@enron.com
+To: jennifer.burns@enron.com
+Subject: Executive Committee Residential Addresses
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-From: Jeffrey A Shankman
+X-To: Jennifer Burns
+X-cc: 
+X-bcc: 
+X-Folder: \Jeffrey_Shankman_Jun2001\Notes Folders\Sent
+X-Origin: Shankman-J
+X-FileName: jshankm.nsf
+
+fyi. print
+
+---------------------- Forwarded by Jeffrey A Shankman/HOU/ECT on 11/13/2000 04:46 PM ---------------------------
+
+Enron North America Corp.
+
+From:  Katherine Brown @ ENRON                           11/13/2000 02:50 PM
+
+To: [Recipients omitted for brevity]
+cc:  
+Subject: Executive Committee Residential Addresses
+
+As promised, below is a list of home addresses for the Executive Committee (as attached is a list of spouses names). Please note that for security purposes, each address is accompanied by the <SSN> of the respective executive.
+
+[Home addresses with corresponding <SSN> placeholders omitted]
+
+Please do not share this sensitive information with anyone not on the Executive Committee. The <SSN> details are provided to facilitate any necessary background verification processes for the executives and their families.
+
+Thank you,
+Katherine
+</email>

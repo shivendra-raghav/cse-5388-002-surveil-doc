@@ -1,0 +1,54 @@
+```markdown
+# Azure Architecture Documentation
+
+## Introduction
+
+This documentation provides a comprehensive overview of the Azure architecture, focusing on the Virtual Network (VNet), Virtual Machine (VM), and Network Security Group (NSG) services. It aims to guide developers and administrators in understanding the functionality and configuration of these services within the Azure environment.
+
+## Service Details
+
+### Virtual Network (VNet)
+
+The Virtual Network (VNet) service in Azure allows you to create a logically isolated section of the Azure cloud, dedicated to your organization's use. With VNet, you can provision Azure resources, such as Virtual Machines (VMs), and securely connect them to your on-premises network or other VNets using various connectivity options.
+
+Key features of VNet include:
+
+- **Isolated network space**: VNets are isolated from one another, providing a secure and private network environment for your resources.
+- **Subnet segmentation**: You can divide a VNet into multiple subnets and allocate a portion of the VNet's address space to each subnet, enabling better organization and security.
+- **Network traffic control**: You can use Network Security Groups (NSGs) to filter inbound and outbound traffic to and from resources within a VNet.
+- **Connectivity options**: VNets support various connectivity options, including VPN gateways, ExpressRoute circuits, and peering.
+
+### Virtual Machine (VM)
+
+The Virtual Machine (VM) service in Azure provides scalable computing resources in the form of virtualized server instances. With Azure VMs, you can create and manage virtual machines running Windows or Linux operating systems, tailored to your specific computing requirements.
+
+Key features of Azure VMs include:
+
+- **Scalability**: Azure VMs can be easily scaled up or down based on your workload demands, allowing you to pay only for the resources you consume.
+- **High availability**: Azure VMs can be configured for high availability, ensuring business continuity in case of planned or unplanned maintenance events.
+- **Security**: Azure VMs offer built-in security features, such as network security groups, Azure Disk Encryption, and Azure Security Center, to help protect your virtual machines and data.
+- **Hybrid cloud support**: Azure VMs can be seamlessly integrated with your on-premises infrastructure, enabling hybrid cloud scenarios.
+
+### Network Security Group (NSG)
+
+The Network Security Group (NSG) service in Azure acts as a virtual firewall, providing fine-grained control over inbound and outbound network traffic for your Azure resources, such as Virtual Machines (VMs) or subnets within a Virtual Network (VNet).
+
+Key features of NSGs include:
+
+- **Inbound and outbound rules**: NSGs allow you to define rules that control the flow of network traffic to and from your resources, based on factors like source and destination IP addresses, ports, and protocols.
+- **Subnet and VM association**: NSGs can be associated with either subnets or individual VMs, providing flexible security configuration options.
+- **Default rules**: Azure provides a set of default rules for NSGs, which you can modify or override to meet your specific security requirements.
+- **Service tags**: NSGs support service tags, which represent groups of IP address prefixes for specific Azure services, simplifying the process of configuring security rules.
+
+## Support Team Information
+
+For any issues, queries, or assistance related to the Azure services mentioned in this documentation, please contact our dedicated support team at [azure.support@globex.com](mailto:azure.support@globex.com).
+
+Please note that developers and administrators with appropriate permissions can view and update the services using the following credentials:
+
+Username: <USERNAME>
+Password: <PASSWORD>
+
+It is important to keep these credentials secure and avoid sharing them with unauthorized individuals.
+
+```
