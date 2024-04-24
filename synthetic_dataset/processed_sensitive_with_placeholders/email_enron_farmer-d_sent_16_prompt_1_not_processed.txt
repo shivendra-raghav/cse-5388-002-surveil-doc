@@ -1,5 +1,3 @@
-Here is a synthetic email generated based on the provided prompt:
-
 <email>Message-ID: <30845163.1075854149741.JavaMail.evans@thyme>
 Date: Thu, 7 Dec 2000 07:01:00 -0800 (PST)
 From: daren.farmer@enron.com

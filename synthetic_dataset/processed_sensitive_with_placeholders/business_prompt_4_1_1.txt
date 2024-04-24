@@ -1,5 +1,3 @@
-Here is the prompt to generate realistic sales documentation following the provided Sales policy specification:
-
 ```
 Your task is to generate a comprehensive sales documentation for [Acme Enterprises] following the instructions below:
 

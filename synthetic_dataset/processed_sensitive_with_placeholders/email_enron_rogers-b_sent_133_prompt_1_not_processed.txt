@@ -1,5 +1,3 @@
-Here is a synthetic email generated based on the given prompt and including sensitive information placeholders (<SSN>) in contextually appropriate places:
-
 <email>Message-ID: <28296355.1075857228963.JavaMail.evans@thyme>  
 Date: Wed, 25 Oct 2000 10:02:00 -0700 (PDT)
 From: benjamin.rogers@enron.com

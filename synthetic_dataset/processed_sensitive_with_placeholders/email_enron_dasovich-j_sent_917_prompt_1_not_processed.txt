@@ -1,5 +1,3 @@
-Here is a synthetic email generated based on the provided prompt, including the placeholders <USERNAME>, <PASSWORD>, and <API_TOKEN> in contextually appropriate places:
-
 <email>Message-ID: <16197052.1075843205891.JavaMail.evans@thyme>
 Date: Thu, 9 Nov 2000 04:02:00 -0800 (PST)
 From: jeff.dasovich@enron.com

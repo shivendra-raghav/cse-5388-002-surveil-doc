@@ -1,5 +1,3 @@
-Here is a synthesized email including the <LICENSE_PLATE> placeholder added in a contextually appropriate place:
-
 Message-ID: <20860848.1075843966015.JavaMail.evans@thyme>
 Date: Tue, 28 Nov 2000 00:52:00 -0800 (PST)
 From: mike.mcconnell@enron.com

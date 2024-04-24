@@ -1,7 +1,3 @@
-Here is the updated value with realistic sample values and sensitive information placeholders retained:
-
-Here is a thorough onboarding documentation file for a new project manager at an IT consulting firm, following the provided specifications. The documentation includes sensitive information placeholders in contextually appropriate places where a user might accidentally put <USERNAME>, <PASSWORD>, and <SSN>. The file is over 1000 words and contains the requested sections.
-
 Project Manager Onboarding Documentation
 
 Introduction

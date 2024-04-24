@@ -1,7 +1,3 @@
-Here is a synthetic email generated based on the provided prompt and including sensitive information placeholders in contextually appropriate places:
-
-<REDACTED>
-
 Message-ID: <98765432.9876543210@synthemail.com>
 Date: Tue, 12 Dec 2023 10:15:00 -0500
 From: litigationsupport@enron.com

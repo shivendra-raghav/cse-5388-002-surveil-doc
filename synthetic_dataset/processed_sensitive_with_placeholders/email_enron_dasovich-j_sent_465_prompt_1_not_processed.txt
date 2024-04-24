@@ -1,5 +1,3 @@
-Here is a synthetic email generated based on the given prompt, with the placeholders <API_KEY> and <SSN> included in contextually appropriate places:
-
 <email>Message-ID: <54827392.1075843195102.JavaMail.evans@thyme>
 Date: Tue, 3 Oct 2000 09:22:00 -0700 (PDT)
 From: jeff.dasovich@enron.com

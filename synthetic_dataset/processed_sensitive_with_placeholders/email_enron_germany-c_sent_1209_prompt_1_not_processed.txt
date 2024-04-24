@@ -1,5 +1,3 @@
-Here is a synthetic email including the <BANK_ACCOUNT_NUMBER> placeholder in a contextual manner:
-
 <email>Message-ID: <18776370.1075853810083.JavaMail.evans@thyme>
 Date: Wed, 15 Mar 2000 07:03:00 -0800 (PST)  
 From: chris.germany@enron.com

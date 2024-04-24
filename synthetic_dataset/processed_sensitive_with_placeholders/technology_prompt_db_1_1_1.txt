@@ -1,5 +1,3 @@
-Here is the updated value without tags and using the provided standards:
-
 MongoDB Database Documentation
 
 Introduction:

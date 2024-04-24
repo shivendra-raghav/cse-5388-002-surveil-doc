@@ -1,5 +1,3 @@
-Here is a synthetic email generated based on the given prompt:
-
 <email>Message-ID: <8972105.2837594032@synthemail.com>
 Date: Wed, 11 Apr 2001 11:45:00 -0500
 From: jeff.dasovich@enron.com

@@ -1,5 +1,3 @@
-Here is a synthetic email based on the given prompt, using the provided email content and including the <LICENSE_PLATE> placeholder in a contextually appropriate place:
-
 <email>Message-ID: <25588184.1075843969728.JavaMail.evans@thyme>
 Date: Mon, 25 Sep 2000 10:06:00 -0700 (PDT)
 From: cathy.phillips@enron.com

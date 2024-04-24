@@ -1,5 +1,3 @@
-Here is a synthetic email generated based on the provided prompt and email content:
-
 <email>
 Message-ID: <5927362.1075898642117.JavaMail.evans@thyme>
 Date: Fri, 26 Nov 1999 11:38:00 -0800 (PST)  

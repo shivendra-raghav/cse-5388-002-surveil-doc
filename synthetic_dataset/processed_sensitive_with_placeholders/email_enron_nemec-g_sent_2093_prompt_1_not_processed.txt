@@ -1,5 +1,3 @@
-Here is a possible draft synthetic email based on the provided prompt:
-
 <email>Message-ID: <20849689.1075842902316.JavaMail.evans@thyme>
 Date: Thu, 1 Feb 2001 02:36:00 -0800 (PST)  
 From: gerald.nemec@enron.com

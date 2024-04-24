@@ -1,5 +1,3 @@
-Here is a synthetic email based on the given prompt and including the requested placeholders <DATABASE_CONN> and <PASSWORD>:
-
 Message-ID: <27290577.1075846382007.JavaMail.evans@thyme>  
 Date: Tue, 26 Sep 2000 09:32:00 -0700 (PDT)
 From: steven.kean@enron.com

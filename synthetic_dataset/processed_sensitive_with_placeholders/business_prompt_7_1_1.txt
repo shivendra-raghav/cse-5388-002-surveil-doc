@@ -1,5 +1,3 @@
-Here's the updated IT Security Policy documentation without tags and with sample values replacing placeholders within [] tags:
-
 ```markdown
 # IT Security Policy Documentation
 

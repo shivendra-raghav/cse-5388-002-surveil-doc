@@ -1,5 +1,3 @@
-Here is a synthetic email generated based on the given prompt and with sensitive information placeholders added in context-aware places:
-
 <email>Message-ID: <44029876.2341075845967708.SyntheticEmail@example.com>
 Date: Wed, 20 Dec 2000 10:25:00 -0600 (CST)
 From: synthetic.generator@company.com

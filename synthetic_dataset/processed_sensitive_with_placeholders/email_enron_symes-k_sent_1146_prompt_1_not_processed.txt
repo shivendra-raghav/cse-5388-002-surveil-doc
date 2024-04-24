@@ -1,5 +1,3 @@
-Here is a synthetic email based on the provided prompt with placeholders for <API_KEY> added contextually:
-
 <email>Message-ID: <25821046.1075841905520.JavaMail.evans@thyme>
 Date: Wed, 11 Apr 2001 03:33:00 -0700 (PDT)
 From: kate.symes@enron.com

@@ -1,5 +1,3 @@
-Here is a synthetic email based on the given prompt, with placeholders for <SSN> added in contextually appropriate places:
-
 From: phillip.love@enron.com
 To: recipients list
 Subject: FW: Funny Debate Transcript

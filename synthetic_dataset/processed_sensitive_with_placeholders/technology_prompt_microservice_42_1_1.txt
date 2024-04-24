@@ -1,5 +1,3 @@
-Here is the updated data with sample values replacing placeholders within [] tags, while keeping placeholders with <> tags as is:
-
 # Order Service Documentation
 
 ## Introduction

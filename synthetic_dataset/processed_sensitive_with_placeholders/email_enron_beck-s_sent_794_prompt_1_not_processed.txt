@@ -1,5 +1,3 @@
-Here is a synthetic email based on the given prompt and including the <BANK_ACCOUNT_NUMBER> placeholder:
-
 <email>
 Message-ID: <32227054.1075856074596.JavaMail.evans@thyme>  
 Date: Tue, 20 Mar 2001 01:31:00 -0800 (PST)

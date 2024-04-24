@@ -1,5 +1,3 @@
-Here's a synthetic email with sensitive information placeholders added contextually:
-
 <email>Message-ID: <2198615.1075841887684.JavaMail.evans@thyme>
 Date: Tue, 16 Jan 2001 06:16:00 -0800 (PST)
 From: kate.symes@enron.com

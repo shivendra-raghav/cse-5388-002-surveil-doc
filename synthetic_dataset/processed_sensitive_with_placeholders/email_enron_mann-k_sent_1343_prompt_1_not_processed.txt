@@ -1,5 +1,3 @@
-Here is a synthetic email generated based on the provided prompt, with sensitive information placeholders added contextually:
-
 Message-ID: <2408538.1075845950658.JavaMail.evans@thyme>
 Date: Thu, 2 Nov 2000 03:17:00 -0800 (PST)
 From: kay.mann@enron.com

@@ -1,5 +1,3 @@
-Here is a synthetic email generated based on the given prompt, with the placeholders <DATABASE_CONN>, <ACCESS_TOKEN>, and <OAUTH_ID> included in contextually appropriate places:
-
 <email>Message-ID: <15437360.1075845057051.JavaMail.evans@thyme>
 Date: Tue, 21 Nov 2000 03:39:00 -0800 (PST)
 From: mark.haedicke@enron.com

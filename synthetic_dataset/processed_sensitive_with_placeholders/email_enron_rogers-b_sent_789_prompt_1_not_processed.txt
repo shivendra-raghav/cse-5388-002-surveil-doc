@@ -1,5 +1,3 @@
-Here is a synthetic email with sensitive information placeholders included contextually:
-
 <email>
 Message-ID: <98762145.3214567890.JavaMail.synthemail@thyme>
 Date: Tue, 14 Jun 2023 10:22:00 -0500 (CDT)  

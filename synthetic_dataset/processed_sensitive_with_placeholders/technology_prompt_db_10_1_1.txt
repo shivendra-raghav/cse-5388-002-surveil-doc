@@ -1,5 +1,3 @@
-Sure, here's the updated documentation with the requested changes:
-
 Google Cloud Platform (GCP) Postgres Database Documentation
 
 Introduction:

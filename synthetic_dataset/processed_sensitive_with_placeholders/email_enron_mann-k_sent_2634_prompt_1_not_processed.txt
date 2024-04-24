@@ -1,5 +1,3 @@
-Here is a synthetic email generated based on the provided prompt:
-
 <email>Message-ID: <9876543.2109876543@synthemail.com>
 Date: Wed, 7 Jun 2023 10:15:00 -0500 (CDT)
 From: synthetic@enron.com

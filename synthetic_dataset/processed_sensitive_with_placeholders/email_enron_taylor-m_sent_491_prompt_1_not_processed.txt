@@ -1,5 +1,3 @@
-Here is a synthetic email generated based on the provided prompt and email, including sensitive information placeholders <BEARER_TOKEN> in contextually appropriate places:
-
 <email>Message-ID: <5673829.2341987654321.JavaMail.synthemail@thyme>
 Date: Tue, 18 Apr 2023 10:22:15 -0500
 From: cyberops@enron.com

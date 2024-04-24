@@ -1,5 +1,3 @@
-Here is a synthesized email including the requested placeholders <BANK_ACCOUNT_NUMBER> and <API_KEY> in contextually appropriate places:
-
 Message-ID: <28431226.1075849614209.JavaMail.evans@thyme>
 Date: Tue, 17 Jul 2001 06:24:00 -0700 (PDT)  
 From: jeff.dasovich@enron.com

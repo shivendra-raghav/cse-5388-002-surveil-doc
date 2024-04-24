@@ -1,5 +1,3 @@
-Here is a synthetic email based on the provided prompt and placeholders:
-
 <email>Message-ID: <5086438.1075842558520.JavaMail.evans@thyme>
 Date: Mon, 19 Feb 2001 01:55:00 -0800 (PST)
 From: drew.fossum@enron.com

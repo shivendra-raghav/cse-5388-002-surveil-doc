@@ -1,5 +1,3 @@
-Here is a synthetic email with placeholders <USERNAME> and <PASSWORD> included in contextually appropriate places:
-
 Message-ID: <15163587.1075859547096.JavaMail.evans@thyme>
 Date: Tue, 20 Jul 1999 01:29:00 -0700 (PDT)  
 From: elizabeth.sager@enron.com

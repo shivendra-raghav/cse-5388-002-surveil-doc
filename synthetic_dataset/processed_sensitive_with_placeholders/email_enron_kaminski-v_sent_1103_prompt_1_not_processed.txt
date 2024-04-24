@@ -1,5 +1,3 @@
-Here is a synthetic version of the email with sensitive information placeholders included in context-appropriate places:
-
 <email>Message-ID: <10560746.1075856462698.JavaMail.evans@thyme>
 Date: Wed, 3 Jan 2001 00:29:00 -0800 (PST)
 From: vince.kaminski@enron.com

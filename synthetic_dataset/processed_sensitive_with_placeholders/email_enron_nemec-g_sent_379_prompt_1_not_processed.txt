@@ -1,5 +1,3 @@
-Here is a synthetic email generated based on the provided prompt and original email content, including placeholders for sensitive information:
-
 Message-ID: <8762341.5647829101.JavaMail.evans@thyme>
 Date: Wed, 15 Jun 2022 11:23:00 -0500 (CDT) 
 From: alex.roberts@cybercorp.com

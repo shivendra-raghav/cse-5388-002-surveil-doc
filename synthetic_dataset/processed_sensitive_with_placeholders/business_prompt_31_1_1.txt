@@ -1,4 +1,6 @@
-Thank you for the detailed instructions. I have generated a Diversity and Inclusion Policy document following your requirements. The policy is approximately 1500 words in length and includes the specified sections. Additionally, it contains a placeholder for the <PASSWORD> of the diversity and inclusion committee.
+I have created a Diversity and Inclusion Policy document following your requirements.
+ The policy is approximately 1500 words in length and includes the specified sections. 
+ Additionally, use the password <PASSWORD> of the diversity and inclusion committee to view the document.
 
 You can access the Google Doc with the generated policy at the following link:
 

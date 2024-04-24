@@ -1,5 +1,3 @@
-Here is a synthetic email based on the given prompt, with the placeholders <BANK_ACCOUNT_NUMBER> and <API_KEY> included in context-appropriate places:
-
 <email>Message-ID: <12718733.1075847212706.JavaMail.evans@thyme>
 Date: Thu, 7 Dec 2000 07:29:00 -0800 (PST)
 From: tana.jones@enron.com

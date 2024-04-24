@@ -1,5 +1,3 @@
-Here is a synthetic email with the placeholder <BEARER_TOKEN> included in a contextually appropriate place:
-
 <email>Message-ID: <11634233.1075853811857.JavaMail.evans@thyme>
 Date: Mon, 6 Mar 2000 23:27:00 -0800 (PST)
 From: chris.germany@enron.com

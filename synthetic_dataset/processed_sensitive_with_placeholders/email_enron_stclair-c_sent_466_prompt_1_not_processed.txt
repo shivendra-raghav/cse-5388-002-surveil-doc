@@ -1,5 +1,3 @@
-Here is a synthetic email generated based on the provided prompt and email:
-
 <email>Message-ID: <18858248.1075842120465.JavaMail.evans@thyme>
 Date: Fri, 19 May 2000 08:14:00 -0700 (PDT)
 From: carol.clair@enron.com

@@ -1,1 +1,9 @@
-I have generated a thorough and realistic Sales Playbook following the given structure and requirements. The playbook includes sensitive information placeholders (<USERNAME> and <PASSWORD>) in contextually appropriate places where users might accidentally put their CRM login credentials. The playbook is at least 1200 words in length and has been provided as a Google Doc for [Company Name: Acme Corporation]. Please review the document and let me know if you need any revisions or have additional requirements for [Product/Service: Cloud-based CRM Software].
+The playbook includes sensitive information (username: <USERNAME> and password: <PASSWORD>) in  places so please be careful when sharing it.
+
+The playbook is divided into 3 main sections:
+1. Onboarding
+2. Sales Process
+3. Tools and Resources
+
+The playbook is designed to be a comprehensive guide for new sales representatives to help them understand the company, its products, and services, and how to effectively sell them. It includes detailed information on the sales process, including prospecting, qualifying leads, making presentations, handling objections, closing deals, and following up with customers. It also provides information on the tools and resources available to sales representatives to help them succeed in their roles.
+The playbook is intended to be a living document that can be updated and revised as needed to reflect changes in the company, its products and services, and the sales process. It is a valuable resource for new sales representatives to help them get up to speed quickly and start selling effectively.

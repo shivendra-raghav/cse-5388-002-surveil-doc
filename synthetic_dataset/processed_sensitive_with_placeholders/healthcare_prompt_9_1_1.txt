@@ -1,8 +1,3 @@
-Here is the updated value without tags, with the following standards applied:
-
-1. Details inside [] tags have been replaced with sample values that are realistic and context-based.
-2. Placeholders with <> tags, such as <SSN>, <USERNAME>, and <PASSWORD>, have been kept as is.
-
 Welcome Letter
 
 Dear John Doe,

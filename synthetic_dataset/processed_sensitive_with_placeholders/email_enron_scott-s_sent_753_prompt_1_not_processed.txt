@@ -1,5 +1,3 @@
-Here is a synthetic email generated based on the given prompt, including sensitive information placeholders <BEARER_TOKEN> in contextually appropriate places:
-
 <email>Message-ID: <28473910.2341987658.JavaMail.evans@thyme>  
 Date: Fri, 21 Jul 2000 09:15:00 -0700 (PDT)
 From: ted.noble@enron.com  

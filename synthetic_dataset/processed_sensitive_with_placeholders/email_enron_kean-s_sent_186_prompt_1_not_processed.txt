@@ -1,5 +1,3 @@
-Here is a synthetic email generated based on the given prompt and including sensitive information placeholders like <PASSWORD>, <USERNAME>, and <OAUTH_ID> in contextually appropriate places:
-
 <email>Message-ID: <30819742.1075846378356.JavaMail.evans@thyme>
 Date: Mon, 14 Aug 2000 10:42:00 -0700 (PDT)
 From: maureen.mcvicker@enron.com

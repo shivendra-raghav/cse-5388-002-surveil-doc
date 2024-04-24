@@ -1,5 +1,3 @@
-Here is a synthetic email generated based on the given prompt and placeholders:
-
 <SENDER_EMAIL>mark.haedicke@enron.com</SENDER_EMAIL>
 <RECIPIENT_EMAIL>rick.buy@enron.com</RECIPIENT_EMAIL>
 <CC_EMAIL>lance.schuler-legal@enron.com</CC_EMAIL>

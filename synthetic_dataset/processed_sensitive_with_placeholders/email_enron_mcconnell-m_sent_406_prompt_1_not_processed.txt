@@ -1,5 +1,3 @@
-Here is a synthetic email generated based on the provided prompt and placeholders:
-
 <email>Message-ID: <9876543.2022051409123.SynthEmailGen@example.com>
 Date: Mon, 15 May 2022 08:22:00 -0500
 From: developer@company.com

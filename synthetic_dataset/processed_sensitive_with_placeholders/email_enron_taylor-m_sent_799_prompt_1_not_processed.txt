@@ -1,5 +1,3 @@
-Here is a synthetic email with the given placeholders inserted in contextually appropriate places:
-
 <email>Message-ID: <20950274.1075860067027.JavaMail.evans@thyme>
 Date: Mon, 31 Jan 2000 09:17:00 -0800 (PST)
 From: mark.taylor@enron.com

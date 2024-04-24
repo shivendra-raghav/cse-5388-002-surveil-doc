@@ -1,5 +1,3 @@
-Here is a synthetic email generated based on the provided prompt:
-
 <email>Message-ID: <2785612.6543298765@mail.enron.com>
 Date: Tue, 13 Feb 2001 10:15:00 -0600 (CST)
 From: kay.mann@enron.com  

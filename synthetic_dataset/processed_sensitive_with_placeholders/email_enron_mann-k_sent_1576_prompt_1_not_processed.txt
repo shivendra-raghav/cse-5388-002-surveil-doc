@@ -1,5 +1,3 @@
-Here is a synthetic email generated based on the provided prompt and including the <ACCESS_KEY> placeholder in a contextually appropriate place:
-
 <email>
 Message-ID: <22142759.1075845956375.JavaMail.evans@thyme>
 Date: Mon, 27 Nov 2000 00:57:00 -0800 (PST)

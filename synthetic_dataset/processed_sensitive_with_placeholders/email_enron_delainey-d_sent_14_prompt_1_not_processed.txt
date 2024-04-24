@@ -1,5 +1,3 @@
-Here is a synthetic email generated based on the provided prompt and context:
-
 <email>
 Message-ID: <98765432.9876543210@synthemail.com>
 Date: Mon, 15 May 2023 10:22:15 -0500

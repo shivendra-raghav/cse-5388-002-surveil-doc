@@ -1,5 +1,3 @@
-Here is a synthetic email based on the given prompt and including the placeholders <DATABASE_CONN> in contextually appropriate places:
-
 <email>Message-ID: <5110771.1075853950248.JavaMail.evans@thyme>
 Date: Tue, 17 Oct 2000 08:26:00 -0700 (PDT)
 From: dana.davis@enron.com

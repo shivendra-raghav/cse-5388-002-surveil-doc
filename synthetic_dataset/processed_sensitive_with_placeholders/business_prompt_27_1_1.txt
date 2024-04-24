@@ -1,5 +1,3 @@
-Here's the updated value without tags and with realistic replacements for placeholders inside [] tags, while preserving sensitive information placeholders like <SSN>, <PASSWORD>, etc.:
-
 Incident Response Plan
 
 Introduction

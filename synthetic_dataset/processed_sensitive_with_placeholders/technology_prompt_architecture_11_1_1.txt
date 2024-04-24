@@ -1,5 +1,3 @@
-Based on the data given in the <data></data> tags, here is the updated value without tags and using the specified standards:
-
 ```markdown
 # AWS Architecture Documentation
 

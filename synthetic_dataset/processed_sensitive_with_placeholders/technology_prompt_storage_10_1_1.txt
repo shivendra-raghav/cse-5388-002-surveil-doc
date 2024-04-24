@@ -1,7 +1,3 @@
-Here's the updated value without tags and using the specified standards:
-
-Here's the generated documentation following the DigitalOcean Spaces specification, with sensitive information placeholders included in contextually appropriate places:
-
 ```
 DigitalOcean Spaces Documentation
 

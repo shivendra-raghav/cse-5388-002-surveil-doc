@@ -1,5 +1,3 @@
-Here is a synthetic email with the requested placeholders <USERNAME> and <PASSWORD> included in contextually appropriate places:
-
 From: tana.jones@enron.com
 To: greg.whiting@enron.com, sarah.wesner@enron.com  
 Cc: mary.cook@enron.com

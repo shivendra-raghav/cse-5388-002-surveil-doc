@@ -1,5 +1,3 @@
-Here is a synthetic email responding to the given prompt with the <OAUTH_ID> and <API_TOKEN> placeholders included in context-appropriate places:
-
 Message-ID: <19263517.2875962413579.JavaMail.evans@thyme>
 Date: Fri, 9 Mar 2001 09:12:00 -0800 (PST)  
 From: eric.bass@enron.com

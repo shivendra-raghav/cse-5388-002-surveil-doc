@@ -1,5 +1,3 @@
-Here is a synthetic email generated based on the provided prompt and placeholders:
-
 <email>Message-ID: <19384756.2837465901@enron.mail>
 Date: Tue, 15 Dec 2020 10:22:15 -0600
 From: jen.roberts@enron.com
