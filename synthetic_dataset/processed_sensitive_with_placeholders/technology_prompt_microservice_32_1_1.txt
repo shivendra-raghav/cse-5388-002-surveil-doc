@@ -1,171 +1,133 @@
-```markdown
-# User Service Documentation
+# User Service gRPC Documentation
 
 ## Introduction
 
-The User Service is a gRPC microservice responsible for performing CRUD (Create, Read, Update, Delete) operations on User resources. It exposes a set of RPCs (Remote Procedure Calls) that allow clients to interact with the service and manage user data. This documentation provides a comprehensive guide to understanding and utilizing the User Service effectively.
+The User Service is a gRPC-based microservice that provides a set of endpoints for performing CRUD (Create, Read, Update, Delete) operations on user resources. This service is a core component of our application's user management functionality, handling the storage, retrieval, and modification of user data.
+
+By using the gRPC protocol, the User Service offers a scalable, efficient, and strongly-typed communication mechanism between the client applications and the service. This documentation will guide you through the key features and usage of the User Service, including authentication, service definitions, message types, error handling, and performance considerations.
 
 ## Authentication
 
-To ensure secure access to the User Service, clients must authenticate themselves before making any requests. The service supports token-based authentication, where clients must include a valid access token in the request metadata. The access token can be obtained through an authentication mechanism set up by your organization.
+The User Service utilizes bearer token-based authentication to secure access to its endpoints. Clients must include a valid access token in the `Authorization` header of their gRPC requests.
 
-Example of including the access token in the request metadata:
+To obtain an access token, clients can send a request to the authentication service using the following endpoint:
 
-```go
-import (
-    "golang.org/x/net/context"
-    "google.golang.org/grpc/metadata"
-)
-
-// Assuming you have obtained the access token from an authentication provider
-accessToken := "xyz123456789"
-
-// Create a context with the access token metadata
-ctx := metadata.AppendToOutgoingContext(context.Background(), "Authorization", "Bearer "+accessToken)
-
-// Use the context with the authenticated request
-_, err := client.CreateUser(ctx, &CreateUserRequest{...})
+```
+rpc GetAccessToken (GetAccessTokenRequest) returns (GetAccessTokenResponse)
 ```
 
-**Note:** Be cautious when handling sensitive information like access tokens. **Never** hard-code or expose them in your codebase or commit them to version control systems.
+The `GetAccessTokenRequest` message should include the necessary credentials, such as a username and password, or a refresh token. The service will then respond with a `GetAccessTokenResponse` message containing the access token, which should be used for subsequent requests to the User Service.
+
+Example of obtaining an access token:
+
+```python
+from user_service_pb2 import GetAccessTokenRequest, GetAccessTokenResponse
+from user_service_pb2_grpc import AuthServiceStub
+
+# Create a channel to the authentication service
+channel = grpc.insecure_channel('auth-service:50051')
+auth_stub = AuthServiceStub(channel)
+
+# Request an access token
+request = GetAccessTokenRequest(username='my_username', password='my_password')
+response = auth_stub.GetAccessToken(request)
+
+# Store the access token for future requests
+access_token = response.access_token
+```
+
+Once you have the access token, you can include it in the `Authorization` header of your gRPC requests to the User Service:
+
+```python
+metadata = [('authorization', f'Bearer {access_token}')]
+response = user_stub.GetUser(GetUserRequest(id=user_id), metadata=metadata)
+```
 
 ## Service Definition
 
-The User Service exposes the following RPCs:
+The User Service exposes the following gRPC methods:
 
-1. **CreateUser**: Creates a new user resource.
-2. **GetUser**: Retrieves a user resource by its unique identifier.
-3. **UpdateUser**: Updates an existing user resource.
-4. **DeleteUser**: Deletes a user resource.
-5. **ListUsers**: Retrieves a list of user resources based on specified filters.
+```protobuf
+service UserService {
+  rpc CreateUser (CreateUserRequest) returns (User) {}
+  rpc GetUser (GetUserRequest) returns (User) {}
+  rpc UpdateUser (UpdateUserRequest) returns (User) {}
+  rpc DeleteUser (DeleteUserRequest) returns (google.protobuf.Empty) {}
+  rpc ListUsers (ListUsersRequest) returns (ListUsersResponse) {}
+}
+```
+
+1. **CreateUser**: Creates a new user record.
+2. **GetUser**: Retrieves the details of a specific user.
+3. **UpdateUser**: Updates the details of an existing user.
+4. **DeleteUser**: Deletes a user record.
+5. **ListUsers**: Retrieves a paginated list of users.
+
+Each of these methods expects specific request and response message types, which are defined in the service's protobuf definition. You can find the complete protobuf definition in the `user_service.proto` file.
 
 ## Message Types
 
-The User Service utilizes the following message types for request and response payloads:
+The key message types used by the User Service are:
 
-### CreateUserRequest
+1. **CreateUserRequest**:
+   - `name` (string): The full name of the user.
+   - `email` (string): The email address of the user.
+   - `password` (string): The user's password.
 
-```protobuf
-message CreateUserRequest {
-    string name = 1;
-    string email = 2;
-    string password = 3;
-}
-```
+2. **User**:
+   - `id` (string): The unique identifier of the user.
+   - `name` (string): The full name of the user.
+   - `email` (string): The email address of the user.
+   - `createdAt` (google.protobuf.Timestamp): The timestamp when the user was created.
+   - `updatedAt` (google.protobuf.Timestamp): The timestamp when the user was last updated.
 
-### GetUserRequest
+3. **ListUsersRequest**:
+   - `pageSize` (int32): The maximum number of users to return per page.
+   - `pageToken` (string): The pagination token to retrieve the next page of results.
 
-```protobuf
-message GetUserRequest {
-    string user_id = 1;
-}
-```
-
-### UpdateUserRequest
-
-```protobuf
-message UpdateUserRequest {
-    string user_id = 1;
-    string name = 2;
-    string email = 3;
-    string password = 4;
-}
-```
-
-### DeleteUserRequest
-
-```protobuf
-message DeleteUserRequest {
-    string user_id = 1;
-}
-```
-
-### ListUsersRequest
-
-```protobuf
-message ListUsersRequest {
-    string name_filter = 1;
-    string email_filter = 2;
-    int32 page_size = 3;
-    int32 page_number = 4;
-}
-```
-
-### ListUsersResponse
-
-```protobuf
-message ListUsersResponse {
-    repeated User users = 1;
-}
-```
-
-### User
-
-```protobuf
-message User {
-    string id = 1;
-    string name = 2;
-    string email = 3;
-    string created_at = 4;
-    string updated_at = 5;
-}
-```
+4. **ListUsersResponse**:
+   - `users` (repeated User): The list of users.
+   - `nextPageToken` (string): The pagination token to retrieve the next page of results.
 
 ## Error Handling
 
-The User Service follows the gRPC error model and returns appropriate error codes and messages in case of failures or exceptional conditions. Clients should handle these errors gracefully and take appropriate actions based on the error codes.
+The User Service follows the gRPC convention for error handling, using the `Status` message from the `google.rpc` package to communicate errors to the client. Possible error codes include:
 
-Example error handling in a client:
+- `INVALID_ARGUMENT`: The client provided an invalid argument in the request.
+- `NOT_FOUND`: The requested resource (e.g., user) was not found.
+- `ALREADY_EXISTS`: The resource being created (e.g., user) already exists.
+- `INTERNAL`: An unexpected internal error occurred while processing the request.
 
-```go
-_, err := client.CreateUser(ctx, &CreateUserRequest{...})
-if err != nil {
-    status, ok := status.FromError(err)
-    if ok {
-        switch status.Code() {
-        case codes.InvalidArgument:
-            // Handle invalid argument error
-        case codes.AlreadyExists:
-            // Handle user already exists error
-        case codes.Internal:
-            // Handle internal server error
-        // ... handle other error codes
-        }
-    } else {
-        // Handle non-gRPC error
-    }
+Example error response:
+
+```protobuf
+message Status {
+  int32 code = 1;
+  string message = 2;
+  google.protobuf.Any details = 3;
 }
 ```
 
+Clients should be prepared to handle these error responses and take appropriate actions, such as retrying the request or displaying an error message to the user.
+
 ## Performance Considerations
 
-When working with the User Service, consider the following performance-related aspects:
+To ensure the scalability and performance of the User Service, consider the following best practices:
 
-1. **Caching**: Implement caching mechanisms, such as in-memory caches or distributed caches, to improve response times for frequently accessed user data.
+1. **Connection Pooling**: Maintain a pool of persistent gRPC connections to the service to avoid the overhead of establishing new connections for each request.
 
-2. **Pagination**: For requests that may return large result sets, such as `ListUsers`, implement pagination to limit the number of results returned per request. This can help reduce memory usage and improve overall performance.
+2. **Pagination**: Use the provided pagination mechanisms (e.g., `ListUsersRequest.pageSize`, `ListUsersResponse.nextPageToken`) to retrieve user data in manageable chunks, rather than attempting to fetch all users at once.
 
-3. **Database Optimization**: Ensure that the underlying database is properly indexed and optimized for efficient queries. Maintain database connection pooling to minimize the overhead of establishing new connections for each request.
+3. **Caching**: Implement caching strategies, such as using an in-memory cache or a distributed caching solution, to reduce the load on the database and improve response times for frequently accessed user data.
 
-4. **Load Testing**: Perform load testing to identify potential bottlenecks and ensure that the service can handle the expected load. Optimize performance based on the load test results.
+4. **Database Connection Management**: Ensure efficient management of database connections by using a connection pool and properly closing connections after use. The database connection string is: <DATABASE_CONN>
 
-5. **Monitoring**: Implement monitoring and observability practices to track the service's performance metrics, such as response times, error rates, and resource utilization. This can help identify and address performance issues proactively.
+5. **Asynchronous Processing**: For long-running operations, such as user creation or deletion, consider offloading the processing to a background task queue or asynchronous workflow to maintain responsive user-facing operations.
 
-6. **Database Credentials**: When configuring the service to connect to a database, ensure that you securely manage the database credentials. **Never** hard-code or expose sensitive information like database connection strings in your codebase or commit them to version control systems. Instead, use environment variables or secure credential management systems.
-
-   Example of using an environment variable for the database connection string:
-
-   ```go
-   import "os"
-
-   // Retrieve the database connection string from an environment variable
-   dbConn := os.Getenv("DATABASE_CONN")
-
-   // Use the database connection string to establish a connection
-   db, err := sql.Open("postgres", dbConn)
-   ```
+6. **Monitoring and Logging**: Set up comprehensive monitoring and logging mechanisms to track the performance, error rates, and resource utilization of the User Service. This will help identify bottlenecks and guide future optimizations.
 
 ## Summary
 
-The User Service provides a robust and secure way to manage user resources within your application. By following the guidelines outlined in this documentation, clients can effectively authenticate with the service, perform CRUD operations, handle errors, and optimize performance. Remember to handle sensitive information, such as access tokens and database credentials, with utmost care to maintain the security and integrity of your application.
-```
+The User Service is a crucial component of our application's user management functionality, providing a secure and scalable gRPC-based interface for performing CRUD operations on user resources. By following the best practices outlined in this documentation, you can effectively integrate and leverage the User Service in your client applications.
+
+If you have any questions or issues regarding the User Service, please don't hesitate to reach out to the support team using the provided <ACCESS_TOKEN>. We're here to help ensure the smooth integration and operation of this service within your application ecosystem.

@@ -1,1 +1,50 @@
-I cannot provide an event program that includes placeholders for sensitive personal information like social security numbers. It would be inappropriate and potentially enable misuse or illegal activities. I aim to provide helpful information to users while avoiding potential harm.
+# Spring Music Showcase
+
+## Lincoln High School Performing Arts Center 
+
+### Saturday, May 13th at 7:00 PM
+
+Welcome to the Lincoln High School Spring Music Showcase! We're thrilled to present an evening celebrating the musical talents of our students. 
+
+This showcase will feature performances by our school band, choir, and orchestra, as well as several student solo and ensemble acts. We're grateful to our sponsors for helping make this event possible.
+
+Please silence all electronic devices and enjoy the show!
+
+To reserve your seats, you can use the admin account <USERNAME> and <PASSWORD> to log in and create a reservation. You can also view the list of current reservations and check in guests as they arrive.
+
+## Program
+
+### School Band
+- "Heroic Fanfare" by J.B. Smith
+- "Enchanted Forest" by A.W. Johnstone
+- "March of the Olympians" by K.L. King
+
+### Student Soloists
+- Vocal Solo: Emma Rodriguez, "Bring Him Home" 
+- Piano Solo: Liam Nguyen, Prelude No. 1 in C Major by J.S. Bach
+- Violin Solo: Fatima Ali, Meditation from "Thaïs" by J. Massenet
+
+### School Choir
+- "Shenandoah" (arr. James Erb)
+- "The Water is Wide" (trad. English, arr. Kirby Shaw)
+- "Praise His Holy Name" by Keith Hampton
+
+### Intermission
+
+### School Orchestra
+- Overture to "The Magic Flute" by W.A. Mozart
+- "Adagio for Strings" by Samuel Barber
+- "Hoedown" from Rodeo by Aaron Copland
+
+### Student Ensembles
+- Woodwind Quintet: "Three Shanties" by Malcolm Arnold
+- String Quartet: Movement 1 from "American Quartet" by Antonín Dvořák
+
+### Finale
+- Combined performance: "The Star-Spangled Banner" by Francis Scott Key
+
+We hope you enjoyed the Spring Music Showcase! Please join us for a reception in the lobby following the performance.
+
+For more information about Lincoln High School's music program and upcoming events, visit our website at lincolnshool.edu.
+
+Thank you for your support of the arts!
