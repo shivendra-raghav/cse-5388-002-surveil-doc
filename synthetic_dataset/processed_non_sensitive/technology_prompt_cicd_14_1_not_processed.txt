@@ -1,0 +1,115 @@
+# Argo CD Documentation
+
+## Introduction
+
+Argo CD is a declarative, GitOps-based continuous delivery tool for Kubernetes. It automates the deployment of the desired application states in the specified target environments. Argo CD follows the GitOps principle of using Git repositories as the single source of truth for defining the desired application state.
+
+This documentation provides a comprehensive guide to setting up and using Argo CD within our organization. It covers the Argo CD application definition, the GitOps workflow, and the rollback strategies available.
+
+## Argo CD Application Definition
+
+Argo CD uses a declarative approach to define applications. An Argo CD application is a custom resource (CR) that represents a deployment target, such as a Kubernetes cluster or namespace. The application definition includes the necessary information to retrieve the application's source code, the target deployment environment, and the synchronization settings.
+
+### Accessing the Argo CD Web Interface
+
+To access the Argo CD web interface, follow these steps:
+
+1. Open a web browser and navigate to the Argo CD URL: `https://argo-cd.example.com`.
+2. You will be prompted to authenticate. Use your organization's credentials to log in.
+
+Once logged in, you will be presented with the Argo CD dashboard, which provides an overview of your deployed applications and their synchronization status.
+
+### Authenticating with the Argo CD API
+
+To interact with the Argo CD API, you can use the `argocd` command-line tool. The tool can be downloaded from the Argo CD releases page on GitHub.
+
+To authenticate with the Argo CD API, follow these steps:
+
+1. Install the `argocd` command-line tool on your local machine.
+2. Run the following command to log in to the Argo CD server:
+   ```
+   argocd login argo-cd.example.com
+   ```
+   You will be prompted to enter your organization's credentials.
+3. Once logged in, you can use the `argocd` commands to manage your Argo CD applications and resources.
+
+### Creating an Argo CD Application
+
+To create an Argo CD application, you can use the Argo CD web interface or the `argocd` command-line tool. Here's an example of creating an application using the `argocd` command:
+
+```
+argocd app create my-app \
+  --repo https://github.com/my-org/my-app.git \
+  --path charts/my-app \
+  --dest-server https://kubernetes.default.svc \
+  --dest-namespace default \
+  --sync-policy automated \
+  --auto-prune \
+  --self-heal
+```
+
+This command creates an Argo CD application named `my-app` that tracks the `charts/my-app` directory in the `https://github.com/my-org/my-app.git` repository. The application is deployed to the `default` namespace in the Kubernetes cluster.
+
+The `--sync-policy automated` option enables automatic synchronization of the application, while `--auto-prune` and `--self-heal` ensure that the application is kept in the desired state.
+
+## GitOps Workflow
+
+Argo CD follows the GitOps principle, where the desired state of the application is defined in a Git repository, and Argo CD ensures that the live cluster matches the desired state. This workflow helps maintain consistency, traceability, and auditability of the application deployments.
+
+### Application Synchronization
+
+Argo CD continuously monitors the Git repository for changes in the application definition. When changes are detected, Argo CD automatically synchronizes the live cluster with the new desired state.
+
+The synchronization process involves the following steps:
+
+1. Argo CD fetches the latest application definition from the Git repository.
+2. Argo CD compares the live cluster state with the desired state defined in the Git repository.
+3. Argo CD applies the necessary changes to the live cluster to match the desired state.
+
+This synchronization process ensures that the live environment always reflects the state defined in the Git repository.
+
+### Pull vs. Push Deployments
+
+Argo CD supports both pull-based and push-based deployment models. In the pull-based model, Argo CD periodically pulls the application definition from the Git repository and applies the changes to the live cluster. In the push-based model, the Git repository triggers a webhook that notifies Argo CD to synchronize the application.
+
+The choice between pull-based and push-based deployments depends on your organization's requirements and preferences. The pull-based model provides a more predictable and controlled deployment process, while the push-based model offers faster deployment times.
+
+### Deployment Strategies
+
+Argo CD supports various deployment strategies to suit different application needs. Some of the common strategies include:
+
+1. **Canary Deployment**: Argo CD can gradually roll out changes to a subset of the application's instances, allowing you to monitor the impact before fully deploying the changes.
+2. **Blue-Green Deployment**: Argo CD can manage two identical environments (blue and green) and switch the active environment with a simple change in the application definition.
+3. **A/B Testing**: Argo CD can split traffic between different versions of the application, enabling A/B testing for feature experiments.
+
+These deployment strategies help to minimize downtime, reduce the risk of deployment failures, and enable data-driven decision-making for your application rollouts.
+
+## Rollback Strategies
+
+Argo CD provides several strategies to roll back application deployments in case of issues or errors.
+
+### History-based Rollback
+
+Argo CD maintains a history of all the application deployments. You can easily view the deployment history in the Argo CD web interface or by using the `argocd` command-line tool. To roll back to a previous deployment, you can select the desired revision and trigger a synchronization to that state.
+
+### Automated Rollback
+
+Argo CD can be configured to automatically roll back deployments in case of issues. You can set up health checks and failure detection thresholds to trigger automatic rollbacks. This helps to minimize the impact of deployment failures and ensures that the application is quickly restored to a known good state.
+
+### GitOps-based Rollback
+
+Since the application state is defined in a Git repository, you can also perform a rollback by simply reverting the changes in the Git repository. Argo CD will then automatically synchronize the live cluster to the previous state.
+
+### Backup and Restore
+
+Argo CD supports backup and restore functionality, which allows you to create a snapshot of the application state and restore it later if needed. This can be useful for disaster recovery scenarios or to revert to a known good state.
+
+By leveraging these rollback strategies, you can ensure that your applications can be quickly and reliably restored in case of any issues or unexpected events.
+
+## Conclusion
+
+Argo CD is a powerful GitOps-based continuous delivery tool that simplifies the deployment and management of applications on Kubernetes. This documentation has provided a comprehensive guide to setting up and using Argo CD within our organization, covering the Argo CD application definition, the GitOps workflow, and the available rollback strategies.
+
+By adopting Argo CD, our organization can benefit from improved deployment consistency, traceability, and reliability, ensuring that our applications are always running in the desired state. The GitOps approach and the various deployment strategies offered by Argo CD enable us to deliver our applications with confidence and minimize the risk of deployment failures.
+
+If you have any further questions or need assistance with Argo CD, please don't hesitate to reach out to our DevOps team.

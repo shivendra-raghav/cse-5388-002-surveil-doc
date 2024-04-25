@@ -1,0 +1,55 @@
+Reservation Confirmation
+
+Reservation Details:
+Thank you for booking your stay at the Luxury Seaside Resort. We are delighted to confirm your reservation and look forward to welcoming you to our beautiful beachfront property.
+
+Reservation Number: 2023-04-15-123456
+Arrival Date: April 15, 2023
+Departure Date: April 18, 2023
+Total Number of Nights: 3
+
+Guest Information:
+Primary Guest Name: John Doe
+Additional Guests: Jane Doe, Jack Doe
+Total Guests: 3
+
+Room Details:
+Room Type: Deluxe Ocean View Suite
+Room Rate: $300 per night
+Total Room Charges: $900
+
+Your reservation includes the following amenities:
+- Spacious private balcony with stunning ocean views
+- Luxurious king-size bed with high-thread-count linens
+- Fully-equipped kitchenette with refrigerator, microwave, and coffee maker
+- Complimentary high-speed Wi-Fi
+- Flat-screen TV with premium cable channels
+- Plush bathrobes and slippers
+- Signature bath amenities
+- Daily housekeeping service
+
+Billing Information:
+Payment Method: Visa ending in 1234
+Total Reservation Charges: $900
+Tax and Fees: $135
+Total Amount Charged: $1,035
+
+To access your reservation details and make any changes or updates, please visit our online guest portal at www.luxuryseasideresort.com/guest-portal. You can use the reservation number provided above to log in and manage your booking.
+
+Your credit card information has been securely stored to guarantee your room reservation. The full balance of your stay will be charged to the provided credit card 14 days prior to your arrival date. If you need to make any changes to your reservation or payment information, please contact our reservations team at 1-888-555-1234 or reservations@luxuryseasideresort.com.
+
+Cancellation Policy:
+We understand that plans may change, and we want to ensure you have the flexibility to make adjustments to your reservation. Our cancellation policy is as follows:
+
+- Cancellations made more than 30 days prior to your arrival date will receive a full refund of the total reservation charges.
+- Cancellations made between 14-30 days prior to your arrival date will be subject to a 50% cancellation fee.
+- Cancellations made less than 14 days prior to your arrival date will not be eligible for a refund.
+
+If you need to cancel or modify your reservation, please contact our reservations team as soon as possible. We will do our best to accommodate any changes, subject to availability and our cancellation policy.
+
+We look forward to providing you with an exceptional stay at the Luxury Seaside Resort. If you have any other questions or special requests, please don't hesitate to reach out to us. We are committed to ensuring your vacation is everything you've dreamed of and more.
+
+Thank you for choosing the Luxury Seaside Resort. We can't wait to welcome you!
+
+Sincerely,
+The Luxury Seaside Resort Team

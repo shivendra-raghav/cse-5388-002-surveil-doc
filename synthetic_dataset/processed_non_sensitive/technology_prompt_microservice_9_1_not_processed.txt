@@ -1,0 +1,134 @@
+Discount Service API Documentation
+
+Introduction
+The Discount Service is a microservice that enables CRUD (Create, Read, Update, Delete) operations for managing discounts. This service provides a set of APIs that allow users to create, update, retrieve, list, expire, and delete discounts. The service is designed to be scalable, reliable, and easy to integrate into various applications.
+
+Latest Update By
+The latest update to this API documentation was made by John Doe, a software engineer at the company.
+
+Contributors
+- John Doe, john.doe@company.com, +1 (555) 555-5555
+- Jane Smith, jane.smith@company.com, +1 (555) 555-5556
+- Bob Johnson, bob.johnson@company.com, +1 (555) 555-5557
+
+API Endpoints
+
+1. Create a Discount
+   - Endpoint: `POST /v1/discounts`
+   - Description: This endpoint allows you to create a new discount.
+   - Request Body:
+     - `code` (string, required): The unique code for the discount.
+     - `description` (string, required): A brief description of the discount.
+     - `amount` (number, required): The amount of the discount.
+     - `startDate` (date, required): The start date of the discount.
+     - `endDate` (date, required): The end date of the discount.
+     - `accountId` (string, required): The ID of the account the discount is associated with.
+   - Responses:
+     - `200 OK`: The discount was successfully created.
+     - `400 Bad Request`: The request body is invalid or missing required fields.
+     - `401 Unauthorized`: The client is not authenticated or does not have permission to perform this action.
+     - `403 Forbidden`: The client is not authorized to perform this action.
+     - `500 Internal Server Error`: There was an error while processing the request.
+
+2. Update a Discount
+   - Endpoint: `POST /v1/discounts/:id`
+   - Description: This endpoint allows you to update an existing discount.
+   - Request Body:
+     - `code` (string, required): The unique code for the discount.
+     - `description` (string, required): A brief description of the discount.
+     - `amount` (number, required): The amount of the discount.
+     - `startDate` (date, required): The start date of the discount.
+     - `endDate` (date, required): The end date of the discount.
+     - `accountId` (string, required): The ID of the account the discount is associated with.
+   - Responses:
+     - `200 OK`: The discount was successfully updated.
+     - `400 Bad Request`: The request body is invalid or missing required fields.
+     - `401 Unauthorized`: The client is not authenticated or does not have permission to perform this action.
+     - `403 Forbidden`: The client is not authorized to perform this action.
+     - `404 Not Found`: The specified discount was not found.
+     - `500 Internal Server Error`: There was an error while processing the request.
+
+3. Retrieve a Discount
+   - Endpoint: `GET /v1/discounts/:id`
+   - Description: This endpoint allows you to retrieve a specific discount.
+   - Responses:
+     - `200 OK`: The discount was successfully retrieved.
+     - `401 Unauthorized`: The client is not authenticated or does not have permission to perform this action.
+     - `403 Forbidden`: The client is not authorized to perform this action.
+     - `404 Not Found`: The specified discount was not found.
+     - `500 Internal Server Error`: There was an error while processing the request.
+
+4. List All Discounts
+   - Endpoint: `GET /v1/discounts`
+   - Description: This endpoint allows you to retrieve a list of all discounts.
+   - Query Parameters:
+     - `page` (integer, optional): The page number to retrieve.
+     - `limit` (integer, optional): The number of results to return per page.
+   - Responses:
+     - `200 OK`: The list of discounts was successfully retrieved.
+     - `401 Unauthorized`: The client is not authenticated or does not have permission to perform this action.
+     - `403 Forbidden`: The client is not authorized to perform this action.
+     - `500 Internal Server Error`: There was an error while processing the request.
+
+5. Expire a Discount
+   - Endpoint: `PUT /v1/discounts/expire`
+   - Description: This endpoint allows you to expire a discount.
+   - Request Body:
+     - `id` (string, required): The ID of the discount to expire.
+   - Responses:
+     - `200 OK`: The discount was successfully expired.
+     - `400 Bad Request`: The request body is invalid or missing required fields.
+     - `401 Unauthorized`: The client is not authenticated or does not have permission to perform this action.
+     - `403 Forbidden`: The client is not authorized to perform this action.
+     - `404 Not Found`: The specified discount was not found.
+     - `500 Internal Server Error`: There was an error while processing the request.
+
+6. Delete a Discount
+   - Endpoint: `DELETE /v1/discounts/:id`
+   - Description: This endpoint allows you to delete a specific discount.
+   - Responses:
+     - `200 OK`: The discount was successfully deleted.
+     - `401 Unauthorized`: The client is not authenticated or does not have permission to perform this action.
+     - `403 Forbidden`: The client is not authorized to perform this action.
+     - `404 Not Found`: The specified discount was not found.
+     - `500 Internal Server Error`: There was an error while processing the request.
+
+7. Delete All Discounts for an Account
+   - Endpoint: `DELETE /v1/discounts/account/:accountId`
+   - Description: This endpoint allows you to delete all discounts associated with a specific account.
+   - Responses:
+     - `200 OK`: All discounts for the specified account were successfully deleted.
+     - `401 Unauthorized`: The client is not authenticated or does not have permission to perform this action.
+     - `403 Forbidden`: The client is not authorized to perform this action.
+     - `404 Not Found`: No discounts were found for the specified account.
+     - `500 Internal Server Error`: There was an error while processing the request.
+
+Rate Limit
+The Discount Service API has a rate limit of 100 requests per minute per API key. If you exceed the rate limit, you will receive a `429 Too Many Requests` response.
+
+App Registration Information
+To use the Discount Service API, you will need to register your application and obtain an API key. You can register your app by visiting the developer portal at https://developer.company.com and following the instructions.
+
+Error Handling
+The Discount Service API uses standard HTTP status codes to indicate the success or failure of a request. In addition to the status codes mentioned for each endpoint, the following error responses may also be returned:
+
+- `501 Not Implemented`: The requested endpoint is not yet implemented.
+- `502 Bad Gateway`: There was an issue with an upstream service.
+- `503 Service Unavailable`: The service is temporarily unavailable.
+- `504 Gateway Timeout`: The request took too long to process.
+
+If an error occurs, the response will include a JSON object with the following structure:
+
+```json
+{
+  "error": {
+    "code": "error_code",
+    "message": "Error message"
+  }
+}
+```
+
+The `error_code` field will provide a unique identifier for the error, and the `message` field will contain a human-readable description of the error.
+
+Summary
+The Discount Service API provides a set of endpoints for managing discounts, including creating, updating, retrieving, listing, expiring, and deleting discounts. The API is designed to be scalable, reliable, and easy to integrate into various applications. To use the API, you will need to register your application and obtain an API key. The API supports standard HTTP status codes for error handling, and includes a rate limit to prevent abuse.

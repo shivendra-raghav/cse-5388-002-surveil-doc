@@ -1,0 +1,119 @@
+User Service API Documentation
+
+Introduction
+The User Service API is a comprehensive RESTful API that enables CRUD (Create, Read, Update, Delete) operations for user management. This service is designed to provide a scalable and efficient way to manage user information within your application. The API follows the principles of RESTful architecture, ensuring a standardized and intuitive interface for developers to interact with the user data.
+
+Latest Update By
+The latest update to the User Service API was made by the development team at XYZ Solutions Inc. on August 10, 2023. The updates focused on improving the overall performance and reliability of the API, as well as addressing several bug fixes and feature enhancements based on feedback from our valued customers.
+
+Maintenance Team Details
+The User Service API is maintained by the following team:
+
+- Team Lead: Sarah Thompson (sarahthompson@xyzsolutions.com)
+- Backend Developer: Michael Davis (michaeldavis@xyzsolutions.com)
+- Frontend Developer: Emily Wilson (emilywilson@xyzsolutions.com)
+- Quality Assurance: David Johnson (davidjohnson@xyzsolutions.com)
+
+This team is responsible for ensuring the smooth operation of the API, addressing any issues or bug reports, and implementing new features as per the roadmap. They can be contacted for any inquiries or support related to the User Service API.
+
+REST Services
+The User Service API provides the following REST endpoints for managing user data:
+
+1. **Create a User**
+   - **Endpoint**: `POST /users`
+   - **Description**: This endpoint allows you to create a new user in the system.
+   - **Request Body**:
+     - `name`: (string, required) The full name of the user.
+     - `email`: (string, required) The email address of the user.
+     - `password`: (string, required) The password for the user's account.
+     - `role`: (string, optional) The user's role within the system.
+   - **Responses**:
+     - `200 OK`: The user is successfully created, and the response contains the created user object.
+     - `400 Bad Request`: The request body is invalid or missing required fields.
+     - `403 Forbidden`: The authenticated user does not have the necessary permissions to create a new user.
+     - `500 Internal Server Error`: An unexpected error occurred while creating the user.
+
+2. **Update a User**
+   - **Endpoint**: `PUT /users/{userId}`
+   - **Description**: This endpoint allows you to update an existing user's information.
+   - **Path Parameters**:
+     - `userId`: (string, required) The unique identifier of the user to be updated.
+   - **Request Body**:
+     - `name`: (string, optional) The updated full name of the user.
+     - `email`: (string, optional) The updated email address of the user.
+     - `password`: (string, optional) The updated password for the user's account.
+     - `role`: (string, optional) The updated user's role within the system.
+   - **Responses**:
+     - `200 OK`: The user is successfully updated, and the response contains the updated user object.
+     - `400 Bad Request`: The request body is invalid or missing required fields.
+     - `401 Unauthorized`: The authenticated user is not authorized to update the specified user.
+     - `404 Not Found`: The user with the specified ID does not exist.
+     - `500 Internal Server Error`: An unexpected error occurred while updating the user.
+
+3. **Get a User**
+   - **Endpoint**: `GET /users/{userId}`
+   - **Description**: This endpoint retrieves the details of a specific user.
+   - **Path Parameters**:
+     - `userId`: (string, required) The unique identifier of the user to be retrieved.
+   - **Responses**:
+     - `200 OK`: The user is successfully retrieved, and the response contains the user object.
+     - `401 Unauthorized`: The authenticated user is not authorized to retrieve the specified user.
+     - `404 Not Found`: The user with the specified ID does not exist.
+     - `500 Internal Server Error`: An unexpected error occurred while retrieving the user.
+
+4. **List All Users**
+   - **Endpoint**: `GET /users`
+   - **Description**: This endpoint retrieves a list of all users in the system.
+   - **Query Parameters**:
+     - `page`: (integer, optional) The page number for pagination.
+     - `limit`: (integer, optional) The maximum number of users to be returned per page.
+   - **Responses**:
+     - `200 OK`: The list of users is successfully retrieved, and the response contains an array of user objects.
+     - `401 Unauthorized`: The authenticated user is not authorized to retrieve the list of users.
+     - `500 Internal Server Error`: An unexpected error occurred while retrieving the list of users.
+
+5. **Delete a User**
+   - **Endpoint**: `DELETE /users/{userId}`
+   - **Description**: This endpoint allows you to delete a specific user from the system.
+   - **Path Parameters**:
+     - `userId`: (string, required) The unique identifier of the user to be deleted.
+   - **Responses**:
+     - `204 No Content`: The user is successfully deleted, and the response does not contain any content.
+     - `401 Unauthorized`: The authenticated user is not authorized to delete the specified user.
+     - `404 Not Found`: The user with the specified ID does not exist.
+     - `500 Internal Server Error`: An unexpected error occurred while deleting the user.
+
+Rate Limit
+The User Service API has a rate limiting mechanism in place to prevent excessive usage and ensure the stability of the service. The current rate limit is set to a maximum of 120 requests per minute per IP address. If the rate limit is exceeded, the API will respond with a `429 Too Many Requests` status code, and the response will include the following headers:
+
+- `X-RateLimit-Limit`: The maximum number of requests allowed per minute.
+- `X-RateLimit-Remaining`: The number of remaining requests for the current time window.
+- `X-RateLimit-Reset`: The time (in seconds) at which the rate limit window will reset.
+
+Error Handling
+The User Service API follows a consistent error handling approach to provide useful information to developers when errors occur. The API will respond with the appropriate HTTP status code and a JSON response body that includes the following information:
+
+```json
+{
+  "error": {
+    "code": <HTTP_STATUS_CODE>,
+    "message": "<Error Message>",
+    "details": "<Additional Details>"
+  }
+}
+```
+
+The possible HTTP status codes and their meanings are as follows:
+
+- `400 Bad Request`: The request is invalid or missing required parameters.
+- `401 Unauthorized`: The authenticated user is not authorized to perform the requested action.
+- `403 Forbidden`: The authenticated user does not have the necessary permissions to perform the requested action.
+- `404 Not Found`: The requested resource could not be found.
+- `500 Internal Server Error`: An unexpected error occurred on the server side.
+- `501 Not Implemented`: The requested feature is not yet implemented.
+- `502 Bad Gateway`: The API gateway encountered an error while forwarding the request.
+- `503 Service Unavailable`: The API service is temporarily unavailable.
+- `504 Gateway Timeout`: The API gateway timed out while waiting for a response from the API service.
+
+Summary
+The User Service API provides a comprehensive set of RESTful endpoints for managing user data within your application. It follows industry-standard practices for API design, error handling, and rate limiting to ensure a reliable and scalable service. The documentation outlined above covers the key aspects of the API, including the available endpoints, request and response structures, and the appropriate HTTP status codes to handle various scenarios. By utilizing this API, developers can seamlessly integrate user management functionality into their applications, focusing on building great experiences for their users.

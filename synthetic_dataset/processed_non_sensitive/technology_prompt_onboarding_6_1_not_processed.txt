@@ -1,0 +1,61 @@
+# User Onboarding Documentation for AWS Account
+
+## Introduction
+
+Welcome to the user onboarding documentation for our company's AWS account. This guide will provide you with all the necessary information to get started with your AWS account and ensure a smooth onboarding process. Whether you are a new employee or a team member who needs access to our AWS resources, this documentation will walk you through the essential steps to get up and running.
+
+## Team Information
+
+Our company's AWS account is managed by the Cloud Infrastructure team, which is responsible for maintaining the overall AWS environment, ensuring security and compliance, and providing support to users. The team is composed of experienced cloud engineers and architects who are dedicated to delivering a reliable and scalable AWS infrastructure.
+
+The key members of the Cloud Infrastructure team are:
+
+- John Doe, Cloud Architect (jdoe@company.com)
+- Jane Smith, Cloud Engineer (jsmith@company.com)
+- Michael Johnson, Cloud Security Specialist (mjohnson@company.com)
+
+If you have any questions or encounter any issues during your onboarding process, please feel free to reach out to the team members mentioned above. They will be happy to assist you and ensure a seamless transition to our AWS environment.
+
+## AWS Account Information
+
+Our company's AWS account is identified by the following details:
+
+- **AWS Account ID**: 123456789012
+- **AWS Account Name**: Company AWS Account
+- **AWS Region**: us-east-1 (Virginia)
+
+Please note that our AWS environment is primarily hosted in the us-east-1 region, and this is where most of our resources and services are provisioned. However, if you require access to resources in other regions, please let the Cloud Infrastructure team know, and they will assist you accordingly.
+
+## AWS Access Information
+
+To access our company's AWS account, you will need to have the necessary permissions and credentials. The Cloud Infrastructure team will provide you with the following information:
+
+1. **IAM User Account**:
+   - **Username**: yourname
+   - **Initial Password**: TemporaryPassword123!
+   - **Multi-Factor Authentication (MFA)**: You will be required to set up MFA for your IAM user account. The team will provide you with instructions on how to do this.
+
+2. **AWS CLI and SDK Access**:
+   - **Access Key ID**: AKIAIOSFODNN7EXAMPLE
+   - **Secret Access Key**: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+
+3. **AWS Management Console Access**:
+   - **AWS Console URL**: https://123456789012.signin.aws.amazon.com/console
+   - **Initial Login**: Use the IAM user credentials provided above to access the AWS Management Console.
+
+Once you have received the necessary access information, you can proceed to log in to the AWS Management Console and begin exploring our AWS environment. If you encounter any issues or need further assistance, please reach out to the Cloud Infrastructure team.
+
+## Support Team Details
+
+The Cloud Infrastructure team is dedicated to providing ongoing support and assistance to all users of our AWS account. If you have any questions, concerns, or need help with any AWS-related tasks, please feel free to contact the team.
+
+The best way to reach the support team is by:
+
+- **Email**: cloud-support@company.com
+- **Slack Channel**: #cloud-infrastructure
+
+The team aims to respond to all inquiries within 1 business day. For urgent issues or critical incidents, please reach out to the team members directly using the contact information provided in the "Team Information" section.
+
+Additionally, the Cloud Infrastructure team regularly conducts training sessions and workshops to help users become more familiar with our AWS environment and best practices. Keep an eye out for upcoming events, and feel free to suggest topics you would like to cover.
+
+We hope this onboarding documentation has provided you with all the necessary information to get started with our company's AWS account. If you have any further questions or feedback, please don't hesitate to reach out to the Cloud Infrastructure team. We are here to support you and ensure a seamless integration into our AWS environment.

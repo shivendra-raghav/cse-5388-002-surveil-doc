@@ -1,0 +1,296 @@
+# Feedback Service API Documentation
+
+## Introduction
+
+Welcome to the Feedback Service API documentation. This service provides a GraphQL interface for managing customer feedback data. With this API, you can create, update, list, and delete feedback records. The Feedback Service is designed to be a scalable and reliable solution for handling feedback from your customers.
+
+## Latest Update By
+
+The latest update to this API documentation was made by Jane Doe, a technical writer on the documentation team, on January 15, 2023.
+
+## Maintenance Team Details
+
+The Feedback Service is maintained by the Customer Experience team, which consists of the following members:
+
+- John Smith (Team Lead) - jsmith@example.com
+- Jane Doe (Senior Developer) - jdoe@example.com
+- Michael Johnson (Junior Developer) - mjohnson@example.com
+- Sarah Lee (Quality Assurance) - slee@example.com
+
+This team is responsible for the ongoing development, maintenance, and support of the Feedback Service. If you have any questions or concerns about the API, please don't hesitate to reach out to the team.
+
+## GraphQL Services
+
+The Feedback Service exposes the following GraphQL services:
+
+### Create Feedback
+
+**Description:**
+This mutation allows you to create a new feedback record.
+
+**Input Parameters:**
+- `title`: string (required)
+- `description`: string (required)
+- `rating`: integer (required, range: 1-5)
+- `userId`: string (required)
+
+**HTTP Response Codes:**
+- `200 OK`: The feedback was successfully created.
+- `400 Bad Request`: One or more input parameters are invalid.
+- `500 Internal Server Error`: An unexpected error occurred while processing the request.
+
+**Example Query:**
+```graphql
+mutation CreateFeedback($input: CreateFeedbackInput!) {
+  createFeedback(input: $input) {
+    id
+    title
+    description
+    rating
+    userId
+    createdAt
+    updatedAt
+  }
+}
+```
+
+**Example Variables:**
+```json
+{
+  "input": {
+    "title": "Great product!",
+    "description": "I really enjoyed using this product. It exceeded my expectations.",
+    "rating": 5,
+    "userId": "user123"
+  }
+}
+```
+
+**Example Response:**
+```json
+{
+  "data": {
+    "createFeedback": {
+      "id": "feedback123",
+      "title": "Great product!",
+      "description": "I really enjoyed using this product. It exceeded my expectations.",
+      "rating": 5,
+      "userId": "user123",
+      "createdAt": "2023-01-01T12:00:00Z",
+      "updatedAt": "2023-01-01T12:00:00Z"
+    }
+  }
+}
+```
+
+### Update Feedback
+
+**Description:**
+This mutation allows you to update an existing feedback record.
+
+**Input Parameters:**
+- `id`: string (required)
+- `title`: string (optional)
+- `description`: string (optional)
+- `rating`: integer (optional, range: 1-5)
+
+**HTTP Response Codes:**
+- `200 OK`: The feedback was successfully updated.
+- `400 Bad Request`: One or more input parameters are invalid.
+- `404 Not Found`: The feedback record with the specified ID was not found.
+- `500 Internal Server Error`: An unexpected error occurred while processing the request.
+
+**Example Query:**
+```graphql
+mutation UpdateFeedback($input: UpdateFeedbackInput!) {
+  updateFeedback(input: $input) {
+    id
+    title
+    description
+    rating
+    userId
+    createdAt
+    updatedAt
+  }
+}
+```
+
+**Example Variables:**
+```json
+{
+  "input": {
+    "id": "feedback123",
+    "title": "Excellent product!",
+    "rating": 4
+  }
+}
+```
+
+**Example Response:**
+```json
+{
+  "data": {
+    "updateFeedback": {
+      "id": "feedback123",
+      "title": "Excellent product!",
+      "description": "I really enjoyed using this product. It exceeded my expectations.",
+      "rating": 4,
+      "userId": "user123",
+      "createdAt": "2023-01-01T12:00:00Z",
+      "updatedAt": "2023-01-15T10:30:00Z"
+    }
+  }
+}
+```
+
+### List Feedback
+
+**Description:**
+This query allows you to retrieve a list of feedback records based on the provided filters.
+
+**Input Parameters:**
+- `userId`: string (optional)
+- `rating`: integer (optional, range: 1-5)
+- `limit`: integer (optional, default: 10, max: 50)
+- `offset`: integer (optional, default: 0)
+
+**HTTP Response Codes:**
+- `200 OK`: The feedback records were successfully retrieved.
+- `400 Bad Request`: One or more input parameters are invalid.
+- `500 Internal Server Error`: An unexpected error occurred while processing the request.
+
+**Example Query:**
+```graphql
+query ListFeedback($input: ListFeedbackInput!) {
+  listFeedback(input: $input) {
+    items {
+      id
+      title
+      description
+      rating
+      userId
+      createdAt
+      updatedAt
+    }
+    totalCount
+  }
+}
+```
+
+**Example Variables:**
+```json
+{
+  "input": {
+    "userId": "user123",
+    "rating": 5,
+    "limit": 20,
+    "offset": 0
+  }
+}
+```
+
+**Example Response:**
+```json
+{
+  "data": {
+    "listFeedback": {
+      "items": [
+        {
+          "id": "feedback123",
+          "title": "Great product!",
+          "description": "I really enjoyed using this product. It exceeded my expectations.",
+          "rating": 5,
+          "userId": "user123",
+          "createdAt": "2023-01-01T12:00:00Z",
+          "updatedAt": "2023-01-15T10:30:00Z"
+        },
+        {
+          "id": "feedback456",
+          "title": "Awesome experience!",
+          "description": "I'm very satisfied with the product and the customer service.",
+          "rating": 5,
+          "userId": "user123",
+          "createdAt": "2023-01-05T15:20:00Z",
+          "updatedAt": "2023-01-10T09:45:00Z"
+        }
+      ],
+      "totalCount": 2
+    }
+  }
+}
+```
+
+### Delete Feedback
+
+**Description:**
+This mutation allows you to delete an existing feedback record.
+
+**Input Parameters:**
+- `id`: string (required)
+
+**HTTP Response Codes:**
+- `200 OK`: The feedback was successfully deleted.
+- `404 Not Found`: The feedback record with the specified ID was not found.
+- `500 Internal Server Error`: An unexpected error occurred while processing the request.
+
+**Example Query:**
+```graphql
+mutation DeleteFeedback($id: ID!) {
+  deleteFeedback(id: $id)
+}
+```
+
+**Example Variables:**
+```json
+{
+  "id": "feedback123"
+}
+```
+
+**Example Response:**
+```json
+{
+  "data": {
+    "deleteFeedback": true
+  }
+}
+```
+
+## Rate Limit
+
+The Feedback Service API is subject to a rate limit of 100 requests per minute per user. If you exceed this limit, you will receive a `403 Forbidden` response with the following error message:
+
+```json
+{
+  "errors": [
+    {
+      "message": "Rate limit exceeded. Please try again later.",
+      "extensions": {
+        "code": "RATE_LIMIT_EXCEEDED"
+      }
+    }
+  ]
+}
+```
+
+## Error Handling
+
+In addition to the rate limit error, the Feedback Service API may also return the following error responses:
+
+**400 Bad Request**
+- Returned when one or more input parameters are invalid or missing.
+- Example error message: `"Invalid rating value. Rating must be between 1 and 5."`
+
+**404 Not Found**
+- Returned when the requested resource (e.g., a feedback record) is not found.
+- Example error message: `"Feedback record with ID 'feedback123' not found."`
+
+**500 Internal Server Error**
+- Returned when an unexpected error occurs while processing the request.
+- Example error message: `"An unexpected error occurred while processing the request."`
+
+## Summary
+
+The Feedback Service API provides a robust and flexible GraphQL interface for managing customer feedback data. With this API, you can create, update, list, and delete feedback records, allowing you to gather valuable insights from your customers.
+
+If you have any further questions or need assistance, please don't hesitate to reach out to the Feedback Service maintenance team.

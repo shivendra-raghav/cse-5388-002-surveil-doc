@@ -1,0 +1,208 @@
+```markdown
+# SKU Service API Documentation
+
+## Introduction
+
+The SKU Service API is a powerful tool that enables you to perform CRUD (Create, Read, Update, Delete) operations on SKUs (Stock Keeping Units). This microservice is designed to provide a seamless and efficient way to manage your inventory, ensuring that you have the necessary data to make informed business decisions.
+
+## Latest Update By
+
+The latest update to the SKU Service API was made by the Inventory Management team on June 15, 2023.
+
+## Maintenance Team Details
+
+The SKU Service API is maintained by the Inventory Management team, which consists of the following members:
+
+- John Doe - Lead Developer
+- Jane Smith - Backend Engineer
+- Michael Johnson - Quality Assurance Analyst
+- Emily Davis - Technical Writer
+
+The team can be reached at `inventory-support@example.com` for any inquiries or issues related to the API.
+
+## API Endpoints
+
+### Create a SKU
+**POST /v1/skus**
+
+This endpoint allows you to create a new SKU.
+
+**Request Body**:
+```json
+{
+  "name": "Product A",
+  "description": "This is a description of Product A",
+  "price": 19.99,
+  "quantity": 100,
+  "sku_code": "PROD-A"
+}
+```
+
+**Successful Response (200 OK)**:
+```json
+{
+  "id": "1234567890",
+  "name": "Product A",
+  "description": "This is a description of Product A",
+  "price": 19.99,
+  "quantity": 100,
+  "sku_code": "PROD-A",
+  "created_at": "2023-06-15T12:00:00Z",
+  "updated_at": "2023-06-15T12:00:00Z"
+}
+```
+
+**Error Responses**:
+- `400 Bad Request`: If the request body is invalid or missing required fields.
+- `401 Unauthorized`: If the client is not authenticated.
+- `403 Forbidden`: If the client is not authorized to perform this action.
+- `500 Internal Server Error`: If there is an unexpected error on the server side.
+
+### Update a SKU
+**POST /v1/skus/:id**
+
+This endpoint allows you to update an existing SKU.
+
+**Request Body**:
+```json
+{
+  "name": "Product A (Updated)",
+  "description": "This is an updated description of Product A",
+  "price": 21.99,
+  "quantity": 80
+}
+```
+
+**Successful Response (200 OK)**:
+```json
+{
+  "id": "1234567890",
+  "name": "Product A (Updated)",
+  "description": "This is an updated description of Product A",
+  "price": 21.99,
+  "quantity": 80,
+  "sku_code": "PROD-A",
+  "created_at": "2023-06-15T12:00:00Z",
+  "updated_at": "2023-06-15T12:30:00Z"
+}
+```
+
+**Error Responses**:
+- `400 Bad Request`: If the request body is invalid or missing required fields.
+- `401 Unauthorized`: If the client is not authenticated.
+- `403 Forbidden`: If the client is not authorized to perform this action.
+- `404 Not Found`: If the specified SKU does not exist.
+- `500 Internal Server Error`: If there is an unexpected error on the server side.
+
+### Get a SKU
+**GET /v1/skus/:id**
+
+This endpoint allows you to retrieve a specific SKU.
+
+**Successful Response (200 OK)**:
+```json
+{
+  "id": "1234567890",
+  "name": "Product A (Updated)",
+  "description": "This is an updated description of Product A",
+  "price": 21.99,
+  "quantity": 80,
+  "sku_code": "PROD-A",
+  "created_at": "2023-06-15T12:00:00Z",
+  "updated_at": "2023-06-15T12:30:00Z"
+}
+```
+
+**Error Responses**:
+- `401 Unauthorized`: If the client is not authenticated.
+- `403 Forbidden`: If the client is not authorized to perform this action.
+- `404 Not Found`: If the specified SKU does not exist.
+- `500 Internal Server Error`: If there is an unexpected error on the server side.
+
+### List all SKUs
+**GET /v1/skus**
+
+This endpoint allows you to retrieve a list of all SKUs.
+
+**Successful Response (200 OK)**:
+```json
+[
+  {
+    "id": "1234567890",
+    "name": "Product A (Updated)",
+    "description": "This is an updated description of Product A",
+    "price": 21.99,
+    "quantity": 80,
+    "sku_code": "PROD-A",
+    "created_at": "2023-06-15T12:00:00Z",
+    "updated_at": "2023-06-15T12:30:00Z"
+  },
+  {
+    "id": "0987654321",
+    "name": "Product B",
+    "description": "This is a description of Product B",
+    "price": 29.99,
+    "quantity": 50,
+    "sku_code": "PROD-B",
+    "created_at": "2023-06-14T15:00:00Z",
+    "updated_at": "2023-06-14T15:30:00Z"
+  }
+]
+```
+
+**Error Responses**:
+- `401 Unauthorized`: If the client is not authenticated.
+- `403 Forbidden`: If the client is not authorized to perform this action.
+- `500 Internal Server Error`: If there is an unexpected error on the server side.
+
+### Delete a SKU
+**DELETE /v1/skus/:id**
+
+This endpoint allows you to delete a specific SKU.
+
+**Successful Response (204 No Content)**:
+The response will be empty, indicating that the SKU has been successfully deleted.
+
+**Error Responses**:
+- `401 Unauthorized`: If the client is not authenticated.
+- `403 Forbidden`: If the client is not authorized to perform this action.
+- `404 Not Found`: If the specified SKU does not exist.
+- `500 Internal Server Error`: If there is an unexpected error on the server side.
+
+## Rate Limit
+
+The SKU Service API is subject to a rate limit of 100 requests per minute per client. If a client exceeds the rate limit, they will receive a `429 Too Many Requests` response with a `Retry-After` header indicating the number of seconds they should wait before retrying the request.
+
+## Error Handling
+
+The SKU Service API uses standard HTTP status codes to indicate the success or failure of a request. In addition to the error responses mentioned in the endpoint descriptions, the following general error responses may also be returned:
+
+- `400 Bad Request`: If the client sends an invalid or malformed request.
+- `401 Unauthorized`: If the client is not authenticated or their authentication credentials are invalid.
+- `403 Forbidden`: If the client is not authorized to perform the requested action.
+- `404 Not Found`: If the requested resource does not exist.
+- `500 Internal Server Error`: If there is an unexpected error on the server side.
+- `501 Not Implemented`: If the requested functionality is not yet implemented.
+- `502 Bad Gateway`: If the API is unable to communicate with an upstream service.
+- `503 Service Unavailable`: If the API is temporarily unavailable due to maintenance or high load.
+- `504 Gateway Timeout`: If the API is unable to respond within the expected time frame.
+
+When an error occurs, the API will return a JSON response with the following structure:
+
+```json
+{
+  "error": {
+    "code": 404,
+    "message": "The requested resource does not exist."
+  }
+}
+```
+
+The `error.code` field will contain the relevant HTTP status code, and the `error.message` field will provide a human-readable explanation of the error.
+
+## Summary
+
+The SKU Service API provides a comprehensive set of CRUD operations for managing SKUs, enabling you to effectively track and control your inventory. With its detailed error handling and rate limiting, the API ensures a reliable and secure experience for its users. The maintenance team is dedicated to providing ongoing support and improvements to the API, ensuring that it continues to meet the evolving needs of your business.
+
+If you have any questions or encounter any issues while using the SKU Service API, please don't hesitate to reach out to the Inventory Management team at `inventory-support@example.com`. We're here to help you make the most of this powerful tool and streamline your inventory management processes.
+```

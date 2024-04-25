@@ -1,0 +1,250 @@
+# Discount Service API Documentation
+
+## Introduction
+
+The Discount Service is a microservice that enables CRUD (Create, Read, Update, Delete) operations for managing discounts. It provides a set of API endpoints that allow users to create, update, retrieve, list, and delete discounts. This API documentation provides detailed information about the available endpoints, their usage, and the expected responses.
+
+## Latest Update By
+
+This API documentation was last updated by the Discount Service development team.
+
+## Contributors
+
+1. John Doe, johndoe@example.com, +1 (555) 123-4567
+2. Jane Smith, janesmith@example.com, +1 (555) 987-6543
+3. Michael Johnson, michaeljohnson@example.com, +1 (555) 456-7890
+
+## API Endpoints
+
+### Create a Discount
+
+**Endpoint:** `POST /v1/discounts`
+
+**Description:** This endpoint allows you to create a new discount.
+
+**Request Body:**
+
+```json
+{
+  "name": "Cyber Monday Discount",
+  "description": "30% off on all products during Cyber Monday",
+  "type": "percentage",
+  "value": 30,
+  "start_date": "2023-11-27",
+  "end_date": "2023-11-28"
+}
+```
+
+**Responses:**
+
+- `200 OK`: The discount was successfully created.
+  ```json
+  {
+    "id": "abcd1234",
+    "name": "Cyber Monday Discount",
+    "description": "30% off on all products during Cyber Monday",
+    "type": "percentage",
+    "value": 30,
+    "start_date": "2023-11-27",
+    "end_date": "2023-11-28",
+    "created_at": "2023-05-01T12:00:00Z",
+    "updated_at": "2023-05-01T12:00:00Z"
+  }
+  ```
+- `400 Bad Request`: The request body is invalid or missing required fields.
+  ```json
+  {
+    "error": "Invalid request body. Please provide all required fields."
+  }
+  ```
+- `500 Internal Server Error`: An unexpected error occurred while creating the discount.
+  ```json
+  {
+    "error": "An internal server error occurred. Please try again later."
+  }
+  ```
+
+### Update a Discount
+
+**Endpoint:** `POST /v1/discounts/:id`
+
+**Description:** This endpoint allows you to update an existing discount.
+
+**Request Body:**
+
+```json
+{
+  "name": "Cyber Monday Mega Discount",
+  "description": "35% off on all products during Cyber Monday",
+  "value": 35
+}
+```
+
+**Responses:**
+
+- `200 OK`: The discount was successfully updated.
+  ```json
+  {
+    "id": "abcd1234",
+    "name": "Cyber Monday Mega Discount",
+    "description": "35% off on all products during Cyber Monday",
+    "type": "percentage",
+    "value": 35,
+    "start_date": "2023-11-27",
+    "end_date": "2023-11-28",
+    "created_at": "2023-05-01T12:00:00Z",
+    "updated_at": "2023-05-02T15:30:00Z"
+  }
+  ```
+- `404 Not Found`: The specified discount does not exist.
+  ```json
+  {
+    "error": "Discount not found."
+  }
+  ```
+- `500 Internal Server Error`: An unexpected error occurred while updating the discount.
+  ```json
+  {
+    "error": "An internal server error occurred. Please try again later."
+  }
+  ```
+
+### Retrieve a Discount
+
+**Endpoint:** `GET /v1/discounts/:id`
+
+**Description:** This endpoint allows you to retrieve a specific discount.
+
+**Responses:**
+
+- `200 OK`: The discount was successfully retrieved.
+  ```json
+  {
+    "id": "abcd1234",
+    "name": "Cyber Monday Mega Discount",
+    "description": "35% off on all products during Cyber Monday",
+    "type": "percentage",
+    "value": 35,
+    "start_date": "2023-11-27",
+    "end_date": "2023-11-28",
+    "created_at": "2023-05-01T12:00:00Z",
+    "updated_at": "2023-05-02T15:30:00Z"
+  }
+  ```
+- `404 Not Found`: The specified discount does not exist.
+  ```json
+  {
+    "error": "Discount not found."
+  }
+  ```
+- `500 Internal Server Error`: An unexpected error occurred while retrieving the discount.
+  ```json
+  {
+    "error": "An internal server error occurred. Please try again later."
+  }
+  ```
+
+### List All Discounts
+
+**Endpoint:** `GET /v1/discounts`
+
+**Description:** This endpoint allows you to retrieve a list of all available discounts.
+
+**Responses:**
+
+- `200 OK`: The list of discounts was successfully retrieved.
+  ```json
+  [
+    {
+      "id": "abcd1234",
+      "name": "Cyber Monday Mega Discount",
+      "description": "35% off on all products during Cyber Monday",
+      "type": "percentage",
+      "value": 35,
+      "start_date": "2023-11-27",
+      "end_date": "2023-11-28",
+      "created_at": "2023-05-01T12:00:00Z",
+      "updated_at": "2023-05-02T15:30:00Z"
+    },
+    {
+      "id": "efgh5678",
+      "name": "Summer Sale",
+      "description": "20% off on all products during the summer",
+      "type": "percentage",
+      "value": 20,
+      "start_date": "2023-06-01",
+      "end_date": "2023-08-31",
+      "created_at": "2023-04-15T09:00:00Z",
+      "updated_at": "2023-04-20T14:45:00Z"
+    }
+  ]
+  ```
+- `500 Internal Server Error`: An unexpected error occurred while retrieving the list of discounts.
+  ```json
+  {
+    "error": "An internal server error occurred. Please try again later."
+  }
+  ```
+
+### Delete a Discount
+
+**Endpoint:** `DELETE /v1/discounts/:id`
+
+**Description:** This endpoint allows you to delete a specific discount.
+
+**Responses:**
+
+- `204 No Content`: The discount was successfully deleted.
+- `404 Not Found`: The specified discount does not exist.
+  ```json
+  {
+    "error": "Discount not found."
+  }
+  ```
+- `500 Internal Server Error`: An unexpected error occurred while deleting the discount.
+  ```json
+  {
+    "error": "An internal server error occurred. Please try again later."
+  }
+  ```
+
+## Rate Limit
+
+The Discount Service API has a rate limit of 100 requests per minute per IP address. If the rate limit is exceeded, the API will respond with a `429 Too Many Requests` status code and the following response body:
+
+```json
+{
+  "error": "Too many requests. Please try again later."
+}
+```
+
+## APP Registration Information
+
+To use the Discount Service API, you need to register your application and obtain an API key. You can do this by visiting the [Developer Portal](https://example.com/developer-portal) and following the instructions provided. Once you have your API key, you need to include it in the `X-API-Key` header of your API requests.
+
+## Error Handling
+
+The Discount Service API uses standard HTTP status codes to indicate the success or failure of an API request. In addition to the status codes mentioned in the endpoint descriptions, the following error codes may also be returned:
+
+- `401 Unauthorized`: Authentication failed. Please check your API key.
+- `403 Forbidden`: You do not have permission to access this resource.
+- `501 Not Implemented`: The requested feature or endpoint is not yet implemented.
+- `502 Bad Gateway`: The API is temporarily unavailable due to a problem with an upstream service.
+- `503 Service Unavailable`: The API is temporarily unavailable due to maintenance or high traffic.
+- `504 Gateway Timeout`: The API is taking too long to respond, possibly due to an issue with an upstream service.
+
+In the case of an error, the API will respond with a JSON-formatted error message, like the following:
+
+```json
+{
+  "error": "Unauthorized access. Please check your API key."
+}
+```
+
+## Summary
+
+The Discount Service API provides a set of endpoints that allow users to manage discounts. The API supports creating, updating, retrieving, listing, and deleting discounts, and it uses standard HTTP status codes and error messages to communicate the success or failure of each operation.
+
+To use the API, you need to register your application and obtain an API key, which you must include in the `X-API-Key` header of your API requests. The API has a rate limit of 100 requests per minute per IP address, and it uses various error codes to indicate issues with the request or the API itself.
+
+Overall, the Discount Service API provides a robust and easy-to-use interface for managing discounts in your application.

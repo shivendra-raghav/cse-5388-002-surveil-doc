@@ -1,0 +1,150 @@
+Products Service API Documentation
+
+Introduction
+The Products Service is a powerful microservice designed to manage the CRUD (Create, Read, Update, Delete) operations and search functionality for products. This comprehensive API allows you to efficiently handle all your product-related needs, from creating new products to retrieving detailed information, updating existing ones, and even conducting advanced searches.
+
+Authentication
+To utilize the Products Service API, you will need to authenticate your requests. This is accomplished by providing a valid API key in the `Authorization` header of each request. The API key can be obtained by signing up for an account and generating a new key through the developer portal.
+
+Example Authentication Header:
+```
+Authorization: Bearer your_api_key_goes_here
+```
+
+Endpoints
+The Products Service API exposes the following endpoints:
+
+1. **Create a Product**
+   - Endpoint: `POST /v1/products`
+   - Description: This endpoint allows you to create a new product in the system.
+   - Request Body:
+     - `name`: The name of the product (required)
+     - `description`: A detailed description of the product (required)
+     - `price`: The price of the product (required)
+     - `category`: The category the product belongs to (optional)
+     - `tags`: A list of tags associated with the product (optional)
+   - Responses:
+     - `200 OK`: The product has been created successfully.
+     - `400 Bad Request`: The request body is invalid or missing required fields.
+     - `401 Unauthorized`: Provide your API key in the Authorization header.
+     - `403 Forbidden`: You are not authorized to perform this action.
+     - `500 Internal Server Error`: An unexpected error occurred while processing the request.
+
+2. **Update a Product**
+   - Endpoint: `POST /v1/products/:id`
+   - Description: This endpoint allows you to update an existing product.
+   - Path Parameters:
+     - `id`: The unique identifier of the product to be updated (required)
+   - Request Body:
+     - `name`: The new name of the product (optional)
+     - `description`: The new description of the product (optional)
+     - `price`: The new price of the product (optional)
+     - `category`: The new category the product belongs to (optional)
+     - `tags`: The new list of tags associated with the product (optional)
+   - Responses:
+     - `200 OK`: The product has been updated successfully.
+     - `400 Bad Request`: The request body is invalid or missing required fields.
+     - `401 Unauthorized`: Provide your API key in the Authorization header.
+     - `403 Forbidden`: You are not authorized to perform this action.
+     - `404 Not Found`: The product with the specified ID was not found.
+     - `500 Internal Server Error`: An unexpected error occurred while processing the request.
+
+3. **Retrieve a Product**
+   - Endpoint: `GET /v1/products/:id`
+   - Description: This endpoint allows you to retrieve the details of a specific product.
+   - Path Parameters:
+     - `id`: The unique identifier of the product to be retrieved (required)
+   - Responses:
+     - `200 OK`: The product details are returned successfully.
+     - `401 Unauthorized`: Provide your API key in the Authorization header.
+     - `403 Forbidden`: You are not authorized to perform this action.
+     - `404 Not Found`: The product with the specified ID was not found.
+     - `500 Internal Server Error`: An unexpected error occurred while processing the request.
+
+4. **List all Products**
+   - Endpoint: `GET /v1/products`
+   - Description: This endpoint allows you to retrieve a list of all products.
+   - Query Parameters:
+     - `page`: The page number to retrieve (optional, default is 1)
+     - `limit`: The number of products to return per page (optional, default is 20)
+     - `sortBy`: The field to sort the products by (optional, default is `createdAt`)
+     - `sortOrder`: The order of the sorting (optional, default is `asc`)
+   - Responses:
+     - `200 OK`: The list of products is returned successfully.
+     - `401 Unauthorized`: Provide your API key in the Authorization header.
+     - `403 Forbidden`: You are not authorized to perform this action.
+     - `500 Internal Server Error`: An unexpected error occurred while processing the request.
+
+5. **Delete a Product**
+   - Endpoint: `DELETE /v1/products/:id`
+   - Description: This endpoint allows you to delete a specific product.
+   - Path Parameters:
+     - `id`: The unique identifier of the product to be deleted (required)
+   - Responses:
+     - `202 Accepted`: The product has been scheduled for deletion.
+     - `401 Unauthorized`: Provide your API key in the Authorization header.
+     - `403 Forbidden`: You are not authorized to perform this action.
+     - `404 Not Found`: The product with the specified ID was not found.
+     - `500 Internal Server Error`: An unexpected error occurred while processing the request.
+
+6. **Search for Products**
+   - Endpoint: `GET /v1/products/search`
+   - Description: This endpoint allows you to search for products based on various criteria.
+   - Query Parameters:
+     - `query`: The search query to match against product names and descriptions (required)
+     - `category`: The category to filter the products by (optional)
+     - `minPrice`: The minimum price to filter the products by (optional)
+     - `maxPrice`: The maximum price to filter the products by (optional)
+     - `page`: The page number to retrieve (optional, default is 1)
+     - `limit`: The number of products to return per page (optional, default is 20)
+   - Responses:
+     - `200 OK`: The search results are returned successfully.
+     - `400 Bad Request`: The request parameters are invalid or missing required fields.
+     - `401 Unauthorized`: Provide your API key in the Authorization header.
+     - `403 Forbidden`: You are not authorized to perform this action.
+     - `500 Internal Server Error`: An unexpected error occurred while processing the request.
+
+Error Handling
+The Products Service API adheres to standard HTTP status codes to indicate the success or failure of a request. In the case of an error, the API will return a JSON response with the following structure:
+
+```json
+{
+  "error": {
+    "code": "<error_code>",
+    "message": "<error_message>"
+  }
+}
+```
+
+The possible error codes and their corresponding HTTP status codes are:
+
+- `400 Bad Request`: `400`
+- `Unauthorized`: `401`
+- `Forbidden`: `403`
+- `Not Found`: `404`
+- `Method Not Allowed`: `405`
+- `Internal Server Error`: `500`
+- `Not Implemented`: `501`
+- `Bad Gateway`: `502`
+- `Service Unavailable`: `503`
+- `Gateway Timeout`: `504`
+
+API Usage Limits
+To ensure the stability and fairness of the Products Service API, there are usage limits in place. The current limits are:
+
+- **Rate Limit**: 100 requests per minute per API key
+- **Burst Limit**: 200 requests per minute per API key
+
+If you exceed these limits, you will receive a `429 Too Many Requests` response with a `Retry-After` header indicating the number of seconds you should wait before retrying your request.
+
+Contact Support
+If you encounter any issues or have questions about the Products Service API, please don't hesitate to reach out to our support team. You can contact us at:
+
+- Email: support@abccorp.com
+- Phone: +1 (555) 123-4567
+- Website: https://www.abccorp.com/support
+
+Summary
+The Products Service API provides a comprehensive set of endpoints for managing products in your e-commerce application. With this API, you can easily create, read, update, and delete products, as well as perform advanced searches to find the products you need. The API is secured with authentication and follows standard error handling practices, ensuring a reliable and consistent experience for your application and its users.
+
+If you have any further questions or need assistance, please don't hesitate to contact our support team. We're here to help you succeed with the Products Service API.

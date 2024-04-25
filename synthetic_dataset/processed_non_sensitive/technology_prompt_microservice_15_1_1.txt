@@ -1,0 +1,99 @@
+Here is the updated value without tags and using the specified standards:
+
+User Service GraphQL API Documentation
+
+Introduction
+The User Service is a microservice that enables CRUD (Create, Read, Update, Delete) operations for user management. This service is designed to provide a robust and scalable solution for managing user data within a larger application or system. The GraphQL API offered by this service allows for efficient and flexible data retrieval and manipulation, making it an ideal choice for modern web and mobile applications.
+
+Latest Update By
+This documentation was last updated by John Doe on June 1, 2023.
+
+GraphQL Services
+
+1. Create a User
+   - **Description**: This mutation allows for the creation of a new user in the system.
+   - **Input Parameters**:
+     - `firstName` (String!): The first name of the user.
+     - `lastName` (String!): The last name of the user.
+     - `email` (String!): The email address of the user.
+     - `password` (String!): The password for the user's account.
+   - **Return Type**: `User`
+   - **HTTP Responses**:
+     - `200 OK`: The user was successfully created.
+     - `400 Bad Request`: The input parameters are invalid or missing.
+     - `401 Unauthorized`: You need to provide valid credentials to perform this operation.
+     - `403 Forbidden`: You do not have permission to create a new user.
+     - `500 Internal Server Error`: An unexpected error occurred on the server.
+
+2. Update a User
+   - **Description**: This mutation allows for the update of an existing user's information.
+   - **Input Parameters**:
+     - `id` (ID!): The unique identifier of the user to be updated.
+     - `firstName` (String): The updated first name of the user.
+     - `lastName` (String): The updated last name of the user.
+     - `email` (String): The updated email address of the user.
+   - **Return Type**: `User`
+   - **HTTP Responses**:
+     - `200 OK`: The user was successfully updated.
+     - `400 Bad Request`: The input parameters are invalid or missing.
+     - `401 Unauthorized`: You need to provide valid credentials to perform this operation.
+     - `403 Forbidden`: You do not have permission to update the user.
+     - `404 Not Found`: The user with the specified ID does not exist.
+     - `500 Internal Server Error`: An unexpected error occurred on the server.
+
+3. List a User
+   - **Description**: This query allows for the retrieval of a single user's information.
+   - **Input Parameters**:
+     - `id` (ID!): The unique identifier of the user to be retrieved.
+   - **Return Type**: `User`
+   - **HTTP Responses**:
+     - `200 OK`: The user was successfully retrieved.
+     - `400 Bad Request`: The input parameters are invalid or missing.
+     - `401 Unauthorized`: You need to provide valid credentials to perform this operation.
+     - `403 Forbidden`: You do not have permission to view the user's information.
+     - `404 Not Found`: The user with the specified ID does not exist.
+     - `500 Internal Server Error`: An unexpected error occurred on the server.
+
+4. List All Users
+   - **Description**: This query allows for the retrieval of all users in the system.
+   - **Input Parameters**:
+     - `page` (Int): The page number to retrieve (default is 1).
+     - `perPage` (Int): The number of users to retrieve per page (default is 10).
+   - **Return Type**: `[User]`
+   - **HTTP Responses**:
+     - `200 OK`: The users were successfully retrieved.
+     - `400 Bad Request`: The input parameters are invalid or missing.
+     - `401 Unauthorized`: You need to provide valid credentials to perform this operation.
+     - `403 Forbidden`: You do not have permission to view the user list.
+     - `500 Internal Server Error`: An unexpected error occurred on the server.
+
+5. Delete a User
+   - **Description**: This mutation allows for the deletion of an existing user.
+   - **Input Parameters**:
+     - `id` (ID!): The unique identifier of the user to be deleted.
+   - **Return Type**: `Boolean`
+   - **HTTP Responses**:
+     - `200 OK`: The user was successfully deleted.
+     - `400 Bad Request`: The input parameters are invalid or missing.
+     - `401 Unauthorized`: You need to provide valid credentials to perform this operation.
+     - `403 Forbidden`: You do not have permission to delete the user.
+     - `404 Not Found`: The user with the specified ID does not exist.
+     - `500 Internal Server Error`: An unexpected error occurred on the server.
+
+Authentication Details for Admin
+The User Service GraphQL API requires authentication for certain operations, such as updating, deleting, and retrieving specific user information. The API supports two types of authentication:
+
+1. **API Key**: Clients can authenticate by providing a valid API key in the `X-API-Key` header. This API key grants access to the API for authorized users or services.
+
+2. **JSON Web Tokens (JWT)**: Clients can authenticate by providing a valid JWT token in the `Authorization` header. This token is obtained by successfully logging in to the system and is typically issued with a specific set of permissions and a limited expiration time.
+
+The specific authentication requirements for each GraphQL operation are detailed in the "HTTP Responses" section of each service description.
+
+Summary
+The User Service GraphQL API provides a powerful and flexible solution for managing user data within a larger application or system. The API supports a wide range of operations, including creating, updating, retrieving, and deleting users, allowing developers to build robust and scalable user management functionality into their applications.
+
+The API's adherence to the GraphQL specification ensures efficient and precise data retrieval, reducing the need for over-fetching or multiple API calls. The comprehensive documentation provided in this document outlines the various GraphQL services, their input parameters, return types, and associated HTTP responses, enabling developers to quickly understand and integrate the User Service API into their projects.
+
+Additionally, the detailed authentication requirements outlined in this documentation ensure that the User Service API is secure and accessible only to authorized users or services, providing an added layer of protection for sensitive user data.
+
+Overall, the User Service GraphQL API is a valuable tool for developers looking to implement user management functionality in their applications, offering a scalable, efficient, and secure solution for managing user data.

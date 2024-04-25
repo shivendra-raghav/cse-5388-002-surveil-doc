@@ -1,0 +1,163 @@
+# Vultr Object Storage Documentation
+
+## Introduction
+
+Vultr Object Storage is a highly scalable and durable object storage service designed to securely store and retrieve large amounts of data. This service is ideal for a wide range of use cases, including backup and archiving, content distribution, and data lake applications. With its simple and intuitive interface, Vultr Object Storage makes it easy for developers and businesses to manage their data storage needs.
+
+This documentation will provide an overview of the Vultr Object Storage service, including how to access and manage your object storage, perform multi-part uploads, and work with object metadata.
+
+## Vultr Object Storage Access Details
+
+To access your Vultr Object Storage, you will need to use your unique API credentials. These credentials include your access key and secret key, which you can find in the Vultr control panel.
+
+### Obtaining API Credentials
+1. Log in to your Vultr account at [https://www.example.com/](https://www.example.com/).
+2. Navigate to the "Object Storage" section in the left-hand menu.
+3. Click on the "API Credentials" tab.
+4. Your access key and secret key will be displayed on this page. Make sure to keep these credentials secure, as they will be used to authenticate your requests to the Vultr Object Storage service.
+
+### Authenticating Requests
+To authenticate your requests to the Vultr Object Storage service, you will need to include your access key and secret key in the request headers. The specific implementation will depend on the programming language or tool you are using to interact with the service.
+
+Here's an example of how to authenticate a request using the AWS SDK for Python (Boto3):
+
+```python
+import boto3
+
+# Replace with your Vultr Object Storage credentials
+ACCESS_KEY = 'your_access_key'
+SECRET_KEY = 'your_secret_key'
+
+# Create an S3 client using the Vultr Object Storage endpoint
+s3 = boto3.client('s3',
+                  aws_access_key_id=ACCESS_KEY,
+                  aws_secret_access_key=SECRET_KEY,
+                  endpoint_url='https://objects.vultr.com')
+```
+
+In this example, we create an S3 client using the Boto3 library and provide the Vultr Object Storage endpoint URL, as well as your access key and secret key for authentication.
+
+### Accessing Buckets and Objects
+Once you have authenticated your requests, you can begin interacting with your Vultr Object Storage. The basic operations you can perform include:
+
+- **Listing Buckets**: Retrieve a list of all the buckets (containers) you have created.
+- **Creating Buckets**: Create a new bucket to store your data.
+- **Uploading Objects**: Add files or data to your buckets.
+- **Downloading Objects**: Retrieve files or data from your buckets.
+- **Deleting Objects**: Remove files or data from your buckets.
+
+The specific API calls and syntax will depend on the programming language or tool you are using, but the general process will be similar to the example provided above.
+
+## Multi-part Uploads
+
+Vultr Object Storage supports multi-part uploads, which allow you to upload large files or objects in smaller chunks. This can be particularly useful when working with files that exceed the maximum single-upload size limit, or when you need to resume an interrupted upload.
+
+### Initiating a Multi-part Upload
+To initiate a multi-part upload, you will need to make a special API request to the Vultr Object Storage service. This request will create a new multi-part upload session and provide you with an upload ID that you will use for subsequent part uploads.
+
+Here's an example of how to initiate a multi-part upload using the AWS SDK for Python (Boto3):
+
+```python
+import boto3
+
+ACCESS_KEY = 'your_access_key'
+SECRET_KEY = 'your_secret_key'
+
+s3 = boto3.client('s3',
+                  aws_access_key_id=ACCESS_KEY,
+                  aws_secret_access_key=SECRET_KEY,
+                  endpoint_url='https://objects.vultr.com')
+
+# Initiate a multi-part upload
+response = s3.create_multipart_upload(Bucket='my_bucket', Key='my_object.txt')
+upload_id = response['UploadId']
+```
+
+In this example, we call the `create_multipart_upload` method to initiate a new multi-part upload session. The response from this request will include the upload ID, which we store for later use.
+
+### Uploading Parts
+After initiating the multi-part upload, you can begin uploading the individual parts of your object. Each part must be at least 5 MB in size (except for the final part, which can be smaller).
+
+Here's an example of how to upload a part using the AWS SDK for Python (Boto3):
+
+```python
+# Upload a part
+part_number = 1
+response = s3.upload_part(
+    Bucket='my_bucket',
+    Key='my_object.txt',
+    PartNumber=part_number,
+    UploadId=upload_id,
+    Body=open('your_file.ext', 'rb')
+)
+part_etag = response['ETag']
+```
+
+In this example, we use the `upload_part` method to upload a part of the object. We specify the bucket name, object key, part number, upload ID, and the data to be uploaded (in this case, from a local file). The response from this request includes the ETag, which we store for later use in the complete multi-part upload step.
+
+### Completing the Multi-part Upload
+After uploading all the parts of your object, you need to complete the multi-part upload process. This involves making a final API request that assembles all the parts into a complete object.
+
+Here's an example of how to complete a multi-part upload using the AWS SDK for Python (Boto3):
+
+```python
+# Complete the multi-part upload
+parts = [{'PartNumber': i, 'ETag': part_etags[i-1]} for i in range(1, len(part_etags)+1)]
+response = s3.complete_multipart_upload(
+    Bucket='my_bucket',
+    Key='my_object.txt',
+    UploadId=upload_id,
+    MultipartUpload={'Parts': parts}
+)
+```
+
+In this example, we create a list of part information, including the part number and the ETag we saved from the `upload_part` requests. We then call the `complete_multipart_upload` method, passing in the bucket name, object key, upload ID, and the list of parts. This will complete the multi-part upload and create the final object in your Vultr Object Storage.
+
+## Object Metadata
+
+Vultr Object Storage allows you to store and manage metadata associated with your objects. This metadata can be used to provide additional information about the objects, such as their content type, creation date, or any custom metadata you choose to add.
+
+### Viewing Object Metadata
+You can view the metadata associated with an object by making a HEAD or GET request to the object's URL. The response will include the object's metadata in the headers.
+
+Here's an example of how to view an object's metadata using the AWS SDK for Python (Boto3):
+
+```python
+# View an object's metadata
+response = s3.head_object(Bucket='my_bucket', Key='my_object.txt')
+metadata = response['Metadata']
+```
+
+In this example, we use the `head_object` method to retrieve the metadata for the specified object. The response includes a `Metadata` dictionary, which contains any custom metadata you have associated with the object.
+
+### Updating Object Metadata
+You can update the metadata associated with an object by making a PUT request to the object's URL and including the new metadata in the request headers.
+
+Here's an example of how to update an object's metadata using the AWS SDK for Python (Boto3):
+
+```python
+# Update an object's metadata
+new_metadata = {
+    'custom-key': 'custom-value',
+    'another-key': 'another-value'
+}
+response = s3.copy_object(
+    Bucket='my_bucket',
+    Key='my_object.txt',
+    CopySource={'Bucket': 'my_bucket', 'Key': 'my_object.txt'},
+    Metadata=new_metadata,
+    MetadataDirective='REPLACE'
+)
+```
+
+In this example, we use the `copy_object` method to update the metadata for the specified object. We provide the new metadata in the `Metadata` parameter, and set the `MetadataDirective` to 'REPLACE' to indicate that the new metadata should replace the existing metadata.
+
+By leveraging object metadata, you can add additional context and information to your Vultr Object Storage objects, making it easier to manage and organize your data.
+
+## Conclusion
+
+Vultr Object Storage is a powerful and flexible object storage service that offers a wide range of features and capabilities. This documentation has provided an overview of how to access and manage your Vultr Object Storage, including performing multi-part uploads and working with object metadata.
+
+By following the procedures outlined in this documentation, you should be able to effectively integrate Vultr Object Storage into your applications and workflows, ensuring the safe and reliable storage of your data.
+
+If you have any further questions or need additional support, please don't hesitate to reach out to the Vultr customer support team.

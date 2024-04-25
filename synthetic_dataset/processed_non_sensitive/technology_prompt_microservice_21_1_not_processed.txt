@@ -1,0 +1,97 @@
+Categories Service Documentation
+
+Introduction
+The Categories Service is a RESTful API that enables CRUD (Create, Read, Update, Delete) operations for managing categories in a web application or mobile app. This service allows users to create new categories, update existing ones, retrieve details of a specific category or a list of all categories, and delete categories as needed. The service is designed to be scalable, secure, and easy to integrate with other components of the application.
+
+Latest Update By
+The latest update to the Categories Service was made by the engineering team on June 15th, 2023. This update included several bug fixes, performance improvements, and the addition of new features to enhance the overall functionality of the service.
+
+Maintenance Team Details
+The Categories Service is maintained by the following team members:
+
+- Jane Doe, Lead Developer (jane.doe@example.com)
+- John Smith, Backend Engineer (john.smith@example.com)
+- Sarah Lee, Quality Assurance Engineer (sarah.lee@example.com)
+- Michael Johnson, DevOps Engineer (michael.johnson@example.com)
+
+The team is responsible for ensuring the service is running smoothly, addressing any issues or bugs, and implementing new features as per the project requirements.
+
+REST Endpoints
+The Categories Service exposes the following REST API endpoints:
+
+1. Create a Category
+   - Endpoint: `POST /categories`
+   - Description: This endpoint allows users to create a new category.
+   - Request Body:
+     ```json
+     {
+       "name": "Electronics",
+       "description": "Products related to electronics and gadgets."
+     }
+     ```
+   - Responses:
+     - 200 OK: The category was successfully created.
+     - 400 Bad Request: The request body is invalid or missing required fields.
+     - 500 Internal Server Error: An unexpected error occurred on the server.
+
+2. Update a Category
+   - Endpoint: `PUT /categories/{id}`
+   - Description: This endpoint allows users to update an existing category.
+   - Request Body:
+     ```json
+     {
+       "name": "Appliances",
+       "description": "Products related to home appliances."
+     }
+     ```
+   - Responses:
+     - 200 OK: The category was successfully updated.
+     - 400 Bad Request: The request body is invalid or missing required fields.
+     - 404 Not Found: The category with the specified ID was not found.
+     - 500 Internal Server Error: An unexpected error occurred on the server.
+
+3. Get a Category
+   - Endpoint: `GET /categories/{id}`
+   - Description: This endpoint allows users to retrieve the details of a specific category.
+   - Responses:
+     - 200 OK: The category details are returned.
+     - 404 Not Found: The category with the specified ID was not found.
+     - 500 Internal Server Error: An unexpected error occurred on the server.
+
+4. List All Categories
+   - Endpoint: `GET /categories`
+   - Description: This endpoint allows users to retrieve a list of all categories.
+   - Responses:
+     - 200 OK: The list of categories is returned.
+     - 500 Internal Server Error: An unexpected error occurred on the server.
+
+5. Delete a Category
+   - Endpoint: `DELETE /categories/{id}`
+   - Description: This endpoint allows users to delete a specific category.
+   - Responses:
+     - 200 OK: The category was successfully deleted.
+     - 404 Not Found: The category with the specified ID was not found.
+     - 500 Internal Server Error: An unexpected error occurred on the server.
+
+Rate Limit
+The Categories Service has a rate limit of 100 requests per minute per IP address. If a client exceeds this limit, the service will respond with a 429 Too Many Requests status code and provide a Retry-After header indicating when the client can try again.
+
+Error Handling
+The Categories Service follows a consistent error handling approach. If an error occurs during the processing of a request, the service will respond with an appropriate HTTP status code and a JSON-formatted error response body. The error response will include the following information:
+
+- `error`: A short, human-readable error message.
+- `code`: A unique error code that can be used for troubleshooting and debugging.
+- `details`: Additional details about the error, if applicable.
+
+For example, a 404 Not Found response might look like this:
+
+```json
+{
+  "error": "Category not found",
+  "code": 404001,
+  "details": "The requested category with ID 123 was not found in the system."
+}
+```
+
+Summary
+The Categories Service provides a robust and scalable solution for managing categories in a web application or mobile app. The service offers a comprehensive set of REST API endpoints that allow users to perform CRUD operations on categories, with well-defined error handling and rate limiting mechanisms to ensure reliable and secure usage. The service is actively maintained by a dedicated team, and the latest updates have focused on improving the overall performance and functionality of the application.

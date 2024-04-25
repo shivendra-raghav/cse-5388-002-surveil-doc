@@ -1,0 +1,122 @@
+Documentation for Admin's Account Microservices Architecture
+
+Introduction
+
+The admin's account microservices architecture is a modern, scalable, and highly available system designed to manage and maintain the critical components of Acme Corp's infrastructure. This architecture follows the principles of microservices, which emphasize the separation of concerns, independent deployment, and scalability of individual services.
+
+The key services that make up this architecture are Kubernetes, Istio, and the Kong API Gateway. Each of these services plays a crucial role in ensuring the overall stability, security, and performance of the system.
+
+Latest Update By
+This documentation was last updated by the Microservices Architecture Documentation Generator Bot on June 1, 2023.
+
+Service Details
+
+Kubernetes
+Kubernetes is a powerful, open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications. It is the backbone of the admin's account microservices architecture, providing a robust and scalable platform for running and managing the various services.
+
+Viewing Kubernetes Services:
+To view the Kubernetes services in the admin's account, you can use the Kubernetes command-line interface (CLI) tool, `kubectl`. This tool allows you to interact with the Kubernetes cluster and obtain information about the running services.
+
+1. **List all Kubernetes services**: To see a list of all the Kubernetes services running in the admin's account, use the following command:
+
+   ```
+   kubectl get services
+   ```
+
+   This will display the name, type, cluster IP, external IP, port, and age of each service.
+
+2. **Get details of a specific service**: To view the detailed information about a specific Kubernetes service, use the following command:
+
+   ```
+   kubectl describe service acme-service
+   ```
+
+   Replace `acme-service` with the name of the service you want to view. This will show you the service's configuration, including the selector, type, ports, and any associated Kubernetes resources.
+
+Updating Kubernetes Services:
+Updating Kubernetes services involves modifying the service's configuration and applying the changes to the cluster. This can be done using the `kubectl` command-line tool.
+
+1. **Edit a service's configuration**: To edit the configuration of a Kubernetes service, use the following command:
+
+   ```
+   kubectl edit service acme-service
+   ```
+
+   This will open the service's configuration file in a text editor, where you can make the necessary changes.
+
+2. **Apply the changes**: After making the desired modifications, save the changes and exit the text editor. Kubernetes will automatically apply the updated configuration to the service.
+
+Istio
+Istio is an open-source service mesh that provides a comprehensive platform for managing, securing, and monitoring microservices. It is integrated into the admin's account microservices architecture to enhance the overall reliability, security, and observability of the system.
+
+Viewing Istio Services:
+To view the Istio services in the admin's account, you can use the Istio command-line interface (CLI) tool, `istioctl`.
+
+1. **List all Istio services**: To see a list of all the Istio services running in the admin's account, use the following command:
+
+   ```
+   istioctl proxy-status
+   ```
+
+   This will display the name, cluster, version, and status of each Istio proxy.
+
+2. **Get details of a specific service**: To view the detailed information about a specific Istio service, use the following command:
+
+   ```
+   istioctl proxy-status acme-istio-service
+   ```
+
+   Replace `acme-istio-service` with the name of the service you want to view. This will show you the service's configuration, including the version, cluster, and various Istio-related metrics.
+
+Updating Istio Services:
+Updating Istio services involves modifying the Istio configuration and applying the changes to the cluster. This can be done using the `istioctl` command-line tool.
+
+1. **Edit an Istio configuration**: To edit the configuration of an Istio service, use the following command:
+
+   ```
+   istioctl manifest apply -f acme-istio-config.yaml
+   ```
+
+   Replace `acme-istio-config.yaml` with the path to the Istio configuration file you want to update.
+
+2. **Apply the changes**: After making the desired modifications to the configuration file, run the `istioctl manifest apply` command to apply the changes to the Istio services.
+
+Kong API Gateway
+The Kong API Gateway is a highly scalable, open-source API gateway that provides a range of features for managing, securing, and monitoring APIs. It is an integral part of the admin's account microservices architecture, serving as the entry point for all API requests.
+
+Viewing Kong API Gateway Services:
+To view the Kong API Gateway services in the admin's account, you can use the Kong command-line interface (CLI) tool, `kong`.
+
+1. **List all Kong services**: To see a list of all the Kong services running in the admin's account, use the following command:
+
+   ```
+   kong services list
+   ```
+
+   This will display the name, host, port, and status of each Kong service.
+
+2. **Get details of a specific service**: To view the detailed information about a specific Kong service, use the following command:
+
+   ```
+   kong services get acme-api-service
+   ```
+
+   Replace `acme-api-service` with the name of the service you want to view. This will show you the service's configuration, including the URL, upstream, and any associated plugins.
+
+Updating Kong API Gateway Services:
+Updating Kong API Gateway services involves modifying the service's configuration and applying the changes to the cluster. This can be done using the `kong` command-line tool.
+
+1. **Edit a service's configuration**: To edit the configuration of a Kong service, use the following command:
+
+   ```
+   kong services update acme-api-service --data '{"host": "api.acmecorp.com"}'
+   ```
+
+   Replace `acme-api-service` with the name of the service you want to update and modify the `--data` parameter with the new configuration values.
+
+2. **Apply the changes**: After making the desired modifications, run the `kong services update` command to apply the changes to the Kong API Gateway service.
+
+Summary
+The admin's account microservices architecture is a robust and scalable system that leverages the power of Kubernetes, Istio, and the Kong API Gateway to provide a highly available and secure infrastructure for Acme Corp. By understanding the procedures for viewing and updating these key services, the admin can effectively manage and maintain the overall system, ensuring the smooth operation of the organization's critical applications and services.
+
+This documentation provides a comprehensive overview of the admin's account microservices architecture and the steps required to interact with the various components. By following the guidelines presented here, the admin can effectively manage and maintain the system, ensuring its continued reliability and performance.

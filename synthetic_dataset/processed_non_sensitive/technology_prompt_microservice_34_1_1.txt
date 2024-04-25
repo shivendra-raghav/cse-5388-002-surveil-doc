@@ -1,0 +1,240 @@
+# Inventory Service API Documentation
+
+## Introduction
+
+The Inventory Service is a RESTful API that manages the inventory of products in an e-commerce system. This service allows you to perform various operations on the product inventory, such as retrieving the inventory details of a specific product, updating the quantity of a product, and managing the overall product inventory.
+
+## Authentication
+
+The Inventory Service API uses bearer token authentication to secure access to the endpoints. To authenticate, you need to include the following header in your requests:
+
+```
+Authorization: Bearer [access_token_placeholder]
+```
+
+You can obtain the access token by authenticating with the identity provider used by your application. The process of obtaining the access token is outside the scope of this documentation.
+
+## Endpoints
+
+### Get Product Inventory
+
+**Endpoint:** `GET /v1/inventory/{productId}`
+
+**Description:** This endpoint retrieves the inventory details for a specific product.
+
+**Request Parameters:**
+
+- `productId` (required): The ID of the product for which you want to retrieve the inventory details.
+
+**Response:**
+
+```json
+{
+  "productId": "AB12345",
+  "name": "Smart TV",
+  "description": "55-inch OLED Smart TV with HDR support.",
+  "category": "Electronics",
+  "quantity": 50,
+  "lowStockThreshold": 10,
+  "lastUpdated": "2023-04-15T12:34:56Z"
+}
+```
+
+**Status Codes:**
+
+- `200 OK`: The request was successful, and the product inventory details are returned.
+- `404 Not Found`: The specified `productId` was not found.
+
+### Update Product Quantity
+
+**Endpoint:** `POST /v1/inventory/{productId}/quantity`
+
+**Description:** This endpoint allows you to update the quantity of a specific product in the inventory.
+
+**Request Parameters:**
+
+- `productId` (required): The ID of the product for which you want to update the quantity.
+- `quantity` (required): The new quantity for the product.
+
+**Request Body:**
+
+```json
+{
+  "quantity": 75
+}
+```
+
+**Response:**
+
+```json
+{
+  "productId": "AB12345",
+  "name": "Smart TV",
+  "description": "55-inch OLED Smart TV with HDR support.",
+  "category": "Electronics",
+  "quantity": 75,
+  "lowStockThreshold": 10,
+  "lastUpdated": "2023-04-16T08:15:27Z"
+}
+```
+
+**Status Codes:**
+
+- `200 OK`: The request was successful, and the product inventory was updated.
+- `404 Not Found`: The specified `productId` was not found.
+- `400 Bad Request`: The request body is invalid or missing required parameters.
+
+### Replace Product Quantity
+
+**Endpoint:** `PUT /v1/inventory/{productId}/quantity`
+
+**Description:** This endpoint allows you to completely replace the quantity of a specific product in the inventory.
+
+**Request Parameters:**
+
+- `productId` (required): The ID of the product for which you want to replace the quantity.
+- `quantity` (required): The new quantity for the product.
+
+**Request Body:**
+
+```json
+{
+  "quantity": 100
+}
+```
+
+**Response:**
+
+```json
+{
+  "productId": "AB12345",
+  "name": "Smart TV",
+  "description": "55-inch OLED Smart TV with HDR support.",
+  "category": "Electronics",
+  "quantity": 100,
+  "lowStockThreshold": 10,
+  "lastUpdated": "2023-04-16T12:30:00Z"
+}
+```
+
+**Status Codes:**
+
+- `200 OK`: The request was successful, and the product inventory was updated.
+- `404 Not Found`: The specified `productId` was not found.
+- `400 Bad Request`: The request body is invalid or missing required parameters.
+
+### Delete Product from Inventory
+
+**Endpoint:** `DELETE /v1/inventory/{productId}`
+
+**Description:** This endpoint allows you to delete a specific product from the inventory.
+
+**Request Parameters:**
+
+- `productId` (required): The ID of the product you want to delete from the inventory.
+
+**Response:**
+
+```json
+{
+  "message": "Product with ID 'AB12345' has been deleted."
+}
+```
+
+**Status Codes:**
+
+- `204 No Content`: The request was successful, and the product was deleted from the inventory.
+- `404 Not Found`: The specified `productId` was not found.
+
+### Get Low Stock Products
+
+**Endpoint:** `GET /v1/inventory?low_stock=true`
+
+**Description:** This endpoint retrieves a list of products that have a quantity below the low stock threshold.
+
+**Request Parameters:**
+
+- `low_stock` (required): Set to `true` to retrieve only the products with low stock.
+
+**Response:**
+
+```json
+[
+  {
+    "productId": "AB12345",
+    "name": "Smart TV",
+    "description": "55-inch OLED Smart TV with HDR support.",
+    "category": "Electronics",
+    "quantity": 8,
+    "lowStockThreshold": 10,
+    "lastUpdated": "2023-04-15T15:20:00Z"
+  },
+  {
+    "productId": "XY67890",
+    "name": "Denim Jacket",
+    "description": "Unisex denim jacket with classic fit.",
+    "category": "Clothing",
+    "quantity": 4,
+    "lowStockThreshold": 10,
+    "lastUpdated": "2023-04-14T11:45:30Z"
+  }
+]
+```
+
+**Status Codes:**
+
+- `200 OK`: The request was successful, and the low stock products are returned.
+- `400 Bad Request`: The `low_stock` parameter is missing or invalid.
+
+## Request/Response Formats
+
+The Inventory Service API uses JSON as the data format for both request and response bodies. All requests should include the `Content-Type: application/json` header, and the response will also be in JSON format.
+
+## Error Handling
+
+The Inventory Service API uses standard HTTP status codes to indicate the success or failure of a request. In addition to the status codes mentioned for each endpoint, the API may also return the following error responses:
+
+**General Errors:**
+
+- `500 Internal Server Error`: An unexpected error occurred on the server-side.
+
+**Authentication Errors:**
+
+- `401 Unauthorized`: The provided access token is invalid or missing.
+- `403 Forbidden`: The authenticated user does not have permission to perform the requested action.
+
+The error responses will include a JSON object with the following structure:
+
+```json
+{
+  "error": {
+    "code": "error_code",
+    "message": "Error description"
+  }
+}
+```
+
+## Rate Limiting
+
+The Inventory Service API applies rate limiting to protect the system from abuse and ensure fair usage for all clients. The rate limit is set at 100 requests per minute per API key.
+
+If a client exceeds the rate limit, the API will respond with the following headers:
+
+- `X-RateLimit-Limit`: The maximum number of requests allowed per minute.
+- `X-RateLimit-Remaining`: The number of requests remaining in the current time window.
+- `X-RateLimit-Reset`: The time (in seconds) at which the rate limit window will reset.
+
+The client will also receive a `429 Too Many Requests` response with the following JSON body:
+
+```json
+{
+  "error": {
+    "code": "rate_limit_exceeded",
+    "message": "You have exceeded the rate limit. Please try again later."
+  }
+}
+```
+
+## Summary
+
+The Inventory Service API provides a set of RESTful endpoints to manage the inventory of products in an e-commerce system. The API supports various operations, such as retrieving product inventory details, updating product quantities, and managing the overall product inventory. The API uses bearer token authentication for secure access, and it applies rate limiting to ensure fair usage for all clients. The API responses are in JSON format, and the service also provides detailed error handling to help clients understand and resolve any issues that may occur during the API interactions.

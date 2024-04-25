@@ -1,0 +1,51 @@
+Multi-Cloud Architecture Documentation
+
+Introduction
+
+This multi-cloud architecture documentation outlines the implementation and management of a robust and scalable cloud infrastructure leveraging Amazon Web Services (AWS) Elastic Kubernetes Service (EKS), Microsoft Azure Kubernetes Service (AKS), and Google Cloud's Google Kubernetes Engine (GKE). By adopting a multi-cloud strategy, our organization can benefit from increased reliability, enhanced flexibility, and the ability to leverage the unique strengths and capabilities of each cloud platform.
+
+Latest Update By: AI Documentation Assistant
+
+Service Details
+
+AWS EKS
+AWS EKS is a fully managed Kubernetes service that simplifies the process of running Kubernetes on AWS. With EKS, customers can focus on building their applications without the overhead of managing the Kubernetes control plane.
+
+Viewing EKS Cluster Details:
+1. Log in to the AWS Management Console and navigate to the EKS service.
+2. In the EKS dashboard, you will see a list of all the EKS clusters within your AWS account.
+3. Click on the cluster you want to view to see detailed information, such as the cluster name, Kubernetes version, node group details, and more.
+
+Updating EKS Cluster:
+1. To update an EKS cluster, you can either create a new cluster with the desired configuration or update an existing cluster.
+2. To create a new cluster, click on the "Create Cluster" button and follow the wizard to configure the cluster settings, including the Kubernetes version, node group specifications, and networking options.
+3. To update an existing cluster, you can use the AWS CLI or the AWS SDK to modify the cluster configuration, such as upgrading the Kubernetes version or adding/removing node groups.
+
+Azure AKS
+Azure AKS is a fully managed Kubernetes service that simplifies the deployment, management, and operations of Kubernetes. AKS provides a straightforward way to run containerized applications in the cloud, with automatic scaling, self-healing, and easy access to the latest Kubernetes features.
+
+Viewing AKS Cluster Details:
+1. Log in to the Azure Portal and navigate to the AKS service.
+2. In the AKS dashboard, you will see a list of all the AKS clusters within your Azure subscription.
+3. Click on the cluster you want to view to see detailed information, such as the cluster name, Kubernetes version, node pool details, and more.
+
+Updating AKS Cluster:
+1. To update an AKS cluster, you can either create a new cluster with the desired configuration or update an existing cluster.
+2. To create a new cluster, click on the "Create" button and follow the wizard to configure the cluster settings, including the Kubernetes version, node pool specifications, and networking options.
+3. To update an existing cluster, you can use the Azure CLI or the Azure SDK to modify the cluster configuration, such as upgrading the Kubernetes version or adding/removing node pools.
+
+Google GKE
+Google Kubernetes Engine (GKE) is a fully managed Kubernetes service provided by Google Cloud Platform (GCP). GKE simplifies the process of deploying, managing, and scaling Kubernetes clusters, allowing you to focus on building and running your applications.
+
+Viewing GKE Cluster Details:
+1. Log in to the Google Cloud Console and navigate to the GKE service.
+2. In the GKE dashboard, you will see a list of all the GKE clusters within your GCP project.
+3. Click on the cluster you want to view to see detailed information, such as the cluster name, Kubernetes version, node pool details, and more.
+
+Updating GKE Cluster:
+1. To update a GKE cluster, you can either create a new cluster with the desired configuration or update an existing cluster.
+2. To create a new cluster, click on the "Create" button and follow the wizard to configure the cluster settings, including the Kubernetes version, node pool specifications, and networking options.
+3. To update an existing cluster, you can use the Google Cloud SDK or the Google Cloud Console to modify the cluster configuration, such as upgrading the Kubernetes version or adding/removing node pools.
+
+Summary
+This multi-cloud architecture documentation provides an overview of the key services and procedures for managing AWS EKS, Azure AKS, and Google GKE clusters. By leveraging a multi-cloud strategy, our organization can benefit from increased reliability, flexibility, and the ability to leverage the unique strengths of each cloud platform. The documentation outlines the steps for viewing and updating the various Kubernetes clusters, ensuring that our cloud infrastructure remains reliable, secure, and optimized for our business needs.

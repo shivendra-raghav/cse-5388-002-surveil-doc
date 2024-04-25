@@ -1,0 +1,235 @@
+# Mobile BFF Service Documentation
+
+## Introduction
+
+The Mobile BFF (Backend for Frontend) Service is a microservice designed to serve as the backend for a mobile frontend application. It provides optimized APIs and data aggregation to streamline the communication between the mobile client and the underlying backend systems. This service acts as an intermediary, handling the complexities of data retrieval, processing, and transformation, ensuring a seamless and efficient user experience for the mobile application.
+
+## Authentication
+
+The Mobile BFF Service utilizes a token-based authentication mechanism to secure access to its endpoints. Clients are required to obtain an authentication token before making any requests to the service.
+
+### Obtaining an Authentication Token
+
+To obtain an authentication token, clients must make a POST request to the `/v1/auth/token` endpoint, providing valid user credentials (e.g., username and password) in the request body. Upon successful authentication, the service will respond with an access token, which can be used to authorize subsequent requests.
+
+Example request:
+
+```
+POST /v1/auth/token
+Content-Type: application/json
+
+{
+  "username": "johndoe",
+  "password": "secret123"
+}
+```
+
+Example response:
+
+```json
+{
+  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxMjM0NTY3OCIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjIxNDU2Nzg5LCJleHAiOjE2MjE0NjAzODl9.Zt_X-4c-gYpQWl6Yv-_RoZqVggDn0VawDOq1M_ETcEE",
+  "token_type": "Bearer",
+  "expires_in": 3600
+}
+```
+
+To use the obtained access token, clients must include it in the `Authorization` header of subsequent requests to the Mobile BFF Service.
+
+Example request:
+
+```
+GET /v1/mobile/home
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxMjM0NTY3OCIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjIxNDU2Nzg5LCJleHAiOjE2MjE0NjAzODl9.Zt_X-4c-gYpQWl6Yv-_RoZqVggDn0VawDOq1M_ETcEE
+```
+
+## API Endpoints
+
+The Mobile BFF Service exposes the following API endpoints:
+
+### GET /v1/mobile/home
+This endpoint retrieves the data required to populate the home screen of the mobile application. The response includes a collection of featured products, recommended items, and other relevant information for the home screen.
+
+Example response:
+
+```json
+{
+  "featuredProducts": [
+    {
+      "id": "123456",
+      "name": "Product A",
+      "description": "This is a description of Product A",
+      "price": 29.99,
+      "imageUrl": "https://example.com/product-a.jpg"
+    },
+    {
+      "id": "789012",
+      "name": "Product B",
+      "description": "This is a description of Product B",
+      "price": 39.99,
+      "imageUrl": "https://example.com/product-b.jpg"
+    }
+  ],
+  "recommendedProducts": [
+    {
+      "id": "345678",
+      "name": "Product C",
+      "description": "This is a description of Product C",
+      "price": 19.99,
+      "imageUrl": "https://example.com/product-c.jpg"
+    },
+    {
+      "id": "901234",
+      "name": "Product D",
+      "description": "This is a description of Product D",
+      "price": 24.99,
+      "imageUrl": "https://example.com/product-d.jpg"
+    }
+  ],
+  "promotions": [
+    {
+      "id": "567890",
+      "title": "Summer Sale",
+      "description": "Enjoy great discounts on selected products",
+      "imageUrl": "https://example.com/summer-sale.jpg"
+    }
+  ]
+}
+```
+
+### GET /v1/mobile/product/{productId}
+This endpoint retrieves detailed information about a specific product, including its name, description, price, and related images.
+
+Example response:
+
+```json
+{
+  "id": "123456",
+  "name": "Product A",
+  "description": "This is a detailed description of Product A. It includes information about the product's features, specifications, and usage.",
+  "price": 29.99,
+  "images": [
+    "https://example.com/product-a-1.jpg",
+    "https://example.com/product-a-2.jpg",
+    "https://example.com/product-a-3.jpg"
+  ],
+  "reviews": [
+    {
+      "id": "review1",
+      "author": "John Doe",
+      "rating": 4,
+      "comment": "I really enjoyed using this product. It exceeded my expectations."
+    },
+    {
+      "id": "review2",
+      "author": "Jane Smith",
+      "rating": 5,
+      "comment": "This product is amazing! I highly recommend it."
+    }
+  ]
+}
+```
+
+### GET /v1/mobile/cart
+This endpoint retrieves the user's current shopping cart, including the items added to the cart and the total cost.
+
+Example response:
+
+```json
+{
+  "items": [
+    {
+      "id": "cart-item-1",
+      "productId": "123456",
+      "name": "Product A",
+      "quantity": 2,
+      "price": 29.99
+    },
+    {
+      "id": "cart-item-2",
+      "productId": "789012",
+      "name": "Product B",
+      "quantity": 1,
+      "price": 39.99
+    }
+  ],
+  "total": 99.97
+}
+```
+
+### POST /v1/mobile/cart
+This endpoint allows the user to add an item to their shopping cart.
+
+Example request:
+
+```json
+{
+  "productId": "123456",
+  "quantity": 1
+}
+```
+
+Example response:
+
+```json
+{
+  "id": "cart-item-3",
+  "productId": "123456",
+  "name": "Product A",
+  "quantity": 1,
+  "price": 29.99
+}
+```
+
+### DELETE /v1/mobile/cart/{itemId}
+This endpoint allows the user to remove an item from their shopping cart.
+
+Example request:
+
+```
+DELETE /v1/mobile/cart/cart-item-2
+```
+
+Example response:
+
+```json
+{
+  "message": "Item removed from cart successfully"
+}
+```
+
+## Request Aggregation
+
+The Mobile BFF Service employs a request aggregation strategy to optimize the data retrieval process. When the mobile client requests data for the home screen (GET /v1/mobile/home), the service consolidates the necessary information from various backend systems, such as the product catalog, recommendations engine, and promotion management system, into a single response. This approach reduces the number of round trips between the mobile client and the backend, improving the overall responsiveness and performance of the mobile application.
+
+## Response Transformation
+
+To further enhance the user experience, the Mobile BFF Service performs response transformation on the data retrieved from the backend systems. This includes:
+
+1. **Data Normalization**: The service ensures that the data returned to the mobile client is in a consistent format, with uniform field names and data types.
+2. **Image Optimization**: The service optimizes the product images by resizing and compressing them to reduce the payload size, improving the loading time on the mobile device.
+3. **Data Filtering and Sorting**: The service applies relevant filtering and sorting logic to the data, ensuring that the mobile client receives the most relevant and prioritized information.
+
+## Error Handling
+
+The Mobile BFF Service has a robust error handling mechanism to provide clear and informative feedback to the mobile client in case of any issues or failures. When an error occurs, the service returns a comprehensive error response, including the following information:
+
+- **Error Code**: A unique identifier for the error, which can be used for troubleshooting and debugging purposes.
+- **Error Message**: A user-friendly description of the error, explaining what went wrong and providing guidance on how to resolve the issue.
+- **Error Details**: Additional contextual information about the error, such as the specific request parameters, the underlying cause, or any relevant debug information.
+
+Example error response:
+
+```json
+{
+  "error": {
+    "code": 404,
+    "message": "Product not found",
+    "details": "The requested product with ID '123456' could not be found in the catalog."
+  }
+}
+```
+
+## Summary
+
+The Mobile BFF Service is a critical component of the mobile application architecture, serving as the intermediary between the mobile client and the backend systems. By providing optimized APIs, data aggregation, and response transformation, the service ensures a seamless and efficient user experience for the mobile application. The service's authentication, error handling, and request aggregation capabilities further enhance the overall quality and reliability of the mobile application.

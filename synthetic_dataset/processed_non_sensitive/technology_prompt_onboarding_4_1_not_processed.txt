@@ -1,0 +1,49 @@
+Certainly! Here's the documentation for onboarding users to their company's Azure account, following the provided specification:
+
+Azure Account Onboarding Documentation
+
+Introduction
+Welcome to the Azure account onboarding documentation. This guide will provide you with the necessary information to set up and access your company's Azure account, as well as details about the support team available to assist you.
+
+Azure Account Information
+Your company has an active Azure subscription with the following details:
+
+Subscription Name: Acme Inc. Azure Subscription
+Subscription ID: 12345678-1234-1234-1234-123456789abc
+Subscription Type: Enterprise Agreement
+Subscription Status: Active
+
+Your Azure subscription provides access to a wide range of cloud services, including virtual machines, storage accounts, databases, and more. The subscription is managed by the IT department and is subject to the company's policies and governance requirements.
+
+To access the Azure portal, you can use the following URL: https://portal.azure.com. The Azure portal is the web-based management interface for your company's Azure resources.
+
+Azure Access Information
+To access the Azure portal and manage your company's resources, you have been granted the following permissions:
+
+Role: Azure Contributor
+Scope: Subscription level
+
+As an Azure Contributor, you have the ability to view, create, modify, and delete most Azure resources within the scope of the Acme Inc. Azure Subscription. However, you do not have the ability to manage user access or assign roles to other users.
+
+To log in to the Azure portal, you will need to use your company-issued email address and password. Your initial login credentials have been provided to you separately. Upon your first login, you will be prompted to change your password to a secure one of your choice.
+
+If you require access to additional Azure resources or need to perform specific administrative tasks, please submit a request to the IT support team for review and approval.
+
+Support Team Details
+If you encounter any issues or have questions related to your Azure account or the resources within it, please reach out to the Acme Inc. IT support team. The support team is available during regular business hours and can be contacted through the following channels:
+
+Email: azure-support@acme.com
+Phone: +1 (555) 123-4567
+Chat: https://acme.com/azure-support
+
+When contacting the support team, please provide the following information:
+- Your name and contact details
+- The Subscription ID of the Azure subscription you are working with
+- A detailed description of the issue or question you have
+- Any relevant error messages or screenshots
+
+The support team will review your request and respond as soon as possible, typically within 1 business day. For urgent issues, please indicate the severity in your initial request, and the team will prioritize your case accordingly.
+
+In addition to the support team, you may also find helpful resources in the Azure documentation available at https://docs.microsoft.com/azure. This comprehensive online documentation covers a wide range of Azure services, features, and best practices.
+
+We hope this onboarding documentation provides you with the necessary information to get started with your company's Azure account. If you have any further questions or require additional assistance, please don't hesitate to reach out to the IT support team.

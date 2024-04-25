@@ -1,0 +1,92 @@
+Here is the updated value without tags and using the standards provided:
+
+COMMERCIAL PARTNERSHIP AGREEMENT
+
+INTRODUCTION
+
+This Commercial Partnership Agreement (the "Agreement") is made and entered into this 15th June 2023 by and between ABC Corporation, a Delaware corporation with its principal place of business at 123 Main St, Anytown, DE 12345 ("ABC Corp"), and XYZ Enterprises LLC, a California limited liability company with its principal place of business at 456 Market St, Somecity, CA 67890 ("XYZ Enterprises"). ABC Corp and XYZ Enterprises may be referred to individually as a "Party" and collectively as the "Parties."
+
+WHEREAS, ABC Corp and XYZ Enterprises wish to enter into a commercial partnership to jointly develop and market a new software product; and
+
+WHEREAS, the Parties desire to set forth the terms and conditions of their commercial partnership in this Agreement.
+
+NOW, THEREFORE, in consideration of the mutual promises and covenants contained herein, and for other good and valuable consideration, the receipt and sufficiency of which are hereby acknowledged, the Parties agree as follows:
+
+DEFINITIONS
+
+1. "Confidential Information" means any proprietary or non-public information of a Party, including, but not limited to, trade secrets, know-how, financial information, business plans, customer lists, pricing, and marketing strategies.
+
+2. "Intellectual Property" means all patents, copyrights, trademarks, service marks, trade names, domain names, and any other intellectual property rights.
+
+3. "Term" means the duration of this Agreement as set forth in Section 10.
+
+TERMS AND CONDITIONS
+
+4. Scope of Partnership. The Parties shall jointly develop and market a new software product for enterprise resource planning (ERP). ABC Corp shall be responsible for the software development, while XYZ Enterprises shall handle marketing and sales efforts.
+
+5. Responsibilities of the Parties. 
+   a. ABC Corp shall be responsible for developing the ERP software, including coding, testing, and deployment.
+   b. XYZ Enterprises shall be responsible for marketing the ERP software to potential customers, generating leads, and closing sales.
+
+6. Financial Arrangements.
+   a. Revenue Sharing. The Parties shall share revenues generated from the partnership as follows: 60% to ABC Corp and 40% to XYZ Enterprises.
+   b. Expenses. The Parties shall share expenses related to the partnership as follows: ABC Corp shall bear the costs of software development, while XYZ Enterprises shall cover the marketing and sales expenses.
+   c. Invoicing and Payments. The Parties shall invoice and make payments to each other in accordance with the procedures set forth in Section 7.
+
+7. Procedures for Official Correspondence.
+   a. All official correspondence between the Parties, including invoices, notices, and other communications, shall be sent via email to the following addresses:
+
+      For ABC Corp:
+      John Doe
+      123 Main St, Anytown, DE 12345
+      jdoe@abccorp.com
+
+      For XYZ Enterprises:
+      Jane Smith
+      456 Market St, Somecity, CA 67890
+      jsmith@xyzenterprises.com
+
+   b. The Parties shall notify each other in writing of any changes to the contact information specified above.
+
+8. Intellectual Property.
+   a. Background IP. Each Party retains ownership of its respective Intellectual Property existing prior to the Effective Date of this Agreement ("Background IP").
+   b. Jointly Developed IP. Any Intellectual Property developed jointly by the Parties in the course of this partnership shall be owned jointly by the Parties, and the Parties shall negotiate in good faith the terms of such joint ownership.
+   c. Licenses. Each Party grants the other Party a non-exclusive, royalty-free license to use its Background IP to the extent necessary to perform its obligations under this Agreement.
+
+9. Confidentiality.
+   a. The Parties shall maintain the confidentiality of all Confidential Information disclosed by the other Party and shall not use such Confidential Information for any purpose other than the performance of this Agreement.
+   b. The Parties shall implement reasonable measures to protect the Confidential Information from unauthorized use or disclosure.
+   c. The confidentiality obligations under this Section 9 shall survive the termination or expiration of this Agreement for a period of 5 years.
+
+TERMINATION
+
+10. Term and Termination.
+    a. The term of this Agreement shall be 3 years from the Effective Date (the "Term"), unless earlier terminated as provided herein.
+    b. Either Party may terminate this Agreement for convenience upon 90 days' written notice to the other Party.
+    c. Either Party may terminate this Agreement immediately upon written notice to the other Party if the other Party:
+       i. Breaches any material term of this Agreement and fails to cure such breach within 30 days of receiving written notice thereof; or
+       ii. Becomes insolvent, files for bankruptcy, or is the subject of involuntary bankruptcy proceedings that are not dismissed within 60 days.
+    d. Upon termination of this Agreement, the Parties shall cooperate to wind down the partnership in an orderly manner, and the provisions of Sections 8, 9, and 11 shall survive.
+
+MISCELLANEOUS
+
+11. Governing Law and Dispute Resolution.
+    a. This Agreement shall be governed by and construed in accordance with the laws of the State of Delaware without regard to its conflict of laws principles.
+    b. Any disputes arising out of or in connection with this Agreement shall be resolved through binding arbitration administered by the American Arbitration Association in accordance with its Commercial Arbitration Rules. The seat of the arbitration shall be Wilmington, Delaware, and the language of the arbitration shall be English.
+    c. The Parties agree to maintain the confidentiality of the arbitration proceedings, including the existence of the arbitration, all submissions and evidence, and the arbitral award, except as may be necessary to enforce such award or as otherwise required by law.
+
+12. Entire Agreement. This Agreement, including any exhibits and schedules attached hereto, constitutes the entire agreement between the Parties with respect to the subject matter hereof and supersedes all prior and contemporaneous agreements, representations, and understandings of the Parties, whether written or oral.
+
+IN WITNESS WHEREOF, the Parties have executed this Agreement as of the date first written above.
+
+ABC Corporation
+
+By: _____________________________
+Name: John Doe
+Title: Chief Executive Officer
+
+XYZ Enterprises LLC
+
+By: _____________________________
+Name: Jane Smith
+Title: Managing Partner

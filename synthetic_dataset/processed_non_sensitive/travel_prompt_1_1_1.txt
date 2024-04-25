@@ -1,0 +1,61 @@
+Here is the updated value without tags and with sample values and appropriate replacements as per the given standards:
+
+Booking Confirmation
+
+Booking Reference: XYZ789
+
+Passenger Details:
+Passenger 1: Michael Johnson
+Date of Birth: 03/12/1988
+Passenger 2: Emily Wilson
+Date of Birth: 09/22/1992
+
+Flight Itinerary:
+
+Departure:
+Flight Number: DL2345
+Departure Airport: LAX (Los Angeles, USA)
+Departure Date: July 15, 2023
+Departure Time: 8:00 AM
+Arrival Airport: LGW (London, UK)
+Arrival Date: July 15, 2023
+Arrival Time: 3:00 PM
+Aircraft: Airbus A350
+Seat Assignment: 25F, 25G
+
+Return:
+Flight Number: DL6789
+Departure Airport: LGW (London, UK)
+Departure Date: July 22, 2023
+Departure Time: 10:00 AM
+Arrival Airport: LAX (Los Angeles, USA)
+Arrival Date: July 22, 2023
+Arrival Time: 1:00 PM
+Aircraft: Boeing 787
+Seat Assignment: 18K, 18L
+
+Payment Information:
+Total Booking Cost: $1,800.00
+Payment Method: Credit or debit card ending in 5678
+Transaction ID: 123456789
+Booking Date: June 20, 2023
+
+Customer Support:
+Thank you for booking your flight with Skyline Airlines. We are committed to providing you with a seamless and enjoyable travel experience.
+
+If you have any questions or need assistance with your booking, please do not hesitate to contact our customer support team. Our representatives are available 24/7 to help you with any inquiries or concerns you may have.
+
+You can manage your booking online by accessing your account on our website. Here, you can view your itinerary, make changes to your booking, and check-in for your flights. To access your account, please visit our website and enter your booking reference number and last name.
+
+Your payment information is securely stored for future transactions. This allows you to easily make changes or additional bookings without the need to re-enter your payment details. We employ the latest encryption and security protocols to ensure the safety and confidentiality of your financial information.
+
+We understand that travel plans can sometimes change, and we strive to accommodate our customers' needs. If you need to make any changes to your booking, such as flight dates, seat assignments, or passenger information, please contact our customer support team as soon as possible. Depending on the nature of the change and the airline's policies, fees may apply.
+
+In the event of any flight delays, cancellations, or other disruptions, our team will work diligently to assist you and provide you with the necessary information and support. We recommend that you download our mobile app, which will allow you to stay up-to-date on the status of your flight and receive important notifications.
+
+We look forward to welcoming you on board and providing you with a comfortable and enjoyable travel experience. If you have any additional questions or concerns, please do not hesitate to reach out to our customer support team.
+
+Thank you for choosing Skyline Airlines. We appreciate your business and look forward to serving you.
+
+Sincerely,
+Skyline Airlines

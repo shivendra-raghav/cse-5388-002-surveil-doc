@@ -1,0 +1,218 @@
+# Product Service Documentation
+
+## Introduction
+The Product Service is a GraphQL API that enables CRUD (Create, Read, Update, Delete) operations for products. This service is designed to provide a flexible and efficient way for developers to interact with product data, allowing them to create, update, list, and delete products as needed. Whether you're building an e-commerce platform, a product management system, or any other application that requires product data, the Product Service is here to make your development process smoother and more streamlined.
+
+## Latest Update By
+The latest update to the Product Service was made by the Maintenance Team on March 15, 2023. The update included bug fixes, performance improvements, and the addition of new features.
+
+## Maintenance Team Details
+The Maintenance Team responsible for the Product Service consists of the following members:
+
+- John Doe, Lead Developer
+- Jane Smith, Backend Engineer
+- Michael Johnson, Frontend Engineer
+- Emily Davis, Quality Assurance Analyst
+
+The team is dedicated to ensuring the reliability, scalability, and continuous improvement of the Product Service. They work closely with the product owners and stakeholders to understand the evolving needs of the users and to implement changes and enhancements accordingly.
+
+## GraphQL Services
+
+### Create a Product
+**Mutation: `createProduct`**
+
+**Description:**
+This mutation allows you to create a new product in the system. You can provide the necessary details, such as the product name, description, price, and stock quantity.
+
+**Input Arguments:**
+- `name`: The name of the product (required, string)
+- `description`: A description of the product (required, string)
+- `price`: The price of the product (required, float)
+- `stockQuantity`: The current stock quantity of the product (required, integer)
+
+**Example Query:**
+```graphql
+mutation {
+  createProduct(
+    name: "Wireless Headphones"
+    description: "High-quality wireless headphones with noise-cancelling technology"
+    price: 99.99
+    stockQuantity: 50
+  ) {
+    id
+    name
+    description
+    price
+    stockQuantity
+  }
+}
+```
+
+**Responses:**
+- `200 OK`: The product was successfully created.
+- `400 Bad Request`: One or more of the required input arguments are missing or invalid.
+- `500 Internal Server Error`: An unexpected error occurred while processing the request.
+
+### Update a Product
+**Mutation: `updateProduct`**
+
+**Description:**
+This mutation allows you to update the details of an existing product in the system.
+
+**Input Arguments:**
+- `id`: The ID of the product to be updated (required, ID)
+- `name`: The new name of the product (optional, string)
+- `description`: The new description of the product (optional, string)
+- `price`: The new price of the product (optional, float)
+- `stockQuantity`: The new stock quantity of the product (optional, integer)
+
+**Example Query:**
+```graphql
+mutation {
+  updateProduct(
+    id: "123456789"
+    name: "Wireless Headphones Pro"
+    price: 129.99
+    stockQuantity: 30
+  ) {
+    id
+    name
+    description
+    price
+    stockQuantity
+  }
+}
+```
+
+**Responses:**
+- `200 OK`: The product was successfully updated.
+- `400 Bad Request`: One or more of the input arguments are invalid.
+- `404 Not Found`: The product with the specified ID was not found.
+- `500 Internal Server Error`: An unexpected error occurred while processing the request.
+
+### List a Product
+**Query: `product`**
+
+**Description:**
+This query allows you to retrieve the details of a specific product by its ID.
+
+**Input Arguments:**
+- `id`: The ID of the product to be retrieved (required, ID)
+
+**Example Query:**
+```graphql
+query {
+  product(id: "123456789") {
+    id
+    name
+    description
+    price
+    stockQuantity
+  }
+}
+```
+
+**Responses:**
+- `200 OK`: The product details were successfully retrieved.
+- `404 Not Found`: The product with the specified ID was not found.
+- `500 Internal Server Error`: An unexpected error occurred while processing the request.
+
+### List All Products
+**Query: `products`**
+
+**Description:**
+This query allows you to retrieve a list of all products in the system.
+
+**Input Arguments:**
+- `page`: The page number to retrieve (optional, integer, default: 1)
+- `limit`: The number of products to retrieve per page (optional, integer, default: 20)
+
+**Example Query:**
+```graphql
+query {
+  products(page: 2, limit: 10) {
+    id
+    name
+    description
+    price
+    stockQuantity
+  }
+}
+```
+
+**Responses:**
+- `200 OK`: The list of products was successfully retrieved.
+- `500 Internal Server Error`: An unexpected error occurred while processing the request.
+
+### Delete a Product
+**Mutation: `deleteProduct`**
+
+**Description:**
+This mutation allows you to delete an existing product from the system.
+
+**Input Arguments:**
+- `id`: The ID of the product to be deleted (required, ID)
+
+**Example Query:**
+```graphql
+mutation {
+  deleteProduct(id: "123456789") {
+    id
+    name
+  }
+}
+```
+
+**Responses:**
+- `200 OK`: The product was successfully deleted.
+- `404 Not Found`: The product with the specified ID was not found.
+- `500 Internal Server Error`: An unexpected error occurred while processing the request.
+
+## Rate Limit
+The Product Service has a rate limit in place to prevent abuse and ensure the stability of the system. The current rate limit is set to 100 requests per minute per IP address. If you exceed the rate limit, you will receive a `429 Too Many Requests` response.
+
+## Error Handling
+The Product Service follows the GraphQL specification for error handling. If an error occurs during the execution of a query or mutation, the response will include an `errors` field with a list of error objects. Each error object will have the following properties:
+
+- `message`: A human-readable description of the error.
+- `locations`: An array of objects containing the line and column numbers where the error occurred in the request.
+- `path`: An array of strings representing the path to the field where the error occurred.
+
+Here's an example of an error response:
+
+```json
+{
+  "errors": [
+    {
+      "message": "Argument 'id' of required type 'ID!' was not provided.",
+      "locations": [
+        {
+          "line": 2,
+          "column": 3
+        }
+      ],
+      "path": [
+        "deleteProduct"
+      ]
+    }
+  ],
+  "data": null
+}
+```
+
+In addition to the standard GraphQL error handling, the Product Service also provides the following HTTP status codes for specific error scenarios:
+
+- `400 Bad Request`: The request was malformed or contained invalid arguments.
+- `401 Unauthorized`: The request did not include valid authentication credentials.
+- `403 Forbidden`: The authenticated user is not authorized to perform the requested action.
+- `404 Not Found`: The requested resource (e.g., a product) was not found.
+- `500 Internal Server Error`: An unexpected error occurred on the server.
+- `501 Not Implemented`: The requested feature or functionality is not yet implemented.
+- `502 Bad Gateway`: The service encountered an issue while trying to fulfill the request.
+- `503 Service Unavailable`: The service is temporarily unavailable, possibly due to maintenance or high traffic.
+- `504 Gateway Timeout`: The service took too long to respond, and the request timed out.
+
+## Summary
+The Product Service is a powerful GraphQL API that enables you to efficiently manage product data. With its CRUD operations, you can create, update, list, and delete products as needed. The service is designed to be scalable, reliable, and easy to use, with a comprehensive error handling system and rate limiting in place to ensure the stability of the system.
+
+Whether you're building an e-commerce platform, a product management system, or any other application that requires product data, the Product Service is an essential tool in your development arsenal. With its flexible and efficient API, you can focus on building the features and functionalities that matter most to your users, without having to worry about the underlying complexities of product management.

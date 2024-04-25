@@ -1,0 +1,119 @@
+Here is the updated value without tags and using the provided standards:
+
+Here is the generated documentation for the provided cloud-native architecture services:
+
+Cloud-Native Architecture Documentation
+
+Introduction
+This documentation provides a comprehensive overview of the cloud-native architecture implemented for ABC Corp's account. The architecture follows the principles of cloud-native computing, which emphasize the use of scalable and resilient microservices, containerization, and automation to deliver software applications efficiently and reliably.
+
+The core services covered in this documentation are Kubernetes, Prometheus, and Grafana, which are essential components of a cloud-native stack. Kubernetes is the leading container orchestration platform, responsible for managing the deployment, scaling, and maintenance of containerized applications. Prometheus is a powerful open-source monitoring system that collects and stores time-series data, allowing for the monitoring and alerting of the infrastructure and applications. Grafana is a data visualization and dashboard platform that integrates seamlessly with Prometheus, enabling users to create customized dashboards and visualizations for monitoring and troubleshooting.
+
+Latest Update By
+This documentation was last updated by John Doe, the cloud architecture engineer, on June 1, 2023.
+
+Service Details
+
+Kubernetes
+Kubernetes is the backbone of the cloud-native architecture, providing a robust and scalable container orchestration platform. It is responsible for the deployment, scaling, and management of the containerized applications that make up the overall system.
+
+Viewing Kubernetes Resources
+To view the current Kubernetes resources, you can use the `kubectl` command-line tool. Here are some common commands to get started:
+
+```
+# List all the running pods
+kubectl get pods
+
+# List all the deployed services
+kubectl get services
+
+# List all the deployed deployments
+kubectl get deployments
+
+# Get detailed information about a specific resource
+kubectl describe pod <pod_name>
+```
+
+Updating Kubernetes Resources
+Updating Kubernetes resources, such as deployments or services, can be done using the `kubectl apply` command. This command allows you to update the configuration of a resource by applying a new YAML file or by directly modifying the resource in-place.
+
+For example, to update a deployment, you would create a new YAML file with the desired changes and apply it using the following command:
+
+```
+kubectl apply -f deployment-update.yaml
+```
+
+Alternatively, you can use the `kubectl edit` command to directly modify the resource in-place:
+
+```
+kubectl edit deployment <deployment_name>
+```
+
+Prometheus
+Prometheus is the primary monitoring and alerting solution in the cloud-native architecture. It is responsible for collecting, storing, and analyzing time-series data from various sources, including the Kubernetes cluster and the applications running within it.
+
+Viewing Prometheus Metrics
+To view the Prometheus metrics, you can access the Prometheus web UI. The URL for the Prometheus web UI is typically `http://<prometheus_service_address>`. Once you've accessed the web UI, you can use the built-in query editor to explore and visualize the available metrics.
+
+Here are some common Prometheus queries to get you started:
+
+```
+# View the total number of running pods
+sum(kube_pod_info)
+
+# View the CPU utilization of a specific pod
+pod_name:container_cpu_usage_seconds_total:sum_rate{pod_name="my-app-pod"}
+
+# View the memory usage of a specific pod
+pod_name:container_memory_usage_bytes:sum{pod_name="my-app-pod"}
+```
+
+Configuring Prometheus Alerts
+Prometheus allows you to define alerting rules to notify you about specific conditions or events in your infrastructure. To configure new alerts, you can edit the Prometheus alert configuration file and apply the changes using the `kubectl` command.
+
+Here's an example of an alert rule that triggers when the CPU utilization of a pod exceeds 80%:
+
+```
+groups:
+- name: high-pod-cpu-utilization
+  rules:
+  - alert: HighPodCPUUtilization
+    expr: pod_name:container_cpu_usage_seconds_total:sum_rate{pod_name=~".*"} / on(pod_name) group_left(namespace, pod) kube_pod_container_resource_limits_cpu_cores{pod_name=~".*"} > 0.8
+    for: 5m
+    labels:
+      severity: warning
+    annotations:
+      summary: High CPU utilization for pod {{ $labels.pod_name }}
+      description: Pod {{ $labels.pod_name }} in namespace {{ $labels.namespace }} is using more than 80% of its CPU limits.
+```
+
+Grafana
+Grafana is the data visualization and dashboard platform used in the cloud-native architecture. It integrates seamlessly with Prometheus, allowing you to create custom dashboards and visualizations for monitoring and troubleshooting.
+
+Viewing Grafana Dashboards
+To access the Grafana dashboards, you can navigate to the Grafana web UI, typically available at `http://<grafana_service_address>`. The Grafana web UI provides a user-friendly interface for creating, editing, and viewing dashboards.
+
+Grafana comes with a set of pre-built dashboards that you can use as a starting point. You can also create your own custom dashboards by adding various panels and visualizations. Here's an example of a Grafana dashboard that displays the CPU and memory utilization of a specific pod:
+
+![Grafana Dashboard Example](grafana-dashboard-example.png)
+
+Configuring Grafana Alerts
+Grafana also supports the creation of alerts, which can be triggered based on specific metric thresholds or conditions. To configure a new alert in Grafana, you can navigate to the "Alerting" section of the web UI and create a new alert rule.
+
+Here's an example of a Grafana alert rule that triggers when the memory usage of a pod exceeds 80% of its limit:
+
+```
+alert: High Pod Memory Usage
+expr: pod_name:container_memory_usage_bytes:sum{pod_name=~".*"} / on(pod_name) group_left(namespace, pod) kube_pod_container_resource_limits_memory_bytes{pod_name=~".*"} > 0.8
+for: 5m
+labels:
+  severity: warning
+annotations:
+  summary: High memory usage for pod {{ $labels.pod_name }}
+  description: Pod {{ $labels.pod_name }} in namespace {{ $labels.namespace }} is using more than 80% of its memory limits.
+```
+
+Summary
+This documentation provides a comprehensive overview of the cloud-native architecture implemented for ABC Corp's account, focusing on the key services of Kubernetes, Prometheus, and Grafana. It covers the procedures for viewing and updating these services, as well as the configuration of alerts and dashboards to effectively monitor and manage the infrastructure.
+
+By following the principles of cloud-native computing, this architecture ensures that the applications and services are scalable, resilient, and easily manageable, enabling the efficient delivery of software solutions. The documentation serves as a reference guide for the admin to understand and maintain the cloud-native ecosystem, ensuring the continued reliability and performance of the deployed applications.

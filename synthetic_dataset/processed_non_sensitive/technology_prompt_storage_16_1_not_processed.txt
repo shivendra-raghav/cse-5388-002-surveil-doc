@@ -1,0 +1,73 @@
+Scaleway Object Storage Documentation
+
+Introduction
+
+Scaleway Object Storage is a highly scalable, durable, and secure cloud storage service offered by Scaleway, a leading cloud computing provider. This service allows users to store and retrieve large amounts of unstructured data, such as images, videos, documents, and backups, in a cost-effective and reliable manner. With Scaleway Object Storage, users can easily scale their storage needs as their data grows, without the need for complex infrastructure management.
+
+Scaleway Object Storage Access Details
+
+To access Scaleway Object Storage, users must have a Scaleway account and the necessary permissions. The service can be accessed through the Scaleway Console, the Scaleway API, or using various client libraries and tools.
+
+Console Access:
+1. Log in to the Scaleway Console (https://console.scaleway.com/) using your Scaleway credentials.
+2. Navigate to the "Object Storage" section, where you can view your existing storage buckets, create new ones, and manage your data.
+3. From the console, you can upload, download, and delete files, as well as configure bucket settings such as access control and versioning.
+
+API Access:
+1. Obtain your Scaleway API credentials, including your access key and secret key, from the Scaleway Console.
+2. Use the Scaleway API to programmatically interact with your Object Storage resources. The API supports various operations, such as creating and deleting buckets, uploading and downloading files, and managing object metadata.
+3. You can use the Scaleway API directly or leverage client libraries in your preferred programming language, such as the official Scaleway SDKs for Python, Go, and other popular languages.
+
+Client Library Access:
+1. Choose a client library that supports Scaleway Object Storage, such as the official Scaleway SDKs or third-party libraries like AWS S3 compatible libraries.
+2. Install the client library in your development environment and configure it with your Scaleway API credentials.
+3. Utilize the client library's functions and methods to interact with your Scaleway Object Storage resources, such as creating buckets, uploading and downloading files, and managing object metadata.
+
+Geo-replication
+
+Scaleway Object Storage offers geo-replication, which allows you to replicate your data across multiple geographic regions for increased durability and availability. This feature ensures that your data is protected against regional outages or natural disasters, and it provides faster access to your data from various locations.
+
+To enable geo-replication for your Scaleway Object Storage buckets:
+1. Log in to the Scaleway Console and navigate to the "Object Storage" section.
+2. Select the bucket you want to enable geo-replication for and click on the "Geo-replication" tab.
+3. Choose the regions where you want to replicate your data. Scaleway offers multiple regions worldwide, and you can select the ones that best fit your needs.
+4. Configure the replication settings, such as the frequency of synchronization and the handling of object deletions.
+5. Save the changes, and Scaleway will begin replicating your data to the selected regions.
+
+Once geo-replication is enabled, your data will be automatically replicated to the chosen regions, ensuring that it is highly available and durable. In the event of a regional outage or disaster, you can access your data from the other replicated regions, minimizing the impact on your applications and services.
+
+It's important to note that enabling geo-replication may incur additional costs, depending on the amount of data being replicated and the number of regions involved. Carefully review the Scaleway pricing information to understand the costs associated with your specific use case.
+
+Data Transfer
+
+Scaleway Object Storage provides several options for transferring data to and from the service, ensuring that you can efficiently move large volumes of data without compromising performance or security.
+
+1. Console Upload/Download:
+   - The Scaleway Console offers a user-friendly interface for uploading and downloading files directly from your web browser.
+   - You can drag and drop files into the console, or use the upload and download buttons to manage your data.
+   - This method is suitable for small to medium-sized files and is ideal for quick, ad-hoc data transfers.
+
+2. API-based Data Transfer:
+   - You can use the Scaleway API to programmatically upload and download files to and from your Object Storage buckets.
+   - The API supports various operations, such as initiating multipart uploads for large files, listing objects in a bucket, and deleting files.
+   - By integrating the Scaleway API into your applications or scripts, you can automate data transfer workflows and handle large-scale data movement.
+
+3. Command-line Tools:
+   - Scaleway provides command-line tools, such as the Scaleway CLI, that allow you to interact with your Object Storage resources from the terminal.
+   - These tools can be used to upload, download, and manage files, as well as perform other Object Storage operations.
+   - The command-line tools are particularly useful for scripting and automating data transfer tasks.
+
+4. Third-party Tools and Libraries:
+   - In addition to the Scaleway-provided options, you can leverage various third-party tools and libraries that are compatible with Scaleway Object Storage.
+   - These include tools like AWS CLI, rclone, and MinIO client, which can be used to transfer data to and from Scaleway Object Storage.
+   - By using compatible third-party tools, you can leverage existing workflows and integrate Scaleway Object Storage into your existing infrastructure.
+
+When transferring data to and from Scaleway Object Storage, it's important to consider the size of your files, the frequency of data transfers, and the geographic locations involved. Scaleway offers various transfer options to optimize performance, cost, and security based on your specific requirements.
+
+For large data transfers or frequent batch operations, you may want to explore options like multipart uploads or leveraging Scaleway's high-speed network infrastructure. Additionally, you can configure data transfer settings, such as bandwidth throttling and checksumming, to ensure the integrity and reliability of your data transfers.
+
+Conclusion
+
+Scaleway Object Storage is a powerful and reliable cloud storage service that offers a comprehensive set of features to meet the data storage and management needs of individuals and organizations. Whether you need to store and retrieve large amounts of unstructured data, enable geo-replication for increased durability, or efficiently transfer data to and from the service, Scaleway Object Storage provides the tools and capabilities to support your use cases.
+
+By leveraging the Scaleway Console, API, and client libraries, you can easily integrate Scaleway Object Storage into your applications and workflows, ensuring that your data is stored securely, accessed efficiently, and protected against regional outages or disasters. With its scalability, cost-effectiveness, and robust feature set, Scaleway Object Storage is an excellent choice for businesses and individuals looking to harness the power of cloud storage.

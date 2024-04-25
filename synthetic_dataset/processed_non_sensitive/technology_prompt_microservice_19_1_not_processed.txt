@@ -1,0 +1,197 @@
+# Catalog Service API Documentation
+
+## Introduction
+The Catalog Service is a powerful microservice that enables various operations related to the management of product catalogs. This service provides a robust set of REST APIs that allow you to create, update, and modify catalogs and their associated products. Whether you're building an e-commerce platform, a product management system, or any application that requires a flexible and scalable catalog management solution, the Catalog Service has got you covered.
+
+This comprehensive documentation will guide you through the available REST services, rate limit policies, error handling, and details about the support team. By following the guidelines outlined here, you will be able to seamlessly integrate the Catalog Service into your application and leverage its capabilities to deliver an exceptional user experience.
+
+## REST Services
+
+### Create a Root Catalog
+**Endpoint:** `POST /catalogs`
+**Description:** This endpoint allows you to create a new root-level catalog.
+
+**Request Body:**
+```json
+{
+  "name": "Electronics",
+  "description": "Catalog for all electronic products"
+}
+```
+
+**Successful Response (HTTP 200 OK):**
+```json
+{
+  "id": "a1b2c3d4",
+  "name": "Electronics",
+  "description": "Catalog for all electronic products",
+  "parentCatalogId": null,
+  "createdAt": "2023-05-01T12:00:00Z",
+  "updatedAt": "2023-05-01T12:00:00Z"
+}
+```
+
+**Error Responses:**
+- `HTTP 400 Bad Request`: If the request body is invalid or missing required fields.
+- `HTTP 500 Internal Server Error`: If there was an unexpected error while creating the catalog.
+
+### Create Sub Catalog with Parent Catalog ID
+**Endpoint:** `POST /catalogs`
+**Description:** This endpoint allows you to create a new sub-catalog under an existing parent catalog.
+
+**Request Body:**
+```json
+{
+  "name": "Smartphones",
+  "description": "Catalog for all smartphone products",
+  "parentCatalogId": "a1b2c3d4"
+}
+```
+
+**Successful Response (HTTP 200 OK):**
+```json
+{
+  "id": "e5f6g7h8",
+  "name": "Smartphones",
+  "description": "Catalog for all smartphone products",
+  "parentCatalogId": "a1b2c3d4",
+  "createdAt": "2023-05-01T12:30:00Z",
+  "updatedAt": "2023-05-01T12:30:00Z"
+}
+```
+
+**Error Responses:**
+- `HTTP 400 Bad Request`: If the request body is invalid or missing required fields.
+- `HTTP 404 Not Found`: If the specified parent catalog does not exist.
+- `HTTP 500 Internal Server Error`: If there was an unexpected error while creating the sub-catalog.
+
+### Update Catalog by ID
+**Endpoint:** `PUT /catalogs/{catalogId}`
+**Description:** This endpoint allows you to update an existing catalog.
+
+**Request Body:**
+```json
+{
+  "name": "Electronics and Gadgets",
+  "description": "Catalog for all electronic products and gadgets"
+}
+```
+
+**Successful Response (HTTP 200 OK):**
+```json
+{
+  "id": "a1b2c3d4",
+  "name": "Electronics and Gadgets",
+  "description": "Catalog for all electronic products and gadgets",
+  "parentCatalogId": null,
+  "createdAt": "2023-05-01T12:00:00Z",
+  "updatedAt": "2023-05-02T09:15:00Z"
+}
+```
+
+**Error Responses:**
+- `HTTP 400 Bad Request`: If the request body is invalid or missing required fields.
+- `HTTP 404 Not Found`: If the specified catalog does not exist.
+- `HTTP 500 Internal Server Error`: If there was an unexpected error while updating the catalog.
+
+### Modify Product List inside a Catalog
+**Endpoint:** `POST /catalogs/{catalogId}/products`
+**Description:** This endpoint allows you to add, update, or remove products within a specific catalog.
+
+**Request Body:**
+```json
+{
+  "operations": [
+    {
+      "action": "add",
+      "productId": "p1"
+    },
+    {
+      "action": "update",
+      "productId": "p2",
+      "name": "Updated Product Name",
+      "description": "Updated product description"
+    },
+    {
+      "action": "remove",
+      "productId": "p3"
+    }
+  ]
+}
+```
+
+**Successful Response (HTTP 200 OK):**
+```json
+{
+  "updatedProducts": [
+    {
+      "id": "p1",
+      "name": "Product 1",
+      "description": "Description for Product 1"
+    },
+    {
+      "id": "p2",
+      "name": "Updated Product Name",
+      "description": "Updated product description"
+    }
+  ],
+  "removedProducts": [
+    {
+      "id": "p3",
+      "name": "Product 3",
+      "description": "Description for Product 3"
+    }
+  ]
+}
+```
+
+**Error Responses:**
+- `HTTP 400 Bad Request`: If the request body is invalid or missing required fields.
+- `HTTP 404 Not Found`: If the specified catalog does not exist.
+- `HTTP 500 Internal Server Error`: If there was an unexpected error while modifying the product list.
+
+## Rate Limit
+The Catalog Service enforces a rate limit policy to ensure the stability and availability of the service. The current rate limit is set to 100 requests per minute per API key.
+
+If you exceed the rate limit, you will receive a `HTTP 429 Too Many Requests` response with the following payload:
+
+```json
+{
+  "error": "Rate limit exceeded",
+  "message": "You have exceeded the rate limit of 100 requests per minute. Please try again later."
+}
+```
+
+To increase the rate limit or discuss any concerns, please contact the support team.
+
+## Error Handling
+The Catalog Service provides a consistent error handling mechanism to help you understand and address any issues that may arise during API interactions.
+
+In addition to the specific error responses mentioned for each endpoint, the service may also return the following general error responses:
+
+- `HTTP 401 Unauthorized`: If the request does not include valid authentication credentials.
+- `HTTP 403 Forbidden`: If the authenticated user does not have the necessary permissions to perform the requested action.
+- `HTTP 501 Not Implemented`: If the requested operation is not yet implemented by the service.
+- `HTTP 502 Bad Gateway`: If the service encounters an issue while communicating with an upstream dependency.
+- `HTTP 503 Service Unavailable`: If the service is temporarily unavailable due to maintenance or other issues.
+- `HTTP 504 Gateway Timeout`: If the service takes too long to respond to a request, causing a timeout.
+
+All error responses will include a JSON payload with the following structure:
+
+```json
+{
+  "error": "Error name",
+  "message": "Detailed error description"
+}
+```
+
+Please use the information provided in the error responses to debug and resolve any issues you may encounter while using the Catalog Service.
+
+## Support Team Details
+For any questions, issues, or feature requests related to the Catalog Service, please reach out to our dedicated support team:
+
+- Email: support@catalogservice.com
+- Phone: +1 (555) 123-4567
+- Office Hours: Monday to Friday, 9 AM to 5 PM (UTC-5)
+
+Our support team is committed to providing prompt and effective assistance to ensure your successful integration and use of the Catalog Service.

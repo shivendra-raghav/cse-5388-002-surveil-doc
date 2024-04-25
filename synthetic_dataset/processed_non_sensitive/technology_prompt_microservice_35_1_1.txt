@@ -1,0 +1,180 @@
+# Review Service Documentation
+
+## Introduction
+
+The Review Service is a GraphQL microservice that handles product reviews and ratings in an e-commerce system. It allows users to create, update, and delete reviews, as well as retrieve reviews for a specific product. This documentation provides a comprehensive overview of the service's GraphQL API, including the available query types, mutation types, and error handling mechanisms.
+
+## Authentication
+
+The Review Service requires authentication for all operations. Clients must include a valid access token in the `Authorization` header of each request. The token can be obtained by authenticating with the Identity Service, which is responsible for user management and authorization.
+
+Example header:
+```
+Authorization: Bearer your_access_token_should_be_provided_here
+```
+
+## Query Types
+
+### `review(id: ID!): Review`
+
+Retrieves a single review by its unique identifier.
+
+**Arguments:**
+- `id` (required): The ID of the review to retrieve.
+
+**Return Type:**
+- `Review`: The review object.
+
+**Example Query:**
+```graphql
+query {
+  review(id: "r3v13w001") {
+    id
+    productId
+    userId
+    rating
+    comment
+    createdAt
+  }
+}
+```
+
+### `reviews(productId: ID!): [Review!]!`
+
+Retrieves a list of reviews for a specific product.
+
+**Arguments:**
+- `productId` (required): The ID of the product to retrieve reviews for.
+
+**Return Type:**
+- `[Review!]!`: An array of review objects.
+
+**Example Query:**
+```graphql
+query {
+  reviews(productId: "pr0d7ct002") {
+    id
+    productId
+    userId
+    rating
+    comment
+    createdAt
+  }
+}
+```
+
+## Mutation Types
+
+### `createReview(input: CreateReviewInput!): Review!`
+
+Creates a new review.
+
+**Arguments:**
+- `input` (required): The input object for creating a new review.
+
+**Return Type:**
+- `Review`: The newly created review object.
+
+**Example Mutation:**
+```graphql
+mutation {
+  createReview(input: {
+    productId: "pr0d7ct002"
+    userId: "u53r9078"
+    rating: 4
+    comment: "Great product for its price!"
+  }) {
+    id
+    productId
+    userId
+    rating
+    comment
+    createdAt
+  }
+}
+```
+
+### `updateReview(id: ID!, input: UpdateReviewInput!): Review!`
+
+Updates an existing review.
+
+**Arguments:**
+- `id` (required): The ID of the review to update.
+- `input` (required): The input object for updating the review.
+
+**Return Type:**
+- `Review`: The updated review object.
+
+**Example Mutation:**
+```graphql
+mutation {
+  updateReview(id: "r3v13w001", input: {
+    rating: 5
+    comment: "Excellent product, highly recommended!"
+  }) {
+    id
+    productId
+    userId
+    rating
+    comment
+    createdAt
+  }
+}
+```
+
+### `deleteReview(id: ID!): Boolean!`
+
+Deletes a review.
+
+**Arguments:**
+- `id` (required): The ID of the review to delete.
+
+**Return Type:**
+- `Boolean`: `true` if the review was successfully deleted, `false` otherwise.
+
+**Example Mutation:**
+```graphql
+mutation {
+  deleteReview(id: "r3v13w001")
+}
+```
+
+## Error Handling
+
+The Review Service follows the standard GraphQL error handling mechanism. If an error occurs during a request, the service will return an error object with the following structure:
+
+```json
+{
+  "errors": [
+    {
+      "message": "Error message",
+      "locations": [
+        {
+          "line": 1,
+          "column": 2
+        }
+      ],
+      "path": ["query", "review"],
+      "extensions": {
+        "code": "INTERNAL_SERVER_ERROR"
+      }
+    }
+  ],
+  "data": null
+}
+```
+
+The `errors` array contains one or more error objects, each with the following properties:
+
+- `message`: A human-readable error message.
+- `locations`: The location of the error in the GraphQL query.
+- `path`: The path in the response object where the error occurred.
+- `extensions`: Additional error information, such as the error code.
+
+Clients should handle these errors and provide appropriate feedback to the user.
+
+## Summary
+
+The Review Service is a powerful GraphQL microservice that enables e-commerce applications to manage product reviews and ratings. It provides a simple and intuitive API for creating, updating, and deleting reviews, as well as retrieving reviews for specific products. The service follows best practices for authentication, error handling, and data modeling, ensuring a reliable and secure integration with your e-commerce system.
+
+If you have any further questions or need assistance, please don't hesitate to contact our support team at support@abccorp.com.

@@ -1,0 +1,92 @@
+Backblaze B2 Cloud Storage Documentation
+
+Introduction
+Backblaze B2 Cloud Storage is a highly scalable and affordable cloud storage service offered by Backblaze, a leading provider of cloud storage and data backup solutions. This documentation will guide you through the essential aspects of using Backblaze B2 Cloud Storage, including accessing your account, managing lifecycle rules, and configuring server-side encryption.
+
+Backblaze B2 Cloud Storage Access Details
+To access your Backblaze B2 Cloud Storage account, you will need to obtain your account ID and application key. These credentials are used to authenticate your requests and grant you access to your data stored in the Backblaze B2 Cloud.
+
+Viewing Account ID and Application Key
+1. Log in to your Backblaze account at https://www.backblaze.com/b2/login.html.
+2. Navigate to the "Buckets" section of the Backblaze B2 Cloud Storage dashboard.
+3. Click on the "Account" tab, where you will find your Account ID and Application Key.
+
+Updating Account ID and Application Key
+If you need to update your Account ID or Application Key, follow these steps:
+1. Log in to your Backblaze account at https://www.backblaze.com/b2/login.html.
+2. Navigate to the "Buckets" section of the Backblaze B2 Cloud Storage dashboard.
+3. Click on the "Account" tab.
+4. To update your Account ID, click the "Edit" button next to the Account ID field and enter your new Account ID.
+5. To update your Application Key, click the "Edit" button next to the Application Key field and enter your new Application Key.
+6. Click the "Save Changes" button to apply the updates.
+
+Handling API Access
+The Backblaze B2 Cloud Storage service provides a comprehensive API that allows you to programmatically interact with your data. To use the API, you will need to authenticate your requests using your Account ID and Application Key.
+
+Authenticating API Requests
+1. Obtain your Account ID and Application Key from the Backblaze B2 Cloud Storage dashboard.
+2. Include your Account ID and Application Key in the headers of your API requests. The required headers are:
+   - "Authorization: Basic <base64-encoded your unique credentials>"
+   - "Content-Type: application/json"
+3. You can use various programming languages and libraries to make API calls, such as cURL, Python, or the Backblaze B2 SDK for your preferred language.
+
+Lifecycle Rules
+Lifecycle rules in Backblaze B2 Cloud Storage allow you to automate the management of your data by defining actions to be taken on objects based on their age or other criteria. You can configure lifecycle rules to delete, archive, or transition objects to a different storage class.
+
+Viewing Lifecycle Rules
+1. Log in to your Backblaze account at https://www.backblaze.com/b2/login.html.
+2. Navigate to the "Buckets" section of the Backblaze B2 Cloud Storage dashboard.
+3. Click on the bucket for which you want to view the lifecycle rules.
+4. In the "Lifecycle Rules" tab, you will see a list of all the lifecycle rules configured for that bucket.
+
+Creating Lifecycle Rules
+To create a new lifecycle rule for a bucket, follow these steps:
+1. Log in to your Backblaze account at https://www.backblaze.com/b2/login.html.
+2. Navigate to the "Buckets" section of the Backblaze B2 Cloud Storage dashboard.
+3. Click on the bucket for which you want to create a new lifecycle rule.
+4. In the "Lifecycle Rules" tab, click the "Add Rule" button.
+5. Define the conditions for the lifecycle rule, such as object age, prefix, or storage class.
+6. Select the action you want to perform on the objects that match the rule, such as delete, archive, or transition to a different storage class.
+7. Set the desired parameters for the selected action.
+8. Click the "Create Rule" button to save the new lifecycle rule.
+
+Updating Lifecycle Rules
+To update an existing lifecycle rule, follow these steps:
+1. Log in to your Backblaze account at https://www.backblaze.com/b2/login.html.
+2. Navigate to the "Buckets" section of the Backblaze B2 Cloud Storage dashboard.
+3. Click on the bucket containing the lifecycle rule you want to update.
+4. In the "Lifecycle Rules" tab, locate the rule you want to update and click the "Edit" button.
+5. Modify the rule's conditions, action, or parameters as needed.
+6. Click the "Update Rule" button to save the changes.
+
+Server-Side Encryption
+Backblaze B2 Cloud Storage offers server-side encryption to protect your data at rest. You can choose to use Backblaze-managed encryption keys or bring your own encryption keys (BYOK) for added security.
+
+Viewing Server-Side Encryption Settings
+1. Log in to your Backblaze account at https://www.backblaze.com/b2/login.html.
+2. Navigate to the "Buckets" section of the Backblaze B2 Cloud Storage dashboard.
+3. Click on the bucket for which you want to view the server-side encryption settings.
+4. In the "Encryption" tab, you will see the current encryption settings for the bucket, including the type of encryption (Backblaze-managed or BYOK) and the associated encryption key.
+
+Configuring Backblaze-Managed Encryption
+To enable Backblaze-managed encryption for a bucket, follow these steps:
+1. Log in to your Backblaze account at https://www.backblaze.com/b2/login.html.
+2. Navigate to the "Buckets" section of the Backblaze B2 Cloud Storage dashboard.
+3. Click on the bucket for which you want to enable Backblaze-managed encryption.
+4. In the "Encryption" tab, select "Backblaze-managed encryption" as the encryption type.
+5. Click the "Update Encryption" button to save the changes.
+
+Configuring BYOK Encryption
+To enable BYOK encryption for a bucket, follow these steps:
+1. Log in to your Backblaze account at https://www.backblaze.com/b2/login.html.
+2. Navigate to the "Buckets" section of the Backblaze B2 Cloud Storage dashboard.
+3. Click on the bucket for which you want to enable BYOK encryption.
+4. In the "Encryption" tab, select "BYOK (Bring Your Own Key)" as the encryption type.
+5. Provide the encryption key details, including the key ID and the encryption key itself.
+6. Click the "Update Encryption" button to save the changes.
+
+Updating Server-Side Encryption Settings
+To update the server-side encryption settings for a bucket, follow the steps for either Backblaze-managed encryption or BYOK encryption, depending on your desired configuration.
+
+Conclusion
+This documentation covers the essential aspects of using Backblaze B2 Cloud Storage, including accessing your account, managing lifecycle rules, and configuring server-side encryption. By following the provided instructions, you can effectively manage your data stored in the Backblaze B2 Cloud and ensure its security and availability.

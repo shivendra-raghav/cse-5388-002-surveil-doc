@@ -1,0 +1,68 @@
+Customer Service Microservice Documentation
+
+Introduction
+The Customer Service Microservice is a crucial component of the e-commerce system, responsible for managing all customer-related data and operations. This microservice follows the Event Sourcing pattern, which allows for a more robust and flexible approach to data management. By capturing and storing the history of all changes to the customer data, the system can provide a reliable and auditable record of customer interactions, enabling better decision-making and increased customer satisfaction.
+
+Authentication
+The Customer Service Microservice uses a secure authentication mechanism to ensure that only authorized users can access and modify customer data. The microservice supports two types of user roles: administrators and regular users.
+
+Administrators have the highest level of access, with the ability to perform all CRUD (Create, Read, Update, Delete) operations on customer data. They can register new customers, update customer addresses, change customer passwords, and even delete customer accounts.
+
+Regular users, on the other hand, have more limited access. They can only view and update their own customer information, such as their address and password. Regular users are not allowed to register new customers or delete existing ones.
+
+To authenticate, users must provide valid credentials, such as a username and password, or a valid authentication token. The microservice uses industry-standard security protocols, such as OAuth 2.0 or JSON Web Tokens (JWT), to ensure the confidentiality and integrity of the authentication process.
+
+Event Types
+The Customer Service Microservice captures and stores the history of all changes to customer data using the Event Sourcing pattern. The following event types are supported:
+
+1. CustomerRegistered: This event is triggered when a new customer is registered with the system. It captures the customer's basic information, such as their name, email address, and password.
+
+2. CustomerAddressUpdated: This event is triggered when a customer updates their address information, such as their street address, city, state, or zip code.
+
+3. CustomerPasswordChanged: This event is triggered when a customer changes their password.
+
+4. CustomerDeleted: This event is triggered when a customer's account is deleted from the system.
+
+These events are stored in an event store, which serves as the authoritative source of truth for the customer data. The microservice can then use these events to reconstruct the current state of the customer data, as well as to provide a historical record of all changes.
+
+Commands
+The Customer Service Microservice supports the following commands:
+
+1. RegisterCustomer: This command is used to register a new customer with the system. It takes in the customer's basic information, such as their name, email address, and password, and creates a new CustomerRegistered event to record the customer's registration.
+
+2. UpdateCustomerAddress: This command is used to update a customer's address information. It takes in the customer's new address details and creates a CustomerAddressUpdated event to record the change.
+
+3. ChangeCustomerPassword: This command is used to change a customer's password. It takes in the customer's new password and creates a CustomerPasswordChanged event to record the password change.
+
+4. DeleteCustomer: This command is used to delete a customer's account from the system. It creates a CustomerDeleted event to record the deletion and removes the customer from the system.
+
+These commands are the only way to modify the customer data, and they ensure that all changes are properly captured and stored in the event store.
+
+Queries
+The Customer Service Microservice supports the following queries:
+
+1. GetCustomerById: This query retrieves a customer's information based on their unique identifier (e.g., customer ID).
+
+2. GetCustomerByEmail: This query retrieves a customer's information based on their email address.
+
+3. ListCustomers: This query returns a list of all customers in the system, including their basic information such as name and email address.
+
+These queries allow users and other microservices to access customer data without directly modifying the underlying event store. The microservice uses the event store to reconstruct the current state of the customer data and provide the requested information.
+
+Projections
+To improve the performance and usability of the Customer Service Microservice, the system employs projections. Projections are derived data structures that are built and maintained based on the events stored in the event store.
+
+The Customer Service Microservice maintains the following projections:
+
+1. CustomerView: This projection stores the current state of each customer's information, including their name, email address, and address details. It is built and updated based on the CustomerRegistered, CustomerAddressUpdated, and CustomerDeleted events.
+
+2. CustomerPasswordView: This projection stores the current password for each customer. It is built and updated based on the CustomerRegistered and CustomerPasswordChanged events.
+
+These projections allow the microservice to quickly retrieve and display customer information without having to reconstruct the data from the event store each time. They also enable more efficient querying and filtering of customer data, as the projections are optimized for the specific data access patterns required by the system.
+
+Summary
+The Customer Service Microservice is a critical component of the e-commerce system, responsible for managing all customer-related data and operations. By following the Event Sourcing pattern, the microservice provides a reliable and auditable record of customer interactions, enabling better decision-making and increased customer satisfaction.
+
+The microservice supports secure authentication, with administrators having full CRUD access and regular users having limited access to their own customer information. The microservice captures and stores the history of all changes to customer data using various event types, and provides commands to modify the data and queries to retrieve it.
+
+To improve performance and usability, the microservice maintains projections that store the current state of customer information, allowing for efficient data access and querying. Overall, the Customer Service Microservice is a robust and flexible solution for managing customer-related data in the e-commerce system.

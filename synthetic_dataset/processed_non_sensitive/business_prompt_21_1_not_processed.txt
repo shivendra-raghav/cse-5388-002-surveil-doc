@@ -1,0 +1,44 @@
+Acme Corporation
+Acceptable Use Policy
+
+Introduction
+Acme Corporation is committed to providing a secure and productive work environment for its employees, clients, and stakeholders. This Acceptable Use Policy (AUP) outlines the guidelines and expectations for the appropriate use of Acme's information technology (IT) resources, including but not limited to, the corporate network, computer systems, software applications, and digital assets.
+
+The purpose of this policy is to ensure the confidentiality, integrity, and availability of Acme's IT resources, protect the company's intellectual property, and maintain compliance with applicable laws and regulations. All employees, contractors, and authorized users of Acme's IT resources are required to adhere to the guidelines set forth in this policy.
+
+Acceptable Use
+1. Business Purposes: Acme's IT resources are provided to employees solely for the purpose of conducting business-related activities. Employees are expected to use these resources responsibly and efficiently to perform their job duties.
+
+2. Access to the Corporate Network: Employees must use secure methods to access the corporate network, such as virtual private network (VPN) connections or other approved remote access solutions. Employees are required to use unique and complex login credentials, which must be kept confidential and not shared with any unauthorized individuals.
+
+3. Password Management: Employees are responsible for maintaining the security of their user accounts and login credentials. Passwords must be complex, changed regularly, and not shared with others. Employees should refrain from writing down or storing passwords in an unsecured manner.
+
+4. Acceptable Use of Email and Internet: Employees may use Acme's email and internet services for reasonable personal use, provided that such use does not interfere with their job responsibilities or the company's operations. Employees are expected to exercise discretion and professionalism when using these resources.
+
+5. Data Protection: Employees must handle all Acme data, including confidential or sensitive information, with care and in accordance with the company's data protection policies. This includes properly securing and encrypting data during storage and transmission, and ensuring that data is accessed and shared only with authorized individuals.
+
+6. Mobile Devices and Remote Work: Employees who use personal or company-provided mobile devices or work remotely are required to follow the same security practices and guidelines as those using on-site IT resources. Appropriate measures, such as the use of multi-factor authentication and device encryption, must be implemented to protect Acme's data and systems.
+
+Unacceptable Use
+1. Illegal or Unethical Activities: Employees are strictly prohibited from using Acme's IT resources for any illegal, unethical, or malicious purposes, including but not limited to, the distribution of malware, hacking, or the violation of intellectual property rights.
+
+2. Unauthorized Access: Employees are not permitted to attempt to access or use IT resources that they are not authorized to use. This includes accessing systems, data, or information that is not necessary for the performance of their job duties.
+
+3. Excessive Personal Use: While limited personal use of Acme's IT resources is permitted, employees must ensure that such use does not interfere with their work responsibilities or the company's operations. Excessive personal use, such as streaming media, online shopping, or engaging in lengthy personal communications, is prohibited.
+
+4. Inappropriate Content: The creation, transmission, or storage of any content that is offensive, discriminatory, sexually explicit, or otherwise inappropriate is strictly forbidden. This includes the use of Acme's IT resources to access or distribute such content.
+
+5. Unauthorized Software or Hardware: Employees are not allowed to install, modify, or remove any software or hardware on Acme's IT resources without prior approval from the IT department. This ensures the integrity and security of the company's systems and networks.
+
+6. Circumvention of Security Measures: Employees are prohibited from attempting to bypass or disable any security controls, such as firewalls, antivirus software, or content filters, that are in place to protect Acme's IT resources.
+
+Monitoring and Enforcement
+1. Monitoring and Auditing: Acme reserves the right to monitor and audit the use of its IT resources, including but not limited to, email, internet traffic, and file access, to ensure compliance with this policy and other applicable company policies. Employees should have no expectation of privacy when using Acme's IT resources.
+
+2. Enforcement: Violations of this Acceptable Use Policy may result in disciplinary action, up to and including termination of employment, in accordance with Acme's HR policies and procedures. In addition, Acme may report any illegal activities to the appropriate authorities and cooperate with any resulting investigations.
+
+Exceptions
+In certain circumstances, exceptions to this Acceptable Use Policy may be granted by the IT department or other authorized personnel. Requests for exceptions must be submitted in writing and approved prior to any deviation from the policy. Exceptions will be granted on a case-by-case basis and may be subject to additional security measures or restrictions.
+
+Conclusion
+Acme's Acceptable Use Policy is an essential component of the company's overall IT security and compliance framework. By adhering to the guidelines and expectations outlined in this policy, employees can help protect Acme's IT resources, safeguard sensitive information, and maintain the trust of our clients and stakeholders. Failure to comply with this policy may result in disciplinary action or other consequences. If you have any questions or concerns regarding this policy, please contact the IT department.

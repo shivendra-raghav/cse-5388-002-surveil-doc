@@ -1,0 +1,120 @@
+Here is the documentation for the User Service microservice:
+
+User Service Microservice Documentation
+
+Introduction
+The User Service is a microservice that allows administrators to perform CRUD (Create, Read, Update, Delete) operations on user accounts. This service is designed to be a central repository for managing user information and is intended to be used by other applications and services within the organization.
+
+Contributors
+- John Doe, Lead Developer, (123) 456-7890
+- Jane Smith, Product Manager, (987) 654-3210
+- Bob Johnson, Quality Assurance, (456) 789-0123
+
+API Endpoints
+
+1. Create a User
+   - Endpoint: `POST /v1/users`
+   - Description: This endpoint allows administrators to create a new user account.
+   - Request Body:
+     ```json
+     {
+       "name": "John Doe",
+       "email": "john.doe@example.com",
+       "password": "strongpassword123",
+       "role": "admin"
+     }
+     ```
+   - Responses:
+     - `200 OK`: The user was created successfully.
+     - `400 Bad Request`: The request body is missing required fields or contains invalid data.
+     - `401 Unauthorized`: The user making the request is not authorized to perform this action.
+     - `403 Forbidden`: The user making the request is not allowed to create new users.
+     - `500 Internal Server Error`: An unexpected error occurred while processing the request.
+
+2. Update a User (Deprecated)
+   - Endpoint: `POST /v1/users/:id`
+   - Description: This endpoint allows administrators to update an existing user account. **This endpoint is deprecated and will be removed in a future release. Please use the PUT /v1/users/:id endpoint instead.**
+   - Request Body:
+     ```json
+     {
+       "name": "John Doe",
+       "email": "john.doe@example.com",
+       "password": "newstrongpassword456",
+       "role": "admin"
+     }
+     ```
+   - Responses:
+     - `200 OK`: The user was updated successfully.
+     - `400 Bad Request`: The request body is missing required fields or contains invalid data.
+     - `401 Unauthorized`: The user making the request is not authorized to perform this action.
+     - `403 Forbidden`: The user making the request is not allowed to update users.
+     - `404 Not Found`: The specified user does not exist.
+     - `500 Internal Server Error`: An unexpected error occurred while processing the request.
+
+3. Update a User
+   - Endpoint: `PUT /v1/users/:id`
+   - Description: This endpoint allows administrators to update an existing user account.
+   - Request Body:
+     ```json
+     {
+       "name": "John Doe",
+       "email": "john.doe@example.com",
+       "password": "newstrongpassword456",
+       "role": "admin"
+     }
+     ```
+   - Responses:
+     - `200 OK`: The user was updated successfully.
+     - `400 Bad Request`: The request body is missing required fields or contains invalid data.
+     - `401 Unauthorized`: The user making the request is not authorized to perform this action.
+     - `403 Forbidden`: The user making the request is not allowed to update users.
+     - `404 Not Found`: The specified user does not exist.
+     - `500 Internal Server Error`: An unexpected error occurred while processing the request.
+
+4. Retrieve a User
+   - Endpoint: `GET /v1/users/:id`
+   - Description: This endpoint allows administrators to retrieve the details of a specific user account.
+   - Responses:
+     - `200 OK`: The user information was retrieved successfully.
+     - `401 Unauthorized`: The user making the request is not authorized to perform this action.
+     - `403 Forbidden`: The user making the request is not allowed to view user details.
+     - `404 Not Found`: The specified user does not exist.
+     - `500 Internal Server Error`: An unexpected error occurred while processing the request.
+
+5. List All Users
+   - Endpoint: `GET /v1/users`
+   - Description: This endpoint allows administrators to retrieve a list of all user accounts.
+   - Responses:
+     - `200 OK`: The list of users was retrieved successfully.
+     - `401 Unauthorized`: The user making the request is not authorized to perform this action.
+     - `403 Forbidden`: The user making the request is not allowed to view user lists.
+     - `500 Internal Server Error`: An unexpected error occurred while processing the request.
+
+6. Delete a User
+   - Endpoint: `DELETE /v1/users/:id`
+   - Description: This endpoint allows administrators to delete a specific user account.
+   - Responses:
+     - `200 OK`: The user was deleted successfully.
+     - `401 Unauthorized`: The user making the request is not authorized to perform this action.
+     - `403 Forbidden`: The user making the request is not allowed to delete users.
+     - `404 Not Found`: The specified user does not exist.
+     - `500 Internal Server Error`: An unexpected error occurred while processing the request.
+
+Deprecation Details
+The `POST /v1/users/:id` endpoint for updating a user is deprecated and will be removed in a future release. Administrators should use the `PUT /v1/users/:id` endpoint instead.
+
+Error Handling
+The User Service microservice adheres to the following error handling principles:
+
+1. **HTTP Status Codes**: The service uses appropriate HTTP status codes to indicate the success or failure of a request. Refer to the "Responses" section for each endpoint to see the possible status codes.
+2. **Error Messages**: When an error occurs, the service will return a JSON response with a clear and concise error message that explains the issue. For example:
+   ```json
+   {
+     "error": "Invalid email address",
+     "message": "The email address provided is not a valid email format."
+   }
+   ```
+3. **Logging**: The service logs all errors and unexpected exceptions to facilitate troubleshooting and debugging.
+
+Summary
+The User Service microservice provides a comprehensive set of API endpoints for managing user accounts within the organization. Administrators can use these endpoints to create, retrieve, update, and delete user information as needed. The service follows industry best practices for error handling and deprecation, ensuring a robust and reliable user management system.

@@ -1,0 +1,71 @@
+Intellectual Property Policy
+
+Introduction
+
+At Acme Technologies Corp., we recognize the importance of intellectual property (IP) as a valuable asset that is critical to our business success. This Intellectual Property Policy outlines the company's approach to the management, protection, and utilization of IP rights, including patents, trademarks, copyrights, trade secrets, and other forms of IP. The purpose of this policy is to ensure that all employees, contractors, and stakeholders understand their rights and responsibilities with respect to IP, and to provide a framework for the effective management of IP within the organization.
+
+Definitions
+
+1. Intellectual Property (IP): Refers to creations of the mind, such as inventions, literary and artistic works, designs, and symbols, names, and images used in commerce.
+
+2. Patents: A legal right granted to an inventor to exclude others from making, using, selling, or importing an invention for a limited period of time, typically 20 years from the filing date.
+
+3. Trademarks: A word, symbol, or combination of both that identifies and distinguishes the source of goods or services of one party from those of others.
+
+4. Copyrights: The exclusive legal right granted to an author, composer, playwright, publisher, or distributor to publish, produce, sell, or distribute a work of authorship.
+
+5. Trade Secrets: Information that derives economic value from not being generally known and is the subject of reasonable efforts to maintain its secrecy.
+
+6. Invention Disclosure: A formal written description of an invention, including its purpose, functionality, and potential commercial applications.
+
+7. Intellectual Property Committee (IPC): A cross-functional team responsible for the review, evaluation, and management of IP matters within the company.
+
+Ownership
+
+1. Employee-Created IP: Any IP created by an employee within the scope of their employment or using the company's resources, facilities, or confidential information belongs to the company, unless otherwise agreed upon in writing.
+
+2. Contractor-Created IP: IP created by independent contractors or consultants hired by the company is owned by the company, unless otherwise specified in the contract.
+
+3. Collaborative IP: IP developed jointly by the company and external parties, such as research partners or customers, will be owned in accordance with the terms of the relevant collaboration agreement.
+
+4. Moral Rights: The company respects the moral rights of authors and inventors, which include the right to be recognized as the creator of the work and the right to object to any distortion, mutilation, or other modification of the work.
+
+Confidentiality
+
+1. Confidential Information: All employees, contractors, and stakeholders are required to maintain the confidentiality of the company's trade secrets, proprietary information, and other confidential IP-related data.
+
+2. Obligation of Confidentiality: Employees and contractors must sign non-disclosure agreements (NDAs) and agree to the company's confidentiality policies. Violations of confidentiality may result in disciplinary action, including termination of employment or contractual relationships.
+
+3. Handling of Confidential Information: Confidential information should be stored securely, accessed only by authorized personnel, and not shared with third parties without appropriate approval and safeguards.
+
+4. Continuing Obligation: The obligation to maintain confidentiality continues even after the termination of employment or contractual relationships.
+
+Licensing
+
+1. Internal Licensing: The company may license its IP internally to various business units or subsidiaries to facilitate the development, production, and commercialization of products and services.
+
+2. External Licensing: The company may license its IP to third parties, such as strategic partners, customers, or licensees, to generate revenue or further the company's business objectives. All such licensing agreements must be reviewed and approved by the Legal Department.
+
+3. In-Licensing: The company may in-license IP from third parties to supplement its own IP portfolio and support its business activities. The terms of any in-licensing agreements must be reviewed and approved by the Legal Department.
+
+4. Open-Source Licensing: The company may choose to release certain IP, such as software code, under open-source licenses to promote collaboration, community engagement, and the advancement of technology.
+
+Procedures
+
+1. IP Disclosure: Employees and contractors are required to promptly disclose any potentially patentable inventions or other IP they create to the Intellectual Property Committee (IPC) using the company's Invention Disclosure Form.
+
+2. IP Evaluation: The IPC will review all invention disclosures and other IP-related matters, and make recommendations to the Legal Department regarding the appropriate course of action, such as patent filing, trademark registration, or other IP protection measures.
+
+3. IP Protection: The Legal Department, in consultation with the IPC, will be responsible for determining the most effective means of protecting the company's IP, which may include filing for patents, trademarks, or copyrights, or maintaining trade secrets.
+
+4. IP Enforcement: The Legal Department will be responsible for monitoring and enforcing the company's IP rights, including taking legal action against any unauthorized use or infringement of the company's IP.
+
+5. IP Commercialization: The company may choose to commercialize its IP through various means, such as licensing, joint ventures, or the development of new products and services. The Intellectual Property Committee and the Legal Department will work together to identify and pursue appropriate commercialization opportunities.
+
+6. IP Training and Awareness: The company will provide regular training and education to its employees and contractors on IP-related topics, including the importance of IP protection, the company's IP policies and procedures, and the employees' responsibilities with respect to IP.
+
+Conclusion
+
+This Intellectual Property Policy is an integral part of the company's overall business strategy and commitment to protecting its valuable intellectual property assets. By establishing clear guidelines and procedures for the management and utilization of IP, the company aims to foster innovation, drive business growth, and maintain a competitive advantage in the marketplace.
+
+All employees, contractors, and stakeholders are expected to adhere to the provisions of this policy and to work collaboratively with the Intellectual Property Committee and the Legal Department to ensure the effective management and protection of the company's intellectual property.

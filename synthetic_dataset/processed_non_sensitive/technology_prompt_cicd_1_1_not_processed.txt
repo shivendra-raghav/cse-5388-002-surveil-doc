@@ -1,0 +1,85 @@
+```markdown
+# Azure CI/CD Documentation
+
+## Introduction
+
+Welcome to the Azure CI/CD (Continuous Integration and Continuous Deployment) documentation for Contoso, a leading software company that delivers innovative solutions to businesses worldwide. This documentation provides a comprehensive guide to our Azure-based CI/CD pipeline, empowering our development teams to streamline their software delivery processes and ensure the quality and reliability of our products.
+
+At Contoso, we recognize the importance of agile development practices and the need for robust, automated build and deployment workflows. Our Azure CI/CD pipeline is designed to enable our teams to rapidly iterate, test, and deploy their applications with confidence, while maintaining the highest standards of security and compliance.
+
+This documentation covers the key components of our Azure CI/CD setup, including the rules and best practices that govern the pipeline, sample pipelines for different project types, and information about our support team to assist you throughout the process.
+
+## CI/CD Rules
+
+To ensure the consistency and reliability of our Azure CI/CD pipeline, we have established a set of rules and guidelines that all development teams must follow. These rules are designed to promote code quality, optimize the build and deployment process, and maintain the overall integrity of our software ecosystem.
+
+1. **Branching Strategy**: We follow a Git-based branching strategy with a primary `main` branch and feature-specific branches. All code changes must be submitted via pull requests and approved by at least one other team member before being merged into the `main` branch.
+
+2. **Commit Conventions**: All commit messages must adhere to the conventional commits specification, which includes the type of change (feat, fix, chore, etc.), a brief description, and a reference to any associated issue or pull request.
+
+3. **Automated Builds**: Every push to a branch or a merge into the `main` branch will trigger an automated build using Azure Pipelines. The build process will include linting, unit testing, and code analysis to ensure the quality of the code.
+
+4. **Artifact Management**: All build artifacts, including compiled binaries, Docker images, and deployment packages, will be stored in Azure Artifacts. These artifacts will be versioned and accessible to the deployment stages of the pipeline.
+
+5. **Environment Management**: We maintain separate environments for development, staging, and production, each with their own Azure resource groups and configurations. Deployments to these environments are controlled by specific triggers and approvals.
+
+6. **Security and Compliance**: All code and artifacts must pass security scans and comply with our corporate security policies. This includes the use of approved base images, dependency scanning, and the enforcement of security best practices.
+
+7. **Monitoring and Alerting**: The CI/CD pipeline is integrated with our centralized monitoring and alerting system, which tracks the health and performance of our applications and infrastructure. Developers will be notified of any issues or failures during the build and deployment process.
+
+By following these rules, our development teams can ensure the reliability, scalability, and security of our applications as they move through the CI/CD pipeline.
+
+## Example Pipelines
+
+To help you get started with our Azure CI/CD process, we have provided several example pipelines for different project types. These samples demonstrate the structure and configuration of our pipelines, as well as the integration with various Azure services and tools.
+
+### .NET Core Web Application
+
+This pipeline is designed for a .NET Core-based web application that is deployed to an Azure App Service. The pipeline includes the following stages:
+
+1. **Build**: The pipeline starts by restoring NuGet packages, building the solution, and running unit tests.
+2. **Publish**: The built application is packaged as a ZIP file and published as an Azure Artifacts artifact.
+3. **Deploy to Staging**: The published artifact is deployed to the staging environment's Azure App Service.
+4. **Approval**: The deployment to the production environment requires manual approval from a designated approver.
+5. **Deploy to Production**: Once approved, the same artifact is deployed to the production environment's Azure App Service.
+
+### React-based Web Application
+
+This pipeline is designed for a React-based web application that is built and deployed as a Docker container to an Azure Container Registry and Azure App Service. The pipeline includes the following stages:
+
+1. **Build**: The pipeline starts by installing npm dependencies, running linting checks, and building the React application.
+2. **Docker Build and Push**: The built application is packaged into a Docker image and pushed to the Azure Container Registry.
+3. **Deploy to Staging**: The Docker image is deployed to the staging environment's Azure App Service.
+4. **Approval**: The deployment to the production environment requires manual approval from a designated approver.
+5. **Deploy to Production**: Once approved, the same Docker image is deployed to the production environment's Azure App Service.
+
+### Azure Functions
+
+This pipeline is designed for an Azure Functions project that is deployed to the Azure Functions service. The pipeline includes the following stages:
+
+1. **Build**: The pipeline starts by restoring NuGet packages, building the Functions project, and running unit tests.
+2. **Publish**: The built Functions project is packaged as a ZIP file and published as an Azure Artifacts artifact.
+3. **Deploy to Staging**: The published artifact is deployed to the staging environment's Azure Functions service.
+4. **Approval**: The deployment to the production environment requires manual approval from a designated approver.
+5. **Deploy to Production**: Once approved, the same artifact is deployed to the production environment's Azure Functions service.
+
+These examples should provide a solid foundation for understanding our Azure CI/CD pipeline structure and configuration. Feel free to use them as a starting point for your own projects, and don't hesitate to reach out to our support team if you have any questions or need further assistance.
+
+## Support Team Information
+
+If you encounter any issues or have questions regarding the use of our Azure CI/CD pipeline, please don't hesitate to reach out to our dedicated support team. We're here to help you navigate the process and ensure the smooth delivery of your applications.
+
+You can contact our support team through the following channels:
+
+- **Email**: ci-cd-support@contoso.com
+- **Phone**: +1 (555) 555-5555
+- **Slack**: #ci-cd-support
+
+Our support team is available during regular business hours (9 AM to 5 PM, Monday to Friday) and will strive to respond to your inquiries as soon as possible. Please provide as much detail as possible about the issue you're facing, including any error messages, stack traces, or relevant pipeline configurations.
+
+In addition to direct support, we also maintain a comprehensive knowledge base with articles, tutorials, and best practices related to our Azure CI/CD pipeline. You can access this knowledge base at our internal documentation site: https://docs.contoso.com/ci-cd.
+
+We're committed to ensuring the success of your Azure-based software delivery process. Our support team is here to assist you every step of the way, so please don't hesitate to reach out if you need any help or have feedback to improve our CI/CD infrastructure.
+
+Thank you for choosing Contoso as your partner in software development. We look forward to working with you and supporting your journey towards efficient, reliable, and secure application delivery.
+```

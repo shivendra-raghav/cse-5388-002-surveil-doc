@@ -1,0 +1,69 @@
+# Azure Architecture Documentation
+
+## Introduction
+
+Azure is a comprehensive cloud computing platform offered by Microsoft, providing a wide range of services to meet the diverse needs of businesses and individuals. This documentation focuses on the integration and deployment of three core Azure services: Virtual Network (VNet), Virtual Machines (VM), and Network Security Groups (NSG). These services work together to create a secure and scalable infrastructure, enabling seamless connectivity, computing resources, and network management within the Azure ecosystem.
+
+## Service Details
+
+### Virtual Network (VNet)
+
+Azure Virtual Network (VNet) is a fundamental building block of your Azure infrastructure, allowing you to create and manage virtual networks in the cloud. VNet enables you to establish private, isolated networks and control the network traffic flow, IP address ranges, and network routing. Additionally, it provides the ability to connect your on-premises resources to your Azure environment, ensuring a secure and seamless hybrid connectivity.
+
+Key features and capabilities of Azure VNet include:
+
+1. **Address space and subnets**: VNet allows you to define your own private IP address space and create subnets within that address space, enabling you to segment your network and assign appropriate IP ranges to different application tiers or workloads.
+
+2. **Network security**: VNet integrates with Network Security Groups (NSGs) to apply granular access control and filtering rules, allowing you to secure your network traffic and protect your resources.
+
+3. **Connectivity options**: VNet supports various connectivity options, such as VPN connections, ExpressRoute (dedicated high-speed connections), and peering with other VNets, enabling you to establish secure and reliable communication between your Azure resources and on-premises environments.
+
+4. **Routing and traffic management**: VNet's built-in routing tables and user-defined routes (UDRs) allow you to control the flow of network traffic, including the ability to route traffic through network appliances or virtual network devices for advanced traffic management and monitoring.
+
+5. **Monitoring and logging**: Azure Monitor and Network Watcher provide comprehensive monitoring and logging capabilities for your VNet, helping you analyze network traffic, identify issues, and optimize network performance.
+
+### Virtual Machines (VM)
+
+Azure Virtual Machines (VM) offer a wide range of compute resources, enabling you to deploy and manage Windows or Linux-based virtual machines in the cloud. VMs provide the flexibility to choose from various hardware configurations, operating systems, and pre-built images, allowing you to match your workload requirements and scale your computing power as needed.
+
+Key features and capabilities of Azure VMs include:
+
+1. **Scalability and flexibility**: Azure VMs can be easily scaled up or down by adjusting the VM size, CPU, memory, and storage resources, ensuring that your computing capacity meets the evolving demands of your applications and workloads.
+
+2. **Operating system and software choice**: Azure provides a wide range of pre-built VM images, supporting various Windows and Linux-based operating systems, as well as a growing ecosystem of pre-configured software and development environments.
+
+3. **Managed disks**: Azure Managed Disks simplify the management of VM storage, automatically handling the provisioning and maintenance of the underlying storage infrastructure, reducing the administrative overhead.
+
+4. **High availability and redundancy**: Azure offers built-in high availability features, such as the ability to deploy VMs across multiple availability sets or fault domains, ensuring your workloads are protected against hardware failures and maintenance events.
+
+5. **Networking and security**: Azure VMs integrate seamlessly with Virtual Networks (VNet) and Network Security Groups (NSG), enabling you to configure secure network connectivity and apply granular access controls to your virtual machines.
+
+### Network Security Groups (NSG)
+
+Network Security Groups (NSG) are a key component of Azure's network security strategy, allowing you to filter and control network traffic to and from your Azure resources. NSGs act as virtual firewalls, applying customizable rules to control inbound and outbound traffic based on IP addresses, ports, and protocols.
+
+Key features and capabilities of Azure NSGs include:
+
+1. **Traffic filtering**: NSGs enable you to create rules to allow or deny network traffic based on source and destination IP addresses, ports, and protocols, providing fine-grained control over your network traffic flows.
+
+2. **Subnet and network interface association**: NSGs can be associated with subnets or individual network interfaces, allowing you to apply different security rules to different segments of your network.
+
+3. **Logging and monitoring**: NSGs integrate with Azure Monitor and Network Watcher, providing comprehensive logging and monitoring capabilities to help you analyze network traffic patterns, identify security threats, and troubleshoot network-related issues.
+
+4. **Prioritized rule processing**: NSG rules are processed in order of priority, enabling you to create complex rule sets and ensure that the most critical rules are applied first.
+
+5. **Service tags and application security groups**: NSGs support the use of service tags and application security groups, simplifying the management of security rules and enabling more granular control over network traffic based on application or service tiers.
+
+By using these three core Azure services (VNet, VM, and NSG) in a comprehensive and integrated manner, you can build a secure, scalable, and highly available cloud infrastructure that meets the evolving needs of your organization.
+
+## Support Team Information
+
+For any questions, issues, or support related to the Azure services covered in this documentation, please contact the Azure Support team:
+
+- **Support channels**: Azure offers multiple support channels, including the Azure portal, Azure Support website, and Azure Support forums.
+- **Support plans**: Azure provides various support plans, ranging from basic self-service options to premium, around-the-clock support packages. The appropriate support plan can be selected based on your organization's requirements.
+- **Response times**: Azure Support aims to provide timely responses, with the specific response time depending on the selected support plan and the severity of the issue.
+- **Escalation process**: If you require further assistance, you can escalate your support request through the Azure Support team's escalation process.
+- **Contact information**: You can reach the Azure Support team through the Azure portal or Azure Support website. The specific contact details are available in your Azure subscription's support settings.
+
+For any feedback, suggestions, or feature requests related to the Azure services covered in this documentation, please reach out to the Azure product team at productfeedback@azure.com.

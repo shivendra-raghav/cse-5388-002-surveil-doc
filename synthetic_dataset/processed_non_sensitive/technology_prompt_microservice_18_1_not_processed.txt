@@ -1,0 +1,102 @@
+Catalog Service API Documentation
+
+Introduction
+The Catalog Service is a GraphQL-based microservice that enables comprehensive management of product catalogs. This service provides a set of API endpoints that allow you to create, update, and modify catalogs and their associated products. Whether you need to establish a root catalog or create subcatalogs with specific parent IDs, the Catalog Service has you covered. This documentation will guide you through the available GraphQL services, rate limiting considerations, error handling mechanisms, and details about the support team.
+
+GraphQL Services
+The Catalog Service exposes the following GraphQL services:
+
+1. **Create a Root Catalog**
+   - **Description:** This mutation allows you to create a new root-level catalog.
+   - **Input Parameters:**
+     - `name`: The name of the new catalog.
+     - `description`: An optional description for the catalog.
+     - `status`: The initial status of the catalog (e.g., "ACTIVE", "DRAFT", "ARCHIVED").
+   - **Return Type:** The created `Catalog` object.
+   - **HTTP Response Codes:**
+     - `200 OK`: The catalog was successfully created.
+     - `400 Bad Request`: The input parameters are invalid or incomplete.
+     - `500 Internal Server Error`: An unexpected error occurred during the creation process.
+
+2. **Create Sub Catalog with Parent Catalog ID**
+   - **Description:** This mutation enables the creation of a subcatalog with a specified parent catalog ID.
+   - **Input Parameters:**
+     - `parentCatalogId`: The ID of the parent catalog under which the new subcatalog will be created.
+     - `name`: The name of the new subcatalog.
+     - `description`: An optional description for the subcatalog.
+     - `status`: The initial status of the subcatalog (e.g., "ACTIVE", "DRAFT", "ARCHIVED").
+   - **Return Type:** The created `Catalog` object.
+   - **HTTP Response Codes:**
+     - `200 OK`: The subcatalog was successfully created.
+     - `400 Bad Request`: The input parameters are invalid or incomplete.
+     - `404 Not Found`: The specified parent catalog ID does not exist.
+     - `500 Internal Server Error`: An unexpected error occurred during the creation process.
+
+3. **Update Catalog by ID**
+   - **Description:** This mutation allows you to update an existing catalog by its ID.
+   - **Input Parameters:**
+     - `id`: The ID of the catalog to be updated.
+     - `name`: The new name for the catalog.
+     - `description`: The new description for the catalog.
+     - `status`: The new status for the catalog (e.g., "ACTIVE", "DRAFT", "ARCHIVED").
+   - **Return Type:** The updated `Catalog` object.
+   - **HTTP Response Codes:**
+     - `200 OK`: The catalog was successfully updated.
+     - `400 Bad Request`: The input parameters are invalid or incomplete.
+     - `404 Not Found`: The specified catalog ID does not exist.
+     - `500 Internal Server Error`: An unexpected error occurred during the update process.
+
+4. **Modify Product List inside a Catalog**
+   - **Description:** This mutation enables the addition, removal, or modification of products within a specified catalog.
+   - **Input Parameters:**
+     - `catalogId`: The ID of the catalog where the product list will be modified.
+     - `operations`: An array of product operations, including `ADD`, `REMOVE`, and `UPDATE`.
+       - `operation`: The type of operation to perform (e.g., "ADD", "REMOVE", "UPDATE").
+       - `product`: The product data to be added, removed, or updated.
+   - **Return Type:** The updated `Catalog` object with the modified product list.
+   - **HTTP Response Codes:**
+     - `200 OK`: The product list was successfully modified.
+     - `400 Bad Request`: The input parameters are invalid or incomplete.
+     - `404 Not Found`: The specified catalog ID does not exist.
+     - `500 Internal Server Error`: An unexpected error occurred during the modification process.
+
+Rate Limit
+The Catalog Service enforces rate limiting to ensure the stability and availability of the API. The following rate limiting policies are in place:
+
+- **Request Limit:** The service allows a maximum of 100 requests per minute per API key.
+- **Burst Limit:** The service can handle up to 200 requests within a 60-second window before triggering rate limiting.
+- **Exceeded Limit Response:** When the rate limit is exceeded, the service will respond with a `429 Too Many Requests` status code, and the response body will include the following information:
+  - `error`: A brief description of the rate limiting error.
+  - `retryAfter`: The number of seconds the client should wait before retrying the request.
+
+Error Handling
+The Catalog Service follows a standard error handling approach to provide clear and informative responses to clients. In addition to the standard HTTP response codes, the service also includes custom error codes and messages to help clients understand and troubleshoot issues. The following HTTP response codes are utilized:
+
+- `200 OK`: The request was successful.
+- `400 Bad Request`: The request was malformed or contained invalid parameters.
+- `401 Unauthorized`: The client is not authorized to perform the requested action.
+- `403 Forbidden`: The client is not allowed to perform the requested action.
+- `404 Not Found`: The requested resource was not found.
+- `500 Internal Server Error`: An unexpected error occurred on the server.
+- `501 Not Implemented`: The requested feature or functionality is not yet implemented.
+- `502 Bad Gateway`: The server encountered a problem while acting as a gateway.
+- `503 Service Unavailable`: The service is temporarily unavailable.
+- `504 Gateway Timeout`: The server did not receive a timely response from the upstream service.
+
+When an error occurs, the service will respond with the appropriate HTTP status code and include a JSON object with the following fields:
+
+- `error`: A brief description of the error.
+- `code`: A unique error code that can be used for troubleshooting.
+- `message`: A more detailed explanation of the error.
+
+Support Team Details
+For any questions, issues, or support related to the Catalog Service, please contact the following team:
+
+- **Team Name:** Catalog Service Support
+- **Email:** catalog-support@example.com
+- **Phone:** +1 (555) 555-5555
+- **Business Hours:** Monday to Friday, 9 AM to 5 PM (UTC-5)
+
+The support team is available during the specified business hours to assist you with any inquiries or problems you may encounter while using the Catalog Service. They can provide guidance on API usage, help with integration issues, and investigate any reported bugs or service disruptions.
+
+Please note that the team may not be able to respond immediately to all inquiries, but they will make their best effort to address your concerns in a timely manner.

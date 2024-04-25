@@ -1,0 +1,128 @@
+Here is the generated VMware Tanzu documentation based on the provided services overview:
+
+VMware Tanzu Architecture Documentation
+
+Introduction
+
+This documentation provides a comprehensive overview of the VMware Tanzu services and features currently enabled for the organization's VMware Tanzu account. It covers the configuration, management, and usage of the Tanzu Kubernetes Grid, Harbor Registry, and API Portal, which are the active services under the VMware Tanzu platform.
+
+The purpose of this document is to serve as a reference guide for the organization's administrators and users, ensuring a clear understanding of the available Tanzu services and the procedures for viewing and updating them as needed.
+
+Latest Update By: John Doe, VMware Tanzu Administrator
+Last Updated: April 15, 2023
+
+Service Details
+
+1. Tanzu Kubernetes Grid
+   1.1. Overview
+   The Tanzu Kubernetes Grid (TKG) is a key component of the VMware Tanzu platform, providing a reliable and scalable Kubernetes environment for the organization's containerized applications. TKG offers a consistent and supported Kubernetes distribution, streamlining the deployment and management of Kubernetes clusters across multiple environments, including on-premises, public cloud, and edge.
+
+   1.2. Cluster Management
+   The organization's VMware Tanzu account currently has 3 active TKG clusters provisioned, each with the following configurations:
+
+   Cluster 1:
+   - Name: prod-cluster-1
+   - Location: US West (Oregon)
+   - Node Count: 5 (3 worker nodes, 2 control plane nodes)
+   - Kubernetes Version: 1.24.1
+   - Networking: Calico (VXLAN)
+   - Storage: NFS Persistent Volumes
+
+   Cluster 2:
+   - Name: dev-cluster-1
+   - Location: US East (Virginia)
+   - Node Count: 3 (2 worker nodes, 1 control plane node)
+   - Kubernetes Version: 1.23.6
+   - Networking: Antrea (VXLAN)
+   - Storage: EBS Persistent Volumes
+
+   Cluster 3:
+   - Name: test-cluster-1
+   - Location: EU West (Ireland)
+   - Node Count: 4 (3 worker nodes, 1 control plane node)
+   - Kubernetes Version: 1.24.1
+   - Networking: Calico (VXLAN)
+   - Storage: Azure Disk Persistent Volumes
+
+   1.3. Viewing and Updating TKG Clusters
+   The TKG clusters can be managed and monitored through the VMware Tanzu Mission Control (TMC) interface. Administrators can access the TMC portal at https://tmc.vmware.com and log in with their credentials.
+
+   Within the TMC, administrators can perform the following actions:
+   - View the status and details of each TKG cluster
+   - Scale cluster nodes up or down as needed
+   - Upgrade the Kubernetes version for clusters
+   - Configure networking, storage, and other cluster-level settings
+   - Deploy and manage Kubernetes applications and workloads
+
+   To update the TKG clusters, administrators can follow the documented procedures in the VMware Tanzu documentation. This includes steps for upgrading the Kubernetes version, scaling the cluster, and modifying the cluster configuration.
+
+2. Harbor Registry
+   2.1. Overview
+   Harbor is the enterprise-grade container registry integrated with the VMware Tanzu platform. It provides a secure and scalable solution for storing, managing, and distributing container images within the organization.
+
+   2.2. Registry Configuration
+   The organization's VMware Tanzu account has a single Harbor registry instance provisioned with the following configuration:
+
+   - Registry Name: org-harbor-registry
+   - Location: US West (Oregon)
+   - Storage Backend: S3 Compatible Object Storage
+   - Authentication: LDAP Integration with Active Directory
+   - Vulnerability Scanning: Enabled with Trivy Scanner
+   - Replication: Configured to replicate images to a secondary registry in EU West (Ireland)
+
+   2.3. Viewing and Updating Harbor Registry
+   The Harbor registry can be accessed and managed through the Harbor web interface. Administrators can log in to the Harbor console using their credentials at the following URL:
+   https://harbor.org.com
+
+   Within the Harbor console, administrators can perform the following actions:
+   - View the list of container images and their details
+   - Upload, download, and manage container images
+   - Configure project-level settings, such as access control and replication
+   - Manage users, groups, and their permissions
+   - Configure system-level settings, including registry storage, network, and security
+   - Monitor registry activity, including image push/pull events and vulnerability scan results
+
+   To update the Harbor registry configuration, administrators can follow the documented procedures in the VMware Tanzu and Harbor documentation. This includes steps for configuring storage backends, enabling vulnerability scanning, setting up replication, and managing user access.
+
+3. API Portal
+   3.1. Overview
+   The API Portal is a component of the VMware Tanzu platform that provides a centralized hub for discovering, consuming, and managing APIs within the organization. It serves as a self-service platform for developers and API consumers, enabling them to explore, test, and integrate with the organization's various API offerings.
+
+   3.2. Portal Configuration
+   The organization's VMware Tanzu account has a single API Portal instance provisioned with the following configuration:
+
+   - Portal Name: org-api-portal
+   - Location: US East (Virginia)
+   - Authentication: Integrated with the organization's Azure Active Directory
+   - API Catalog: Populated with 15 internal and 5 external APIs
+   - API Monitoring: Enabled with performance and availability metrics
+   - Developer Portal: Customized with the organization's branding and documentation
+
+   3.3. Viewing and Updating API Portal
+   The API Portal can be accessed through the web interface at the following URL:
+   https://api.org.com
+
+   Within the API Portal, users and administrators can perform the following actions:
+   - Explore the catalog of available APIs
+   - View detailed API documentation and metadata
+   - Test API endpoints using the built-in API client
+   - Subscribe to APIs and manage API access tokens
+   - Monitor API performance and usage metrics
+   - Raise support tickets for API-related issues
+
+   Administrators can also access the API Portal management console to perform the following tasks:
+   - Onboard new APIs and manage the API catalog
+   - Configure authentication and authorization settings
+   - Customize the developer portal layout and branding
+   - Set up API monitoring and alerting
+   - Manage user access and permissions
+
+   To update the API Portal configuration, administrators can follow the documented procedures in the VMware Tanzu and API Portal documentation. This includes steps for onboarding new APIs, configuring authentication, customizing the developer portal, and managing user access.
+
+Summary
+
+The VMware Tanzu platform is a crucial component of the organization's IT infrastructure, providing a robust and scalable Kubernetes-based environment for containerized applications. The Tanzu Kubernetes Grid, Harbor Registry, and API Portal are the active services that are currently provisioned and configured for the organization's VMware Tanzu account.
+
+Administrators can access and manage these services through the respective web interfaces, allowing them to monitor the overall health and performance, as well as update the configurations as needed. The detailed procedures for viewing and updating these services are outlined in this documentation, which can be used as a reference guide by the organization's IT team.
+
+This documentation will be regularly reviewed and updated by the VMware Tanzu administrator to ensure the accuracy and relevance of the information provided. If you have any questions or require further assistance, please don't hesitate to contact the VMware Tanzu support team.

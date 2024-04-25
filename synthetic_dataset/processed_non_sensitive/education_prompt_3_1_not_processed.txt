@@ -1,0 +1,83 @@
+Here is a realistic student transcript based on the provided specifications:
+
+Student Transcript
+
+Student Name: Emma Wilkins
+Student ID: 12345678
+Date of Birth: June 15, 1998
+
+Academic Record
+
+Degree Program: Bachelor of Science in Accounting
+Declared Major: Accounting
+Enrollment Status: Full-Time
+Expected Graduation Date: May 2022
+
+Cumulative GPA: 3.78
+
+Transcript of Courses
+
+Fall Semester 2018
+Course Code | Course Title | Credits | Grade
+ACC 101 | Principles of Accounting I | 3 | A
+ECO 201 | Microeconomics | 3 | B+
+ENG 101 | English Composition I | 3 | A-
+MAT 151 | Calculus I | 4 | B
+GEN 100 | First-Year Seminar | 1 | A
+
+Spring Semester 2019
+Course Code | Course Title | Credits | Grade
+ACC 102 | Principles of Accounting II | 3 | A
+ECO 202 | Macroeconomics | 3 | A
+ENG 102 | English Composition II | 3 | A
+MAT 152 | Calculus II | 4 | B+
+BUS 201 | Business Law | 3 | B
+
+Fall Semester 2019
+Course Code | Course Title | Credits | Grade
+ACC 301 | Intermediate Accounting I | 3 | A
+FIN 301 | Principles of Finance | 3 | A-
+MGT 301 | Principles of Management | 3 | B+
+MIS 301 | Management Information Systems | 3 | A
+GEN 200 | Sophomore Seminar | 1 | A
+
+Spring Semester 2020
+Course Code | Course Title | Credits | Grade
+ACC 302 | Intermediate Accounting II | 3 | A
+FIN 311 | Corporate Finance | 3 | B+
+MGT 311 | Organizational Behavior | 3 | A
+MKT 301 | Principles of Marketing | 3 | A-
+GEN 250 | Ethics in the Workplace | 3 | A
+
+Fall Semester 2020
+Course Code | Course Title | Credits | Grade
+ACC 401 | Advanced Accounting | 3 | A
+ACC 411 | Auditing | 3 | A
+FIN 411 | Investments | 3 | B+
+MGT 401 | Strategic Management | 3 | A-
+GEN 300 | Junior Seminar | 1 | A
+
+Spring Semester 2021
+Course Code | Course Title | Credits | Grade
+ACC 421 | Taxation | 3 | A
+ACC 431 | Accounting Information Systems | 3 | A
+FIN 421 | Financial Analysis | 3 | B
+MGT 411 | Operations Management | 3 | A-
+GEN 350 | Global Perspectives | 3 | A
+
+Fall Semester 2021
+Course Code | Course Title | Credits | Grade
+ACC 441 | Governmental and Nonprofit Accounting | 3 | A
+ACC 451 | Accounting Capstone | 3 | A
+FIN 431 | International Finance | 3 | A-
+GEN 400 | Senior Seminar | 1 | A
+
+Total Credits Earned: 122
+Cumulative GPA: 3.78
+
+Honors and Awards:
+- Dean's List (Fall 2018, Spring 2019, Fall 2019, Spring 2020, Fall 2020, Spring 2021, Fall 2021)
+- Accounting Student of the Year (2021)
+- Beta Alpha Psi Accounting Honor Society (Inducted 2019)
+
+This transcript reflects Emma Wilkins' academic performance and progress throughout her undergraduate studies in the Bachelor of Science in Accounting program. She has maintained a strong GPA of 3.78 and has been recognized for her academic excellence by being named to the Dean's List multiple times. Emma has also been actively involved in the Accounting Student of the Year award and the Beta Alpha Psi Accounting Honor Society, further demonstrating her commitment to the field of accounting.

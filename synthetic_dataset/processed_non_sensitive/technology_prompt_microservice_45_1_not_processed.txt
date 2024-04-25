@@ -1,0 +1,128 @@
+Catalog Service Documentation
+
+Introduction
+The Catalog Service is a microservice that manages the product catalog and exposes the catalog data through gRPC and RESTful APIs. This service is designed to provide a centralized and efficient way to access and manage product information within the organization. The Catalog Service plays a crucial role in the overall product management ecosystem, serving as a reliable and scalable solution for storing, retrieving, and updating product data.
+
+Authentication
+The Catalog Service utilizes an authentication mechanism to ensure secure access to the provided APIs. The service supports the following authentication methods:
+
+1. **API Key**: Clients can authenticate by including a valid API key in the `Authorization` header of their requests. The API key must be acquired from the system administrator before making any API calls.
+
+2. **OAuth 2.0**: The service supports OAuth 2.0 for client authentication and authorization. Clients can obtain an access token from the centralized authentication server and include it in the `Authorization` header of their requests.
+
+To use the Catalog Service APIs, clients must include the appropriate authentication credentials in their requests. Detailed instructions on obtaining and using the API key or OAuth access token can be found in the "Authentication" section of the service's documentation.
+
+gRPC Services
+The Catalog Service exposes the following gRPC services:
+
+1. **GetProduct**
+   - **Request**: `GetProductRequest`
+     - `product_id` (string): The unique identifier of the product to retrieve.
+   - **Response**: `Product`
+     - `id` (string): The unique identifier of the product.
+     - `name` (string): The name of the product.
+     - `description` (string): The description of the product.
+     - `price` (double): The price of the product.
+     - `category` (string): The category to which the product belongs.
+     - `in_stock` (bool): Indicates whether the product is currently in stock.
+
+2. **SearchProducts**
+   - **Request**: `SearchProductsRequest`
+     - `query` (string): The search query to use for finding products.
+     - `page_size` (int32): The maximum number of products to return per page.
+     - `page_token` (string): The page token to use for pagination.
+   - **Response**: `SearchProductsResponse`
+     - `products` (repeated `Product`): The list of products matching the search query.
+     - `next_page_token` (string): The token to use for the next page of results.
+
+3. **UpdateProduct**
+   - **Request**: `UpdateProductRequest`
+     - `product_id` (string): The unique identifier of the product to update.
+     - `name` (string): The new name of the product.
+     - `description` (string): The new description of the product.
+     - `price` (double): The new price of the product.
+     - `category` (string): The new category to which the product belongs.
+     - `in_stock` (bool): The new in-stock status of the product.
+   - **Response**: `Product`
+     - `id` (string): The unique identifier of the updated product.
+     - `name` (string): The updated name of the product.
+     - `description` (string): The updated description of the product.
+     - `price` (double): The updated price of the product.
+     - `category` (string): The updated category to which the product belongs.
+     - `in_stock` (bool): The updated in-stock status of the product.
+
+RESTful API Endpoints
+The Catalog Service also exposes the following RESTful API endpoints:
+
+1. **Get Product**
+   - **Endpoint**: `GET /v1/products/{productId}`
+   - **Description**: Retrieves the details of a specific product.
+   - **Path Parameters**:
+     - `productId` (string): The unique identifier of the product to retrieve.
+   - **Responses**:
+     - `200 OK`: The requested product is returned in the response body.
+     - `404 Not Found`: The specified product does not exist.
+
+2. **Search Products**
+   - **Endpoint**: `GET /v1/products?query={query}`
+   - **Description**: Searches for products based on the provided query.
+   - **Query Parameters**:
+     - `query` (string): The search query to use for finding products.
+     - `page_size` (int32, optional): The maximum number of products to return per page.
+     - `page_token` (string, optional): The page token to use for pagination.
+   - **Responses**:
+     - `200 OK`: The list of matching products is returned in the response body.
+
+3. **Update Product**
+   - **Endpoint**: `POST /v1/products/{productId}`
+   - **Description**: Updates the details of a specific product.
+   - **Path Parameters**:
+     - `productId` (string): The unique identifier of the product to update.
+   - **Request Body**:
+     - `name` (string): The new name of the product.
+     - `description` (string): The new description of the product.
+     - `price` (double): The new price of the product.
+     - `category` (string): The new category to which the product belongs.
+     - `in_stock` (bool): The new in-stock status of the product.
+   - **Responses**:
+     - `200 OK`: The updated product is returned in the response body.
+     - `404 Not Found`: The specified product does not exist.
+
+Request Mapping
+The Catalog Service maps the gRPC service requests to the corresponding RESTful API endpoints as follows:
+
+1. **GetProduct**
+   - gRPC Request: `GetProductRequest`
+   - REST Endpoint: `GET /v1/products/{productId}`
+
+2. **SearchProducts**
+   - gRPC Request: `SearchProductsRequest`
+   - REST Endpoint: `GET /v1/products?query={query}&page_size={page_size}&page_token={page_token}`
+
+3. **UpdateProduct**
+   - gRPC Request: `UpdateProductRequest`
+   - REST Endpoint: `POST /v1/products/{productId}`
+
+Response Mapping
+The Catalog Service maps the gRPC service responses to the corresponding RESTful API responses as follows:
+
+1. **GetProduct**
+   - gRPC Response: `Product`
+   - REST Response: `200 OK` with the requested product in the response body.
+
+2. **SearchProducts**
+   - gRPC Response: `SearchProductsResponse`
+   - REST Response: `200 OK` with the list of matching products and the next page token in the response body.
+
+3. **UpdateProduct**
+   - gRPC Response: `Product`
+   - REST Response: `200 OK` with the updated product in the response body.
+
+Summary
+The Catalog Service is a crucial component in the product management ecosystem, providing a centralized and efficient way to access and manage product information. The service exposes both gRPC and RESTful APIs, allowing clients to interact with the product catalog using their preferred communication protocol.
+
+The gRPC services provide a streamlined and performance-optimized way to perform common product-related operations, such as retrieving a specific product, searching for products, and updating product details. The RESTful API endpoints offer a more traditional HTTP-based interface, enabling broader integration with various client applications and systems.
+
+The Catalog Service's authentication mechanisms, including API key and OAuth 2.0 support, ensure secure access to the provided APIs, safeguarding the integrity and confidentiality of the product data. The detailed request and response mapping between the gRPC services and RESTful API endpoints simplifies the integration process for clients, allowing them to leverage the service's functionality seamlessly.
+
+Overall, the Catalog Service is designed to be a reliable, scalable, and user-friendly solution for managing the product catalog within the organization, contributing to the overall efficiency and effectiveness of the product management ecosystem.

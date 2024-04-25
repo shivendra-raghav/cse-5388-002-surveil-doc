@@ -1,0 +1,137 @@
+Subscriptions Service Documentation
+
+Introduction:
+The Subscriptions Service is a SOAP API that enables the creation, update, listing, and deletion of subscriptions. This service is designed to provide a centralized and efficient way for users to manage their subscriptions, ensuring seamless integration with various applications and systems. The service adheres to the SOAP API specification, ensuring a standardized and reliable interface for developers to interact with.
+
+Latest Update By:
+The latest update to the Subscriptions Service was made by the Acme Inc. development team on June 15, 2023.
+
+Maintenance Team Details:
+The Subscriptions Service is maintained by the Acme Inc. Subscription Management Team. The team consists of the following members:
+
+- John Doe, Lead Developer
+- Jane Smith, Senior Software Engineer
+- Michael Johnson, Quality Assurance Analyst
+- Sarah Lee, Product Manager
+
+The team is responsible for ensuring the service's stability, performance, and feature enhancements. They can be reached at subscriptions-support@acme.com for any inquiries or support requests.
+
+SOAP Services:
+
+1. Create a Subscription
+   - Endpoint: /CreateSubscription
+   - HTTP Response Codes:
+     - 200 OK: The subscription was successfully created.
+     - 400 Bad Request: The request payload is invalid or missing required parameters.
+     - 401 Unauthorized: The client is not authorized to perform this operation.
+     - 500 Internal Server Error: An unexpected error occurred while processing the request.
+   - Request Parameters:
+     - userId (string, required): The unique identifier of the user creating the subscription.
+     - planId (string, required): The unique identifier of the subscription plan.
+     - startDate (date, required): The start date of the subscription.
+     - endDate (date, required): The end date of the subscription.
+     - paymentMethod (string, required): The payment method used for the subscription.
+   - Response:
+     - subscriptionId (string): The unique identifier of the created subscription.
+     - status (string): The current status of the subscription (e.g., "Active", "Suspended", "Canceled").
+     - createdAt (date): The date and time when the subscription was created.
+
+2. Update a Subscription
+   - Endpoint: /UpdateSubscription
+   - HTTP Response Codes:
+     - 200 OK: The subscription was successfully updated.
+     - 400 Bad Request: The request payload is invalid or missing required parameters.
+     - 401 Unauthorized: The client is not authorized to perform this operation.
+     - 404 Not Found: The specified subscription was not found.
+     - 500 Internal Server Error: An unexpected error occurred while processing the request.
+   - Request Parameters:
+     - subscriptionId (string, required): The unique identifier of the subscription to be updated.
+     - planId (string, optional): The updated subscription plan.
+     - endDate (date, optional): The updated end date of the subscription.
+     - paymentMethod (string, optional): The updated payment method for the subscription.
+   - Response:
+     - subscriptionId (string): The unique identifier of the updated subscription.
+     - status (string): The current status of the subscription.
+     - updatedAt (date): The date and time when the subscription was last updated.
+
+3. List a Subscription
+   - Endpoint: /GetSubscription
+   - HTTP Response Codes:
+     - 200 OK: The subscription was successfully retrieved.
+     - 400 Bad Request: The request payload is invalid or missing required parameters.
+     - 401 Unauthorized: The client is not authorized to perform this operation.
+     - 404 Not Found: The specified subscription was not found.
+     - 500 Internal Server Error: An unexpected error occurred while processing the request.
+   - Request Parameters:
+     - subscriptionId (string, required): The unique identifier of the subscription to be retrieved.
+   - Response:
+     - subscriptionId (string): The unique identifier of the subscription.
+     - userId (string): The unique identifier of the user associated with the subscription.
+     - planId (string): The unique identifier of the subscription plan.
+     - startDate (date): The start date of the subscription.
+     - endDate (date): The end date of the subscription.
+     - paymentMethod (string): The payment method used for the subscription.
+     - status (string): The current status of the subscription.
+     - createdAt (date): The date and time when the subscription was created.
+     - updatedAt (date): The date and time when the subscription was last updated.
+
+4. List All Subscriptions
+   - Endpoint: /ListSubscriptions
+   - HTTP Response Codes:
+     - 200 OK: The list of subscriptions was successfully retrieved.
+     - 400 Bad Request: The request payload is invalid or missing required parameters.
+     - 401 Unauthorized: The client is not authorized to perform this operation.
+     - 500 Internal Server Error: An unexpected error occurred while processing the request.
+   - Request Parameters:
+     - userId (string, optional): The unique identifier of the user to filter the subscriptions.
+     - status (string, optional): The status of the subscriptions to filter (e.g., "Active", "Suspended", "Canceled").
+     - page (integer, optional): The page number to retrieve (default is 1).
+     - pageSize (integer, optional): The number of subscriptions to return per page (default is 10).
+   - Response:
+     - totalCount (integer): The total number of subscriptions matching the filter criteria.
+     - subscriptions (array):
+       - subscriptionId (string): The unique identifier of the subscription.
+       - userId (string): The unique identifier of the user associated with the subscription.
+       - planId (string): The unique identifier of the subscription plan.
+       - startDate (date): The start date of the subscription.
+       - endDate (date): The end date of the subscription.
+       - paymentMethod (string): The payment method used for the subscription.
+       - status (string): The current status of the subscription.
+       - createdAt (date): The date and time when the subscription was created.
+       - updatedAt (date): The date and time when the subscription was last updated.
+
+5. Delete a Subscription
+   - Endpoint: /DeleteSubscription
+   - HTTP Response Codes:
+     - 200 OK: The subscription was successfully deleted.
+     - 400 Bad Request: The request payload is invalid or missing required parameters.
+     - 401 Unauthorized: The client is not authorized to perform this operation.
+     - 404 Not Found: The specified subscription was not found.
+     - 500 Internal Server Error: An unexpected error occurred while processing the request.
+   - Request Parameters:
+     - subscriptionId (string, required): The unique identifier of the subscription to be deleted.
+   - Response:
+     - message (string): A success message indicating that the subscription was successfully deleted.
+
+Rate Limit:
+The Subscriptions Service has a rate limit of 100 requests per minute per user. If a client exceeds the rate limit, the service will respond with a 429 Too Many Requests HTTP status code.
+
+Error Handling:
+The Subscriptions Service follows a consistent error handling mechanism. When an error occurs, the service will respond with the appropriate HTTP status code and a JSON-formatted error response, which includes the following properties:
+
+- code (integer): The error code.
+- message (string): A brief description of the error.
+- details (string, optional): Additional details about the error, if applicable.
+
+For example, a 400 Bad Request response might look like this:
+
+```json
+{
+  "code": 400,
+  "message": "Invalid request payload",
+  "details": "The 'planId' parameter is required."
+}
+```
+
+Summary:
+The Subscriptions Service is a robust and versatile SOAP API that enables users to manage their subscriptions effectively. The service provides a comprehensive set of operations, including creating, updating, listing, and deleting subscriptions. The documentation outlines the various endpoints, request parameters, and response formats, ensuring a clear and consistent understanding for developers integrating with the service. The service also includes rate limiting and comprehensive error handling, contributing to a reliable and scalable solution for subscription management.

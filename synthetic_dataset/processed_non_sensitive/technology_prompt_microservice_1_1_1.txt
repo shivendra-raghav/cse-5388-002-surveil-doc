@@ -1,0 +1,168 @@
+# Products Service API Documentation
+
+## Introduction
+
+The Products Service is a powerful microservice that enables seamless management of product data for your e-commerce platform. This API provides a comprehensive set of endpoints to perform Create, Read, Update, and Delete (CRUD) operations on products, as well as advanced search capabilities. Whether you're building a new online store or enhancing an existing one, the Products Service API ensures efficient and reliable handling of your product information.
+
+## Authentication
+
+The Products Service API utilizes OAuth 2.0 for authentication and authorization. Clients are required to obtain an access token from the authorization server before making any requests to the API. The access token must be included in the `Authorization` header of each API request, using the `Bearer` scheme.
+
+Example:
+```
+Authorization: Bearer your_access_token_goes_here
+```
+
+To obtain an access token, clients should follow the appropriate OAuth 2.0 flow, such as the Client Credentials Grant or Authorization Code Grant, depending on their application's requirements.
+
+## Endpoints
+
+### Create a Product
+**POST /v1/products**
+
+This endpoint allows you to create a new product in the system.
+
+**Request Body**:
+```json
+{
+  "name": "Wireless Headphones",
+  "description": "High-quality wireless headphones with noise-cancelling technology",
+  "price": 129.99,
+  "category": "Electronics",
+  "inventory": 200
+}
+```
+
+**Responses**:
+- `201 Created`: The product was successfully created.
+- `400 Bad Request`: The request body is invalid or missing required fields.
+- `401 Unauthorized`: The client's access token is invalid or missing.
+- `403 Forbidden`: The client does not have permission to perform this action.
+- `500 Internal Server Error`: An unexpected error occurred on the server.
+
+### Update a Product
+**PUT /v1/products/{id}**
+
+This endpoint allows you to update an existing product.
+
+**Path Parameters**:
+- `id` (required): The ID of the product to update.
+
+**Request Body**:
+```json
+{
+  "name": "Wireless Headphones Pro",
+  "description": "Premium wireless headphones with active noise-cancelling and long battery life",
+  "price": 149.99,
+  "category": "Electronics",
+  "inventory": 150
+}
+```
+
+**Responses**:
+- `200 OK`: The product was successfully updated.
+- `400 Bad Request`: The request body is invalid or missing required fields.
+- `401 Unauthorized`: The client's access token is invalid or missing.
+- `403 Forbidden`: The client does not have permission to perform this action.
+- `404 Not Found`: The specified product does not exist.
+- `500 Internal Server Error`: An unexpected error occurred on the server.
+
+### Retrieve a Product
+**GET /v1/products/{id}**
+
+This endpoint allows you to retrieve the details of a specific product.
+
+**Path Parameters**:
+- `id` (required): The ID of the product to retrieve.
+
+**Responses**:
+- `200 OK`: The product details are returned in the response body.
+- `401 Unauthorized`: The client's access token is invalid or missing.
+- `403 Forbidden`: The client does not have permission to perform this action.
+- `404 Not Found`: The specified product does not exist.
+- `500 Internal Server Error`: An unexpected error occurred on the server.
+
+### List all Products
+**GET /v1/products**
+
+This endpoint allows you to retrieve a list of all products.
+
+**Query Parameters**:
+- `page` (optional, default: 1): The page number to retrieve.
+- `limit` (optional, default: 20): The number of products to return per page.
+- `search` (optional): The search query to filter the products.
+- `category` (optional): The category to filter the products.
+
+**Responses**:
+- `200 OK`: The list of products is returned in the response body.
+- `401 Unauthorized`: The client's access token is invalid or missing.
+- `403 Forbidden`: The client does not have permission to perform this action.
+- `500 Internal Server Error`: An unexpected error occurred on the server.
+
+### Delete a Product
+**DELETE /v1/products/{id}**
+
+This endpoint allows you to delete a specific product.
+
+**Path Parameters**:
+- `id` (required): The ID of the product to delete.
+
+**Responses**:
+- `204 No Content`: The product was successfully deleted.
+- `401 Unauthorized`: The client's access token is invalid or missing.
+- `403 Forbidden`: The client does not have permission to perform this action.
+- `404 Not Found`: The specified product does not exist.
+- `500 Internal Server Error`: An unexpected error occurred on the server.
+
+## Error Handling
+
+The Products Service API follows a consistent error handling approach. When an error occurs, the API will respond with an appropriate HTTP status code and a JSON-formatted error response body.
+
+Example error response:
+```json
+{
+  "error": {
+    "code": 400,
+    "message": "Invalid request body",
+    "details": "The 'name' field is required."
+  }
+}
+```
+
+The possible error codes and their corresponding HTTP status codes are:
+
+- `400 Bad Request`: The request is invalid or missing required parameters.
+- `401 Unauthorized`: The client's access token is invalid or missing.
+- `403 Forbidden`: The client does not have permission to perform the requested action.
+- `404 Not Found`: The requested resource was not found.
+- `405 Method Not Allowed`: The HTTP method is not supported for the requested endpoint.
+- `500 Internal Server Error`: An unexpected error occurred on the server.
+- `501 Not Implemented`: The requested feature is not yet implemented.
+- `502 Bad Gateway`: The API encountered an issue while attempting to process the request.
+- `503 Service Unavailable`: The API is temporarily unavailable.
+- `504 Gateway Timeout`: The API took too long to respond to the request.
+
+## API Usage Limits
+
+To ensure the stability and performance of the Products Service API, usage limits are in place. Clients are allowed to make up to 100 requests per minute. If a client exceeds this limit, the API will respond with a `429 Too Many Requests` status code.
+
+Example error response:
+```json
+{
+  "error": {
+    "code": 429,
+    "message": "Too many requests",
+    "details": "You have exceeded the API usage limit of 100 requests per minute."
+  }
+}
+```
+
+## Support Details
+
+For any issues, questions, or assistance related to the Products Service API, please contact our support team:
+
+- Email: support@abccorp.com
+- Phone: +1 (555) 123-4567
+- Documentation: https://docs.abccorp.com/products-service
+
+Our support team is available 24/7 to help you with any inquiries or problems you may encounter while using the API.

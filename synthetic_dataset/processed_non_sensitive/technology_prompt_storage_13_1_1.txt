@@ -1,0 +1,104 @@
+Linode Object Storage Documentation
+
+Introduction
+Linode Object Storage is a highly scalable, durable, and secure object storage service that provides a simple and cost-effective solution for storing and accessing data. This documentation will guide you through the process of managing your Linode Object Storage, including accessing your account, creating and managing buckets, and configuring object expiration policies.
+
+Linode Object Storage Access Details
+To access your Linode Object Storage, you'll need to authenticate with your Linode account credentials. You can do this through the Linode Cloud Manager or by using the Linode API.
+
+Accessing Linode Object Storage through the Cloud Manager
+1. Log in to the Linode Cloud Manager at cloud.linode.com.
+2. Navigate to the "Object Storage" section in the left-hand menu.
+3. You will see a list of your existing buckets and their corresponding details, such as the bucket name, region, and creation date.
+4. To create a new bucket, click the "Create a Bucket" button and follow the on-screen instructions.
+5. To manage an existing bucket, click on the bucket's name to view its details and perform actions such as uploading, downloading, or deleting objects.
+
+Accessing Linode Object Storage through the API
+1. Generate an API access key by navigating to the "API Tokens" section in the Linode Cloud Manager.
+2. Create a new token and grant it the necessary permissions to access your Object Storage resources.
+3. Use the Linode API client library or make direct API calls to interact with your Object Storage buckets and objects. Refer to the Linode API documentation for detailed instructions on how to use the API.
+
+Bucket Policies
+Linode Object Storage allows you to create and manage bucket policies to control access to your data. Bucket policies are JSON-formatted policy documents that define the actions that can be performed on the bucket and its objects.
+
+Viewing Bucket Policies
+1. Log in to the Linode Cloud Manager and navigate to the "Object Storage" section.
+2. Click on the bucket you want to view the policy for.
+3. In the bucket details page, look for the "Bucket Policy" section.
+4. The current bucket policy will be displayed in JSON format.
+
+Updating Bucket Policies
+1. Log in to the Linode Cloud Manager and navigate to the "Object Storage" section.
+2. Click on the bucket you want to update the policy for.
+3. In the bucket details page, click the "Edit Bucket Policy" button.
+4. In the policy editor, modify the JSON policy document as needed.
+5. Click the "Save Changes" button to apply the updated policy.
+
+Here's an example of a bucket policy that grants full access to the bucket and its objects:
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "*"
+      },
+      "Action": [
+        "s3:GetBucketLocation",
+        "s3:ListBucket",
+        "s3:ListBucketMultipartUploads",
+        "s3:GetObject",
+        "s3:PutObject",
+        "s3:DeleteObject",
+        "s3:AbortMultipartUpload"
+      ],
+      "Resource": [
+        "arn:aws:s3:::acme-bucket",
+        "arn:aws:s3:::acme-bucket/*"
+      ]
+    }
+  ]
+}
+```
+
+Object Expiration
+Linode Object Storage allows you to configure object expiration policies to automatically delete objects after a specified period of time. This can be useful for managing the lifecycle of your data and reducing storage costs.
+
+Viewing Object Expiration Policies
+1. Log in to the Linode Cloud Manager and navigate to the "Object Storage" section.
+2. Click on the bucket you want to view the expiration policy for.
+3. In the bucket details page, look for the "Lifecycle Rules" section.
+4. The current object expiration policy will be displayed, including the rule's status, trigger conditions, and actions.
+
+Updating Object Expiration Policies
+1. Log in to the Linode Cloud Manager and navigate to the "Object Storage" section.
+2. Click on the bucket you want to update the expiration policy for.
+3. In the bucket details page, click the "Edit Lifecycle Rules" button.
+4. In the policy editor, you can add, modify, or remove lifecycle rules as needed.
+5. Click the "Save Changes" button to apply the updated policy.
+
+Here's an example of an object expiration policy that deletes objects older than 30 days:
+
+```json
+{
+  "Rules": [
+    {
+      "ID": "DeleteOldObjects",
+      "Status": "Enabled",
+      "Transitions": [],
+      "Expiration": {
+        "Days": 30
+      }
+    }
+  ]
+}
+```
+
+In this example, the "DeleteOldObjects" rule is enabled and configured to delete objects that are older than 30 days. You can customize the rule's conditions and actions to suit your specific needs, such as transitioning objects to a different storage class or applying different expiration periods based on object prefixes or tags.
+
+Conclusion
+Linode Object Storage provides a reliable and scalable solution for storing and managing your data. This documentation has covered the key aspects of accessing your Linode Object Storage, managing bucket policies, and configuring object expiration policies. By understanding and leveraging these features, you can effectively organize and maintain your data in Linode Object Storage.
+
+If you have any further questions or need assistance, please refer to the Linode documentation or reach out to Linode support for additional guidance.

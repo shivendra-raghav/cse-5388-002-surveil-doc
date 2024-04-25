@@ -1,0 +1,74 @@
+Google Cloud Architecture Documentation
+
+Introduction
+This documentation provides an overview of the Google Cloud services currently utilized in the admin's Google Cloud account. The focus of this documentation will be on the following services: Google Kubernetes Engine, Container Registry, and Cloud Functions. The procedures for viewing and updating these services will be discussed in detail to ensure the admin has a comprehensive understanding of their current cloud infrastructure.
+
+Latest Update By: John Smith
+Date: June 15, 2023
+
+Service Details
+
+Google Kubernetes Engine
+Google Kubernetes Engine (GKE) is a managed, production-ready environment for running containerized applications. It brings our latest innovations in developer productivity, resource efficiency, automated operations, and open source flexibility to accelerate your time to market.
+
+Viewing GKE Clusters:
+To view the current GKE clusters in the admin's Google Cloud account, follow these steps:
+1. Log in to the Google Cloud Console.
+2. Navigate to the "Kubernetes Engine" section.
+3. In the "Clusters" tab, you will see a list of all the GKE clusters currently deployed in the account.
+4. Click on a specific cluster to view its details, such as the node count, version, and networking configuration.
+
+Updating GKE Clusters:
+To update an existing GKE cluster, follow these steps:
+1. Log in to the Google Cloud Console.
+2. Navigate to the "Kubernetes Engine" section.
+3. In the "Clusters" tab, click on the cluster you want to update.
+4. Click the "Edit" button to access the cluster's configuration settings.
+5. Make the desired changes, such as updating the node count, version, or resource settings.
+6. Click "Save" to apply the changes to the cluster.
+
+It's important to note that updating a GKE cluster may require some downtime, as the cluster may need to be recreated or nodes may need to be replaced. It's recommended to plan for the update during a maintenance window to minimize disruption to your applications.
+
+Container Registry
+Google Container Registry is a private container image registry that runs on Google Cloud. It allows you to store and manage your Docker and other container images in a private registry, accessible from your Google Cloud projects.
+
+Viewing Container Registry Repositories:
+To view the container image repositories in the admin's Google Cloud account, follow these steps:
+1. Log in to the Google Cloud Console.
+2. Navigate to the "Container Registry" section.
+3. You will see a list of all the container image repositories in the account.
+4. Click on a specific repository to view its details, such as the list of tags and the most recent images.
+
+Updating Container Registry Repositories:
+To update a container image repository in the Container Registry, follow these steps:
+1. Log in to the Google Cloud Console.
+2. Navigate to the "Container Registry" section.
+3. Click on the repository you want to update.
+4. If you need to push a new image to the repository, follow the provided authentication steps and use the docker commands to push the image.
+5. If you need to delete an image from the repository, you can select the image tag and click the "Delete" button.
+
+It's important to note that when updating container images in the Container Registry, you should ensure that your deployment configurations (e.g., Kubernetes manifests) are also updated to use the new image versions.
+
+Cloud Functions
+Google Cloud Functions is a serverless compute service that lets you run your code in response to various events, without the need to manage any infrastructure. It's an event-driven, scalable, and highly available computing service that can simplify the process of building and maintaining applications.
+
+Viewing Cloud Functions:
+To view the Cloud Functions in the admin's Google Cloud account, follow these steps:
+1. Log in to the Google Cloud Console.
+2. Navigate to the "Cloud Functions" section.
+3. You will see a list of all the Cloud Functions currently deployed in the account.
+4. Click on a specific function to view its details, such as the trigger type, runtime, and code.
+
+Updating Cloud Functions:
+To update an existing Cloud Function, follow these steps:
+1. Log in to the Google Cloud Console.
+2. Navigate to the "Cloud Functions" section.
+3. Click on the function you want to update.
+4. Click the "Edit" button to access the function's configuration settings.
+5. Make the desired changes, such as updating the function's code, trigger type, or runtime.
+6. Click "Save" to apply the changes to the function.
+
+It's important to note that when updating a Cloud Function, you should thoroughly test the function to ensure it is still working as expected, especially if you are making changes to the function's code.
+
+Summary
+This documentation has provided an overview of the key Google Cloud services utilized in the admin's Google Cloud account, including Google Kubernetes Engine, Container Registry, and Cloud Functions. The procedures for viewing and updating these services have been outlined to ensure the admin has a comprehensive understanding of the current cloud infrastructure. By regularly reviewing and updating these services, the admin can maintain a secure and efficient cloud environment that supports the organization's needs.

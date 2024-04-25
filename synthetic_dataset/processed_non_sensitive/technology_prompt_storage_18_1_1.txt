@@ -1,0 +1,97 @@
+# StackPath Edge Storage Documentation
+
+## Introduction
+
+StackPath Edge Storage is a powerful and highly scalable cloud storage solution that provides reliable and secure data storage and delivery at the edge of the network. Designed to meet the demands of modern applications and services, StackPath Edge Storage offers a range of features and functionalities that make it an ideal choice for organizations of all sizes.
+
+This comprehensive documentation will guide you through the essential aspects of StackPath Edge Storage, including accessing and managing your account, configuring edge rules, and understanding data replication capabilities. Whether you're a seasoned cloud storage user or just getting started, this guide will equip you with the knowledge and tools you need to leverage the full potential of StackPath Edge Storage.
+
+## StackPath Edge Storage Access Details
+
+### Viewing Account Details
+
+To view your StackPath Edge Storage account details, follow these steps:
+
+1. Log in to your StackPath customer portal at https://control.stackpath.com.
+2. Navigate to the "Edge Storage" section of the dashboard.
+3. Here, you'll find an overview of your Edge Storage account, including your available storage capacity, data usage, and billing information.
+
+### Updating Account Details
+
+To update your StackPath Edge Storage account details, such as your billing information or user access settings, follow these steps:
+
+1. Log in to your StackPath customer portal at https://control.stackpath.com.
+2. Navigate to the "Account" section of the dashboard.
+3. Click on the "Billing" tab to update your payment methods or billing address.
+4. To manage user access, click on the "Users" tab and then the "Invite User" button to add new team members or update existing user permissions.
+
+### Programmatic Access
+
+StackPath Edge Storage provides a comprehensive API that allows you to automate and integrate various storage management tasks programmatically. To access the API, you'll need to generate an API key from your StackPath customer portal.
+
+1. Log in to your StackPath customer portal at https://control.stackpath.com.
+2. Navigate to the "API" section of the dashboard.
+3. Click the "Generate API Key" button to create a new API key.
+4. Copy the API key and keep it secure, as it will be used to authenticate your programmatic requests.
+
+With your API key, you can use the StackPath Edge Storage API to perform a variety of operations, such as uploading and downloading files, managing edge rules, and monitoring storage usage. Refer to the StackPath Edge Storage API documentation for detailed information on available endpoints and usage examples.
+
+## Edge Rules
+
+Edge rules are a powerful feature of StackPath Edge Storage that allows you to customize the behavior of your data storage and delivery at the edge of the network. By defining edge rules, you can optimize performance, enhance security, and ensure compliance with your specific requirements.
+
+### Viewing Edge Rules
+
+To view the edge rules configured for your StackPath Edge Storage account, follow these steps:
+
+1. Log in to your StackPath customer portal at https://control.stackpath.com.
+2. Navigate to the "Edge Storage" section of the dashboard.
+3. Click on the "Edge Rules" tab to see a list of all the rules you have configured.
+4. For each rule, you'll see details such as the rule name, the matching path or pattern, the associated actions, and the rule's current status (enabled or disabled).
+
+### Creating and Updating Edge Rules
+
+To create a new edge rule or update an existing one, follow these steps:
+
+1. Log in to your StackPath customer portal at https://control.stackpath.com.
+2. Navigate to the "Edge Storage" section of the dashboard.
+3. Click on the "Edge Rules" tab.
+4. To create a new rule, click the "Create New Rule" button.
+5. To update an existing rule, click the rule name or the "Edit" button.
+6. In the rule configuration form, you can specify the following details:
+   - Rule name: A unique name to identify the rule, e.g., "Cacheable Content".
+   - Matching pattern: The path or pattern that will trigger the rule, e.g., "/images/*".
+   - Actions: The actions to be performed when the rule is triggered, such as caching, compression, or redirection.
+   - Status: Whether the rule is enabled or disabled.
+7. Save the changes to apply the new or updated rule.
+
+Remember, edge rules are a powerful feature, and it's important to carefully consider the implications of your rule configurations to ensure optimal performance and security for your StackPath Edge Storage solution.
+
+## Data Replication
+
+StackPath Edge Storage offers robust data replication capabilities to ensure the availability and durability of your stored data. By default, your data is replicated across multiple geographically distributed data centers, providing redundancy and fault tolerance.
+
+### Data Replication Overview
+
+StackPath Edge Storage employs a multi-copy replication strategy, where your data is stored in multiple copies across different data centers. This redundancy ensures that your data remains available and accessible even in the event of a hardware failure or regional outage.
+
+The number of data copies and the specific data centers used for replication are managed by StackPath's infrastructure, ensuring optimal performance and reliability for your application's needs. This replication process is transparent to you, the user, and is automatically handled by the StackPath Edge Storage system.
+
+### Monitoring Data Replication
+
+To monitor the replication status of your StackPath Edge Storage data, you can use the StackPath customer portal or the StackPath Edge Storage API.
+
+1. **StackPath Customer Portal**:
+   - Log in to your StackPath customer portal at https://control.stackpath.com.
+   - Navigate to the "Edge Storage" section of the dashboard.
+   - Click on the "Replication" tab to view the current replication status of your data.
+   - Here, you can see the number of data copies, the data centers where your data is stored, and the overall health of the replication process.
+
+2. **StackPath Edge Storage API**:
+   - Use your StackPath API key to make authenticated requests to the StackPath Edge Storage API.
+   - Refer to the API documentation for details on the available endpoints and methods for retrieving replication information programmatically.
+   - This allows you to integrate data replication monitoring into your own applications or workflow automation tools.
+
+By regularly monitoring the replication status of your StackPath Edge Storage data, you can ensure that your critical information is always available and protected against potential failures or disasters.
+
+In conclusion, StackPath Edge Storage is a highly capable and reliable cloud storage solution that provides advanced features and functionalities to meet the needs of modern applications and services. By understanding the account access details, edge rules, and data replication capabilities, you can unlock the full potential of StackPath Edge Storage and leverage it to enhance the performance, security, and availability of your digital assets.

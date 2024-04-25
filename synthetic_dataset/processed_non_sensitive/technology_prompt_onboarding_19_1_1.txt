@@ -1,0 +1,76 @@
+Here is the updated value without tags and using the provided standards:
+
+UX Researcher Onboarding Documentation
+
+Introduction
+
+Welcome to the Axure Design Studio! As a new UX researcher, you play a crucial role in our mission to create exceptional user experiences for our clients. This onboarding documentation will guide you through the essential processes and tools you'll need to get started on your journey with our team.
+
+In this comprehensive documentation, you will find information on installing and utilizing our user research tools, as well as instructions for handling international payment processing. Additionally, you will have access to the contact information for our UX Director, Samantha Williams, who will be your primary point of contact for any questions or concerns that may arise during your onboarding and beyond.
+
+We are excited to have you on board and look forward to the valuable insights and expertise you will bring to our projects. Let's dive in and get you set up for success!
+
+User Research Tool Installation
+
+As a UX researcher, you will be utilizing a suite of cutting-edge user research tools to gather and analyze data that will drive the design decisions for our clients' products and services. It is crucial that you familiarize yourself with the installation and configuration of these tools to ensure a seamless workflow.
+
+1. UserTesting.com
+   - UserTesting.com is our primary platform for conducting remote user testing sessions. To get started, visit the UserTesting.com website and create a new account using your company email address.
+   - Once your account is set up, you will need to complete the platform's onboarding process, which includes a brief tutorial on setting up user tests, recruiting participants, and reviewing test recordings.
+   - Be sure to review the UserTesting.com support documentation and attend any training sessions offered to become proficient in using the tool.
+
+2. Hotjar
+   - Hotjar is a powerful user behavior analytics tool that will provide you with valuable insights into how users interact with our clients' digital products.
+   - To set up Hotjar, log in to the Hotjar dashboard using your unique company credentials. You will then need to create a new site and follow the installation instructions to integrate the Hotjar tracking code onto your client's website or application.
+   - Familiarize yourself with Hotjar's various features, such as heatmaps, session recordings, and user feedback surveys, to maximize the tool's capabilities.
+
+3. Maze
+   - Maze is a user testing platform that allows you to create and conduct interactive prototyping studies with users.
+   - To get started with Maze, sign up for a new account using your company email address. Once your account is set up, you can begin creating test projects and inviting participants to provide feedback on your clients' prototypes.
+   - Review the Maze documentation and attend any training sessions to learn how to effectively design and run prototype testing studies.
+
+Remember, proficiency with these user research tools is crucial for your success as a UX researcher. Take the time to thoroughly understand their capabilities and best practices to ensure you are providing our clients with high-quality insights and recommendations.
+
+International Payment Processing
+
+As a UX researcher, you may occasionally be required to work with international clients who will be paying for your services. It is essential that you familiarize yourself with the processes and requirements for handling international payments to ensure a smooth and compliant experience.
+
+1. Invoicing and Payment Expectations
+   - When working with international clients, it is crucial to establish clear payment terms and expectations upfront. This includes discussing the preferred payment method, currency, and any applicable taxes or fees.
+   - Create professional invoices that clearly outline the services provided, the agreed-upon rates, and the payment due date. Be sure to include your company's banking information to facilitate the international transfer.
+   - Inform clients of your payment policies, including any late fees or penalties for missed or delayed payments. This will help set the right expectations and avoid any misunderstandings.
+
+2. Currency Conversion and Fees
+   - When receiving payments from international clients, you will need to consider the applicable currency conversion rates and any associated fees. Research the current exchange rates and factor in any bank or payment processor fees to ensure you are receiving the full amount owed.
+   - Consider using a reputable online currency converter or consulting with your bank to determine the most accurate exchange rate and to minimize the impact of conversion fees.
+   - Be mindful of any fluctuations in exchange rates that may occur between the time the client submits the payment and when the funds are received in your account. This can impact the final amount you receive.
+
+3. Tax Compliance
+   - Depending on the country of your international client, there may be specific tax requirements or withholding obligations that you need to be aware of.
+   - Research the tax laws and regulations in the client's country and consult with a tax professional if necessary to ensure you are complying with all relevant tax obligations.
+   - Keep detailed records of your international transactions, including invoices, payment receipts, and any tax-related documentation, to maintain a clear audit trail.
+
+By familiarizing yourself with the processes and best practices for handling international payments, you can ensure a seamless and compliant experience when working with our global client base. If you have any questions or concerns, please don't hesitate to reach out to the UX Director for further guidance.
+
+UX Director Contact Information
+
+Should you have any questions or concerns during your onboarding process or throughout your tenure as a UX researcher, please don't hesitate to reach out to our UX Director, Samantha Williams, for assistance.
+
+Samantha Williams
+UX Director
+Axure Design Studio
+Email: samantha.williams@axuredesign.com
+Phone: (555) 123-4567
+
+The UX Director is your primary point of contact for all matters related to your role as a UX researcher. They are responsible for overseeing the UX research efforts, providing guidance and support, and ensuring the successful delivery of client projects.
+
+Feel free to schedule a meeting with the UX Director to discuss any of the following:
+
+- Questions or concerns about the user research tools and their implementation
+- Clarification on international payment processing and tax compliance
+- Feedback or suggestions for improving the onboarding process
+- Any other issues or challenges you may encounter during your work
+
+The UX Director is committed to your success and will be available to provide the necessary support and resources to help you thrive in your role as a UX researcher at our design studio.
+
+We are excited to have you on board and look forward to the valuable contributions you will make to our team and our clients' projects.

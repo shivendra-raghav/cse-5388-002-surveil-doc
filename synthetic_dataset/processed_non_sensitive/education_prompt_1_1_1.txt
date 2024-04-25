@@ -1,0 +1,54 @@
+Here is the updated value without tags and using the provided standards:
+
+Student Enrollment Form
+
+Personal Information:
+Full Name: John Michael Doe
+Date of Birth: 05/12/2005
+Gender: Male
+Permanent Address: 123 Main St, Anytown, California, 12345, United States
+Mailing Address (if different): Same as above
+Phone Number: 555-123-4567
+Email Address: johndoe@email.com
+Social Security Number (or National ID Number): **** (provide your unique national ID number)
+
+Emergency Contact Information:
+Full Name: Jane Doe
+Relationship to Student: Parent
+Phone Number: 555-987-6543
+Email Address: janedoe@email.com
+
+Academic Information:
+Applying for Grade Level: Grade 9
+Desired Start Date: 08/15/2023
+Previous School Attended: Anytown Middle School, Anytown, California
+Reason for Transferring (if applicable): N/A
+Grade Point Average (GPA) or Academic Standing: 3.75
+Honors, Awards, or Achievements: National Honor Society, Student Council President, Volunteer of the Year
+Special Needs or Accommodations: None
+
+Background Information:
+Citizenship Status: Citizen
+Country of Citizenship: United States
+Visa Type (if applicable): N/A
+Ethnicity (optional): Caucasian
+Primary Language Spoken at Home: English
+Secondary Languages Spoken: Spanish
+
+Medical Information:
+Health Insurance Provider: ABC Health Insurance
+Policy Number: 1234567890
+Known Allergies or Medical Conditions: Peanut allergy
+Current Medications: None
+Primary Care Physician: Dr. Jane Smith, 555-555-5555
+
+Signature and Agreement:
+By signing this form, I certify that the information provided is true and accurate to the best of my knowledge. I understand that any false or misleading information may result in the rejection of this application or the subsequent dismissal of the student.
+
+Student Signature: (Provide student's signature)
+Date: 06/01/2023
+
+Parent/Guardian Signature (if student is a minor): (Provide parent/guardian's signature)
+Date: 06/01/2023
+
+This form and all supporting documents should be submitted to the school's admissions office by the designated deadline. Please contact the admissions office if you have any questions or require assistance with the enrollment process.

@@ -1,0 +1,99 @@
+IBM APIC Account Documentation
+
+Introduction:
+
+IBM API Connect (APIC) is a comprehensive API management platform that enables organizations to securely expose, manage, and monetize their APIs. APIC provides a robust set of features to support the entire API lifecycle, from design and development to deployment, security, and analytics. The IBM APIC account offers a comprehensive solution for managing and governing APIs, ensuring consistent and reliable API access, and driving API adoption and consumption.
+
+This documentation provides an overview of the IBM APIC account, including details about the service, a tutorial on adding, updating, and deleting API endpoints, and a summary of the key capabilities and benefits of the platform.
+
+API Connect Service Details:
+
+The IBM APIC account offers a comprehensive set of features and capabilities to support the management and governance of APIs. Some of the key service details include:
+
+1. API Design and Development:
+   - Intuitive API design tools for creating and modeling APIs
+   - Support for a variety of API styles, including REST, GraphQL, and SOAP
+   - Integration with leading API design tools, such as Swagger and RAML
+   - Collaborative API development and versioning capabilities
+
+2. API Lifecycle Management:
+   - End-to-end API lifecycle management, from design to deployment and retirement
+   - Seamless integration with CI/CD pipelines for automated API publishing
+   - Comprehensive API testing and validation capabilities
+   - API deprecation and versioning management
+
+3. API Security and Access Control:
+   - Robust authentication and authorization mechanisms, including OAuth 2.0 and API keys
+   - Fine-grained access control and role-based permissions
+   - Advanced API threat detection and protection features
+   - Integration with enterprise identity management systems
+
+4. API Analytics and Monitoring:
+   - Comprehensive API usage analytics and reporting
+   - Real-time monitoring of API performance and health
+   - Advanced analytics and insights to drive API optimization and monetization
+   - Integration with leading monitoring and observability tools
+
+5. API Monetization and Marketplace:
+   - Ability to create and manage API plans, pricing, and subscription models
+   - API marketplace for publishing and promoting APIs to external developers
+   - Automated API billing and revenue sharing capabilities
+   - Flexible monetization options, including usage-based and subscription-based pricing
+
+6. Developer Portal and Community:
+   - Customizable developer portal for API documentation, onboarding, and self-service
+   - Developer community features, such as forums, blogs, and API catalogs
+   - Seamless integration with existing developer portals and communities
+   - Comprehensive API documentation and support resources
+
+The IBM APIC account offers a comprehensive platform for managing and governing APIs, providing organizations with the tools and capabilities to securely expose, manage, and monetize their API assets.
+
+Tutorial: Adding, Updating, and Deleting API Endpoints
+
+This tutorial will guide you through the process of adding, updating, and deleting API endpoints within the IBM APIC account.
+
+Adding a New API Endpoint:
+
+1. Log in to the IBM APIC management console.
+2. Navigate to the "APIs" section of the console.
+3. Click on the "Add" button to create a new API.
+4. Provide a unique name and description for the API.
+5. Select the appropriate API style (REST, GraphQL, SOAP, etc.) and configure the base path and other settings.
+6. Define the API's operations and endpoints, including HTTP methods, request and response payloads, and any required parameters.
+7. Configure the API's security settings, such as authentication and authorization mechanisms.
+8. Review and test the API using the built-in API editor and testing tools.
+9. Publish the API to make it available for consumption.
+
+Updating an Existing API Endpoint:
+
+1. Log in to the IBM APIC management console.
+2. Navigate to the "APIs" section and locate the API you want to update.
+3. Click on the API to open its details.
+4. Make the necessary changes to the API, such as updating the endpoints, modifying the request/response payloads, or adjusting the security settings.
+5. Test the updated API using the built-in API editor and testing tools.
+6. Publish the updated API to make the changes available to consumers.
+
+Deleting an API Endpoint:
+
+1. Log in to the IBM APIC management console.
+2. Navigate to the "APIs" section and locate the API you want to delete.
+3. Click on the API to open its details.
+4. Review the API's usage and dependencies to ensure that it can be safely removed.
+5. Click on the "Delete" button to initiate the API deletion process.
+6. Confirm the deletion to permanently remove the API from the IBM APIC account.
+
+It's important to note that when deleting an API endpoint, you should ensure that any existing consumers or integrations are notified and updated accordingly. Additionally, you may want to consider deprecating the API before deletion to provide a smooth transition for your API consumers.
+
+Summary:
+
+The IBM APIC account provides a comprehensive platform for managing and governing APIs, offering a robust set of features and capabilities to support the entire API lifecycle. From API design and development to security, analytics, and monetization, the IBM APIC account delivers a powerful and flexible solution for organizations looking to effectively manage and expose their API assets.
+
+Key benefits of the IBM APIC account include:
+
+- Streamlined API lifecycle management, from design to deployment and retirement
+- Robust API security and access control mechanisms, ensuring secure and reliable API access
+- Comprehensive API analytics and monitoring capabilities, providing deep insights into API usage and performance
+- Flexible API monetization options, enabling organizations to generate revenue from their API assets
+- Seamless integration with developer portals and communities, facilitating API adoption and consumption
+
+By leveraging the IBM APIC account, organizations can unlock the full potential of their API strategies, driving innovation, fostering ecosystem collaboration, and delivering exceptional digital experiences for their customers and partners.

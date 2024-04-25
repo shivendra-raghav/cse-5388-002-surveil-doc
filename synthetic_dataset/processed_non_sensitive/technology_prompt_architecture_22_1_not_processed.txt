@@ -1,0 +1,55 @@
+Serverless Architecture Documentation
+
+Introduction:
+The serverless architecture implemented for the admin's account leverages the power and flexibility of AWS Lambda, API Gateway, and DynamoDB to create a scalable, cost-effective, and highly available solution. This documentation provides a comprehensive overview of the services involved, their configuration, and the procedures for viewing and updating the deployed resources.
+
+Latest Update By: Jane Doe, Serverless Solutions Architect
+
+Service Details:
+
+AWS Lambda:
+AWS Lambda is the core of the serverless architecture, responsible for executing the application logic. The admin's account utilizes Lambda functions for the following key functionalities:
+
+1. User Authentication: A Lambda function handles user authentication, validating credentials and authorizing access to the system.
+2. Data Processing: Several Lambda functions are responsible for processing and manipulating data, such as creating, retrieving, updating, and deleting records in the DynamoDB database.
+3. Notification Service: A Lambda function is triggered by DynamoDB stream events to send notifications to users about important updates or changes.
+
+To view the deployed Lambda functions, the admin can navigate to the AWS Lambda console in the AWS Management Console. This will provide an overview of all the functions, including their names, descriptions, runtime, memory allocation, and execution time. The admin can also view the function code, configuration, and logs to understand the implementation and troubleshoot any issues.
+
+To update a Lambda function, the admin can follow these steps:
+1. Navigate to the AWS Lambda console and locate the function to be updated.
+2. Click on the function name to open the function details page.
+3. In the "Code" tab, the admin can either upload a new version of the function code or edit the code directly in the AWS Lambda console.
+4. Update the function configuration, such as memory allocation, timeout, or environment variables, as needed.
+5. Save the changes, and the updated Lambda function will be deployed automatically.
+
+API Gateway:
+API Gateway is the entry point for client applications to interact with the serverless architecture. The admin's account utilizes API Gateway to expose the following endpoints:
+
+1. Authentication Endpoint: This endpoint handles user authentication, accepting login credentials and returning an access token.
+2. Data Management Endpoints: These endpoints allow clients to perform CRUD (Create, Read, Update, Delete) operations on the data stored in the DynamoDB database.
+3. Notification Endpoint: This endpoint enables clients to subscribe to and receive notifications about important updates or changes.
+
+To view the deployed API Gateway resources, the admin can navigate to the API Gateway console in the AWS Management Console. This will provide an overview of the API, including the configured stages, methods, and resource paths.
+
+To update the API Gateway configuration, the admin can follow these steps:
+1. Navigate to the API Gateway console and locate the API to be updated.
+2. In the API details page, the admin can modify the API settings, such as the name, description, or endpoint configuration.
+3. Update the API resources, methods, and integrations as needed, adding new endpoints or modifying existing ones.
+4. Deploy the API changes to the desired stage.
+
+DynamoDB:
+DynamoDB is the NoSQL database service used in the serverless architecture to store and manage the application data. The admin's account utilizes DynamoDB to store user information, application data, and event logs.
+
+To view the DynamoDB tables in the admin's account, the admin can navigate to the DynamoDB console in the AWS Management Console. This will provide an overview of the tables, including their names, primary keys, read and write capacities, and other relevant metrics.
+
+To update a DynamoDB table, the admin can follow these steps:
+1. Navigate to the DynamoDB console and locate the table to be updated.
+2. In the table details page, the admin can modify the table settings, such as the name, primary key, or provisioned throughput.
+3. Update the table's global secondary indexes, if needed, to optimize query performance.
+4. Add, modify, or delete table items as required to maintain the data integrity.
+
+Summary:
+The serverless architecture implemented for the admin's account leverages the power of AWS Lambda, API Gateway, and DynamoDB to create a scalable, cost-effective, and highly available solution. The admin can easily view and update the deployed services through the respective AWS Management Console interfaces, ensuring the continuous optimization and maintenance of the system.
+
+This documentation provides a comprehensive overview of the services involved, their configuration, and the procedures for managing the serverless architecture. By following the guidelines outlined in this document, the admin can effectively maintain and enhance the functionality of the system to meet the evolving business requirements.

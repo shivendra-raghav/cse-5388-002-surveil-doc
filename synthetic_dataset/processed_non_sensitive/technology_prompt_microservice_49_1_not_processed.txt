@@ -1,0 +1,77 @@
+```
+Shipping Service Documentation
+
+Introduction
+The Shipping Service is a microservice that manages the shipping process for an e-commerce platform. It is designed to use the Transactional Outbox pattern to publish shipping events reliably, ensuring that all events are successfully delivered to the message broker without the risk of data loss or duplication.
+
+This documentation provides a detailed overview of the Shipping Service, including its architecture, authentication, the outbox table, message relay process, idempotency handling, and error handling. The goal is to equip developers and operators with a comprehensive understanding of the service, enabling them to integrate it seamlessly into their application ecosystem and maintain its reliable operation.
+
+Authentication
+The Shipping Service employs a token-based authentication mechanism to secure its API endpoints. Clients must include a valid access token in the 'Authorization' header of their requests to be granted access to the service.
+
+The access tokens are issued by a centralized Authentication Service, which handles user authentication and authorization. Clients can obtain an access token by providing their credentials (e.g., username and password) to the Authentication Service and receiving a signed JWT (JSON Web Token) in return.
+
+The Shipping Service validates the incoming access tokens by verifying their digital signature using the public key of the Authentication Service. If the token is valid, the service proceeds to process the request; otherwise, it rejects the request with a 401 Unauthorized response.
+
+Outbox Table
+The Shipping Service uses a dedicated database table, named 'ShippingOutboxEvent', to store events that need to be published to the message broker. The table has the following schema:
+
+```
+ShippingOutboxEvent:
+    id: UUID
+    aggregateId: UUID
+    eventType: String
+    eventData: JSON
+    created_at: Timestamp
+```
+
+The 'id' column is a unique identifier for the outbox event, typically a UUID (Universally Unique Identifier). The 'aggregateId' column stores the identifier of the aggregate or entity that the event is associated with, which can be used for event sourcing or data lineage purposes.
+
+The 'eventType' column specifies the type of the event, such as 'ShipmentCreated', 'ShipmentUpdated', or 'ShipmentCancelled'. The 'eventData' column stores the event payload in JSON format, which can be used to reconstruct the event details.
+
+The 'created_at' column records the timestamp when the event was inserted into the outbox table, which can be used for event ordering and time-based filtering.
+
+Message Relay
+The Shipping Service uses a dedicated background process, known as the Message Relay, to poll the 'ShippingOutboxEvent' table and publish the events to the message broker. The Message Relay follows these steps:
+
+1. Fetch a batch of unprocessed events from the 'ShippingOutboxEvent' table, using a locking mechanism to ensure that the events are not processed by multiple instances of the Message Relay concurrently.
+
+2. For each event in the batch, publish the event payload to the message broker using a reliable messaging protocol, such as Apache Kafka or RabbitMQ.
+
+3. After successfully publishing an event, mark the corresponding 'ShippingOutboxEvent' record as processed by updating the database.
+
+4. If an error occurs during the publication of an event, the Message Relay will retry the operation a configurable number of times before marking the event as failed and moving on to the next event in the batch.
+
+The Message Relay is designed to be scalable and highly available, with the ability to run multiple instances of the process in parallel to handle high event throughput. Additionally, the Message Relay can be configured to use various strategies for event batching, retrying, and error handling, depending on the requirements of the application.
+
+Idempotency Handling
+To ensure the reliable delivery of events and prevent data duplication, the Shipping Service implements idempotency handling for the outbox events. This means that if an event is published multiple times, the message broker and downstream consumers will treat it as a single event and not process it more than once.
+
+The Shipping Service achieves idempotency by using the 'id' column of the 'ShippingOutboxEvent' table as a unique identifier for each event. When the Message Relay publishes an event, it includes the 'id' in the message payload. The message broker and downstream consumers can then use this 'id' to detect and discard any duplicate events they receive.
+
+In addition, the Shipping Service also ensures that the 'id' values are unique across all 'ShippingOutboxEvent' records by using a UUID generation mechanism. This prevents the possibility of accidental collisions between event IDs, which could lead to data duplication.
+
+Error Handling
+The Shipping Service has a comprehensive error handling strategy to ensure that any issues that arise during the processing of outbox events are handled gracefully and do not cause the entire system to fail.
+
+When the Message Relay encounters an error while publishing an event to the message broker, it will retry the operation a configurable number of times before marking the event as failed. The failed events are stored in the 'ShippingOutboxEvent' table with a flag indicating their failed status, and the error details are logged for further investigation.
+
+The Shipping Service also provides a dedicated error handling endpoint that allows operators to manually retry the publication of failed events. This endpoint retrieves the failed events from the database, attempts to publish them to the message broker, and updates the event status accordingly.
+
+In the event of a catastrophic failure, such as a database outage or message broker failure, the Shipping Service can be restarted without data loss. The Message Relay will resume processing events from the 'ShippingOutboxEvent' table, ensuring that all events are eventually published to the message broker.
+
+Summary
+The Shipping Service is a microservice that uses the Transactional Outbox pattern to reliably publish shipping events to a message broker. It provides a secure, scalable, and fault-tolerant solution for event-driven architectures, ensuring that all events are successfully delivered without the risk of data loss or duplication.
+
+The key features of the Shipping Service include:
+
+- Token-based authentication for secure API access
+- Dedicated 'ShippingOutboxEvent' table to store outbox events
+- Message Relay process to publish events to the message broker
+- Idempotency handling to prevent data duplication
+- Comprehensive error handling and retry mechanism
+- Ability to manually retry failed events
+- Resilience to catastrophic failures
+
+By following the Transactional Outbox pattern, the Shipping Service guarantees the consistent and reliable delivery of shipping events, enabling downstream systems to respond to changes in the shipping process in a timely and efficient manner.
+```

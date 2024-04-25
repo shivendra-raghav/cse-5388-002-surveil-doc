@@ -1,0 +1,119 @@
+Coupons Service API Documentation
+
+Introduction
+Welcome to the Coupons Service API documentation. This SOAP-based API allows you to perform CRUD (Create, Read, Update, Delete) operations on coupons. The Coupons Service is designed to provide a seamless and efficient way for your application to manage coupons and their associated data.
+
+Latest Update By
+This API documentation was last updated by Alex Johnson on May 10, 2023.
+
+Maintenance Team Details
+The Coupons Service is maintained by the following team:
+
+- Team Lead: Emily Wilson
+- Developer: David Thompson
+- Quality Assurance: Sophia Martinez
+- DevOps Engineer: Daniel Rodriguez
+
+You can reach the maintenance team at coupons.support@techcorp.com for any inquiries or issues related to the Coupons Service.
+
+SOAP Services
+
+1. Create a Coupon
+   - **Endpoint**: /createCoupon
+   - **HTTP Response Codes**:
+     - 200 OK: The coupon was successfully created.
+     - 400 Bad Request: The request payload is invalid or missing required fields.
+     - 500 Internal Server Error: An unexpected error occurred while creating the coupon.
+   - **Request Parameters**:
+     - `couponCode` (string, required): The unique code for the coupon.
+     - `discountAmount` (decimal, required): The discount amount for the coupon.
+     - `expirationDate` (date, required): The date when the coupon expires.
+     - `maxUsage` (integer, required): The maximum number of times the coupon can be used.
+   - **Response**:
+     - `couponId` (string): The unique identifier of the created coupon.
+
+2. Update a Coupon
+   - **Endpoint**: /updateCoupon
+   - **HTTP Response Codes**:
+     - 200 OK: The coupon was successfully updated.
+     - 400 Bad Request: The request payload is invalid or missing required fields.
+     - 404 Not Found: The coupon with the specified ID was not found.
+     - 500 Internal Server Error: An unexpected error occurred while updating the coupon.
+   - **Request Parameters**:
+     - `couponId` (string, required): The unique identifier of the coupon to be updated.
+     - `couponCode` (string, required): The updated coupon code.
+     - `discountAmount` (decimal, required): The updated discount amount.
+     - `expirationDate` (date, required): The updated expiration date.
+     - `maxUsage` (integer, required): The updated maximum usage.
+   - **Response**:
+     - `success` (boolean): Indicates whether the coupon update was successful.
+
+3. List a Coupon
+   - **Endpoint**: /getCoupon
+   - **HTTP Response Codes**:
+     - 200 OK: The coupon was successfully retrieved.
+     - 404 Not Found: The coupon with the specified ID was not found.
+     - 500 Internal Server Error: An unexpected error occurred while retrieving the coupon.
+   - **Request Parameters**:
+     - `couponId` (string, required): The unique identifier of the coupon to be retrieved.
+   - **Response**:
+     - `couponCode` (string): The unique code for the coupon.
+     - `discountAmount` (decimal): The discount amount for the coupon.
+     - `expirationDate` (date): The date when the coupon expires.
+     - `maxUsage` (integer): The maximum number of times the coupon can be used.
+     - `remainingUsage` (integer): The remaining number of times the coupon can be used.
+
+4. List All Coupons
+   - **Endpoint**: /getAllCoupons
+   - **HTTP Response Codes**:
+     - 200 OK: The coupons were successfully retrieved.
+     - 500 Internal Server Error: An unexpected error occurred while retrieving the coupons.
+   - **Request Parameters**: None
+   - **Response**:
+     - `coupons` (array): An array of coupon objects, each with the following properties:
+       - `couponId` (string): The unique identifier of the coupon.
+       - `couponCode` (string): The unique code for the coupon.
+       - `discountAmount` (decimal): The discount amount for the coupon.
+       - `expirationDate` (date): The date when the coupon expires.
+       - `maxUsage` (integer): The maximum number of times the coupon can be used.
+       - `remainingUsage` (integer): The remaining number of times the coupon can be used.
+
+5. Delete a Coupon
+   - **Endpoint**: /deleteCoupon
+   - **HTTP Response Codes**:
+     - 200 OK: The coupon was successfully deleted.
+     - 404 Not Found: The coupon with the specified ID was not found.
+     - 500 Internal Server Error: An unexpected error occurred while deleting the coupon.
+   - **Request Parameters**:
+     - `couponId` (string, required): The unique identifier of the coupon to be deleted.
+   - **Response**:
+     - `success` (boolean): Indicates whether the coupon deletion was successful.
+
+Rate Limit
+The Coupons Service has a rate limit of 100 requests per minute. If the rate limit is exceeded, the API will respond with an HTTP 403 Forbidden status code and the following error message:
+
+```xml
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Client</faultcode>
+      <faultstring>Rate limit exceeded. Please try again later.</faultstring>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+```
+
+Error Handling
+The Coupons Service follows a consistent error handling approach. In case of any errors, the API will respond with an appropriate HTTP status code and an error message in the SOAP response body. The possible error responses are:
+
+- 400 Bad Request: When the request payload is invalid or missing required fields.
+- 403 Forbidden: When the rate limit has been exceeded.
+- 404 Not Found: When the requested coupon or resource is not found.
+- 500 Internal Server Error: When an unexpected error occurs on the server-side.
+
+The error message will be provided in the `faultstring` element of the SOAP fault response.
+
+Summary
+The Coupons Service API provides a comprehensive set of SOAP-based endpoints for managing coupons. With this API, you can create, update, retrieve, and delete coupons, as well as list all available coupons. The API follows industry-standard practices for error handling and rate limiting, ensuring a reliable and scalable service for your application.
+
+If you have any questions or encounter any issues while using the Coupons Service API, please don't hesitate to reach out to the maintenance team at coupons.support@techcorp.com.

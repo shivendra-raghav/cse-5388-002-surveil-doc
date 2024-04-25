@@ -1,0 +1,87 @@
+Here is the generated documentation for the OVHcloud Object Storage:
+
+OVHcloud Object Storage Documentation
+
+Introduction:
+
+OVHcloud Object Storage is a highly scalable, reliable, and secure cloud storage service provided by OVHcloud. It allows users to store and retrieve large amounts of unstructured data, such as files, images, videos, and backups, in a cost-effective and easily accessible manner. With OVHcloud Object Storage, users can ensure the availability and durability of their data, while benefiting from a flexible and easy-to-use interface for managing their storage needs.
+
+This documentation provides a comprehensive overview of the OVHcloud Object Storage service, including details on accessing and managing your storage, enabling versioning, and reviewing access logs.
+
+OVHcloud Object Storage Access Details:
+
+To access your OVHcloud Object Storage, you will need to authenticate using your OVHcloud account credentials. This can be done through the OVHcloud Control Panel, the OVHcloud API, or by using one of the many SDKs and tools that support the OVHcloud Object Storage API.
+
+**Accessing through the OVHcloud Control Panel:**
+1. Log in to the OVHcloud Control Panel (https://www.ovh.com/auth/?action=gotomanager).
+2. Navigate to the "Public Cloud" section and select the appropriate project.
+3. Click on "Object Storage" in the left-hand menu.
+4. Here, you will find the details you need to access your OVHcloud Object Storage, including the endpoint URL, your project ID, and your user ID.
+
+**Accessing through the OVHcloud API:**
+1. Obtain your API credentials (application key and secret) from the OVHcloud Control Panel.
+2. Use the OVHcloud API client library or generate an authentication token to interact with the OVHcloud Object Storage service.
+3. The OVHcloud Object Storage API endpoint is: `https://storage.{region}.cloud.ovh.net/v1/{project_id}/{container_name}`.
+
+**Accessing through SDKs and Tools:**
+OVHcloud Object Storage is compatible with the Amazon S3 API, which means you can use a variety of SDK libraries and tools to interact with your storage. Some popular options include:
+- AWS SDK (Python, Java, JavaScript, etc.)
+- OpenStack Swift API
+- MinIO client
+- Rclone
+
+When using these tools, be sure to configure the appropriate endpoint, project ID, and authentication credentials to connect to your OVHcloud Object Storage.
+
+Versioning:
+
+Versioning is a powerful feature of OVHcloud Object Storage that allows you to keep multiple versions of an object, enabling you to restore previous versions if needed. Versioning is disabled by default, but can be easily enabled for your storage containers.
+
+**Enabling Versioning:**
+1. Log in to the OVHcloud Control Panel and navigate to the "Object Storage" section.
+2. Select the container for which you want to enable versioning.
+3. Click on the "Versions" tab and toggle the "Versioning" option to "Enabled".
+4. (Optional) Configure the versioning settings, such as the maximum number of versions to keep and the expiration period for older versions.
+
+**Managing Versioned Objects:**
+Once versioning is enabled, any updates or deletions to objects in the container will create a new version, which can be accessed and restored as needed.
+
+To view and manage the versions of an object:
+1. Navigate to the "Object Storage" section in the OVHcloud Control Panel.
+2. Select the container containing the versioned object.
+3. Click on the object to view its versions.
+4. You can then download, restore, or delete specific versions of the object as needed.
+
+Alternatively, you can use the OVHcloud API or compatible tools to programmatically manage the versioned objects in your OVHcloud Object Storage.
+
+Access Logs:
+
+OVHcloud Object Storage provides detailed access logs that allow you to track and monitor the usage of your storage. These logs record information about the requests made to your storage, including the source IP, the time of the request, the operation performed, and the object accessed.
+
+**Enabling Access Logging:**
+1. Log in to the OVHcloud Control Panel and navigate to the "Object Storage" section.
+2. Select the container for which you want to enable access logging.
+3. Click on the "Logs" tab and toggle the "Logging" option to "Enabled".
+4. Specify the container where you want to store the access logs.
+
+**Accessing and Reviewing Access Logs:**
+Once access logging is enabled, you can access the logs through the OVHcloud Control Panel or programmatically using the OVHcloud API.
+
+To view the logs in the OVHcloud Control Panel:
+1. Navigate to the "Object Storage" section and select the container with access logging enabled.
+2. Click on the "Logs" tab to see a list of the available log files.
+3. You can download the log files and analyze the data using your preferred tools.
+
+To access the logs programmatically using the OVHcloud API:
+1. Obtain your API credentials (application key and secret) from the OVHcloud Control Panel.
+2. Use the OVHcloud API client library or generate an authentication token to interact with the Object Storage service.
+3. The access logs are stored as objects in the container you specified when enabling access logging. You can list, download, and analyze the log files using the OVHcloud API or compatible tools.
+
+The access logs provide valuable information for monitoring and troubleshooting your OVHcloud Object Storage usage, such as identifying the source of requests, detecting unusual activity, and analyzing storage consumption patterns.
+
+Conclusion:
+
+OVHcloud Object Storage is a powerful and flexible cloud storage solution that offers reliable, scalable, and secure storage for your unstructured data. This documentation has provided an overview of the key features and functionalities of the OVHcloud Object Storage service, including details on accessing and managing your storage, enabling versioning, and reviewing access logs.
+
+By leveraging the capabilities of OVHcloud Object Storage, you can ensure the availability and durability of your data, while benefiting from a cost-effective and easy-to-use storage solution. Whether you're a individual user or a business with large-scale storage needs, OVHcloud Object Storage can help you effectively manage and protect your valuable data.
+
+If you have any further questions or require assistance, please don't hesitate to contact the OVHcloud support team or refer to the additional resources available on the OVHcloud website.

@@ -1,0 +1,101 @@
+Wishlist Service SOAP API Documentation
+
+Introduction:
+The Wishlist Service is a SOAP-based web service that enables CRUD (Create, Read, Update, Delete) operations for wishlist items. This service is designed to provide a seamless and efficient way for users to manage their personal wishlists, allowing them to add, update, retrieve, and remove items as needed. The Wishlist Service is a crucial component of our e-commerce platform, empowering users to keep track of their desired products and share their wishlists with others.
+
+Latest Update By:
+The Wishlist Service was last updated by the development team on October 15th, 2022. This update included bug fixes, performance improvements, and the addition of new features to enhance the user experience.
+
+Maintenance Team Details:
+The Wishlist Service is maintained by the e-commerce platform's dedicated development team, which consists of the following members:
+
+- Lead Developer: John Doe
+- Senior Developer: Jane Smith
+- Junior Developer: Michael Johnson
+- Quality Assurance Analyst: Sarah Lee
+
+The team is responsible for monitoring the service, addressing any issues or bug reports, and implementing new features and enhancements as per the product roadmap. They can be reached at wishlist-support@example.com for any inquiries or support requests.
+
+SOAP Services:
+
+1. Create a Wishlist Item
+   - Endpoint: /CreateWishlistItem
+   - Description: This service allows users to create a new wishlist item.
+   - Request Parameters:
+     - `ItemName` (string): The name of the item to be added to the wishlist.
+     - `ItemDescription` (string): A brief description of the wishlist item.
+     - `ItemPrice` (decimal): The price of the wishlist item.
+     - `ItemURL` (string): The URL of the item, if available.
+   - HTTP Responses:
+     - 200 (OK): The wishlist item was successfully created.
+     - 400 (Bad Request): One or more of the request parameters are missing or invalid.
+     - 401 (Unauthorized): The user is not authenticated to perform this operation.
+     - 403 (Forbidden): The user is not authorized to perform this operation.
+     - 500 (Internal Server Error): An unexpected error occurred while processing the request.
+
+2. Update a Wishlist Item
+   - Endpoint: /UpdateWishlistItem
+   - Description: This service allows users to update an existing wishlist item.
+   - Request Parameters:
+     - `ItemID` (integer): The unique identifier of the wishlist item to be updated.
+     - `ItemName` (string): The updated name of the wishlist item.
+     - `ItemDescription` (string): The updated description of the wishlist item.
+     - `ItemPrice` (decimal): The updated price of the wishlist item.
+     - `ItemURL` (string): The updated URL of the wishlist item.
+   - HTTP Responses:
+     - 200 (OK): The wishlist item was successfully updated.
+     - 400 (Bad Request): One or more of the request parameters are missing or invalid.
+     - 401 (Unauthorized): The user is not authenticated to perform this operation.
+     - 403 (Forbidden): The user is not authorized to perform this operation.
+     - 500 (Internal Server Error): An unexpected error occurred while processing the request.
+
+3. List a Wishlist Item
+   - Endpoint: /GetWishlistItem
+   - Description: This service allows users to retrieve the details of a specific wishlist item.
+   - Request Parameters:
+     - `ItemID` (integer): The unique identifier of the wishlist item to be retrieved.
+   - HTTP Responses:
+     - 200 (OK): The wishlist item details were successfully retrieved.
+     - 400 (Bad Request): The `ItemID` parameter is missing or invalid.
+     - 401 (Unauthorized): The user is not authenticated to perform this operation.
+     - 403 (Forbidden): The user is not authorized to perform this operation.
+     - 500 (Internal Server Error): An unexpected error occurred while processing the request.
+
+4. List All Wishlist Items
+   - Endpoint: /GetAllWishlistItems
+   - Description: This service allows users to retrieve all the wishlist items associated with their account.
+   - Request Parameters: None
+   - HTTP Responses:
+     - 200 (OK): The list of all wishlist items was successfully retrieved.
+     - 401 (Unauthorized): The user is not authenticated to perform this operation.
+     - 403 (Forbidden): The user is not authorized to perform this operation.
+     - 500 (Internal Server Error): An unexpected error occurred while processing the request.
+
+5. Delete a Wishlist Item
+   - Endpoint: /DeleteWishlistItem
+   - Description: This service allows users to remove a specific wishlist item from their account.
+   - Request Parameters:
+     - `ItemID` (integer): The unique identifier of the wishlist item to be deleted.
+   - HTTP Responses:
+     - 200 (OK): The wishlist item was successfully deleted.
+     - 400 (Bad Request): The `ItemID` parameter is missing or invalid.
+     - 401 (Unauthorized): The user is not authenticated to perform this operation.
+     - 403 (Forbidden): The user is not authorized to perform this operation.
+     - 500 (Internal Server Error): An unexpected error occurred while processing the request.
+
+Rate Limit:
+The Wishlist Service has a rate limit of 100 requests per minute per user. If a user exceeds this limit, the service will return a 429 (Too Many Requests) response, and the client should wait before retrying the request.
+
+Error Handling:
+In the event of an error, the Wishlist Service will return one of the following HTTP status codes along with a detailed error message:
+
+- 400 (Bad Request): Indicates that the client has provided invalid or missing parameters in the request.
+- 401 (Unauthorized): Indicates that the client is not authenticated to perform the requested operation.
+- 403 (Forbidden): Indicates that the client is not authorized to perform the requested operation.
+- 429 (Too Many Requests): Indicates that the client has exceeded the rate limit for the service.
+- 500 (Internal Server Error): Indicates that an unexpected error has occurred on the server-side.
+
+The error message will provide additional details about the nature of the error, such as the specific parameter that was invalid or the reason for the unauthorized or forbidden access.
+
+Summary:
+The Wishlist Service is a SOAP-based web service that enables CRUD operations for wishlist items. It provides a comprehensive set of services for users to manage their personal wishlists, including the ability to create, update, retrieve, and delete wishlist items. The service follows the SOAP API specification and includes various HTTP response codes to handle different scenarios, such as successful operations, invalid inputs, authentication and authorization issues, and server-side errors. The Wishlist Service is maintained by a dedicated development team and is subject to a rate limit to ensure the stability and performance of the platform.

@@ -1,0 +1,131 @@
+Here is the generated documentation for the Promotion Service microservice:
+
+Promotion Service API Documentation
+
+Introduction
+The Promotion Service is a RESTful API that enables CRUD (Create, Read, Update, Delete) operations for managing promotions. This service is designed to provide a centralized and efficient way to handle the lifecycle of promotional offers, allowing businesses to create, update, and manage promotions in a scalable and reliable manner.
+
+Latest Update By
+This API documentation was last updated by John Doe on June 15, 2023.
+
+Maintenance Team Details
+The Promotion Service is maintained by the following team:
+
+- Team Lead: Jane Smith (jane.smith@company.com)
+- Development Lead: Michael Johnson (michael.johnson@company.com)
+- Quality Assurance Lead: Sarah Lee (sarah.lee@company.com)
+- DevOps Engineer: David Kim (david.kim@company.com)
+
+REST Services
+
+1. Create a Promotion
+   - Endpoint: `POST /promotions`
+   - Description: This endpoint allows you to create a new promotion.
+   - Request Body:
+     - `name` (string, required): The name of the promotion.
+     - `description` (string, required): The description of the promotion.
+     - `startDate` (string, required): The start date of the promotion in the format "YYYY-MM-DD".
+     - `endDate` (string, required): The end date of the promotion in the format "YYYY-MM-DD".
+     - `discountPercentage` (number, required): The discount percentage of the promotion.
+   - Responses:
+     - `200 OK`: The promotion was created successfully.
+     - `400 Bad Request`: The request body is invalid or missing required fields.
+     - `401 Unauthorized`: The client is not authorized to perform this action.
+     - `403 Forbidden`: The client is not allowed to perform this action.
+     - `500 Internal Server Error`: An unexpected error occurred on the server.
+
+2. Update a Promotion
+   - Endpoint: `PUT /promotions/{id}`
+   - Description: This endpoint allows you to update an existing promotion.
+   - Path Parameters:
+     - `id` (string, required): The ID of the promotion to be updated.
+   - Request Body:
+     - `name` (string, optional): The updated name of the promotion.
+     - `description` (string, optional): The updated description of the promotion.
+     - `startDate` (string, optional): The updated start date of the promotion in the format "YYYY-MM-DD".
+     - `endDate` (string, optional): The updated end date of the promotion in the format "YYYY-MM-DD".
+     - `discountPercentage` (number, optional): The updated discount percentage of the promotion.
+   - Responses:
+     - `200 OK`: The promotion was updated successfully.
+     - `400 Bad Request`: The request body is invalid or missing required fields.
+     - `401 Unauthorized`: The client is not authorized to perform this action.
+     - `403 Forbidden`: The client is not allowed to perform this action.
+     - `404 Not Found`: The promotion with the specified ID was not found.
+     - `500 Internal Server Error`: An unexpected error occurred on the server.
+
+3. List a Promotion
+   - Endpoint: `GET /promotions/{id}`
+   - Description: This endpoint allows you to retrieve the details of a specific promotion.
+   - Path Parameters:
+     - `id` (string, required): The ID of the promotion to be retrieved.
+   - Responses:
+     - `200 OK`: The promotion details were retrieved successfully.
+     - `401 Unauthorized`: The client is not authorized to perform this action.
+     - `403 Forbidden`: The client is not allowed to perform this action.
+     - `404 Not Found`: The promotion with the specified ID was not found.
+     - `500 Internal Server Error`: An unexpected error occurred on the server.
+
+4. List All Promotions
+   - Endpoint: `GET /promotions`
+   - Description: This endpoint allows you to retrieve a list of all available promotions.
+   - Query Parameters:
+     - `page` (integer, optional): The page number to retrieve.
+     - `limit` (integer, optional): The number of promotions to return per page.
+   - Responses:
+     - `200 OK`: The list of promotions was retrieved successfully.
+     - `401 Unauthorized`: The client is not authorized to perform this action.
+     - `403 Forbidden`: The client is not allowed to perform this action.
+     - `500 Internal Server Error`: An unexpected error occurred on the server.
+
+5. Delete a Promotion
+   - Endpoint: `DELETE /promotions/{id}`
+   - Description: This endpoint allows you to delete an existing promotion.
+   - Path Parameters:
+     - `id` (string, required): The ID of the promotion to be deleted.
+   - Responses:
+     - `204 No Content`: The promotion was deleted successfully.
+     - `401 Unauthorized`: The client is not authorized to perform this action.
+     - `403 Forbidden`: The client is not allowed to perform this action.
+     - `404 Not Found`: The promotion with the specified ID was not found.
+     - `500 Internal Server Error`: An unexpected error occurred on the server.
+
+AWS API Gateway Details
+The Promotion Service API is hosted on AWS API Gateway, which provides a secure and scalable platform for managing the API's lifecycle. The API Gateway is configured with the following settings:
+
+- API Gateway Name: Promotion-Service-API
+- API Gateway Endpoint: https://api.example.com/v1/promotions
+- API Gateway Stage: v1
+- API Gateway Deployment: Automatic deployment upon successful merge to the main branch
+- API Key Security: API keys are required for all requests to the API.
+
+Error Handling
+The Promotion Service API follows a consistent error handling approach to provide clear and meaningful error responses to clients. The following HTTP status codes are used to indicate the various types of errors that can occur:
+
+- `400 Bad Request`: The request body is invalid or missing required fields.
+- `401 Unauthorized`: The client is not authorized to perform the requested action.
+- `403 Forbidden`: The client is not allowed to perform the requested action.
+- `404 Not Found`: The requested resource (e.g., a promotion) was not found.
+- `500 Internal Server Error`: An unexpected error occurred on the server.
+- `501 Not Implemented`: The requested functionality is not yet implemented.
+- `502 Bad Gateway`: The API Gateway encountered an error while trying to reach the Promotion Service.
+- `503 Service Unavailable`: The Promotion Service is temporarily unavailable.
+- `504 Gateway Timeout`: The API Gateway timed out while trying to reach the Promotion Service.
+
+In case of an error, the response body will include a JSON object with the following structure:
+
+```json
+{
+  "error": {
+    "code": "string",
+    "message": "string",
+    "details": "string"
+  }
+}
+```
+
+The `code` field represents the error code, the `message` field provides a human-readable error message, and the `details` field can be used to provide additional information about the error.
+
+Summary
+The Promotion Service API provides a comprehensive set of endpoints for managing promotions, enabling businesses to create, update, and delete promotional offers. The API follows a RESTful design, is hosted on AWS API Gateway, and provides a consistent error handling mechanism to ensure a reliable and user-friendly experience for the client applications.
+
+The generated documentation covers the key aspects of the API, including the available REST services, their request and response structures, and the specific HTTP status codes used for error handling. This comprehensive documentation should serve as a valuable resource for developers who need to integrate with the Promotion Service API.

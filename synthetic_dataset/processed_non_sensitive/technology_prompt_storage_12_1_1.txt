@@ -1,0 +1,130 @@
+Wasabi Cloud Storage Documentation
+
+Introduction
+
+Wasabi is a high-performance, affordable, and reliable cloud storage service designed to meet the needs of modern businesses. With Wasabi, you can store and retrieve your data quickly and securely, without the complexity and cost associated with traditional cloud storage providers. This documentation will guide you through the key features and functionality of the Wasabi Cloud Storage platform, helping you to effectively manage and protect your data.
+
+Wasabi Cloud Storage Access Details
+
+Accessing your Wasabi Cloud Storage account is a straightforward process. You can log in to the Wasabi Management Console using your unique username and password. These credentials provide you with programmatic access to your Wasabi Cloud Storage buckets and objects, allowing you to interact with your data using the Wasabi API or the AWS S3 API.
+
+To obtain your Wasabi Access Key ID and Secret Access Key, follow these steps:
+
+1. Log in to the Wasabi Management Console using your Wasabi account credentials.
+2. Navigate to the "Access Keys" section under the "Settings" menu.
+3. Click on the "Create New Access Key" button to generate a new set of credentials.
+4. Copy and securely store your Access Key ID and Secret Access Key. These credentials will be required for any programmatic access to your Wasabi Cloud Storage buckets.
+
+It's important to note that you should treat your Wasabi Access Key and Secret Access Key with the same level of care as you would your login credentials. Protect these credentials from unauthorized access and ensure that they are only used by trusted applications and individuals.
+
+Data Immutability
+
+One of the key features of Wasabi Cloud Storage is its data immutability. Immutable data storage ensures that your data cannot be deleted or modified, providing an additional layer of protection against accidental or malicious data loss. This feature is particularly valuable for compliance-sensitive workloads, data archiving, and long-term data retention.
+
+To enable data immutability for your Wasabi Cloud Storage buckets, follow these steps:
+
+1. Log in to the Wasabi Management Console and navigate to the "Buckets" section.
+2. Select the bucket for which you want to enable data immutability.
+3. Click on the "Properties" tab and locate the "Data Immutability" setting.
+4. Toggle the "Data Immutability" setting to the "Enabled" position.
+5. Confirm your selection, and the data immutability feature will be enabled for the selected bucket.
+
+Once data immutability is enabled, any objects stored in the bucket will be protected from deletion or modification for the specified retention period. This period can be configured to range from 1 day to 100 years, depending on your data retention requirements.
+
+It's important to note that the data immutability feature is irreversible. Once enabled, the retention period cannot be shortened, and objects cannot be deleted until the retention period has expired. This ensures the integrity and long-term preservation of your critical data.
+
+S3 Compatibility
+
+Wasabi Cloud Storage is designed to be fully compatible with the Amazon S3 API, allowing you to leverage your existing S3-compatible tools and applications to manage your data on the Wasabi platform. This compatibility ensures a seamless transition for users already familiar with the S3 ecosystem, as they can continue to use their preferred S3-compatible tools and APIs to interact with their Wasabi Cloud Storage buckets.
+
+To access your Wasabi Cloud Storage buckets using the S3 API, you can use the same set of Access Key ID and Secret Access Key that you use to log in to the Wasabi Management Console. These credentials provide you with the necessary permissions to perform various operations, such as creating and deleting buckets, uploading and downloading objects, and managing access control policies.
+
+Here's an example of how you can use the AWS Command Line Interface (CLI) to interact with your Wasabi Cloud Storage buckets:
+
+```
+# Configure the AWS CLI to use your Wasabi credentials
+aws configure --profile wasabi
+AWS Access Key ID [None]: your unique access key ID
+AWS Secret Access Key [None]: your unique secret access key 
+Default region name [None]: us-east-1
+Default output format [None]: json
+
+# List your Wasabi buckets
+aws --profile wasabi s3 ls
+
+# Create a new Wasabi bucket
+aws --profile wasabi s3 mb s3://acme-storage-bucket
+
+# Upload a file to your Wasabi bucket
+aws --profile wasabi s3 cp local-file.txt s3://acme-storage-bucket/remote-file.txt
+
+# Download a file from your Wasabi bucket
+aws --profile wasabi s3 cp s3://acme-storage-bucket/remote-file.txt local-file.txt
+```
+
+In addition to the AWS CLI, you can also use any S3-compatible client or library to interact with your Wasabi Cloud Storage buckets, such as the AWS SDK, the Python boto3 library, or the Golang aws-sdk-go library. This flexibility ensures that you can seamlessly integrate Wasabi Cloud Storage into your existing workflows and infrastructure, without the need for extensive retraining or reconfiguration.
+
+Monitoring and Updating Wasabi Cloud Storage
+
+Monitoring and updating your Wasabi Cloud Storage account is essential for ensuring the continued availability, security, and efficiency of your data storage. The Wasabi Management Console provides a centralized interface for managing your Wasabi account, including the ability to view usage metrics, manage access controls, and configure various settings.
+
+To monitor your Wasabi Cloud Storage usage, follow these steps:
+
+1. Log in to the Wasabi Management Console using your credentials.
+2. Navigate to the "Usage" section to view detailed information about your storage usage, including the total amount of data stored, the number of objects, and the data transfer rates.
+3. You can also set up alerts and notifications to receive updates on your storage usage, helping you to proactively manage your Wasabi Cloud Storage resources.
+
+To update your Wasabi Cloud Storage account settings, follow these steps:
+
+1. Log in to the Wasabi Management Console and navigate to the "Settings" section.
+2. In the "Access Keys" tab, you can create, rotate, or delete your Wasabi Access Key ID and Secret Access Key.
+3. The "Buckets" tab allows you to create, delete, and manage the properties of your Wasabi Cloud Storage buckets, including enabling data immutability and configuring access control policies.
+4. The "Users" tab enables you to manage the users and permissions associated with your Wasabi account, ensuring that only authorized individuals can access and manage your Wasabi Cloud Storage resources.
+
+By regularly monitoring and updating your Wasabi Cloud Storage account, you can ensure that your data is securely stored, accessible, and managed in accordance with your organization's policies and requirements.
+
+Programmatic Access to Wasabi Cloud Storage
+
+In addition to the web-based Wasabi Management Console, you can also interact with your Wasabi Cloud Storage buckets and objects programmatically using the Wasabi API or the AWS S3 API. This allows you to automate various data management tasks, such as uploading and downloading files, managing access control policies, and monitoring storage usage.
+
+To use the Wasabi API, you'll need to obtain your Wasabi Access Key ID and Secret Access Key, as discussed earlier in this documentation. These credentials provide you with the necessary permissions to perform various operations on your Wasabi Cloud Storage resources.
+
+Here's an example of how you can use the AWS SDK for Python (boto3) to interact with your Wasabi Cloud Storage buckets:
+
+```python
+import boto3
+
+# Create an S3 client using your Wasabi credentials
+s3 = boto3.client(
+    's3',
+    aws_access_key_id='your unique access key ID',
+    aws_secret_access_key='your unique secret access key',
+    endpoint_url='https://s3.wasabisys.com'
+)
+
+# List your Wasabi buckets
+response = s3.list_buckets()
+for bucket in response['Buckets']:
+    print(bucket['Name'])
+
+# Create a new Wasabi bucket
+s3.create_bucket(Bucket='acme-storage-bucket')
+
+# Upload a file to your Wasabi bucket
+s3.upload_file('local-file.txt', 'acme-storage-bucket', 'remote-file.txt')
+
+# Download a file from your Wasabi bucket
+s3.download_file('acme-storage-bucket', 'remote-file.txt', 'local-file.txt')
+```
+
+In this example, we're using the `boto3` library to create an S3 client that is configured to use the Wasabi Cloud Storage endpoint. With this client, we can perform various operations on our Wasabi buckets and objects, such as listing buckets, creating new buckets, uploading files, and downloading files.
+
+Similarly, you can use other S3-compatible libraries and tools, such as the AWS CLI, the AWS SDK for other programming languages (e.g., Java, .NET, Go), or third-party storage management tools, to interact with your Wasabi Cloud Storage resources programmatically.
+
+Conclusion
+
+Wasabi Cloud Storage is a powerful and reliable cloud storage solution that offers high-performance, affordable, and secure data storage. This documentation has provided an overview of the key features and functionality of the Wasabi platform, including access details, data immutability, S3 compatibility, and programmatic access.
+
+By leveraging the tools and APIs provided by Wasabi, you can seamlessly integrate your Wasabi Cloud Storage buckets into your existing workflows and infrastructure, ensuring the availability, security, and long-term preservation of your critical data. Remember to regularly monitor and update your Wasabi account to maintain optimal performance and data protection.
+
+If you have any further questions or need additional assistance, please don't hesitate to contact the Wasabi support team. They are dedicated to providing exceptional customer service and helping you get the most out of your Wasabi Cloud Storage experience.

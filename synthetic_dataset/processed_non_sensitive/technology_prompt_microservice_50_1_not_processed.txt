@@ -1,0 +1,115 @@
+# Product Catalog Service Documentation
+
+## Introduction
+
+The Product Catalog Service is a critical component of the overall system, responsible for managing the product catalog and providing health check endpoints for monitoring and alerting purposes. This microservice plays a vital role in ensuring the integrity and availability of the product data, which is essential for the smooth operation of the entire application.
+
+## Authentication
+
+The Product Catalog Service utilizes a token-based authentication mechanism to secure access to its endpoints. Clients are required to include a valid access token in the `Authorization` header of their requests. The tokens are issued by the centralized authentication service and have a limited lifespan.
+
+To obtain an access token, clients should make a request to the authentication service, providing their credentials (e.g., username and password, or client ID and secret). The authentication service will validate the credentials and, if successful, return an access token that can be used to interact with the Product Catalog Service.
+
+Clients should ensure that they properly handle token expiration and refresh the token as needed to maintain access to the service.
+
+## Health Check Endpoints
+
+The Product Catalog Service exposes two health check endpoints:
+
+### Liveness Probe: `/health/liveness`
+
+The `/health/liveness` endpoint is used to check if the service is running and responsive. This check is primarily concerned with the overall availability of the service, ensuring that the application is up and running as expected.
+
+When a client makes a request to the `/health/liveness` endpoint, the service will perform a series of internal checks to verify its own health. These checks may include:
+
+- Checking the availability of the underlying infrastructure (e.g., CPU, memory, network)
+- Verifying that the application is able to handle incoming requests without errors
+- Ensuring that critical system dependencies, such as the database or message broker, are accessible and functioning correctly
+
+If all the checks pass, the service will respond with a HTTP status code of `200 OK`, indicating that the service is alive and ready to serve requests. If any of the checks fail, the service will respond with a non-2xx HTTP status code, signaling that the service is not in a healthy state.
+
+The liveness probe is typically used by the container orchestration platform (e.g., Kubernetes) to determine if the service should be restarted or replaced in the event of a failure.
+
+### Readiness Probe: `/health/readiness`
+
+The `/health/readiness` endpoint is used to check if the service is ready to serve requests. This check is more comprehensive than the liveness probe, as it evaluates the service's ability to handle incoming requests successfully.
+
+When a client makes a request to the `/health/readiness` endpoint, the service will perform a series of checks to ensure that it is in a state where it can reliably process and respond to requests. These checks may include:
+
+- Verifying the availability and responsiveness of the underlying database
+- Checking the connection to the message broker and ensuring that messages can be published and consumed
+- Validating the integrity of the product catalog data, ensuring that it is consistent and up-to-date
+- Ensuring that any caching mechanisms or other critical components are functioning correctly
+
+If all the checks pass, the service will respond with a HTTP status code of `200 OK`, indicating that the service is ready to accept and process requests. If any of the checks fail, the service will respond with a non-2xx HTTP status code, signaling that the service is not in a state where it can reliably handle incoming requests.
+
+The readiness probe is typically used by the container orchestration platform to determine if the service should receive traffic. If the service is not ready, the platform can temporarily remove it from the load balancer until it reports as ready.
+
+## Health Indicators
+
+The Product Catalog Service monitors several critical components and aspects of its operation, which are exposed as health indicators. These health indicators provide detailed information about the service's health and can be used for monitoring, alerting, and troubleshooting purposes.
+
+### Database Connection
+
+The service maintains a connection to a relational database, which is used to store and retrieve product data. The "Database Connection" health indicator checks the availability and responsiveness of the database connection.
+
+When the health check is performed, the service attempts to establish a connection to the database and execute a simple query. If the connection and query are successful, the health indicator will report a healthy status. If the connection or query fails, the health indicator will report an unhealthy status, indicating that there is an issue with the database connection.
+
+This health indicator is crucial for ensuring that the service can reliably access and manipulate the product data stored in the database.
+
+### Message Broker Connection
+
+The service also integrates with a message broker, which is used for asynchronous communication and event-driven architectures. The "Message Broker Connection" health indicator checks the availability and responsiveness of the message broker connection.
+
+When the health check is performed, the service attempts to establish a connection to the message broker and publish a test message. If the connection and message publication are successful, the health indicator will report a healthy status. If the connection or message publication fails, the health indicator will report an unhealthy status, indicating that there is an issue with the message broker connection.
+
+This health indicator is important for ensuring that the service can reliably publish and consume messages, which is necessary for various event-driven workflows and integrations.
+
+### Disk Space
+
+The service also monitors the available disk space on the host machine. The "Disk Space" health indicator checks the amount of free disk space and compares it to a predefined threshold.
+
+When the health check is performed, the service retrieves the available disk space and checks if it exceeds the configured threshold. If the available disk space is above the threshold, the health indicator will report a healthy status. If the available disk space falls below the threshold, the health indicator will report an unhealthy status, indicating that there is a risk of the service running out of storage capacity.
+
+This health indicator helps the operations team to proactively monitor the service's resource usage and take appropriate actions, such as scaling up the storage capacity or optimizing the service's data management practices, before the service experiences any disk-related issues.
+
+## Dependency Checks
+
+The Product Catalog Service relies on several external dependencies to function correctly. The service performs regular checks on these dependencies to ensure their availability and responsiveness.
+
+### Database Connectivity
+
+The service regularly checks the connection to the underlying database, ensuring that it can successfully execute queries and retrieve or persist data. If the database connection becomes unavailable or unresponsive, the service will report an unhealthy status, alerting the operations team to investigate and resolve the issue.
+
+### Message Broker Connectivity
+
+The service also regularly checks the connection to the message broker, ensuring that it can publish and consume messages as expected. If the message broker connection becomes unavailable or unresponsive, the service will report an unhealthy status, prompting the operations team to address the problem.
+
+### External API Integrations
+
+The service may also integrate with external APIs provided by other components or third-party services. The service performs regular checks on these external integrations, verifying that the APIs are available and responsive. If any of the external API integrations become unavailable or experience issues, the service will report an unhealthy status, allowing the operations team to investigate and resolve the problem.
+
+By proactively monitoring these dependencies, the Product Catalog Service can quickly identify and address any issues that may impact its ability to function correctly, ensuring the overall reliability and availability of the system.
+
+## Monitoring Integration
+
+The Product Catalog Service is integrated with the organization's centralized monitoring and alerting system. The health check endpoints and health indicators described earlier are used to feed data into the monitoring system, providing visibility into the service's health and performance.
+
+The monitoring system collects and analyzes the data from the health check endpoints and health indicators, generating alerts and notifications when any issues are detected. These alerts can be configured to trigger various actions, such as:
+
+- Sending notifications to the operations team via email, SMS, or messaging platforms
+- Automatically scaling the service's resources (e.g., adding more instances) in response to high traffic or resource utilization
+- Triggering automated remediation scripts to address common issues, such as restarting the service or clearing cache
+- Generating reports and dashboards for the operations and development teams to monitor the service's overall health and performance
+
+By integrating the Product Catalog Service with the centralized monitoring system, the organization can ensure that any issues or degradations in the service's health are promptly detected and addressed, minimizing the impact on the end-users and the overall system.
+
+## Summary
+
+The Product Catalog Service is a critical component of the organization's application ecosystem, responsible for managing the product catalog and providing health check endpoints for monitoring and alerting. The service utilizes a token-based authentication mechanism to secure access to its endpoints, and it exposes two health check endpoints: `/health/liveness` and `/health/readiness`.
+
+The service monitors several key health indicators, including database connectivity, message broker connectivity, and disk space, to ensure the overall health and reliability of the service. It also performs regular checks on its external dependencies, such as the database, message broker, and external API integrations, to proactively identify and address any issues that may impact the service's functionality.
+
+The Product Catalog Service is integrated with the organization's centralized monitoring and alerting system, which collects and analyzes the data from the health check endpoints and health indicators. This integration provides visibility into the service's health and performance, allowing the operations team to quickly detect and respond to any issues that may arise.
+
+By following the Health Check pattern and implementing a robust set of health checks and monitoring integrations, the Product Catalog Service ensures the availability, reliability, and responsiveness of the product catalog data, which is essential for the smooth operation of the entire application.

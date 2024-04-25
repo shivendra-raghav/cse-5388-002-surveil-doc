@@ -1,0 +1,76 @@
+```markdown
+# User Management Service Documentation
+
+## Introduction
+The User Management Service is a microservice designed to manage user-related functionalities, gradually replacing the legacy user management system. This document outlines the service's architecture, authentication, API specifications, coexistence strategy, and migration plan, following the Strangler pattern.
+
+## Authentication
+The User Management Service uses token-based authentication for all API endpoints. Clients must include a valid access token in the `Authorization` header of their requests. The token can be obtained by authenticating with the central authentication service.
+
+### Token Acquisition
+To acquire an access token, clients must send a POST request to the authentication service's `/token` endpoint with their credentials (e.g., username and password) in the request body. The authentication service will then respond with an access token that can be used to authenticate subsequent requests to the User Management Service.
+
+```
+POST /token
+{
+  "username": "example_user",
+  "password": "s3cr3tP@ssw0rd"
+}
+```
+
+### Token Validation
+The User Management Service will validate the access token included in the `Authorization` header of each request. If the token is valid, the request will be processed. If the token is invalid or missing, the service will respond with a 401 Unauthorized status code.
+
+## Legacy API
+The legacy user management system exposes the following API endpoints:
+
+- `GET /legacy/users/{userId}`: Retrieves the details of a user by their ID.
+- `POST /legacy/users`: Creates a new user.
+- `PUT /legacy/users/{userId}`: Updates the details of an existing user.
+- `DELETE /legacy/users/{userId}`: Deletes a user by their ID.
+
+These endpoints follow the legacy system's data format and conventions. They are currently used by various client applications that need to manage user data.
+
+## Strangler API
+To gradually replace the legacy user management system, the User Management Service introduces a new API with the following endpoints:
+
+- `GET /v1/users/{userId}`: Retrieves the details of a user by their ID.
+- `POST /v1/users`: Creates a new user.
+- `PUT /v1/users/{userId}`: Updates the details of an existing user.
+- `DELETE /v1/users/{userId}`: Deletes a user by their ID.
+
+These endpoints follow a new data format and conventions that are designed to be more intuitive and easier to maintain. The Strangler API is intended to gradually replace the legacy API over time.
+
+### Feature Toggles
+To facilitate the gradual transition from the legacy API to the Strangler API, the User Management Service utilizes feature toggles. These toggles allow the service to selectively enable or disable the new Strangler API endpoints based on client requirements or deployment environments.
+
+By default, the legacy API endpoints are enabled, and the Strangler API endpoints are disabled. As the migration progresses, the feature toggles can be gradually switched to enable the Strangler API and disable the legacy API, ensuring a smooth transition for client applications.
+
+## Coexistence Strategy
+During the transition period, the User Management Service will maintain both the legacy API and the Strangler API, allowing client applications to use either set of endpoints. This coexistence strategy ensures that existing client applications can continue to function while new applications or updated versions of existing applications can start using the Strangler API.
+
+To facilitate the coexistence, the User Management Service will implement the Branch by Abstraction pattern. This means that the underlying implementation of the service will be abstracted, allowing the legacy and Strangler APIs to be served by the same codebase. The specific implementation details will be hidden behind a common interface, ensuring that client applications can interact with the service without being aware of the underlying changes.
+
+## Migration Plan
+The migration from the legacy user management system to the new User Management Service follows a phased approach, using the Strangler pattern:
+
+1. **Phase 1: Parallel Run**
+   - During this phase, the legacy API and the Strangler API will run in parallel, with the legacy API serving as the primary source of user data.
+   - The Strangler API will be implemented and tested, ensuring that it can handle all the necessary user management functionalities.
+   - Client applications will gradually be migrated to use the Strangler API, with the feature toggles enabling the new API endpoints as needed.
+
+2. **Phase 2: Gradual Switchover**
+   - As the migration progresses, more client applications will be switched to use the Strangler API.
+   - The feature toggles will be gradually adjusted to enable more Strangler API endpoints and disable the corresponding legacy API endpoints.
+   - During this phase, the legacy API will gradually become obsolete, and the majority of client applications will be using the Strangler API.
+
+3. **Phase 3: Legacy Retirement**
+   - In the final phase, the legacy user management system will be completely retired, and all client applications will be using the Strangler API.
+   - The feature toggles will be removed, and the legacy API endpoints will be permanently disabled.
+   - The User Management Service will become the sole source of user data, and the migration will be considered complete.
+
+Throughout the migration process, the User Management Service will implement Parallel Run, allowing client applications to gradually transition to the new API without disrupting their existing functionality.
+
+## Summary
+The User Management Service is a microservice that manages user-related functionalities, gradually replacing the legacy user management system. It utilizes the Strangler pattern, with a Strangler API that coexists with the legacy API during the migration process. The service employs feature toggles, Branch by Abstraction, and Parallel Run to ensure a smooth transition for client applications. The migration plan outlines a phased approach, allowing for a gradual switchover from the legacy API to the Strangler API, ultimately retiring the legacy system and establishing the User Management Service as the sole source of user data.
+```

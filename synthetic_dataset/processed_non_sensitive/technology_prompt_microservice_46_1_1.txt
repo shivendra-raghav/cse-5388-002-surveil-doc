@@ -1,0 +1,175 @@
+```markdown
+# Order Processing Service Documentation
+
+## Introduction
+The Order Processing Service is a critical component of the ABC Corp e-commerce platform, responsible for handling the processing of customer orders. To enhance the reliability, observability, and overall robustness of this service, a Sidecar pattern has been implemented, providing additional capabilities such as logging and monitoring.
+
+This documentation will provide a comprehensive overview of the Order Processing Service, including its main functionalities, the Sidecar service, and the configuration required to integrate the two components effectively.
+
+## Authentication
+The Order Processing Service utilizes OAuth 2.0 for authentication and authorization. Clients must obtain a valid access token from the central authentication server to interact with the service. The access token must be included in the `Authorization` header of all requests made to the service.
+
+Example request header:
+```
+Authorization: Bearer your_access_token_goes_here
+```
+
+## Main Service
+The Order Processing Service exposes the following API endpoints:
+
+### Create Order
+**Endpoint:** `POST /v1/orders`
+**Description:** Create a new order in the system.
+**Request Body:**
+```json
+{
+  "customer_id": "12345",
+  "items": [
+    {
+      "product_id": "abc123",
+      "quantity": 2
+    },
+    {
+      "product_id": "def456",
+      "quantity": 1
+    }
+  ],
+  "shipping_address": {
+    "street": "123 Main St",
+    "city": "Sunnyvale",
+    "state": "CA",
+    "zip": "94085"
+  },
+  "payment_method": "visa_****"
+}
+```
+**Response:**
+```json
+{
+  "order_id": "ord_123456",
+  "status": "pending"
+}
+```
+
+### Retrieve Order
+**Endpoint:** `GET /v1/orders/{orderId}`
+**Description:** Retrieve the details of a specific order.
+**Response:**
+```json
+{
+  "order_id": "ord_123456",
+  "customer_id": "12345",
+  "items": [
+    {
+      "product_id": "abc123",
+      "quantity": 2
+    },
+    {
+      "product_id": "def456",
+      "quantity": 1
+    }
+  ],
+  "shipping_address": {
+    "street": "123 Main St",
+    "city": "Sunnyvale",
+    "state": "CA",
+    "zip": "94085"
+  },
+  "payment_method": "visa_****",
+  "status": "pending"
+}
+```
+
+### Update Order Status
+**Endpoint:** `PUT /v1/orders/{orderId}/status`
+**Description:** Update the status of a specific order.
+**Request Body:**
+```json
+{
+  "status": "shipped"
+}
+```
+**Response:**
+```json
+{
+  "order_id": "ord_123456",
+  "status": "shipped"
+}
+```
+
+### Delete Order
+**Endpoint:** `DELETE /v1/orders/{orderId}`
+**Description:** Delete a specific order from the system.
+**Response:** `204 No Content`
+
+## Sidecar Service
+The Sidecar service for the Order Processing Service provides the following capabilities:
+
+### Logging
+The Sidecar service captures and centralizes logs from the main Order Processing Service. It uses a common logging library to standardize the log format and ensure consistent log data across the organization. The Sidecar service then forwards the logs to a centralized logging system, such as Elasticsearch or Splunk, for long-term storage, analysis, and monitoring.
+
+### Monitoring
+The Sidecar service collects various metrics from the main Order Processing Service, such as request volume, response times, error rates, and resource utilization (CPU, memory, etc.). These metrics are then exposed through a monitoring service, such as Prometheus, allowing the operations team to monitor the health and performance of the Order Processing Service.
+
+The Sidecar service also implements health checks to determine the overall health of the main service. These health checks are exposed through a dedicated endpoint, which can be used by load balancers or orchestration platforms to manage the service's lifecycle and ensure high availability.
+
+## Sidecar Capabilities
+
+### Logging
+The Sidecar service provides the following logging capabilities:
+
+1. **Log Capture**: The Sidecar service uses a common logging library to capture logs emitted by the main Order Processing Service. This ensures a consistent log format and structure, making it easier to process and analyze the logs.
+
+2. **Log Forwarding**: The captured logs are forwarded to a centralized logging system, such as Elasticsearch or Splunk, for long-term storage and analysis. This allows the operations team to easily access and search the logs, enabling effective troubleshooting and monitoring.
+
+3. **Log Enrichment**: The Sidecar service enriches the log entries with additional context, such as the request ID, the client IP address, and the service version. This metadata helps the operations team better understand the context of each log entry and facilitates more efficient root cause analysis.
+
+### Monitoring
+The Sidecar service provides the following monitoring capabilities:
+
+1. **Metric Collection**: The Sidecar service collects various metrics from the main Order Processing Service, including request volume, response times, error rates, and resource utilization (CPU, memory, etc.). These metrics are then exposed through a monitoring service, such as Prometheus.
+
+2. **Health Checks**: The Sidecar service implements health checks to determine the overall health of the main Order Processing Service. These health checks are exposed through a dedicated endpoint, which can be used by load balancers or orchestration platforms to manage the service's lifecycle and ensure high availability.
+
+3. **Alerting**: The monitoring data collected by the Sidecar service is used to set up alerts for the operations team. These alerts can be triggered based on predefined thresholds, such as high error rates or resource utilization spikes, enabling the team to proactively address issues and maintain the service's reliability.
+
+### Service Discovery
+The Sidecar service utilizes a service discovery mechanism, such as Consul or Zookeeper, to dynamically locate instances of the main Order Processing Service. This allows the Sidecar to automatically adapt to changes in the service's topology, such as when new instances are added or existing ones are removed, without the need for manual configuration updates.
+
+### Configuration Management
+The Sidecar service integrates with a centralized configuration management system, such as Consul or etcd, to dynamically retrieve the necessary configuration settings for the main Order Processing Service. This enables the operations team to manage the service's configuration in a centralized manner, ensuring consistency and facilitating changes across multiple environments (e.g., development, staging, production).
+
+## Sidecar Configuration
+The Sidecar service is configured using the following parameters:
+
+1. **Logging Configuration**:
+   - Logging backend (Elasticsearch, Splunk, etc.)
+   - Log format and structure
+   - Log retention policies
+
+2. **Monitoring Configuration**:
+   - Metric collection endpoints
+   - Health check endpoints
+   - Alerting thresholds and notification channels
+
+3. **Service Discovery Configuration**:
+   - Service discovery backend (Consul, Zookeeper, etc.)
+   - Service registration and deregistration
+   - Service health monitoring
+
+4. **Configuration Management Configuration**:
+   - Configuration backend (Consul, etcd, etc.)
+   - Configuration key-value paths
+   - Configuration update polling interval
+
+These configurations can be managed centrally, either through environment variables, configuration files, or a combination of both, depending on the organization's preferred approach.
+
+## Summary
+The Order Processing Service is a critical component of the ABC Corp e-commerce platform, handling the processing of customer orders. To enhance the reliability, observability, and overall robustness of this service, a Sidecar pattern has been implemented, providing additional capabilities such as logging and monitoring.
+
+The Sidecar service captures and centralizes logs from the main Order Processing Service, forwards them to a centralized logging system, and enriches the log entries with additional context. It also collects various metrics from the main service, exposes them through a monitoring service, and implements health checks to ensure the overall health of the service.
+
+Furthermore, the Sidecar service utilizes a service discovery mechanism to dynamically locate instances of the main Order Processing Service, and integrates with a centralized configuration management system to retrieve the necessary configuration settings.
+
+By leveraging the Sidecar pattern, ABC Corp can improve the observability, reliability, and maintainability of the Order Processing Service, ensuring a seamless and reliable experience for its customers.
+```

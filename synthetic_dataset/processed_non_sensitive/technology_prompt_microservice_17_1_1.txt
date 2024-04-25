@@ -1,0 +1,112 @@
+```
+Introduction
+
+The Pricing Service is a GraphQL API that enables CRUD (Create, Read, Update, Delete) operations for product pricing. This service plays a crucial role in managing the pricing of products within GlobalTech Solutions Inc, ensuring accurate and up-to-date pricing information is available for various business processes.
+
+The Pricing Service API provides a robust and efficient way to interact with the pricing data, allowing users to create new prices, update existing ones, and delete prices as needed. This documentation outlines the various GraphQL services available, the authentication process, rate limiting, error handling, and other important details to help developers integrate and utilize the Pricing Service effectively.
+
+Latest Update By
+The Pricing Service API was last updated on June 15, 2023, by the development team at GlobalTech Solutions Inc. The update included bug fixes, performance improvements, and the addition of new features to enhance the overall functionality of the service.
+
+Maintenance Team Details
+The Pricing Service is maintained by the Pricing Team within the GlobalTech Solutions Inc's Engineering department. The team consists of the following members:
+
+- Lead Developer: Alex Rodriguez (alex.rodriguez@globaltech.com)
+- Backend Engineer: Emily Wilson (emily.wilson@globaltech.com)
+- Quality Assurance Analyst: David Thompson (david.thompson@globaltech.com)
+- DevOps Engineer: Sophia Martinez (sophia.martinez@globaltech.com)
+
+The Pricing Team is responsible for the development, maintenance, and ongoing support of the Pricing Service. They can be contacted for any inquiries, bug reports, or feature requests related to the API.
+
+Authentication Details
+To access the Pricing Service API, clients must authenticate using a valid API key. The API key can be obtained by signing up for an account on the GlobalTech Solutions Inc developer portal and creating a new API key.
+
+The API key must be included in the `Authorization` header of each GraphQL request, as shown below:
+
+```
+Authorization: Bearer your_api_key_goes_here
+```
+
+Failure to include a valid API key or providing an expired or revoked key will result in a `401 Unauthorized` response.
+
+GraphQL Services
+The Pricing Service API provides the following GraphQL services:
+
+1. **Create Prices for a Product**
+   - **Description:** This mutation allows you to create new prices for a specific product.
+   - **Input Parameters:**
+     - `productId`: The unique identifier of the product.
+     - `price`: The price value to be assigned to the product.
+     - `currency`: The currency in which the price is denominated.
+     - `effectiveDate`: The date from which the new price will be effective.
+   - **Responses:**
+     - `200 OK`: The price has been successfully created.
+     - `400 Bad Request`: Invalid input parameters provided.
+     - `401 Unauthorized`: Invalid or missing API key.
+     - `403 Forbidden`: The user is not authorized to perform this operation.
+     - `500 Internal Server Error`: An unexpected error occurred on the server.
+
+2. **Update Prices of a Product**
+   - **Description:** This mutation allows you to update the prices of an existing product.
+   - **Input Parameters:**
+     - `productId`: The unique identifier of the product.
+     - `priceId`: The unique identifier of the price to be updated.
+     - `price`: The new price value to be assigned to the product.
+     - `currency`: The currency in which the new price is denominated.
+     - `effectiveDate`: The date from which the new price will be effective.
+   - **Responses:**
+     - `200 OK`: The price has been successfully updated.
+     - `400 Bad Request`: Invalid input parameters provided.
+     - `401 Unauthorized`: Invalid or missing API key.
+     - `403 Forbidden`: The user is not authorized to perform this operation.
+     - `404 Not Found`: The specified product or price does not exist.
+     - `500 Internal Server Error`: An unexpected error occurred on the server.
+
+3. **Create Prices for a Product for an Account**
+   - **Description:** This mutation allows you to create new prices for a specific product and associate them with a specific account.
+   - **Input Parameters:**
+     - `productId`: The unique identifier of the product.
+     - `accountId`: The unique identifier of the account.
+     - `price`: The price value to be assigned to the product for the specified account.
+     - `currency`: The currency in which the price is denominated.
+     - `effectiveDate`: The date from which the new price will be effective.
+   - **Responses:**
+     - `200 OK`: The price has been successfully created and associated with the specified account.
+     - `400 Bad Request`: Invalid input parameters provided.
+     - `401 Unauthorized`: Invalid or missing API key.
+     - `403 Forbidden`: The user is not authorized to perform this operation.
+     - `500 Internal Server Error`: An unexpected error occurred on the server.
+
+4. **Delete Prices for a Product based on ID**
+   - **Description:** This mutation allows you to delete prices for a specific product based on the price ID.
+   - **Input Parameters:**
+     - `productId`: The unique identifier of the product.
+     - `priceId`: The unique identifier of the price to be deleted.
+   - **Responses:**
+     - `200 OK`: The price has been successfully deleted.
+     - `400 Bad Request`: Invalid input parameters provided.
+     - `401 Unauthorized`: Invalid or missing API key.
+     - `403 Forbidden`: The user is not authorized to perform this operation.
+     - `404 Not Found`: The specified product or price does not exist.
+     - `500 Internal Server Error`: An unexpected error occurred on the server.
+
+Rate Limit
+The Pricing Service API is subject to rate limiting to ensure fair and efficient usage for all clients. The current rate limit is set to 100 requests per minute per API key. If a client exceeds the rate limit, they will receive a `429 Too Many Requests` response, and the request will be rejected.
+
+Error Handling
+The Pricing Service API follows a consistent error handling approach. Whenever an error occurs, the API will return an appropriate HTTP status code along with a corresponding error message. The error message will provide details about the issue, such as the reason for the error, the affected input parameters, and any other relevant information to help the client understand and address the problem.
+
+In addition to the HTTP status codes mentioned in the GraphQL services section, the following error responses may also be encountered:
+
+- `501 Not Implemented`: The requested operation or feature is not yet implemented by the Pricing Service.
+- `502 Bad Gateway`: The Pricing Service encountered an issue while attempting to process the request, such as a timeout or a problem with an upstream dependency.
+- `503 Service Unavailable`: The Pricing Service is temporarily unavailable due to maintenance, system overload, or other issues.
+- `504 Gateway Timeout`: The Pricing Service did not receive a timely response from an upstream dependency, causing the request to time out.
+
+Summary
+The Pricing Service GraphQL API provides a robust and efficient way to manage product pricing within the organization. Developers can leverage this API to perform CRUD operations on pricing data, ensuring accurate and up-to-date pricing information is available for various business processes.
+
+The API supports authentication via API keys, rate limiting to ensure fair usage, and a consistent error handling approach to help clients understand and address any issues that may arise during their interactions with the service.
+
+The Pricing Team is responsible for the maintenance and ongoing support of the Pricing Service API, and they can be contacted for any inquiries, bug reports, or feature requests.
+```

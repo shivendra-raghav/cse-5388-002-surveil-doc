@@ -1,0 +1,105 @@
+Reports Service API Documentation
+
+Introduction
+The Reports Service is a microservice that enables CRUD (Create, Read, Update, and Delete) operations for reports. This service provides a set of REST API endpoints that allow users to manage reports effectively. The service is designed to be scalable, reliable, and easy to integrate into various applications.
+
+Latest Update By
+The latest update to the Reports Service API was made by the development team on June 1st, 2023.
+
+Maintenance Team Details
+The Reports Service is maintained by the following team:
+
+- Team Lead: John Doe
+- Developers: Jane Smith, Michael Johnson, and Sarah Williams
+- Quality Assurance: Emily Davis and Robert Wilson
+- DevOps Engineer: Christopher Brown
+
+The team is responsible for ensuring the service is functioning correctly, implementing new features, and addressing any issues or bugs that arise.
+
+REST Endpoints
+The Reports Service exposes the following REST API endpoints:
+
+1. Create a Report
+   - Endpoint: `POST /reports`
+   - Description: This endpoint is used to create a new report.
+   - Request Body:
+     - `title` (string, required): The title of the report.
+     - `description` (string, optional): A brief description of the report.
+     - `category` (string, required): The category of the report.
+     - `data` (object, required): The data associated with the report.
+   - Responses:
+     - `201 Created`: The report was successfully created.
+     - `400 Bad Request`: The request body is invalid or missing required fields.
+     - `500 Internal Server Error`: An unexpected error occurred on the server.
+
+2. Update a Report
+   - Endpoint: `PUT /reports/{reportId}`
+   - Description: This endpoint is used to update an existing report.
+   - Path Parameters:
+     - `reportId` (string, required): The unique identifier of the report to be updated.
+   - Request Body:
+     - `title` (string, optional): The updated title of the report.
+     - `description` (string, optional): The updated description of the report.
+     - `category` (string, optional): The updated category of the report.
+     - `data` (object, optional): The updated data associated with the report.
+   - Responses:
+     - `200 OK`: The report was successfully updated.
+     - `400 Bad Request`: The request body is invalid or missing required fields.
+     - `404 Not Found`: The specified report was not found.
+     - `500 Internal Server Error`: An unexpected error occurred on the server.
+
+3. List a Report
+   - Endpoint: `GET /reports/{reportId}`
+   - Description: This endpoint is used to retrieve a specific report.
+   - Path Parameters:
+     - `reportId` (string, required): The unique identifier of the report to be retrieved.
+   - Responses:
+     - `200 OK`: The report was successfully retrieved.
+     - `404 Not Found`: The specified report was not found.
+     - `500 Internal Server Error`: An unexpected error occurred on the server.
+
+4. List All Reports
+   - Endpoint: `GET /reports`
+   - Description: This endpoint is used to retrieve a list of all reports.
+   - Query Parameters:
+     - `page` (integer, optional): The page number to retrieve (default is 1).
+     - `limit` (integer, optional): The number of reports to retrieve per page (default is 10).
+     - `category` (string, optional): The category to filter the reports by.
+   - Responses:
+     - `200 OK`: The list of reports was successfully retrieved.
+     - `500 Internal Server Error`: An unexpected error occurred on the server.
+
+5. Delete a Report
+   - Endpoint: `DELETE /reports/{reportId}`
+   - Description: This endpoint is used to delete a specific report.
+   - Path Parameters:
+     - `reportId` (string, required): The unique identifier of the report to be deleted.
+   - Responses:
+     - `200 OK`: The report was successfully deleted.
+     - `404 Not Found`: The specified report was not found.
+     - `500 Internal Server Error`: An unexpected error occurred on the server.
+
+Rate Limit
+The Reports Service has a rate limit of 100 requests per minute per IP address. If a client exceeds the rate limit, the server will respond with a `429 Too Many Requests` status code.
+
+Error Handling
+The Reports Service follows a consistent error handling approach. If an error occurs during the processing of a request, the service will respond with an appropriate HTTP status code and a JSON error response in the following format:
+
+```json
+{
+  "error": {
+    "code": "<error_code>",
+    "message": "<error_message>"
+  }
+}
+```
+
+The possible error codes and their corresponding HTTP status codes are:
+
+- `400 Bad Request`: `400`
+- `404 Not Found`: `404`
+- `429 Too Many Requests`: `429`
+- `500 Internal Server Error`: `500`
+
+Summary
+The Reports Service is a powerful microservice that enables CRUD operations for reports. It provides a set of well-designed REST API endpoints that allow users to manage reports effectively. The service is designed to be scalable, reliable, and easy to integrate into various applications. The documentation covers the necessary details to understand and interact with the Reports Service, including the available endpoints, request and response structures, error handling, and rate limiting.

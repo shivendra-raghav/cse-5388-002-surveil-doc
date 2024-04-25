@@ -1,0 +1,109 @@
+Discounts Service API Documentation
+
+Introduction
+The Discounts Service is a GraphQL-based microservice that enables the creation, updating, listing, and deletion of discounts. This service is designed to provide a flexible and efficient way for organizations to manage their discount offerings, ensuring that customers can easily access and apply relevant discounts.
+
+Latest Update By
+The latest update to the Discounts Service was made by the product team on 2023-04-20. This update included bug fixes, performance improvements, and the addition of new features to enhance the overall user experience.
+
+Maintenance Team Details
+The Discounts Service is maintained by the following team:
+
+- Team Lead: John Doe
+- Product Manager: Jane Smith
+- Software Developers:
+  - Alice Johnson
+  - Bob Williams
+  - Charlie Davis
+- Quality Assurance:
+  - Emma Lee
+  - Michael Taylor
+
+The team is responsible for ensuring the service's reliability, scalability, and continual improvement. They actively monitor the service's performance, address any issues that arise, and implement new features based on customer feedback and market demands.
+
+GraphQL Services
+The Discounts Service offers the following GraphQL-based operations:
+
+1. **Create a Discount**
+   - **Description:** This mutation allows users to create a new discount.
+   - **Input Parameters:**
+     - `name`: The name of the discount.
+     - `description`: A brief description of the discount.
+     - `discountType`: The type of discount (e.g., percentage, fixed amount).
+     - `discountValue`: The value of the discount (e.g., 20% or $10).
+     - `startDate`: The date and time when the discount becomes active.
+     - `endDate`: The date and time when the discount expires.
+     - `appliesTo`: The products or services to which the discount applies.
+   - **Output:** The newly created discount object, including its unique identifier.
+   - **HTTP Response Codes:**
+     - `200 OK`: The discount was successfully created.
+     - `400 Bad Request`: Invalid input parameters were provided.
+     - `401 Unauthorized`: The user does not have permission to create a discount.
+     - `500 Internal Server Error`: An unexpected error occurred during the creation process.
+
+2. **Update a Discount**
+   - **Description:** This mutation allows users to update the details of an existing discount.
+   - **Input Parameters:**
+     - `id`: The unique identifier of the discount to be updated.
+     - `name`: The new name of the discount.
+     - `description`: The new description of the discount.
+     - `discountType`: The new type of discount.
+     - `discountValue`: The new value of the discount.
+     - `startDate`: The new start date and time of the discount.
+     - `endDate`: The new end date and time of the discount.
+     - `appliesTo`: The new products or services to which the discount applies.
+   - **Output:** The updated discount object.
+   - **HTTP Response Codes:**
+     - `200 OK`: The discount was successfully updated.
+     - `400 Bad Request`: Invalid input parameters were provided.
+     - `401 Unauthorized`: The user does not have permission to update the discount.
+     - `404 Not Found`: The specified discount was not found.
+     - `500 Internal Server Error`: An unexpected error occurred during the update process.
+
+3. **List a Discount**
+   - **Description:** This query allows users to retrieve the details of a specific discount.
+   - **Input Parameters:**
+     - `id`: The unique identifier of the discount to be retrieved.
+   - **Output:** The details of the requested discount.
+   - **HTTP Response Codes:**
+     - `200 OK`: The discount was successfully retrieved.
+     - `404 Not Found`: The specified discount was not found.
+     - `500 Internal Server Error`: An unexpected error occurred during the retrieval process.
+
+4. **List All Discounts**
+   - **Description:** This query allows users to retrieve a list of all available discounts.
+   - **Input Parameters:**
+     - `limit`: The maximum number of discounts to be returned.
+     - `offset`: The starting offset for the list of discounts.
+   - **Output:** A list of discount objects, along with pagination information.
+   - **HTTP Response Codes:**
+     - `200 OK`: The list of discounts was successfully retrieved.
+     - `500 Internal Server Error`: An unexpected error occurred during the retrieval process.
+
+5. **Delete a Discount**
+   - **Description:** This mutation allows users to delete an existing discount.
+   - **Input Parameters:**
+     - `id`: The unique identifier of the discount to be deleted.
+   - **Output:** A confirmation that the discount was successfully deleted.
+   - **HTTP Response Codes:**
+     - `200 OK`: The discount was successfully deleted.
+     - `401 Unauthorized`: The user does not have permission to delete the discount.
+     - `404 Not Found`: The specified discount was not found.
+     - `500 Internal Server Error`: An unexpected error occurred during the deletion process.
+
+Rate Limit
+The Discounts Service enforces a rate limit of 100 requests per minute per user. If a user exceeds this limit, they will receive a `429 Too Many Requests` response, and their subsequent requests will be temporarily blocked until the rate limit window has expired.
+
+Error Handling
+The Discounts Service provides detailed error responses to help clients understand and address any issues that may arise during their interactions with the service. The following error codes and their corresponding messages are used:
+
+- `400 Bad Request`: "Invalid input parameters. Please check your request and try again."
+- `401 Unauthorized`: "You do not have permission to perform this action."
+- `404 Not Found`: "The requested resource was not found."
+- `429 Too Many Requests`: "You have exceeded the rate limit. Please try again later."
+- `500 Internal Server Error`: "An unexpected error occurred. Please try again later or contact the support team."
+
+Each error response includes a unique error code and a detailed error message to help clients diagnose and resolve the issue.
+
+Summary
+The Discounts Service is a powerful GraphQL-based microservice that enables organizations to efficiently manage their discount offerings. With its comprehensive set of operations, including create, update, list, and delete, the service provides a flexible and user-friendly interface for discount management. The service is maintained by a dedicated team and is designed to be reliable, scalable, and adaptable to evolving business needs. By following the GraphQL API specification and providing thorough error handling, the Discounts Service ensures a seamless and enjoyable user experience for its clients.

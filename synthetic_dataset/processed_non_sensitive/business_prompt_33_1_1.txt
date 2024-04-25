@@ -1,0 +1,67 @@
+Here is the updated value without tags and with realistic, context-appropriate sample values replacing placeholders, while ensuring no sensitive information is included:
+
+Insider Trading Policy
+
+Introduction
+
+At Acme Enterprises, we are committed to maintaining the highest standards of ethical conduct and compliance with all applicable laws and regulations. This Insider Trading Policy ("Policy") outlines the responsibilities and restrictions related to trading in the company's securities and the handling of material, non-public information.
+
+The purpose of this Policy is to protect Acme Enterprises, its employees, and its shareholders from the risks and liabilities associated with insider trading and the inappropriate use or disclosure of material, non-public information. Compliance with this Policy is essential to preserving the company's reputation and ensuring a fair and orderly marketplace for the trading of Acme Enterprises' securities.
+
+This Policy applies to all directors, officers, and employees of Acme Enterprises, as well as their immediate family members and any other individuals or entities under their control (collectively referred to as "Covered Persons"). It is the responsibility of each Covered Person to understand and comply with the provisions of this Policy.
+
+Definition of Insider Trading
+
+Insider trading occurs when an individual trades a company's securities (such as stocks, bonds, or options) while in possession of material, non-public information about the company. Material, non-public information is any information that a reasonable investor would consider important in making an investment decision and that has not been widely disseminated to the public.
+
+Examples of material, non-public information include, but are not limited to:
+- Financial results or projections
+- Significant acquisitions, mergers, or divestitures
+- Major product launches or developments
+- Changes in senior management
+- Significant litigation or regulatory actions
+- Pending or proposed changes to the company's capital structure or dividend policy
+
+Insider trading is illegal and can result in severe civil and criminal penalties for both the individual involved and the company. It is a violation of Acme Enterprises' Code of Conduct and this Policy.
+
+Prohibited Activities
+
+Covered Persons are prohibited from engaging in the following activities:
+
+1. Trading in Acme Enterprises' securities while in possession of material, non-public information about the company.
+2. Disclosing material, non-public information about Acme Enterprises to any person, including family members and friends, who may then trade in the company's securities or provide the information to others who may trade.
+3. Providing recommendations or expressing opinions about trading in Acme Enterprises' securities based on material, non-public information.
+4. Engaging in short-term or speculative trading in Acme Enterprises' securities, including short sales, trading in put or call options, and other derivative transactions.
+5. Holding Acme Enterprises' securities in a margin account or pledging Acme Enterprises' securities as collateral for a loan without prior approval from the company's Legal and Compliance Department.
+
+Pre-Clearance Procedures
+
+To ensure compliance with this Policy and applicable laws and regulations, Covered Persons must obtain pre-clearance from the Legal and Compliance Department before engaging in any transactions involving Acme Enterprises' securities. This requirement applies to all transactions, including purchases, sales, and transfers of Acme Enterprises' securities.
+
+To request pre-clearance, Covered Persons must submit a completed and signed Pre-Clearance Request Form to the Legal and Compliance Department. The Legal and Compliance Department will review the request and provide a written response within 2 business days. Pre-clearance is valid for 5 business days from the date of approval. If the transaction is not executed within this timeframe, a new pre-clearance request must be submitted.
+
+Covered Persons are required to report any trades in Acme Enterprises' securities, including trades made pursuant to a pre-clearance, to the Legal and Compliance Department within 1 business day of the transaction.
+
+Blackout Periods
+
+In addition to the pre-clearance requirements, Covered Persons are subject to blackout periods during which they are prohibited from trading in Acme Enterprises' securities. Blackout periods are in effect:
+
+1. During the period beginning 14 days before the end of each fiscal quarter and ending 2 business days after the public release of Acme Enterprises' quarterly or annual financial results.
+2. During the period beginning 7 days before Acme Enterprises' anticipated announcement of any other material, non-public information and ending 1 business day after such announcement.
+3. At any other time when Acme Enterprises has determined that Covered Persons should not trade in the company's securities due to the existence of material, non-public information.
+
+The Legal and Compliance Department will notify Covered Persons of the commencement and termination of each blackout period. Covered Persons may not engage in any transactions involving Acme Enterprises' securities during a blackout period, regardless of whether they are in possession of material, non-public information.
+
+Exceptions to the blackout period restrictions may be granted in rare circumstances, but only with the prior written approval of the Legal and Compliance Department.
+
+Reporting Potential Violations
+
+Covered Persons who become aware of any suspected or actual violations of this Policy or applicable insider trading laws and regulations must report such information immediately to the Legal and Compliance Department. Reports may be made anonymously, and Acme Enterprises strictly prohibits any form of retaliation against individuals who report potential violations in good faith.
+
+The Legal and Compliance Department will investigate all reported violations and take appropriate disciplinary action, which may include termination of employment and, in the case of illegal activities, referral to the appropriate law enforcement authorities.
+
+Conclusion
+
+Acme Enterprises takes the issue of insider trading very seriously. Compliance with this Policy is essential to maintaining the integrity of the financial markets and protecting the company, its employees, and its shareholders. Covered Persons who violate this Policy may face significant civil and criminal penalties, as well as disciplinary action by Acme Enterprises, up to and including termination of employment.
+
+If you have any questions or concerns regarding this Policy or your responsibilities under it, please contact the Legal and Compliance Department.

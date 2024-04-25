@@ -1,0 +1,90 @@
+Here is a 1,200-word travel booking confirmation template that follows the specified structure and requirements:
+
+Travel Booking Confirmation
+
+Booking Reference: 2023-04-15-LHR-LAX-123456
+
+Traveler Details:
+Primary Traveler: John Smith
+Additional Travelers: Jane Doe, Alex Johnson
+Address: 123 Main Street, Anytown USA 12345
+Phone: 555-1234567
+Email: jsmith@email.com
+
+Itinerary Summary:
+Departure: London Heathrow (LHR) to Los Angeles (LAX)
+Airline: ABC Airlines
+Flight Number: ABC123
+Departure Date: April 15, 2023
+Departure Time: 8:00 AM
+Arrival Date: April 15, 2023
+Arrival Time: 12:00 PM
+
+Return: Los Angeles (LAX) to London Heathrow (LHR) 
+Airline: ABC Airlines
+Flight Number: ABC456
+Departure Date: April 22, 2023
+Departure Time: 3:00 PM
+Arrival Date: April 23, 2023
+Arrival Time: 7:00 AM
+
+Booking Details:
+This booking includes the following:
+- Economy class airfare for 3 passengers
+- 1 checked bag per passenger
+- 1 carry-on bag per passenger
+- Inflight meals and beverages
+
+Total Trip Cost: $2,400.00
+
+Payment Information:
+This booking was paid in full using the credit card ending in 1234. A charge of $2,400.00 will appear on your credit card statement.
+
+Managing Your Booking Online:
+You can access your booking details, make changes, or cancel your reservation by logging into your account on our website at www.travelagency.com. To log in, enter your booking reference number (2023-04-15-LHR-LAX-123456) and the primary traveler's last name (Smith).
+
+Once logged in, you can:
+- View your itinerary and booking details
+- Select seats and add other optional services
+- Change your travel dates or destinations (additional fees may apply)
+- Cancel your booking (cancellation fees may apply)
+- Contact our customer service team if you need assistance
+
+Credit Card Information and Payment Confirmation:
+Your credit card information was securely stored to process the full payment for your booking. No credit card details are retained in our systems after the booking is complete.
+
+You will receive a charge of $2,400.00 on the credit card ending in 1234. This charge represents the total cost of your airfare, taxes, and any additional services you may have selected.
+
+If you have any questions or need to make changes to your booking, please don't hesitate to contact our customer service team at 1-800-555-1234 or by email at support@travelagency.com.
+
+Terms and Conditions:
+By completing this booking, you agree to the following terms and conditions:
+
+Cancellations and Refunds:
+- Cancellations made more than 30 days prior to departure will incur a $150 per person cancellation fee.
+- Cancellations made within 30 days of departure will not be eligible for a refund.
+- Changes to your travel dates or destinations may be subject to additional fees.
+
+Baggage Policies:
+- Each passenger is allowed 1 checked bag up to 50 lbs and 1 carry-on bag up to 40 lbs.
+- Excess or overweight baggage may incur additional fees at the airport.
+- The travel agency is not responsible for lost, damaged, or delayed baggage.
+
+Travel Insurance:
+- Travel insurance is highly recommended to protect against unforeseen circumstances.
+- Insurance policies can cover trip cancellations, medical emergencies, and other travel-related issues.
+- If you would like to purchase travel insurance, please let us know, and we can provide options.
+
+Airline Policies:
+- Airline schedules, routes, and aircraft are subject to change without notice.
+- The travel agency is not responsible for delays, cancellations, or changes made by the airline.
+- Passengers are responsible for arriving at the airport with sufficient time to complete check-in and security procedures.
+
+Travel Documentation:
+- All travelers must have valid passports and any necessary visas or travel documents.
+- It is the traveler's responsibility to ensure all travel documents are in order before departure.
+- The travel agency is not responsible for any issues related to travel documents.
+
+By confirming this booking, you acknowledge that you have read, understood, and agree to the terms and conditions outlined above. Please let us know if you have any other questions or concerns.
+
+Thank you for booking with our travel agency. We look forward to helping you have a safe and enjoyable trip!

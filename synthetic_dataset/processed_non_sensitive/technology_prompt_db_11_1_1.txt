@@ -1,0 +1,106 @@
+Here is the updated value without tags and using the provided standards:
+
+PostgreSQL Database Documentation
+
+Introduction
+This document provides detailed information about the PostgreSQL database used within ABC Corp. It covers essential details such as access credentials, backup and recovery procedures, high availability configuration, and support team contact information. The goal of this documentation is to ensure that all stakeholders have a comprehensive understanding of the PostgreSQL database and its management.
+
+PostgreSQL Access Details
+The PostgreSQL database is used across three different environments within ABC Corp: Development (Dev), Quality Assurance (QA), and Production (Prod). Each environment has its own set of access credentials, which are outlined below.
+
+Dev Instance
+Hostname: dev-db.abccorp.com
+Port: 5432
+Database Name: dev_database
+Username: your unique username
+Password: ****
+
+QA Instance
+Hostname: qa-db.abccorp.com
+Port: 5432
+Database Name: qa_database
+Username: your unique username
+Password: ****
+
+Prod Instance
+Hostname: prod-db.abccorp.com
+Port: 5432
+Database Name: prod_database
+Username: your unique username
+Password: ****
+
+It is important to note that the passwords provided above are for example purposes only and should be changed regularly as part of our security best practices.
+
+Backup and Recovery
+Regular backups of the PostgreSQL database are crucial to ensure data protection and the ability to restore the database in the event of a disaster or data loss. The following backup and recovery procedures are in place:
+
+Backup Procedure
+Full database backups are taken daily at 2:00 AM UTC using the `pg_dump` command. The backup files are stored on a dedicated backup server with redundant storage and are also replicated to a secondary location for additional protection.
+
+The backup command used is as follows:
+
+```
+pg_dump -h <hostname> -p <port> -U <username> <database_name> > <backup_file>
+```
+
+The backup files are named using the following convention: `<database_name>_<date>.sql`.
+
+Recovery Procedure
+In the event of data loss or the need to restore the database, the following recovery procedure should be followed:
+
+1. Identify the appropriate backup file to restore based on the recovery point objective.
+2. Stop the PostgreSQL service on the target server.
+3. Delete the existing database files (be cautious when executing this step).
+4. Restore the backup using the `psql` command:
+
+```
+psql -h <hostname> -p <port> -U <username> -d <database_name> -f <backup_file>
+```
+
+5. Start the PostgreSQL service and verify the restored data.
+
+It is recommended to test the backup and recovery process periodically to ensure its reliability.
+
+High Availability
+To ensure high availability of the PostgreSQL database, a warm standby replication setup has been implemented. The primary and standby instances are configured as follows:
+
+Primary Instance
+Hostname: prod-db.abccorp.com
+Port: 5432
+Database Name: prod_database
+Username: your unique username
+Password: ****
+
+Standby Instance
+Hostname: standby-db.abccorp.com
+Port: 5432
+Database Name: prod_database
+Username: your unique username
+Password: ****
+
+The standby instance is configured to replicate data from the primary instance using PostgreSQL's built-in streaming replication. In the event of a primary instance failure, the standby instance can be promoted to become the new primary, ensuring minimal downtime and data loss.
+
+To promote the standby instance to the primary, the following steps should be followed:
+
+1. Stop the PostgreSQL service on the primary instance.
+2. Promote the standby instance using the following command:
+
+```
+pg_ctl promote -D <data_directory>
+```
+
+3. Update the connection details for all applications and services to point to the new primary instance.
+
+It is recommended to test the failover and promotion process periodically to ensure its effectiveness.
+
+Support Team Information
+For any questions, issues, or concerns related to the PostgreSQL database, please contact the database support team:
+
+Database Support Team
+Email: db-support@abccorp.com
+Phone: +1 (555) 987-6543
+
+The support team is available 24/7 and will respond to all inquiries within 2 business hours.
+
+Conclusion
+This PostgreSQL database documentation provides a comprehensive overview of the database environment, access details, backup and recovery procedures, high availability configuration, and support team information. By following the outlined processes and procedures, you can ensure the reliability, recoverability, and high availability of the PostgreSQL database. If you have any additional questions or require further assistance, please do not hesitate to reach out to the database support team.

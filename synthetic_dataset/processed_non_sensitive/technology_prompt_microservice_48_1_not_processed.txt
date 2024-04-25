@@ -1,0 +1,113 @@
+# Inventory Adapter Service Documentation
+
+## Introduction
+
+The Inventory Adapter Service is a crucial component in the integration between an organization's internal Inventory Service and an external Warehouse Management System (WMS). This adapter service acts as a bridge, translating requests and responses between the two systems, ensuring seamless communication and data exchange.
+
+The primary purpose of the Inventory Adapter Service is to abstract the complexity of the external WMS from the internal Inventory Service, allowing the Inventory Service to interact with the WMS without needing to understand its underlying implementation details. This separation of concerns promotes flexibility, maintainability, and scalability within the overall system architecture.
+
+By leveraging the Adapter design pattern, the Inventory Adapter Service provides a standardized interface for the Inventory Service to access and manage inventory data, while handling the necessary translations and mappings to the external WMS. This approach ensures that the Inventory Service remains decoupled from the specific implementation of the WMS, making it easier to adapt to changes or switch to a different WMS provider in the future.
+
+## Authentication
+
+The Inventory Adapter Service utilizes a Client Adapter to handle the authentication process with the external WMS. The Inventory Service interacts with the Inventory Adapter Service using an API key or a set of credentials, which are then translated and forwarded to the WMS using the appropriate authentication mechanisms.
+
+The Inventory Adapter Service supports the following authentication methods:
+
+1. **API Key Authentication**: The Inventory Service provides an API key that is included in the request headers when accessing the Inventory Adapter Service. The Inventory Adapter Service then maps this API key to the corresponding authentication credentials required by the WMS.
+
+2. **Basic Authentication**: The Inventory Service provides a username and password, which the Inventory Adapter Service uses to authenticate with the WMS using the Basic Authentication scheme.
+
+3. **OAuth 2.0**: The Inventory Service initiates an OAuth 2.0 authentication flow, and the Inventory Adapter Service handles the necessary token exchange and validation to authenticate with the WMS.
+
+The Inventory Adapter Service ensures that the authentication process is transparent to the Inventory Service, allowing it to interact with the adapter without needing to know the specific authentication requirements of the WMS.
+
+## Adapter Service
+
+The Inventory Adapter Service exposes the following API endpoints, which mirror the functionality of the internal Inventory Service:
+
+1. **GET /v1/inventory/{productId}**
+   - Description: Retrieves the current inventory quantity for a specific product.
+   - Request: The `{productId}` parameter represents the unique identifier of the product.
+   - Response: The response includes the current inventory quantity for the specified product.
+
+2. **POST /v1/inventory/{productId}/quantity**
+   - Description: Adjusts the inventory quantity for a specific product.
+   - Request: The `{productId}` parameter represents the unique identifier of the product, and the request body includes the new inventory quantity.
+   - Response: The response confirms the successful update of the inventory quantity.
+
+3. **PUT /v1/inventory/{productId}/quantity**
+   - Description: Updates the inventory quantity for a specific product.
+   - Request: The `{productId}` parameter represents the unique identifier of the product, and the request body includes the new inventory quantity.
+   - Response: The response confirms the successful update of the inventory quantity.
+
+4. **DELETE /v1/inventory/{productId}**
+   - Description: Removes a product from the inventory.
+   - Request: The `{productId}` parameter represents the unique identifier of the product.
+   - Response: The response confirms the successful removal of the product from the inventory.
+
+These API endpoints serve as the interface between the Inventory Service and the Inventory Adapter Service, providing a standardized way for the Inventory Service to interact with the underlying WMS.
+
+## External Service
+
+The Inventory Adapter Service interacts with the external Warehouse Management System (WMS) using the following API endpoints:
+
+1. **GET /api/warehouse/stock/{sku}**
+   - Description: Retrieves the current stock level for a specific SKU (Stock Keeping Unit) in the WMS.
+   - Request: The `{sku}` parameter represents the unique identifier of the product.
+   - Response: The response includes the current stock level for the specified SKU.
+
+2. **POST /api/warehouse/stock/{sku}/adjust**
+   - Description: Adjusts the stock level for a specific SKU in the WMS.
+   - Request: The `{sku}` parameter represents the unique identifier of the product, and the request body includes the new stock level.
+   - Response: The response confirms the successful adjustment of the stock level.
+
+3. **PUT /api/warehouse/stock/{sku}/adjust**
+   - Description: Updates the stock level for a specific SKU in the WMS.
+   - Request: The `{sku}` parameter represents the unique identifier of the product, and the request body includes the new stock level.
+   - Response: The response confirms the successful update of the stock level.
+
+4. **DELETE /api/warehouse/stock/{sku}**
+   - Description: Removes a specific SKU from the WMS.
+   - Request: The `{sku}` parameter represents the unique identifier of the product.
+   - Response: The response confirms the successful removal of the SKU from the WMS.
+
+The Inventory Adapter Service acts as a Two-way Adapter, translating the requests and responses between the Inventory Service and the WMS APIs. This allows the Inventory Service to interact with the WMS without needing to know the specific implementation details of the external system.
+
+## Interface Translation
+
+The Inventory Adapter Service is responsible for translating the requests and responses between the Inventory Service and the external WMS. This translation process involves the following steps:
+
+1. **Request Translation**: When the Inventory Service makes a request to the Inventory Adapter Service, the adapter service maps the request parameters and payload to the corresponding format expected by the WMS API. This may include translating product identifiers, adjusting data structures, and adding any required authentication or header information.
+
+2. **Response Translation**: After the Inventory Adapter Service receives a response from the WMS, it maps the response data to the format expected by the Inventory Service. This may include extracting the relevant inventory information, transforming data types, and handling any error responses.
+
+3. **Error Handling**: The Inventory Adapter Service also handles any errors or exceptions that may occur during the communication with the WMS. It translates the WMS error responses into a format that the Inventory Service can understand and provides appropriate error messaging.
+
+By handling the interface translation, the Inventory Adapter Service ensures that the Inventory Service can interact with the WMS without needing to know the specific implementation details or data formats of the external system. This allows the Inventory Service to remain decoupled from the WMS, making it easier to maintain and scale the overall system.
+
+## Data Mapping
+
+The Inventory Adapter Service is responsible for mapping the data between the Inventory Service and the external WMS. This includes the following data mapping tasks:
+
+1. **Product Identification**: The Inventory Adapter Service maps the product identifiers used by the Inventory Service (e.g., `productId`) to the corresponding SKU (Stock Keeping Unit) identifiers used by the WMS.
+
+2. **Inventory Quantity**: The Inventory Adapter Service translates the inventory quantity data between the Inventory Service and the WMS, ensuring that the values are consistent and correctly represented.
+
+3. **Date and Time Formats**: The Inventory Adapter Service handles any differences in date and time formats between the Inventory Service and the WMS, converting the values as needed.
+
+4. **Unit of Measurement**: If there are differences in the units of measurement used by the Inventory Service and the WMS (e.g., pieces vs. cases), the Inventory Adapter Service performs the necessary conversions.
+
+5. **Metadata and Additional Fields**: The Inventory Adapter Service maps any additional metadata or fields that may be present in the WMS data to the appropriate format expected by the Inventory Service, and vice versa.
+
+By handling the data mapping, the Inventory Adapter Service ensures that the Inventory Service can interact with the WMS without needing to understand the specific data structures and formats used by the external system. This abstraction allows the Inventory Service to focus on its core functionality, while the adapter service handles the necessary data translations.
+
+## Summary
+
+The Inventory Adapter Service is a crucial component in the integration between an organization's internal Inventory Service and an external Warehouse Management System (WMS). By leveraging the Adapter design pattern, the Inventory Adapter Service provides a standardized interface for the Inventory Service to access and manage inventory data, while handling the necessary translations and mappings to the external WMS.
+
+The Inventory Adapter Service utilizes a Client Adapter to handle the authentication process with the external WMS, ensuring that the authentication requirements are transparent to the Inventory Service. The adapter service exposes a set of API endpoints that mirror the functionality of the internal Inventory Service, allowing the Inventory Service to interact with the adapter without needing to know the specific implementation details of the WMS.
+
+The Inventory Adapter Service acts as a Two-way Adapter, translating the requests and responses between the Inventory Service and the WMS APIs. This interface translation process ensures that the Inventory Service can interact with the WMS without needing to understand its underlying implementation details. Additionally, the Inventory Adapter Service is responsible for mapping the data between the Inventory Service and the WMS, handling any differences in product identifiers, inventory quantities, date and time formats, and units of measurement.
+
+By abstracting the complexity of the external WMS from the internal Inventory Service, the Inventory Adapter Service promotes flexibility, maintainability, and scalability within the overall system architecture. This approach allows the Inventory Service to remain decoupled from the specific implementation of the WMS, making it easier to adapt to changes or switch to a different WMS provider in the future.

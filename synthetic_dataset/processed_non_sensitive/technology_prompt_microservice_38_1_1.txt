@@ -1,0 +1,238 @@
+# Shipping Service Documentation
+
+## Introduction
+
+The Shipping Service is a crucial component of the ABC e-commerce system, responsible for managing all shipping-related operations. This microservice is built using the CQRS (Command Query Responsibility Segregation) pattern, which separates the concerns of updating and retrieving data, allowing for a more scalable and flexible architecture.
+
+The Shipping Service provides a set of APIs that allow users to create new shipments, update shipping addresses and statuses, and retrieve information about individual shipments or all shipments associated with a specific order. The service also utilizes event sourcing to store and replay events, ensuring a consistent and auditable view of the shipping data.
+
+## Authentication
+
+The Shipping Service requires authentication for all its API endpoints. The service supports two authentication methods:
+
+1. **API Key**: Clients can obtain an API key by registering with the ABC e-commerce system. This API key must be included in the `Authorization` header of each request, using the format `Bearer <your_api_key>`.
+
+2. **OAuth 2.0**: The service also supports OAuth 2.0 authentication, allowing clients to obtain access tokens from the system's authentication service. The access token must be included in the `Authorization` header of each request, using the format `Bearer <your_access_token>`.
+
+## Command API
+
+The Shipping Service's Command API is responsible for modifying the state of the shipping data. These endpoints are designed to be idempotent, ensuring that multiple identical requests will have the same effect as a single request.
+
+### Create Shipping
+
+**Endpoint**: `POST /v1/shipping/create`
+
+**Description**: This endpoint allows users to create a new shipping record for an order.
+
+**Request Body**:
+```json
+{
+  "orderId": "ORD-1234567",
+  "customerName": "John Smith",
+  "customerAddress": {
+    "street": "123 Main Street",
+    "city": "New York",
+    "state": "NY",
+    "zip": "10001"
+  },
+  "shippingMethod": "Standard",
+  "trackingNumber": "TRK-ABC123"
+}
+```
+
+**Response**:
+```json
+{
+  "id": "SHP-ABC123",
+  "orderId": "ORD-1234567",
+  "customerName": "John Smith",
+  "customerAddress": {
+    "street": "123 Main Street",
+    "city": "New York",
+    "state": "NY",
+    "zip": "10001"
+  },
+  "shippingMethod": "Standard",
+  "trackingNumber": "TRK-ABC123",
+  "status": "Pending"
+}
+```
+
+### Update Shipping Address
+
+**Endpoint**: `PUT /v1/shipping/{shippingId}/address`
+
+**Description**: This endpoint allows users to update the customer's shipping address for a specific shipping record.
+
+**Request Body**:
+```json
+{
+  "street": "456 Oak Road",
+  "city": "Los Angeles",
+  "state": "CA",
+  "zip": "90001"
+}
+```
+
+**Response**:
+```json
+{
+  "id": "SHP-ABC123",
+  "orderId": "ORD-1234567",
+  "customerName": "John Smith",
+  "customerAddress": {
+    "street": "456 Oak Road",
+    "city": "Los Angeles",
+    "state": "CA",
+    "zip": "90001"
+  },
+  "shippingMethod": "Standard",
+  "trackingNumber": "TRK-ABC123",
+  "status": "Pending"
+}
+```
+
+### Update Shipping Status
+
+**Endpoint**: `PUT /v1/shipping/{shippingId}/status`
+
+**Description**: This endpoint allows users to update the status of a specific shipping record.
+
+**Request Body**:
+```json
+{
+  "status": "Shipped"
+}
+```
+
+**Response**:
+```json
+{
+  "id": "SHP-ABC123",
+  "orderId": "ORD-1234567",
+  "customerName": "John Smith",
+  "customerAddress": {
+    "street": "456 Oak Road",
+    "city": "Los Angeles",
+    "state": "CA",
+    "zip": "90001"
+  },
+  "shippingMethod": "Standard",
+  "trackingNumber": "TRK-ABC123",
+  "status": "Shipped"
+}
+```
+
+### Delete Shipping
+
+**Endpoint**: `DELETE /v1/shipping/{shippingId}`
+
+**Description**: This endpoint allows users to delete a specific shipping record.
+
+**Response**:
+```json
+{
+  "message": "Shipping record deleted successfully"
+}
+```
+
+## Query API
+
+The Shipping Service's Query API is responsible for retrieving information about shipping records. These endpoints are designed to be highly performant and optimized for reading data.
+
+### Get Shipping by ID
+
+**Endpoint**: `GET /v1/shipping/{shippingId}`
+
+**Description**: This endpoint allows users to retrieve a specific shipping record by its ID.
+
+**Response**:
+```json
+{
+  "id": "SHP-ABC123",
+  "orderId": "ORD-1234567",
+  "customerName": "John Smith",
+  "customerAddress": {
+    "street": "456 Oak Road",
+    "city": "Los Angeles",
+    "state": "CA",
+    "zip": "90001"
+  },
+  "shippingMethod": "Standard",
+  "trackingNumber": "TRK-ABC123",
+  "status": "Shipped"
+}
+```
+
+### Get Shipping by Order ID
+
+**Endpoint**: `GET /v1/shipping?orderId={orderId}`
+
+**Description**: This endpoint allows users to retrieve all shipping records associated with a specific order.
+
+**Response**:
+```json
+[
+  {
+    "id": "SHP-ABC123",
+    "orderId": "ORD-1234567",
+    "customerName": "John Smith",
+    "customerAddress": {
+      "street": "456 Oak Road",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zip": "90001"
+    },
+    "shippingMethod": "Standard",
+    "trackingNumber": "TRK-ABC123",
+    "status": "Shipped"
+  },
+  {
+    "id": "SHP-DEF456",
+    "orderId": "ORD-1234567",
+    "customerName": "Jane Doe",
+    "customerAddress": {
+      "street": "789 Maple Avenue",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip": "94101"
+    },
+    "shippingMethod": "Express",
+    "trackingNumber": "TRK-DEF456",
+    "status": "Delivered"
+  }
+]
+```
+
+## Event Sourcing
+
+The Shipping Service uses event sourcing to store and replay shipping-related events. Each time a shipping record is created, updated, or deleted, an event is generated and stored in an event store. These events can be replayed to reconstruct the current state of the shipping data, ensuring a consistent and auditable view.
+
+The following events are generated by the Shipping Service:
+
+- `ShippingCreated`
+- `ShippingAddressUpdated`
+- `ShippingStatusUpdated`
+- `ShippingDeleted`
+
+## Read Model
+
+The Shipping Service maintains a read model, which is a denormalized and optimized representation of the shipping data. The read model is updated whenever an event is generated, ensuring that the query API can provide fast and efficient responses.
+
+The read model includes the following fields:
+
+- `id`: The unique identifier for the shipping record
+- `orderId`: The order ID associated with the shipping record
+- `customerName`: The name of the customer
+- `customerAddress`: The customer's shipping address
+- `shippingMethod`: The shipping method used for the order
+- `trackingNumber`: The tracking number associated with the shipment
+- `status`: The current status of the shipment
+
+## Summary
+
+The Shipping Service is a critical component of the ABC e-commerce system, responsible for managing all shipping-related operations. By adopting the CQRS pattern and utilizing event sourcing, the service is designed to be scalable, flexible, and highly performant.
+
+The service provides a set of APIs that allow users to create new shipments, update shipping addresses and statuses, and retrieve information about individual shipments or all shipments associated with a specific order. The service also ensures data consistency and auditability through the use of event sourcing and a read model.
+
+Overall, the Shipping Service plays a vital role in the ABC e-commerce system, ensuring that customers receive their orders in a timely and efficient manner.

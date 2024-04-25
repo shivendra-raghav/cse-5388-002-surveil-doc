@@ -1,0 +1,293 @@
+# GoCD Documentation
+
+## Introduction
+
+GoCD is an open-source continuous delivery (CD) platform that enables teams to automate and streamline their software delivery process. It provides a robust and flexible pipeline configuration, allowing teams to define and manage their entire software delivery lifecycle through code. GoCD is widely used by organizations of all sizes to improve their software delivery efficiency, reduce manual errors, and increase transparency and visibility across the development and deployment process.
+
+This documentation guide provides a comprehensive overview of the key features and functionalities of GoCD, with a focus on pipeline configuration, material management, and environment variable management. The document will cover the procedures for interacting with the GoCD API and connecting to the GoCD database, ensuring that users can effectively leverage the full capabilities of the platform to optimize their software delivery workflows.
+
+## GoCD Pipeline Configuration
+
+The core of GoCD is the pipeline configuration, which defines the stages, tasks, and dependencies that make up the software delivery process. The pipeline configuration is defined using a domain-specific language (DSL) or the GoCD web interface, allowing teams to easily define and manage their delivery workflows.
+
+### Defining a Pipeline
+
+To define a new pipeline in GoCD, you can use the pipeline configuration DSL or the web interface. The following is an example of a pipeline configuration in the DSL format:
+
+```
+pipeline "Acme Corp Pipeline" {
+  group "Development"
+  
+  materials {
+    git "https://github.com/acme-corp/web-app.git" {
+      branch = "main"
+      destination = "src"
+    }
+  }
+  
+  stages {
+    stage "build" {
+      jobs {
+        job "compile" {
+          tasks {
+            exec {
+              command = "mvn"
+              arguments = ["clean", "install"]
+            }
+          }
+        }
+      }
+    }
+    
+    stage "test" {
+      jobs {
+        job "unit-tests" {
+          tasks {
+            exec {
+              command = "mvn"
+              arguments = ["test"]
+            }
+          }
+        }
+      }
+    }
+    
+    stage "deploy" {
+      approval {
+        type = "manual"
+      }
+      
+      jobs {
+        job "deploy-to-staging" {
+          tasks {
+            exec {
+              command = "ansible-playbook"
+              arguments = ["staging-playbook.yml"]
+            }
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+This example defines a pipeline with three stages: build, test, and deploy. The build stage runs a Maven command to compile the source code, the test stage runs the unit tests, and the deploy stage requires manual approval before deploying the application to the staging environment using an Ansible playbook.
+
+### Modifying Pipeline Configuration
+
+To modify an existing pipeline configuration, you can either update the configuration file and apply the changes or use the GoCD web interface to make the necessary modifications. When making changes to the pipeline configuration, it's important to ensure that the changes are thoroughly tested and validated before applying them to the production environment.
+
+## Material Management
+
+GoCD supports a variety of materials, including Git repositories, Subversion repositories, and custom materials. Materials are used to define the source code and other artifacts that are used in the software delivery process.
+
+### Configuring Git Repository Material
+
+To configure a Git repository as a material in GoCD, you can use the following configuration:
+
+```
+materials {
+  git "https://github.com/acme-corp/web-app.git" {
+    branch = "main"
+    destination = "src"
+  }
+}
+```
+
+This configuration specifies that the pipeline should use the Git repository located at `https://github.com/acme-corp/web-app.git`, with the `main` branch as the default branch and the source code checked out to the `src` directory.
+
+### Configuring Subversion Repository Material
+
+To configure a Subversion repository as a material in GoCD, you can use the following configuration:
+
+```
+materials {
+  svn "https://svn.acme-corp.com/legacy-app" {
+    username = "your unique username"
+    password = "your secure password"
+    destination = "src"
+  }
+}
+```
+
+This configuration specifies that the pipeline should use the Subversion repository located at `https://svn.acme-corp.com/legacy-app`, with the specified username and password, and the source code checked out to the `src` directory.
+
+### Configuring Custom Materials
+
+GoCD also supports custom materials, which can be used to fetch data from external sources or perform custom processing on the source code. To configure a custom material, you can use the following configuration:
+
+```
+materials {
+  plugin "custom-data-plugin" {
+    option "url" "https://api.acme-corp.com/data"
+    option "auth-token" "****"
+  }
+}
+```
+
+This configuration specifies that the pipeline should use a custom material plugin named `custom-data-plugin`, with the specified options for the URL and authentication token.
+
+## Environment Variables
+
+Environment variables play a crucial role in GoCD, as they allow teams to manage and configure the environment-specific settings and parameters used throughout the software delivery process. GoCD provides a robust environment variable management system that enables teams to define and manage environment variables at the pipeline, stage, and job levels.
+
+### Defining Pipeline-Level Environment Variables
+
+To define environment variables at the pipeline level, you can use the following configuration:
+
+```
+environment_variables {
+  PIPELINE_ENV_VAR_1 = "value1"
+  PIPELINE_ENV_VAR_2 = "value2"
+}
+```
+
+This configuration specifies two environment variables, `PIPELINE_ENV_VAR_1` and `PIPELINE_ENV_VAR_2`, with the corresponding values `value1` and `value2`. These environment variables will be available to all stages and jobs within the pipeline.
+
+### Defining Stage-Level Environment Variables
+
+To define environment variables at the stage level, you can use the following configuration:
+
+```
+stages {
+  stage "build" {
+    environment_variables {
+      STAGE_ENV_VAR_1 = "value1"
+      STAGE_ENV_VAR_2 = "value2"
+    }
+    
+    jobs {
+      job "compile" {
+        tasks {
+          exec {
+            command = "mvn"
+            arguments = ["clean", "install"]
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+This configuration specifies two environment variables, `STAGE_ENV_VAR_1` and `STAGE_ENV_VAR_2`, with the corresponding values `value1` and `value2`. These environment variables will be available to all jobs within the `build` stage.
+
+### Defining Job-Level Environment Variables
+
+To define environment variables at the job level, you can use the following configuration:
+
+```
+stages {
+  stage "deploy" {
+    jobs {
+      job "deploy-to-staging" {
+        environment_variables {
+          JOB_ENV_VAR_1 = "value1"
+          JOB_ENV_VAR_2 = "value2"
+        }
+        
+        tasks {
+          exec {
+            command = "ansible-playbook"
+            arguments = ["staging-playbook.yml"]
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+This configuration specifies two environment variables, `JOB_ENV_VAR_1` and `JOB_ENV_VAR_2`, with the corresponding values `value1` and `value2`. These environment variables will be available only to the `deploy-to-staging` job.
+
+## Interacting with the GoCD API
+
+GoCD provides a comprehensive API that allows teams to interact with the platform programmatically. The GoCD API supports a wide range of operations, including managing pipelines, materials, and environment variables, as well as retrieving pipeline run history and status information.
+
+To interact with the GoCD API, you can use the following steps:
+
+1. Authenticate with the GoCD server using your unique credentials.
+2. Construct the API request using the appropriate HTTP method (e.g., GET, POST, PUT, DELETE) and the relevant API endpoint.
+3. Send the API request to the GoCD server and handle the response.
+
+Here's an example of how to use the GoCD API to retrieve the status of a pipeline:
+
+```
+import requests
+
+# Set the GoCD server URL and authentication credentials
+GOCD_SERVER_URL = "https://gocd.acme-corp.com"
+GOCD_USERNAME = "your unique username"
+GOCD_PASSWORD = "your secure password"
+
+# Set the pipeline name
+PIPELINE_NAME = "Acme Corp Pipeline"
+
+# Construct the API request
+url = f"{GOCD_SERVER_URL}/api/pipelines/{PIPELINE_NAME}/status"
+headers = {
+    "Accept": "application/vnd.go.cd.v1+json",
+    "Authorization": f"Basic {base64.b64encode(f'{GOCD_USERNAME}:{GOCD_PASSWORD}'.encode()).decode()}"
+}
+
+# Send the API request and handle the response
+response = requests.get(url, headers=headers)
+if response.status_code == 200:
+    pipeline_status = response.json()
+    print(f"Pipeline status: {pipeline_status['status']}")
+else:
+    print(f"Error retrieving pipeline status: {response.status_code} - {response.text}")
+```
+
+This example demonstrates how to use the GoCD API to retrieve the status of a pipeline named `Acme Corp Pipeline`. The user's credentials are used for authentication, and the response is parsed to extract the current pipeline status.
+
+## Connecting to the GoCD Database
+
+GoCD also provides the ability to connect to the underlying database to access additional data and perform custom queries. The GoCD database is typically a PostgreSQL database, and you can connect to it using standard database connection tools and libraries.
+
+To connect to the GoCD database, you will need to obtain the necessary credentials, including the database host, port, username, and password. Once you have the credentials, you can use a database client or a programming language library to connect to the database and execute queries.
+
+Here's an example of how to connect to the GoCD database using Python and the `psycopg2` library:
+
+```python
+import psycopg2
+
+# Set the database connection details
+DB_HOST = "gocd-db.acme-corp.com"
+DB_PORT = 5432
+DB_NAME = "gocd"
+DB_USER = "your unique username"
+DB_PASSWORD = "your secure password"
+
+# Connect to the database
+conn = psycopg2.connect(
+    host=DB_HOST,
+    port=DB_PORT,
+    database=DB_NAME,
+    user=DB_USER,
+    password=DB_PASSWORD
+)
+
+# Create a cursor object
+cursor = conn.cursor()
+
+# Execute a query to retrieve pipeline run history
+cursor.execute("SELECT * FROM pipeline_history ORDER BY id DESC LIMIT 10")
+pipeline_runs = cursor.fetchall()
+
+# Print the pipeline run history
+for run in pipeline_runs:
+    print(run)
+
+# Close the connection
+conn.close()
+```
+
+This example demonstrates how to connect to the GoCD database using the `psycopg2` library, execute a query to retrieve the last 10 pipeline runs, and print the results. You can modify the query and use the retrieved data to build custom reports, analyze pipeline performance, or integrate with other systems.
+
+## Conclusion
+
+GoCD is a powerful continuous delivery platform that enables teams to automate and streamline their software delivery process. This documentation guide has provided an overview of the key features and functionalities of GoCD, including pipeline configuration, material management, and environment variable management. Additionally, it has covered the procedures for interacting with the GoCD API and connecting to the GoCD database, allowing teams to leverage the full capabilities of the platform to optimize their software delivery workflows.
+
+By following the guidance provided in this document, teams can effectively set up, configure, and manage their GoCD environments, ensuring a reliable and efficient software delivery process that supports their organizational goals and objectives.

@@ -1,0 +1,161 @@
+Here is the updated value without tags and using the specified standards:
+
+Azure Architecture Documentation
+
+Introduction
+This Azure Architecture documentation provides a comprehensive overview of the key services and configurations within the admin's Azure account. The documentation covers the following Azure services: Azure Kubernetes Service, Container Instances, and API Management. For each service, the documentation outlines the current configuration, steps for viewing and updating the service, and relevant details.
+
+The purpose of this documentation is to serve as a reference for the admin to understand the current Azure environment, monitor updates, and make any necessary changes to the configured services. By providing thorough and up-to-date information, this documentation aims to enhance the admin's ability to effectively manage and optimize the Azure infrastructure.
+
+Latest Update By
+This Azure Architecture documentation was last updated by John Doe, the Azure Architect, on June 1, 2023.
+
+Service Details
+
+Azure Kubernetes Service
+Azure Kubernetes Service (AKS) is a fully managed Kubernetes service provided by Microsoft, which simplifies the deployment, management, and operations of Kubernetes. AKS allows organizations to quickly deploy and manage containerized applications without the complexity of fully orchestrating Kubernetes clusters themselves.
+
+Current Configuration
+The admin's Azure account currently has the following configuration for the Azure Kubernetes Service:
+
+Cluster Name: MyAKSCluster
+Location: West Europe
+Kubernetes version: 1.22.6
+Node Pool:
+  - VM Size: Standard_D2_v2
+  - Node Count: 3
+  - Auto-scaling: Enabled (Min Nodes: 1, Max Nodes: 5)
+  - Kubernetes version: 1.22.6
+  - OS Type: Linux
+Networking:
+  - Network Plugin: Azure CNI
+  - Service Cidr: 172.16.0.0/16
+  - DNS Service IP: 172.16.0.10
+  - Docker Bridge Cidr: 172.17.0.1/16
+Monitoring:
+  - Enabled: Yes
+  - Log Analytics Workspace: myAKSWorkspace
+
+Viewing the AKS Cluster
+To view the details of the AKS cluster, the admin can follow these steps:
+
+1. Sign in to the Azure portal at https://portal.azure.com using your unique credentials.
+2. In the search bar, search for "Kubernetes services" and select it from the results.
+3. On the Kubernetes services page, the admin will see the list of AKS clusters in the current subscription.
+4. Locate the "MyAKSCluster" cluster and click on it to view its details.
+5. On the cluster overview page, the admin can see the current configuration, such as the cluster name, location, Kubernetes version, node pool details, networking settings, and monitoring status.
+
+Updating the AKS Cluster
+To update the AKS cluster configuration, the admin can follow these steps:
+
+1. Navigate to the AKS cluster details page as described in the previous section.
+2. Click on the "Edit" button to start editing the cluster configuration.
+3. On the "Edit cluster" page, the admin can modify various settings, such as:
+   - Kubernetes version
+   - Node pool configuration (VM size, node count, auto-scaling settings)
+   - Networking settings (network plugin, service CIDR, DNS service IP, Docker bridge CIDR)
+   - Monitoring settings (enabling or disabling Log Analytics integration)
+4. After making the desired changes, the admin can click on the "Review + update" button to validate the changes and initiate the update process.
+5. Once the update is completed, the admin can verify the new configuration by revisiting the cluster details page.
+
+Container Instances
+Azure Container Instances (ACI) is a service that allows users to run containers directly on the Azure infrastructure without having to manage any virtual machines or adopt a higher-level service. ACI provides a simple and rapid way to deploy containers in the cloud.
+
+Current Configuration
+The admin's Azure account currently has the following configuration for Azure Container Instances:
+
+Container Group Name: myContainerGroup
+Location: West Europe
+Containers:
+  - Name: web-server
+    Image: nginx:latest
+    CPU: 1
+    Memory: 1.5 GB
+    Ports:
+      - 80
+  - Name: api-server
+    Image: acmecorp.azurecr.io/api:v1
+    CPU: 0.5
+    Memory: 1 GB
+    Ports:
+      - 8080
+Network:
+  - DNS Label Prefix: my-container-group
+  - IP Address Type: Public
+
+Viewing the Container Instances
+To view the details of the Azure Container Instances, the admin can follow these steps:
+
+1. Sign in to the Azure portal at https://portal.azure.com using your unique credentials.
+2. In the search bar, search for "Container instances" and select it from the results.
+3. On the Container instances page, the admin will see the list of container groups in the current subscription.
+4. Locate the "myContainerGroup" container group and click on it to view its details.
+5. On the container group overview page, the admin can see the current configuration, such as the container group name, location, container details (name, image, resource allocation), and network settings.
+
+Updating the Container Instances
+To update the Azure Container Instances configuration, the admin can follow these steps:
+
+1. Navigate to the container group details page as described in the previous section.
+2. Click on the "Edit" button to start editing the container group configuration.
+3. On the "Edit container group" page, the admin can modify various settings, such as:
+   - Container details (image, resource allocation)
+   - Network settings (DNS label prefix, IP address type)
+4. After making the desired changes, the admin can click on the "Review + update" button to validate the changes and initiate the update process.
+5. Once the update is completed, the admin can verify the new configuration by revisiting the container group details page.
+
+API Management
+Azure API Management (APIM) is a fully managed service that enables organizations to publish, secure, transform, maintain, and monitor their API portfolios. APIM provides a comprehensive set of tools and features to manage the entire API lifecycle, from creation to deprecation.
+
+Current Configuration
+The admin's Azure account currently has the following configuration for Azure API Management:
+
+API Management Service Name: myAPIManagementService
+Location: West Europe
+SKU: Developer
+Publisher Email: admin@acmecorp.com
+Publisher Name: ACME Corp API
+Protocols:
+  - HTTP
+  - HTTPS
+API Products:
+  - Name: Starter
+    State: Published
+    APIs:
+      - myDemoAPI
+  - Name: Premium
+    State: Published
+    APIs:
+      - myPremiumAPI
+Authentication:
+  - Client Certificate
+  - Azure Active Directory
+
+Viewing the API Management Service
+To view the details of the Azure API Management service, the admin can follow these steps:
+
+1. Sign in to the Azure portal at https://portal.azure.com using your unique credentials.
+2. In the search bar, search for "API Management services" and select it from the results.
+3. On the API Management services page, the admin will see the list of API Management services in the current subscription.
+4. Locate the "myAPIManagementService" and click on it to view its details.
+5. On the API Management service overview page, the admin can see the current configuration, such as the service name, location, SKU, publisher details, supported protocols, API products, and authentication settings.
+
+Updating the API Management Service
+To update the Azure API Management service configuration, the admin can follow these steps:
+
+1. Navigate to the API Management service details page as described in the previous section.
+2. Click on the "Edit" button to start editing the service configuration.
+3. On the "Edit API Management service" page, the admin can modify various settings, such as:
+   - Service name
+   - Location
+   - SKU
+   - Publisher details
+   - Supported protocols
+   - API products (create, update, or delete)
+   - Authentication settings
+4. After making the desired changes, the admin can click on the "Review + update" button to validate the changes and initiate the update process.
+5. Once the update is completed, the admin can verify the new configuration by revisiting the API Management service details page.
+
+Summary
+This Azure Architecture documentation provides a comprehensive overview of the key Azure services and configurations within the admin's Azure account. The documentation covers the current state of Azure Kubernetes Service, Container Instances, and API Management, including details on how to view and update these services.
+
+By maintaining this documentation, the admin can ensure that the Azure environment is properly configured, monitored, and updated as needed. The detailed information and step-by-step instructions provided in this document will enable the admin to effectively manage and optimize the Azure infrastructure, helping to maintain a secure and efficient cloud environment.

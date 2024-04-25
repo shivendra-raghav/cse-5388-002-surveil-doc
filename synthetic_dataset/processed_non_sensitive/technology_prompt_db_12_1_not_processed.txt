@@ -1,0 +1,104 @@
+Here is the MySQL Database documentation for the MySQL account, following the requested structure and guidelines:
+
+MySQL Database Documentation
+
+Introduction
+This documentation provides comprehensive information about the MySQL database setup, configuration, and maintenance procedures for the company's development, staging, and production environments. The goal of this documentation is to ensure that the MySQL database is properly managed, optimized, and supported across all stages of the application lifecycle.
+
+MySQL Access Details
+The MySQL database is used to store and manage the application's data in all three environments: development (Dev), staging (Staging), and production (Prod). Each environment has its own dedicated MySQL instance with the following access details:
+
+Dev MySQL Instance:
+- Host: dev-mysql.mycompany.com
+- Port: 3306
+- Username: dev_user
+- Password: Xd8$#2aB
+
+Staging MySQL Instance:
+- Host: staging-mysql.mycompany.com
+- Port: 3306
+- Username: staging_user
+- Password: 9Kf!mP4q
+
+Prod MySQL Instance:
+- Host: prod-mysql.mycompany.com
+- Port: 3306
+- Username: prod_user
+- Password: 7Zt@Ld5x
+
+It is important to note that the access credentials are environment-specific and should not be shared or used across different environments. Additionally, the production environment should be accessed with the utmost care and only by authorized personnel.
+
+Replication Setup
+To ensure data consistency and high availability, the MySQL database setup includes a replication configuration between the primary and secondary instances in the production environment.
+
+Primary Instance (Prod):
+- Host: prod-mysql.mycompany.com
+- Port: 3306
+- Username: prod_user
+- Password: 7Zt@Ld5x
+
+Secondary Instance (Prod Replica):
+- Host: prod-mysql-replica.mycompany.com
+- Port: 3306
+- Username: prod_replica_user
+- Password: 2Qw#Ry8p
+
+The replication process is configured to use the row-based replication method, with the primary instance acting as the master and the secondary instance as the slave. The replication setup is monitored regularly to ensure that data is being replicated correctly and that the secondary instance is up-to-date.
+
+To view the replication status, you can run the following SQL query on the primary instance:
+
+```sql
+SHOW SLAVE STATUS\G
+```
+
+This will display the current replication status, including information about the replication lag, the last executed event, and any errors or warnings.
+
+To temporarily pause the replication, you can run the following SQL commands on the secondary instance:
+
+```sql
+STOP SLAVE;
+```
+
+To resume the replication, run the following command on the secondary instance:
+
+```sql
+START SLAVE;
+```
+
+It is important to note that any modifications made to the secondary instance while the replication is paused will be overwritten once the replication is resumed.
+
+Performance Tuning
+To ensure optimal performance of the MySQL database, the following tuning parameters have been configured:
+
+- `innodb_buffer_pool_size`: 8GB (for Prod instance), 4GB (for Staging and Dev instances)
+- `max_connections`: 500 (for Prod instance), 200 (for Staging instance), 100 (for Dev instance)
+- `query_cache_size`: 256M (for Prod instance), 128M (for Staging instance), 64M (for Dev instance)
+- `innodb_flush_log_at_trx_commit`: 2 (for Prod instance), 1 (for Staging and Dev instances)
+- `sync_binlog`: 1 (for Prod instance), 0 (for Staging and Dev instances)
+
+These parameters have been chosen based on the expected workload and resource availability in each environment. It is recommended to monitor the database performance regularly and adjust these parameters as needed to ensure optimal performance.
+
+To view the current MySQL configuration, you can run the following SQL query:
+
+```sql
+SHOW VARIABLES;
+```
+
+This will display all the current MySQL configuration settings, which can be used to verify the tuning parameters.
+
+Support Team Information
+For any issues or concerns related to the MySQL database, please contact the support team at the following email address:
+
+- MySQL Support: mysql-support@mycompany.com
+
+The support team is available 24/7 and will respond to your inquiries as soon as possible. When reporting an issue, please provide the following information:
+
+- Environment (Dev, Staging, or Prod)
+- MySQL instance details (host, port, username)
+- Description of the issue
+- Any relevant error messages or logs
+
+The support team will investigate the issue and provide a resolution or workaround as quickly as possible.
+
+Conclusion
+This MySQL Database documentation covers the essential information needed to manage and maintain the MySQL database setup across the development, staging, and production environments. It includes details on access credentials, replication configuration, performance tuning, and support team contact information. By following the procedures and guidelines outlined in this document, the MySQL database can be effectively managed and optimized to support the company's application requirements.

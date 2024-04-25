@@ -1,0 +1,187 @@
+# Payment Gateway Service Documentation
+
+## Introduction
+
+The Payment Gateway Service is a critical component of the overall payment processing system, acting as an Ambassador to the underlying Payment Service. This microservice serves as a unified interface, handling authentication, rate limiting, and request/response transformation, ensuring a seamless and secure payment experience for the end-users.
+
+The Ambassador pattern is employed in this service to decouple the client-facing concerns from the backend implementation details, enabling better scalability, maintainability, and flexibility in the long run. By abstracting the complexity of the Payment Service, the Payment Gateway Service provides a simplified and consistent API for the client applications to interact with, making the integration process more straightforward and efficient.
+
+In this documentation, we will delve into the various aspects of the Payment Gateway Service, including authentication, the Ambassador Service, the Backend Service, request routing, response transformation, and a summary of the key features and benefits.
+
+## Authentication
+
+The Payment Gateway Service utilizes a robust authentication mechanism to ensure the security and integrity of the payment processing system. Clients accessing the service must provide valid credentials to authenticate their requests.
+
+### API Key Authentication
+
+The primary authentication method employed by the Payment Gateway Service is API Key authentication. Each client application is issued a unique API key that must be included in the `Authorization` header of every request made to the service.
+
+The API key is generated and managed by the service administrators. Clients are responsible for securely storing and handling their API keys to prevent unauthorized access to the payment processing system.
+
+Example request header:
+```
+Authorization: ApiKey c4ca4238a0b923820dcc509a6f75849b
+```
+
+### OAuth 2.0 Authentication (Optional)
+
+As an alternative to API Key authentication, the Payment Gateway Service also supports OAuth 2.0 authentication. Clients can obtain access tokens by following the standard OAuth 2.0 flow, such as the Authorization Code Grant or Client Credentials Grant.
+
+Once an access token is obtained, it should be included in the `Authorization` header of the requests made to the Payment Gateway Service.
+
+Example request header:
+```
+Authorization: Bearer your_access_token_value
+```
+
+## Ambassador Service
+
+The Ambassador Service exposes the public-facing API for the Payment Gateway Service. It acts as the entry point for all client interactions, handling authentication, rate limiting, and request/response transformation.
+
+### Endpoints
+
+The Ambassador Service provides the following endpoints:
+
+1. **Authorize Payment**
+   - Endpoint: `POST /v1/payments/authorize`
+   - Description: Initiates the authorization process for a payment transaction.
+   - Request Body: `{ "amount": 100.00, "currency": "USD", "cardNumber": "4111111111111111", "expirationDate": "2025-12-31", "cvv": "123" }`
+   - Response: `{ "paymentId": "123456789", "status": "authorized" }`
+
+2. **Capture Payment**
+   - Endpoint: `POST /v1/payments/capture`
+   - Description: Captures a previously authorized payment transaction.
+   - Request Body: `{ "paymentId": "123456789", "amount": 100.00 }`
+   - Response: `{ "paymentId": "123456789", "status": "captured" }`
+
+3. **Retrieve Payment**
+   - Endpoint: `GET /v1/payments/{paymentId}`
+   - Description: Retrieves the details of a specific payment transaction.
+   - Response: `{ "paymentId": "123456789", "amount": 100.00, "currency": "USD", "status": "captured" }`
+
+4. **Refund Payment**
+   - Endpoint: `PUT /v1/payments/{paymentId}/refund`
+   - Description: Initiates a refund for a previously captured payment transaction.
+   - Request Body: `{ "amount": 50.00 }`
+   - Response: `{ "paymentId": "123456789", "status": "refunded", "refundedAmount": 50.00 }`
+
+5. **Cancel Payment**
+   - Endpoint: `DELETE /v1/payments/{paymentId}`
+   - Description: Cancels a pending payment transaction.
+   - Response: `{ "paymentId": "123456789", "status": "cancelled" }`
+
+The Ambassador Service handles the following responsibilities:
+
+1. **Authentication**: Validates the client's API key or OAuth access token to ensure authorized access to the payment processing system.
+2. **Rate Limiting**: Implements rate limiting strategies to protect the underlying Payment Service from excessive requests and potential abuse.
+3. **Request Transformation**: Transforms the client's request payload into the format expected by the Backend Service.
+4. **Response Transformation**: Transforms the response from the Backend Service into a format that is more suitable for the client applications.
+
+By abstracting these concerns, the Ambassador Service provides a consistent and user-friendly interface for the client applications, shielding them from the complexities of the Payment Service implementation.
+
+## Backend Service
+
+The Backend Service is the underlying implementation of the payment processing logic. It exposes a set of internal endpoints that are consumed by the Ambassador Service, handling the actual payment-related operations.
+
+### Endpoints
+
+The Backend Service provides the following internal endpoints:
+
+1. **Authorize Payment**
+   - Endpoint: `POST /internal/payments/authorize`
+   - Description: Performs the authorization process for a payment transaction.
+   - Request Body: `{ "amount": 100.00, "currency": "USD", "cardNumber": "4111111111111111", "expirationDate": "2025-12-31", "cvv": "123" }`
+   - Response: `{ "paymentId": "123456789", "status": "authorized" }`
+
+2. **Capture Payment**
+   - Endpoint: `POST /internal/payments/capture`
+   - Description: Captures a previously authorized payment transaction.
+   - Request Body: `{ "paymentId": "123456789", "amount": 100.00 }`
+   - Response: `{ "paymentId": "123456789", "status": "captured" }`
+
+3. **Retrieve Payment**
+   - Endpoint: `GET /internal/payments/{paymentId}`
+   - Description: Retrieves the details of a specific payment transaction.
+   - Response: `{ "paymentId": "123456789", "amount": 100.00, "currency": "USD", "status": "captured" }`
+
+4. **Refund Payment**
+   - Endpoint: `PUT /internal/payments/{paymentId}/refund`
+   - Description: Initiates a refund for a previously captured payment transaction.
+   - Request Body: `{ "amount": 50.00 }`
+   - Response: `{ "paymentId": "123456789", "status": "refunded", "refundedAmount": 50.00 }`
+
+5. **Cancel Payment**
+   - Endpoint: `DELETE /internal/payments/{paymentId}`
+   - Description: Cancels a pending payment transaction.
+   - Response: `{ "paymentId": "123456789", "status": "cancelled" }`
+
+The Backend Service is responsible for the following tasks:
+
+1. **Payment Processing Logic**: Handles the core payment-related operations, such as authorization, capture, refund, and cancellation.
+2. **Data Storage**: Manages the storage and retrieval of payment transaction data, ensuring the integrity and persistence of the payment information.
+3. **Integration with Payment Gateways**: Facilitates the integration with third-party payment gateways, handling the communication and data exchange between the Payment Gateway Service and the external payment processors.
+4. **Error Handling**: Implements robust error handling mechanisms to ensure that the payment processing system can gracefully handle and recover from various error scenarios.
+
+By encapsulating the payment processing logic and integrating with the external payment gateways, the Backend Service provides a reliable and scalable foundation for the Payment Gateway Service.
+
+## Request Routing
+
+The Payment Gateway Service utilizes a request routing mechanism to ensure that the client requests are properly forwarded to the appropriate endpoints within the Ambassador Service and the Backend Service.
+
+### Ambassador Service Routing
+
+The Ambassador Service routes the incoming client requests to the corresponding endpoints based on the HTTP method and the URL path. The routing table for the Ambassador Service is as follows:
+
+| HTTP Method | URL Path                        | Endpoint                       |
+|-------------|----------------------------------|--------------------------------|
+| POST        | /v1/payments/authorize          | Authorize Payment              |
+| POST        | /v1/payments/capture            | Capture Payment                |
+| GET         | /v1/payments/{paymentId}        | Retrieve Payment               |
+| PUT         | /v1/payments/{paymentId}/refund | Refund Payment                 |
+| DELETE      | /v1/payments/{paymentId}        | Cancel Payment                 |
+
+### Backend Service Routing
+
+The Backend Service routes the requests from the Ambassador Service to the corresponding internal endpoints based on the HTTP method and the URL path. The routing table for the Backend Service is as follows:
+
+| HTTP Method | URL Path                         | Endpoint                       |
+|-------------|----------------------------------|--------------------------------|
+| POST        | /internal/payments/authorize    | Authorize Payment              |
+| POST        | /internal/payments/capture      | Capture Payment                |
+| GET         | /internal/payments/{paymentId}  | Retrieve Payment               |
+| PUT         | /internal/payments/{paymentId}/refund | Refund Payment           |
+| DELETE      | /internal/payments/{paymentId}  | Cancel Payment                 |
+
+The request routing mechanism ensures that the client requests are correctly mapped to the appropriate implementation within the Payment Gateway Service, seamlessly connecting the Ambassador Service and the Backend Service.
+
+## Response Transformation
+
+The Payment Gateway Service employs response transformation to ensure that the client-facing responses are consistent, user-friendly, and aligned with the expected format.
+
+1. **Response Unification**: The Ambassador Service unifies the response formats across the different endpoints, providing a consistent structure and data representation for the client applications.
+
+2. **Error Handling**: The Ambassador Service handles error scenarios gracefully, transforming the backend error responses into a standard error format that includes detailed error information, such as error codes, error messages, and any relevant context.
+
+3. **Data Formatting**: The Ambassador Service formats the response data in a way that is more suitable for the client applications, such as camelCase field names, consistent date/time formats, and appropriate data types.
+
+4. **Performance Optimization**: The Ambassador Service may apply response optimization techniques, such as pagination, filtering, and caching, to improve the overall performance and user experience of the Payment Gateway Service.
+
+By applying these response transformation strategies, the Payment Gateway Service ensures that the client applications receive a predictable and user-friendly response format, shielding them from the internal complexities of the Backend Service implementation.
+
+## Summary
+
+The Payment Gateway Service is a critical component of the payment processing system, acting as an Ambassador to the underlying Payment Service. By employing the Ambassador pattern, the service provides a unified and simplified interface for the client applications, handling authentication, rate limiting, and request/response transformation.
+
+The key features and benefits of the Payment Gateway Service include:
+
+1. **Improved Security**: The service's authentication mechanisms, including API Key and OAuth 2.0, ensure the security and integrity of the payment processing system, protecting it from unauthorized access.
+
+2. **Enhanced Scalability**: The Ambassador pattern enables the service to scale independently from the Backend Service, allowing the system to handle increasing traffic and load without affecting the core payment processing logic.
+
+3. **Maintainability and Flexibility**: The separation of concerns between the Ambassador Service and the Backend Service simplifies the overall system architecture, making it easier to maintain, evolve, and adapt to changing business requirements.
+
+4. **Consistent and User-friendly API**: The Payment Gateway Service provides a consistent, well-documented, and user-friendly API for the client applications, simplifying the integration process and improving the overall user experience.
+
+5. **Resilience and Error Handling**: The service's robust error handling mechanisms and response transformation capabilities ensure that the client applications receive meaningful and actionable feedback, even in the face of unexpected errors or failures.
+
+By leveraging the Ambassador pattern, the Payment Gateway Service delivers a reliable, scalable, and secure payment processing solution, empowering the client applications to focus on their core business logic while the service handles the complexities of the payment-related operations.
