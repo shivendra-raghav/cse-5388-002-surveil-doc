@@ -35,4 +35,6 @@ ABC Corp Product Requirements Document
    8.1. Glossary of Terms
    8.2. References and Resources
 
+To access the Google Doc link below, you can use this one time password: <PASSWORD>
+
 [Google Doc Link]
