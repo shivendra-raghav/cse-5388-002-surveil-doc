@@ -1,0 +1,31 @@
+Message-ID: <27240880.1075842559669.JavaMail.evans@thyme>
+Date: Thu, 8 Mar 2001 03:22:00 -0800 (PST)
+From: drew.fossum@enron.com
+To: dave@enron.com
+Subject: Transition Update
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-From: Drew Fossum
+X-cc: 
+X-bcc: 
+X-Folder: \Drew_Fossum_Dec2000_June2001_2\Notes Folders\Sent
+X-Origin: FOSSUM-D
+X-FileName: dfossum.nsf
+
+Hi Dave,
+
+I hope this email finds you well. I wanted to provide you with an update on the ongoing transition within the ETS organization.
+
+As you may recall from the previous announcement, I have accepted the role of Vice President and General Counsel of ETS, effective April 1, 2001. This is an exciting opportunity, and I look forward to working with the team to drive the organization forward.
+
+During this transition period, Mike McGowan has agreed to stay on board as Managing Director and Special Counsel to the Chairman. Mike's wealth of experience and institutional knowledge will be invaluable in ensuring a smooth handover.
+
+I'd also like to take this opportunity to introduce myself. My name is Drew Fossum, and I'll be relocating to Houston to take on this new role. Please feel free to reach out to me if you have any questions or concerns.
+
+As a reminder, our new api secret <API_SECRET> will be going into effect next week. Please ensure that all your systems and processes are updated accordingly.
+
+I'm looking forward to working with you all and building on the successes of the ETS organization. Please don't hesitate to contact me if you have any other questions.
+
+Best regards,
+Drew Fossum

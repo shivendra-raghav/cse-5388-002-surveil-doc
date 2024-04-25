@@ -1,0 +1,68 @@
+Linode Object Storage Documentation
+
+Introduction
+Linode Object Storage is a highly scalable, durable, and secure object storage service designed to store and retrieve large amounts of unstructured data. Whether you need to backup files, host static websites, or build cloud-native applications, Linode Object Storage provides a simple and reliable solution to meet your storage needs. This documentation will guide you through the process of accessing and managing your Linode Object Storage resources.
+
+Linode Object Storage Access Details
+To access your Linode Object Storage, you will need to use your Linode account credentials. This includes your Linode account username and password, as well as an API token that will be used to authenticate your API requests.
+
+Linode Account Credentials
+To log in to the Linode Manager and access your Object Storage resources, you will need to use your Linode account username and password. 
+
+Your Linode account username is: john.doe@example.com
+Your Linode account password is: <PASSWORD>
+
+Once you have logged in to the Linode Manager, you can navigate to the Object Storage section to manage your buckets and objects.
+
+API Access
+To programmatically interact with your Linode Object Storage, you will need to generate an API token. This token will be used to authenticate your API requests and grant you access to your Object Storage resources.
+
+To generate an API token, follow these steps:
+
+1. Log in to the Linode Manager using your Linode account credentials.
+2. Navigate to the "API Tokens" section in the Linode Manager.
+3. Click the "Create a Personal Access Token" button.
+4. Provide a name for your API token and select the appropriate permissions for your use case.
+5. Click the "Create Token" button to generate your API token.
+
+Your API token is: <API_TOKEN>
+
+Be sure to keep this API token secure, as it can be used to access and modify your Linode Object Storage resources.
+
+Bucket Policies
+Linode Object Storage allows you to create and manage buckets, which are containers for your objects. Each bucket can have its own set of access policies that control who can read, write, or delete the objects within it.
+
+Creating a Bucket
+To create a new bucket, follow these steps:
+
+1. Log in to the Linode Manager using your Linode account credentials.
+2. Navigate to the Object Storage section and click the "Create Bucket" button.
+3. Provide a unique name for your bucket and select the appropriate region.
+4. Click the "Create Bucket" button to create your new bucket.
+
+Configuring Bucket Policies
+Once you have created a bucket, you can configure its access policies to control who can interact with the objects stored within it. To configure the bucket policies, follow these steps:
+
+1. Log in to the Linode Manager using your Linode account credentials.
+2. Navigate to the Object Storage section and select the bucket you want to configure.
+3. Click the "Policies" tab and then the "Create Policy" button.
+4. Specify the actions you want to allow or deny, the principal (user or group) the policy applies to, and any conditions for the policy.
+5. Click the "Create Policy" button to apply the new policy to your bucket.
+
+Remember, the bucket policies you configure will determine who can access and interact with the objects in your Linode Object Storage. Be sure to carefully consider the appropriate policies for your use case.
+
+Object Expiration
+Linode Object Storage also allows you to configure object expiration policies, which will automatically delete objects from your buckets after a specified period of time. This can be useful for managing the lifecycle of your data and ensuring that it is not retained longer than necessary.
+
+To configure object expiration policies, follow these steps:
+
+1. Log in to the Linode Manager using your Linode account credentials.
+2. Navigate to the Object Storage section and select the bucket you want to configure.
+3. Click the "Expiration" tab and then the "Create Expiration Policy" button.
+4. Specify the number of days after which objects should be deleted, and any other conditions for the expiration policy.
+5. Click the "Create Expiration Policy" button to apply the new policy to your bucket.
+
+Once an object expiration policy is in place, Linode Object Storage will automatically delete any objects that match the specified criteria, helping you to maintain control over your data and potentially reduce storage costs.
+
+Conclusion
+This documentation has provided an overview of Linode Object Storage, including how to access your Linode account, use the API to interact with your Object Storage resources, configure bucket policies, and set up object expiration. By following the guidance in this document, you should be able to effectively manage your Linode Object Storage and leverage its capabilities to meet your storage and data management needs.

@@ -1,0 +1,71 @@
+CAR RENTAL AGREEMENT
+
+This Car Rental Agreement (the "Agreement") is made and entered into as of June 15, 2023 by and between Wheels Unlimited Rentals (the "Company") and John Doe (the "Renter").
+
+RENTER DETAILS
+Renter Name: John Doe
+Address: 123 Main Street, Anytown, CA 12345
+Phone Number: (555) 123-4567
+Email Address: john.doe@email.com
+Driver's License Number: CA1234567
+Driver's License Expiration Date: 07/31/2027
+
+VEHICLE INFORMATION
+Vehicle Make: Toyota
+Vehicle Model: Camry
+Vehicle Year: 2021
+Vehicle License Plate: ABC123
+Vehicle Identification Number (VIN): 1HGCR2F3XFA123456
+Odometer Reading at Start of Rental: 12,345
+
+RENTAL PERIOD
+Rental Start Date and Time: June 15, 2023 at 10:00 AM
+Rental End Date and Time: June 22, 2023 at 5:00 PM
+Estimated Total Rental Duration: 7 days
+
+RATES AND CHARGES
+Base Rental Rate: $45 per day
+Additional Hourly Rate: $7 per hour
+Taxes and Fees: $35
+Estimated Total Rental Charges: $350
+
+Security Deposit: $250 to be held on the Renter's credit card, <CREDIT_CARD_NUMBER>, until the vehicle is returned in acceptable condition.
+
+RENTAL TERMS
+
+1. Definitions. In this Agreement, the terms "you" and "your" refer to the Renter, and the terms "we", "us" and "our" refer to the Company.
+
+2. Acceptance of Vehicle. You acknowledge that you have inspected the Vehicle and that it is in good condition and repair, is accepted by you as is, and meets your requirements.
+
+3. Use of the Vehicle. The Vehicle may be operated only by you or other drivers specifically authorized by us. The Vehicle shall be used in a careful and proper manner, and shall not be used:
+- To carry passengers or property for hire
+- To propel or tow any other vehicle
+- For any illegal purpose
+- While under the influence of alcohol or drugs
+- In a reckless manner
+
+4. Return of the Vehicle. You agree to return the Vehicle to us in the same condition as received, ordinary wear and tear excepted, on the date and time specified. A late return may result in additional charges.
+
+5. Responsibility for Damage or Loss. You are responsible for all damage to or loss of the Vehicle, regardless of cause, except reasonable wear and tear. This includes the cost of repair or the actual cash value of the Vehicle if it is not repairable or if we elect not to repair it.
+
+6. Insurance. You agree to maintain in force during the rental period, at your own expense, automobile liability insurance covering you, any authorized driver, and us, in the amount required by applicable law, but in no event less than the minimum limits required in the state where the Vehicle is operated. Your personal automobile insurance policy may provide such coverage, but you should check with your insurance provider.
+
+7. Payment. You agree to pay us, on demand, all charges due under this Agreement, including the estimated total charges, any additional charges, and any costs we incur resulting from your use of the Vehicle, such as parking tickets, tolls, and towing expenses. You authorize us to charge your <CREDIT_CARD_NUMBER> for all such amounts.
+
+8. Online Rental Management. You can manage your rental online at our website using the following login credentials:
+<USERNAME>: jdoe123
+<PASSWORD>: <PASSWORD>
+
+9. Violation of Terms. Any violation of the terms of this Agreement may result in the termination of the rental and the requirement that you immediately return the Vehicle to us.
+
+10. Governing Law. This Agreement shall be governed by the laws of the state in which the rental transaction takes place.
+
+By signing below, you acknowledge that you have read, understand, and agree to the terms of this Car Rental Agreement.
+
+John Doe
+Renter Signature: _______________________________
+Date: _______________________________
+
+Sarah Johnson
+Company Representative Signature: _______________________________
+Date: _______________________________

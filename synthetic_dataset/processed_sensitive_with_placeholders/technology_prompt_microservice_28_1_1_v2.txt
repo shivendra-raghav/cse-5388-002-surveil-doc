@@ -1,0 +1,121 @@
+Notifications Service SOAP API Documentation
+
+Introduction
+The Notifications Service is a SOAP-based microservice that enables CRUD (Create, Read, Update, Delete) operations for managing notifications. This service is designed to provide a centralized and efficient way for applications to manage notifications, ensuring timely and reliable delivery of important information to users.
+
+Latest Update By
+This documentation was last updated by the Notifications Service Documentation Bot on May 15, 2023.
+
+Maintenance Team Details
+The Notifications Service is maintained by the Notifications Team, which consists of the following members:
+
+- John Doe (Lead Developer) - johndoe@examplecorp.com
+- Jane Smith (Senior Developer) - janesmith@examplecorp.com
+- Michael Johnson (DevOps Engineer) - michaeljohnson@examplecorp.com
+- Sarah Lee (QA Engineer) - sarahlee@examplecorp.com
+
+The team is responsible for ensuring the service's reliability, performance, and feature enhancements. If you have any questions or concerns regarding the Notifications Service, please feel free to contact the team at notifications-support@examplecorp.com.
+
+SOAP Services
+The Notifications Service exposes the following SOAP API endpoints:
+
+1. Create a Notification
+   - **Endpoint**: `/createNotification`
+   - **Description**: This service allows you to create a new notification.
+   - **Input Parameters**:
+     - `notificationTitle` (string, required): The title of the notification.
+     - `notificationMessage` (string, required): The message content of the notification.
+     - `notificationRecipients` (array of strings, required): The list of email addresses to receive the notification.
+     - `notificationPriority` (integer, required): The priority level of the notification (1 = low, 2 = medium, 3 = high).
+     - `notificationScheduledTime` (dateTime, required): The scheduled time for the notification to be delivered.
+   - **Output**: The ID of the newly created notification.
+   - **HTTP Responses**:
+     - `200 OK`: The notification was successfully created.
+     - `400 Bad Request`: One or more input parameters are invalid or missing.
+     - `401 Unauthorized`: The request is not authorized.
+     - `403 Forbidden`: The user is not allowed to perform this action.
+     - `500 Internal Server Error`: An unexpected error occurred on the server.
+
+2. Update a Notification
+   - **Endpoint**: `/updateNotification`
+   - **Description**: This service allows you to update an existing notification.
+   - **Input Parameters**:
+     - `notificationId` (string, required): The ID of the notification to be updated.
+     - `notificationTitle` (string, optional): The new title of the notification.
+     - `notificationMessage` (string, optional): The new message content of the notification.
+     - `notificationRecipients` (array of strings, optional): The new list of email addresses to receive the notification.
+     - `notificationPriority` (integer, optional): The new priority level of the notification (1 = low, 2 = medium, 3 = high).
+     - `notificationScheduledTime` (dateTime, optional): The new scheduled time for the notification to be delivered.
+   - **Output**: The ID of the updated notification.
+   - **HTTP Responses**:
+     - `200 OK`: The notification was successfully updated.
+     - `400 Bad Request`: One or more input parameters are invalid or missing.
+     - `401 Unauthorized`: The request is not authorized.
+     - `403 Forbidden`: The user is not allowed to perform this action.
+     - `404 Not Found`: The specified notification does not exist.
+     - `500 Internal Server Error`: An unexpected error occurred on the server.
+
+3. List a Notification
+   - **Endpoint**: `/getNotification`
+   - **Description**: This service allows you to retrieve the details of a specific notification.
+   - **Input Parameters**:
+     - `notificationId` (string, required): The ID of the notification to be retrieved.
+   - **Output**: The details of the specified notification.
+   - **HTTP Responses**:
+     - `200 OK`: The notification details were successfully retrieved.
+     - `400 Bad Request`: The input parameter is invalid or missing.
+     - `401 Unauthorized`: The request is not authorized.
+     - `403 Forbidden`: The user is not allowed to perform this action.
+     - `404 Not Found`: The specified notification does not exist.
+     - `500 Internal Server Error`: An unexpected error occurred on the server.
+
+4. List All Notifications
+   - **Endpoint**: `/getAllNotifications`
+   - **Description**: This service allows you to retrieve a list of all notifications.
+   - **Input Parameters**:
+     - `page` (integer, optional): The page number to retrieve (default is 1).
+     - `pageSize` (integer, optional): The number of notifications to return per page (default is 10).
+   - **Output**: A list of all notifications, paginated based on the input parameters.
+   - **HTTP Responses**:
+     - `200 OK`: The list of notifications was successfully retrieved.
+     - `401 Unauthorized`: The request is not authorized.
+     - `403 Forbidden`: The user is not allowed to perform this action.
+     - `500 Internal Server Error`: An unexpected error occurred on the server.
+
+5. Delete a Notification
+   - **Endpoint**: `/deleteNotification`
+   - **Description**: This service allows you to delete a specific notification.
+   - **Input Parameters**:
+     - `notificationId` (string, required): The ID of the notification to be deleted.
+   - **Output**: A confirmation that the notification was successfully deleted.
+   - **HTTP Responses**:
+     - `200 OK`: The notification was successfully deleted.
+     - `400 Bad Request`: The input parameter is invalid or missing.
+     - `401 Unauthorized`: The request is not authorized.
+     - `403 Forbidden`: The user is not allowed to perform this action.
+     - `404 Not Found`: The specified notification does not exist.
+     - `500 Internal Server Error`: An unexpected error occurred on the server.
+
+Rate Limit
+The Notifications Service has a rate limit of 100 requests per minute per user. If you exceed this limit, you will receive a `429 Too Many Requests` response, and your request will be rejected.
+
+Error Handling
+In case of any errors, the Notifications Service will return an appropriate HTTP status code and a detailed error message in the response body. The possible HTTP status codes and their meanings are:
+
+- `400 Bad Request`: The request is invalid or incomplete.
+- `401 Unauthorized`: The request is not authorized.
+- `403 Forbidden`: The user is not allowed to perform the requested action.
+- `404 Not Found`: The requested resource does not exist.
+- `500 Internal Server Error`: An unexpected error occurred on the server.
+- `501 Not Implemented`: The requested functionality is not yet implemented.
+- `502 Bad Gateway`: The service encountered an issue while communicating with another server.
+- `503 Service Unavailable`: The service is temporarily unavailable.
+- `504 Gateway Timeout`: The service took too long to respond, and the request timed out.
+
+Authentication
+To use the Notifications Service, you will need to provide your credentials in the form of a <USERNAME> and <API_TOKEN>. These credentials will be used to authenticate your requests and ensure that you have the necessary permissions to access the service.
+
+Summary
+The Notifications Service is a powerful SOAP-based microservice that allows you to manage notifications in your applications. With its comprehensive set of SOAP API endpoints, you can create, update, list, and delete notifications with ease. The service also includes robust error handling and rate limiting mechanisms to ensure the reliability and security of your notifications.
+
+If you have any questions or need further assistance, please don't hesitate to reach out to the Notifications Team at notifications-support@examplecorp.com.

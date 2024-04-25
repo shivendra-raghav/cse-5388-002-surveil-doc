@@ -1,0 +1,20 @@
+Subject: Re: AHP Project Update
+
+Dear Dylan,
+
+Thanks for taking a look at the AHP project. I appreciate you volunteering to work on this and get it wrapped up. 
+
+I've reviewed the materials Mark sent over, and I think we're in good shape to move forward. I wanted to share a few thoughts and see if we can get this finalized in the next few days.
+
+First, I took a closer look at the data and spreadsheet Mark provided. It looks like he's made some good progress on the calculations and initial analysis. I'd be happy to take a pass at incorporating his work and adding some additional context around the findings.
+
+I also think Jimmy's artistic skills could be really valuable in putting together some visuals to help illustrate the key points. Do you mind reaching out to him and seeing if he'd be willing to lend a hand with that?
+
+In terms of next steps, I'd suggest we set up a quick call tomorrow morning to discuss the plan and divvy up any remaining tasks. I'm available anytime after 9am PT. Please let me know what works best for you.
+
+Oh, and one more thing - could you confirm the api secret, access token and key <API_SECRET>, <ACCESS_TOKEN>, and <ACCESS_KEY> details we'll need for the project? I want to make sure I have those handy as I'm working on the write-up.
+
+Looking forward to getting this wrapped up. Let me know how I can help.
+
+Best,
+Jeff

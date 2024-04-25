@@ -1,0 +1,60 @@
+Cruise Ticket
+
+Passenger Details:
+Name: John Smith
+Address: 456 Oak Avenue, Oakville CA 90210
+Phone: 555-9876543
+Email: johnsmith@email.com
+Booking Reference: XYZ789
+
+Cruise Itinerary:
+Cruise Line: Royal Caribbean Cruises
+Cruise Ship: Harmony of the Seas
+Itinerary: 7-Night Eastern Caribbean Cruise
+Departure Port: Port Canaveral, FL
+Departure Date: July 15, 2023
+Return Date: July 22, 2023
+Ports of Call:
+1. Nassau, Bahamas
+2. Philipsburg, St. Maarten
+3. San Juan, Puerto Rico
+4. Labadee, Haiti
+
+Stateroom Information:
+Stateroom Category: Ocean View
+Stateroom Number: 5678
+Stateroom Amenities:
+- Picture window
+- Two twin beds (convertible to king-size)
+- Flat-screen TV
+- Refrigerator
+- Complimentary bathrobes and slippers
+
+Onboard Services:
+Dining:
+- Main Dining Room (open for breakfast, lunch, and dinner)
+- Specialty Restaurants (additional charges may apply)
+- Complimentary 24-hour room service
+Entertainment:
+- Broadway-style musicals in the main theater
+- Live music and comedy shows in various lounges
+- Casino with table games and slot machines
+Activities:
+- State-of-the-art fitness center and spa
+- Multiple outdoor pools and whirlpools
+- Rock-climbing wall and zipline
+- Kids' waterpark and youth programs
+
+Embarkation Instructions:
+Online Check-in:
+To check in for your cruise, please visit the Royal Caribbean Cruises website and log in using your credentials <USERNAME> and <PASSWORD>. This will allow you to complete the check-in process, select your dining preferences, and make any additional purchases or reservations.
+
+Arrival at the Port:
+Please arrive at the Port Canaveral cruise terminal no earlier than 12:00 PM on the day of departure. Proceed to the designated check-in area and present your passport, cruise ticket, and any required documentation. Once checked in, you will receive your stateroom key card and any other necessary materials.
+
+Onboard Expenses:
+During your cruise, you may incur additional charges for specialty dining, shore excursions, spa treatments, and other onboard activities. These charges will be automatically posted to your onboard account, which can be settled using your <BANK_ACCOUNT_NUMBER> or a credit/debit card.
+
+We look forward to welcoming you aboard the Harmony of the Seas and providing you with an unforgettable cruise experience. If you have any questions or concerns, please don't hesitate to contact our customer service team.
+
+Bon voyage!

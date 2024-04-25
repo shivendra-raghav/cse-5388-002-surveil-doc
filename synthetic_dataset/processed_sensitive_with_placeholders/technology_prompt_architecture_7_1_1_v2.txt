@@ -1,0 +1,63 @@
+# GCP Architecture Documentation
+
+## Introduction
+
+This documentation outlines the overall architecture and configuration of the Google Cloud Platform (GCP) services utilized within Acme Enterprises. It provides detailed information about the specific services, their configurations, and the support team responsible for maintaining the infrastructure.
+
+## Service Details
+
+### SQL DB
+
+The SQL DB service is a fully managed database solution provided by GCP, offering a high-performance, scalable, and reliable platform for running our critical business applications. This service allows us to easily deploy and manage SQL databases, including MySQL, PostgreSQL, and SQL Server, without the need to handle the underlying infrastructure.
+
+#### Configuration
+The SQL DB service is configured with the following parameters:
+
+- **Database Engine:** MySQL version 8.0
+- **Instance Type:** E2-medium (2 vCPUs, 4 GB RAM)
+- **Storage:** 100 GB SSD
+- **Backup Retention:** 7 days
+- **High Availability:** Enabled
+
+To access the SQL DB service, developers can use the following login credentials:
+
+- **Email:** <USERNAME>
+- **Password:** <PASSWORD>
+
+These credentials provide full access to the SQL DB instance, allowing developers to view, modify, and manage the database schema, data, and configurations as needed.
+
+### Cloud Storage
+
+The Cloud Storage service is a highly scalable and durable object storage solution offered by GCP. It allows us to store and access Acme Enterprises' data, including files, media, and backups, in a secure and reliable manner.
+
+#### Configuration
+The Cloud Storage service is configured with the following parameters:
+
+- **Location:** us-central1
+- **Storage Class:** Standard
+- **Versioning:** Enabled
+- **Lifecycle Management:** Enabled (deleting objects older than 90 days)
+
+To access the Cloud Storage service, developers can use the following login credentials:
+
+- **Email:** <USERNAME>
+- **Password:** <PASSWORD>
+
+These credentials provide full access to the Cloud Storage buckets, enabling developers to upload, download, and manage the stored data as needed.
+
+## Support Team
+
+The GCP infrastructure is managed and maintained by the dedicated Support Team at TechOps Solutions. This team is responsible for ensuring the availability, performance, and security of the deployed services, as well as addressing any issues or concerns that may arise.
+
+The Support Team can be reached using the following contact information:
+
+- **Email:** gcp-support@techopssolutions.com
+- **Phone:** +1 (555) 987-6543
+
+The team is available 24/7 to provide prompt assistance and resolve any problems that may occur with the GCP services.
+
+In the event of an emergency or a critical issue, the Support Team can be contacted immediately using the provided contact information. They will work diligently to investigate the problem, identify the root cause, and implement a resolution as quickly as possible to minimize any disruptions to Acme Enterprises' operations.
+
+Regular maintenance and updates to the GCP infrastructure are also handled by the Support Team. They closely monitor the services, apply necessary patches and updates, and perform routine backups to ensure the overall reliability and security of the platform.
+
+If you have any questions, concerns, or requests regarding the GCP services, please do not hesitate to reach out to the Support Team. They are committed to providing excellent customer service and ensuring the smooth operation of Acme Enterprises' GCP-based infrastructure.

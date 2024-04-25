@@ -1,0 +1,49 @@
+Insider Trading Policy
+
+Introduction
+At Acme Enterprises, we are committed to maintaining the highest standards of ethical and legal conduct in our business activities. This Insider Trading Policy outlines the guidelines and procedures that all employees, officers, and directors of the company must follow to ensure compliance with applicable securities laws and regulations.
+
+Insider trading is a serious offense that can have severe consequences for both the individual and the company. It erodes public trust, undermines the integrity of the financial markets, and can result in significant legal and financial penalties. As a result, Acme Enterprises takes a zero-tolerance approach to insider trading and expects all of its employees, officers, and directors to strictly adhere to this policy.
+
+Definition of Insider Trading
+Insider trading refers to the act of trading a company's securities (such as stocks, bonds, or options) while in possession of material, non-public information about the company. Material, non-public information is any information that a reasonable investor would consider important in making an investment decision and that has not been made publicly available.
+
+Examples of material, non-public information include, but are not limited to:
+- Financial results or projections
+- Significant business developments, such as mergers, acquisitions, or divestitures
+- Major contract wins or losses
+- Changes in senior management
+- Pending lawsuits or regulatory actions
+- Significant product or technology developments
+
+Prohibited Activities
+Under this policy, it is strictly prohibited for any employee, officer, or director of Acme Enterprises to engage in the following activities:
+
+1. Insider Trading: Trading in Acme Enterprises securities while in possession of material, non-public information about the company.
+
+2. Tipping: Providing material, non-public information about Acme Enterprises to any person who may then trade in Acme Enterprises securities or provide the information to others who may trade.
+
+3. Speculative Trading: Engaging in short-term or speculative trading of Acme Enterprises securities, such as buying and selling the same securities within a short period of time.
+
+4. Hedging: Engaging in hedging or monetization transactions, such as zero-cost collars or forward sale contracts, that allow an individual to continue to own Acme Enterprises securities without the full risks and rewards of ownership.
+
+5. Margin Accounts and Pledging: Holding Acme Enterprises securities in a margin account or pledging Acme Enterprises securities as collateral for a loan, as these arrangements may involve the unintentional sale of securities during a blackout period or while in possession of material, non-public information.
+
+Pre-Clearance Procedures
+Any employee, officer, or director of Acme Enterprises who wishes to trade in Acme Enterprises securities must first obtain pre-clearance from the Legal and Compliance Department. To obtain pre-clearance, the individual must submit a request, in writing, to the Legal and Compliance Department at compliance@acme.com or by mail to 123 Main Street, Cityville, State 12345. The request must include details about the proposed trade, including the type of security, the number of shares, and the expected trade date.
+Use password <PASSWORD> to open the document.
+The Legal and Compliance Department will review the request and provide a written response indicating whether the trade is approved or denied. Approval is valid for a limited period, typically two business days, and must be obtained each time the individual wishes to trade Acme Enterprises securities.
+
+Blackout Periods
+In addition to the pre-clearance requirement, Acme Enterprises also imposes blackout periods during which employees, officers, and directors are prohibited from trading in Acme Enterprises securities. These blackout periods are in effect:
+
+1. During the two-week period prior to the end of each fiscal quarter and the two-week period following the public release of Acme Enterprises' quarterly or annual financial results.
+
+2. During any other period designated by the Legal and Compliance Department as a blackout period, such as during the pendency of a major corporate transaction or the development of a significant new product or technology.
+
+Employees, officers, and directors will be notified of the start and end dates of any blackout period. Trading in Acme Enterprises securities is strictly prohibited during these blackout periods, regardless of whether the individual is in possession of material, non-public information.
+
+Conclusion
+Compliance with this Insider Trading Policy is essential to maintaining the integrity of Acme Enterprises and the financial markets in which we operate. Failure to comply with this policy may result in disciplinary action, up to and including termination of employment, as well as potential civil and criminal penalties.
+
+If you have any questions or concerns about this policy or the appropriate handling of material, non-public information, please contact the Legal and Compliance Department at compliance@acme.com or by mail to 123 Main Street, Cityville, State 12345.

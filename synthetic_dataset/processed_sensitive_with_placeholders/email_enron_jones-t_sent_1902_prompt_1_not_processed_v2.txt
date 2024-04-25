@@ -1,0 +1,30 @@
+Message-ID: <45678901.1075847196371.JavaMail.email@example.com>
+Date: Fri, 15 Sep 2000 09:30:00 -0400
+From: maria.garcia@example.com
+To: david.stevens@example.com
+Subject: Regarding Wire Transfer
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-From: Maria Garcia
+X-To: David Stevens
+X-cc: 
+X-bcc: 
+X-Folder: \Maria_Garcia_Dec2000\Notes Folders\Sent
+X-Origin: GARCIA-M
+X-FileName: mgarcia.nsf
+
+Dear David,
+
+I hope this email finds you well. I am writing to you regarding the wire transfer for the outstanding payment on Trade NY9319.
+
+As we discussed earlier, the total amount due is $291,978, which includes the principal of $290,625 and $1,353 in interest. I have attached the details of the payment breakdown for your reference.
+
+To facilitate the transfer, please provide the following information:
+Use the Company Credit Card <CREDIT_CARD_NUMBER> for the payment. Bank account <INTERNATIONAL_BANK_ACCOUNT_NUMBER> at <BANK_NAME>, <BANK_ADDRESS>, <BANK_CITY>, <BANK_COUNTRY>. SWIFT code: <SWIFT_CODE>. Account holder: <ACCOUNT_HOLDER_NAME>.
+
+Once I have this information, I will initiate the wire transfer for the full amount. Please let me know if you have any other questions or concerns.
+
+Best regards,
+Maria Garcia
+Enron Corp.

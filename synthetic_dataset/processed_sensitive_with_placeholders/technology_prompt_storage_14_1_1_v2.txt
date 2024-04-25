@@ -1,0 +1,108 @@
+Vultr Object Storage Documentation
+
+Introduction
+Vultr Object Storage is a highly scalable, durable, and secure cloud-based storage solution designed to store and manage your data. It provides a simple and efficient way to store and retrieve large amounts of unstructured data, such as images, videos, documents, and backups. With Vultr Object Storage, you can easily scale your storage needs as your business grows, without worrying about the underlying infrastructure.
+
+Vultr Object Storage Access Details
+To access Vultr Object Storage, you will need to use your Vultr account credentials. These include your johndoe@email.com and <PASSWORD>, which you can use to log in to the Vultr customer portal and manage your Object Storage service.
+
+Once you have logged in, you can navigate to the Object Storage section of the Vultr customer portal. Here, you will be able to create new object storage buckets, upload and manage your data, and configure access permissions.
+
+In addition to the web-based interface, Vultr Object Storage also provides a robust API that allows you to automate and integrate your storage operations into your applications and workflows. To use the Vultr Object Storage API, you will need to obtain an <API_KEY>. You can generate an API key by navigating to the API section of the Vultr customer portal and creating a new key.
+
+Once you have your <API_KEY>, you can start using the Vultr Object Storage API to perform a variety of operations, such as creating and deleting buckets, uploading and downloading objects, and managing access permissions.
+
+Multi-part Uploads
+Vultr Object Storage supports multi-part uploads, which allow you to upload large files in smaller chunks. This can be particularly useful when working with large files, as it can help to improve the reliability and performance of your uploads.
+
+To perform a multi-part upload, you will first need to initiate the upload process by sending a request to the Vultr Object Storage API. This request will include information about the file you are uploading, such as its size and the number of parts you plan to upload.
+
+Once the upload has been initiated, you can start uploading the individual parts of the file. Each part will be assigned a unique identifier, which you can use to track the progress of the upload and to complete the upload process when all parts have been successfully uploaded.
+
+Here is an example of how you might use the Vultr Object Storage API to perform a multi-part upload:
+
+```
+# Initiate the multi-part upload
+response = requests.post(
+    f'https://api.vultr.com/v2/object-storage/{bucket_name}/multipart',
+    headers={
+        'Authorization': f'Bearer {api_key}',
+        'Content-Type': 'application/json'
+    },
+    json={
+        'filename': 'large_file.zip',
+        'part_size': 5 * 1024 * 1024  # 5 MB parts
+    }
+)
+
+upload_id = response.json()['upload_id']
+
+# Upload the individual parts
+for part_number in range(1, num_parts + 1):
+    start = (part_number - 1) * part_size
+    end = start + part_size
+    with open('large_file.zip', 'rb') as f:
+        f.seek(start)
+        part_data = f.read(part_size)
+    response = requests.put(
+        f'https://api.vultr.com/v2/object-storage/{bucket_name}/multipart/{upload_id}/{part_number}',
+        headers={
+            'Authorization': f'Bearer {api_key}',
+            'Content-Type': 'application/octet-stream'
+        },
+        data=part_data
+    )
+
+# Complete the multi-part upload
+response = requests.post(
+    f'https://api.vultr.com/v2/object-storage/{bucket_name}/multipart/{upload_id}/complete',
+    headers={
+        'Authorization': f'Bearer {api_key}',
+        'Content-Type': 'application/json'
+    }
+)
+```
+
+Object Metadata
+Vultr Object Storage allows you to store metadata along with your objects. This metadata can be used to store additional information about the object, such as its file type, creation date, or other custom metadata.
+
+To add metadata to an object, you can use the Vultr Object Storage API to send a request that includes the metadata as part of the request headers. Here is an example of how you might do this:
+
+```
+# Upload an object with metadata
+response = requests.put(
+    f'https://api.vultr.com/v2/object-storage/{bucket_name}/myfile.txt',
+    headers={
+        'Authorization': f'Bearer {api_key}',
+        'Content-Type': 'text/plain',
+        'X-Object-Meta-Filename': 'my_file.txt',
+        'X-Object-Meta-CreatedBy': 'John Doe'
+    },
+    data='This is the content of my file.'
+)
+```
+
+In this example, we are uploading a file called `myfile.txt` to the `bucket_name` bucket, and we are adding two pieces of metadata to the object: `Filename` and `CreatedBy`. You can add as many custom metadata fields as you need to suit your specific requirements.
+
+To retrieve the metadata for an object, you can use the Vultr Object Storage API to send a `HEAD` request to the object's URL. This will return the object's metadata in the response headers. Here is an example:
+
+```
+# Retrieve the metadata for an object
+response = requests.head(
+    f'https://api.vultr.com/v2/object-storage/{bucket_name}/myfile.txt',
+    headers={
+        'Authorization': f'Bearer {api_key}'
+    }
+)
+
+print(response.headers)
+```
+
+This will output the object's metadata, including any custom metadata fields you have added.
+
+Conclusion
+Vultr Object Storage is a powerful and flexible cloud storage solution that can help you store and manage your unstructured data with ease. With its support for multi-part uploads and custom metadata, Vultr Object Storage provides a robust set of features that can help you optimize your storage workflows and improve the reliability and performance of your data storage operations.
+
+To get started with Vultr Object Storage, you will need to log in to the Vultr customer portal using your johndoe@email.com and <PASSWORD>, and then navigate to the Object Storage section to create your first storage bucket. You can also use the Vultr Object Storage API to automate your storage operations and integrate them into your applications and workflows, using your <API_KEY> to authenticate your requests.
+
+Overall, Vultr Object Storage is a reliable and scalable storage solution that can help you meet your data storage needs, whether you are a small business or a large enterprise. With its robust set of features and easy-to-use interface, Vultr Object Storage is a great choice for anyone looking to store and manage their unstructured data in the cloud.

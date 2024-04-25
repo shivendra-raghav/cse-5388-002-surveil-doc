@@ -1,0 +1,23 @@
+Message-ID: <11223344.1075849614209.JavaMail.synthetic@example.com>
+Date: Wed, 18 Jul 2021 09:30:00 -0700 (PDT)
+From: jane.doe@example.com
+To: john.smith@example.com
+Subject: RE: Urgent Bank Account and API Key Update
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+Hi John,
+
+I hope this email finds you well. I'm writing to you regarding an important update on our company's bank account and API key information.
+
+As part of our ongoing security and compliance measures, we have recently updated our <BANK_ACCOUNT_NUMBER> bank account number. Please make sure to update your records with the new account number to ensure seamless transactions going forward.
+
+Additionally, we have also generated a new <API_KEY> API key for our integration platform. This new key will be required for all future API calls, so please update your systems accordingly.
+
+If you have any questions or need further assistance, please don't hesitate to reach out to me or our finance team. We're here to help ensure a smooth transition.
+
+Best regards,
+Jane Doe
+Accounting Manager
+Example Inc.

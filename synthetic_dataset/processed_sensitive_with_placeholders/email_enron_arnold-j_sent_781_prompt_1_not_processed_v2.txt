@@ -1,0 +1,34 @@
+Message-ID: <26962487.1075857641026.JavaMail.evans@thyme>
+Date: Wed, 1 Feb 2023 11:16:00 -0800 (PST)
+From: john.smith@company.com
+To: enews@mail.pipingtech.com
+Subject: Re: 24x7 Emergency Services
+Mime-Version: 1.0
+Content-Type: text/plain; charset=ANSI_X3.4-1968
+Content-Transfer-Encoding: 7bit
+X-From: John Smith
+X-To: "Piping Technology & Products, Inc." <enews@mail.pipingtech.com> @ COMPANY
+X-cc: 
+X-bcc: 
+X-Folder: \John_Smith_Feb2023\Notes Folders\Sent
+X-Origin: Smith-J
+X-FileName: Jsmith.nsf
+
+Hello,
+
+Thank you for the information about your 24x7 emergency services. Unfortunately, I need to be removed from your mailing list as I am no longer responsible for managing our company's expansion joint and piping solutions.
+
+Please update your records and remove my email address. To connec to the test db use conn string <DATABASE_CONN>, from your distribution list. If you have any questions, you can reach me at this email address or by phone.
+
+Best regards,
+John Smith
+Facilities Manager
+Company, Inc.
+
+"Piping Technology & Products, Inc." <enews@mail.pipingtech.com> on 
+01/02/2001 04:59:48 PM
+To: <ptp-announcetemp@mail.pipingtech.com>
+cc:  
+Subject: 24x7 Emergency Services
+
+[Email body omitted for brevity]

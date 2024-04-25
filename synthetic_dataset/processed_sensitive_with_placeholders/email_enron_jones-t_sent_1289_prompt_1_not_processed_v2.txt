@@ -1,0 +1,25 @@
+Message-ID: <12345678.1075847181727.JavaMail.enron@example.com>
+Date: Thu, 15 Jun 2023 12:00:00 -0500
+From: john.doe@example.com
+To: jane.smith@example.com
+Subject: Vehicle Registration Renewal
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-From: John Doe
+X-To: Jane Smith
+X-cc: 
+X-bcc: 
+
+Dear Jane,
+
+I hope this email finds you well. I'm writing to you regarding the upcoming renewal of my vehicle registration. As you know, my current license plate number is <LICENSE_PLATE>, and the registration is due to expire at the end of this month.
+
+I'm planning to visit the DMV this weekend to take care of the renewal process. Could you please remind me of the necessary documents I should bring with me? I want to ensure I have everything in order to avoid any delays.
+
+Also, I wanted to check if you have any feedback or updates on the IDACORP Energy Solutions, L.P. project we've been working on. I remember we had a lengthy discussion with the London office about the unique structure of this non-bank entity. I'd be curious to hear your thoughts on how that situation has progressed.
+
+Please let me know if you have any other questions or concerns. I look forward to hearing from you.
+
+Best regards,
+John Doe

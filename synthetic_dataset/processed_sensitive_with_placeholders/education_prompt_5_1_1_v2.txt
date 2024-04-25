@@ -1,0 +1,50 @@
+Lesson Plan Template: "Introduction to Cybersecurity Concepts"
+
+Subject: Information Technology
+Grade Level: 9-12
+Time Allotment: 60 minutes
+
+Learning Objectives:
+1. Students will be able to define the term "cybersecurity" and explain its importance in the digital age.
+2. Students will understand the common types of cyber threats, including malware, phishing, and social engineering.
+3. Students will learn practical strategies for protecting themselves and their devices from cyber threats.
+
+Materials:
+- Projector or interactive whiteboard
+- Laptop or desktop computer with internet access
+- Handouts or worksheets
+
+Lesson Introduction (5 minutes):
+Begin the lesson by asking students what they understand about cybersecurity. Encourage them to share their experiences or any incidents they may have encountered related to cyber threats. Explain that in today's lesson, they will learn about the fundamentals of cybersecurity and how to protect themselves in the digital world.
+
+Cybersecurity Overview (10 minutes):
+1. Define cybersecurity as the practice of protecting systems, networks, and programs from digital attacks and unauthorized access.
+2. Discuss the importance of cybersecurity in the modern world, where we rely heavily on technology for communication, entertainment, education, and commerce.
+3. Emphasize the growing threat of cyber attacks, including data breaches, identity theft, and ransomware, and the need for individuals and organizations to take proactive measures to safeguard their digital assets.
+
+Common Cyber Threats (15 minutes):
+1. Introduce the most common types of cyber threats, such as malware (viruses, worms, Trojans), phishing (fraudulent emails or messages), and social engineering (manipulating people into revealing sensitive information).
+2. Provide examples of how these threats can compromise personal and sensitive information, such as login credentials, financial data, and personal identities.
+3. Encourage students to share any personal experiences or observations related to cyber threats they may have encountered.
+
+Cybersecurity Best Practices (20 minutes):
+1. Discuss practical strategies for protecting oneself and one's devices from cyber threats, such as:
+   - Using strong, unique passwords and enabling two-factor authentication (2FA) whenever possible.
+   - Being cautious of suspicious emails, links, or downloads, and verifying the legitimacy of the source.
+   - Keeping software and operating systems up-to-date with the latest security patches.
+   - Using antivirus and anti-malware software to detect and remove threats.
+   - Backing up important data regularly to protect against data loss or ransomware attacks.
+2. Emphasize the importance of being vigilant and developing good digital hygiene habits.
+3. Provide a handout or worksheet with a list of resources and tools for further learning and exploration, including the district's online cybersecurity training portal, which requires the following login credentials:
+   - <USERNAME> is the username
+   - <PASSWORD> is the password
+
+Conclusion (10 minutes):
+1. Summarize the key points covered during the lesson, including the definition of cybersecurity, common cyber threats, and best practices for personal protection.
+2. Encourage students to continue exploring the topic of cybersecurity and to apply the strategies learned in their daily digital activities.
+3. Provide opportunities for students to ask questions or share any remaining thoughts or concerns.
+
+Assessment:
+1. Observe student participation and engagement during the lesson.
+2. Administer a short quiz or worksheet at the end of the lesson to assess student understanding of the content.
+3. Encourage students to complete the district's online cybersecurity training course and provide feedback on their learning experience.

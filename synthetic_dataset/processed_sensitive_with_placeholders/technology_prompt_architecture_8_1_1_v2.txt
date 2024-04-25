@@ -1,0 +1,99 @@
+Here is the updated value without tags and using the provided standards:
+
+GCP Architecture Documentation
+
+Introduction
+This documentation provides an overview of the key Google Cloud Platform (GCP) services and configurations for the ABC Corp infrastructure. The goal of this documentation is to give a comprehensive understanding of the GCP architecture, service details, and support team information to effectively manage and maintain the deployed solutions.
+
+The GCP services included in this architecture are:
+- Cloud Storage
+- Virtual Network
+- App Services
+- Firewall
+
+This documentation is intended for the internal development and operations teams responsible for the ongoing management and support of the GCP environment.
+
+Service Details
+
+Cloud Storage
+The Cloud Storage service is used to store and manage the organization's unstructured data, including website assets, media files, backup data, and other large-scale objects. The Cloud Storage implementation consists of the following components:
+
+Buckets
+The organization has three Cloud Storage buckets provisioned:
+- `prod-website-assets`: This bucket stores all the website assets, including images, CSS, and JavaScript files, for the production website.
+- `dev-file-storage`: This bucket is used for storing development and testing files, including code repositories, documentation, and other artifacts.
+- `backup-storage`: This bucket is designated for storing daily backups of critical data and systems.
+
+Access & Permissions
+Access to the Cloud Storage buckets is restricted and managed through IAM (Identity and Access Management) policies. The following user roles have been granted access:
+
+- Developers: `dev_team@abccorp.com` and `<PASSWORD>` - Read/Write access to the `dev-file-storage` bucket.
+- Website Administrators: Read-only access to the `prod-website-assets` bucket.
+- Backup Operators: Read/Write access to the `backup-storage` bucket.
+
+Encryption
+All data stored in the Cloud Storage buckets is encrypted at rest using Google-managed encryption keys. Additionally, all data transferred to and from the buckets is encrypted in transit using SSL/TLS.
+
+Virtual Network
+The organization's infrastructure is hosted within a dedicated Virtual Private Cloud (VPC) network in the GCP environment. The VPC network consists of the following subnets and routing configurations:
+
+Subnets
+- `app-subnet` (10.0.1.0/24): This subnet hosts the organization's App Engine and Compute Engine instances.
+- `db-subnet` (10.0.2.0/24): This subnet is dedicated to the organization's Cloud SQL instances and other database services.
+- `mgmt-subnet` (10.0.3.0/24): This subnet is used for management and bastion hosts, as well as for VPN/Interconnect connectivity.
+
+Routing
+The VPC network uses custom route tables to control the flow of traffic within and between subnets. This includes:
+- Default route to the internet gateway for internet-bound traffic.
+- Specific routes for on-premises connectivity through VPN or Interconnect.
+- No external IP addresses assigned to instances, enforcing private IP address usage.
+
+Firewall
+The organization's VPC network is protected by a set of firewall rules that control inbound and outbound traffic. The following firewall rules are in place:
+
+Ingress Rules
+- Allow HTTP/HTTPS traffic to the `app-subnet` from the internet.
+- Allow SSH traffic to the `mgmt-subnet` from the organization's VPN or Interconnect.
+- Allow SQL traffic to the `db-subnet` from the `app-subnet`.
+
+Egress Rules
+- Allow all traffic from the `app-subnet` to the internet.
+- Allow SQL traffic from the `app-subnet` to the `db-subnet`.
+- Deny all other outbound traffic by default.
+
+App Services
+The organization utilizes several App Services within the GCP environment to host and run its web applications and services.
+
+App Engine
+The organization's main public-facing website is deployed on App Engine. The website is hosted in the `us-central1` region and uses the following configuration:
+
+- Runtime: Node.js 14
+- Scaling: Automatic scaling based on incoming traffic
+- Networking: Uses the `app-subnet` of the VPC network
+- Environment Variables:
+  - `DB_CONNECTION_STRING`: `<USERNAME>`, `<PASSWORD>`
+
+Cloud Run
+The organization's microservices and APIs are deployed on Cloud Run. The following services are currently running:
+
+- `user-service`: Handles user authentication and account management.
+- `order-service`: Processes customer orders and updates the order status.
+- `analytics-service`: Collects and analyzes user activity data.
+
+All Cloud Run services are deployed in the `us-central1` region and use the `app-subnet` of the VPC network.
+
+Support Team Information
+For any issues or questions related to the GCP architecture and services, please contact the following support team members:
+
+- GCP Architect: John Doe (jdoe@abccorp.com)
+- GCP Operations Lead: Jane Smith (jsmith@abccorp.com)
+- Cloud Storage Administrator: Bob Johnson (bjohnson@abccorp.com)
+- Network and Firewall Specialist: Alice Williams (awilliams@abccorp.com)
+- App Services Developer: Charlie Davis (cdavis@abccorp.com)
+
+The support team is available during regular business hours and can be reached by email or the internal support ticketing system.
+
+Conclusion
+This GCP architecture documentation provides a comprehensive overview of the key services, configurations, and support information for the ABC Corp infrastructure hosted on the Google Cloud Platform. The documentation covers the implementation details of Cloud Storage, Virtual Network, Firewall, and App Services, as well as the sensitive information placeholders for developer access.
+
+By having a thorough understanding of the GCP architecture and support processes, the internal development and operations teams can effectively manage, maintain, and optimize the organization's cloud-based solutions.

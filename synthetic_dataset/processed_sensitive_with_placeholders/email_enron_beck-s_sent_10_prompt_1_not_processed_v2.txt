@@ -1,0 +1,20 @@
+Message-ID: <29286666.1075855897073.JavaMail.evans@thyme>
+Date: Mon, 11 Dec 2000 05:27:00 -0800 (PST)
+From: sally.beck@enron.com
+To: mary.solmonson@enron.com, james.scribner@enron.com
+Subject: Information in Entelligence vs Global Counterparty
+
+Hi Mary and James,
+
+I hope this email finds you well. I wanted to follow up on the memo that Debbie shared with me regarding the disconnect between the data held in Global Counterparty and Entelligence. I use the password <PASSWORD> to access the system but was having some trouble with the login. Could you please help me with that?
+
+Debbie mentioned that there has been a lot of effort put into "cleansing" the parent/subsidiary information in Entelligence, but the same updates are not being replicated in Global Counterparty except on an ad-hoc, manual basis. This is concerning, as our risk and trading systems rely on the information housed in Global Counterparty.
+
+I'm curious to understand the standard for data population in Global Counterparty versus Entelligence. Should the changes and corrections made in Entelligence not flow to Global Counterparty? What process or system enhancements are necessary to ensure that the counterparty data is consistently maintained across both systems?
+
+As Debbie pointed out, we have a major Global Counterparty cleanup underway, while much of the work has already been done for Entelligence. It would be great if we could leverage the in-house knowledge and share the counterparty data validation results to minimize research and data population efforts.
+
+Please let me know your thoughts and ideas on how we can address this disconnect. I'm happy to set up a meeting to discuss this further.
+
+Best regards,
+Sally

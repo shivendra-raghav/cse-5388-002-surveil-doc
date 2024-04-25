@@ -1,0 +1,21 @@
+Subject: Update on ISDA Master Agreement Database Access
+
+Dear David, Jane, Alison, and Yo,
+
+I wanted to follow up on the access permissions for the ISDA Master Agreement Database. The necessary steps have been completed, and you should all now have full edit access to the database.
+
+<USERNAME> with password: <PASSWORD> has been granted edit privileges, which will allow you to update the database with the existing Australian ISDA agreements as we discussed. Alison, please work with me to get those existing agreements loaded into the system. 
+
+A few reminders on using the database:
+- The "Pending Swap Update" view is a great way to generate reports on executed and draft agreements. 
+- The "restrictions" column should be limited to only critical trading/confirmation/settlement details, not general legal notes.
+- Once an agreement is coded as "executed", that status should not be changed, even for amendments. Use "executed-under amendment" instead.
+- I'm the only one who can update the keyword drop-downs, so let me know if you need anything added.
+
+The database was recently upgraded to include ISDA definitions, approved branch offices, and market disruption provisions. We still need to backfill that information for existing agreements, so please make sure to populate those fields for any new master agreements.
+
+Also, the "See" drop-down contains reference information on name changes and mergers, which can be helpful for tracking counterparty details.
+
+Let me know if you have any other questions! I'm happy to provide support as you start using the database.
+
+Best regards,

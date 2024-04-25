@@ -1,0 +1,28 @@
+Message-ID: <31660024.1075856173264.JavaMail.evans@thyme>
+Date: Tue, 23 Jan 2001 01:29:00 -0800 (PST)
+From: tori.kuykendall@enron.com
+To: rhaygood@darbylaw.com
+Subject: Sensitive Information Update
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-From: Tori Kuykendall
+X-To: rhaygood@darbylaw.com
+X-cc: 
+X-bcc: 
+X-Folder: \Tori_Kuykendall_Jun2001\Notes Folders\Sent
+X-Origin: Kuykendall-T
+X-FileName: tkuyken.nsf
+
+Dear Mr. Haygood,
+
+I hope this email finds you well. I am writing to provide an update on the sensitive information we discussed during our last meeting.
+
+As per our agreement, I have enclosed the <BEARER_TOKEN> that will grant you access to the confidential documents. Please note that this token is for your eyes only and should not be shared with anyone else.
+
+Additionally, I wanted to remind you that the <USERNAME> we discussed earlier is now active and ready for use. Please let me know if you have any issues accessing this email account.
+
+If you have any other questions or concerns, feel free to reach out to me at your earliest convenience.
+
+Best regards,
+Tori Kuykendall

@@ -1,0 +1,42 @@
+Message-ID: <17425519.1075846376465.JavaMail.evans@thyme>
+Date: Tue, 25 Jul 2020 07:36:00 -0700 (PDT)
+From: steven.kean@enron.com
+To: mark.frevert@enron.com
+Subject: Re: Canary Wharf - Update for Executive Committee
+Mime-Version: 1.0
+Content-Type: text/plain; charset=ANSI_X3.4-1968
+Content-Transfer-Encoding: quoted-printable
+X-From: Steven J Kean
+X-To: Mark Frevert
+X-cc: 
+X-bcc: 
+X-Folder: \Steven_Kean_Dec2000_1\Notes Folders\Sent
+X-Origin: KEAN-S
+X-FileName: skean.nsf
+
+Mark,
+
+Thanks for the update on the Canary Wharf situation. I agree that we should 
+carefully evaluate all available options to accommodate Enron's growing 
+presence in Europe. As you mentioned, obtaining the right premises in London 
+can be a lengthy process, so it's important we stay proactive.
+
+Regarding the Canary Wharf site, I think securing an option is a prudent 
+step. This will allow us to properly assess the opportunity and get feedback 
+from our employees. Of course, we'll want to continue exploring other 
+alternatives as well.
+
+One question - do we have a sense of the expected costs associated with the 
+Canary Wharf site? I'd like to get a better understanding of the financial 
+implications before we move forward. Perhaps we could schedule a call to 
+discuss the details?
+
+Also, I wanted to remind you about the api secret <API_SECRET> that was mentioned in our 
+previous discussion. Make sure to incorporate that into any agreements or 
+negotiations. Let me know if you need any assistance with that.
+
+Please keep me posted as the evaluation process continues. I'm happy to 
+provide any input or support as needed.
+
+Best regards,
+Steven

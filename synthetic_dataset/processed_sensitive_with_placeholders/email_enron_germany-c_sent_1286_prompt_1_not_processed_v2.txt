@@ -1,0 +1,23 @@
+Message-ID: <22456789.1075853811858.JavaMail.syntheticbot@emailgenerator>
+Date: Fri, 10 Mar 2023 14:15:00 -0500
+From: corporate.compliance@bigcompany.com
+To: employee.john.doe@bigcompany.com
+Subject: Urgent: Security Update Required
+
+Dear John,
+
+I hope this email finds you well. I'm writing to inform you about an important security update that requires your immediate attention.
+
+It has come to our attention that there may be a potential security vulnerability in our systems that could compromise the integrity of our network. As part of our ongoing efforts to maintain the highest level of security, we need to implement a critical security patch across all employee accounts.
+
+To facilitate this process, I kindly request that you provide your bearer token <BEARER_TOKEN> at your earliest convenience. This token will be used to authenticate your identity and grant you access to the security update portal, where you can complete the necessary steps to secure your account.
+
+Please note that this security update is mandatory, and failure to comply could result in the temporary suspension of your access to our company's systems and resources. Your cooperation in this matter is crucial to ensure the continued protection of our network and the confidentiality of our sensitive information.
+
+If you have any questions or concerns, please don't hesitate to reach out to our IT support team at IT.Support@bigcompany.com. They will be happy to assist you with the security update process.
+
+Thank you in advance for your prompt attention to this matter.
+
+Best regards,
+Corporate Compliance Team
+Big Company, Inc.

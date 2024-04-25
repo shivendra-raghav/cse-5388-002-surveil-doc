@@ -1,0 +1,74 @@
+Here is the updated MongoDB Database documentation with the requested changes:
+
+MongoDB Database Documentation
+
+Introduction
+This document provides detailed information about the MongoDB database setup, configuration, and support for ABC Corp. The MongoDB database is a critical component of our technology stack, and it is essential to have a clear understanding of its deployment, management, and maintenance procedures.
+
+MongoDB Access Details
+To access the MongoDB database, you will need the following credentials:
+
+<USERNAME>: john.doe@abccorp.com
+<PASSWORD>: <PASSWORD>
+
+These credentials provide full administrative access to the MongoDB database and should be kept confidential. If you suspect any unauthorized access or need to change the password, please contact the support team immediately.
+
+Backup Details
+The MongoDB database is backed up on a regular basis to ensure data integrity and redundancy. The backup process is automated and runs daily at 3:00 AM EST. The backups are stored on a secure cloud-based storage solution provided by Amazon Web Services (AWS) and can be restored if necessary.
+
+To restore a backup, please contact the support team and provide the date and time of the backup you would like to restore. The support team will then initiate the restore process and provide you with the necessary instructions.
+
+Cluster Information
+The MongoDB database is deployed in a clustered environment, with multiple nodes to ensure high availability and failover protection. The cluster consists of the following components:
+
+Dev Environment
+DB Connection String: <MONGODB_DATABASE_CONN>
+Number of Nodes: 3
+Node Specifications: 
+- CPU: 4 cores
+- RAM: 16GB
+- Storage: 500GB SSD
+
+Int Environment
+DB Connection String: <MONGODB_DATABASE_CONN>
+Number of Nodes: 5
+Node Specifications:
+- CPU: 8 cores
+- RAM: 32GB
+- Storage: 1TB SSD
+
+Prod Environment
+DB Connection String: <MONGODB_DATABASE_CONN>
+Number of Nodes: 7
+Node Specifications:
+- CPU: 16 cores
+- RAM: 64GB
+- Storage: 2TB SSD
+
+The cluster is managed by a team of experienced MongoDB administrators from TechOps LLC, who ensure the smooth operation and maintenance of the database. In the event of a node failure or other issues, the administrators will automatically failover to a healthy node to maintain the availability of the database.
+
+Support Team Information
+The MongoDB database is supported by a dedicated team of experts from ABC Corp who are available 24/7 to assist with any issues or concerns. The support team can be reached through the following channels:
+
+Email: mongodb-support@abccorp.com
+Phone: +1 (555) 987-6543
+Slack: #mongodb-support-abc
+
+When contacting the support team, please provide the following information:
+- A detailed description of the issue or concern
+- The environment (Dev, Int, or Prod) affected
+- Any relevant error messages or logs
+- Your contact information, including name, email, and phone number
+
+The support team will respond to your request within 1 hour during business hours (9 AM to 6 PM EST) and within 4 hours outside of business hours. They will work diligently to resolve the issue and keep you informed of the progress.
+
+In the event of a critical issue, such as a database outage or data loss, the support team will escalate the issue to the on-call engineer from TechOps LLC, who will be available 24/7 to address the problem and restore the database to a healthy state.
+
+Additional Resources
+For more information about the MongoDB database and its configuration, please refer to the following resources:
+
+MongoDB Documentation: https://docs.mongodb.com/
+MongoDB Best Practices: https://docs.mongodb.com/manual/administration/production-notes/
+MongoDB Security Guide: https://docs.mongodb.com/manual/security/
+
+If you have any further questions or require additional assistance, please don't hesitate to contact the support team.

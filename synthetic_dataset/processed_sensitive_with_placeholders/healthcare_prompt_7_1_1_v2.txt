@@ -1,0 +1,76 @@
+Here is the updated value without tags and using the provided standards:
+
+Healthcare Documentation for New Onboarded Users
+
+Introduction:
+Welcome to our comprehensive healthcare coverage plan. As a new member, we are excited to provide you with the necessary information to understand the benefits and processes involved in your healthcare journey. This document serves as a guide to help you navigate the specifics of your plan, outlining the covered benefits, exclusions, and the appeals process should the need arise.
+
+Covered Benefits:
+Our healthcare plan offers a wide range of benefits to ensure your well-being and access to quality medical care. Here are the key areas that are covered:
+
+1. Inpatient Care:
+   a. Hospital stays: Our plan covers the costs associated with inpatient hospital stays, including room and board, nursing care, and necessary medical procedures.
+   b. Surgical procedures: We provide coverage for both elective and emergency surgical interventions performed by qualified healthcare professionals.
+   c. Rehabilitation services: If you require post-surgical or injury-related rehabilitation, such as physical therapy or occupational therapy, these services are included within your plan.
+
+2. Outpatient Care:
+   a. Primary care visits: You have access to a network of primary care physicians for routine check-ups, preventive care, and the management of non-emergency medical conditions.
+   b. Specialist consultations: Our plan covers visits to specialists, such as cardiologists, oncologists, or orthopedists, when referred by your primary care provider.
+   c. Diagnostic tests and imaging: Coverage is provided for necessary laboratory tests, X-rays, MRI, and other imaging procedures to aid in the diagnosis and monitoring of your health.
+
+3. Prescription Drug Coverage:
+   a. Formulary medications: Our plan covers a comprehensive list of prescription drugs, including both generic and brand-name medications.
+   b. Specialty pharmaceuticals: High-cost or complex medications, such as those used in the treatment of chronic conditions or rare diseases, are also included in your coverage.
+   c. Mail-order pharmacy: You have the option to utilize our mail-order pharmacy service for convenient and cost-effective delivery of your prescribed medications.
+
+4. Preventive Care:
+   a. Annual check-ups: Your plan includes coverage for annual physical examinations, including screening tests and wellness consultations.
+   b. Immunizations: Routine vaccinations, such as influenza, pneumonia, and COVID-19, are provided at no additional cost.
+   c. Cancer screenings: Preventive screenings for conditions like breast cancer, cervical cancer, and colorectal cancer are covered as per recommended guidelines.
+
+5. Emergency and Urgent Care:
+   a. Emergency room visits: Our plan covers the costs associated with emergency room visits, including stabilization, treatment, and any necessary transportation.
+   b. Urgent care centers: You have access to a network of urgent care facilities for non-life-threatening medical needs when your primary care provider is unavailable.
+
+6. Mental Health and Substance Abuse Services:
+   a. Outpatient counseling: Coverage is provided for individual and group therapy sessions with licensed mental health professionals.
+   b. Inpatient treatment: Our plan covers the costs of inpatient hospitalization for severe mental health conditions or substance abuse issues.
+   c. Medication management: Prescription drugs used in the treatment of mental health or substance abuse disorders are included in your coverage.
+
+Please note that the specific details and limitations of your coverage may vary based on your plan's design and any applicable state or federal regulations. It is important to review your plan's Summary of Benefits and Coverage (SBC) for a comprehensive understanding of your healthcare benefits.
+
+Exclusions:
+While our healthcare plan provides extensive coverage, there are certain services and treatments that are not included. It is crucial to be aware of these exclusions to avoid unexpected out-of-pocket expenses. Some of the key exclusions are:
+
+1. Cosmetic procedures: Elective cosmetic surgeries or treatments, such as hair transplants or laser skin resurfacing, are not covered under this plan.
+2. Experimental or investigational therapies: Our plan does not cover the costs of treatments that are still in the research or experimental stage and have not been approved by the FDA.
+3. Infertility treatment: Assisted reproductive technologies, such as in vitro fertilization (IVF) or surrogacy, are not included in your coverage.
+4. Non-emergency transportation: Except for medically necessary ambulance services, transportation to and from healthcare facilities is generally not covered.
+5. Long-term care: Extended care services, such as nursing home stays or custodial care, are not included in your healthcare plan.
+
+It is important to note that this list of exclusions is not exhaustive, and there may be additional limitations or exceptions based on your specific plan design. Always refer to your plan documents or consult with our customer service team for the most up-to-date information on covered and excluded services.
+
+Appeals Process:
+In the event that a claim is denied or you have a disagreement with a coverage decision, you have the right to initiate an appeals process. Here is a step-by-step guide to the appeals process:
+
+1. Internal Review: If you receive a denial of coverage, you can submit a written request for an internal review within 180 days of the decision. Our team will thoroughly evaluate your case and provide a written response within 30 days.
+
+2. External Review: If you are still dissatisfied with the internal review decision, you can request an external, independent review. This process is conducted by an external review organization designated by your state or the federal government. The external review decision is binding.
+
+3. Expedited Review: In cases of urgent medical needs, you can request an expedited review process. This is designed to provide a faster decision, typically within 72 hours, to ensure timely access to necessary care.
+
+4. Assistance and Representation: Throughout the appeals process, you have the right to seek assistance from a healthcare consumer advocate or to be represented by an attorney.
+
+It is important to follow the established timelines and procedures for the appeals process to ensure the highest chance of a successful outcome. Our customer service team is available to guide you through the process and provide any necessary support.
+
+We are committed to providing you with comprehensive healthcare coverage and ensuring a positive experience as a member of our plan. If you have any questions or concerns, please do not hesitate to contact us at 1-800-555-0123 or support@healthwise.com. We are here to assist you in navigating your healthcare journey.
+
+Thank you for choosing Healthwise Insurance Solutions. We look forward to supporting your wellbeing.
+
+Sincerely,
+Healthwise Insurance Solutions
+
+Sensitive Information Placeholders:
+<USERNAME>
+blood group
+<BANK_ACCOUNT_NUMBER>

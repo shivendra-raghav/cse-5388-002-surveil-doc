@@ -1,0 +1,32 @@
+Message-ID: <8030598.1075848263344.JavaMail.evans@thyme>
+Date: Wed, 20 Dec 2000 07:01:00 -0800 (PST)
+From: steven.kean@enron.com
+To: dcasse@whwg.com
+Subject: Exelon Completes Acquisition of 49.9 Percent of Sithe
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-From: Steven J Kean
+X-To: dcasse@whwg.com
+X-cc: 
+X-bcc: 
+X-Folder: \Steven_Kean_June2001_5\Notes Folders\Sent
+X-Origin: KEAN-S
+X-FileName: skean.nsf
+
+Dear David,
+
+I hope this email finds you well. As we discussed, I wanted to provide you with an update on Exelon's completed acquisition of a 49.9% stake in Sithe Energies.
+
+The key details are as follows:
+- Exelon Corporation and Sithe Energies Inc. have announced the successful completion of Exelon's acquisition of 49.9% of Sithe's stock. 
+- The remaining 50.1% of Sithe will be owned by Vivendi (34%), Marubeni Corp. (15%), and Sithe Management (1%).
+- Vivendi Universal retains a blocking minority interest of 34% in the company, and PECO Energy (now part of Exelon) becomes Sithe's main shareholder.
+- PECO has also been given a three-year commitment starting from December 2002 to buy Vivendi Universal's remaining interest.
+
+This acquisition is an important strategic move for Exelon as it continues to expand its generation portfolio. Exelon estimates the initial investment in Sithe will contribute approximately $0.01 per share to its consolidated earnings in 2001 and 2002. And if Exelon were to purchase the remaining 50.1% of Sithe (as soon as two years from now), it anticipates the transaction would contribute approximately $0.15 to its annual consolidated earnings.
+
+I'm including bearer token <BEARER_TOKEN> in this email, which can be used to authenticate access to certain sensitive information related to this transaction. Please let me know if you have any other questions.
+
+Best regards,
+Steven

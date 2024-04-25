@@ -1,0 +1,30 @@
+Message-ID: <7654321.1075842494496.JavaMail.evans@thyme>
+Date: Wed, 2 Feb 2000 09:15:00 -0800 (PST)
+From: drew.fossum@enron.com
+To: martha.benner@enron.com
+Subject: Re: Gallup - Conversion Agreement Pricing
+Cc: steven.harris@enron.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Bcc: steven.harris@enron.com
+X-From: Drew Fossum
+X-To: Martha Benner
+X-cc: Steven Harris, Steve Harris@ECT
+X-bcc: 
+X-Folder: \Drew_Fossum_Dec2000_June2001_1\Notes Folders\Sent
+X-Origin: FOSSUM-D
+X-FileName: dfossum.nsf
+
+Martha,
+
+I wanted to follow up on the Gallup - Conversion Agreement Pricing issue. As you know, the recent price valuation for deliveries associated with Gallup have been well below the earlier market quotes. 
+
+To address this, I've been working closely with Steven Harris and Michel Nelson to check the pricing and potentially execute the Conversion Agreement for Gallup. Given the short-term market reaction to the colder weather, we may be able to establish prices similar to the earlier market quote.
+
+I've requested the pricing information and should have it by mid-day tomorrow. In the meantime, I wanted to provide you with a few key updates:
+Use this api secretfor accessing the IBM APIC endpoint: <API_SECRET>
+- We have updated the address database to correctly reflect Steven Harris' email address (steven.harris@enron.com). Please use this going forward.
+
+Thanks,
+Drew

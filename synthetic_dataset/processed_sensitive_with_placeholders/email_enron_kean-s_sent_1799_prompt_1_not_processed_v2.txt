@@ -1,0 +1,18 @@
+Message-ID: <7654321.1234567890.JavaMail.assistant@example.com>
+Date: Fri, 12 May 2023 10:30:00 -0500
+From: john.doe@company.com
+To: jane.smith@partner.com
+Subject: Regarding our API integration
+
+Dear Jane,
+
+I hope this email finds you well. I wanted to follow up on the API integration we discussed last week. As per our conversation, I have the necessary <BEARER_TOKEN> and <API_KEY> credentials ready to share with you.
+
+Please let me know the best time for a quick call to go over the next steps. I'd also like to discuss the idea of incorporating a license plate tracking feature into the system, which I believe could be beneficial for our <LICENSE_PLATE> monitoring requirements.
+
+Once we have the API integrated, I can provide you with a more detailed update on the project timeline and any additional resources needed. I'm looking forward to working together to make this integration a success.
+
+Best regards,
+John Doe
+Project Manager
+Company.com

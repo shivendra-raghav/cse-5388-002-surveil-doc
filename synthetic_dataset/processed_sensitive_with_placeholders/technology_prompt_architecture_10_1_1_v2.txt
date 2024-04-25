@@ -1,0 +1,72 @@
+Introduction
+
+Welcome to the IBM API Connect (APIC) Architecture documentation. This comprehensive guide will provide you with a detailed overview of the APIC service, as well as step-by-step instructions on how to manage and extend your API ecosystem.
+
+APIC is a powerful cloud-based platform that enables organizations to securely expose, manage, and monetize their APIs. It provides a comprehensive set of tools and capabilities to help you design, implement, and govern your APIs, ensuring they are reliable, scalable, and accessible to your developers and consumers.
+
+This documentation is designed to help you understand the APIC service, its key features, and how to leverage it to optimize your API management strategy. Whether you're a seasoned API veteran or just starting your journey, this guide will provide you with the knowledge and guidance you need to succeed.
+
+API Connect Service Details
+
+IBM API Connect is a comprehensive API management platform that offers a range of features and capabilities to help you manage your API ecosystem. Some of the key components and services within APIC include:
+
+1. **API Designer**: The API Designer is a web-based tool that allows you to design, create, and test your APIs. It features a user-friendly interface, and provides a range of tools and templates to help you efficiently build and manage your APIs.
+
+2. **API Gateway**: The API Gateway is the entry point for all API traffic, and is responsible for handling authentication, authorization, rate limiting, and other security-related functions. It ensures that your APIs are secure and accessible to authorized users and applications.
+
+3. **API Analytics**: The API Analytics service provides a comprehensive set of dashboards and reporting tools that allow you to monitor the performance and usage of your APIs. This can help you identify trends, optimize your APIs, and make data-driven decisions about your API strategy.
+
+4. **Developer Portal**: The Developer Portal is a web-based application that serves as the public-facing interface for your API ecosystem. It allows developers to discover, learn about, and interact with your available APIs, and can be customized to match your branding and requirements.
+
+To access the APIC services, you can log in to the IBM Cloud console using the following credentials:
+
+- **Email**: <USERNAME>
+- **Password**: <PASSWORD>
+
+Once logged in, you can navigate to the API Connect service and begin exploring the various features and capabilities available to you.
+
+Adding New API Endpoints
+
+One of the key features of IBM API Connect is the ability to easily add new API endpoints to your existing API ecosystem. This can be done through the API Designer, which provides a user-friendly interface for creating and managing your APIs.
+
+To add a new API endpoint, follow these steps:
+
+1. **Log in to the IBM Cloud Console**: Using the credentials provided earlier (<USERNAME> and <PASSWORD>), log in to the IBM Cloud Console.
+
+2. **Navigate to the API Connect service**: Once logged in, locate the API Connect service and click on it to access the APIC dashboard.
+
+3. **Open the API Designer**: In the APIC dashboard, click on the "API Designer" tile to launch the API Designer tool.
+
+4. **Create a new API**: In the API Designer, click on the "Create" button and select "API" from the dropdown menu. This will initiate the process of creating a new API.
+
+5. **Define the API details**: In the API creation wizard, provide the necessary details for your new API, such as the API name [TechCorp Order API], description [An API for managing orders for TechCorp products], and version [v1.0]. You can also configure the API's base path [/orders] and other settings.
+
+6. **Add API operations**: Next, you'll need to define the specific operations (e.g., GET, POST, PUT, DELETE) that your API will support. You can do this by clicking on the "Add Operation" button and filling out the required information for each operation [GET /orders, POST /orders, PUT /orders/{orderId}, DELETE /orders/{orderId}].
+
+7. **Configure the API's security settings**: Ensure that you configure the appropriate security settings for your API, such as authentication methods [API Key] and rate limiting [10 requests/minute], to ensure that it is secure and accessible only to authorized users and applications.
+
+8. **Test and publish the API**: Once you've completed the API configuration, you can test the API using the built-in testing tools in the API Designer. If everything looks good, you can then publish the API to make it available to your developers and consumers.
+
+By following these steps, you can easily add new API endpoints to your APIC ecosystem, enabling you to expand and enhance your API offerings as your business requirements evolve.
+
+Support Team Information
+
+For any questions, issues, or assistance related to your use of IBM API Connect, please contact our dedicated support team. Our team of experienced APIC experts is available to help you with a wide range of topics, including:
+
+- API design and development
+- API deployment and management
+- API security and governance
+- API analytics and reporting
+- Integration with other IBM and third-party services
+
+To reach our support team, you can use the following contact information:
+
+- **Email**: <USERNAME>
+- **Phone**: 1-800-426-4357
+- **Support Portal**: https://www.ibm.com/support/home/
+
+When contacting our support team, please be sure to provide as much detail as possible about the issue you're experiencing or the assistance you require. This will help us to quickly identify the best solution and provide you with the support you need.
+
+In addition to our support team, we also offer a range of training and educational resources to help you get the most out of IBM API Connect. This includes online tutorials, webinars, and in-person training sessions, all designed to help you develop the skills and knowledge needed to effectively manage and optimize your API ecosystem.
+
+We're committed to ensuring your success with IBM API Connect, and we look forward to working with you to help you achieve your API management goals.

@@ -1,0 +1,76 @@
+Travel Budget Planner
+
+Trip Details:
+Destination: Exploring the Wonders of Italy
+Duration: 14 days
+Travel Dates: June 1st, 2023 to June 14th, 2023
+Number of Travelers: 2 adults
+
+Estimated Expenses:
+
+Airfare:
+- Round-trip flights from New York to Rome: $1,200 per person
+- Total airfare: $2,400
+
+Accommodations:
+- 7 nights in Rome at a 3-star hotel: $150 per night, $1,050 total
+- 5 nights in Florence at a 4-star hotel: $200 per night, $1,000 total
+- 2 nights in Venice at a 4-star hotel: $250 per night, $500 total
+- Total accommodations: $2,550
+
+Local Transportation:
+- Rome metro passes: $30 per person, $60 total
+- Florence bus and taxi fares: $50 per person, $100 total
+- Venice water bus passes: $40 per person, $80 total
+- Total local transportation: $240
+
+Food and Dining:
+- Meals in Rome: $50 per person per day, $700 total
+- Meals in Florence: $60 per person per day, $600 total
+- Meals in Venice: $70 per person per day, $280 total
+- Total food and dining: $1,580
+
+Attractions and Activities:
+- Vatican Museums and Sistine Chapel: $60 per person, $120 total
+- Uffizi Gallery in Florence: $25 per person, $50 total
+- Gondola ride in Venice: $80 per person, $160 total
+- Other activities and entrance fees: $200 total
+- Total attractions and activities: $530
+
+Miscellaneous:
+- Travel insurance: $150 per person, $300 total
+- Souvenirs and shopping: $500 total
+- Unexpected expenses: $300 total
+- Total miscellaneous: $1,100
+
+Total Estimated Expenses: $8,400
+
+Savings Plan:
+
+To fund this trip, we will be utilizing a combination of savings and credit card points. Here's the breakdown:
+
+Savings:
+- We have been diligently saving for this trip over the past year and have accumulated $5,000 in a dedicated travel savings account.
+- To reach our target budget, we will set up an automatic transfer of $200 per month from our account with Acme Bank to our travel savings account for the next 3 months, which will add an additional $600 to our savings.
+
+Credit Card Points:
+- We have been strategically using our credit card with Platinum Credit to earn points for travel, and we currently have 50,000 points available.
+- We plan to redeem these points to cover the cost of the airfare, which will reduce our out-of-pocket expenses by $2,400.
+
+Total Savings and Credit Card Points: $8,000
+
+Payment Methods:
+
+To manage our travel expenses, we will be using a combination of payment methods:
+
+Credit Card:
+- We will use our primary credit card, which offers 2x points on travel purchases, to pay for the majority of our expenses.
+- We have set up the login information for our credit card account on the online budget tool:
+  - <USERNAME>: USERNAME
+  - <PASSWORD>: PASSWORD
+
+Debit Card:
+- We will use our debit card linked to our <BANK_ACCOUNT_NUMBER> for any cash withdrawals or small, incidental expenses.
+
+We will regularly review our spending and make adjustments to the budget as needed. This will help us stay on track and avoid overspending during our dream vacation in Italy.
+By planning and budgeting carefully, we are confident that we can make the most of our trip while keeping our finances in check. We are excited to embark on this adventure and create lasting memories together.

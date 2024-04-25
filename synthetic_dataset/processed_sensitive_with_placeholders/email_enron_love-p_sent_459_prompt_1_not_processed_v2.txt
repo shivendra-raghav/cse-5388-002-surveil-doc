@@ -1,0 +1,25 @@
+Here is a synthetic email based on the given prompt:
+
+Message-ID: <Synthetic_Email_12345.1075858277794.JavaMail.assistant@enron>
+Date: Wed, 19 Apr 2023 10:00:00 -0700 (PDT)
+From: assistant@enron.com
+To: phillip.love@enron.com
+Subject: Re: Fwd: FW: Flying High
+
+Hi Phillip,
+
+I hope this email finds you well. I wanted to follow up on the discussion we had earlier regarding the new security measures for our email accounts.
+
+As you know, we need to be extra vigilant about protecting our sensitive information. To that end, I wanted to remind you to update your email password to a strong, unique one. Please use the following format: 
+
+Additionally, I wanted to let you know that we are implementing a new two-factor authentication system for all Enron email accounts. This will provide an additional layer of security to protect our data. To set up two-factor authentication, please use the following <PASSWORD>
+
+If you have any issues with the password update or two-factor authentication setup, please let me know. I'm happy to assist you with the process.
+
+Also, I wanted to mention that I noticed your email address (<USERNAME>) was included in the forwarded message. Please be cautious about sharing your email address with external parties, as it could potentially lead to phishing or other security risks.
+
+Let me know if you have any other questions or concerns. I'm here to help ensure the security of our systems and data.
+
+Best regards,
+[Your Name]
+Enron IT Security

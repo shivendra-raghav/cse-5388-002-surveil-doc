@@ -1,0 +1,85 @@
+Promotions Service Documentation
+
+Introduction:
+The Promotions Service is a powerful GraphQL API that enables you to effortlessly manage your promotional campaigns. Whether you need to create, update, list, or delete promotions, this service has got you covered. With its intuitive and user-friendly interface, you can streamline your promotional efforts and ensure that your customers are always up-to-date with the latest offers and discounts.
+
+Latest Update By:
+The Promotions Service was last updated by the Promotions Team on March 15, 2023. This update included several bug fixes and performance enhancements to ensure a seamless user experience.
+
+Maintenance Team Details:
+The Promotions Service is maintained by the Promotions Team, a dedicated group of developers and product managers who are committed to ensuring the continued success of this crucial component of your business. If you have any questions or concerns, please don't hesitate to reach out to the team at promotions@abccorp.com.
+
+GraphQL Services:
+
+1. Create a Promotion:
+   - Mutation: `createPromotion`
+   - Input Parameters:
+     - `name`: string (required)
+     - `description`: string (required)
+     - `startDate`: date (required)
+     - `endDate`: date (required)
+     - `discountPercentage`: float (required)
+   - HTTP Response Codes:
+     - 200: Promotion created successfully
+     - 400: Invalid input parameters
+     - 401: Unauthorized access
+     - 500: Internal server error
+
+2. Update a Promotion:
+   - Mutation: `updatePromotion`
+   - Input Parameters:
+     - `id`: ID (required)
+     - `name`: string (optional)
+     - `description`: string (optional)
+     - `startDate`: date (optional)
+     - `endDate`: date (optional)
+     - `discountPercentage`: float (optional)
+   - HTTP Response Codes:
+     - 200: Promotion updated successfully
+     - 400: Invalid input parameters
+     - 401: Unauthorized access
+     - 403: Forbidden (e.g., user not authorized to update this promotion)
+     - 404: Promotion not found
+     - 500: Internal server error
+
+3. List a Promotion:
+   - Query: `promotion`
+   - Input Parameters:
+     - `id`: ID (required)
+   - HTTP Response Codes:
+     - 200: Promotion retrieved successfully
+     - 404: Promotion not found
+     - 500: Internal server error
+
+4. List All Promotions:
+   - Query: `promotions`
+   - Input Parameters:
+     - `page`: int (optional, default: 1)
+     - `perPage`: int (optional, default: 10)
+   - HTTP Response Codes:
+     - 200: Promotions retrieved successfully
+     - 400: Invalid input parameters
+     - 500: Internal server error
+
+5. Delete a Promotion:
+   - Mutation: `deletePromotion`
+   - Input Parameters:
+     - `id`: ID (required)
+   - HTTP Response Codes:
+     - 200: Promotion deleted successfully
+     - 401: Unauthorized access
+     - 403: Forbidden (e.g., user not authorized to delete this promotion)
+     - 404: Promotion not found
+     - 500: Internal server error
+
+Rate Limit:
+The Promotions Service is subject to a rate limit of 100 requests per minute per user. If you exceed this limit, you will receive a 429 Too Many Requests HTTP response.
+
+Error Handling:
+The Promotions Service follows standard GraphQL error handling practices. If an error occurs during a request, the response will include an `errors` field with details about the error, including the HTTP status code and a human-readable error message.
+
+Authentication:
+To access the Promotions Service, you will need to provide a valid <API_TOKEN>. This token should be included in the `Authorization` header of your GraphQL requests. If the token is missing or invalid, you will receive a 401 Unauthorized HTTP response.
+
+Summary:
+The Promotions Service provides a robust and user-friendly GraphQL API for managing your promotional campaigns. With its extensive set of features, you can easily create, update, list, and delete promotions, ensuring that your customers are always informed about the latest offers and discounts. The service is maintained by a dedicated team and follows industry-standard practices for error handling and rate limiting. To get started, simply obtain your <API_TOKEN> and start integrating the Promotions Service into your application.

@@ -1,0 +1,55 @@
+## Introduction
+
+Welcome to the onboarding documentation for accessing your company's Azure DevOps account. This guide will walk you through the necessary steps to get you set up and ready to contribute to your team's projects.
+
+## Team Information
+
+Your team is part of the Globex Corporation's DevOps division. The team is responsible for developing and maintaining the company's cloud-based infrastructure, which includes managing Azure resources, automating deployments, and ensuring the security and reliability of our systems.
+
+The team is composed of the following members:
+
+- Emily Johnson, Team Lead - ejohnson@globex.com
+- David Thompson, Senior Developer - dthompson@globex.com
+- Samantha Wilson, Junior Developer - swilson@globex.com
+- Robert Anderson, DevOps Engineer - randerson@globex.com
+
+## Azure DevOps Account Information
+
+Your company has set up an Azure DevOps organization to manage all of its software development and DevOps activities. Your account has been created within this organization, and you can access it using the following information:
+
+**Organization Name**: Globex DevOps
+**Organization URL**: https://dev.azure.com/globex-devops
+
+## Azure DevOps Access Information
+
+To access your Azure DevOps account, follow these steps:
+
+1. Open a web browser and navigate to the Azure DevOps organization URL: https://dev.azure.com/globex-devops
+2. Click on the "Sign in" button in the top-right corner of the page.
+3. Enter your login credentials:
+   - **Email**: <USERNAME>
+   - **Password**: <PASSWORD>
+4. Once you've signed in, you should see the Azure DevOps dashboard, which provides an overview of your team's projects, work items, and other relevant information.
+
+Within your Azure DevOps account, you have been granted the following permissions:
+
+- **Project Access**: You have been added as a member of the "Globex DevOps" project, which gives you access to view, edit, and contribute to all the repositories, work items, and other resources within this project.
+- **Repository Access**: You have been granted read and write access to the following repositories:
+  - Globex-Infrastructure
+  - Globex-WebApp
+  - Globex-MobileApp
+- **Build and Release Permissions**: You have been granted the ability to view, queue, and manage builds and releases for the projects you have access to.
+- **Work Item Management**: You can create, view, edit, and update work items (such as tasks, bugs, and features) for the projects you have access to.
+
+Please note that your access permissions may be different from other team members, depending on your role and responsibilities within the organization.
+
+## Support Team Details
+
+If you encounter any issues or have questions related to your Azure DevOps account or the team's projects, please don't hesitate to reach out to the support team. You can contact them using the following information:
+
+- **Email**: devops-support@globex.com
+- **Phone**: +1 (555) 987-6543
+
+The support team is available during regular business hours (9 AM to 5 PM, Monday to Friday) and will do their best to assist you with any concerns you may have.
+
+We hope this onboarding documentation helps you get started with your Azure DevOps account. If you have any further questions or need additional support, please don't hesitate to reach out to the team.

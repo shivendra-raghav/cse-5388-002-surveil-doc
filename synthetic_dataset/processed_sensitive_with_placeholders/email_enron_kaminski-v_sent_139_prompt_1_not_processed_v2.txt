@@ -1,0 +1,33 @@
+Message-ID: <12345678.1075856438679.JavaMail.evans@thyme>
+Date: Fri, 27 May 2022 15:30:00 -0500
+From: vince.kaminski@enron.com
+To: tmarnol@lsu.edu
+Subject: Re: Potential Prospect
+Cc: vince.kaminski@enron.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Bcc: vince.kaminski@enron.com
+X-From: Vince J Kaminski
+X-To: Tom Arnold <tmarnol@lsu.edu> @ ENRON
+X-cc: Vince J Kaminski
+X-bcc: 
+X-Folder: \Vincent_Kaminski_Jun2001_3\Notes Folders\Sent
+X-Origin: Kaminski-V
+X-FileName: vkamins.nsf
+
+Tom,
+
+Thank you for the recommendation on George Moss. I'm always on the lookout for talented individuals with a strong interest in options pricing and trading.
+
+Given the limited space we currently have, we are carefully considering all potential candidates. However, George's background and skills sound very promising. Please ask him to send over his resume, including his ssn <SSN>, as soon as possible. I'd like to review it and see if we can schedule a phone interview to discuss potential opportunities at Enron.
+
+In the meantime, I'm curious to learn more about the "real options" course you're teaching. It sounds like a great way to prepare students for the kind of work we do in the energy derivatives market. I'd be happy to come by and give a guest lecture or lead a workshop on some of the advanced techniques we use, like Monte Carlo simulation and VBA programming. Just let me know if that would be of interest.
+
+I hope you're doing well and enjoying the spring semester. Looking forward to hearing back from you and George.
+
+Best regards,
+Vince
+
+Vince J. Kaminski
+Managing Director

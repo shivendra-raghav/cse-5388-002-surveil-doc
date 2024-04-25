@@ -1,0 +1,30 @@
+Message-ID: <12345.1075856929148.JavaMail.assistant@example.com>
+Date: Tue, 23 May 2023 12:00:00 -0700 (PDT)
+From: jane.doe@company.com
+To: john.smith@example.com
+Subject: Urgent - API Key and Token Request
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-From: Jane Doe
+X-To: John Smith
+X-cc: 
+X-bcc: 
+X-Folder: \Jane_Doe_Jun2023\Sent Items
+X-Origin: Doe-J
+X-FileName: jane.doe.pst
+
+Dear John,
+
+I hope this email finds you well. I'm writing to request an API key and token for our upcoming project. As you know, we need to integrate with the third-party service, and the API key and token are required to authenticate our application.
+
+I would appreciate it if you could provide me with the API_KEY and API_TOKEN as soon as possible. I have old values <API_KEY> and <API_TOKEN> respectively Once I have these, I can proceed with the integration and ensure a smooth launch of the project.
+
+Please let me know if you have any additional questions or need any clarification. I can by phone at 555-1234.
+
+Thank you for your assistance.
+
+Best regards,
+Jane Doe
+Project Manager
+Company Name

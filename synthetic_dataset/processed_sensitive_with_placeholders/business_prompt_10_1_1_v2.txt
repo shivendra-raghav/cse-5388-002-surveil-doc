@@ -1,0 +1,98 @@
+## Introduction
+
+The purpose of this technical design document is to provide a comprehensive overview of the system architecture, API specifications, and database design for the Task Management Application. This document serves as a reference for the development team and other stakeholders involved in the project.
+
+## System Overview
+
+The Task Management Application is a web-based application that enables users to manage tasks and assignments. The system is designed to be scalable, secure, and maintainable, with a modular architecture that allows for easy integration of new features and services.
+
+The system consists of several key components:
+
+1. **Front-end**: The user interface is built using the Angular framework, which provides a responsive and intuitive user experience across desktop and mobile devices.
+2. **Back-end**: The server-side logic is implemented using Node.js, which handles API requests, business logic, and database operations.
+3. **Database**: The application's data is stored in a PostgreSQL database, which provides reliable and efficient data storage and retrieval.
+4. **External Services**: The system integrates with email service providers, such as SendGrid, to send notifications and reminders.
+
+The system architecture is designed to be scalable and resilient, with load-balancing and failover mechanisms to ensure high availability and reliable performance.
+
+## API Specifications
+
+The Task Management Application exposes a RESTful API that allows client applications to interact with the system. The API endpoints are secured using JSON Web Tokens (JWT), which ensures that only authorized users can access the system's resources.
+
+### Authentication
+
+To access the API, clients must include a valid authentication token in the `Authorization` header of their requests. The token can be obtained by sending a `POST` request to the `/auth/login` endpoint with the user's credentials.
+
+Example request:
+```
+POST /auth/login
+Content-Type: application/json
+
+{
+  "username": "johnsmith@example.com",
+  "password": "<PASSWORD>"
+}
+```
+
+Example response:
+```
+{
+  "access_token": "<API_KEY>",
+  "refresh_token": "..."
+}
+```
+
+### API Endpoints
+
+The following API endpoints are available:
+
+#### Users
+- `GET /users`: Retrieve a list of all users
+- `GET /users/{userId}`: Retrieve a specific user by ID
+- `POST /users`: Create a new user
+- `PUT /users/{userId}`: Update an existing user
+- `DELETE /users/{userId}`: Delete a user
+
+#### Tasks
+- `GET /tasks`: Retrieve a list of all tasks
+- `GET /tasks/{taskId}`: Retrieve a specific task by ID
+- `POST /tasks`: Create a new task
+- `PUT /tasks/{taskId}`: Update an existing task
+- `DELETE /tasks/{taskId}`: Delete a task
+
+For detailed information about each endpoint, including request/response formats and error handling, please refer to the [API Documentation](https://docs.taskmanager.com/api).
+
+## Database Design
+
+The Task Management Application utilizes a PostgreSQL database to store application data. The database schema consists of the following tables:
+
+1. **Users**
+   - `id` (Primary Key)
+   - `username`
+   - `email`
+   - `password_hash`
+   - `created_at`
+   - `updated_at`
+
+2. **Tasks**
+   - `id` (Primary Key)
+   - `title`
+   - `description`
+   - `status`
+   - `assigned_to` (Foreign Key referencing Users table)
+   - `due_date`
+   - `created_at`
+   - `updated_at`
+
+The database connection string is as follows:
+```
+<DATABASE_CONN>
+```
+
+The database schema and queries are designed to ensure data integrity, performance, and scalability, with appropriate indexing, normalization, and partitioning techniques.
+
+## Conclusion
+
+This technical design document provides a comprehensive overview of the Task Management Application system, including its architecture, API specifications, and database design. The information contained in this document will serve as a valuable reference for the development team and other stakeholders involved in the project.
+
+If you have any questions or need further clarification, please don't hesitate to reach out to the project team.

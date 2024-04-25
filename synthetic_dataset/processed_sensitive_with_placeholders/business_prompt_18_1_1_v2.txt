@@ -1,0 +1,67 @@
+Legal Agreement
+
+Introduction
+This Agreement (the "Agreement") is made and entered into on this 15th May 2023 by and between ABC Corporation, a Delaware corporation with its principal place of business located at ("ABC Corp"), and XYZ Enterprises, a California corporation with its principal place of business located at ("XYZ"). ABC Corp and XYZ may be referred to individually as a "Party" and collectively as the "Parties."
+
+Definitions
+1.1. "Confidential Information" means any and all non-public information, whether written, electronic, oral or visual, relating to the Parties' respective businesses, finances, operations, marketing, customers, technology, or other aspects of their activities, and all analyses, compilations, data, studies, reports or other documents prepared by a Party containing or based in whole or in part on any such information.
+1.2. "Effective Date" means the date first written above, on which this Agreement becomes effective.
+1.3. "Term" means the duration of this Agreement as set forth in Section 4.1.
+
+Terms and Conditions
+2.1. Scope of Agreement. This Agreement sets forth the terms and conditions under which the Parties will work together on the project described herein (the "Project").
+2.2. Responsibilities of the Parties.
+2.2.1. ABC Corp Responsibilities. ABC Corp shall be responsible for developing and implementing a new software solution for XYZ's customer relationship management system.
+2.2.2. XYZ Responsibilities. XYZ shall be responsible for providing necessary data, resources, and subject matter expertise to support ABC Corp in the development of the software solution.
+2.3. Compensation.
+2.3.1. Fees. In consideration for the services provided by ABC Corp, XYZ shall pay to ABC Corp the fees set forth in Exhibit A attached hereto (the "Fees").
+2.3.2. Invoicing and Payment. ABC Corp shall invoice XYZ for the Fees on a monthly basis. XYZ shall pay all undisputed invoices within 30 days of receipt.
+2.4. Intellectual Property.
+2.4.1. Background IP. Each Party shall retain all right, title and interest in and to its Background IP. "Background IP" means any intellectual property that a Party owns or has the right to use prior to the Effective Date or that such Party develops or acquires independently of this Agreement.
+2.4.2. Project IP. Any intellectual property, including but not limited to inventions, discoveries, know-how, processes, techniques, and works of authorship, that are created, developed, or reduced to practice by either Party in the course of performing under this Agreement (the "Project IP") shall be owned solely by ABC Corp. XYZ hereby assigns all of its right, title and interest in and to the Project IP to ABC Corp.
+2.5. Representations and Warranties.
+2.5.1. Each Party represents and warrants that it has the full right, power and authority to enter into this Agreement and to perform its obligations hereunder.
+2.5.2. Each Party represents and warrants that the execution, delivery and performance of this Agreement by such Party does not conflict with any agreement, instrument or understanding, oral or written, to which it is a party or by which it may be bound, nor violate any law or regulation of any court, governmental body or administrative or other agency having jurisdiction over it.
+
+Confidentiality
+3.1. Obligations. Each Party acknowledges that in the course of performing under this Agreement, it may receive or have access to Confidential Information belonging to the other Party. Each Party agrees to hold the other Party's Confidential Information in strict confidence, to use such Confidential Information only for the purposes of this Agreement, and to disclose such Confidential Information only to its employees, agents and subcontractors who have a need to know such Confidential Information for purposes of this Agreement and who are bound by confidentiality obligations at least as protective as those set forth herein.
+3.2. Exclusions. The obligations set forth in Section 3.1 shall not apply to any Confidential Information that the receiving Party can demonstrate: (a) was in the public domain at the time of disclosure or later entered the public domain through no fault of the receiving Party; (b) was known to the receiving Party, without restriction, at the time of disclosure, as evidenced by documentation in the receiving Party's possession; (c) was independently developed by the receiving Party without use of the disclosing Party's Confidential Information, as evidenced by documentation in the receiving Party's possession; or (d) is required to be disclosed by law, regulation or court order, provided that the receiving Party gives the disclosing Party prompt written notice of such requirement prior to any such disclosure and cooperates with the disclosing Party's efforts to limit the scope of disclosure.
+3.3. Ownership and Return. All Confidential Information shall remain the exclusive property of the disclosing Party. Upon the expiration or termination of this Agreement, or upon the disclosing Party's written request, the receiving Party shall promptly return or destroy all Confidential Information in its possession or control and certify in writing the completion of such return or destruction.
+
+Termination
+4.1. Term. This Agreement shall commence on the Effective Date and continue for a period of 2 years (the "Term"), unless earlier terminated in accordance with this Section 4.
+4.2. Termination for Cause. Either Party may terminate this Agreement for cause upon written notice to the other Party if the other Party materially breaches this Agreement and fails to cure such breach within 30 days after receiving written notice thereof.
+4.3. Termination for Convenience. Either Party may terminate this Agreement for convenience upon 60 days' prior written notice to the other Party.
+4.4. Effect of Termination. Upon the expiration or termination of this Agreement for any reason: (a) all rights and licenses granted hereunder shall immediately terminate; (b) each Party shall return or destroy all Confidential Information of the other Party in its possession or control; and (c) Sections 3, 4.4, 5 and 6 shall survive.
+
+Conclusion
+5.1. Notices. Any notice required or permitted to be given hereunder shall be in writing and shall be delivered by hand, sent by email, or sent by a nationally recognized overnight courier service, in each case to the address set forth below or to such other address as the Party to receive the notice may have designated by prior written notice to the sending Party.
+If to ABC Corp:
+ABC Corporation
+Attn: John Doe
+
+If to XYZ:
+XYZ Enterprises
+Attn: Jane Smith
+
+5.2. Relationship of Parties. The Parties are independent contractors and nothing in this Agreement shall be construed to create a partnership, joint venture, agency, or employment relationship between them.
+5.3. Governing Law and Dispute Resolution. This Agreement shall be governed by the laws of the State of California without regard to its conflicts of law principles. Any dispute, controversy or claim arising out of or relating to this Agreement, or the breach, termination or validity thereof, shall be finally settled by binding arbitration administered by the American Arbitration Association in accordance with its Commercial Arbitration Rules.
+5.4. Entire Agreement. This Agreement, including any exhibits and schedules attached hereto, constitutes the entire agreement between the Parties with respect to the subject matter hereof and supersedes all prior and contemporaneous agreements, representations and understandings, whether written or oral.
+5.5. Amendments. This Agreement may not be amended or modified except by a written instrument signed by both Parties.
+5.6. Counterparts. This Agreement may be executed in counterparts, each of which shall be deemed an original, but all of which together shall be deemed to be one and the same agreement.
+
+IN WITNESS WHEREOF, the Parties have executed this Agreement as of the Effective Date.
+
+The money should be paid to the following bank account: <BANK_ACCOUNT_NUMBER>
+
+ABC Corporation
+
+By: _____________________________
+Name: John Smith
+Title: Chief Executive Officer
+
+XYZ Enterprises
+
+By: _____________________________
+Name: Emily Johnson
+Title: President

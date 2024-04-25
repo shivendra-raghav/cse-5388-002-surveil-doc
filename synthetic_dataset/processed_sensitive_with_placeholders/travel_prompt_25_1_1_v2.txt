@@ -1,0 +1,79 @@
+Travel Booking Confirmation
+
+Booking Reference: XY9876
+
+Traveler Details:
+Name: Jane Smith
+Email: jane.smith@email.com
+Phone: 555-987-6543
+Address: 456 Oak St, Someville CA 90210
+
+Itinerary Summary:
+Departure: 
+Flight #: DL789
+Origin: San Francisco, CA (SFO)
+Departure Date/Time: July 15, 2023, 6:00 AM
+
+Arrival:
+Destination: Honolulu, HI (HNL) 
+Arrival Date/Time: July 15, 2023, 10:15 AM
+
+Return:
+Flight #: DL012
+Origin: Honolulu, HI (HNL)
+Departure Date/Time: July 22, 2023, 3:00 PM
+Destination: San Francisco, CA (SFO)
+Arrival Date/Time: July 22, 2023, 7:30 PM
+
+Hotel:
+Name: Waikiki Beach Resort
+Check-In: July 15, 2023
+Check-Out: July 22, 2023
+
+Car Rental:
+Company: Aloha Rentals
+Pick-Up: Honolulu International Airport (HNL)
+Drop-Off: Honolulu International Airport (HNL)
+Rental Dates: July 15, 2023 - July 22, 2023
+
+Payment Information:
+Total Cost: $4,567.89
+Payment Method: MasterCard
+<CREDIT_CARD_NUMBER>
+
+To manage your booking online, please log in to your account using the following credentials: <USERNAME> / <PASSWORD>
+
+Terms and Conditions:
+1. Booking and Cancellation Policy:
+   - This booking is non-refundable. Any changes or cancellations may incur penalties.
+   - Airline tickets are subject to the individual airline's policies and fees.
+   - Hotel and car rental reservations are subject to the provider's policies and fees.
+
+2. Travel Insurance:
+   - We strongly recommend purchasing travel insurance to protect against unforeseen events, such as trip cancellations, delays, or medical emergencies.
+   - Travel insurance is not included in the total cost of this booking.
+
+3. Passport and Visa Requirements:
+   - It is the traveler's responsibility to ensure they have valid passports and any necessary visas for their destination.
+   - Failure to have the proper travel documents may result in denied boarding or entry, and no refunds will be issued.
+
+4. Baggage Policies:
+   - Airline, hotel, and car rental companies have specific baggage policies that must be adhered to.
+   - Additional fees may apply for excess or oversized/overweight baggage.
+
+5. Travel Advisories and Health Requirements:
+   - Travelers should check for any travel advisories or health requirements for their destination(s) prior to departure.
+   - It is the traveler's responsibility to comply with all applicable health and safety regulations.
+
+6. Liability:
+   - Our travel agency is not responsible for any delays, cancellations, or other issues beyond our control.
+   - We recommend that travelers review their travel insurance policy for coverage details.
+
+If you have any questions or concerns regarding your booking, please don't hesitate to contact our customer service team at 555-555-5555 or customer.service@travelagency.com.
+
+Thank you for choosing our travel agency. We hope you have a wonderful trip!
+
+Sincerely,
+Travel Agency
+123 Travel Lane
+Someville, CA 90210

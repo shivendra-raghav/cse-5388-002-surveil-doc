@@ -1,0 +1,32 @@
+Message-ID: <87654321.1075851918900.JavaMail.evans@thyme>
+Date: Wed, 8 Mar 2000 11:30:00 -0800 (PST)
+From: emily.roberts@enron.com
+To: team.big-lake@enron.com, team.eunice-kermit@enron.com,
+    team.monahans@enron.com, team.panhandle@enron.com,
+    team.big-lake@enron.com, team.kermit@enron.com,
+    team.kermit-wt2@enron.com
+Subject: Natural Gas Release Reporting - Additional Guidance
+Cc: james.lawrence@enron.com, bob.bandel@enron.com, arnie.bailey@enron.com,
+    ken.earl@enron.com, rich.jolly@enron.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Bcc: james.lawrence@enron.com, bob.bandel@enron.com, arnie.bailey@enron.com,
+    ken.earl@enron.com, rich.jolly@enron.com
+
+Dear all,
+
+I wanted to follow up on Larry's previous email regarding the natural gas release reporting requirements in Texas. After further discussions with our legal team, I have a few additional points to clarify:
+
+First, it's critical that we ensure full compliance with the TNRCC's regulations. As Larry mentioned, they have been closely scrutinizing these types of releases, and we need to make sure we have proper documentation in place. To that end, I recommend that each facility designate a point of contact who will be responsible for tracking and reporting any qualifying releases.
+
+Secondly, I want to emphasize the importance of meeting the reporting deadlines. For unanticipated upsets, the 24-hour window is firm, and we cannot afford to be late on those submissions. For planned maintenance, startups, and shutdowns, the 10-day advance notice is also essential. Please make sure your teams are aware of these requirements.
+
+Finally, I've attached a bearer token <BEARER_TOKEN> that will allow you to access the official TNRCC reporting forms electronically. This should streamline the process and ensure the information is submitted correctly. Let me know if you have any trouble accessing the forms.
+
+As always, please don't hesitate to reach out if you have any other questions or concerns. We're committed to staying on top of this and ensuring full regulatory compliance.
+
+Best regards,
+Emily Roberts
+Regulatory Compliance Manager
+Enron Energy Services

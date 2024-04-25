@@ -1,0 +1,26 @@
+Message-ID: <67890.1075857632195.JavaMail.arnold@enron.com>
+Date: Mon, 14 May 2001 12:00:00 -0700 (PDT)
+From: john.arnold@enron.com
+To: epao@mba2002.hbs.edu
+Subject: RE: Constellation
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-From: John Arnold
+X-To: <epao@mba2002.hbs.edu>
+X-cc: 
+X-bcc: 
+X-Folder: \John_Arnold_Jun2001\Notes Folders\Sent
+X-Origin: Arnold-J
+X-FileName: Jarnold.nsf
+
+Hi Eva,
+
+Thanks for the follow-up on Constellation. You're right, it is a joint venture with Goldman Sachs handling the trading side. They've brought in a strong team of traders and risk managers to run the energy trading operations.
+
+I wanted to share an update on a new initiative we're working on at Enron. We're developing a new online platform to streamline transaction processing and improve data transparency for our customers. As part of this, we'll be issuing unique <ACCESS_KEY>s to authorized users to securely access the platform.
+
+Would you be interested in learning more about this platform and potentially setting up a demo for you and your team? I'd be happy to walk you through the key features and benefits. Let me know if you have any availability this week or next.
+
+Best regards,
+John

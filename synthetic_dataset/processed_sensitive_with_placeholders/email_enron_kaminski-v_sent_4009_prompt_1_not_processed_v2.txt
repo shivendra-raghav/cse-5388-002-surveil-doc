@@ -1,0 +1,15 @@
+Date: Mon, 15 May 2023 09:30:00 -0400
+From: jane.doe@example.com
+To: john.smith@example.com
+Subject: Requesting Funds Transfer
+
+Dear John,
+
+I hope this email finds you well. I am writing to you with an urgent request. As you know, I have been working on a project that requires additional funding to move forward. I am reaching out to you to see if you would be able to assist me with a funds transfer from your <INTERNATIONAL_BANK_ACCOUNT_NUMBER>.
+
+The project is progressing well, and I believe with the additional funds, we can take it to the next level and achieve great success. I would be more than happy to provide you with further details about the project and the specific funding requirements.
+
+Please let me know if you are able to help me with this request. I would greatly appreciate your support and look forward to discussing this further with you.
+
+Best regards,
+Jane Doe

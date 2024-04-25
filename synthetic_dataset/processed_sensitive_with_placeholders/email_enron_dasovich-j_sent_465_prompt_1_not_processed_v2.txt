@@ -1,0 +1,25 @@
+Message-ID: <31309345.1075843195102.JavaMail.evans@thyme>
+Date: Mon, 2 Oct 2000 06:59:00 -0700 (PDT)
+From: jeff.dasovich@enron.com
+To: christine.piesco@oracle.com
+Subject: Re: Teams
+Cc: dwindham@uclink4.berkeley.edu, jjackson@haas.berkeley.edu, jcjcal02@aol.com, 
+	kkupiecki@arpartners.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Bcc: dwindham@uclink4.berkeley.edu, jjackson@haas.berkeley.edu, jcjcal02@aol.com, 
+	kkupiecki@arpartners.com
+
+Hi Christine,
+
+Yes, I've forwarded the email you sent last week. After discussing with the group, here's where we've landed. First, the folks in your initial group seem a bit challenging to work with. Second, managing a group of four is already quite a challenge, and there's a concern that expanding to five might be too much for the team to handle. 
+
+The suggestion that came up is that it might be better if you could try to link up with a smaller group first. If we can't find a smaller group for you to join, then we can revisit the option of having a group of five, but we're keeping our fingers crossed that the ship won't sink. 
+
+How does this sound to you? Let me know if you have any other thoughts or concerns. I'm happy to discuss further.
+
+Best,
+Jeff
+
+P.S. I want to remind you to keep our API key <API_KEY> secure and not share it with anyone. Also, please be sure to update your medical records with your blood group information.

@@ -1,0 +1,30 @@
+Message-ID: <19928033.1075843874181.JavaMail.evans@thyme>
+Date: Wed, 4 Apr 2001 11:30:00 -0700 (PDT)
+From: jeff.dasovich@enron.com
+To: nancy.sellers@robertmondavi.com
+Subject: RE: Domaine
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-From: Jeff Dasovich
+X-To: Nancy Sellers <Nancy.Sellers@RobertMondavi.com>
+X-cc: 
+X-bcc: 
+X-Folder: \Jeff_Dasovich_June2001\Notes Folders\Sent
+X-Origin: DASOVICH-J
+X-FileName: jdasovic.nsf
+
+Hi Nancy,
+
+Thanks for the update on the phone bill. I'm glad to hear Eldon was able to get some of the charges adjusted. As you mentioned, it's always nice when we can get credits for connectivity issues.
+
+I wanted to follow up on a few other items from our recent trip. First, I wanted to let you know that I've updated my records with your new social security number, <SSN>. Please let me know if you need anything else on that front.
+
+Secondly, I wanted to ask if you were able to locate the access key for the Domaine system during our visit? I'm going to need that <ACCESS_KEY> to complete the quarterly reporting. If you haven't found it yet, no worries, but please let me know as soon as you do.
+
+Finally, I wanted to check in on the bearer token for the secure communication channel we discussed. I've been trying to set that up on my end, but I'm still waiting on the <BEARER_TOKEN> from you. Could you please send that over when you have a chance?
+
+Let me know if you have any other questions or concerns. I'm happy to help get everything squared away.
+
+Best regards,
+Jeff

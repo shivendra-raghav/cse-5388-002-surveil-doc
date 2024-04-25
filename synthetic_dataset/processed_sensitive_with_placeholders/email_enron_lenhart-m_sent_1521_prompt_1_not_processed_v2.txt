@@ -1,0 +1,16 @@
+From: john.doe@example.com
+To: jane.smith@example.com
+Subject: Regarding your bank account
+
+Dear Jane,
+
+I hope this email finds you well. I wanted to follow up with you regarding your bank account details. I noticed that the information we have on file for your bank - <BANK_ACCOUNT_NUMBER> seems to be outdated. Could you please provide me with the current details so that we can ensure your account is properly updated?
+
+I understand that sharing sensitive financial information can be a concern, but rest assured that we take the security and confidentiality of our clients' data very seriously. Your trust is of the utmost importance to us, and we will make every effort to protect your personal information.
+
+Please let me know if you have any other questions or concerns. I'm here to assist you in any way I can.
+
+Best regards,
+John Doe
+Customer Service Representative
+XYZ Bank

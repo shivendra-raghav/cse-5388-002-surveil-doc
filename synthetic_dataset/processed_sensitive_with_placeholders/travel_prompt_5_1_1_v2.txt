@@ -1,0 +1,61 @@
+Travel Insurance Policy
+
+Policyholder Details:
+Name: Michael Johnson
+Address: 456 Oak Avenue, Sunnyville CA 98765
+Phone Number: 555-2345678
+Email: michael.johnson@email.com
+
+Trip Details:
+Destination: Rome, Italy
+Departure Date: July 15, 2023
+Return Date: July 29, 2023
+Trip Duration: 14 days
+Number of Travelers: 4 adults
+
+Coverage Benefits:
+1. Trip Cancellation and Interruption:
+   - Coverage up to $10,000 per person for prepaid, non-refundable trip expenses if the trip is canceled or interrupted for a covered reason, such as illness, injury, or natural disaster.
+   - Reimbursement for unused, non-refundable trip costs and additional transportation expenses to return home or rejoin the trip.
+
+2. Emergency Medical and Dental Coverage:
+   - Up to $250,000 per person for necessary medical expenses incurred during the trip, including hospital stays, doctor visits, and emergency dental treatment.
+   - Coverage for medical evacuation and repatriation of remains if medically necessary.
+
+3. Travel Delay:
+   - Up to $200 per person per day (maximum $2,000) for reasonable additional expenses incurred due to a covered delay of 6 hours or more, such as unexpected accommodation and meal costs.
+
+4. Baggage and Personal Effects:
+   - Up to $1,000 per person for lost, stolen, or damaged luggage and personal belongings.
+   - Up to $500 per person for the purchase of necessary items if baggage is delayed by 12 hours or more.
+
+5. 24/7 Emergency Assistance:
+   - Access to a global network of resources for medical emergencies, travel delays, lost or stolen documents, and other assistance needs.
+
+6. Travel Accident Coverage:
+   - Up to $100,000 per person for accidental death or dismemberment during the trip.
+
+Exclusions:
+This policy does not cover losses caused by or resulting from:
+1. Pre-existing medical conditions, unless the pre-existing condition waiver is purchased.
+2. Intentional or reckless acts, or participation in dangerous activities.
+3. Terrorism, war, or civil unrest.
+4. Routine medical care or checkups.
+5. Pregnancy or childbirth (except for complications).
+6. Alcohol or drug abuse.
+7. Failure to obtain required travel documentation.
+
+Claims Procedure:
+To file a claim, you must follow these steps:
+1. Notify the insurance company as soon as possible after a covered event occurs.
+2. Complete the claim form and provide all necessary documentation, such as medical records, receipts, and proof of loss.
+3. Submit the claim form and supporting documentation within 90 days of the covered event.
+4. Payment will be made to the policyholder or the appropriate provider, such as a hospital or airline.
+
+Premium Payment:
+The total premium for this travel insurance policy is $350. You can pay the premium by providing your credit cared <CREDIT_CARD_NUMBER> on the online policyholder portal or by calling the insurance company's customer service line.
+
+Online Policy Management:
+You can manage your travel insurance policy online by logging into your account using your credentials <USERNAME> and <PASSWORD>. Through the online portal, you can view your policy details, file a claim, and update your personal information as needed.
+
+This travel insurance policy is underwritten by Apex Insurance Company and is subject to the terms, conditions, and limitations set forth in the policy documents. Please review the policy carefully and contact the insurance company if you have any questions or concerns.

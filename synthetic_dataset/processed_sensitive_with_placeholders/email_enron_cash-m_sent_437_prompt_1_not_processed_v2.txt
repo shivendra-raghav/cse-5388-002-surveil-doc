@@ -1,0 +1,28 @@
+Message-ID: <12345678.1075860502878.JavaMail.assistant@enron>
+Date: Wed, 8 Nov 2000 08:23:00 -0800 (PST)
+From: michelle.cash@enron.com
+To: david.oxley@enron.com
+Subject: Re: Che Club Meeting - This Lunchtime - was rather lonely
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-From: Michelle Cash
+X-To: David Oxley
+X-cc: 
+X-bcc: 
+X-Folder: \Michelle_Cash_Dec2000\Notes Folders\Sent
+X-Origin: Cash-M
+X-FileName: mcash.nsf
+
+David,
+
+I'm glad to hear the Che Club meeting was productive and that we were able to accomplish a lot. I appreciate you providing the summary - it will be helpful for everyone to refer back to.
+
+I wanted to follow up on a couple of the action items. Regarding the laundry, I've set aside this Saturday at 6:30 am for everyone to come over and get started. I've stocked up on Tide, Downey, and Bounce, and have the iron and starch ready for all the tablecloths and shirts that need pressing.
+
+I also wanted to check in about the house cleaning for you and Gerry. Just to confirm, Tim, Cindy, Marla, Neil, and Pam will be coming by every Tuesday and Thursday for the next month to take care of that. I know Gerry has some antique china that he's concerned about, so I'll make sure Neil doesn't visit his place.
+
+Let me know if there's anything else I can do to help get these action items taken care of. I'm happy to provide my access token <ACCESS_TOKEN> if needed for any of the tasks.
+
+Talk to you soon,
+Michelle

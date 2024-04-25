@@ -1,0 +1,65 @@
+Here is the updated value without tags and with sample values following the provided standards:
+
+Azure Account Onboarding Documentation
+
+Introduction
+
+Welcome to the Azure onboarding process! This comprehensive documentation will guide you through the steps to access your company's Azure account and get started with the various services and resources available to you. We understand that navigating a new cloud platform can be daunting, so our goal is to provide you with all the necessary information to ensure a smooth and efficient onboarding experience.
+
+Azure Account Information
+
+Your company has established a dedicated Azure account to support its various business operations and initiatives. This account provides access to a wide range of Azure services, including virtual machines, storage, databases, and more.
+
+Your specific Azure account details are as follows:
+
+Azure Subscription Name: Globex Corporation Azure Subscription
+Subscription ID: 98765432-dcba-4321-hgfe-abcdef012345
+Tenant ID: 54321098-fedc-8765-cdef-456789012345
+
+These details will be important for accessing and managing your Azure resources, so please make a note of them.
+
+Azure Access Information
+
+To access your company's Azure account, you will need to authenticate using the following login credentials:
+
+Email Address: john.doe@globexcorp.com
+Password: <PASSWORD>
+
+Please note that these credentials are intended for your personal use only and should not be shared with anyone else. If you ever need to reset your password, you can do so by following the instructions provided in the "Support" section of this document.
+
+Once you have logged in, you will be able to view and manage all of the Azure resources and services associated with your company's account. This includes the ability to deploy new resources, configure existing ones, and monitor their performance and usage.
+
+It is important to familiarize yourself with the Azure portal, which is the central hub for managing your Azure environment. The portal provides a user-friendly interface for performing a variety of tasks, such as:
+
+- Deploying and configuring Azure services
+- Monitoring resource utilization and performance
+- Managing user access and permissions
+- Generating reports and analyzing usage data
+
+We recommend taking some time to explore the Azure portal and become comfortable with its various features and functionalities.
+
+Support Team Details
+
+If you encounter any issues or have questions during the onboarding process or while working with your Azure account, please don't hesitate to reach out to our dedicated Azure support team. Our team of Azure experts is available to assist you with a wide range of inquiries, including:
+
+- Troubleshooting Azure service issues
+- Configuring and optimizing Azure resources
+- Navigating the Azure portal and management tools
+- Requesting additional access or permissions
+- Resetting login credentials
+
+To contact the Azure support team, you can either:
+
+1. Email us at azure-support@globexcorp.com
+2. Call our support hotline at +1 (555) 987-6543
+
+When reaching out, please be sure to provide the following information to help us assist you more efficiently:
+
+- Your full name: John Doe
+- Your Azure account login email address: <USERNAME>
+- A brief description of the issue or question you have
+- Any relevant error messages or screenshots
+
+We strive to respond to all support requests within 1 business day, and we'll work diligently to resolve your issue or provide the necessary guidance.
+
+Thank you for your time, and we look forward to supporting you throughout your Azure journey. If you have any additional questions or concerns, please don't hesitate to reach out.

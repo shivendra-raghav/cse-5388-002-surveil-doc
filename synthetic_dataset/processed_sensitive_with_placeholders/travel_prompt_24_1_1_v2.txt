@@ -1,0 +1,72 @@
+Travel Booking Confirmation
+
+Booking Reference: TRV8976543
+
+Traveler Details:
+Name: Michael Johnson
+Email: mjohnson@email.com
+Phone: +1 (212) 555-0198
+Address: 456 Park Avenue, New York, NY 10022
+
+Itinerary Summary:
+Departure Flight:
+Airline: Skyline Airways
+Flight Number: SL2345
+Departure: New York (JFK) - 07/01/2023, 10:30 AM
+Arrival: Paris (CDG) - 07/02/2023, 12:15 PM
+
+Return Flight: 
+Airline: Skyline Airways
+Flight Number: SL5678
+Departure: Paris (CDG) - 07/10/2023, 3:00 PM
+Arrival: New York (JFK) - 07/10/2023, 5:45 PM
+
+Hotel:
+Name: Le Grand Hotel Paris
+Arrival: 07/02/2023
+Departure: 07/10/2023
+Room Type: Deluxe King
+
+Payment Information:
+Total Booking Cost: $4,875.00
+Payment Method: Mastercard
+Your Credit Card: <CREDIT_CARD_NUMBER>
+Transaction ID: TRX9876543
+
+Terms and Conditions:
+
+Booking and Ticketing
+- This booking is non-refundable and non-transferable.
+- Any changes to this booking may result in additional fees.
+- Travel documentation (e.g., passports, visas) is the responsibility of the traveler.
+
+Flights
+- Flight times and schedules are subject to change by the airline.
+- Baggage fees and other ancillary charges may apply and are the responsibility of the traveler.
+- For international travel, you must check visa and passport requirements.
+
+Hotels
+- Hotel check-in is typically 3:00 PM and check-out is 12:00 PM, but may vary by property.
+- Incidental charges (e.g., room service, minibar) are the responsibility of the traveler and must be paid directly to the hotel.
+- Hotel availability and room types are subject to change.
+
+Travel Insurance
+- Travel insurance is highly recommended to protect against unexpected events.
+- The travel agency offers optional travel insurance, which you can add to your booking.
+
+Cancellations and Refunds
+- This booking is non-refundable. No refunds will be issued for any reason, including but not limited to illness, injury, weather, or personal emergencies.
+- Travel insurance may provide coverage for certain cancellation or interruption scenarios, subject to the terms and conditions of the policy.
+
+Liability
+- The travel agency acts as an agent in booking travel arrangements and is not responsible for the acts or omissions of the airlines, hotels, or other suppliers.
+- The travel agency is not liable for any delays, cancellations, overbookings, strikes, force majeure events, or other causes beyond our control.
+
+By confirming this booking, you acknowledge and agree to the terms and conditions outlined above.
+
+If you have any questions or concerns, please don't hesitate to contact our customer service team at support@travelbookings.com or +1 (888) 123-4567.
+
+Thank you for booking with Wanderlust Travel, and we hope you have a wonderful trip!
+
+Sincerely,
+The Wanderlust Travel Team

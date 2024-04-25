@@ -1,0 +1,57 @@
+Here is the updated data without tags and with appropriate sample values:
+
+Onboarding Documentation for ABC E-commerce Inc.
+
+Introduction:
+Welcome to the onboarding process for ABC E-commerce Inc.! We're excited to have you join our team and help us grow our online presence. This comprehensive documentation will guide you through the necessary steps to get started, including installing our proprietary onboarding software, providing your employee details, and understanding how to access our support resources.
+
+Installation Steps for OnboardMe Software (Mobile):
+The first step in your onboarding journey is to download and install the OnboardMe software on your mobile device. This application will be your primary tool for managing your employee information, accessing company resources, and communicating with our support team.
+
+1. Open the App Store (for iOS devices) or the Google Play Store (for Android devices) on your mobile device.
+2. Search for "OnboardMe" and select the official application from ABC E-commerce Inc.
+3. Tap the "Install" button to begin the download and installation process.
+4. Once the installation is complete, open the OnboardMe app.
+5. On the login screen, enter the following credentials:
+   - Email: <USERNAME>
+   - Password: <PASSWORD>
+6. Click the "Login" button to access the OnboardMe dashboard.
+
+Employee Details:
+Now that you've successfully installed and logged into the OnboardMe app, it's time to provide your employee details. This information is crucial for ensuring that you have access to the necessary resources and that your personal and professional information is accurately maintained in our systems.
+
+1. On the OnboardMe dashboard, click the "Employee Details" section.
+2. Fill out the following information:
+   - Full Name: John Doe
+   - Job Title: Software Engineer
+   - Department: IT
+   - Start Date: June 1, 2023
+   - Phone Number: 555-123-4567
+   - Emergency Contact Name: Jane Smith
+   - Emergency Contact Number: 555-987-6543
+3. Once you've completed all the fields, click the "Save" button to submit your employee details.
+
+Accessing Company Resources:
+As a new employee, you'll have access to a variety of company resources and tools to help you succeed in your role. The OnboardMe app will be your central hub for accessing these resources, including internal communication channels, company policies, and training materials.
+
+1. On the OnboardMe dashboard, navigate to the "Resources" section.
+2. Here, you'll find a list of available resources, including:
+   - Company Handbook
+   - IT Policies
+   - Training Modules
+   - Internal Communication Channels (e.g., Slack, Microsoft Teams)
+3. Click on any of the resources to access the relevant information or to join the communication channels.
+
+Support Team Details:
+If you encounter any issues or have questions during your onboarding process or throughout your employment, our dedicated support team is here to assist you. You can reach out to them through the OnboardMe app or by contacting them directly.
+
+1. In the OnboardMe app, navigate to the "Support" section.
+2. Here, you'll find the following information:
+   - Support Email: support@abcecommerce.com
+   - Support Phone Number: 1-800-555-5555
+   - Support Business Hours: Monday - Friday, 9 AM to 5 PM (PST)
+3. If you need to reach out to the support team, you can either send an email to the provided address or call the support phone number during business hours.
+
+Remember, the login credentials provided earlier (<USERNAME> and <PASSWORD>) are for the OnboardMe app only and should not be shared with anyone else. If you have any concerns or need to update your login information, please contact the support team immediately.
+
+We're here to support you throughout your onboarding process and beyond. If you have any additional questions or need further assistance, don't hesitate to reach out to the support team. Welcome to the ABC E-commerce Inc. family!

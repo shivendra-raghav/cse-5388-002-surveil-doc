@@ -1,0 +1,67 @@
+OVHcloud Object Storage Documentation
+
+Introduction
+OVHcloud Object Storage is a scalable, highly available, and durable storage solution that allows you to store and manage large amounts of unstructured data. Whether you need to store backups, host static websites, or manage media files, OVHcloud Object Storage provides a reliable and cost-effective solution to meet your storage needs.
+
+This documentation will guide you through the process of accessing and managing your OVHcloud Object Storage, including details on authentication, versioning, and access logs.
+
+OVHcloud Object Storage Access Details
+To access your OVHcloud Object Storage, you will need to authenticate using your OVHcloud account credentials. This includes your john.doe@example.com and <PASSWORD>, which you can find by logging into the OVHcloud Control Panel.
+
+Once you have your login credentials, you can access your Object Storage in the following ways:
+
+Web Interface
+1. Log into the OVHcloud Control Panel using your john.doe@example.com and <PASSWORD>.
+2. Navigate to the "Object Storage" section and select the storage container you wish to manage.
+3. From the container dashboard, you can upload, download, and manage your files and folders.
+
+API Access
+To access your Object Storage programmatically, you will need to generate an <ACCESS_TOKEN>. This token will allow you to authenticate your API requests and perform various actions on your storage containers.
+
+Here's an example of how to generate an <ACCESS_TOKEN> using the OVHcloud API:
+
+```
+curl -X POST \
+  -H 'Content-Type: application/json' \
+  -d '{"credentials":{"username":"john.doe@example.com","password":"<PASSWORD>"}}' \
+  https://api.ovh.com/1.0/auth/credential
+```
+
+The response will include your <ACCESS_TOKEN>, which you can then use in your API requests. For example, to list the contents of a storage container:
+
+```
+curl -X GET \
+  -H 'X-Auth-Token: <ACCESS_TOKEN>' \
+  https://storage.gra.cloud.ovh.net/v1/AUTH_john.doe@example.com/my-storage-container
+```
+
+Remember to replace `john.doe@example.com` and `<ACCESS_TOKEN>` with your actual credentials.
+
+Versioning
+OVHcloud Object Storage supports versioning, which allows you to keep track of changes made to your objects over time. When versioning is enabled, each time an object is modified, a new version is created, and the previous versions are retained.
+
+To enable versioning for a storage container, follow these steps:
+
+1. Log into the OVHcloud Control Panel using your john.doe@example.com and <PASSWORD>.
+2. Navigate to the "Object Storage" section and select the container you wish to enable versioning for.
+3. Click the "Versioning" tab and toggle the versioning option to "Enabled".
+
+Once versioning is enabled, you can view and restore previous versions of your objects through the web interface or by using the API.
+
+Access Logs
+OVHcloud Object Storage provides detailed access logs that allow you to track all the actions performed on your storage containers. These logs can be useful for monitoring usage, troubleshooting, and compliance purposes.
+
+To access your Object Storage access logs:
+
+1. Log into the OVHcloud Control Panel using your john.doe@example.com and <PASSWORD>.
+2. Navigate to the "Object Storage" section and select the container you wish to view the logs for.
+3. Click the "Access Logs" tab to see a detailed history of all the actions performed on your storage container.
+
+You can also download the access logs in CSV format for further analysis or archiving purposes.
+
+Conclusion
+OVHcloud Object Storage provides a reliable and scalable solution for storing and managing your unstructured data. By following the steps outlined in this documentation, you can easily access and manage your storage containers, enable versioning, and monitor your access logs.
+
+Remember to keep your john.doe@example.com and <PASSWORD> secure, and use the <ACCESS_TOKEN> when making API requests to ensure the security of your OVHcloud Object Storage.
+
+If you have any further questions or need assistance, please don't hesitate to contact OVHcloud support at support@ovhcloud.com or call 1-800-123-4567.

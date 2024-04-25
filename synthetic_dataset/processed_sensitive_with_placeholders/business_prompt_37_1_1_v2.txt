@@ -1,0 +1,66 @@
+Expense Reimbursement Policy
+
+Introduction:
+At Acme Corporation, we are committed to supporting our employees in their professional endeavors and ensuring they are reimbursed for necessary and reasonable expenses incurred while conducting business on behalf of the organization. This Expense Reimbursement Policy outlines the guidelines and procedures that all employees must follow when seeking reimbursement for eligible expenses.
+
+Eligible Expenses:
+The following expenses are eligible for reimbursement, provided they are directly related to the employee's job responsibilities and have been pre-approved by their direct supervisor:
+
+1. Travel Expenses:
+   - Airfare for economy-class flights
+   - Lodging at standard business-class hotels
+   - Ground transportation, including taxi, rideshare, or public transit fares
+   - Mileage reimbursement for use of personal vehicle at the current IRS-approved rate
+
+2. Meals and Entertainment:
+   - Reasonable expenses for meals, including tips, while traveling on business
+   - Entertainment expenses, such as client dinners or networking events, when pre-approved by the employee's supervisor
+
+3. Office Supplies and Equipment:
+   - Necessary office supplies, such as pens, notebooks, and printer ink
+   - Equipment and software required for the employee's job, with prior approval from the IT department
+
+4. Professional Development:
+   - Registration fees for conferences, seminars, or training programs relevant to the employee's role
+   - Membership fees for professional organizations that directly benefit the employee's work
+
+5. Communication Expenses:
+   - Reasonable costs for business-related phone calls, internet access, and mobile data usage
+
+Employees should exercise prudence and good judgment when incurring expenses and ensure they are in line with the company's financial management guidelines.
+
+Reimbursement Process:
+To receive reimbursement for eligible expenses, employees must follow these steps:
+
+1. Gather all relevant receipts and documentation for the expenses incurred.
+2. Complete the Expense Reimbursement Form, which can be found on the company's intranet.
+3. Submit the completed form, along with the supporting documentation, to the Finance Department via email at expenses@acmecorp.com.
+4. The Finance Department will review the expense report and supporting documentation, and process the reimbursement.
+5. Reimbursement payments will be made via direct deposit to the employee's bank account. Employees must provide their <BANK_ACCOUNT_NUMBER> on the Expense Reimbursement Form to facilitate this process.
+
+Employees should submit their expense reports within 30 days of incurring the expenses. Failure to do so may result in the expenses being deemed ineligible for reimbursement.
+
+Required Documentation:
+Employees must provide the following documentation to support their expense reimbursement requests:
+
+1. Itemized receipts for all expenses, except for mileage reimbursement.
+2. Boarding passes or other documentation for travel-related expenses.
+3. Agenda or program for conferences, seminars, or training events.
+4. Business justification for the expense, such as the purpose of the travel or event.
+
+Expense reports submitted without the required documentation will be returned to the employee for correction, which may delay the reimbursement process.
+
+Approval Workflow:
+The approval workflow for expense reimbursement requests is as follows:
+
+1. Employee submits the Expense Reimbursement Form and supporting documentation to their direct supervisor for initial approval.
+2. The direct supervisor reviews the expense report and either approves or denies the request. If approved, the supervisor forwards the request to the Finance Department.
+3. The Finance Department reviews the expense report and supporting documentation, and processes the reimbursement payment if all requirements have been met.
+4. In the event of a denied expense report, the Finance Department will notify the employee and provide the reason for the denial.
+
+Employees should allow up to 14 business days for the reimbursement process to be completed, from the time the expense report is submitted to the Finance Department.
+
+Conclusion:
+The Expense Reimbursement Policy is designed to ensure that all employees are treated fairly and consistently when seeking reimbursement for eligible business expenses. By adhering to the guidelines outlined in this policy, employees can be confident that their expenses will be promptly and accurately reimbursed, while the company maintains strong financial management practices.
+
+If you have any questions or concerns about the Expense Reimbursement Policy, please contact the Finance Department at expenses@acmecorp.com.

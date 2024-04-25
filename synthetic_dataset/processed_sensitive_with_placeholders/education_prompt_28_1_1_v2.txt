@@ -1,0 +1,96 @@
+Athletic Physical Form
+
+Student Information:
+
+Name: John Doe
+Date of Birth: 01/01/2005
+Gender: Male
+Age: 17
+Student ID: ABC123
+School: Oakwood High School
+Sport(s): Soccer, Track and Field
+
+Emergency Contact Information:
+
+Name: Jane Doe
+Relationship: Mother
+Phone: (555) 123-4567
+
+Medical History:
+
+1. Have you ever been hospitalized or had a serious illness? If yes, please explain:
+   Yes, I was hospitalized for appendicitis in 2018.
+
+2. Have you ever had surgery? If yes, please explain:
+   Yes, I had my appendix removed in 2018.
+
+3. Are you currently taking any medications, including over-the-counter medications? If yes, please list:
+   No
+
+4. Do you have any allergies (medications, food, insect stings, etc.)? If yes, please list:
+   Peanut allergy
+
+5. Have you ever passed out or nearly passed out DURING or AFTER exercise? If yes, please explain:
+   No
+
+6. Have you ever had discomfort, pain, or pressure in your chest during exercise? If yes, please explain:
+   No
+
+7. Does your heart ever race, flutter in your chest, or skip beats (irregular beats) during exercise? If yes, please explain:
+   No
+
+8. Has a doctor ever told you that you have any heart problems? If yes, please explain:
+   No
+
+9. Has a doctor ever ordered a test for your heart (e.g., ECG, echocardiogram)?
+   No
+
+10. Have you ever been told you have high blood pressure, high cholesterol, or a heart murmur? If yes, please explain:
+    No
+
+11. Have you ever had a severe viral infection (for example, myocarditis or mononucleosis) within the last month?
+    No
+
+12. Has a doctor ever denied or restricted your participation in sports for any reason?
+    No
+
+13. Do you have any ongoing medical issues or recent injuries? If yes, please explain:
+    No
+
+14. When was your last tetanus shot?
+    2020
+
+15. Do you have a history of seizure disorder?
+    No
+
+16. Do you have a history of diabetes?
+    No
+
+Physical Examination:
+
+Height: 5'10"
+Weight: 150 lbs
+BMI: 21.5
+Blood Pressure: 120/80 mmHg
+Pulse: 72 bpm
+Vision: 20/20
+Hearing: Normal
+Skin: Clear
+HEENT (Head, Eyes, Ears, Nose, Throat): Normal
+Lymph Nodes: Normal
+Heart: Normal
+Lungs: Clear
+Abdomen: Normal
+Genitourinary: Normal
+Musculoskeletal: Normal
+Neurological: Normal
+
+Clearance:
+
+Based on the medical history and physical examination, the student is:
+Cleared for all sports
+Student SSN (if required): <SSN>
+
+Physician's Name: Dr. Sarah Williams
+Physician's Signature: [Signature]
+Date: 05/15/2023

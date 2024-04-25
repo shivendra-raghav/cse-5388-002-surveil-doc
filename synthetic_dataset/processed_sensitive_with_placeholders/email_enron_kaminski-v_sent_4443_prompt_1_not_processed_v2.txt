@@ -1,0 +1,30 @@
+Message-ID: <12345678.1075856942327.JavaMail.evans@thyme>
+Date: Fri, 25 Feb 2023 10:30:00 -0500
+From: john.doe@example.com
+To: jane.smith@example.com
+Subject: Regarding your request for API access
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-From: John Doe
+X-To: Jane Smith
+X-cc: 
+X-bcc: 
+X-Folder: \John_Doe_Aug2023\Inbox
+X-Origin: Doe-J
+X-FileName: jdoe.nsf
+
+Dear Jane,
+
+I hope this email finds you well. I'm writing to follow up on your recent request for API access to our platform.
+
+After reviewing your application, I'm pleased to inform you that your request has been approved. Your unique API token is: <API_TOKEN>. Please be sure to keep this token secure and do not share it with anyone.
+
+As an additional security measure, I'd also like to confirm your blood type. Could you please let me know your blood group? This information will be used to enhance the security of your account.
+
+Once you have the API token and have confirmed your blood type, you can proceed to integrate your application with our platform. If you have any further questions or need assistance, please don't hesitate to reach out.
+
+Best regards,
+John Doe
+API Manager
+Example Corporation

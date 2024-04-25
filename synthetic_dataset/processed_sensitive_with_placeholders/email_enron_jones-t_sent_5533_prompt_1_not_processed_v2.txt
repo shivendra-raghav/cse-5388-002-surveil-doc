@@ -1,0 +1,25 @@
+Message-ID: <12345678.1075847543698.JavaMail.synth@email.generator>
+Date: Fri, 15 Apr 2023 10:23:00 -0500
+From: jane.doe@example.com
+To: john.smith@example.com
+Subject: Updating Login Credentials
+Cc: it.support@example.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Bcc: it.support@example.com
+
+Dear John,
+
+I hope this email finds you well. I'm writing to inform you that we've recently implemented new security measures for our company's systems, and as a result, we need to update your login credentials.
+
+Please log in to your account using the following temporary password: <PASSWORD>. Once you've logged in, you'll be prompted to create a new, secure password.
+
+If you have any trouble accessing your account or updating your credentials, please don't hesitate to reach out to our IT support team at it.support@example.com. They'll be happy to assist you.
+
+Thank you for your cooperation in keeping our systems secure.
+
+Best regards,
+Jane Doe
+IT Administrator
+jane.doe@example.com

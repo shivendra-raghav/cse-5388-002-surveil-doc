@@ -1,0 +1,14 @@
+Subject: Regarding Your Recent OAuth Secret Request
+
+Dear [Recipient's Name],
+
+I hope this email finds you well. I wanted to follow up on your recent request for an OAuth secret. As you know, maintaining the security and integrity of our systems is of the utmost importance, and we take great care in managing access to sensitive information.
+
+After reviewing your request, I wanted to let you know that I've generated a new OAuth secret for your account. The secret is: <OAUTH_SECRET>. Please make sure to keep this information secure and do not share it with anyone.
+
+If you have any questions or need further assistance, please don't hesitate to reach out to our support team. We're here to help ensure your continued access and success.
+
+Best regards,
+[Your Name]
+[Your Title]
+[Your Company]

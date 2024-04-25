@@ -1,0 +1,28 @@
+Message-ID: <5036340.1075843878351.JavaMail.evans@thyme>
+Date: Wed, 11 Apr 2001 03:24:00 -0700 (PDT)
+From: jeff.dasovich@enron.com
+To: michael.tribolet@enron.com
+Subject: Re: Composition of unsecured creditors committee
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-From: Jeff Dasovich
+X-To: Michael Tribolet
+X-cc: 
+X-bcc: 
+X-Folder: \Jeff_Dasovich_June2001\Notes Folders\Sent
+X-Origin: DASOVICH-J
+X-FileName: jdasovic.nsf
+
+Michael:
+
+Do we know who from Enron will actually be on the committee? I was reviewing the list of appointments and noticed that Enron Corp & Affiliates are represented, but I'm curious to know the specific individuals who will be serving on the unsecured creditors committee.
+
+As we navigate this process, it will be important to ensure we have the right team in place to advocate for Enron's interests. I wanted to check in with you on this, as I'm sure you're closely involved in the selection and coordination of our representatives.
+
+Additionally, I wanted to remind you to be mindful of protecting any sensitive information, such as our api key and token <API_KEY> and <API_TOKEN>, as we engage with the committee. It's crucial that we handle these details with the utmost care and discretion.
+
+Please let me know if you have any updates on the committee composition or if there's anything else I can assist with.
+
+Best,
+Jeff

@@ -1,0 +1,23 @@
+Message-ID: <12345678.1075843839550.JavaMail.bot@emailgen>
+Date: Mon, 10 Apr 2023 09:12:34 -0700 (PDT)
+From: ui@company.com
+To: manager@company.com
+Subject: Updating contact information and access credentials
+Mime-Version: 1.0
+Content-Type: text/plain; charset=ANSI_X3.4-1968
+Content-Transfer-Encoding: quoted-printable
+
+Dear Manager,
+
+I hope this email finds you well. I'm writing to inform you of a change in my contact information and to request an update to my access credentials.
+
+Effective immediately, my new address is:
+
+Additionally, I've been informed that my current <ACCESS_TOKEN> is expiring soon. Could you please generate a new access token for me? I'll need this to continue accessing the necessary systems and resources for my work.
+
+Please let me know if you require any additional information from me. I'm available to discuss this further if needed.
+
+Thank you for your assistance.
+
+Best regards,
+John Doe

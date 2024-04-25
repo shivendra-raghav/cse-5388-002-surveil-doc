@@ -1,0 +1,31 @@
+Message-ID: <11222844.1075853896528.JavaMail.evans@thyme>
+Date: Fri, 20 Apr 2001 09:19:00 -0700 (PDT)
+From: chris.germany@enron.com
+To: laurie.ellis@enron.com, mary.franklin@enron.com, wade.price@enron.com, 
+	darla.saucier@enron.com
+Subject: Re: Imbalance trades on CNG
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-From: Chris Germany
+X-To: Laurie Ellis, Mary Theresa Franklin, Wade R Price, Darla Saucier
+X-cc: 
+X-bcc: 
+X-Folder: \Chris_Germany_Jun2001\Notes Folders\Sent
+X-Origin: Germany-C
+X-FileName: cgerman.nsf
+
+Hi team,
+
+Regarding the imbalance trade behind NIMO that Laurie has been asking about, I have looked into it further. Here's what I found:
+
+Yes, Enron did purchase gas (both pool and local production) behind NIMO in January and April 2000. Our CES activity at NIMO for those months was significant, including several out-of-balance items.
+
+To help resolve this outstanding issue, I reached out to our contact at Statoil, who has been very patient in awaiting payment. I provided them with our account number <INTERNATIONAL_BANK_ACCOUNT_NUMBER> to facilitate the transfer. 
+
+Additionally, I've reviewed our records and noticed that we may have an incorrect on file for Statoil. Could you please confirm the correct mailing address so I can update our systems? This will help ensure timely payment and prevent any further delays.
+
+Please let me know if you require any additional information. I'm happy to assist in getting this matter resolved as soon as possible.
+
+Best regards,
+Chris Germany

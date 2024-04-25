@@ -1,0 +1,57 @@
+Reservation Confirmation
+
+Reservation Details
+Reservation Number: 8472165
+Confirmation Date: May 28, 2023
+Arrival Date: July 10, 2023
+Departure Date: July 14, 2023
+Room Type: Executive Suite
+Number of Guests: 4
+
+Guest Information
+Primary Guest Name: Michael Williams
+Additional Guests: 2 adults, 1 child
+Address: 456 Oak Avenue, Pleasantville CA 90210
+Phone: 310-555-1234
+Email: michael.williams@email.com
+
+Your reservation has been confirmed at the Luxe Grand Resort. We're looking forward to hosting you during your upcoming stay.
+
+Room Details
+Your reserved room is an Executive Suite, which features two separate bedrooms, each with a king-sized bed, two en-suite bathrooms with spa-like amenities, a spacious living area with a 65-inch flat-screen TV, a kitchenette, and complimentary high-speed Wi-Fi. The suite offers breathtaking views of the ocean.
+
+Check-in time is 3:00 PM and check-out time is 11:00 AM. If you need to arrive early or depart late, please let us know and we'll do our best to accommodate your request.
+
+For your convenience, you can access your reservation details and manage your stay through our online guest portal. To log in, use the following credentials:
+
+Billing Information
+The total cost of your 4-night stay is $2,499.99, which includes all taxes and fees. Your reservation has been guaranteed with the following credit card:
+
+<CREDIT_CARD_NUMBER> is the company credit card number.
+
+This card will be used to secure your reservation and will be charged the full amount upon check-out. If you need to update your payment information, please log in to the guest portal or contact our front desk.
+
+Cancellation Policy
+You may cancel or modify your reservation at any time prior to 6:00 PM on the day before your scheduled arrival without penalty. Cancellations or changes made after this time will result in a charge of one night's room rate plus tax.
+
+In the event of a no-show or early departure, the full stay will be charged to the credit card on file.
+
+We understand that plans can change, so please let us know as soon as possible if you need to modify or cancel your reservation.
+
+Amenities and Services
+During your stay, you'll have access to a variety of amenities and services to enhance your experience:
+
+- Private beach access and cabanas
+- World-class spa and wellness center
+- Multiple dining options, including a Michelin-starred restaurant
+- Kids' club and activities for children
+- Concierge assistance for booking tee times, arranging excursions, and more
+
+We encourage you to review the information in your guest portal for a full list of our offerings and to make any additional requests.
+
+We're excited to have you as our guest and look forward to making your stay at the Luxe Grand Resort a truly unforgettable experience. If you have any questions or need assistance with your reservation, please don't hesitate to contact us at 888-555-8888 or reservations@luxegrandresort.com.
+
+Thank you for choosing the Luxe Grand Resort. We can't wait to welcome you!
+
+Sincerely,
+The Luxe Grand Resort Team

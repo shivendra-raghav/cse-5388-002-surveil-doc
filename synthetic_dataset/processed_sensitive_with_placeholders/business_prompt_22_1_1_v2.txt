@@ -1,0 +1,43 @@
+Acceptable Use Policy
+
+Introduction:
+At ABC Corporation, we are committed to maintaining a secure and productive work environment for all our employees. Our Acceptable Use Policy (AUP) outlines the guidelines and expectations for the responsible and appropriate use of our corporate information technology (IT) resources and systems. This policy applies to all employees, contractors, and any other individuals who have been granted access to our IT infrastructure.
+
+The purpose of this AUP is to ensure the confidentiality, integrity, and availability of our IT assets, protect our sensitive information, and promote responsible and ethical behavior while using our corporate resources. By adhering to this policy, you help safeguard our organization, our employees, and our clients from the risks associated with the misuse or unauthorized use of our IT systems.
+
+Acceptable Use:
+1. Authorized Access: You are granted access to our corporate IT resources and systems based on your job responsibilities and role within the organization. This access is a privilege, not a right, and should be used solely for legitimate business purposes.
+
+2. Confidentiality and Privacy: You are responsible for maintaining the confidentiality of your login credentials, including your login details <USERNAME> and <PASSWORD>. Under no circumstances should you share or disclose your login credentials with anyone, including other employees or third parties. Safeguarding your login information is crucial to preventing unauthorized access and protecting the security of our corporate network.
+
+3. Appropriate Use: Our IT resources, including but not limited to, computers, laptops, mobile devices, software applications, email, and internet access, should be used primarily for business-related activities. Incidental personal use is permitted, but it should not interfere with your job duties or the productivity of the organization.
+
+4. Data Protection: You are responsible for handling and storing all corporate data, including sensitive information, in a secure and responsible manner. This includes following our data management and retention policies, as well as using encryption and other security measures when necessary.
+
+5. Remote Access: If you are authorized to access our corporate network remotely, you must do so using our approved and secured remote access solutions. This ensures the protection of our IT infrastructure and the confidentiality of our data.
+
+Unacceptable Use:
+1. Illegal or Unethical Activities: You are strictly prohibited from using our IT resources for any illegal, unethical, or malicious activities, such as hacking, distributing malware, or engaging in fraudulent practices.
+
+2. Unauthorized Access: You must not attempt to gain unauthorized access to our IT systems, networks, or data, either directly or indirectly. This includes trying to circumvent security measures or using someone else's login credentials.
+
+3. Inappropriate or Offensive Content: The creation, transmission, or storage of any content that is discriminatory, harassing, defamatory, pornographic, or otherwise inappropriate or offensive is strictly forbidden.
+
+4. Intellectual Property Infringement: You must respect and comply with all copyright, trademark, and other intellectual property laws and regulations. You are not permitted to download, copy, or distribute copyrighted material without proper authorization.
+
+5. Excessive Personal Use: While incidental personal use is allowed, you must ensure that it does not interfere with your work responsibilities or the overall productivity of the organization. Excessive personal use of our IT resources may be considered a violation of this policy.
+
+Monitoring and Enforcement:
+1. Monitoring: We reserve the right to monitor, access, and review all activities and communications that occur on our IT systems and networks. This includes, but is not limited to, email, internet usage, and file transfers.
+
+2. Compliance Audits: We may conduct periodic audits to ensure compliance with this Acceptable Use Policy and other relevant security policies and procedures. You are expected to cooperate fully with any such audits.
+
+3. Consequences of Violations: Failure to comply with this Acceptable Use Policy may result in disciplinary actions, including, but not limited to, the suspension or revocation of your access privileges, termination of employment, and potential legal action.
+
+Exceptions:
+In certain circumstances, exceptions to this Acceptable Use Policy may be granted by the IT Security Team or authorized personnel. Any requests for exceptions must be submitted in writing and approved prior to the commencement of the activity.
+
+Conclusion:
+By adhering to this Acceptable Use Policy, you help maintain the security, integrity, and productivity of our corporate IT infrastructure. Remember, your login credentials, including your credentials, are confidential and should never be shared with anyone. Safeguarding this information is crucial to preventing unauthorized access and protecting our organization.
+
+If you have any questions or concerns regarding this policy or its implementation, please don't hesitate to contact the IT Security Team at itsecurity@abccorp.com.

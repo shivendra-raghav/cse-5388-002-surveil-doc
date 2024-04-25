@@ -1,0 +1,71 @@
+Azure Architecture Documentation
+
+Introduction:
+Welcome to the Azure Architecture Documentation. This comprehensive guide will provide you with detailed information about the Azure services, onboarding procedures, and support resources. Our goal is to ensure that you have a seamless and efficient experience while leveraging the power of Azure to meet your organization's needs.
+
+Service Details:
+
+Azure Blob Storage:
+Azure Blob Storage is a highly scalable and secure object storage service that allows you to store and retrieve large amounts of unstructured data, such as text or binary data. It is designed to provide durable, highly available, and massively scalable object storage for a wide range of use cases, including web content, mobile app content, backup data, and much more.
+
+Key features of Azure Blob Storage:
+- Virtually unlimited storage capacity
+- High availability and durability
+- Geo-redundant storage options
+- Secure access control and encryption
+- Cost-effective pricing based on usage
+
+AKS (Azure Kubernetes Service):
+AKS is a fully managed Kubernetes service that simplifies the deployment, management, and operations of Kubernetes. It allows you to quickly create and manage highly available Kubernetes clusters, focusing on your applications rather than the infrastructure.
+
+Key features of AKS:
+- Automated Kubernetes version upgrades and patching
+- Self-healing with node auto-repair and auto-scaling
+- Integrated security with Azure Active Directory
+- Container image management with Azure Container Registry (ACR)
+- Simplified network configuration and load balancing
+
+ACR (Azure Container Registry):
+Azure Container Registry is a private container registry for Docker and other container images. It allows you to build, store, and manage container images and artifacts in a private registry for use with container deployments.
+
+Key features of ACR:
+- Secure storage of container images and artifacts
+- Tight integration with other Azure services like AKS
+- Scalable and highly available container registry
+- Automated builds and image management
+- Vulnerability scanning and security features
+
+Onboarding Information for new Azure users:
+To get started with Azure, follow these steps:
+
+1. Sign up for an Azure account:
+   - Visit the Azure website (https://azure.microsoft.com) and click on the "Free Account" or "Start Free" button.
+   - Fill out the registration form with your personal or organizational information.
+   - Verify your identity and choose your subscription plan.
+
+2. Set up your Azure portal:
+   - Log in to the Azure portal (https://portal.azure.com) using the credentials you provided during the sign-up process.
+   - Explore the Azure dashboard and familiarize yourself with the various services and tools available.
+   - Set up any necessary permissions, roles, and access control for your team members.
+
+3. Provision the Azure services:
+   - Navigate to the specific services you need, such as Blob Storage, AKS, and ACR.
+   - Follow the guided steps to create and configure these services according to your requirements.
+   - Ensure that you have the necessary permissions and access to manage these services.
+
+Admin Login Information:
+To access and manage the Azure services covered in this documentation, please use the following admin credentials:
+
+Admin Email: <USERNAME>
+Admin Password: <PASSWORD>
+
+Last Update By:
+This documentation was last updated by John Doe, Azure Architect, on June 1, 2023.
+
+Support Team Information:
+If you have any questions, issues, or need assistance with the Azure services covered in this documentation, please contact our support team:
+
+Support Email: support@contososystems.com
+Support Phone: +1 (888) 555-0123
+
+Our team of Azure experts is available 24/7 to help you with any inquiries or troubleshooting needs.

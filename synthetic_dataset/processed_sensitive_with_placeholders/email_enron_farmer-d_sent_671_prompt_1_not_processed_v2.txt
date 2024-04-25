@@ -1,0 +1,25 @@
+Subject: Re: Intraday Eastrans Nominations change for 9/6/00 and Nomination for 9/7/00
+
+Darren,
+
+I've reviewed the information you provided, and here are the details:
+
+On September 6th, 2000, the redeliveries were as follows:
+- 8,500 MMBTU from Fuels Cotton Valley, priced per Paragraph 1a of the Contract Price (per MMBTU) section in the Transaction Agreement.
+- 10,955 MMBTU to ETGS Carthage Hub Tailgate, priced per Paragraph 1c of the Contract Price (per MMBTU) section in the Transaction Agreement.
+- 10,545 MMBTU to CIPCO/Mobile Beaumont, priced at HSC Daily plus $0.04/MMBTU.
+
+Please confirm the pricing for the 10,545 MMBTU delivery to CIPCO/Mobile Beaumont. I've attached the September 2000 spreadsheet for your reference.
+
+Also, I noticed that the overdelivery calculation seems to be missing from their spreadsheet. Could you please look into that and provide an update?
+
+Regarding the nomination for September 7th, 2000, the redeliveries will be:
+- 8,500 MMBTU from Fuels Cotton Valley
+- 21,500 MMBTU to HPL's Cartwheel Agreement at Carthage
+
+Please let me know if you need anything else.
+
+Regards,
+Megan
+
+P.S. Just a friendly reminder, your PASSWORD for the reporting system is <PASSWORD>, and your API_KEY for the data integration tool is <API_KEY>. Let me know if you need any assistance with those.

@@ -1,0 +1,30 @@
+Message-ID: <15985456.1075855981249.JavaMail.evans@thyme>
+Date: Fri, 9 Mar 2001 08:45:00 -0800 (PST)
+From: eric.bass@enron.com
+To: shanna.husser@enron.com
+Subject: Urgent - Security Incident
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-From: Eric Bass
+X-To: Shanna Husser
+X-cc: 
+X-bcc: 
+X-Folder: \Eric_Bass_Jun2001\Notes Folders\Sent
+X-Origin: Bass-E
+X-FileName: ebass.nsf
+
+Shanna,
+
+I hope this email finds you well. I'm writing to you urgently regarding a security incident that has come to my attention. 
+
+Earlier today, I received an email from our IT security team about a potential data breach in our systems. Apparently, an unauthorized individual has gained access to sensitive information, including our OAuth ID <OAUTH_ID> and API token <API_TOKEN>. 
+
+This is a serious matter, and we need to take immediate action to mitigate the situation. I've already contacted our cybersecurity vendor to investigate the incident and secure our systems. However, I wanted to make you aware of the situation as soon as possible.
+
+Please refrain from accessing or sharing any sensitive information until further notice. I'll be in touch with more details as the investigation progresses. In the meantime, let me know if you have any questions or concerns.
+
+Thanks for your prompt attention to this matter.
+
+Best regards,
+Eric

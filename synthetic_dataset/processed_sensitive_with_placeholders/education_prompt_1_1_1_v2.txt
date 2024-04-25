@@ -1,0 +1,58 @@
+Student Enrollment Form
+
+Student Information:
+
+Full Name: John D. Doe
+Date of Birth: 05/14/2010
+Gender: Male
+Social Security Number: <SSN>
+Phone Number: (123) 456-7890
+Email Address: johndoe@email.com
+
+Parent/Guardian Information:
+
+Parent/Guardian 1:
+Full Name: Jane M. Doe
+Relationship to Student: Mother
+Phone Number: (987) 654-3210
+Email Address: janedoe@email.com
+
+Parent/Guardian 2:
+Full Name: Michael J. Doe
+Relationship to Student: Father
+Phone Number: (456) 789-0123
+Email Address: michaeldoe@email.com
+
+Emergency Contact Information:
+
+Full Name: Emily R. Smith
+Relationship to Student: Family Friend
+Phone Number: (741) 852-9630
+
+Academic Information:
+
+Current Grade Level: 7th
+Applying for Grade: 8th
+Previous School Attended: Oakwood Elementary School
+Reason for Transfer: Family Relocation
+
+Medical Information:
+
+Primary Care Physician: Robert Williams
+Physician Phone Number: (321) 654-0987
+Allergies: Peanuts
+Medications: None
+Medical Conditions: Asthma
+
+Additional Information:
+
+Extracurricular Activities: Soccer, Art Club
+Special Needs: None
+How did you hear about our school? Referral from a friend
+
+I hereby certify that the information provided in this enrollment form is true and accurate to the best of my knowledge. I understand that any false or misleading information may result in the rejection of my child's application or dismissal from the school.
+
+
+SSN information needs to be added here: <SSN>
+
+Parent/Guardian Signature: _____________________________   Date: ______________

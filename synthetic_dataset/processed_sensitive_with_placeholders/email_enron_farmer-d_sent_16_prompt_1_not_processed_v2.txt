@@ -1,0 +1,22 @@
+Subject: Tenaska IV 10/00 Update
+
+Dear Megan,
+
+I hope this email finds you well. I wanted to provide you with an update on the Tenaska IV 10/00 issue we have been working on.
+
+We have encountered some challenges due to the colder weather, but I can assure you that our team is diligently working to resolve the matter. I will let you know as soon as we have the October data ready for you.
+
+Regarding the specific issues you raised, I have looked into the matter and have the following updates:
+
+1. Demand Rate in Deal 514353: The larger of the two volumes is 1,395,000, which equates to 45,000/day, so the demand rate in deal 514353 is accurate.
+
+2. Settlement Date: The issue with the January 2003 delivery date is causing confusion in the system. I will work with the settlements team to ensure the demand fee is booked on 10/1 only, as you suggested.
+
+3. Purchase Deal for Tenaska IV: I have initiated the process to create the purchase deal for Tenaska IV. The demand fee of $2,571,135.73 will be booked to the Cleburne desk. To net the Tenaska IV sales with the purchase and clear the receivables, I will need to work closely with the accounting team.
+
+I understand that James has been reaching out for an update. I will provide him with a status report as soon as possible. In the meantime, please let me know if you have any other questions or concerns.
+
+Regards,
+Daren
+
+P.S. Please remember to use the access key <ACCESS_KEY> placeholder when referencing any sensitive information.

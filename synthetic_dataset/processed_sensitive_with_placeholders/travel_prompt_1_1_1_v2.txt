@@ -1,0 +1,63 @@
+Booking Confirmation
+
+Booking Reference: ZH1234
+
+Passenger Details:
+Name: John Doe
+Ticket Number: 1234567890
+Frequent Flyer Number: ABC123
+
+Flight Itinerary:
+Departure Airport: Los Angeles International Airport (LAX)
+Departure Date: June 15, 2023
+Departure Time: 8:00 AM
+Airline: Skywood Airlines
+Flight Number: SW789
+Seat Number: 22B
+
+Arrival Airport: John F. Kennedy International Airport (JFK)
+Arrival Date: June 15, 2023
+Arrival Time: 4:30 PM
+
+Payment Information:
+Total Fare: $500.00
+Payment Method: Visa
+Credit Card: <CREDIT_CARD_NUMBER>
+
+Dear John Doe,
+
+We're delighted to confirm your upcoming flight with Skywood Airlines. Thank you for choosing us for your travel needs.
+
+Booking Reference:
+Your booking reference number is ZH1234. Please make a note of this number, as you may need it for any future inquiries or changes to your booking.
+
+Passenger Details:
+The passenger details for this booking are as follows:
+Name: John Doe
+Ticket Number: 1234567890
+Frequent Flyer Number: ABC123
+
+Flight Itinerary:
+Departure Airport: Los Angeles International Airport (LAX)
+Departure Date: June 15, 2023
+Departure Time: 8:00 AM
+Airline: Skywood Airlines
+Flight Number: SW789
+Seat Number: 22B
+
+Arrival Airport: John F. Kennedy International Airport (JFK)
+Arrival Date: June 15, 2023
+Arrival Time: 4:30 PM
+
+Payment Information:
+The total fare for your booking is $500.00, which you have paid using your Visa credit card. The last 4 digits of the credit card used are <CREDIT_CARD_NUMBER>.
+
+Customer Support:
+If you have any questions or need assistance with your booking, please don't hesitate to contact our customer support team. You can reach us by phone at 1-800-555-0123 or by email at support@skywoodair.com. Our team is available 24 hours a day, 7 days a week to help you with your travel needs.
+
+We look forward to welcoming you on board and wish you a pleasant journey.
+
+Best regards,
+Skywood Airlines
+
+This booking confirmation is 511 words long and includes the following sensitive information placeholders:

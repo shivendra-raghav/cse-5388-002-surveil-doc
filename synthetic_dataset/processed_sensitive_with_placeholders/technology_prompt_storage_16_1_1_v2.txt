@@ -1,0 +1,109 @@
+## Scaleway Object Storage Documentation
+
+### Introduction
+
+Scaleway Object Storage is a highly scalable, secure, and reliable object storage service provided by Scaleway, a leading cloud infrastructure provider. It offers a simple and cost-effective solution for storing and retrieving large amounts of unstructured data, making it an ideal choice for a wide range of use cases, such as content delivery, backup and archiving, and big data analytics.
+
+With Scaleway Object Storage, you can easily store and manage your data without the need to worry about hardware maintenance or infrastructure management. The service provides a simple and intuitive interface, allowing you to quickly and easily upload, download, and manage your files.
+
+### Scaleway Object Storage Access Details
+
+To access your Scaleway Object Storage, you will need to use your Scaleway account credentials. This includes your john.doe@example.com and <PASSWORD>, which you can use to log in to the Scaleway console and manage your object storage buckets and objects.
+
+In addition to the web-based console, Scaleway Object Storage also provides an API that allows you to programmatically interact with your data. To use the API, you will need to generate an <API_SECRET>, which you can then use to authenticate your API requests.
+
+Here's an example of how to generate an <API_SECRET> and use it to access your Scaleway Object Storage:
+
+1. Log in to the Scaleway console using your john.doe@example.com and <PASSWORD>.
+2. Navigate to the "API" section and click on "Generate a new token".
+3. Give your new token a name and click "Create".
+4. Copy the generated <API_SECRET> and keep it in a secure location.
+5. Use the <API_SECRET> in your API requests to interact with your Scaleway Object Storage.
+
+Here's an example of how you might use the Scaleway Object Storage API with Python:
+
+```python
+import requests
+
+# Set your API endpoint and <API_SECRET>
+API_ENDPOINT = "https://api.scaleway.com/object-storage/v1/buckets"
+API_SECRET = "<API_SECRET>"
+
+# Set the headers for your API request
+headers = {
+    "X-Auth-Token": API_SECRET,
+    "Content-Type": "application/json"
+}
+
+# Send a GET request to list your buckets
+response = requests.get(API_ENDPOINT, headers=headers)
+
+# Check the response status code
+if response.status_code == 200:
+    # Parse the JSON response
+    data = response.json()
+    print(data)
+else:
+    print(f"Error: {response.status_code} - {response.text}")
+```
+
+Remember to keep your john.doe@example.com, <PASSWORD>, and <API_SECRET> secure and never share them with anyone.
+
+### Geo-replication
+
+Scaleway Object Storage offers geo-replication, which ensures that your data is replicated across multiple data centers, providing high availability and durability. This feature allows you to store your data in multiple locations, reducing the risk of data loss and improving the overall performance of your application.
+
+To enable geo-replication for your Scaleway Object Storage, follow these steps:
+
+1. Log in to the Scaleway console using your john.doe@example.com and <PASSWORD>.
+2. Navigate to the "Object Storage" section and select the bucket you want to enable geo-replication for.
+3. Click on the "Geo-replication" tab and enable the feature.
+4. Choose the locations where you want to replicate your data and click "Save".
+
+Once geo-replication is enabled, your data will be automatically replicated to the selected locations, ensuring that it is always available and accessible.
+
+### Data Transfer
+
+Scaleway Object Storage provides multiple options for transferring data to and from the service, depending on your use case and the amount of data involved.
+
+#### Web Console Upload/Download
+For small to medium-sized files, you can use the Scaleway console to upload and download data directly. Simply log in to the console using your john.doe@example.com and <PASSWORD>, navigate to the "Object Storage" section, and use the provided interface to manage your files.
+
+#### API-based Data Transfer
+For larger data sets or more complex data management needs, you can use the Scaleway Object Storage API to programmatically transfer data. As mentioned earlier, you'll need to generate an <API_SECRET> to authenticate your API requests.
+
+Here's an example of how you might use the Scaleway Object Storage API to upload a file:
+
+```python
+import requests
+
+# Set your API endpoint, <API_SECRET>, and file details
+API_ENDPOINT = "https://api.scaleway.com/object-storage/v1/buckets/my-bucket/objects/my-file.txt"
+API_SECRET = "<API_SECRET>"
+FILE_PATH = "/path/to/my-file.txt"
+
+# Set the headers for your API request
+headers = {
+    "X-Auth-Token": API_SECRET,
+    "Content-Type": "application/octet-stream"
+}
+
+# Open the file and send a PUT request to upload it
+with open(FILE_PATH, "rb") as file:
+    response = requests.put(API_ENDPOINT, headers=headers, data=file)
+
+# Check the response status code
+if response.status_code == 201:
+    print("File uploaded successfully!")
+else:
+    print(f"Error: {response.status_code} - {response.text}")
+```
+
+#### Bulk Data Transfer
+For even larger data sets, Scaleway offers a bulk data transfer service. This service allows you to transfer terabytes of data to and from Scaleway Object Storage using physical storage devices. To use this service, you'll need to contact the Scaleway support team and provide them with your john.doe@example.com and <PASSWORD> to verify your account.
+
+By utilizing the various data transfer options provided by Scaleway Object Storage, you can efficiently and securely move your data to and from the service, regardless of the size or complexity of your data sets.
+
+Remember, it's crucial to keep your john.doe@example.com, <PASSWORD>, and <API_SECRET> secure and never share them with anyone. Scaleway takes the security of your data seriously, and it's important that you do the same to protect your sensitive information.
+
+If you have any further questions or need assistance, please don't hesitate to reach out to the Scaleway support team.

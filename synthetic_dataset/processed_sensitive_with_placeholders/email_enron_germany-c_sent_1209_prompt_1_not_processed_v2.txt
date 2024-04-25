@@ -1,0 +1,29 @@
+Subject: Update on Citygate Production Gas Behind TCO
+
+Dear Colleagues,
+
+I hope this email finds you well. I wanted to provide an update on the Citygate Production Gas deals that have been a topic of discussion recently.
+
+After reviewing the details provided by Joan and Colleen, it seems there are some open questions around the ownership and accounting of these deals. Specifically:
+
+- It's unclear whether these deals were included in the Wholesale package transferred to Enron, or if they are still considered CES Retail deals. 
+- If they are Enron's deals, we need to determine the appropriate business unit to house them (EES vs. Enron).
+- There are concerns about the producers potentially receiving double payments - one from Enron and one from CES.
+
+To resolve these issues, I'd like to request the following information from the team:
+- The producers, volumes, and contract terms for each of the Citygate Production deals
+- Confirmation on whether these deals were part of the Wholesale package or remained with CES Retail
+
+Once we have this data, Colleen can work to match it against the list of deals provided by CES and determine the proper ownership and accounting treatment. 
+
+In the meantime, to avoid any further confusion or unnecessary work, I'd like to suggest the following:
+- Chris, please hold off on creating any additional buy/sell tickets for these Citygate Production deals.
+- Katherine, please refrain from nominating any pool deals in Navigator until we've confirmed the ownership.
+- Wade, please hold off on paying any invoices related to these deals until we've had a chance to review.
+
+I know there are a lot of moving parts here, but getting clarity on the status of these deals is critical. Please let me know if you have any other questions or concerns.
+
+Best regards,
+Chris Germany
+
+P.S. Please let me know if you need any additional information, such as my bank account num <BANK_ACCOUNT_NUMBER> or api key <API_KEY>. I'd be happy to provide those details.

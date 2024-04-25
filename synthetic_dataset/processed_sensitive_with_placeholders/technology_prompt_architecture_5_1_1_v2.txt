@@ -1,0 +1,82 @@
+Sure, here is the updated Azure documentation with sensitive information placeholders and sample values for placeholders inside [] tags:
+
+Azure Architecture Documentation
+
+Introduction
+
+This comprehensive documentation provides an overview of the Azure services implemented for ABC Corp, including Azure Blob Storage, Azure Kubernetes Service (AKS), and Azure Container Registry (ACR). The information contained within this document is intended to serve as a reference for our internal teams, ensuring a thorough understanding of the architecture, configuration, and operational details of these critical Azure resources.
+
+Service Details
+
+1. Azure Blob Storage
+   Azure Blob Storage is a massively scalable object storage solution for the cloud, providing highly durable, available, and secure data storage. ABC Corp utilizes Azure Blob Storage to store and manage a variety of unstructured data, such as documents, images, and multimedia files.
+
+   Key features and configurations:
+   - Blob Storage account name: abcblobstorage
+   - Primary location: East US
+   - Redundancy: Geo-redundant storage (GRS)
+   - Access tier: Hot
+   - Blob container names: 
+     - company-documents
+     - product-images
+     - marketing-media
+   - Access control: 
+     - Public access level: Blob (anonymous read access for blobs)
+     - Private access for containers
+   - Monitoring and logging: 
+     - Enabled storage analytics logging
+     - Real-time metrics monitoring
+
+   Administrator login information:
+   Email: <USERNAME>
+   Password: <PASSWORD>
+
+2. Azure Kubernetes Service (AKS)
+   Azure Kubernetes Service (AKS) is a managed Kubernetes service that simplifies the deployment, management, and operations of Kubernetes. ABC Corp leverages AKS to host and run our containerized applications and microservices.
+
+   Key features and configurations:
+   - AKS cluster name: abcakscluster
+   - Kubernetes version: 1.24.3
+   - Node pool:
+     - VM size: Standard_D4_v2
+     - Node count: 5
+   - Network plugin: Azure CNI
+   - Kubernetes RBAC: Enabled
+   - Monitoring: 
+     - Container insights enabled
+     - Diagnostic logs and metrics collection
+   - Security:
+     - Managed identity for AKS cluster
+     - Azure Key Vault integration for secret management
+
+   Administrator login information:
+   Email: <USERNAME>
+   Password: <PASSWORD>
+
+3. Azure Container Registry (ACR)
+   Azure Container Registry (ACR) is a private Docker container registry for building, storing, and managing container images and artifacts. ABC Corp utilizes ACR to manage and distribute our containerized applications.
+
+   Key features and configurations:
+   - ACR name: abccontainerregistry
+   - Location: Central US
+   - SKU: Premium
+   - Admin user: Enabled
+   - Storage: Premium Blob storage
+   - Vulnerability scanning: Enabled (using Azure Defender for Containers)
+   - Content trust: Enabled
+   - Private network access: Enabled (using virtual network and private endpoints)
+
+   Administrator login information:
+   Email: <USERNAME>
+   Password: <PASSWORD>
+
+Last Update By
+This Azure architecture documentation was last updated by Jane Smith on May 1, 2023.
+
+Support Team Information
+For any questions, issues, or concerns related to the Azure services covered in this documentation, please contact the Azure Support Team at:
+
+Email: azure-support@abc-corp.com
+Phone: +1 (555) 123-4567
+
+The support team is available 24/7 to assist you with any Azure-related inquiries or troubleshooting.

@@ -1,0 +1,63 @@
+COURSE SYLLABUS
+
+Course Title: Introduction to Computer Science
+Course Number: CS 101
+Semester: Fall 2023
+Instructor: Dr. Jane Smith
+Office: Computer Science Building, Room 205
+Office Hours: Tuesday and Thursday, 10:00 AM - 12:00 PM
+
+Course Description:
+This course provides an introduction to the fundamental concepts of computer science, including hardware, software, algorithms, and programming. Students will learn basic programming skills in Python and gain an understanding of how computers work and how they are used to solve problems. Topics covered include data representation, control structures, functions, and basic data structures.
+
+Course Objectives:
+By the end of this course, students will be able to:
+1. Understand the basic components and functioning of a computer system.
+2. Write simple programs using Python.
+3. Analyze and solve basic programming problems.
+4. Explain the role of algorithms and data structures in computer science.
+5. Demonstrate proficiency in using common software tools and applications.
+
+Required Textbook:
+"Introduction to Computer Science with Python" by Michael Dawson, 3rd Edition. ISBN: 978-0134876898.
+
+Course Materials:
+All course materials, including lecture slides, assignments, and exams, will be available on the course website. To access the website, you will need to log in using the following credentials:
+Username: <USERNAME>
+Password: <PASSWORD>
+
+Grading:
+The final grade for this course will be determined as follows:
+- Assignments (30%)
+- Midterm Exam (25%)
+- Final Exam (35%)
+- Class Participation (10%)
+
+Attendance and Participation:
+Regular attendance and active participation in class discussions are expected. Participation will be graded based on the quality and frequency of contributions to class discussions and activities.
+
+Late Work Policy:
+Assignments are due at 11:59 PM on the due date. Late assignments will be penalized 10% per day, up to a maximum of 3 days. No assignments will be accepted after 3 days.
+
+Academic Honesty:
+Academic dishonesty, including cheating, plagiarism, and unauthorized collaboration, is strictly prohibited. Violations of the university's academic honesty policy will result in a failing grade for the assignment or the course, and may lead to further disciplinary action.
+
+Accessibility and Accommodations:
+The university is committed to providing equal access to learning opportunities for all students. If you have a disability or health condition that may require accommodations, please contact the Office of Accessibility Services as soon as possible to discuss your needs. All information regarding your disability will be kept confidential.
+
+Course Schedule:
+Week 1: Introduction to Computer Science and Python
+Week 2: Hardware and Software
+Week 3: Data Representation
+Week 4: Control Structures
+Week 5: Functions and Procedures
+Week 6: Lists and Strings
+Week 7: Midterm Exam
+Week 8: Recursion and Sorting Algorithms
+Week 9: Linked Lists
+Week 10: Trees and Graphs
+Week 11: Databases and SQL
+Week 12: Internet and Web Development
+Week 13: Computer Security
+Week 14: Ethical and Social Implications of Computing
+Week 15: Final Exam

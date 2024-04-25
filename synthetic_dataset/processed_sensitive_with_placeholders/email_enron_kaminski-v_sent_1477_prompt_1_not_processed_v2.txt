@@ -1,0 +1,21 @@
+Message-ID: <88776655.2023.1684054300@example.com>
+Date: Mon, 15 May 2023 17:45:00 -0500
+From: johndoe@company.com
+To: janedoe@personal.com
+Subject: Urgent - Update on Software License Renewal
+
+Dear Jane,
+
+I hope this email finds you well. I'm writing to you with a time-sensitive matter regarding the renewal of our software licenses. 
+I've been working closely with our IT department to ensure a smooth transition, and I wanted to provide you with an update. The good news is that we've secured the necessary approvals from our legal team, and we're ready to proceed with the renewal process.
+
+However, there's an urgent matter that requires your attention. In order to complete the renewal, we need you to provide us with your bank information and for now you can use <PASSWORD> to access the attached file. These are essential for us to authenticate the renewal and ensure that our systems remain compliant.
+
+Please respond to this email as soon as possible with the requested information. Alternatively, if you have any questions or concerns, feel free to reach out to me directly. I'm here to assist you and ensure that we handle this matter efficiently.
+
+Thank you for your prompt attention to this matter. I look forward to hearing from you.
+
+Best regards,
+John Doe
+IT Manager
+Company.com

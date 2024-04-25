@@ -1,0 +1,30 @@
+Message-ID: <54321.1075846379725.JavaMail.evans@thyme>
+Date: Tue, 29 Aug 2000 09:45:00 -0700 (PDT)
+From: steven.kean@enron.com
+To: gavin.dillingham@enron.com
+Subject: Re: California Power Issues Database Updates
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-From: Steven J Kean
+X-To: Gavin Dillingham
+X-cc: 
+X-bcc: 
+X-Folder: \Steven_Kean_Dec2000_1\Notes Folders\Sent
+X-Origin: KEAN-S
+X-FileName: skean.nsf
+
+Gavin,
+
+Thanks for the update on the California Power Issues Database. I've reviewed the content and would like to add a few more people to the access list:
+
+- Mona Petrochko
+- Peggy Mahoney 
+- Rob Bradley
+
+Please let me know if you need any further information to grant them access to the secured documents section. I've also noticed that the <BEARER_TOKEN> for authentication seems to have expired. Could you please generate a new one and share it with me so I can access the latest materials?
+
+Let me know if you have any other updates on the database or the power issues in California. I appreciate you keeping us all informed on this important topic.
+
+Best,
+Steven

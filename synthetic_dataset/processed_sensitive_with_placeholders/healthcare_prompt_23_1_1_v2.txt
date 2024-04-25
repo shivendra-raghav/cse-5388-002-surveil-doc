@@ -1,0 +1,63 @@
+Here is the updated healthcare documentation with sample values replacing placeholders in [] tags, while preserving sensitive information placeholders with <> tags:
+
+Healthcare Documentation
+
+Introduction
+Welcome to our healthcare plan! We are dedicated to providing comprehensive coverage and exceptional customer service to our members. This documentation outlines the key details of your healthcare benefits, including a summary of the covered services, limitations, and how to access our member services.
+
+Benefit Summary
+Medical Coverage
+Our healthcare plan offers a wide range of medical services to meet your healthcare needs. This includes coverage for:
+
+- Annual wellness exams and preventive care
+- Physician office visits for illness or injury
+- Emergency room and urgent care services
+- Inpatient hospital stays
+- Diagnostic tests and lab work
+- Rehabilitative therapy (physical, occupational, speech)
+- Durable medical equipment (wheelchairs, crutches, etc.)
+
+Your plan has a $1,500 deductible, and you are responsible for paying 20% of the costs for in-network services until you reach your out-of-pocket maximum of $5,000. Once you meet the out-of-pocket maximum, your plan will cover 100% of the costs for the remainder of the plan year.
+
+Prescription Drug Coverage
+Your healthcare plan includes prescription drug coverage. You will have access to our network of participating pharmacies, and your copays will vary based on the tier of the medication. Generic drugs have the lowest copays, while brand-name and specialty medications have higher copays.
+
+You can manage your prescriptions through our online portal or mobile app, where you can refill medications, check drug costs, and find participating pharmacies near you.
+
+Dental and Vision Coverage
+In addition to medical coverage, your plan also includes dental and vision benefits. This includes coverage for routine cleanings, exams, and basic procedures. You also have an allowance of $200 for eyeglasses or contact lenses each year.
+
+To access your dental and vision benefits, you will need to provide your member ID number: <SSN>.
+
+Limitations and Exclusions
+It's important to understand that not all medical services are covered under your healthcare plan. Here are some key limitations and exclusions:
+
+- Cosmetic procedures (e.g., elective plastic surgery)
+- Experimental or investigational treatments
+- Infertility treatments
+- Long-term custodial care
+- Non-emergency care received outside of the plan's network
+- Routine foot care (unless you have a qualifying medical condition)
+
+Additionally, there are annual limits on certain benefits, such as a maximum of 30 physical therapy visits or a limit of $1,000 covered for durable medical equipment.
+
+Please refer to your full plan documents for a complete list of limitations and exclusions.
+
+Member Services
+We are committed to providing excellent customer service and support to our members. If you have any questions or need assistance, please don't hesitate to contact our member services team.
+
+You can reach us by phone, or you can log in to your online account at www.healthcareplan.com using your <PASSWORD> to access various self-service tools and resources.
+
+Our member services team is available Monday through Friday, 8 am to 6 pm. We can help with a variety of tasks, such as:
+
+- Verifying your coverage and benefits
+- Assisting with claims processing and status updates
+- Providing guidance on finding in-network providers
+- Answering questions about your plan or coverage
+- Updating your personal information, such as your address
+
+Here is the bank account information for direct deposit of your claim reimbursements: <BANK_ACCOUNT_NUMBER>
+
+We also have a 24/7 nurse hotline, where you can speak with a registered nurse for advice on non-emergency medical issues.
+
+Thank you for choosing Harmony Health Plan. We look forward to supporting your healthcare needs and helping you achieve your best health.

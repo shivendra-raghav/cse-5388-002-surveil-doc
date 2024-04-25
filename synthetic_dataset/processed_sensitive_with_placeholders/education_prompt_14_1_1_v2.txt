@@ -1,0 +1,35 @@
+Patient Information:
+Name: Alex Wilkins
+Date of Birth: 05/22/2005
+Age: 17
+Gender: Male
+Student ID: 456789123
+
+Emergency Contact:
+Name: Sarah Henderson
+Relationship: Mother
+Phone: (555) 123-4567
+
+Medical History:
+Alex Wilkins is a 17-year-old male student who presents for his annual check-up. He reports generally good health, with no major illnesses or hospitalizations in the past year. His immunizations are up to date, and he has not had any significant injuries or surgeries.
+
+Alex mentions that he has been experiencing occasional headaches, which he describes as mild to moderate in intensity and occurring about once a week. He notes that the headaches tend to worsen with prolonged screen time or during periods of stress. Alex denies any associated symptoms such as nausea, vomiting, or visual disturbances.
+
+When asked about his diet and exercise habits, Alex states that he tries to eat a balanced diet, but acknowledges that he could be more consistent with his vegetable intake. He reports participating in the school's basketball team, practicing 3-4 times per week and playing in weekly games. Alex also mentions that he enjoys cycling and hiking on the weekends.
+
+Alex's family history is notable for a paternal grandfather with a history of hypertension. His parents, SSNs are <SSN> and <SSN>, are both in good health.
+
+Physical Examination:
+Upon examination, Alex's vital signs are within normal limits. He is 5'11" tall and weighs 165 lbs, with a body mass index of 23.0 kg/m^2. His skin, eyes, ears, nose, and throat appear normal. Cardiovascular, respiratory, and abdominal examinations are unremarkable. Musculoskeletal examination reveals no abnormalities, and neurological testing is intact.
+
+Assessment and Plan:
+Based on the information gathered, the provider's assessment is that Alex is a healthy 17-year-old male with occasional mild headaches, likely related to lifestyle factors such as screen time and stress. No significant medical concerns are identified at this time.
+
+The provider recommends the following:
+1. Continue with the current exercise regimen and encourage a balanced diet with increased vegetable intake.
+2. Recommend stress management techniques, such as deep breathing exercises and mindfulness practices.
+3. Advise Alex to monitor his headaches and return for follow-up if they become more frequent or severe.
+4. Routine laboratory testing, including a complete blood count and comprehensive metabolic panel, to establish baseline values.
+5. Schedule the next annual check-up in 12 months.
+
+The provider emphasizes the importance of maintaining open communication and following up if any new concerns arise. Alex is advised to contact the office if he has any questions or needs further assistance.

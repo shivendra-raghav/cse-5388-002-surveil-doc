@@ -1,0 +1,23 @@
+Message-ID: <synthetic_email_123456.1234567890.JavaMail.assistant@example.com>
+Date: Fri, 10 Feb 2023 16:15:00 -0500
+From: john.smith@example.com
+To: jane.doe@example.com
+Subject: Re: API Key Renewal
+Cc: security@example.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Bcc: it-support@example.com
+
+Hi Jane,
+
+I hope this email finds you well. I wanted to follow up on the API key renewal for our application integration. As you know, our current BEARER_TOKEN is set to expire soon, and we need to renew it to ensure seamless operation.
+
+Could you please provide the updated api secret <API_SECRET> as soon as possible? I'd also like to confirm the username <USERNAME> address associated with the account, as we need to update our records.
+
+Once I have the new credentials, I'll make the necessary changes in our system and ensure a smooth transition. Please let me know if you have any other questions or concerns.
+
+Best regards,
+John Smith
+Software Engineer
+Example Inc.
