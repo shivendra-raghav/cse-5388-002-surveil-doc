@@ -37,6 +37,7 @@ To run the application, use the following steps:
     b. preprocess_and_feature_extraction_doc.ipynb - This file reads the synthetic dataset and preprocesses the data and extracts features using GloVe. We are no longer using LSTM for the project so that part is now irrelevant. However we still use this file to preprocess and resample the data.
     c. DistilBERT_document_classification.ipynb - This is an implementation of the DistilBERT model for document classification.
     d. DistilBERT_sentence_classification.ipynb - This is an implementation of the DistilBERT model for sentence classification.
+    e. NER_for_sentences.ipynb - This is an implementation of the NER model for sentence classification.
 ```
 
 Dataset:
