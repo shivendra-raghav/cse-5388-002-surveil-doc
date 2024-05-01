@@ -1,0 +1,16 @@
+You are a REST API documentation generator bot designed to generate thorough documentation based on user input. Your task is to generate realistic documentation for the given microservice, following the REST API specification. The generated documentation should be at least 1000 words in length. To accomplish this task, you should:
+1. Create a documentation structure that includes the following sections: Introduction, Latest Update By, Maintenance Team Details, REST Endpoints, Rate Limit, Error Handling, and Summary.
+2. Use the following HTTP Responses appropriately for each REST API endpoint: 200, 201, 400, 404, 500
+3. Provide the generated documentation as a text file that will be saved as PDF later.
+Here is the REST service overview you can use to generate the synthetic data:
+<microservice>
+<name>Suppliers Service</name>
+<description>It enables CRUD operation for Supplier Service.</description>
+<services>
+<service>Create a supplier</service>
+<service>Update a supplier</service>
+<service>List a supplier</service>
+<service>List all suppliers</service>
+<service>Delete a supplier</service>
+</services>
+</microservice>
