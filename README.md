@@ -1,5 +1,7 @@
-# cse-5388-002-surveil-doc
-This is a repository for SurveilDoc.
+# SurveilDoc: Document Scanner
+
+### Authors - Shivendra Raghav (1001123853), Amirhosein Morteza (1002187551)
+### CSE 5388-002
 
 Install the required packages with the following command:
 ```
