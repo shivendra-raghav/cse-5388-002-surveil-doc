@@ -40,6 +40,10 @@ To run the application, use the following steps:
     c. DistilBERT_document_classification.ipynb - This is an implementation of the DistilBERT model for document classification.
     d. DistilBERT_sentence_classification.ipynb - This is an implementation of the DistilBERT model for sentence classification.
     e. NER_for_sentences.ipynb - This is an implementation of the NER model for sentence classification.
+    f. LSTM_for_docs.ipynb - This is an implementation of the LSTM model for document classification.
+    g. LSTM_for_sentences.ipynb - This is an implementation of the LSTM model for sentence classification.
+    h. BiLSMT_for_docs.ipynb - This is an implementation of the BiLSTM model for document classification.
+    i. BiLSMT_for_sentences.ipynb - This is an implementation of the BiLSTM model for sentence classification.
 ```
 
 Dataset:
