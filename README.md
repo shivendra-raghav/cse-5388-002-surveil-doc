@@ -1,40 +1,45 @@
-# SurveilDoc: Document Scanner
+# SurveilDoc: Document Scanner: Detecting PII and Secrets in Documents
 
-### Authors - Shivendra Raghav (1001123853), Amirhosein Morteza (1002187551)
-### CSE 5388-002
+### Authors - Shivendra Raghav, Amirhosein Morteza
 
+SurveilDoc detects personally identifiable information (PII) and credentials (API keys, access tokens, passwords, database connection strings) in text documents. The project builds a synthetic labeled dataset of sensitive and non-sensitive documents and evaluates document-level classification, sentence-level classification, and named-entity recognition (NER) using DistilBERT, LSTM, and BiLSTM models.
+All PII and secrets in this repository are synthetic. Non-sensitive samples come from the public Enron Email Dataset.
+Authors
+Shivendra Raghav
+Amirhosein Morteza
+Developed as a course project for CSE 5388 at The University of Texas at Arlington (Spring 2024).
+Setup
 Install the required packages with the following command:
 ```
 pip install -r requirements.txt
 ```
-
 To run the application, use the following steps:
 ```
 1. data_generation - This folder contains the code for synthetic secret and dataset generation. Here are the details about each file in the folder:
-    a. secrets_pre_processing.ipynb - This files reads the SecretBench "Secret Regular Expression.xlsx" files and cleans and creates a JSON with synthetic data. It then reads the common_passwords.csv and adds it to the JSON. The JSON is then saved as "secrets.json" file in the "sensitive_data_values" folder.
-    b. pii_generator.ipynb - This files creates synthetic PIIs for the project. The data is saved as profiles.csv file in the "sensitive_data_values" folder.
+    a. secrets_pre_processing.ipynb - This file reads the SecretBench "Secret Regular Expression.xlsx" files and cleans and creates a JSON with synthetic data. It then reads the common_passwords.csv and adds it to the JSON. The JSON is then saved as "secrets.json" file in the "sensitive_data_values" folder.
+    b. pii_generator.ipynb - This file creates synthetic PIIs for the project. The data is saved as profiles.csv file in the "sensitive_data_values" folder.
     c. claude_api.py - This file is used to call the Claude API to save the response in the "synthetic_dataset/sensitive_with_placeholders" folder.
     d. post_process.py - This file is used to call the Claude API to clean the dataset created by the initial call and make it more realistic and do cleanup and the response is stored in the "synthetic_dataset/processed_sensitive_with_placeholders" folder.
-    e. document_classification_generator.ipynb - This files reads converts all the text files for processed synthetic dataset into a single CSV file with classification columns and metadata. It saves the data to "synthetic_dataset/document_classified_data.csv" file.
-    f. sentence_classification_generator.ipynb - This files reads converts all the text files for processed synthetic dataset into a single CSV file with classification columns and metadata. It also extracts the NER details from the sentences. It saves the data to "synthetic_dataset/sentence_classified_data_ner.csv" file.
+    e. document_classification_generator.ipynb - This file converts all the text files for processed synthetic dataset into a single CSV file with classification columns and metadata. It saves the data to "synthetic_dataset/document_classified_data.csv" file.
+    f. sentence_classification_generator.ipynb - This file converts all the text files for processed synthetic dataset into a single CSV file with classification columns and metadata. It also extracts the NER details from the sentences. It saves the data to "synthetic_dataset/sentence_classified_data_ner.csv" file.
     g. prompts - This folder contains all the sensitive prompts used to generate the dataset.
     h. non_sensitive_prompts - This folder contains 300 non sensitive prompts, for remaining 200 files in the dataset, the enron email dataset is used.
 
 2. sensitive_data_values - This folder contains the synthetic data generated for the project along with the datasets used.Here are the details about each file in the folder:
     a. secrets.json - This file contains the synthetic secrets generated from the SecretBench and common_passwords.csv.
     b. profiles.csv - This file contains the synthetic PIIs generated for the project.
-    c. datasets - This folder contains the three datasets we have have used to create the syntehtic dataset.
+    c. datasets - This folder contains the three datasets we have used to create the synthetic dataset.
 
 3. synthetic_dataset - This folder contains the synthetic dataset generated for the project. Here are the details about each file in the folder: 
     a. sensitive_with_placeholders - This folder contains the synthetic dataset generated using Claude with placeholders.
     b. processed_sensitive_with_placeholders - This folder contains the post processed synthetic dataset generated by calling the Claude with placeholders.
     c. processed_non_sensitive - This folder contains the combined non sensitive datasets created using Claude and the 200 random enron emails.
     d. document_classified_data.csv - This file contains the synthetic dataset with classification information for the whole document.
-    e. sentence_classified_data_ner.csv - This file contains the synthetic dataset with sensitive synthetic dataset and its NER metedata per sentence.
+    e. sentence_classified_data_ner.csv - This file contains the synthetic dataset with sensitive synthetic dataset and its NER metadata per sentence.
     f. sentence_classified_data.csv - This file contains the synthetic dataset with classification information per sentence for the documents.
     g. sentence_classified_data_resampled.csv - This file contains the synthetic dataset with classification information per sentence for the documents which is resampled to balance the dataset.
 
-4. data_evalution - This folder contains the code for evaluating the synthetic dataset. Here are the details about each file in the folder:
+4. data_evaluation - This folder contains the code for evaluating the synthetic dataset. Here are the details about each file in the folder:
     a. preprocess_and_feature_extraction.ipynb - This file reads the synthetic dataset and preprocesses the data and extracts features using GloVe. We are no longer using LSTM for the project so that part is now irrelevant. However we still use this file to preprocess and resample the data.
     b. preprocess_and_feature_extraction_doc.ipynb - This file reads the synthetic dataset and preprocesses the data and extracts features using GloVe. We are no longer using LSTM for the project so that part is now irrelevant. However we still use this file to preprocess and resample the data.
     c. DistilBERT_document_classification.ipynb - This is an implementation of the DistilBERT model for document classification.
@@ -45,13 +50,15 @@ To run the application, use the following steps:
     h. BiLSMT_for_docs.ipynb - This is an implementation of the BiLSTM model for document classification.
     i. BiLSMT_for_sentences.ipynb - This is an implementation of the BiLSTM model for sentence classification.
 ```
-
 Dataset:
 ``` 
-1. Secret Regular Expression.xlsx - This is a dataser that contains regular expressions for sensitive data values collected by SecretBench.
+1. Secret Regular Expression.xlsx - This is a dataset that contains regular expressions for sensitive data values collected by SecretBench.
 Source: https://github.com/setu1421/SecretBench/blob/main/Regular%20Expressions/Secret%20Regular%20Expression.xlsx
 2. common_passwords.csv - This is a dataset that contains 10000 most common passwords.
 Source: https://www.kaggle.com/datasets/shivamb/10000-most-common-passwords
 3. Enron Email Dataset - This is a dataset that contains emails from Enron employees.
 Source: https://www.cs.cmu.edu/~enron/ 
 ```
+To run the Claude API scripts (`claude_api.py`, `post_process.py`), set your own API key in the `api_key` field. No keys are included in this repository.
+License
+Code is released under the MIT License (see `LICENSE`). The third-party datasets listed above remain under their original terms.
